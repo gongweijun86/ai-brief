@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chenfacai0 · 2026-11-14 11:18</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">腾讯这波操作，等于直接给 Agent 组建了一支完整的研发班子！<br><br>才刚开源的 LoopForge，能把一项开发任务切分成一整套端到端的研发流水线：<br><br>头一步先把需求定下来，再把技术方案敲定<br>写代码这件事交由 AI Agent 来完成<br>再单独派一个 Agent 去做 Code Review<br>测试跑一轮，要是查出毛病就退回前序环节返工<br>交付过程全程留痕，哪怕中途断了也能续上接着干<br><br>更狠的是，这整条流程能沉淀成一份 SOP，往后遇到相似的功能开发，拿出来套用即可，省得每次都从零折腾一遍<br><br>Claude Code、Codex、CodeBuddy 三样都支持。个人自用的话，装个 Local 版就够，用不着把整套平台部署起来。<br><br>项目完全开源，走的 MIT 协议。<br><br>GitHub：<a href="https://github.com/Tencent/LoopForge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent/LoopForge</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXAMaEJagAAPLnl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ad0ccb450a2c99dc7b63.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -76,7 +76,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">NVIDIA released a new looped transformer:<br><br>Instead of stacking more layers, it runs the same layers multiple times so a 4B model can think like a 9B one.<br><br>Here's how it works:<br><br>In a standard transformer, every token passes through a stack of decoder blocks once, and each block has its own weights.<br><br>So if you want a deeper model, you add more blocks, and the parameter count grows with the depth.<br><br>NVIDIA's Dory1.0-4B decouples the two by reusing a chunk of its layers.<br><br>The model is split into three parts:<br><br>&gt; An input block of 8 blocks runs once and turns the tokens into a hidden state x.<br><br>&gt; A recurrent block of 20 shared blocks runs k times, where k can be anywhere from 1 to 4.<br><br>&gt; An output block of 8 blocks runs once on the final state, followed by the LM head.<br><br>Before every pass through the recurrent block, x is added back to the current state and the sum is L2-normalized.<br><br>This keeps the original token representation in view on every pass, instead of each pass only seeing what the previous one produced.<br><br>Both models in the diagram below store 36 blocks of weights.<br><br>The standard transformer applies each block once, while Dory applies 36 blocks at k=1, 56 at k=2, and 96 at k=4, i.e., 72, 112, and 192 physical layers from the same checkpoint.<br><br>The extra depth is actually helpful on reasoning and agentic tasks:<br><br>&gt; SWE-bench Verified:<br><br>- at 1 loop → 50.3<br>- at 2 loops → 59.5<br>- at 4 loops → 61.8<br><br>&gt; 12-benchmark average:<br><br>- at 1 loop → 35.17<br>- at 2 loops → 39.67<br>- at 4 loops → 40.60<br>- and with 2 or more loops, it beats Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B.<br><br>More loops implies more compute per token, but the 4-loop model also writes 1.3x to 2.5x fewer output tokens on agentic tasks.<br><br>So 2 loops end up costing only 1.03x to 1.25x the compute of 1 loop end to end, which is why NVIDIA recommends 2 as the default.<br><br>By default, Dory keeps a separate KV cache for every loop, so at 4 loops the recurrent layers store 4x the cache.<br><br>To avoid this, it can keep only the cache from the last loop, which uses the same KV memory as a normal model with only a small change in accuracy.<br><br>One thing to note here is that looping helps the model reason over what it already knows, but it does not add knowledge.<br><br>For instance, on tasks like AA-Omniscience, accuracy stays at 10.0 whether you run 1 loop or 4, and on knowledge-heavy tasks like GPQA, Dory still trails Qwen3.5-4B.<br><br>Here's the paper: <a href="https://arxiv.org/abs/2611.03998" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.03998</a><br><br>That said, how much memory looping costs comes down to how the KV cache is handled, so I wrote a full breakdown of how KV caching works.<br><br>It covers what gets cached during prefill, how the cache grows during decoding, and why it becomes the main memory bottleneck at long context.<br><br>Read it below.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HXFCuBeaEAADLVe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/962f23b34cf290c069a2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
@@ -116,7 +116,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Text watermarking is now off by default in the SpaceXSI API </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXCfc5MXAAAQCEQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/da3c97a15732d0661e38.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -146,7 +146,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A 37-year-old woman with 10 years of abdominal pain.<br>—The AI makes the diagnosis and recommends a successful treatment.<br>—The physician &quot;diagnosed a patient with a condition I had never diagnosed before and started treatment largely on the basis of the output of a chatbot.&quot;<br>In today's  @NEJM <br><a href="https://www.nejm.org/doi/full/10.1056/NEJMp2606894" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.nejm.org/doi/full/10.1056/NEJMp2606894</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQvSva8AESKyS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQxUNaUAAP-Zf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQzZmbYAAHhFo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/36ef084f932a763e17ee.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/803637e6c9bfd7afadca.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/c99157ebf45e08a86d73.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -167,7 +167,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">You can now build custom themes for Claude Code on desktop with mods! Change the colors, add an animated background, and make it your own.<br><br>Just tell Claude how you want it to look, or get started quickly with the theme-examples plugin. We'd love to see what you make! </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121392351218397185/img/14nrq2DI01cKbZqM.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0f22c678d4ceb7a4a36b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -183,7 +183,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">synology-nas-cli — Zero-dependency Python CLI and MCP server for Synology DSM 7 that audits NAS configuration against the C3RB3R/.L0CK3D ransomware campaign, plans fixes, and applies them. <a href="https://ktp.sh/Tnx2FuvYEh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/Tnx2FuvYEh</a> </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGPhkfXQAAtJQh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b098afe768bc282a8ed2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -240,7 +240,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">You chose a cheaper AI model. Good. But are you sure you saved money? Capgemini warns that errors and human review can change the final bill.<br><br>Token prices are easy to compare. The harder part is working out what the organization spends to get a result.<br><br>Microblog by @antgrasso<br><br>Consider a marketing team preparing descriptions for a product catalog. One AI model costs less per request. Another costs more, but its drafts may need fewer revisions before publication.<br><br>The team needs to compare what it spends for each approved description, including the work required to check the product information.<br><br>The model with the higher price per request could turn out to be the less expensive choice.<br><br>Capgemini calls this measure Cost Per Verified Outcome. It shifts the comparison from token consumption to the cost of a verified business result.<br><br>But even a verified result needs to produce enough value to justify what the company spends to obtain it.<br><br>#AIEconomics #AIManagement</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXF0S79XQAAbG07.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0249462600962e45e0f4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -256,7 +256,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I’m building a demo named, TiDB AgentSpace, to give my agents a persistent workspace. Their files and databases are still there next session, so they can pick up where they left off.<br><br>For now, it only uses TiDB Cloud’s free tier. I haven’t connected it to production yet.<br><br>Try it → <a href="https://drive9.ai/studio/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://drive9.ai/studio/</a><br>GitHub → <a href="https://github.com/mem9-ai/tidb-agentspace" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mem9-ai/tidb-agentspace</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXERQrFbIAEOXgj.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7ccab583ff31bb9a05c9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

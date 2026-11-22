@@ -96,7 +96,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-16 22:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Lauren Tan 也叫 Potato，在 SpaceXSI 做 Grok Bot。她这场演讲一开场就问，你有没有看过别人写的代码，心里想这不都是 slop。她想说服的是，这些 slop 是可以炼成金的。<br><br>软件工程师现在的工作，就是想清楚怎样在大幅提高产量的同时，把代码质量稳住，最好还能再提高一点。<br><br>她花了六个月，才走到一个月能往生产环境合进去几千个 PR，而且很多是睡着时合上的。上个月她一个人合进了 3000 个。Grok Bot 团队上个月合进了 11000 个。十月大约有 227 人至少贡献过一个 PR，客户端大概每天都会切出一个新的稳定版。被回滚的比例反而更低了，稳定在大约 0.5%。启动、打字、打开新对话、切换对话，都比刚上线时更快。<br><br>核心不是盲目信任，而是去建设 agent 的环境，让你能够相信它们会把事情做对。<br><br>她用一张倒金字塔来排该把时间花在哪。最下面两层是确定性的，直接用代码本身：好的 API 设计、架构、重构，以及 lint、类型系统、编译器和测试。再往上才是运行时验证和形式化验证。最上面才叠一点点规则、skills、agents.md。每次纠正 agent，先想能不能做成一条确定性检查，而不是再往 agents.md 里加一行。写进代码里更可复现，也更能信。<br><br>因为代码库就是 agent 最大的输入之一。以前一天也许只审三个同事的 PR，现在这个数字更像是 300。每个工程师背后，都可能是一支几百、甚至几千个 agent 的队伍。权宜之计、反模式、过时代码，下一个 agent 很容易直接抄走。<br><br>他们为 Grok Bot 做的客户端框架叫 Dune，可以把它想成 Electron 应用里的 Next.js。真正起作用的是约束。凡是要用好就得特别讲究分寸的东西，最后往往都会变成 slop。最典型的是 React 里的 useEffect，他们直接禁止在产品代码里用。<br><br>目录结构也在传上下文。Grok Bot 和 Dune 有两个顶层目录，electron-renderer 和 electron-main，它们之间的 import 会被依赖图分析和 lint 直接禁止。这是从 Cursor 这个 Electron 应用里学来的教训：agent 经常把主进程代码 import 进渲染进程，结果就是长任务和卡顿。<br><br>agent 还喜欢用快速补丁，再用注释给自己找理由。到了 Grok Bot，他们禁止了 99% 的注释，因为注释太容易过时，也无法被强制执行。lint 会直接让 agent 去修根因。这样做得足够多次，审查要盯的东西就会越来越少，甚至可以让 agent 自己合并它们的大多数 PR。<br><br>验证也在改审查方式。他们现在的 code review，已经大幅收成主要看视频、截图、图示和形式化验证。运行时验证说白了，就是让 agent 自己把代码跑起来。他们还在用 TLA+ 对主要用户流程做模型检测，用 Lean 去证明某些算法，已经找到了不少 bug。片子里也说了，这当然不是银弹，还在试验。<br><br>有个叫 Cindy 的人，六个月前还没法信任自己的 agent，因为一些很细的 bug 被合进了代码。六个月后，她说每天 70% 的 token 都花在验证上。Lauren 自己也是这样。她觉得测试和验证正在进入黄金时代，不是因为方法变新了，而是过去贵到用不起的深度，现在用得起了。<br><br>如果你内层的编码循环本身就在产 slop，那把这条循环自动化，只会产出更多 slop，然后还得不断往这个问题上砸更多 token。所以先改代码库，先加 lint，先把旧的反模式清掉，先把验证做扎实。有了这些地基，再去搭工厂，很多事情才会突然变得可能。<br><br>等准备好了，她把 Grok Bot 当成搭外循环的方法。连接器、例程、Cursor Cloud Agents、projects，可以编排上百、甚至上千个 agent。一个例子是，每切出一个新版本，Grok Bot 就会自动拉起一个新的 Cursor project，像真实用户一样去跑整个应用，找到 bug，开出修复 PR，再自动合并。敢这样，是因为代码库已经足够好，大多数产品代码已经不再需要很深的人工审查。<br><br>我给这场补了中文字幕，原声保留。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122321306846928897/img/YaSAdUb6oM-ZaMvt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d76fb14efadfe59b1678.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -114,7 +114,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-11-16 20:35</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">个人多仓库 Agent 工作流：Home Repo 方案。<br><br>这个思路来自 Matt Pocock 分享的 Home Repo 模式：用一个独立仓库集中管理 Agent 指令、Skills、工具和项目知识，让 Agent 能够理解多个代码仓库并完成跨项目任务。<br><br>一个统一入口，多个独立仓库，两种工作模式。<br><br>1. 日常单仓库开发：直接进入业务仓库运行 Agent。<br><br>2. 跨仓库需求：从 Home Repo 启动 Agent，统一分析和协调修改。<br><br>3. 个人规范和通用 Skills：集中管理。<br><br>4. 项目架构、构建命令和技术约束：仍然保留在业务仓库。<br><br>5. Git、依赖和发布流程：各仓库独立维护。<br><br>这样既能实现跨仓库协作，也能避免所有 Agent 都获得过大的修改范围。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPxgS5asAA_9fc.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d9e180d0e752495f5df1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Matt Pocock <span style="font-size:12px;color:#999999;font-weight:400;">@mattpocockuk</span></p>
@@ -126,7 +126,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A lot of folks ask me &quot;how do you work with agents in multiple repos at once?&quot;<br><br>I have a very simple solution - the Home Repo<br><br>I have a single repo (the home) where all of my skills, steering files, wiki etc live.<br><br>I run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:<br><br>```<br>For skills, clone mattpocock/skills to ~/repos/skills.<br>For Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle<br>```<br><br>This is extremely simple and incredibly effective. The home repo lets you:<br><br>1. Put all your steering files and tooling in one place<br>2. Have a single spot to run all your agents in<br>3. Make sweeping changes over multiple repos<br><br>Talked about this in the course yesterday and folks are loving it (see below).<br><br>I'm sure you will too. Enjoy!</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWyuBkPXwAAPOF3.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1dc4657e2915372871a2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -135,7 +135,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 10:02</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在几乎所有公司都在教员工怎么用 AI 一键生成现成答案的时候，华尔街最赚钱、技术品味也最硬核的量化交易巨头 Jane Street 反手在 GitHub 上开源了他们内部的 janestreet/agent_skills 仓库，其中冲上 HN 榜首（712 分）的技能叫 Socratic Tutor（苏格拉底式导师）。<br><br>点开这份只有几百行的 SKILL.md，你能看到顶级工程团队对“AI 让人脑退化”这件事有多警惕。它给大模型立下了几条极其严苛的铁律：<br><br>只要你对它说出 teach me、quiz me 或 drill me，它被绝对禁止直接给你讲课或甩出长篇解释。它必须先拆出 4 到 10 个子技能树，每次只问你一个问题，连摸底带追问，把你在每个子技能上的真实水平钉死在 0 到 5 级（0 级是闻所未闻，3 级是在提示下能做对，5 级是不靠任何提示且隔轮复习依然对答如流）。<br><br>在教学循环里，哪怕你答错了，它也不准直接告诉你正确答案，而是必须顺着你的错误推理反问一句：如果按你说的这样，那当边界条件变成 X 时会发生什么？ 逼你自己推导出矛盾点。直到连续两轮卡死，它才允许给一个最小化的脚手架提示，而且一旦给过提示，这道题就绝不算你掌握（最高只能记 3 级）。在随手一问就能拿到几千字总结的今天，这种故意给大脑制造阻力、逼人自己走完推导闭环的提示词设计，反而成了最稀缺的工程资产。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLmZjTaMAA_8cg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8b1d91a830fa0fdc78bf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -153,7 +153,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AstroHanRay · 2026-11-16 12:45</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Frontier Harness v1.1 全部题目跑完了，领先的还是 Codex 和 Pi，Maka 排名第七，和 ZCode、KimiCode、OpenCode 在同一水平。<br><br>作为开源大家共创的项目，TS 版的 Maka 这个成绩还算满意～<br><br>我们会在下一个版本的 Rust 版继续努力和改进！欢迎大家来围观 Rust 版本，欢迎点个星星呀～ </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXOHdmRaMAAkklG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/05a91c54c97367232198.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

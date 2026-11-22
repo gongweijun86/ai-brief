@@ -83,7 +83,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">this harness paper is f*cking gold<br><br>Anthropic engineers revealed what actually makes Claude Code work so well. spoiler: it's not the model.<br><br>the secret: the harness. that's the whole gap.<br><br>prompt engineering → context engineering → harness engineering.<br><br>the 6 layers of the harness:<br><br>layer 1 → tools<br><br>fewer tools, one job each.<br>every error tells the agent what to try next.<br><br>layer 2 → context<br><br>short CLAUDE.md → files on demand → compaction when it fills up.<br><br>layer 3 → permissions<br><br>reads + tests → auto.<br>deploys + deletes → ask a human.<br>everything → sandbox.<br><br>layer 4 → hooks<br><br>before a tool runs → block secrets and protected files.<br>after every edit → format, lint, typecheck. no exceptions.<br><br>layer 5 → verification<br><br>fresh reviewer reads the diff, not the summary → runs the tests → fail? fix → rerun.<br><br>layer 6 → evals<br><br>every harness change scored → success, tokens, turns → keep what wins.<br><br>the model is the engine. the harness is the whole car.<br><br>they even packed all 6 layers into one prompt. paste it into Claude Code and it engineers the harness for you.<br><br>6 layers. 1 prompt. 0 infinite loops.<br><br>full breakdown in the Harness Engineering guide below ↓</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWVgXYXQAM1UIJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e4f9057368dec4ae1d86.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Trackmind <span style="font-size:12px;color:#999999;font-weight:400;">@0xTrackmind</span></p>
@@ -104,7 +104,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liyue_ai · 2026-11-17 10:44</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，这套自媒体运营系统完全就是企业级别，这人居然开源了？这是要卷死同行的节奏🤯<br><br>1⃣项目把每个平台每天的内容数据都进行了可视化。<br><br>2⃣哪个平台涨粉快，哪个平台转化好，都能一眼看出来，特别适合多平台运营的用户。<br><br>3⃣还贴心的配备了发布助手插件，多个平台快速上传，你只需要去点下发布。<br><br>项目地址：<a href="https://github.com/CzzzzzzJ/mdldm-maitian" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CzzzzzzJ/mdldm-maitian</a><br>插件助手：<a href="https://chromewebstore.google.com/detail/%E9%BA%A6%E7%94%B0%E5%8F%91%E5%B8%83%E5%8A%A9%E6%89%8B/eaaipbilkhibicihiollecmbpneikpnj" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://chromewebstore.google.com/detail/%E9%BA%A6%E7%94%B0%E5%8F%91%E5%B8%83%E5%8A%A9%E6%89%8B/eaaipbilkhibicihiollecmbpneikpnj</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSzxF1aQAAh9Yh.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f1730541ce59c3f638f2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">麦当mdldm <span style="font-size:12px;color:#999999;font-weight:400;">@czzzzzzJ_</span></p>
@@ -132,7 +132,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">same model, same prompt, same 20 real tasks. only the harness changed<br><br>Opus 5.5 with a bare prompt: 8 of 20 tasks accepted without edits<br>Opus 5.5 plus one weekend of harness work: 16 of 20<br><br>&gt; runaway retry loops: 5 -&gt; 0<br>&gt; cost per accepted task: about $4.10 -&gt; $1.60<br>&gt; babysitting per day: about 2 hours -&gt; 25 minutes<br><br>what he added: a &quot;done when&quot; line per task, a 40-line map file, a test gate, a retry cap of three and a rule file for what the agent may touch<br><br>a longer prompt fixes one of the five layers. the other four, built around Fable 5.2, are in the guide below:</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121095625009758208/img/JHK_MgN1DUvvllkO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f70842104512d8f36936.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Annatar.md <span style="font-size:12px;color:#999999;font-weight:400;">@AnnatarXBT</span></p>
@@ -160,7 +160,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing: Self-Improving Memory 🧠✨📈<br><br>We let the model discover its own memory skills, then train them into its weights:<br><br>- Meta-optimizes memory from the model's own runs with large gains.<br>- Distilling these gains works too.<br><br>Blog post: 📝 <a href="https://facebookresearch.github.io/RAM/blogs/self_improving_memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://facebookresearch.github.io/RAM/blogs/self_improving_memory</a><br>🧵1/6 </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVN7y8WsAAp9Kd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/75a0c64227af4d8ccbd4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -169,7 +169,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-18 07:58</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 发布了 GPT-6.2 Astra 和 Sol。Astra 面向更难的项目，Sol 面向日常工作，官方称两者都更省输出 token，同样额度能多干一些活。<br><br>先看官方评测口径。Astra 在多步专业工作基准 Agents’ Last Exam 上比 GPT-6 Astra 高 5.2 分，单任务成本不到三分之一；在 Terminal-Bench-Science 0.1 上高 9 个百分点，成本同样不到三分之一。Sol 在 Cognition 的 FrontierCode 2.0 上，分数只比 Astra 低 0.5 分，成本大约是五分之一。这些都是指定评测里的结果，不代表所有任务。<br><br>即日起可在 ChatGPT Work 和 Codex 里用，面向 Plus、Pro、企业版和教育版，后两档需管理员开通。Pro 500 两个模型都有 Ultrafast；Pro 200 第一次能用上 Sol 的 Ultrafast。开发者也可在 API 调用 gpt-6.2-astra 和 gpt-6.2-sol，Astra 的输入和输出价格比上一代低 20%。<br><br>官方同时称，Astra 是他们迄今最强的网络安全能力版本，并为此加了更严的高风险协助限制。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122746240823943168/img/osC4AgQC_BfZl2EH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/5b2d6b0009c9439f9cbe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

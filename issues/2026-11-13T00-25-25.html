@@ -71,7 +71,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @DDJCXX · 2026-11-12 12:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一段提示词，Fable 5.2 交出了这段 30 秒的敦煌飞天 3D 动画，从建模到配乐都是它写的代码。<br><br>前后半个小时左右，用了 18 万 token。中间它自己看了试渲图，发现琵琶被头挡住，改完才正式渲染。<br><br>人是几何体拼的，手没有手指，近看还比较简单。<br><br>评论区是完整提示词，把敦煌飞天换成你想做的题材就能用，跑之前先装好免费的 Blender👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120525771433521152/img/VzB05Jav2z1FJjmn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7a6aec40f1a47a7bfd5e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -117,7 +117,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I have a major result to share.<br><br>I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China.<br><br>This sounds insane, but I discovered that almost every AI model carries a hidden signature of the GPU that trained it. When a model is first set up, the starting values of its weights are laid out in a pattern that depends on the exact GPU. Each combination of GPU and seed number produces a unique pattern—a sort of fingerprint of the hardware used to create the model. Traces of that pattern survive training into the published model.<br><br>Again, this evidence isn’t based on any insider information or leaking. It’s based on a forensic analysis of the model weights released by the companies themselves.<br><br>I searched more than six trillion combinations of chip layout and seed number and matched them to open-weights models. In doing so, I found conclusive evidence that six Chinese AI models—including DeepSeek-V4-Pro, Kimi K3, and MiniMax-M3—were initialized on NVIDIA Blackwell systems. Four of the models match Grace Blackwell, the GB200 and GB300 parts in NVIDIA’s flagship liquid-cooled rack-scale systems.<br><br>I then verified these results on real hardware. Running unmodified PyTorch with the seeds I’d recovered, a Blackwell B300 reproduced DeepSeek-V4-Flash’s untouched starting weights bit for bit, and a rented GB200 reproduced Kimi K3’s to a correlation of 0.999995. A Hopper H100 reproduced none of DeepSeek-V4-Flash’s, and changing the seed by one broke the match. (DeepSeek’s seed is 953049583 by the way.) The method also was verified to match 24 known open-weights models to the hardware that developers said they used.<br><br>It is exceedingly unlikely that these results are a coincidence. Across six trillion combinations, the best accidental match should reach only about 8 sigma (i.e., eight standard deviations above what random chance would produce). The real matches range from 49 to 1,385 sigma, and even the weakest single test hits 20.<br><br>These were data-center-scale training runs. With some analysis of release schedules and model details, I estimate that the largest, Kimi K3 and DeepSeek-V4-Pro, used 2,000 to 3,000 Blackwell GPUs each. Clusters of this size cost on the order of $150 to $200 million each to buy, and across these labs alone would add up to more than half a billion dollars of export-controlled GPUs, not counting experimental compute or otherwise. It’s quite likely that we see multi-billion dollar expenditure on export-controlled GPUs.<br><br>I am highly confident in this result, and it has been independently verified by senior researchers at OpenAI and Anthropic. You can read the full report at <a href="http://unemploymentlabs.com/checkpoint-forensics." target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://unemploymentlabs.com/checkpoint-forensics.</a><br><br>There is much more I’ve identified about these models through other forms of checkpoint forensics like this, and will have more to share soon.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW9GgJ_WcAA9m3I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/492fa03c7333701d4db7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -165,7 +165,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today we're introducing Cloud Sandboxes: same microVM isolation as Docker Sandboxes on your laptop, same CLI, always-on Docker-managed compute.<br><br>Close your laptop. Keep the agent running. Move between local and cloud with one command. $250 credit for new accounts: <a href="http://docker.com/sbx-promo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://docker.com/sbx-promo</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HTAKRAlWIAAmleF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6595284a6508296b265c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -193,7 +193,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">10ms. Unlimited for $20/month. Now multimodal.<br><br>Today, @OctenAI is launching:<br><br>1. Octen Pulse: Open-source search at the speed of a single token.<br>2. Unlimited Search: $20/month. No more counting API calls.<br>3. Multimodal Search: Text and images. Platform.<br><br>Humans search with Google. Machines search with Octen.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120923053148508160/img/rXZuew2uZO4hXWSw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/073d7fe8e8f57769e109.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -209,7 +209,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your dot now has…<br><br>⚡️ Faster replies<br>💬 Less jargon<br>🫡 Better follow-through<br><br>And, they can now follow your custom instructions. Tell your dot in the thread things like how to behave or which actions need your go-ahead.<br><br>“always talk in lowercase.”<br>“Show me a draft before sending any emails.”<br><br>You can also set custom instructions and rules in Customize &gt; Behavior on mobile, or through your dot’s menu on web and desktop.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120970792531795968/img/nDlkM6TFXmnctW5h.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a6ff9c6913534019b9e0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

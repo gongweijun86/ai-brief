@@ -90,7 +90,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @s1dashu · 2026-10-24 18:31</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近用 Opus 5.5 跑了 104 个小时，用 Rust + GPUI 重写了一个飞书文档本地客户端，最终得到的效果很超乎预期：<br><br>- 覆盖了飞书文档的绝大部分功能，除了必须依赖云端的 feature。<br>- 标题、文字、列表、表格、分栏、高亮、引用、代码块，各种交互表现细节和 web 版保持高度一致。<br>- 100 万字的文档，单帧绘制耗时中位数 5.7ms，性能远超 web 版。<br>- 28MB 的轻量客户端，纯本地存储。<br><br>做完这个测试才第一次切身感受到什么叫“许愿式编程”，opus 5.5 就像一个事无巨细的老管家，宁愿跑三天三夜也要帮我把所有细节都处理好，这感觉太神了。<br><br>出于对飞书团队的尊重，这个项目不会对外发布😄</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113935479456567296/img/hjl0ZOwTm5hfyQt4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0cc366ac284d6955e4da.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -99,7 +99,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cholf5 · 2026-10-24 23:18</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天关于用 AI 做游戏又领悟了一项新技能：用 React 做 UI + PixiJS 做渲染岛。<br><br>“岛”的意思是：React 负责 DOM/UI，在 DOM 树里嵌一块区域，交给 PixiJS 用 Canvas/WebGL 做真正的游戏渲染，而不是所有东西都用 DOM。PixiJS 是偏 2D 的，如果做 3D，就换成 Three.js。<br><br>这个方法可以说非常屌，以前确实没想过，也是最近跟 AI 聊时它无意中抖出来的。以前我要么全用 React，要么就全用 Phaser 了。用 Phaser 时整个 UI 也是在 Canvas 里做的，肯定没 React 做起来方便。<br><br>这个方法在我说出来后，你可能会觉得：“就这？”，确实看起来平平无奇，不过用上后，我想在让“AI 全自动开发游戏”这件事上会非常有帮助。<br><br>因为 AI 本来就很擅长写 React UI，而游戏里的核心渲染又可以直接交给成熟的渲染引擎。两边各干各的，反而比让 AI 在一个巨大的游戏框架里同时处理 UI、渲染和交互要简单很多。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVZ78GyaIAAyKzx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a049adba024170fb27be.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -126,7 +126,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dandanetha · 2026-10-24 08:36</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上直接屠榜的 OpenMontage，star 已经飙到 6.5w+，专攻 AI 视频剪辑。<br><br>玩法挺离谱：对着 Claude Code、Cursor 这类 AI 编程工具随口说句人话，它转头就去写脚本、搜素材、配音、敲字幕、合成收尾，一条龙全包。<br><br>几个真实例子：<br><br>1️⃣ 60 秒皮克斯风动画短片，剧情、运镜、钢琴 BGM、动态字幕一样不缺，全由 AI 生成，总花费才 1.33 刀；<br><br>2️⃣ 电影预告片那股味儿拿捏得死死的，配乐把氛围感顶满；<br><br>3️⃣ 脑机接口产品宣传片，全程花销不到 1 刀。<br><br>更绝的是，一条爆款视频丢给它，它能拆出人家的脚本节奏、镜头关键帧和风格，回头甩你 2 到 3 个不同思路的方案。<br><br>0 成本就能把整套流程跑通，愿意花一两刀挂上高级模型，画质还能再提一档。背后是 12 条流水线、100+ 工具、700+ agent skills 在撑着。<br>🔗 <a href="https://github.com/calesthio/OpenMontage" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/calesthio/OpenMontage</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVWW-QraQAAilNE.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7a033c6ebd43265f8961.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

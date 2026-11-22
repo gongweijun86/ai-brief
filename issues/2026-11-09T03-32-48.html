@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-09 11:27</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果 AI 队友经常质疑你的想法，甚至故意给出错误建议，会不会反而更有利于训练你的思考能力？<br><br>Google Research 最近的一篇论文《Improving Entrepreneurial Skills by Practicing with AI》，通过一项随机对照实验探索了这个问题。<br><br>研究团队开发了 Vantage，让学生与模拟的 AI 队友一起完成创业任务，比如制定营销策略、分析成本、设计客户画像。<br><br>这里有个很有意思的设计：AI 队友不会一味配合学生。<br><br>系统背后有一个 Executive LLM，负责协调不同 AI 队友的行为。它会根据学生的表现，主动制造需要思考的情境，比如提出有缺陷的商业方案、给出相互冲突的观点，甚至故意说错一些事实，让学生自己去质疑、核实和判断。<br><br>每轮任务结束后，系统还会根据学生的实际对话和提交结果，提供针对性的评分与反馈。<br><br>在 52 名学生的随机对照实验中，Vantage 组的商业计划书平均得分为 67.6%，普通 AI 工具组为 60.5%，高出 7.1 个百分点。不过样本规模较小，长期学习效果仍有待验证。<br><br>如果想要构建一个未来的 AI 学习伙伴，可以根据人的能力和任务进度，主动调整挑战难度。<br><br>有时候，AI 适当提出反对意见、保留一部分思考空间，可能比直接给出完整答案更有助于学习。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.02016" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.02016</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWmV8qjWcAAIeM0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6d94c1ca93cecf96cff4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -74,7 +74,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">范师傅 <span style="font-size:12px;color:#999999;font-weight:400;">@FanShifu</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">前字节团队操刀，蒸馏 250 部影史名片，打造 27 万+ 电影分镜索引库，杀入影视行业。这就是专为独立导演和广告人打造的 AI 分镜 Agent —— Story2Board<br><br>用大模型做分镜，最让人头大的莫过于两件事：<br><br>1. 拿着剧本让 ChatGPT 跑九宫格分镜脚本，看着挺像那么回事，结果一镜换一张脸，三镜换掉整个剧组，人物一致性很难保证。<br><br>2. 想微调某一镜给男主来个特写，整个场景的美术风格立刻原地重开，改一张图等于毁掉一整条片子。<br><br>Story2Board 没有跟风去卷画质，而是把精力全砸在了影视工业最头疼的上下文连贯性和导演视听语言上。<br><br>一、把剧组固定资产锁进独立图层<br>它在项目里搭了一层 Consistency Layer（一致性锚点）。角色长相、穿搭、标志性道具和场景，全被固化成可复用的对象。后面不管是切全景、特写还是背影，AI 都基于同一套资产底座进行生成，告别「薛定谔的男主角」。<br><br>二、带脑子的 AI 副导演，而不是冰冷画图机器<br>很多人脑子里有故事，但不知道怎么切机位表达情绪。项目后台接入了 250 部影史经典里的 27 万个镜头标注数据。你用大白话描述剧情，它会像专业摄影指导一样反推景别、轴线、仰俯角度以及运镜方式，主动推荐：「这句对白建议用过肩镜头，下一秒再推近景烘托情绪」，把专业运镜逻辑拆解成能挑的选项，顺便帮你把为什么这么运镜的情绪动机讲清楚。真正的边干边学，大幅降低非科班导演的专业视听门槛。<br><br>三、打工人最爱的交付形态：带场记数据的 PDF<br>聊完改完，一键导出的不是一堆散装网图，而是可以打印出来发给摄影师、灯光师的 PDF 分镜表（景别、角度、运镜动作、台词全对齐，且导出功能本身不消耗任何点数）。<br><br>更有意思的是它的商业模式和技术实现：<br><br>模型调用做成了按需调用，免费层用便宜模型给用户试水，正式交付才调动 Nano Banana Pro / 2，兼顾 4K 细节与快速预览成本。收费上没有搞订阅制的套路，直接按「1 美元 = 100 点」明码标价，纯按需充值，点数永不过期。  <br><br>我觉得它最大的价值是，允许创作者跳过规整的剧本撰写阶段，拿着零散的想法、分场大纲甚至 TikTok 下载来的短视频前两秒吸睛脚本，就能进行画面推演，上手路径更短平快。  <br><br>不过也存在一些问题，比如放弃订阅制，确实降低了尝鲜用户的付费门槛，但同时也牺牲了 LTV 和营收可预测性，在商业模式上是减分的。  <br><br>按需充值意味着只要用户完成了手头的提案或短视频拍摄，就可能陷入长达数月的沉寂期。相较于成熟 SaaS 稳定的 MRR ，这种付费模式对产品获客能力提出了更高要求，一旦推广获客成本上升，回本周期就会被无限拉长。  <br><br>这可能也是新项目的无奈之举吧！</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112130963316809728/img/xTQ7X0zYY_CYrofd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f63c6837fd89f6f3e51e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -83,12 +83,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jinglian · 2026-11-09 10:18</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥之前推荐的「全能 AI 私教」DeepTutor 终于推出桌面客户端，<br>Mac 和 Windows 都已支持。<br><br>它最初的目标，是做一个能长期陪伴学生学习的 AI 伙伴，把教育真正做到「千人千面」。<br>没想到，除了大学生，它还在快速进入越来越多的 K12 家庭。<br><br>让 AI 接手作业辅导，家长不必盯作业、不必反复讲解，省下的不只是时间和精力，亲子关系也更轻松了。<br><br>👇 它凭什么这么火？<br><br>你可以把课本、讲义、私人笔记全部丢给它，它会完全围绕你的专属资料上课。<br><br>🔹 讲题辅导<br>🔹 出测试卷<br>🔹 做深度研究<br>🔹 画可视化图表<br><br>所有操作，全在一个沉浸式工作区里一站式搞定！<br><br>⚡ 最狠的杀手锏：它有「长期记忆」<br><br>不管怎么新建窗口，学习进度和历史错题都能无缝接上！更硬核的是它一目了然的【三层记忆结构】：<br><br>1️⃣ 原始记录：完整保留说的每句话<br>2️⃣ 场景要点：提炼每个知识点的核心<br>3️⃣ 整体画像：为你量身定制的能力评估<br><br>📌 开源地址，老师、家长、还有学生们赶紧码住：<br><br><a href="https://github.com/HKUDS/DeepTutor" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/DeepTutor</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119615466457239552/img/9m8AHgDawBJvu_Ax.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/12d4aec6649aa1e7fde3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">前端哥Liam <span style="font-size:12px;color:#999999;font-weight:400;">@jinglian</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我靠！做 AI 教育创业的朋友，真的要捏把汗了！<br>昨天分享了清华狂揽 4.2 万 Star 的 OpenMAIC，今天又来一个更猛的王炸。<br><br>🔥 「香港大学数据智能实验室」开源了全能 AI 私教：DeepTutor。<br>目前 GitHub 已经突破 5 万+ Star！<br><br>它的初衷是做陪伴学生长期学习的 AI 伙伴，实现教育的「千人千面」。<br>意外的是，除了大学生，它正疯狂涌入 K12 家庭！<br><br>让 AI 代替家长全自动辅导作业，不仅解放双手，连亲子关系都跟着改善了<br><br>👇 它凭什么这么火？<br><br>你可以把课本、讲义、私人笔记全部丢给它，它会完全围绕你的专属资料上课。<br><br>🔹 讲题辅导<br>🔹 出测试卷<br>🔹 做深度研究<br>🔹 画可视化图表<br><br>所有操作，全在一个沉浸式工作区里一站式搞定！<br><br>⚡ 最狠的杀手锏：它有「长期记忆」<br><br>不管怎么新建窗口，学习进度和历史错题都能无缝接上！更硬核的是它一目了然的【三层记忆结构】：<br><br>1️⃣ 原始记录：完整保留说的每句话<br>2️⃣ 场景要点：提炼每个知识点的核心<br>3️⃣ 整体画像：为你量身定制的能力评估<br><br>所有记忆都能随时打开查看，还能手动修改调优。<br><br>📌 开源地址，老师、家长、还有学生们赶紧码住：<br><br><a href="https://github.com/HKUDS/DeepTutor" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/DeepTutor</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116394263630188544/img/TR7-aB9skfsRUfAE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/127e5f5eddf5b29b2652.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -106,7 +106,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @berryxia · 2026-11-09 08:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">尼玛，只有大佬敢这么说啊！<br><br>Karpathy 嫌 YouTube 推荐太烂，用 Claude 读完 Hacker News 20 年的 4300 万条评论，自己做了一个只放硬核视频的 YouTube<br><br>最爽的是，这东西现在谁都能直接用，不用登录。<br><br>第一个叫 HackerTube，11 月 1 日发的。<br><br>他让 Claude 把 Hacker News 20 年里的 4300 万条评论过一遍，筛出被大家反复推荐的视频，最后留下 6454 个。<br><br>用的是 Opus 5.5，前后大概 2 小时。<br><br>他自己的评价是：观看体验「明显更好」。<br><br>几个细节很有意思：<br><br>不用登录，你的浏览记录只存在自己的浏览器里；<br><br>缩略图换成了视频中间的一帧，不用那种被 A/B 测试反复优化过的标题党封面；<br><br>底层的评论分析数据打包成了一个 zip，他的原话是：把你的 Claude 指过去，让它做一个你自己的版本。<br><br>这条帖子拿了 530 万浏览、4.3 万收藏。<br><br>第二个是这个周末刚发的，叫 TristanTube。<br><br>起因是 Tristan Hume 这周发了一份自己的 YouTube 频道榜单，Karpathy 看了觉得太好了，顺手把它做成了一个网站。<br><br>4.7 万个「超级极客」的视频，还加了一个 TV 模式，适合躺着看。<br><br>用 Claude Code，3 分钟，一次做成。<br><br>很多人以为 vibe coding 只能做做玩具。<br><br>但你仔细看这两个东西，它们解决的是一个真问题：推荐算法替你决定看什么，而你其实可以自己定规则。<br><br>以前做这种事，光是爬数据、清洗、写推荐逻辑、搭网站，就够折腾好一阵。<br><br>现在一个人，一个周末，一个 Claude。<br><br>我已经把三个链接放在一楼，建议直接收藏，周末拿来替代刷短视频。<br><br>你最想把哪个平台的推荐也这么「重做」一遍？<br><br>（信源：@karpathy 11 月 1 日、11 月 7 日的两条帖子）</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWnG70gasAA_n1E.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/324263bbb5ca1b082cb5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -124,7 +124,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-08 17:52</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">喜欢炒股的兄弟，这个真心建议装一个，在 GitHub 上已经快 7 万星了。<br><br>一套用 AI 大模型做的自选股分析系统，A 股、港股、美股都能用，日股、韩股、台股也支持。<br><br>每天自动跑一遍，把决策看板推到你的飞书、Telegram 或者邮箱。<br><br>它能帮你做什么👇<br><br>→ 分析市场走势<br><br>→ 整理重要资讯<br><br>→ 跟踪个股表现<br><br>→ 自动生成投资分析报告<br><br>MIT 开源，用 GitHub Actions 定时跑，不用自己掏钱租服务器。<br><br><a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ZhuLinsen/daily_stock_analysis</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWmBeFwaAAAVX6Z.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b048b465affc7cd3f26a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -133,7 +133,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-11-09 11:03</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做 Agent 界面总缺一个好玩的状态指示，这个电视头组件用 2D canvas 画了张点阵脸。<br><br>思考、说话、报错或者睡觉都有对应的动画状态，没有任何花里胡哨的运行时依赖。<br><br>GitHub：<a href="https://github.com/fayazara/robot-heads" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/fayazara/robot-heads</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWptVKga4AE1MEV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b57c7e799f91af58fdd0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

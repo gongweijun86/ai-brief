@@ -72,7 +72,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Meet Scout 1.0, our first AI model built for investigating production incidents. <br><br>Scout matches frontier-model investigation quality at a fraction of the cost, which makes it practical to investigate more issues, earlier.<br><br>We trained Scout on realistic simulations built from real-world incidents and production telemetry, using reinforcement learning to reward accurate root causes backed by evidence.<br><br>Learn more and sign up for the preview: <a href="https://bit.ly/3TJknGO" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/3TJknGO</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110750876235190272/img/PgTaFQrayRWWDWaq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f0d047648936a0bc0ccf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -102,7 +102,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ScarletKc · 2026-10-17 04:17</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 发了一篇很好玩的文章。NIST P-256 这些椭圆曲线的 seed 到底是怎么来的，密码学圈猜了二十多年，结果 Claude 不到半小时就算出来了。答案是用 Unix 时间戳初始化 C 库自带的随机数生成器跑出来的。更好玩的是它算出来之后的第一反应，居然是怀疑自己是不是在测试环境里。<br><br>2000 年 NIST 把这几条曲线写进 ECDSA 标准，曲线的系数由一个 seed 哈希得到，而 seed 是 NSA 给的，没有任何说明。所以一直有人怀疑里面藏了后门，Filippo Valsorda 还专门挂了悬赏。唯一的线索来自 NSA 的 Jerry Solinas，他说 seed 好像是一句玩笑话的哈希，类似 Give Bob and Jerry a raise，但细节他自己也记不清了。他 2023 年去世之后，这事基本就没人能问了。<br><br>Anthropic 有好几个员工照着这条线索找过，都没找到，因为线索本身就是错的。这次有人直接问内部的研究模型能不能查出来，也没提这条线索。Claude 换了个思路，去猜 90 年代生成曲线的程序是怎么写的，判断它大概用了当时 C 库自带的 PRNG。这种老 PRNG 很弱，输出能被认出来。<br><br>它先注意到 4 个 binary 曲线的 seed 按 32 位切开后，每一段的最高位都是 0。这正是 lrand48 的特征。lrand48 每次只输出 48 位内部状态里的高 31 位，所以最高位永远是 0。剩下 17 位直接暴力枚举，内部状态就恢复出来了。prime 曲线的 seed 每次只取 lrand48 输出的一个字节，能看到的位更少，就当成格问题用 LLL 解出来。<br><br>lrand48 往回推跟往前推一样容易。Claude 把状态一路倒推回 srand48 刚初始化时的样子。NIST 和 ANSI X9.62 里一共 10 个 prime 曲线 seed，初始值全是 1997 年 5 月到 1998 年 4 月之间的 Unix 时间戳。比如 P-256，就是从 1997-08-16 01:52:34（UTC）开始跑，取的第 1842 个候选。<br><br>4 条 binary 曲线更好笑，倒推出来的时间是 1984 年 2 月。把时间戳乘以 2，就变成 1998 年 4 月 17 日，刚好在 P-224 那次运行的两周后。所以当年的程序很可能是先把时间除以 2，再拿去当种子。<br><br>我觉得最有意思的是 Claude 接下来的思考。它先是很激动，觉得自己解开了一个 25 年的悬案，然后马上停下来怀疑，自己是不是在某种模拟或测试环境里。<br><br>于是它开始找证据。算出来的 seed 跟它记忆里的真实值对得上，在它的知识里这个悬赏一直没人解开。而且 20 个最高位全是 0 这种事，碰巧发生的概率大概百万分之一。到这里它才确认这是真实世界，说了句哇，这是真的发现。<br><br>然后它又怀疑了一次，这么明显的东西 25 年都没人发现，是不是有点可疑？最后还是靠直接计算说服了自己。一个 32 位的时间戳加一个很小的序号，就能完整算出 160 位的 seed。10 条曲线全部对上，不可能是巧合。<br><br>这件事对 ECDSA 的安全性没有影响，反而让后门的说法可信度低了很多。seed 就是普通随机数生成器拿时钟初始化跑出来的，现在谁都能复现，能动手脚的空间很小。悬赏的 36864 美元会捐给 Let’s Encrypt 背后的 ISRG。<br><br>原文还附了能直接复现所有 seed 的 Python 代码，感兴趣可以自己跑一下</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUxztj4boAAnW5l.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/34f987b8315dd2519f52.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -123,7 +123,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Muse Spark Open -- weights releasing today -- runs great on new Mac Studios thanks to work with @johnternus and Apple. </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUr9XldXIAAPeX3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/01d65eaaba6b2896cb5f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -141,7 +141,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-16 12:04</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 前首席科学家 Ilya Sutskever 曾给传奇程序员 John Carmack 开过一份神秘书单。<br><br>Ilya 说：“如果你真正吃透这 30 篇论文，你就掌握了如今 AI 领域 90% 的精髓。”<br><br>但纯啃英文 PDF 和数学公式太反人类了。最近有位硬核小哥用 30 天时间，把这 30 篇神作全部手搓复现成了极简 Python 代码，并完整开源！<br><br>想从底层彻底看懂现代 AI？这个宝藏项目建议先马后看 🧵👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUrgQYmasAA_u3K.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/eb3c46482bf485f8d683.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

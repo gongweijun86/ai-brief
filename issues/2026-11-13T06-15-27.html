@@ -62,7 +62,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-13 12:09</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">炸裂！！OpenAI 的联合创始人 Karpathy 在Github 开源了6个项目，总计超30万颗星！<br><br>这位创始人把从训练 GPT、到让模型自己做研究的一整套材料，都开源在了 GitHub 上⬇️：<br><br>1. autoresearch · 近 10 万星<br>能自己连夜跑实验，只把有用的结果留下<br><a href="https://github.com/karpathy/autoresearch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/karpathy/autoresearch</a><br><br>2. nanoGPT · 6.5 万星<br>从零开始训练一个自己的 GPT，很多人入门都是看这个仓库<br><a href="https://github.com/karpathy/nanoGPT" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/karpathy/nanoGPT</a><br><br>3. nanochat · 6.0 万星<br>仓库简介里写的是，大约 100 美元就能自己搭一个 ChatGPT<br><a href="https://github.com/karpathy/nanochat" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/karpathy/nanochat</a><br><br>4. llm wiki · 约 5,800 星<br>一份一页纸的想法，讲怎么让模型维护一份持续更新的个人知识库<br><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a><br><br>5. llm.c · 3.1 万星<br>用 C 来训练语言模型，过程都摊开写<br><a href="https://github.com/karpathy/llm.c" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/karpathy/llm.c</a><br><br>6. micrograd · 1.9 万星<br>几百行代码把神经网络怎么学习讲清楚<br><a href="https://github.com/karpathy/micrograd" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/karpathy/micrograd</a><br><br>想上手的话，建议先从 micrograd 看起，啃上几天，这类模型里头是怎么转起来的，心里大概就有数了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121093132871958528/img/Q09za1aNigriNZ1U.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1c35543c620f87dc8fcb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -71,7 +71,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-13 11:33</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">训练一个大模型可能需要持续数月，几乎没有从头再跑一次的机会。这样的任务，Agent 还能实现递归自我改进（RSI）吗？<br><br>SII-GAIR 与 Xinxu AI 最近的论文《No Second Run》，尝试把 RSI 引入大模型预训练，并训练出了 801-30B-A3B。<br><br>核心思路是把昂贵的预训练过程拆成多个可验证的小闭环。<br><br>Agent 可以定位训练故障、评估数据和训练策略，并通过 Context Infrastructure 共享训练指标、代码变更和失败经验，让整个系统能够持续积累知识、改进流程。<br><br>作者报告，团队在三个月内完成了 11.8T Tokens 的预训练。在相同的 1T Token 预算下，22 项 Benchmark 平均分从 47.78 提升到 56.83。不过，这些收益来自多项联合改进，无法单独归因于 Agent。<br><br>这个工作对 RSI 和 Harness Engineering 还是很有启发。<br><br>当任务昂贵到无法反复重来，局部可验证的实验、长期积累的经验，以及跨任务共享的 Context，可能就是实现持续自我改进的关键。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.10719" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.10719</a><br><br>💻 GitHub: <a href="https://github.com/GAIR-NLP/801-30B" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/GAIR-NLP/801-30B</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-CZJXXUAA3Gek.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/087da8eb8d60f5d93e7f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -98,7 +98,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-13 12:29</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek Harness 的架构，值得关注的不只是「能调用工具」，而是把模型的判断和工具的执行拆开了。<br><br>模型负责生成内容、提出调用；Harness 负责组织上下文、执行工具、留下记录。<br><br>我把它的核心理念整理成了一张图：<br><br>一切皆插件：模型、工具、会话、循环、沙箱，都可以替换和扩展。<br><br>执行有记录：请求、上下文、模型、工具串成循环，会话日志只追加，方便回看和回放。<br><br>操作有边界：审批和沙箱约束执行范围，但不代表绝对安全。<br><br>还有一点别忽略：界面在本机，不等于数据不出本机。 使用在线模型时，相应内容仍会发往模型服务。<br><br>理解这套分工，再看 AI 怎么从「回答问题」走向「动手做事」，就清楚多了。👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8IX-IbgAE8JPj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a52f34313a2feb4eabb5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">蓝哥AI <span style="font-size:12px;color:#999999;font-weight:400;">@0xlangeai</span></p>
@@ -121,7 +121,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-13 12:04</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给 Claude Code 做了个定时运行任务的小插件 sched。<br><br>它参考 Pi 上的 pi-schedule-prompt 插件设计，通过斜杠命令 /sched add 添加定时任务，时间格式有 Haiku 帮忙转换，不用自己手写 Cron 指令。 <br><br>比如：<br><br> /sched add 每天早上 9 点 帮我看昨天的报错日志<br><br>到点它自动把 prompt 发给 Claude 去干活。<br><br>几个我觉得不错的特性：<br><br> ✅ 关掉重开，任务还在<br> ✅ 错过的时间，下次打开补跑一次<br> ✅ 一次性任务也行：“明天下午 3 点 提醒我发版”<br><br>详情请看：<br><a href="https://github.com/yibie/claude-sched" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yibie/claude-sched</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-gT9fboAEZV0z.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/17b028fe9f3d4705dc16.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -130,7 +130,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-13 12:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">出门只带了 MacBook，想和朋友打两局《守望先锋》，还得先折腾一套运行环境，光准备就能劝退不少人。<br><br>Recall 是一个专门让 Apple Silicon Mac 玩《守望先锋》的开源应用，打开后自动准备环境，登录战网、装好游戏就能开玩。<br><br>游戏直接在 Mac 本机运行，不用装 Windows，也不用买 CrossOver。能装到外置 SSD 上，外接显示器和超宽屏也支持。<br><br>GitHub：<a href="https://github.com/AsherJN/recall" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/AsherJN/recall</a><br><br>作者拿 M1 Pro、16 GB 的 MacBook Pro 在同一自定义对局里对比，平均帧率从 CrossOver 的 58.4 提到 99.6。<br><br>鼠标输入也单独做了处理，配合 8000 Hz 鼠标，每秒能把最多 8000 次更新传给游戏，首次使用时需要允许输入监控。<br><br>安装包经过苹果公证，支持 M1 及以后的 Mac。只围着一款游戏把安装和操作手感做细，这种小而专的方向我挺喜欢。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2121090688741974017/pu/img/eNyizi6fHPyGUGmZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4f9b64aee8b35a2f10ee.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -144,7 +144,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">AYi <span style="font-size:12px;color:#999999;font-weight:400;">@AYi_AInotes</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">全盘开源！！我用腾讯 WorkBuddy 跑通了一套港美股 AI 投研工作流：复查持仓、拆解财报、死磕数据幻觉，附 4 步提示词，建议直接照着抄。<br>只要你平时看财报、管持仓，<br>以后做投研复盘可以直接拿这套人机协作当AI投研sop工作流：核心逻辑不是去让 AI 算命猜明天涨跌，而是把它当成冷酷的审计员，把每一笔数字背后的证据链彻底查清。<br>可能算过这笔账大家才知道这套体系有多重要：<br>平时看财报最怕的从来不是看错大趋势，<br>而是 AI 瞎编一个假数据，<br>或者把公司第二年重列的会计口径混着算，<br>你几万甚至几十万的实盘决策就当场踩雷；<br><br>而这套工作流把所有暗坑全部照亮，<br>亏了钱也能清清楚楚复盘！<br>我一直觉得AI 在投研里真正该干的就是最费人工的脏活累活。<br><br>我把它总结为给数字查户口，<br>每一笔数据都必须过三关：<br>→ 哪来的：出自年报哪一节，点开必须能追溯到原文<br><br>→ 跟谁比：跨期会计口径一不一样，能不能直接相减<br><br>→ 谁说的：是已经核实的事实，还是管理层自己的解释 户口查不清的数字，一个都不准进决策结论。<br><br>视频里是完整录屏（演示全部使用匿名合成数据），<br>整套实测分为极度干净的四步：<br><br>做持仓看板，没给成本坚决不瞎猜 丢入原始持仓和价格快照，按币种折算港币权重。遇到未录入成本的头寸，老老实实标出成本缺失，杜绝模型幻觉插值。<br><br>集中度动态风控 补录买入记录后自动重新折算市值。<br><br>单只持仓因加仓被稀释到 29.18% 时，<br>集中度预警自动撤销，调仓前后一目了然。<br><br>排查年报重列的口径陷阱 拆解业务分部增长，<br>遇到公司跨期重列口径时，<br>数字精准锚定在原始年报章节，<br>点开就能看到重列附注，避免假增量误导。<br><br>终极追问，三栏物理隔离 遇到应收账款异动，<br>强制要求它分三栏拆解：<br>已验证事实、公司自己的解释、还需人工核实的判断，把管理层画饼与客观事实彻底隔绝。<br><br>最后想跟大家说，投研工具从来不是水晶球，比亏钱更可怕的是没有按照自己的体系去亏，共勉！<br>4 步提示词原文与体验指引整理在评论区了，老规矩大家自取👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121075323777216512/img/YFBlU0gWpw_xRx2i.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4a7307601884a76a24cc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -160,7 +160,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">What if vehicles could offload large data files over Wi-Fi at refueling stops, saving cellular capacity for time-sensitive traffic? Our new PoC tested this approach in Japan, transferring up to 2.1 GB in a two-minute stop. See the results: <a href="https://bit.ly/4izA8cS" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4izA8cS</a> </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW639rMWoAA0e1d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/31693e628c5540c30777.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

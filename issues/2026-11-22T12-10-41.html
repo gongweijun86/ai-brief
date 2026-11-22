@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tyay2015 · 2026-11-21 10:41</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，OpenAI 联合创始人 Andrej Karpathy 刚刚直接把屏幕分享出来，毫无保留地演示了自己每天是怎么跟大模型打交道的。<br><br>整整 70 分钟，没有花里胡哨的 PPT，也没有空洞的理论吹水，全是最顶级的 1% 玩家在真实工作流里和大模型死磕的实操现场。<br><br>他拆解出来的核心链路极其克制，就四步：提示词（Prompts）→ 上下文（Context）→ 工具（Tools）→ 工作流（Workflows）——这就是头部玩家每天的真实样子。<br><br>说实话，绝大多数人用 AI 之所以卡壳，根本不是模型不够强，而是自己把事情想得太复杂了。Karpathy 的做法其实特别干净利落：挑对模型、喂准上下文、剩下的交给工具去跑。<br><br>谁都能打开 ChatGPT 敲几行字聊天，但真正能像这位 OpenAI 联合创始人那样把大模型拧出生产力的，在全网都凤毛麟角。<br><br>这一套实操的含金量，恐怕比市面上那些卖两千美金的所谓“AI 进阶课”还要实在得多。<br><br>这就好比同样是一把削铁如泥的宝刀，普通人拿在手里只会比划着削铅笔，还嫌刀刃太重；真正的高手却只挑最顺手的角度、递上最对路的材料，借着刀锋的惯性一气呵成。<br><br>今天先赶紧把这条视频码住看完，再顺着下面的指南去搞明白，怎么用 Harness、Loops 和 Graphs 把这套日常打法，进一步升级成能自己跑起来的智能体系统。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123785023748722688/img/oVVerGIbUNLWVSBS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/13d45279b27377d9e48f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chasen_liao · 2026-11-22 12:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">为了方便大家理解 Pi，我用 Gemini 4 Neon 做了一个交互式可视化网页，把这些设计拆开讲：<br><br>① read、bash、edit、write，4 个工具怎么撑起一个 Agent<br>② MCP 工具还没开始用，为什么就可能占掉一大块上下文<br>③ 为什么 Pi 不把 Plan Mode、子代理和权限弹窗全塞进内核<br>④ 哪些能力该内置，哪些交给扩展<br><br>不只是看文字，可以跟着图解一步步看状态怎么变化<br><br>最近想学 Pi，或者想搞懂 Agent Harness 怎么设计的，可以打开玩玩👇 <br><a href="https://pi-visualizer-lemon.vercel.app/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://pi-visualizer-lemon.vercel.app/</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124351290855874560/img/gDkwk-2Tm1nOT31W.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8ef0ceb407b01c953d1e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -105,7 +105,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangruiteng · 2026-11-21 20:51</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">正式向大家汇报一下 LoopX 从 1.x 到 v2.4 的大版本跨越——自 1.0 以来全仓走过 4,100+ 个合入 PR，10 月切入 2.0 架构后一直埋头打磨没正式官宣。今天借社区 @lemomo_ai 做的这支 3D 无穷轨道短片，把从 1.x 到 2.4 的三件核心进化一起交个卷：<br><br>1. 从 1.x 自由脚本/笔记到 2.0 结构化通用任务语义：不再靠易漂移的 Markdown 或纯机械队列硬撑，抽象出领域无关的 Goal / Acceptance / Todo / Claim &amp; Lease / Gate / Evidence 状态协议，落进 TypeScript + SQLite / 自托管 PostgreSQL 原子事务底座（含默认拒绝 ACL），跨 Codex、Claude Code、Gemini、DeepSeek 中立混编。<br><br>2. 同周期 3.0% 首读差分与 18h 真长程标尺：把同压缩周期续跑的首读上下文压到原包 3.0%（失配自动回退完整快照）；针对 10h 后模型爱改局部测试“刷分”的通病，引入同父反事实标尺（Yardstick）与证据驱动步幅（Stride v2），在 LHTB（46 题 +17.3%）和 EdgeBench 18h（ANN 7,159 QPS 等）跑出扎实对照，并在 HuggingFace 开源了 68 个检查点。<br><br>3. 走向 v2.4 与 22 位社区开发者共创：我现在家里一台 Mac 常驻挂着十来个 7×24h agent（主控轨迹刚过 11.15 GB / 3,598 turns），配合社区近期共建的一句话建 Goal、LooChat 多 CLI 工作台与飞书管家门禁，出门手机点一下就能放行。日常英文进展与每周「开源场景 Loop」也会同步更在官号 @LoopXAgent 👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124123523669262336/img/V7LRC6tvFX7M23AL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9f926f835fcb843a7932.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -114,7 +114,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zwasd5123jason · 2026-11-22 15:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">這段 12 秒的影片，是我在自己電腦上用本地模型生成的，有畫面也有聲音，沒用任何雲端服務。先講清楚：這是 AI 生成，不是真人。<br><br>【設備跟模型】<br>・顯卡：RTX 4060 Ti 16GB，一張消費級的卡<br>・ComfyUI 跑 MiniMax H3 影片模型的 int8 量化版，加一個 8 步加速 LoRA<br>・文字編碼器：Qwen3-VL 32B（Q4 GGUF）<br>・純文字生成，沒給參考圖；畫面跟環境音一起生出來<br><br>【過程】<br>11/21 下午 16:33 到 18:42，大約兩小時跑了 9 版。<br>第 1 版只有 2.3 秒、832×512；最後一版拉到 12 秒、1056×608、24fps。<br>長度一路往上加：2.3 → 3 → 4.5 → 6.6 → 8 → 10 → 12 秒，每次確認畫面沒崩才再加長。<br><br>【還不夠的地方】<br>解析度只有 1056×608，離 1080p 還遠。一版到底要跑多久我還沒精確計時，下一輪會記下來。<br><br>衣服上的 Calvin Klein 是我提示詞自己寫的，跟品牌無關，不是業配。<br><br>#AI影片 #ComfyUI <br>想看我下一支生成什麼？留言許願，我挑幾個下一輪試，結果一樣貼上來（18+ 不做）。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124397625281847296/img/uX1iEbhEq52-LzKw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9c1345cba6c50f89bb18.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

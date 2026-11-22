@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-05 09:19</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这真的是一座金矿！<br><br>Anthropic 刚分享了一个 Claude Code 的超好用技巧。<br><br>思路很简单：同时跑 Sonnet、Haiku 5.5 和 Opus 5.5，每个模型只干自己最擅长的活。<br><br>效果更好，token 也省很多，因为每个任务都交给了最合适的模型。<br><br>启动 Claude Code 时这样写就行：<br><br>claude --model sonnet --advisor opus<br><br>分工是这样的：<br><br>→ Sonnet 5.5 负责主会话，写代码、改 bug<br><br>→ Haiku 5.5 并行扫整个代码库，负责搜索、grep 和检查改动<br><br>→ Opus 5.5 当顾问，只在关键决策时出手，最后审核改动<br><br>→ 不需要 Opus 的活，就不再浪费它的上下文<br><br>Opus 只在三个时候介入：<br><br>- 计划敲定之前<br><br>- 同一个错误出现第二次的时候<br><br>- 宣布完成之前<br><br>Sonnet 负责写，Haiku 负责查，Opus 负责审。<br><br>JEV 工程也是同样的思路，只是再往下一层：不需要动脑的小选择，比如用哪个文件、哪个工具、重试还是停止，交给 JEV 毫秒级处理，大模型只处理真正需要判断的问题。<br><br>完整结构：<br><br>&gt; Sonnet 5.5 跑主会话，统筹整个任务<br><br>&gt; search 用 Haiku 5.5 梳理代码库，只读不改<br><br>&gt; grep 用 Haiku 5.5 查找调用位置，单独占一个上下文<br><br>&gt; audit 用 Haiku 5.5 在临时工作区检查改动<br><br>&gt; Opus 5.5 当顾问，在最终确认前审核汇总后的改动<br><br>&gt; JEV 毫秒级处理小分支选择<br><br>把这个结构和下面这段提示词一起贴进 Claude Code：<br><br>&quot;按这个结构重新配置我的 Claude Code：<br>1. 主会话用 Sonnet 5.5，Opus 5.5 当顾问。<br>2. 在 .claude/agents 里建三个 Haiku 5.5 子代理：search（梳理代码库）、grep（查找调用位置）、audit（检查改动）。<br>3. 给 audit 设置 worktree 隔离，让它的检查不碰我的工作分支。<br>4. 在 CLAUDE.md 里加一条规则：所有代码库搜索和测试都交给 Haiku 5.5 子代理，让主上下文保持精简。<br>5. 快速、确定性的小选择（选工具、选路径、重试）交给 JEV 处理。<br>所有改动先用 diff 给我看，我说开始之前不要动任何文件。&quot;<br><br>官方文档：<a href="http://code.claude.com/docs/en/sub-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://code.claude.com/docs/en/sub-agents</a><br><br>建议先收藏，迟早用得上。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118151134535921664/img/bIQcneFH1mJD2iTf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/39addc81e750d7318b36.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -81,7 +81,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.<br><br>The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.<br><br>GPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.<br><br><a href="https://openai.com/index/introducing-gpt-6-cyber/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/introducing-gpt-6-cyber/</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118387217588465664/img/N2grMUmP0O_EMvS2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ad2c6aaf370ece2690d8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -90,7 +90,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChrisSlacker · 2026-11-05 12:47</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用户通过 Claude Code 在一个广州买的杂牌充电宝里发现了隐藏芯片。<br><br>每次给 iPhone 充电，它都在偷偷复制整部手机的数据。还会读取 Wi-Fi 密码，连接家庭网络，把所有信息发送到远程服务器。<br><br>这个充电宝 3 周前在机场花 19 美元买的，30000 mAh 标注，沉甸甸的没牌子。<br><br>首次插入时屏幕问'信任此计算机'，用户没想就点了信任，结果一键给了它读取所有数据的权限。<br><br>今早设置 Claude Code 监测文件读取，充电 10 秒后屏幕就闪黄红警告——数据在传输。<br><br>充电宝被识别为自带 64 GB 存储和网络连接的小电脑。<br><br>普通充电线只用电源线，这个同时用电源线和数据线，已复制：<br><br>→ 设备信息、1206 个通讯录号码<br>→ 全部应用含 2 个银行 app<br>→ 3912 张照片含护照<br>→ Wi-Fi 名称和密钥<br>→ 妻子 iPhone 照片<br><br>每次充电就用密钥上网发送新数据，3 周上传 19 次，最后一次昨晚 2:14 发送。<br><br>用户立即拔线，通过 Claude Code 阻止那个 IP，改了 Wi-Fi 密码和银行 app 登录信息。<br><br>维修店拆开看了，详见下文。建议今天检查家里每个充电宝。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2118203408574476288/pu/img/tDLFIJlf04nmHtfO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0192825d775710e084b7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -111,7 +111,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I reverse engineered tiktok </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWNoDTMbcAA-jGj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8e88d30ea31a01c2390e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -127,7 +127,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Connecting models to business knowledge makes AI more useful.<br><br>At BoxWorks, @nvidia's @JensenHuang explains why context matters. Box Context Retrieval will use Nemotron open models to retrieve relevant information while respecting users’ permissions. </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118472043876503553/img/-UFqam6oHT2AHJlH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/eec96fd9b5101664891d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Aaron Levie <span style="font-size:12px;color:#999999;font-weight:400;">@levie</span></p>

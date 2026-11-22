@@ -71,7 +71,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-16 10:22</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">特斯拉新 Roadster 发布：靠压缩空气喷气在空中翻正落地，马斯克说 2028 年投产，售价未公布<br><br>10 月 15 日晚，特斯拉在得州 SpaceX 的 McGregor 试验场直播发布了第二代 Roadster 跑车。这辆车 2017 年就亮过相，当时说 2020 年交付，之后一推再推，拖了将近九年。<br><br>演示里，车开上一段弯曲的大坡道，倒挂着往上跑，然后从坡道尽头冲出去，在空中把车身转回正面，四个轮子落地。之后它又从一排特斯拉车（包括 Semi 电动卡车）上方翻跳过去。马斯克在现场说：“飞行汽车是真的。”<br><br>它靠的是冷气推进器。原理跟吹满的气球一松手就乱窜差不多：碳纤维高压罐里存着压缩空气，从喷口猛地放出去就产生推力，不烧燃料，也没有火焰。特斯拉说推进器的推力是轮胎抓地力上限的四五倍，所以它起步能比只靠轮子快得多。倒挂不掉下来靠的是另一套系统：风扇把车底的空气往外抽，把车吸在坡面上。<br><br>所以这里的“飞”只是几秒钟的喷气跳跃，气放完就没了，离能载人飞一段路的飞行汽车还远。据科技媒体 Glitchwire 报道，演示车把后排座位换成了一个装 260 公斤压缩空气的高压罐，车身四周有 10 个喷口；The Information 此前报道，因为推力和噪音太大，演示车是远程遥控的。这几点特斯拉官方没有确认。<br><br>翻跟头的是最激进的 Rocket 版：单座，只接受邀请购买，不能上公路。零到 60 英里/小时（约 97 公里/小时）加速不到 0.59 秒，极速超过 370 公里/小时。<br><br>普通人能订的是另外两个双座版本。Performance 版没有推进器，靠主动空气动力学和风扇吸地增加抓地力，加速不到 1.6 秒，订金 5 万美元。Thrust 版在车尾加了推进器，加速不到 0.9 秒，限量发售，订金 25 万美元。三个版本续航都超过 480 公里。<br><br>特斯拉没公布售价，订金不等于车价，2017 年说的起步价是 20 万美元。Performance 版的 5 万美元订金分两次付：先付 5000 美元（特斯拉说可全额退），10 天内再补 4.5 万美元，否则订单取消。<br><br>投产时间是马斯克在现场说的 2028 年，特斯拉官方帖子里没有写日期。这辆车的交付时间此前已从 2020 年先后推到 2021、2022、2025 和 2027 年。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110913252045545472/img/PHzfDPCgX86XBiSv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e41b8a3ac621ac3695bd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -80,7 +80,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-15 21:24</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近把技术开发基本都挪到 Grok Bot 上了，分享一下现在的工作流：<br><br>1 一个产品一个 bot  每个项目各有专属 bot，记自己的 repo 测试规则和上下文，不搞写作 设计 review  测试拆一堆<br><br>2 写代码不用 Cursor cloud agent，慢没必要，直接在 bot 电脑上跑 Cursor CLI，我是老的 plan，bot 和 grok model 和 other models 是分开算的，还有 Codex CLI 作为辅助。<br><br>3 按任务换模型，安装到了全局 skill 当中<br><br>代码：<br>规划大任务用 Opus 5.5 <br>写具体实现用 Grok 4.7<br>review 用 Sol 6.1<br><br>文案/文档：<br>用 Gemini 3.8<br><br>设计：<br>定首页方向大设计用 Opus 5.5<br>日常改设计用 Sonnet 5.5<br>设计落代码再回 Grok<br>产品更新视频用 Opus 5.5<br><br>这样按照 Cursor 三种不同的额度可以比较平均的分配<br><br>4 Bot 负责协调拆任务 盯 CLI 看 diff、跑项目测试（TinyShip 现在每次改完都跑全量的 E2E + smoke），最后给我总结。代码基本不看了，靠其他模型 review，大改动我会用 review-forge 选两个模型分别看，验收全靠全量 E2E。<br><br>5 自动化任务包括：<br>   * 扫描 Issue 并且提出方案<br>   * 周计划可以全自动定时跑，现在需求都是 AI 替我想的，保证产品持续迭代，每周至少都会上 2-3 个点，所以最近项目升级都很频繁<br><br>现在感觉整个流程非常舒服，挺喜欢 Grok Bot 的，觉得是现在做的最好的，可惜就是 Linux 主机，做网站最好，对于一些Mac 的原生应用就没法测试了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUrLdyZa8AAzNei.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7932f0e3dd754f983f18.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -89,7 +89,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shenxiankk · 2026-10-15 15:46</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发现个内容处理上的狠角色：Anything → NotebookLM，不说出来我实在憋得慌。<br><br>公众号文章、油管视频、播客音频、PDF、Word、Excel、电子书，什么都往里丢，它直接产出播客文稿、PPT 大纲、思维导图。<br><br>最离谱的是那几百个付费内容源——NYT、FT、经济学人，付费墙在它面前基本等于不存在。全程大白话操作，一行代码都不用碰。<br>🔗 <a href="https://github.com/joeseesun/qiaomu-anything-to-notebooklm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/joeseesun/qiaomu-anything-to-notebooklm</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUl8GLObIAAZEJX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/75d00b3a3b48c903291a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -131,7 +131,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">China’s frontier models already run on China’s own chips.<br><br>“Remember, the GLM-5 paper is almost a year old at this point. They say: ‘From the first day, GLM-5 is full-stack adapted to Chinese GPU ecosystems. We have successfully completed deep optimization, spanning from underlying kernels to upper-level inference frameworks, across seven mainstream domestic chip platforms, including Huawei Ascend, Moore Threads, Hygon, Cambricon, Kunlunxin, MetaX and Enflame.’”<br><br>“It’s not necessarily NVIDIA GPUs and kernels we’re talking about. They’re serving this model, at least they claim, for many months on seven different domestic Chinese accelerators.”<br><br>“People thought it was impossible that it’s served on GPUs by a Chinese lab, because Chinese labs aren’t that GPU rich. But turns out they’re using Chinese hardware. They plumb through everything, the kernels, the systems, while serving those models efficiently.”</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2110747921704435712/pu/img/QpmZ0yEgV6KRdImn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/21cdcaba2f5e012ef1ef.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -152,7 +152,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">CHATGPT'S INTELLIGENT UI IS COOL. BUT IT ONLY WORKS INSIDE CHATGPT.<br><br>Building your own AI app?<br>Until now:<br><br>→ Your agent does the research<br>→ Then dumps a wall of text<br><br>OpenUI 1.0 changes that:<br><br>→ Charts, forms, dashboards<br>→ Inside your own product<br>→ Using your own components<br>→ Works with any model<br>→ Fully open source<br><br>ChatGPT has it. Now every app can 👇🏼</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110753353940783104/img/z5wmp-gg4rs3mFG3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/88ef596be179489798fa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>

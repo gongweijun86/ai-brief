@@ -65,7 +65,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Two Google engineers just shared their setup that lets an agent fix its own harness. <br>It went from solving 5% of tasks to 40% while using 2.5x fewer tokens. Here is how it works.<br><br>The setup starts with a small harness, 142 lines in 4 files. One for memory, one for the turn loop, one for tools, one for checks before the agent stops.<br><br>A second model gets the logs of failed runs and fixes that code.<br><br>Each round goes like this. The model reads the failed runs and looks for errors that keep repeating. It picks one file and writes a small fix. The fix runs on tasks the model never saw. If the score drops or tokens go over the limit, it gets thrown out. If not, it goes into the harness.<br><br>The main insight is to change one file at a time. Rewriting everything at once solved about the same but used almost 10x more tokens and broke more easily.<br><br>After a few rounds, the model had written 4 fixes that stayed in the harness:<br><br>1. Old turns get squeezed into short notes.<br>2. Long terminal output gets cut.<br>3. The agent can't say it's done if it didn't change any code.<br>4. The agent can only stop after the code compiles and the tests pass.<br><br>You can repeat this with any agent. Split your harness into a few small files, save the logs of failed runs, and let a model fix one file at a time, keeping only the fixes that pass on new tasks.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXhGy4VWgAIpJzb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cea6a1ec967068e4647f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Yarchi <span style="font-size:12px;color:#999999;font-weight:400;">@undefinedKi</span></p>
@@ -93,7 +93,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Pi v1.6.0 is out!<br><br>Highlights:<br>- GPT-6.2 Sol is now the default model for the openai, azure, and openai-codex providers; GPT-6.2 Astra is also available on all three<br>- Breaking: extension render() now returns readonly string[], and Container returns its cached array while children are unchanged — in-place modifications must copy first<br>- The find tool's path patterns are now relative to the search directory, like grep's glob; use **/src/*.ts to match at any depth<br><br>Complete details in thread ↓</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXkNB9oWUAEbRQV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0e2e198388db56ea89d5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -130,7 +130,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This Anthropic harness paper is f*cking gold<br><br>Anthropic's Labs team handed Claude one sentence and got a full app back 6 hours later. And the model wasn't the upgrade.<br><br>The upgrade: three agents, and none of them grades its own work.<br><br>prompt → spec → contract → build → QA → fix<br><br>The 6 parts of the harness:<br><br>Part 1 → planner<br><br>1-4 sentences in, a 16-feature spec out.<br>Product level only, no implementation details.<br><br>Part 2 → sprint contract<br><br>Before any code, the generator and the evaluator agree on &quot;done&quot;.<br>In files, back and forth.<br><br>Part 3 → generator<br><br>One feature per sprint.<br>Self-check, then hand off to QA.<br><br>Part 4 → evaluator<br><br>Clicks through the running app with Playwright.<br>Sprint 3 alone had 27 criteria.<br><br>Part 5 → hard thresholds<br><br>Depth, functionality, design, code.<br>One score under the bar → the sprint fails.<br><br>Part 6 → cost<br><br>Solo: 20 min, $9, the game ignored input.<br>Harness: 6 hr, $200, the game was playable.<br><br>An agent that grades itself always passes. A stranger with Playwright doesn't.<br><br>I packed all 6 parts into one prompt. Drop it into Claude Code and it sets the harness up for you.<br><br>3 agents. 1 prompt. 0 self-grading.<br><br>Then read the article below ↓</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123765015589064704/img/UMkUvATK9dB8qXLH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4996c36756099e5b2162.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">rari🈀 <span style="font-size:12px;color:#999999;font-weight:400;">@0xwhrrari</span></p>
@@ -158,7 +158,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🤖 Two updates for your AI workflows: <br><br>→ MCP can now write: create projects, keywords and Brand Radar prompts directly from your chat<br>→ APIv3 Link Intersect (Enterprise): more Brand Radar endpoints, find sites linking to up to 20 competitors but not you </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2122253347461767169/pu/img/ez3zOXzQpvDQpKwL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/424391654edf41f2cef9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -190,7 +190,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We put @claudeai Fable 5.2 to work on some of the hardest reasoning in structured finance, reconciling conflicting collateral records to determine who gets paid.<br><br>Across 18 documents in Box, the model uncovers a missed coverage breach requiring $5 million in senior-debt repayment and reconstructs the payment waterfall with source citations for human review.<br><br>Customers can build custom agents for their own document-heavy financial workflows with Box AI Studio.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120293921557549056/img/4wwWD1-cMRtHlxjZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9645b69821bc74edf2b1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -206,7 +206,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Dreamina Seedance 2.5 in 4K - To the Next Level!<br><br> Now with 10-Bit | Richer depth. Flexible grading.<br>Richer Tones in Every Frame. </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123094821581815810/img/GlFeedI7e8E9dViN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/2edf63eec543eda9bb91.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

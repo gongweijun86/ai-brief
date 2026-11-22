@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aigeeknews · 2026-10-15 19:27</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让类人机器人跑酷<br><br>RSS 2026 的论文用 motion matching 把翻越、跳跃这些人类动态动作串起来，先挑动作再按地形调度，视频和代码都放出来了。<br><br><a href="https://github.com/amazon-far/php_parkour" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/amazon-far/php_parkour</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110644023157575680/img/uyxckXsSPUfQThzu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f07838fe29c445bffc14.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CopperForgeAI · 2026-10-15 13:57</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 官方博客披露了核心团队用 GPT-6 系列维护代码库的一手工程实践。直接公布了几个实际运行的提示词，<br>靠这些提示词在两周内合并了 1400 多个清理 PR，删除超过 800k 行代码，并将一个服务的容器镜像压缩48%。<br><br>第一个提示词用于清理死代码<br><br>  “请帮我找出并清理仓库里的无用代码。你可以随意查看<br>  Slack、Statsig（功能开关平台）或任何需要的来源，用来确认这些代码确实不再被使用、可以被清理或简化。”<br>  这个提示词的关键在于允许 GPT-6 Astra 自主去翻阅 Slack 讨论、Statsig 实验配置甚至生产环境的性能 profiling数据，只有在确认生产环境零调用后才在 PR 中列出删除依据。<br><br>第二个提示词用于清理更棘手的废弃实验与功能开关<br><br>  “/goal 找出整个仓库中所有陈旧、常量化、已废弃或全量上线的 Statsig开关、配置和实验，在不改变生产行为的前提下安全移除。审计所有项目资产，不限于标记为陈旧的对象。通过枚举、常量、包装函数、别名和动态拼<br>  接名称寻找间接引用。核对生产引用的常量，不只给保守清单。结合生产遥测与性能分析评估 CPU 开销，找出昂贵的无用判断。生成 Markdown报告，按归属和文件工作流分组以便并行处理，附带生产取值、证据与 CPU 开销。不要修改线上配置或服务。”<br><br>第三组提示词用于 CI 优化与规则自省<br>  <br>“关于减轻本仓库的 CI 负载你有什么想法？请将想法列成表格，并根据该仓库的历史运行记录，按每天预估节省的 CI 分钟数进行排序。”<br>  <br>面对不稳定测试修复，他们运行：<br>  <br>“/goal 查看所有最近的 CI 运行记录，找出偶发失败的测试并尝试修复，成功则提交PR。你的任务是针对简单问题找到明确修复方案，而不是穷尽修复所有问题。”<br> <br> 针对 agent 上下文规则的自检提示词更精妙：<br> <br> “翻阅我最近的 Codex 会话记录，找出一条误导了 agent 或导致无效工作的 AGENTS.md指令。选出该会话提示词，在相同仓库快照和模型下重放两次：一次保持原指令不变，一次仅移除或修正该指令。对比任务质量、agent<br>  行为、工具调用、token 消耗与成本，展示该指令并说明修改是否有效。”<br><br>强烈建议好好学习和利用这些应用于超大工程实践的提示词</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUplSvwasAArsBk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1f174be45cb57958bef7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -113,7 +113,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Kevin Ma <span style="font-size:12px;color:#999999;font-weight:400;">@kevinma_dev_zh</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我现在也是使用 Claude Code 搭配 Opus 和 Fable 模型自动化去分析和处理产品问题的，主要是 Bug。<br><br>首先，所有错误收集都统一接入了 Sentry，包括移动端、桌面端、服务端、浏览器插件和官网。<br><br>然后给予 Agent 连接 Sentry、PostHog 和 Supabase 的访问权限，让它能够充分获取上下文去分析问题。对了，我使用 monorepo, 所有文档和代码都在一个仓库。<br><br>最后，启动一个 loop 去监控和分析，定期总结经验，并使用 github issue 处理需要我确认的事项。<br><br>这个过程不断迭代，流程和经验沉淀到文档与 skill，最近刚开始跑，还不错，预期会越来越方便。<br><br>提示词可以给大家参考下<br><br>```<br>/loop 盯一下 sentry issues, 仔细分析，看看哪些是值得修复的，必须是确定性分析出来的问题，然后去修复，拿不准的就由 fable agent 去评估，修复完之后也是交给 fable agent 去 review。每个问题的处理启动一个新的 subagent. 每个 issue 的评估都需要创建对应的 github issue, 放问题详情、评估报告、解决方案和验收结果，不确定的问题原因、修复方案的，需要跟我确认的，就特殊标记并通知我，特别是涉及到用户能感知到的交互改动比如文案、按钮、提示等交互层面改动必须由我确认。 确定性已修复的，就标记 sentry issue 为下个版本解决，简单的工具操作的可以让 sonnet 去做. 还有：1. 定时自动沉淀这个工作流的经验到相关的文档，下次启动这个 loop 可以复用; 2. 每个问题处理之后，总结经验，避免以后再次出现这样的问题; 3. 定期查看需要我 review 的 issue，我会在那个上面回复。最后，涉及到交互流程、技术架构变更的，也需要我确认。<br>```</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkILYba8AATtp6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkILYZbQAAIdfO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkcRS-aMAA3Qmn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8dc16bb0009337cbdd06.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/14e28ace14640a37e0f8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/386c494d51e6d20d9838.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -122,7 +122,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-10-15 17:59</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">主打盲测模式的大模型竞技场Arena AI更新了总榜排名，最近两个月来，开源模型再次被甩开，其中排名最高的GLM-5.2，已经滑到了15名，得加把劲儿了呀。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmi3YfbgAEdt2O.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8d94da70e6f6d8c46dc5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -131,7 +131,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grgerwcwetwet · 2026-10-15 19:40</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 狂揽 9.7K Star！有人做了个 AI 新闻雷达，直接帮你从全网挖掘高价值信息！<br><br>1、聚合 X、Telegram、Reddit、GitHub、Hacker News、RSS 等多个信息源。<br><br>2、AI 自动筛选、评分、去重，把真正值得看的内容留下来。<br><br>3、自动生成中英文每日简报，还能补充事件背景和网友讨论。<br><br>GitHub： ⁠<a href="https://github.com/Thysrael/Horizon" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Thysrael/Horizon</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUqz6muboAAf67C.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/140ea7dd232623129f72.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

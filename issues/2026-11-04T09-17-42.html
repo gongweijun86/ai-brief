@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-04 11:12</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek Harness， Github上的代码库一百多万行代码<br>官方说法叫“一切皆插件”，连 Agent 循环都是插件<br>刚听到时我不太理解<br>这两天开始学习它底层那个叫 Cordis 的框架<br>慢慢搞懂了是怎么实现这一切的<br>画了张图，按图从上往下说<br><br>左上角是没有主板的写法<br>自己从零写 Agent，基本都是这么开始的：<br>一个 <a href="http://agent.py" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://agent.py</a> 把循环写死，模型、工具直接 import 进来<br>想加个审批，只能打开循环往里塞 if<br>主流的 Claude Code、Codex也基本是这个做法<br><br>右上角是 Cordis 的思路<br>插件之间谁也不 import 谁，只认一块主板 ctx<br>模型插件把自己挂成 ctx.llm，循环要用模型就按名字去拿<br>背后是 DeepSeek 还是别家，循环根本不关心<br><br>中间那一大块是主板本身<br>左边是一张张插件卡，经过 Loader 挂到 ctx 上<br>装机清单里先写谁后写谁无所谓，插件只说“我要 llm 和 tools”<br>没到齐就等，到齐了自己启动<br>右边绿色的三块值得多看一眼：Agent 接口和 Agent 循环是分开的<br>别的插件只认接口，所以循环能整个换掉<br><br>左边中间那个洋葱，是工具调用要走的路<br>一次调用从外往里穿过审批、日志，最里面才是真正执行<br>每一层都能改参数，也能不往下传，直接拦掉<br>审批就是这么实现的，不用碰循环一行代码<br><br>右边那块讲拔卡和换卡，我觉得是整个设计最精巧的地方<br>拔掉模型时，不是模型先走，而是依赖它的循环先收尾<br>收尾时还能再调一次模型，模型最后才撤，改模型配置也一样</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWP8016bEAEtNCj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/acb78bc8be4223da1810.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Michaelzsguo · 2026-11-04 06:30</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是我做过最长的一个视频，33 分钟。因为这是一篇值得逐字逐句仔细研读的论文。<br><br>很多人羡慕顶级 AI 实验室的高薪岗位，却很少有人真正坐下来，把这些岗位需要的核心技术学会。与其羡慕，不如自己动手学。<br><br>亚马逊这篇 Rufus-Air 论文，把大模型后训练的完整配方公开了出来：同一个底座模型，只是换了一套训练配方，指令遵循得分就从 33.6 提升到了 76.9。<br><br>但最惊艳的不是跑分，而是作者们细致入微、手把手式的分享。数据从哪里来、奖励怎么设计、八个训练阶段为什么这样安排、基础设施踩过哪些坑，全部写了出来。这些正是顶级 AI 实验室后训练团队每天需要做的技术决策，也是平时最少公开的部分。<br><br>我把它做成了一套循序渐进的中文教程，目的只有一个：让你能跟着一步一步学。每一章都配了一个小脚本，在笔记本电脑上就能跑，屏幕上展示的每一个输出都是真实运行出来的。<br><br>只有一张卡、一台机器？完全够用。换一个小模型，从有标准答案的数学题开始，先做难度过滤，再沿着论文的八个阶段一步一步往上走。<br><br>这些技术实践不仅能让你真正掌握大模型后训练的核心技术，也能让你从容应对相关岗位的技术面试。祝你早日找到年薪 $500,000 的工作。<br><br>论文：<a href="https://arxiv.org/abs/2609.29421" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2609.29421</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117718113265311745/img/mOGr3ewz3XWqcJ9a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/16a28fdc6e1f6817be8d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -97,7 +97,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">👋Hy4 is here, new with vision.<br>Firmly among the leading open models.<br>More productive everywhere: finance, frontend, game, officework, research…<br>Built responsibly, with cyber/biosecurity in mind.<br>Try it out and let us know!<br>🔗：<a href="https://hy.tencent.ai/research/hy4?langVersion=en" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hy.tencent.ai/research/hy4?langVersion=en</a> </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWQvvEraQAAjwKn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4f55c9a6286b5831183f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">

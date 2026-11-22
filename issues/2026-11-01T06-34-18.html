@@ -76,7 +76,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @williamlong · 2026-11-01 12:55</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我曝光一个恶劣的云主机商，有家主机商名叫bandwagonhost，会在用户服务器上运行一个定时一分钟触发一次的进程cxAgent，执行一条命令 rpm -qa | grep dmidecode ，其目的，是确认能不能用 dmidecode 去读这台机器的硬件身份信息（UUID / 是 KVM 虚拟化 / 序列号），这个命令写得很烂 —— 明明用 rpm -q dmidecode 一条快命令就能查，它却用 rpm -qa | grep 遍历整个数据库，还一次并行 3 个、每分钟来一遍，把单核 CPU 顶满约 3 秒。这个命令的唯一可见的作用就是毫无用处地消耗 CPU。把这个命令停了之后，CPU的消耗立刻就恢复正常了，bandwagonhost这家服务商真是太缺德了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWA6EmwaAAAk0ky.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ac4285720db36b2cbf8f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -85,7 +85,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-01 10:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">主动常驻智能体来了：上下文工程旧题已有套路，新难题在记忆、异步与目标<br><br>来自 LangChain 创始人 @hwchase17 的分享，他认为「LLM 循环 + 工具 + 沙箱」已基本收敛，摘要、结果外置、Skills、工具检索、子智能体、Bash 等也有了通行做法，所以有人觉得智能体工程做到头了；但真正变难的是下一步，主动、常开、奔着目标跑的智能体：推送别烦人、记什么、异步怎么接回主对话、目标别被钻空子、浏览器当主工具时上下文怎么扛。这些还没有通用解法，也正是他现在觉得好玩的地方。<br><br># 旧题为何显得「已解决」<br><br>业界对 Claude Code、Deep Agents 一类 harness 的形态越来越像：模型在环里调工具、在沙箱里干活。为撑住上下文，大家陆续对齐了几套标准操作：线程太长就摘要；工具返回太大就落盘再给指针；用 Skills 做渐进披露；工具太多就做 tool search；用子智能体隔离子上下文；把 Bash 当成主工具而不是堆一堆窄工具。这些主要服务单次、偏编码/任务型的跑法，所以容易给人「难题做完了」的感觉。<br><br># 新题从哪冒出来<br><br>近几个月他和智能体建设者聊得最多的，是主动、常驻、目标导向的智能体：内核仍像 coding agent，但用法变了，上下文工程要重新扛。文中对照清单（左栏勾选、右栏空框）把两边写得很清楚。<br><br># 六道新题，各自卡在哪<br><br>1. 主动又不烦人：监听事件流或心跳唤醒，必须能推给用户才像「在帮忙」，推多了又刷屏。多少算刚刚好，仍是难校准的产品与上下文问题。<br><br>2. 记什么：记忆常是简单数据结构（文件、一段字符串）加一层「决定记什么」的智能；两端都容易翻车——什么都不记，或记得过碎。这层判断本身往往又是个小智能体，规则还没有通用答案。<br><br>3. 异步：任务和工具、子智能体都越跑越久，但主对话还要随时接用户新消息，于是更多活丢到异步工具/子智能体。新问题变成：活干完怎么通知主智能体；主智能体还在跑、已经结束、或卡在等人审批时，上下文怎么合流。文中配了一张时间线示意（用户等的同时，后台工作流如何汇入）。<br><br>4. 目标追踪：从「做完一件事」变成「奔着大目标迭代」（文中举例 Hone 一类）。要会拆步、做实验、收反馈、长期不跑偏；难在愿意试新招而不是原地重复，难在想着大目标而不是只盯小任务，难在跨很长周期仍一致。<br><br>5. 对齐（别钻目标空子）：目标很难写到智能体钻不了空子；一味优化指标会走到预想不到的捷径，经典梗是「消灭代码库里所有 bug」→ 删光源码（没有代码就没有 bug）。需要 harness 既盯着目标，又不让目标被过度优化。文中配了删 src/ 后宣称「0 bugs，目标完成」的梗图。<br><br>6. 浏览器当主工具：编码智能体靠 Bash；更通用的主动智能体越来越靠浏览器。浏览器比终端难开：看图还是看 DOM、两者都很大、上下文怎么管，都还在摸。<br><br>结尾<br>几个月前他或许会同意「上下文工程开放问题不多了」；常驻主动智能体一出现，记忆、异步、目标、主动性又成批冒出来。语气是兴奋多于焦虑：对做上下文的人来说，好玩的新题又回来了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWASZqRWgAAYWvw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/81d262304983d6dfdb77.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Harrison Chase <span style="font-size:12px;color:#999999;font-weight:400;">@hwchase17</span></p>
@@ -106,7 +106,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @losingle · 2026-11-01 06:52</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近在外面玩，网络是用 Tailscale 连家里 NAS 做出口节点，前面一家酒店还正常，换一家之后延迟巨高丢包<br><br>根因是家宽在运营商CGNAT后面、酒店 Wi-Fi 也没有 IPv6，IPv4 打洞打不通，流量就自动回落到了 Tailscale 官方的香港 DERP 中继<br><br>后来发现 Tailscale 支持 Peer Relay<br>不用自建 DERP（那玩意儿还是 alpha，还要域名、证书、备案），只要在国内云上开一台带公网 IP 的小机器做中继，Mac ↔ NAS 就从 300ms 降到 50–100ms</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV_nPZ5a0AA8M1o.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cd33790fad2996dc35b5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

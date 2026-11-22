@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-06 13:26</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 正在从同步变异步。过去一个 agent 跑在单条 ReAct loop 里：模型调一个工具，死等结果，再决定下一步。工具或子任务一跑就是几分钟，整条 loop 被堵死，你发的新消息只能在后面排队。<br><br>LangChain 这篇文章讲的变化，是把 agent 拆成前后台两层。一个编排者留在前台跟你对话，长任务丢给后台子 agent 跑。Claude Code 默认在后台跑子 agent，OpenAI 和 DeepSeek Harness 也是类似的路由加后台 worker 结构。<br><br>关键区别在调用方式。老式子 agent 像一行 await，不返回就卡住。async 子 agent 像 asyncio.create_task，或者一个没 await 的 Promise：调用立刻返回，活在独立线程跑，结果稍后回来。于是 agent 能同时接的工作量，跟着后台 worker 的数量涨，而不是被一条 loop 的长度限死。<br><br>编排者靠五个工具管住这些后台任务：start_async_task 启动，check_async_task 查状态和结果，update_async_task 发新指令，cancel_async_task 停掉，list_async_tasks 列出全部。<br><br>运行中改任务有两种策略。默认 interrupt 是打断当前运行、带着新指令重启，适合“改用 Postgres”这种纠正。enqueue 是把新指令攒着、等这轮跑完再执行，适合“跑完顺手把测试跑了”这种追加。<br><br>结果怎么回来也分情况。编排者正忙，它会在每次调模型前扫一遍未完成任务，中途把结果捡走。它闲着，子 agent 会唤醒一轮新运行。它正卡在等你审批，审批不动，等你答完结果才到。需要审批的子任务在自己线程里等，不打断前台；在 Slack 的 Managed Deep Agents 里，请求会发回原帖线程。<br><br>怎么用，其实就一个字段。在 Managed Deep Agents 里给子 agent 加 async: True：<br><br>subagents=[<br> {<br>  &quot;name&quot;: &quot;researcher&quot;,<br>  &quot;description&quot;: &quot;Researches a topic in the background.&quot;,<br>  &quot;async&quot;: True,<br> },<br>]<br><br>Python 和 JavaScript 版 Deep Agents 都已支持。每个托管 agent 还会自动得到一个通用子 agent 的 async 副本，运行时自己决定把活放前台还是后台。要注意任务通知还在 beta，API 可能变。<br><br>原文链接在评论区<br>#Agent #LLM #异步架构</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWaxe5ubQAAythF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0e7e8856485180539819.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -78,7 +78,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-06 16:44</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Uber 如何加速 Spark：从查询计算，优化到数据写入<br><br>来自 Uber Engineering 分享的两条 Spark 加速路线：Gluten/Velox 已用于部分生产任务，Quanton 则进一步优化湖仓数据写入。后者在实验室测试中取得约 4.7—5.5 倍的稳态写入加速，但尚不能等同于生产收益。<br><br># 为什么只加速 SQL 不够<br><br>Spark 是大规模数据处理引擎。Uber 仅将数据摄入湖仓，就需要超过 20 万个 CPU 核，因此小幅效率提升也可能带来可观收益。<br><br>问题在于，工作不只是执行 SQL，还包括读取旧数据、合并更新、写文件和维护表结构信息。Uber 约有 1.72 万张表使用 Hudi——一种支持数据湖增量更新的表格式，这些写入和维护环节同样需要优化。<br><br># 两条路线有什么不同<br><br>Gluten/Velox 优化计算执行。 它将 Spark SQL 算子交给原生向量化引擎，一批数据一起处理，减少逐条执行的开销。Uber 报告，已迁移的生产负载运行速度约为原来的 3.5 倍，CPU 成本降至约 1/3.4。落地还涉及缺失功能补齐、兼容性和回退机制，并非直接替换即可。<br><br>Quanton 进一步优化数据读写。 这是 Onehouse 的商业 Spark 引擎，除向量化外，还针对湖表的读写、合并、索引和维护优化。虽然它支持 Hudi、Iceberg，Uber 本次只评测了 Hudi 写入路径，没有测通用 SQL 或读取性能。<br><br># 关键结果该怎么看<br><br>相同计算资源配额下，Quanton 在插入为主的事实表上，稳态写入轮次的中位速度约为开源基线的 5.5 倍；更新为主的维表约为 4.7 倍。<br><br>但这些数字排除了周期性的元数据整理轮次；包含整理的轮次，加速约为 2.8 倍。收益也不均匀：数据表写入阶段约快 7.8 倍，去重和索引部分却略慢。<br><br>以上来自合成数据和受控集群。生产环境的正确性、兼容性、持续负载表现及故障恢复，仍需进一步验证。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbetz-aIAAlQVu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f57aeb96a29d24df7564.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Uber Engineering <span style="font-size:12px;color:#999999;font-weight:400;">@UberEng</span></p>
@@ -115,7 +115,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Big day for JetBrains.<br><br>Today we are releasing our 2026.3 IDEs with Air bundled in - a complete agentic workbench for professional devs.<br><br>Choose your agents, bring your subscriptions, and steer their work from your IDE.<br><br>Free, virtually unlimited agent Junie Lite.<br>More below 🧵 </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWW7iOkWYAE5ll3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8d34f9f63dc651d056fa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

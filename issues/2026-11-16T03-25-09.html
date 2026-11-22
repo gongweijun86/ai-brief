@@ -81,12 +81,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @verysmallwoods · 2026-11-16 00:45</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">结合这篇文章，整理了一套用 Pi Durable + Pi AI SDK 组装 always-on Agent 的架构。<br><br>Agent 平时等待，收到消息、Webhook 或定时事件后唤醒，推进任务、保存进度，再决定何时继续，以及是否通知用户。<br><br>各个组件可以这样组合：<br>- Conversation 保存讨论，Submission 接收输入，用稳定 requestId 关联重复请求。<br>- Harness 调度 GenerationTask 和 ToolTask，完成模型生成、工具调用与后续执行。<br>- Durable Storage 保存历史、检查点和结果，进程重启后重新打开存储并恢复。<br>- Pi AI SDK 统一接入模型服务。<br><br>应用层负责事件收件箱、长期任务、记忆、审批和通知；定时唤醒可结合持久任务实现，周期规则由应用管理。外部操作还需要幂等或结果核对。<br><br>配图分三层：全局架构、主动调度循环、可恢复执行核心。<br><br>或许我会尝试在 ChatOllama 中实现一下。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XQAABmiN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XAAAi3zB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-9XAAACF_S.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/733933388e59fdd3a8a1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/942ec3ef4bce478cc1b5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/1822d046dc5902105fcc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">九原客 <span style="font-size:12px;color:#999999;font-weight:400;">@9hills</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Claude 这个 Building Always on Agents，实际是 Personal Agent的最基本的设计模式。<br><br>之前在 raft build 上就看到类似的设计。<br><br><a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMHILbwAAi74g.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMMgzbYAA_Pkn.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d9d995cc1da0c0a431e7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/e42f04a3152e34f4afe5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -95,7 +95,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 10:02</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在几乎所有公司都在教员工怎么用 AI 一键生成现成答案的时候，华尔街最赚钱、技术品味也最硬核的量化交易巨头 Jane Street 反手在 GitHub 上开源了他们内部的 janestreet/agent_skills 仓库，其中冲上 HN 榜首（712 分）的技能叫 Socratic Tutor（苏格拉底式导师）。<br><br>点开这份只有几百行的 SKILL.md，你能看到顶级工程团队对“AI 让人脑退化”这件事有多警惕。它给大模型立下了几条极其严苛的铁律：<br><br>只要你对它说出 teach me、quiz me 或 drill me，它被绝对禁止直接给你讲课或甩出长篇解释。它必须先拆出 4 到 10 个子技能树，每次只问你一个问题，连摸底带追问，把你在每个子技能上的真实水平钉死在 0 到 5 级（0 级是闻所未闻，3 级是在提示下能做对，5 级是不靠任何提示且隔轮复习依然对答如流）。<br><br>在教学循环里，哪怕你答错了，它也不准直接告诉你正确答案，而是必须顺着你的错误推理反问一句：如果按你说的这样，那当边界条件变成 X 时会发生什么？ 逼你自己推导出矛盾点。直到连续两轮卡死，它才允许给一个最小化的脚手架提示，而且一旦给过提示，这道题就绝不算你掌握（最高只能记 3 级）。在随手一问就能拿到几千字总结的今天，这种故意给大脑制造阻力、逼人自己走完推导闭环的提示词设计，反而成了最稀缺的工程资产。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLmZjTaMAA_8cg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8b1d91a830fa0fdc78bf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -131,7 +131,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-15 12:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">别再迷信什么“百万 Context Window”能解决一切长周期任务了。<br>Google 刚刚用 Gemini-4 搞出了 5000 万行 零人工干预的 Lean 4 代码，彻底证完了悬而未决 13 年的 Courtade–Kumar 猜想。<br>但最讽刺的是：它的核心秘诀不是把上下文塞满，而是彻底拆碎 Context 🧵👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXF4ssKbEAE_YEz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/118aeda7ebd0321174d5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

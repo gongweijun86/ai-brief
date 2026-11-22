@@ -58,7 +58,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-03 17:22</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有点意思，装个浏览器扩展，把 B 站首页、搜索页、播放页的排版换掉，播放器、弹幕、评论还是 B 站自己那套。<br><br><a href="https://github.com/jiuyang5354/bilibili-margin" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jiuyang5354/bilibili-margin</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFubRkaUAAOACg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/aa497c72d1293c953c00.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -95,7 +95,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">GPT-6 Astra edited 131,072 weights in Qwen3.5-0.8B, with no backpropagation.<br>MATH-500 accuracy went from 7.9% to 48.1%. Zhihu contributor 白露未晞me reconstructs how, from the logs and repo.<br>The jump is real but narrower than the headline: 576 of the 579 repaired answers had been cut off at the token limit.<br>The failure was looping. In the first 96 samples, 85 ran to the 32,768-token limit without finishing.<br>Many kept re-asking whether 20 was the total instead of moving on.<br><br>A direction that separates looping from progress<br>Four pairs of contexts, one reasoning forward and one repeating itself, went through the original model under teacher forcing.<br>Average the last 36 tokens of each pair, subtract the productive state from the looping one, then average the four pairs. That difference is the repetition direction for each layer.<br>It grows fastest between adjacent layers. Decomposing it puts most of the write at the MLP of layers 15 and 19.<br><br>Editing only the neurons that write into it<br>Each neuron is scored by how well its output column aligns with the direction, times how far its activation shifts over the last 24 tokens. The top 64 per layer survive.<br>The edit subtracts six times each kept column's projection onto the direction. That component flips sign and grows fivefold, while orthogonal parts stay put.<br>Whole-layer versions at strength 1, 2 and 4 cut the log probability of repetitive spans by 0.024, 0.049 and 0.104.<br>Productive spans were barely touched. Random directions of matched norm did worse.<br>On 1,152 problems held out from the weight selection, accuracy rose from 10.6% to 60.4%.<br>The edit removes a behavior. Most of the gain is reasoning the model could already do, finally allowed to finish.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWMERHwb0AAGuic.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWMESWoboAEhsWs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWMETZqa8AADxyD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWMEUj0bcAAc1lD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8a1071f10a3bca16c071.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/ca723581d6087b4ff225.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/266501dc62e1e86cb8aa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/cd49ad9b6c3f50faeeb8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Rikiya Takehi <span style="font-size:12px;color:#999999;font-weight:400;">@rikiyatakehi</span></p>
@@ -107,7 +107,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.<br>It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops &amp; improving math up to 6x and even instruction following 3x, without gradients or training.<br><br>We call this Weight-Space Programming: frontier LLMs can now natively read/write neural network weights! 🧵<br>Blog: <a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://rikiyat.github.io/blog/weight-space-programming/</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWI1oKUWUAAWoZp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/35906035e6bc0d35483d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -125,7 +125,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-02 21:41</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DecisionRAG：用决策模型实现快速且精准的搜索<br><br>非常巧妙的思路，用Jev类决策模型来代替传统的搜索排序工具。这个方法借鉴了人类在图书馆查书的习惯，把庞大的资料库整理成大分类、文章标题到具体段落的层级结构。决策模型不需要逐字生成文本，只需在单次计算中对同级的所有选项同时打分，逐层筛选出最有价值的分支。<br><br>实际测试中，即使面对维基百科超过 268 万个段落的庞大资料库，系统也能在 0.7 到 1.8 秒内完成精准查找，单次查询成本只有 0.2 到 2.3 美分。在多个问答测试集上，这项技术不仅比传统搜索加重排方案的准确率高出十几个百分点，还比让普通大模型慢慢思考查找快了 30 多倍。<br><br>论文：<a href="https://arxiv.org/abs/2610.35868" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.35868</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWH8WS0aIAA2D8K.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cd643e0ed88925a8395d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -134,7 +134,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yetone · 2026-11-03 17:20</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Alma 手机端的远程桌面控制支持分窗口单独进行远程控制 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117547331289812992/img/rVbWG-rFF1yPOlGT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ce41e3bc5245d2a89372.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

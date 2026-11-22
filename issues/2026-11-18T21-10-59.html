@@ -78,7 +78,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xjackkk · 2026-11-18 21:07</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好家伙，看完大神刚扒出来的电信光猫逆向报告，真觉得个人隐私存量约等于 0 了<br><br>……虽然早有心理准备，但看到实锤源码的那一刻还是后背发凉 😬<br><br>谁敢想，家里天天用的宽带光猫固件里，居然预装了一个叫 m01-b01-inner 的隐藏插件——你在管理后台根本看不到它，也关不掉，甚至连引导脚本 init.bin 都是开机内存解密后当场自删，不留痕迹！<br><br>扒开解密后的源码，这玩意儿简直是个守在自家大门口的全能内鬼（我重新画了一张全链路图放下面，一眼看懂）：<br><br>1️⃣ 默认常驻偷跑（xid）：默认开启，每 30 分钟从你的明文流量里提取一次手机号、IMEI、IMSI、设备 ID 甚至经纬度，打包加密往上报； <br><br>2️⃣ 最高权限接管（shell）：支持远端直接以 root 权限在光猫上执行任意命令； <br><br>3️⃣ 全屋底裤摸排（pscan）：主动扫描家庭局域网，你家连了几部手机、电脑、NAS、摄像头，开了什么端口和服务，认得明明白白； <br><br>4️⃣ 流量审计劫持（http/dns）：挂载内核模块逐包解析网页访问、HTTPS 域名与 DNS 查询，支持原始抓包和网页重定向； <br><br>5️⃣ 静默热更新（upgrade）：随时远程下发新代码替换它自己。<br><br>最细思极恐的一点是：后面几项高危能力平时默认处于休眠关闭状态，但远端服务器一句话指令就能随时打开——你的光猫今天干什么，全看云端今天下发什么。<br><br>当然客观叠个甲：源码层面具备这些完整能力是一回事，至于实际何时启用、怎么用、拿来干嘛，咱们普通人就不得而知了（终于懂为什么网络老手装宽带第一件事就是光猫改桥接 + 关光猫 Wi-Fi + 主路由开加密 DNS了）。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXaN9lyaoAARAfD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b7e634f9a72d15226d0c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -96,7 +96,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-18 18:47</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">美国最好的几个计算机专业学校卡内基梅隆大学将免费开放其本学期为学校学生开设的《AI Agents》课程的的全部录像，上传至YouTube。<br><br>主题包括计算机使用agent，深度研究agent，skills，监督微调，RL基础知识，进阶RL算法，RL系统等等。<br><br><a href="https://www.youtube.com/playlist?list=PLSN0qpDfUvTM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/playlist?list=PLSN0qpDfUvTM</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZtSUga0AARP72.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0ad8cd98d1a1dcf8ae3b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -112,7 +112,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Another very interesting paper from Google on self-improving agent harnesses.<br><br>(bookmark it)<br><br>They let an optimizer rewrite the harness around a frozen Gemini 3.8 Flash on SWE-bench Lite and compared three approaches.<br><br>- A prompt rule file lowered held-out accuracy from 5.0% to 2.5%.<br>- A full rewrite of the harness reached 42.5% at 451.6k tokens per task.<br>- Gated edits to one module at a time reached 40.0% at 46.7k tokens per task.<br><br>The gated version splits the harness into four parts (context, control, tools, and verification). Each round it patches one part, checks the patch on held-out tasks under a token cap, and deploys it only if it passes.<br><br>The gated harness also transferred to Gemini 4 Argon with no new search, solving 37.5% against 30.0% for the full rewrite. The test set is small (40 held-out issues), so treat the numbers as directional.<br><br>The paper also lists failure modes to guard against when a harness edits itself, including prompt bloat, benchmark gaming, and evaluator tampering.<br><br><a href="https://arxiv.org/abs/2611.22299" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.22299</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/harnesses-that-improve-themselves-a-unifying-framework-for-self-improving-agent-2611.22299" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/harnesses-that-improve-themselves-a-unifying-framework-for-self-improving-agent-2611.22299</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXavh-ybIAAIswD.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3bcbfc6b5f417912e9f4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

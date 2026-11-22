@@ -96,7 +96,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-07 20:42</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让学 Transformer 的人能在浏览器里单步观察 Token、矩阵、注意力和损失的真实数值变化，而不是只看公式和架构图。<br><br><a href="https://github.com/ninetyhe-90/training-explore" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ninetyhe-90/training-explore</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWa0_r4bQAAlbcu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/04496d87ed641cb27ebe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -123,7 +123,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-06 11:28</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这绝对是一座真金矿！<br><br>Anthropic 刚发了一个 Claude Code 封神级的高阶玩法。<br><br>思路极其简单：同时跑 Sonnet、Haiku 5.5 和 Opus 5.5，每个模型只干自己最擅长的活。<br>不仅写代码效果更好，还能省下大笔 token。<br><br>启动 Claude Code 这样写就行：<br>`claude --model sonnet --advisor opus`<br><br>三层模型各司其职：<br>· Sonnet 5.5 负责主会话，专心写代码、改 bug<br>· Haiku 5.5 并行扫整个代码库，只读搜索、grep 和查文档<br>· Opus 5.5 坐镇当顾问，只在关键决策时出手，最后审核改动<br>不需要 Opus 的活，绝不浪费它一丝一毫的上下文。<br><br>Opus 只在三个时候介入：<br>① 计划敲定之前<br>② 同一个错误出现第二次的时候<br>③ 宣布完成之前<br><br>底层逻辑和 JEV 工程完全一致：不需要动脑的小选择（选文件、选工具、重试或停止）交给 JEV 毫秒级处理，大模型只用来思考真正的硬骨头。<br><br>把这段提示词直接贴进 Claude Code 重新配置：<br>“按这个结构重新配置我的 Claude Code：<br>1. 主会话用 Sonnet 5.5，Opus 5.5 当顾问。<br>2. 在 .claude/agents 里建三个 Haiku 5.5 子代理：search（梳理代码库）、grep（查找调用位置）、audit（检查改动）。<br>3. 给 audit 设置 worktree 隔离，让它的检查不碰我的工作分支。<br>4. 在 CLAUDE.md 里加一条规则：所有代码库搜索和测试都交给 Haiku 5.5 子代理，让主上下文保持精简。<br>5. 快速、确定性的小选择（选工具、选路径、重试）交给 JEV 处理。<br>所有改动先用 diff 给我看，我说开始之前不要动任何文件。”<br><br>👉 官方子代理文档：<a href="http://code.claude.com/docs/en/sub-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://code.claude.com/docs/en/sub-agents</a> #ClaudeCode</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118545810514448384/img/Q0EbqAISkv3ogelH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f9d03bb1696154bd833c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -132,7 +132,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Pluvio9yte · 2026-11-07 22:53</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">全体起立，Vercel推出的agent-desktop现在才是Agent操控电脑的真神。<br><br>它是 Vercel Labs 的开源项目，Apache-2.0 协议，GitHub 已经有 1.8 万 star，仓库地址在下面<br><br>它是一个命令行工具，让 Claude Code、Codex 这类 Agent 直接操作你电脑上的 App：点按钮、填表单、打字、切菜单、读界面。<br><br>之前大部分 Computer Use 的做法是截图，再让模型猜该点哪个坐标。慢，还容易点歪。<br><br>agent-desktop 不截图。它直接读系统的无障碍树（就是读屏软件用的那套接口），给界面上每个按钮、输入框编一个号，Agent 按编号去点、去输入。<br><br>最关键的一点：它默认不动你的鼠标，也不把窗口切到前台。<br><br>Agent 在后台操作电脑的时候，你可以照常刷微信、写东西，两边互不干扰。真要用物理鼠标键盘时，再加 --headed。<br><br>我在自己的 Mac 上实测了一轮：<br><br>- 打开系统设置，读完整个界面 0.3 秒左右<br>- 点击「蓝牙」0.17 秒，页面切过去了，设备列表也读出来了<br>- 给不在前台的文本编辑输入一段中英文加数字，0.15 秒，读回来一字不差<br>- Electron 写的 App 也能读，侧栏、对话列表的文字都拿得到<br>- 整个过程我一直在用微信，前台一次都没被抢<br><br>我原来用 LCU，它要借 ChatGPT 桌面端里面的运行时，ChatGPT 一更新就可能坏，也卡过。今天卸了，换成 agent-desktop。<br><br>几个让我决定换的点：<br><br>1. 不依赖任何 App，npm 一装就能用<br>2. macOS（Intel 和 M 芯片）、Windows、Linux 都支持<br>3. 自己不带模型，任何能跑命令的 Agent 都能用，也可以当 MCP 服务接进去<br>4. 60 个命令，窗口管理、剪贴板、通知、菜单栏都包了<br><br>安装就两步：<br><br>npm install -g agent-desktop<br>agent-desktop permissions --guide<br><br>第二条在 Mac 上会一步步引导你打开辅助功能权限。<br><br>然后在 AGENTS.md 或 CLAUDE.md 里加一句：<br><br>Use `agent-desktop` to see and operate desktop apps. Before the first use, run<br>`agent-desktop skills get desktop` and `agent-desktop skills get platform`, and follow them.<br><br>你的 Agent 就会用了。<br><br>仓库：<a href="https://github.com/vercel-labs/agent-desktop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vercel-labs/agent-desktop</a><br><br>实测截图👇</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWh8H09bgAEtMMv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/47887c5d629ae043bf89.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -153,7 +153,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">15 RAG concepts to know<br><br>① Chunking<br>② Embeddings<br>③ Vector DBs<br>④ Metadata filtering<br>⑤ Query rewriting<br>⑥ HyDE<br>⑦ Query decomposition<br>⑧ Hybrid search<br>⑨ Reranking<br>⑩ Small-to-big retrieval<br>⑪ GraphRAG<br>⑫ Context compression<br>⑬ Agentic RAG<br>⑭ Faithfulness<br>⑮ Precision &amp;amp; recall </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWdmoTBbIAA6DUn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/84d72039d478b8737645.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -162,7 +162,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chenfacai0 · 2026-11-07 08:13</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">真是离谱得没边了，这个东西是真厉害。<br><br>GitHub 趋势榜第一、星标冲到 3.8 万的语音合成 AI「VoxCPM2」，在海外已经彻底引发轰动，它生成的声音你根本分辨不出真假。<br><br>1️⃣ 你只需要输入一行文字“沉稳的 30 代女声”，它立刻就能为你合成出来<br>2️⃣ 放入一小段录音，连说话的口癖、语速都能给你一比一复刻<br>3️⃣ 48kHz 录音棚级音质，还采用 Apache 2.0 协议，商用随便用<br><br>🔗<a href="https://github.com/OpenBMB/VoxCPM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/OpenBMB/VoxCPM</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWa_jShbsAAjMBW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b6e2ea70ccf35854bac1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

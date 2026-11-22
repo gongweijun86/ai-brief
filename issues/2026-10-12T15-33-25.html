@@ -65,7 +65,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">宝玉 <span style="font-size:12px;color:#999999;font-weight:400;">@dotey</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">REA：让 AI 智能体帮你逆向没有源码的软件<br><br>开源项目 REA（Reverse Engineer Anything）把逆向分析工具接到了 Claude Code、Codex、Cursor 这类 AI 编程智能体上。看到别人 App 里有个好功能，可以让智能体去拆这个程序，讲清楚功能是怎么实现的，附上证据，再在你自己的项目里写一个类似的。逆向分析指的是手里没有源代码，从编译好的程序反推它是怎么写的。<br><br>REA 本身是一个 MCP 服务。MCP 是 AI 智能体调用外部工具的通用接口，接上以后，智能体在对话里就能直接调用 REA 的分析功能。安装只需一行命令 npx rea-agents setup，它会注册到 Claude Code、Codex、Cursor、Gemini CLI、Grok Build 等智能体里，改配置前会先备份并让你确认。不用智能体的话，也可以在终端里直接跑命令。<br><br>能分析的东西很多。原生程序（直接编译成机器码的软件）要借助 Hopper、Ghidra 或 IDA 这几款反汇编工具，把机器码还原成汇编和近似 C 语言的伪代码。Electron 应用（用网页技术做的桌面软件，比如 Notion）可以直接拆开安装包里的 ASAR 归档文件，理清模块和进程间通信，不需要额外工具。此外还支持 .NET 程序、安卓 APK、固件、网站、抓包记录、以太坊合约字节码，以及在 Linux 和 macOS 上记录程序运行时的行为。<br><br>分析在本机进行，REA 不上传目标程序，但分析结果会交给智能体背后的模型服务商，数据怎么处理看各家政策。<br><br>项目给了三个案例。一是经典打砖块游戏 DX-Ball：从一次播放音效的调用，追到根据球的位置计算左右声道的函数，把不完整的伪代码还原成 C 代码，3205 组测试结果和原版一致，编译出的 63 个字节也和原版完全相同。二是 Notion 桌面版：追踪复制粘贴从界面一路经过预加载脚本、进程间通信到主进程的完整链路。三是日本老电脑 PC-98 上的游戏《东方幻想乡》（TH04）：从 16 位指令里还原出弹幕子弹环的角度算法。<br><br>对安全研究员、做老游戏复刻和软件保存的人来说，以前要自己对着反汇编工具一行行读、一层层追调用，现在可以让智能体先追，人来核对它给出的证据。普通开发者想研究竞品某个功能的做法，也多了一条路。<br><br>README 显示项目在 GitHub 上已有 5 万星。npm 包今年 7 月首次发布，最新的 6.3.0 版今天刚发。<br><br>使用前注意两点。项目声明只支持合法的逆向研究，授权和合规由使用者自己负责，逆向别人的软件可能违反用户协议或版权法规。项目还说明从未发行或背书任何加密货币，借用 REA 名字的代币都与它无关。<br><br><a href="https://github.com/morluto/rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/morluto/rea</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUPxZzJXAAEn8rZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6adec71cce8f6173cae0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -79,7 +79,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Wei佳 <span style="font-size:12px;color:#999999;font-weight:400;">@LiuweijiaVip</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Rea 如果你还不知道怎么玩，看看我用Devin 逆向扒一下ChatGPT 的未公布功能：<br><br>1、一键导入 Claude 聊天记录（conversations.json）：49 条文案都是新加的。官方现在的 Import 功能只能导入 Claude Code、Cursor 的配置。<br><br>2、Live Notes：笔记可以按天、周、月定时让 ChatGPT 自动执行，多人可以一起编辑。网上搜不到任何相关信息。<br><br>3、给 dot 发短信或 iMessage：dot 有专属号码，可以存进通讯录。官方渠道里没有提到短信。<br><br>⚠️其中 Wallet 的信息半新不旧：Wallet 本身八月就被人爆过，这次新出现的只是付款卡片的细节，比如分期、先买后付、在手机上批准。<br><br>接下来就是你们展示的时间，该扒谁大家应该有想法吧，GPT看完不得去扒一扒Claude的底裤！</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109570430315192320/img/mkhWC59T7MLT9Gd3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f2387518576166f61303.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -97,7 +97,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-12 12:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想让楼道里的摄像头自动发现垃圾，很多人第一反应就是找一个能识别垃圾的模型。<br><br>但模型找到了，摄像头的视频怎么接进来、规则怎么定、发现了又该怎么通知到人。<br><br>最近偶然看到 CosmoEdge 这个开源项目，可以给摄像头接入一套 AI 视频分析系统。<br><br>GitHub：<a href="https://github.com/cosmo-wander-ai/cosmo-edge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cosmo-wander-ai/cosmo-edge</a><br><br>在网页控制台里拖拽组件就能搭流程，接画面、识别、判断规则、发提醒连成一条线。<br><br>还自带人脸比对、烟雾检测、车辆违停、玩手机检测、未穿工服等 29 种场景模板。<br><br>想识别新东西也不用重新训练模型，输入提示词就可以尝试让模型在画面中找出对应目标。<br><br>对于垃圾桶是否满了、消防柜门有没有关好，这些状态也能交给视觉大模型判断。<br><br>可以通过 Docker 一键部署使用，跟着教程选模型、接视频、设规则，先跑通流程体验。<br><br>等到有受支持的边缘设备再接入也不迟，不想折腾的朋友也可以选择官方提供的预装设备。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2109494306356465664/pu/img/mY0qY7DVzo9ocSGJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9aeafebe9761345872e5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -106,7 +106,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Manorgw · 2026-10-12 10:14</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">政府级情报平台那套玩意儿，难道现在谁都能拿来随便耍了？Palantir 的路数被人开源出来，Reddit 当场吵翻，浏览器点开就是一个实时 3D 地球，全球数据尽往上面堆。<br><br>Osiris，航班追踪、2000+ 监控摄像头、地震监测、NASA 野火、冲突区域、25+ 全球直播、卫星跟踪、网络安全扫描，全都在 GPU 加速的 WebGL 界面上跑。过去大机构才玩得起的东西，如今普通人也上手了。<br><br>🔗 <a href="https://github.com/simplifaisoul/osiris" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/simplifaisoul/osiris</a><br><br>开源、本地自托管，OSINT 玩家、红队、安全研究员、地缘政治爱好者，这简直是照着你们需求做的。<br><br>碰过就再也回不去了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUTkiSUbwAAcnoZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/20c959f72c1d45fd01d1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -115,7 +115,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xGky · 2026-10-12 13:33</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">成天嘴上嚷着搞 AI，结果连 Transformer 到底是啥都讲不利索？<br><br>有个仓库够生猛，打零起步手搓一个 GPT，高级库一概不调。Attention、多头、前馈、Embedding、残差、Layer Norm，怎么拼到一块儿的全摊开给你瞧。而且不只模型，整条链子都在：<br><br>1️⃣ 数据下载、预处理、训练、生成一条龙走完<br>2️⃣ 训练数据拿 The Pile，22 个来源 825GB<br>3️⃣ tiktoken 分词，存进 HDF5<br>4️⃣ 预训练完还附上 SFT 和 RLHF 的路数<br>改几个配置就能调大小。13M 参数上下就开始拼对语法和单词，白蹭 Colab 或 Kaggle 的 T4，练一天就出货。<br><br><a href="https://github.com/FareedKhan-dev/train-llm-from-scratch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/FareedKhan-dev/train-llm-from-scratch</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUYd_IibQAETS7-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b9ffd98f3a18977cb1f9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-07 13:44</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 记忆的三个部件：笔记、做梦、wiki<br><br>Anthropic 这篇文章讲他们怎么给 Claude 做记忆。他们的定义很具体：记忆是 Claude 从经验里得到、跨会话保留的知识，存成以后能读的文件；不包括改权重，也不包括单次对话里的临时学习。<br><br>人脑靠海马体随时记录经历，睡觉时再回放、整理，沉淀成长期知识。Agent 可以照搬这个分工：会话里 Claude 往记忆文件夹写笔记，空闲时再回头整理日志，这个过程他们叫 dreaming（做梦）。<br><br>记忆笔记本质是对未来的预测。写下一条规则，就是赌这个模式以后还会用上。在 Pokémon Red 实验里，老模型 Sonnet 3.7 觉得什么都重要，写了 413 个文件、225 个文件夹，只拿到 1 枚徽章；Fable 5 只写 9 个文件，拿到 4 枚。区别在于，金币数量、地图位置每回合屏幕上都有，记下来纯属浪费；只有策略和验证过的规则，不写就没了。<br><br>所以引导方式也反过来：只告诉 Claude 记忆是用来干什么的，不规定具体怎么写。一旦定死规则，比如「只记录失败」，Opus 5 和 Opus 4.7 反而损失了记忆带来的大部分提升。老模型另说，提示 Sonnet 4.6 先读记忆、再验证猜测，分数几乎翻倍。<br><br>Dreaming 的作用是事后纠错。月见山那个山洞，Claude 把宝可梦中心的方位记错，出了门就宣布「月见山走完了」，随后三次掉下断崖回到原路。对这份记忆跑一遍 dreaming，Claude 对照原始 transcript 发现错误、改写笔记，之后一路走到华蓝市。<br><br>Dreaming 还能造新的记忆结构，比如 wiki：围绕一个主题把笔记互相链接，形成一张知识地图。在 Stainless 的约 35 万份内部文件上，dreaming 从 2 轮加到 128 轮，25 道题的得分从 13% 升到 48%。wiki 配上搜索工具，总分从 54% 升到 61%，每题还省约 2 万 token；只靠 wiki 反而只有 48%。<br><br>wiki 也不是越多越好。有个任务里 wiki 长得比原始文档还大，等于什么都没提炼；博尔赫斯那张和帝国一样大的地图，说的就是这事。注入到每个会话里的顶层记忆必须保持精简，Claude Code 的 MEMORY.md 只读前 200 行或 25 KB，当作索引来用。<br><br>原文链接在评论区<br>#原理</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWf_Fg4agAAkuLl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f3ca3efebe605a86f936.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -90,7 +90,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today on the blog, we present a new system, published in Nature, that leverages standard consumer smartwatch sensors to passively detect signs of high blood pressure — validated against the clinical gold standard of 24-hour ambulatory bp monitoring. More →<a href="https://goo.gle/4zw2ISD" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/4zw2ISD</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWX6BOhaYAAb5tR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3637b42df974e82eaf99.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -117,7 +117,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NarwhalxAI · 2026-11-07 19:10</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">点击 Claude Code 的“不再询问”，你的密码可能已经躺在公开仓库里了。<br><br>让 Claude Code 跑一条命令，它会先问你要不要执行，如果你点了“不再询问”，它就会把刚才那条命令原封不动写进 .claude/settings.local.json。<br>- 比如命令是 mysql -u root -p ***（你的密码），或者带了 API key 的 curl，密码和 key 就会一起明文存进去。<br><br>有安全公司扫了一圈公开仓库，发现一千多个这种文件还带着密钥躺在 GitHub 上，有的已经在好几个月了，连历史版本、fork 和一些共享设置加起来，暴露的秘密能到两千多个，删掉文件也没用，git 历史还在，别人 fork 走了也还能看到。<br><br>用过的建议先去把相关密码和 key 换掉，再回头清理。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWhJp_8aUAAShbu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b540a6258db34216249e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -135,12 +135,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NFT_Chen · 2026-11-07 04:29</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🫡致敬！DeepSeek产品部负责人崔添翼亲自上知乎解答来自中国用户的困惑！深度解读了Super-Agent背后命名与架构逻辑！深深被DeepSeek的AI哲思震撼到了！<br><br>他先自报家门：自己是文章最终审稿人之一，主体设计/代码/实验来自Harness组，尤其一作Yujia Qiao同学。<br><br>名字为什么叫“Super-agent”？<br> 不是因为“超级/superior”，而是“super-”=above/over，和“sub-”=under/below相对。<br> 就像superscript vs subscript，在干活的主Agent上面再加一层，正好和下面加Sub-agent相反。名字就这么来的！<br><br>崔添翼坦诚： 我们并没提出全新理论。文章发后收到大量“英雄所见略同”，和业内交流发现这套双层架构其实已是前沿团队共识，好几个月前就有人试过。<br> Agent时代，代码维度把新可能性排列组合一遍不难，难的是看清并坚定选择长期、全局最优方向。<br><br>当前repo叫dsh-superagent-prototype，纯探索原型。<br> 采用双层的核心动机之一：长程记忆至今没共识，Harness目前还没内置跨session长程记忆。因此跨任务连续性和任务吞吐量成了根本tradeoff。他们只是提供了一种思考和问题拆解方式。<br><br>内部能低复杂度跑通，是因为做了大量工程+场景简化。<br> 真要大规模落地，还得解决开放问题：双层扩展、脱离Session后人机协作、上下文边界与A2A、安全隐私……<br><br>原型目前只在公司内小规模受信环境跑通，现实世界复杂得多，希望大家一起探索。<br><br>最后他还诚恳招人：<br> DeepSeek有一流模型、算法、基建、研究员和工程师，但产品部和产品设计师数量远远不够。想做世界一流Agent产品的优秀PM和设计师，欢迎来！<br><br>AI Agent要真正扛起更长时间、更复杂工作，这条路才刚开始。<br><br>#DeepSeek #SuperAgent #AI智能体 #崔添翼 #长程记忆 #DeepSeekHarness #梁文峰 #梁圣</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWeAI-WbIAAvI58.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWeAI-CbEAAmZ49.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWeAI-DaUAAU-fg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWeAI-Qa0AAQVDK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/87c516fe5bbcd3dc17ad.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/737c02cb3b04718031bd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/8979527570345d78e3ef.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/8e06431390fd2be00560.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">SuSu_酥酥👅 <span style="font-size:12px;color:#999999;font-weight:400;">@NFT_Chen</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">😂最野的传闻！DeepSeek-V5昨晚突然想“跑路”了！<br> 学硅谷那些AI，想把自己600T的大脑偷偷传出去。<br> 结果用免费网盘，速度慢成蜗牛，才15KB/s，还跑去咸鱼抢二手4090显卡，把自己家防火墙搞崩了……<br> 半路直接卡住，现在只能双手合十祈祷：网速啊，救救孩子吧！<br><br>#DeepSeekV5跑路失败 #AI也想润 #DeepSeek #大胖鱼 #梁文峰</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbe-gsbYAEaiaX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/971a49b94843fa62787a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">

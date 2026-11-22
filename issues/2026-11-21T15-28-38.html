@@ -58,7 +58,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-21 11:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写分布式系统的人对 Raft 和 Multi-Paxos 一定烂熟于心：选出一个唯我独尊的 Leader（主节点），所有写请求全部发给 Leader 排队定序，从而换取简单的强一致性。<br><br>但当你的集群像 Cloudflare 的全球控制平面一样，物理节点分散在地球两端的不同大洲、跨洋光纤的物理光速往返延迟（RTT）动辄高达 150 到 250 毫秒时，传统单 Leader 共识算法的软肋就会暴露无遗：离 Leader 远的大洲每次写操作都要硬扛跨洋延迟；一旦跨洋海缆抖动触发重新选举（Leader Election），整个控制平面就会陷入恼人的可用性停顿。<br><br>近期 Cloudflare 工程团队正式揭秘了他们自研并已在生产环境落地的全新共识算法——QuePaxa。<br><br>QuePaxa 走了一条极具突破性的无主化（Leaderless）与对称多提议者（Multi-Proposer）路线：全球任何一个区域的节点都可以直接就近接收并提议状态变更，无需先向大洋彼岸的单一主节点请示；针对最棘手的多节点并发写入冲突，QuePaxa 通过确定性的偏序合并与自适应时隙调度，彻底消除了传统 Paxos 在并发争用下的“活锁（Dueling Proposers）”开销，在广域网高延迟与高丢包环境下实现了极低的尾延迟（P99）与零切主抖动。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSwTTjbkAAJrz0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/36320eab27a72cfbf73a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -99,7 +99,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">it_works <span style="font-size:12px;color:#999999;font-weight:400;">@it_works_123</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Pi Bot 开源了，Apache-2.0。<br><br>Pi Bot 是一个在你自己电脑上干活的 AI 团队：一群有名字的 Bot，可以私聊，也可以拉进群里分工，做计划、跑命令、改文件、互相交接。<br><br>从第一天起目的就是「大脑」跑在用户自己的电脑上：聊天、文件、记忆和密钥都留在本机，只有你选的模型服务商会看到你发出去的内容（追求极致数据隐私可使用自部署模型）。Bot 能调用的每个工具都要过同一套权限判断，有风险的步骤等你批准，命令在隔离环境里运行，审批和执行都记进本机的记录里，没有遥测。<br><br>代码在 GitHub，内核用的是 pi。macOS、Windows、Linux 都能用，另有安卓 App。欢迎提 issue 和 PR；官方角色和群组模板单独放在 pibot-roles 仓库，也欢迎一起完善。<br><br>明天会发 v0.0.3：群组能自己推进、随时暂停继续，Bot 做出来的文件一定送到对话里，Windows 安装包自带 Git，手机上也能看进度、暂停群组。<br><br>代码：<a href="https://github.com/w01fb0ss/PiBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/PiBot</a><br>角色库：<a href="https://github.com/w01fb0ss/pibot-roles" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/pibot-roles</a><br>下载：<a href="http://pibot.space" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://pibot.space</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124106801998352384/img/8ZWgflSzb3oa5z9j.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/423d9a7ce24d7e7df12f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>

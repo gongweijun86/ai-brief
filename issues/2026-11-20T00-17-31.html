@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @blankwebdev · 2026-11-19 15:46</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">分享下最近的 AI 工作流。<br><br>1. 以前：所有开发环境都在 MacBook Pro 上。出门得背着电脑；agent 跑长任务时，电脑不能合盖、不能断网；开车路上电脑一收进包，任务就停了。<br><br>2. 现在：把所有项目和开发环境搬到家里一台 24 小时开机的 Mac mini 上，Codex、Claude Code 这些 agent 都在它上面跑。MacBook 和手机装 T3 Code，通过 T3 Connect 连回 mini 派任务、看进度、审 diff，体验和本地一样。少数要图形界面的操作，用 UU 远程兜底。<br><br>3. 几个痛点就这么没了：<br>· 出门不用带电脑，手机就够<br>· 任务在 mini 上跑，合盖、断网、开车都不影响<br>· 有空时手机上看一眼进度，顺手派下一个任务<br>· 开发环境只有一套，换设备不用重新配</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXeFX1AasAAgB9F.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/67f43724af6286341080.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-19 21:03</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">😱卧槽，程序员圈子里最凶残的性能外挂来了！？！<br><br>GitHub 上刚开源了一个逆天级渐进式重构神作 rust-anything。<br><br>它无需推倒重来，而是像寄生一样，在你业务正常运行的同时，一块块把老代码替换成 Rust：<br><br>→ 业务一秒都不用停：先给老系统套个“Rust 门脸”，重构好的走 Rust，没重构好的自动回退老代码<br><br>→ 像素级打桩对撞：新老代码强制比对输入输出，连极端浮点数和 Emoji 都要求 100% 对齐，随时一键回滚<br><br>→ 专砍最慢的瓶颈：官方实测，单点替换后 Node.js 搜索直接提速 20 倍，Python 提速 17 倍<br><br>→ 6 大主流语言通吃：Python、JS、TS、Go、Java、Ruby 全包圆，还能直接喊 Claude Code 接管迁移<br><br>零停机、零上线风险，白嫖几十倍的性能暴涨。<br><br>被解释型语言性能卡脖子的兄弟，这套重构神器建议直接存死！<br><br>你手头最想换成 Rust 提速的祖传代码是用什么语言写的？<br><br>仓库地址：<br><br><a href="https://github.com/erkamyaman/rust-anything" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/erkamyaman/rust-anything</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXfWuOua8AAjTcu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8f3a536a9b098a74ae90.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -78,7 +78,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aigclink · 2026-11-19 17:39</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">谷歌RSI新进展：通过自我改进记忆实现AI Agent执行系统的RSI<br><br>自我改进记忆，Self-Improvement Memory（SIM），为 Harness优化器增加一套结构化记忆<br><br>Coding Agent的能力不仅取决于底层模型，还取决于 Harness，现已有让AI自动优化Harness的方法，但有一个问题，比如一套专门针对Claude优化的Harness换成其他模型后，原来有效的修改可能失效，甚至性能下降<br><br>SIM就是让换模型、换任务后，Harness无需从头优化，过去的改进经验可以继承、并且继续演化<br><br>效果上，从Claude Opus 5.5切换到Gemini 3.8 Flash，完整SIM在四个测试领域均优于只继承Harness，最高领先11.33分<br><br>SIM会围绕Harness的问题保存：<br>发现了什么问题，为什么需要修改<br>改了哪些组件，预期解决什么问题<br>实际效果如何，有没有产生性能退化<br>在什么模型、任务和测试条件下有效<br><br>当模型或任务变化时，优化器可以利用这些历史记录决定哪些修改应该保留、调整、替换或者删除<br><br>重要的是，这套记忆会随着后续优化持续更新，新一轮的修改和测试结果又会成为下一轮优化的依据<br><br>他们把这种跨模型、跨任务继续优化Harness的过程称为 CRSI<br><br>当然，目前实验仍要求Harness接口兼容，部分设定只有单次优化实验，不能认为它已经实现了无限制的自主进化<br><br>#SelfImprovementMemory  #RSI  #AgentMemory</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXekGp9boAEXBDm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/dd1f88f7a824e5b092fd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -96,7 +96,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MinLiBuilds · 2026-11-19 22:42</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近发现一个实时换脸直播项目，<br>10 万 Star，Deep-Live-Cam。<br><br>😂 乔碧萝当年有这套技术，宅男都要死于她的胸前。<br><br>除了脸是别人的，身体、衣服、声音、动作全都是你自己的。<br><br>你转头、眨眼、张嘴，AI 换过的脸也会跟着动。<br><br>不需要训练模型，只要一张照片，就能在本地 GPU 上实时换脸，接 OBS 直播。<br><br>仓库👇<br><a href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/hacksider/Deep-Live-Cam</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123405177835454464/img/Yz8I6t2IeqC6m7yK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8712490aa2f3f619cbbe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Lonely <span style="font-size:12px;color:#999999;font-weight:400;">@Lonely__MH</span></p>
@@ -119,7 +119,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaomovps · 2026-11-19 22:03</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pi Agent 终于迎来了自己的 Personal Agent<br><br>这个项目叫 Linger，它的作者选择了 Pi Agent 作为本地模型的运行底座，而且还同时支持 Claude Code、Codex 等 Harness对接<br><br>但是他最大的区别，它不只是一个聊天机器人，而是往Personal Agent方向打造的，最主要还开源了出来<br><br>我自己总结几个能力：<br><br>1、长期记忆，可以整理邮件、聊天记录和工作习惯，建立自己的个人知识库<br><br>2、Computer Use，支持操作电脑桌面和浏览器，完成各种自动化任务<br><br>3、多 Agent 协作，可以根据任务安排不同 Agent 分工执行<br><br>4、本地部署，支持运行本地模型，个人数据和工作流也能自己掌控<br><br>最有意思的地方还是它是围绕Pi 去构建的，Pi 虽然精简但是开发者还是可以围绕它搭建出完整的 Personal Agent<br><br>不过这里需要提醒一句，项目目前还在早期阶段，稳定性和实际执行效果需要进一步验证<br><br>GitHub：<a href="https://github.com/simplexai-labs/linger" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/simplexai-labs/linger</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123416862835036160/img/Nv2vETnkx3GXTZmu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bc2e67360e328c899e6d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tony Zhang <span style="font-size:12px;color:#999999;font-weight:400;">@zhangboknight</span></p>
@@ -131,7 +131,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">In the 1960s, computing was centralized until the PC put power into everyone's hands. Now Al is trained in datacenters and rented back to you token by token.<br><br>Today we open source Linger (@HeyLingerAl), your personal agent living on your own computer. <br><br>We believe intelligence should be distributed. Your context, your data, and the intelligence that powers them should be owned entirely by you. <br><br>Github: <a href="https://github.com/simplexai-labs/linger" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/simplexai-labs/linger</a> Homepage: <a href="http://heylinger.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://heylinger.com</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123235635670704128/img/LG6mrUqMZ_egC3p9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/126cd4949a22e05ccedb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -152,7 +152,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Can a 64GB local LLM handle real multi-turn coding agent work?<br><br>Once turn 1 carries a ~30k-token tool contract, single-turn speed and benchmarks stop predicting pass rates.<br><br>We tested Qwen3.8, Gemma 4, Qwen3-Coder, GGUF vs MLX, and Ollama tuning on an M5 Pro: (1/6) </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXX2zepa4AAFC8H.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/baf278f9c55558371891.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>

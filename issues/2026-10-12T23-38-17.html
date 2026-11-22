@@ -63,7 +63,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Herrington Darkholme <span style="font-size:12px;color:#999999;font-weight:400;">@hd_nvim</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">那就来看看开源大神的高质量 Agent代码呗<br>随便点几个集中度高的 Go 文件，适配多 provider 的就看 gateway 之类的<br><br>一把就能看到很多抽象泄露 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY877KWQAABV1I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY9FIIXoAAEmvI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY9LP8W4AA5bBV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3f9a3a60b7b87022e910.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/5f168e5be765abd65ba2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/b4ef0b78c739f2ab889b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -72,7 +72,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangtongxueh · 2026-10-13 00:49</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跟大家分享一下我构建Agent端到端测试的一套方案：<br>pi + DeepSeek Flash + ego lite<br>主要用来完成日常开发的自动化测试<br><br>简单来说：<br>1. ego lite：负责实际操作浏览器，包括页面交互、状态读取和结果验证，开源，可以丝滑导入你的chrome配置<br>2. pi：作为 Agent Harness，负责整个任务的执行和工具调度，开源，你完全可以基于你的业务测试需求二开<br>3.DeepSeek v4.1 Flash：tps很高的模型，调用成本很低，提高自动化测试的效率<br><br>比较方便的是，不需要提前写一整套 Playwright 脚本，直接用自然语言描述测试流程，就可以让 Agent 自动完成页面操作、检查结果。固定的一些sop可以直接沉淀为skill<br><br>我拿实际开发过程中的三类 Web UI 任务做了一轮小规模测试，包括信息查询、多轮交互、状态修改及持久化验证对比了几套不同的 Agent + Model + Browser 组合，附了张脱敏后的测试对比图，大家可以参考一下。<br><br>ego lite这个产品的构建理念我还蛮喜欢的：<br>1. 共享登录的浏览器状态<br>2.agent友好的设计<br>3.并行多任务处理的优化<br><br>而且它给了蛮多的最佳实践，比如：<br>1. 抓取并聚合社交媒体帖子<br>2. 自动查找并申请职位<br>3. 自动投递简历<br>如果你有一些idea，完全可以把它嵌入到你的工作流<br>搭配上pi + deepseek flash，实现速度+成本上的提升<br><br>最重要的是还开源，完全可以基于自己的需求做一些定制化开发。美中不足的是只支持mac，windows系统的小伙伴可以再等等。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUcd8IDbEAEwWQg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/75ae7c422c11770d2804.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -97,12 +97,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @eternityspring · 2026-10-12 21:45</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">零成本，又做了个交互式名媛连环画<br><br>制作流程：<br>Qwen Image 2.1 画 6 格：同一张脸，6 套造型<br>MiniMax-H3 + ORB360 LoRA：一张图 → 360° 环绕视频<br>three.js 拼成一页，拖哪格转哪格<br>配乐：YuE2<br><br>在线体验地址：<br><a href="https://eternityspring.github.io/ai-explorations/the-feed-comic/index.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eternityspring.github.io/ai-explorations/the-feed-comic/index.html</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109639198408093697/img/wLXky3wC3RP7_P5M.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f6254c4a269b019b4951.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">烁皓 <span style="font-size:12px;color:#999999;font-weight:400;">@eternityspring</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">借助 MiniMax-H3 的 ORB360 LoRA 实现交互式全景漫画<br>在线体验地址：<br><a href="https://eternityspring.github.io/ai-explorations/lost-cat-comic/index.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eternityspring.github.io/ai-explorations/lost-cat-comic/index.html</a><br>在线体验中有个彩蛋，看看有没有朋友能找到😁 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109295855799029762/img/MSwz-9ctaSPsyTNF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b5d0b4e8bb4e52a8d168.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -118,7 +118,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">China has killed the entire vector database industry.<br><br>They open-sourced TencentDB Agent Memory. It gives any AI agent long-term memory that runs 100% locally.<br><br>No Pinecone. No cloud APIs. No repeating yourself every session.<br><br>- 61% fewer tokens<br>- PersonaMem accuracy: 48% → 76%<br>- Zero external API dependencies<br>- Runs on plain SQLite<br><br>Most memory systems compress your history into an opaque vector pile. when recall goes wrong, you're guessing. this one doesn't compress, it builds a semantic pyramid.<br><br>L0 Conversation → L1 Atom → L2 Scenario → L3 Persona.<br><br>Short-term state gets encoded as a Mermaid graph in your agent's context. verbose tool logs get offloaded to disk. when the agent needs proof, it drills back via node_id to the exact raw log.<br><br>no lossy compression. every layer is readable markdown you can just open and inspect.<br><br>5.1k stars. 100% Open Source.</p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbgi59bkAEQnA5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0c59fae93db8dca86497.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -127,7 +127,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kfhshl · 2026-10-11 22:06</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一位中国开发者搞出了个狠东西，叫 MoneyPrinterTurbo，专攻全自动批量生产 TikTok、Reels、Shorts 短视频。<br><br>以前做一条短视频，脚本、配音、字幕、剪辑、后期，一样样磨，几个小时就没了。现在这套流程它全给你包了。<br><br>1️⃣ 丢一个主题或者 Prompt 进去，直接出成片<br>2️⃣ 脚本、配音、字幕、剪辑全自动，你压根不用动手<br>3️⃣ 导出就是适配 TikTok、Reels、Shorts 的尺寸<br>4️⃣ 完全免费开源，无订阅、无水印、无限制<br>说白了，以前肝一下午的活，现在一个 Prompt 扔进去，坐等收片就行。做批量号的，看到这个应该坐不住了。<br>🔗 <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/harry0703/MoneyPrinterTurbo</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUQspYYbAAA71B9.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e4cc0faecd496cbd686d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -136,12 +136,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FiniYang · 2026-10-12 20:36</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Qwen Image 2.1 根据指定动作生成续作<br>角色一致性相当稳<br>姿势随你拿捏 😎<br>NSFW 的就不发了，兄弟们自己玩<br><br>参考图编辑 · 768 × 1376 · 8 steps · seed 193005769812901<br>生图模型：Qwen Image 2.1 Turbo · 8 步 · CFG 1<br>方法 &amp;amp; 提示词 ⬇️ </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbjNEobAAAp-tI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbjNgma0AAhF_o.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a7df7d86fea1058a88cc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/adfe25436a592fb88738.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Fini.Yang <span style="font-size:12px;color:#999999;font-weight:400;">@FiniYang</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Qwen-Image-2.1-Turbo 开源权重<br>仅需 8 个去噪步骤即可创建和编辑图像<br>保持质量的同时<br>大幅提升生成速度（虽然已经很快了）<br>仍然是原生 NSFW 哦 😎<br><br>下载地址 &amp;amp; 模特提示词 ⬇️ </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUPHljMaYAAuCnZ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUPHpmlakAEhHXx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/40e27db6c7bb8b1db84a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/7a78573b42ef788795f1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>

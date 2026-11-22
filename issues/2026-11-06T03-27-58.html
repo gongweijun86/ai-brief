@@ -72,7 +72,7 @@
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">晓辉博士 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaohuiyuan</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。<br><br>真正重要的是把标准写清楚，把可重复的操作做成工具，把确定的要求变成检查，让每次反馈都能留下来。<br><br>内容导航<br>00:00 想让Agent自己迭代<br>00:40 为什么先做验证<br>01:31 三组实践给我的启发<br>02:14 验证技能怎么搭建<br>02:49 产品地图与操作工具<br>03:59 改造录音转写工作流<br>04:58 纠错改进的五个层次<br>06:46 把自己的标准说清楚<br>08:19 循环之前先写验证<br>08:46 改造自己的Skill</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118494586784108544/img/DORNwbtaR-XAcsHm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/720cc7e75cca3a9093e2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -102,7 +102,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @runmaotui · 2026-11-06 08:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent，它到底怎么工作的？<br><br>为了搞懂，我从零做了一个 Min Agent，已经开源<br><br>它是一个专门用于学习 Agent 工作原理的可视化观察台<br><br>你可以给它一个任务，然后逐轮观察：<br><br>1、上下文： 模型当前知道什么？<br>2、模型决策： 为什么选择这个动作？<br>3、工具调用： 实际执行了什么？<br>4、观察反馈： 执行结果如何影响下一轮？<br>5、权限控制： 操作被拒绝后会发生什么？<br>6、完成验证： 凭什么判断任务已经完成？<br><br>每一步都有真实运行记录，可以查看和回放。<br><br>支持本地运行，提供 Fake 模拟模式和 DeepSeek 真实模型模式。<br><br>不需要先读懂源码，也能直观理解 Agent Loop 的工作机制。<br><br>GitHub 开源地址：<br><a href="https://github.com/JinweiX/min-agent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JinweiX/min-agent</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXAGu7bIAA1SxE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/72401953b077b99ee67e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">奔跑的大毛腿 <span style="font-size:12px;color:#999999;font-weight:400;">@runmaotui</span></p>
@@ -144,7 +144,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-05 22:19</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek 圈的地下军火库今天彻底公开了。 GitHub 杀出一个核弹级导航：awesome-dsh-plugin，直接扒光 DSH 所有神仙插件与民间破甲源。<br><br>原生 DeepSeek Harness 只是个毛坯房，这套清单把它爆改成满配工作站： <br>· 工具链与生产力：免 Key 免费全网搜索、沙箱代码执行、本地终端与底层特权调用 <br>· 界面与工作台改造：VS Code 级超级侧边栏、超长对话折叠净化、护眼暗黑调色盘 <br>· 破甲与底层黑客：全模型自由破甲补丁、单会话无限上下文压缩、多模型无感热切 <br>· 插件市场直连源：收录各类一键安装源，直接在界面里像逛应用商店一样挑扩展<br><br>相当于给你的 Coding Agent 配齐了全套外挂，搞本地开发和折腾 Agent 的兄弟建议直接马住。<br><br>你在本地跑 DeepSeek 时，最想给它装个什么新外挂？<br>👉 开源地址：<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/awesome-dsh-plugin/awesome-dsh-plugin</a> #DeepSeek #AI #开源工具</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118347296345894912/img/csCObDwjaDMekp1y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/dd21bd15fe9dec9661f1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

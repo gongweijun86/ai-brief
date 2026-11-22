@@ -100,7 +100,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Our agents used to borrow people's GitHub accounts or share a bot. ~600 PRs piled up and no one knew who wrote what.<br><br>So we built Stamp: agents push, open PRs and review under their own names.<br><br>Of 6,962 approvals, 6,892 came from agents. Only 70 from people.<br><br>How it works 🧵👇 </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVy86DPaQAAsPw0.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/09e0b3d1a17741e07dd4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -118,7 +118,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wudawei8848 · 2026-10-31 22:31</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽(¬д¬。) DeepSeek 已经这么牛逼了吗？？！！<br>DeepSeek 今天把这套东西发出来了，名字叫 Super-agent。<br>Router 收群聊、收 GitHub、收邮件，判断这活归谁；Worker 各自带着上下文去干，干完回来汇报。用户看到的还是同一个助手。目前是原型，不是产品。<br>最狠的是「静默复现并修复」。群里没人 @ 它，它自己复现 bug、自己提 PR。文章里写，等人还在讨论，PR 已经躺在那儿了。<br>实测 300 条消息，20 条是真活。单会话 p95 二十九分半，这套十五分四十二秒。代价是缓存读取涨 37%。<br>我盯着那句「一个人只能同时跟 3 到 5 个会话」看了很久。我桌面上开着七个窗口，每个都在等我回话。<br>以后不是我问它，是它排队等我点头。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV90q7bbgAAsovl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4850a366b06842b9a35c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -136,7 +136,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @snwiki238337 · 2026-10-31 13:11</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一篇关于 agent 上下文的出色论文，来自CUHK、腾讯与HKUST的联合团队被 COLM 2026 接收的 Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation。<br><br>他们把上下文清理的动作权交还给 ai 而不是依靠工程架构限制。不仅大幅拉高了复杂长任务的上限，还把推理 Token 消耗砍掉了将近 7 倍。<br>人类在解长难题时，大多数情况下并非记住了整个问题的所有细节，我们通常是记当下的内容，长期内容写草稿思考。<br>CORAL 顺着这个逻辑，将目前的 agent 上下文按照这个逻辑来做。<br>它们为Agent 提供了调用 MM 工具，维护一个持久化的核心面板，专门记录事实和进展两个因素。<br>当 Agent 感觉上下文过长或充满干扰噪音时，它会主动发起 CO 进行重置。彻底杜绝注意力分散。<br><br>为了让小模型也能自主掌握何时重置上下文，团队设计了一个多回合的算法。<br><br>它将终局获得的成败奖励穿透回合边界反向广播，并进行跨回合估计，让模型在没有额外人工标注的情况下，自主演化出最高效的记忆检查点策略。<br>在输实测中，在 Qwen3-8B 模型上，CORAL 取得了 42.8% 的平均准确率。<br><br>更具含金量的是它的结构分布，在需要极长推理链的 GAIA Level 2 达到 45.7%，在最难的 Level 3 斩获 19.8%。<br><br>因为 Agent 会自主在关键节点清空无用上下文，整个执行链路中的输入 Token 消耗相比传统单长链 ReAct Agent 降了 6 到 7 倍。<br><br>在BrowseComp 挑战集中，在配备完全相同搜索工具的前提下，引入 CORAL 工具集将准确率从 22.7% 推高到了 30.7%。<br><br>在未参与训练的多跳问答 MuSiQue 上同样斩获 43.2%，全面超越 Search-o1、R1-Searcher 等同期工作。<br>这项研究非常漂亮地打通了认知科学与 Agent 工程实践，证明了让智能体学会自己记重点并主动清内存，是突破大模型长程上下文注意力稀释的一个可行路径。<br>论文地址：<a href="https://arxiv.org/abs/2610.40350" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.40350</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV70V7wbAAADaF1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/5ec5754bf627b6496513.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -145,12 +145,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @op7418 · 2026-10-31 13:13</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这次随之发布的，还有大家以前一直想要的网页排版 skill（guizang-pages-skill），也内置在插件里了。<br><br>它会帮你把图文、视频排成一个非常精美的网页，所有的字体、字号、间距和细节都是为了阅读而设计的，尤其针对中文排版做了很多优化。<br><br>右下角可以自定义样式，也做了移动端优化。<br><br>同时它还可以帮你导出 PDF，非常适合将自己写的内容和 AI 的内容分享给朋友们</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV70bWrbAAAPwBQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d47c424d1715bfb36182.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">歸藏(guizang.ai) <span style="font-size:12px;color:#999999;font-weight:400;">@op7418</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">终于把自己的几个设计 Skill 合并了！<br><br>做成了一个 DSH 的插件 dsh-guizang-design<br><br>共用一套设计系统和 Design Token，还加了几个有用的功能 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV5EDJ6awAAnT26.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/519940cdbdfd2c776ec0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>

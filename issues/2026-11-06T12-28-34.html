@@ -76,12 +76,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-11-06 20:03</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">评论区有位大佬分享了一个更彻底的 Claude Code 远程开发架构：<br><br>Claude Code 完全运行在 VPS 上，本地通过 MCP 暴露文件系统和开发环境。<br><br>核心架构：<br><br>Claude Code（VPS）→ MCP Server（本地）→ 文件操作 / 编译调试<br><br>具体实现：<br><br>· herdr（herdrdev/herdr）：在 VPS 上管理 Claude Code 会话，支持后台运行和会话恢复<br>· server-filesystem：通过 MCP 提供本地文件读写能力<br>· expose-files-mcp：通过 MCP 提供文件操作和受限命令执行能力<br><br>整个思路很清晰：<br><br>Agent 在远端负责决策和调度，本地通过 MCP 提供必要的执行能力。<br><br>有人已经用这套架构跑通完整的开发流程了吗？欢迎分享实践经验。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWcMU_yaYAA7Op9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b8043cb5acca8829ff58.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Vince 聊开发 <span style="font-size:12px;color:#999999;font-weight:400;">@vincemask</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">通过 Tailscale 建立本地电脑与美国 VPS 之间的私有网络，无需暴露公网服务端口。Claude 账号凭证仅保存在 VPS，本地通过 Magpie 远程调用，实现凭证隔离与统一出口。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWM29WuaYAAZ0dy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9199420d5bafe0c26fe4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -104,7 +104,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yucheng · 2026-11-06 16:02</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我主力一直是 @superdoteng，经常同时开好几个 agent 并行跑。<br><br>但它是闭源的，所以 Orca、T3 Code 这两个开源的我也都装了，断断续续用了一阵，总是用不惯。。。分享下我的体感：<br><br>1/ @superdoteng 我离不开的是它给 agent 用的 sc 命令。agent 自己能开新窗口、把活派给另一个 agent，连 Codex 也能派。我很多流程是 agent 在编排 agent，换个编辑器这些流程就跑不起来了。多 workspace 多 worktree 多 agent 的 layout 也更符合我的操作习惯。当然，他们的问题也有不少，比如手机 app 不稳定。<br><br>2/ Orca 功能最多，更新也最猛。它也有 orca CLI 给 agent 用，但主要是往终端里塞任务，多行的任务会被提前提交，好多边角得自己处理。然后 UI 实在是非常拥挤，很难受<br><br>3/ T3 Code 其实哪都好，界面最干净，手机端也最全。但它只有 chat，不支持 TUI，我自己辛苦调试的一堆 mod/hooks 全都用不了，对我来说是彻底不能用。<br><br>如果你不靠 TUI 里的各种自定义配置，T3 Code 可能最舒服<br><br>你们在用哪个？</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbU_2KaAAAOFyk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a12e2a4ebd3f8836fc14.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

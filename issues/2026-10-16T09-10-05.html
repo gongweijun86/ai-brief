@@ -58,7 +58,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @slashui · 2026-10-16 06:27</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">对动画的理解，还得是日本人。<br><br>一位日本开发者把动画设计中常用的专业术语，整理成了一个可以直接喂给 AI 的资源库。<br><br>涵盖镜头语言、UI 组件、动态图形等 5 大领域，足足 120 个动态效果案例，而且每个都有直观的动画演示。<br><br>使用方法也特别简单：<br><br>直接把这个 GitHub 项目扔给 Claude Code 或 Codex，让 AI 浏览动效库，挑选你喜欢的效果，再告诉它用在哪里。<br><br>以前需要绞尽脑汁描述半天的动画，现在只需要给 AI 一个参考，它就知道你想要什么。<br><br>那些默默努力，把人类已有的知识整理好、再交给 AI 的人，值得我们永远尊敬。<br><br>地址，⬇️ ⬇️ ⬇️</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110860107785326592/img/4jjZ33qbfrPLuS6d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/46b9298cf76ab80e826c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -67,7 +67,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-16 14:11</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">pstack 作者公开她的 “工程原则” 设计思路<br><br>「Clean Code」作者 Uncle Bob 是传统软件工程方法论的宗师，他最近看到了 pstack，认为本质上是把经典工程智慧「最小改动、先删后加、验证根因、用类型系统让非法状态不可表示、幂等操作」重新编码给 AI Agent 使用。<br><br>pstack 作者 @poteto 回应并公开了这个 Cursor 官方内置插件的工程原则的设计思路，核心是：随着模型能力提升，写给智能体的指令正在从“冗长的操作步骤”压缩为“简短的命名原则”。<br><br># 几个关键信息点<br><br>1. 原则即极简 skill。pstack 的每条工程原则只有约 10–20 行，是一段被提炼、命名过的好实践，而不是一个流程脚本。她预期随着模型变强，pstack 里大部分 skill 最终都会被压缩成这样的短原则或工作流，从而可以删掉一批。<br><br>2. /poteto-mode 的运行机制。智能体在开始多步任务前先读一份简短的原则索引；执行过程中，必须“点名每一条影响了决策的原则，以及它具体改变了哪个选择”，并在回复末尾生成一个 &quot;Principles Named or Used&quot; 段落。这个设计很巧妙：如果原则被引用却没有对应的实际决策，就说明智能体只是在“报菜名”而没有真正应用；强制原则与决策挂钩，让推理过程可检验。<br><br>3. 原则来自真实纠错。这些原则大多来自她今年在会话中亲自纠正智能体的场景，属于“教训的结构化沉淀”。<br><br>4. 原则可被唤起。每条原则都能以 /principle-&lt;名称&gt; 的形式作为 skill 调用；更常用法是用名字来“掌舵”；因为名字背后指向智能体已经读过的完整规则，一个短语比一段指令更能精准地重定向工作。比如对着一堆旧适配器说 &quot;subtract before you add&quot;，智能体就知道先删过时的、再设计剩下的。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuyT1na8AEEUae.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cbdea293bb4b160004ac.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
@@ -88,7 +88,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-10-16 16:04</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">之前 Claude Code、Codex、Hermes、WorkBuddy 各自装一个记忆插件，记的内容还互相隔离。<br><br>Scope Recall 3.0 让这些 Agent 可以共用一份本地记忆，SQLite 是唯一的真实数据来源。目前已经接入了 Hermes、Codex、Claude Code、WorkBuddy 和 DeepSeek Harness，作者说还能跨机器共享，后面会接入更多 Agent。<br><br>这一版升级了新架构，功能没有减少，代码量从 141,044 行降到了 48,272 行。<br><br>GitHub：<a href="https://github.com/410979729/scope-recall-hermes" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/410979729/scope-recall-hermes</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvMEXgaMAAcrZh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvMElJbEAAWMLs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/df085b750aa961616a99.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/7d0a80ba63f9ab29c3d8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -106,7 +106,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @denziideng · 2026-10-16 12:09</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">几千块的学习机先别急，GitHub 上有人把小学 1-6 年级全科给免费了，送给乡村孩子一个免费学习平台🔥<br><br>我经常翻 GitHub，什么火看什么，但这次看到的不是流量，是个挺戳人的项目。😂<br><br>它叫 ChinaStudyFree，一个纯公益的小学全科学习平台，从一年级到六年级，语文、数学、英语、科学全都有。📚<br><br>说个我自己的感受吧。一线城市的孩子，教辅一套几百块，补习班一节几百块。偏远地区的孩子呢，可能连一本配套练习册都难拿到。😭<br><br>这事有人动手了：<br><br>📌 44 册教材、2166 个课节、6545 道练习题，全免费<br>📌 每道题、每篇课文都有语音朗读，语文英语还能逐句跟读<br>📌 284 篇 AI 分级故事 + 阅读理解题 + 儿童插画<br>📌 电脑手机浏览器打开就能用，不用装，不用注册<br><br>我坚持一件事：好资源不该被地域和钱包拦着，开源也有好东西。<br><br>一个孩子多做对一道题，这事就值了。❤️<br><br>🔗 <a href="https://github.com/wuwangzhang1216/ChinaTextbookStudyFree" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wuwangzhang1216/ChinaTextbookStudyFree</a><br><br>⚠️ MIT 开源纯公益，无广告无付费，教材版权归各自权利人<br><br>#开源工具 #教育</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuWTkKaQAA_fGV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuWUAxaAAAVnM_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8d295fa77c384e9c5f31.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/97c4b228e76cb23be9c0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 </section></article>

@@ -69,7 +69,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yupi996 · 2026-10-19 16:33</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想转 Agent 开发的程序员，这份海外博主整理的 12 步学习路线，每一步都配了练手项目，1 张图带你速通！🫡<br><br>比如学人工审批这一步，就做一个起草 1 万美元发票的 Agent，让它停下来等上 3 天，有人在 Slack 点了批准再接着跑。<br><br>有趣的是，博主认为最常被跳过的是评测，多数人只测 Agent 能不能跑通。这一步的练手项目，就是在 CI 里回放 100 条执行记录，Agent 调工具的顺序一偏离标准路径就拦下 PR。<br><br>建议可以照着图底下的顺序来，先用 Python 写一个能调工具的单 Agent，再碰多 Agent～</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-vE2LbAAAUXXJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bd7d54eb231d7fb176e6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -78,7 +78,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-10-19 18:49</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">你精心维护的 CLAUDE.md，可能限制 Claude Code 的发挥。<br><br>Claude Code 的创建者 Boris Cherny。他在 YC Startup School 上给出了一个建议：<br><br>每隔 6 个月，删除你的 CLAUDE.md、Skills 和 Hooks。看看模型会怎么做，结果可能让你惊讶。<br><br>为什么？<br><br>因为很多规则，原本就是为了弥补旧模型的能力缺陷。<br><br>模型升级了，缺陷可能已经消失，但那些规则还在。它们不仅占用上下文，甚至可能干扰新模型的发挥。<br><br>Claude Code 团队自己就做过类似实验：删掉超过 80% 的系统提示词，重新评估模型表现。<br>Boris 建议定期做一次「减法实验」：<br>1备份并暂时移除 CLAUDE.md、Skills 和 Hooks。<br>2用真实任务测试模型表现。<br>3观察哪些问题仍然存在。<br>4只把确实必要的规则逐条加回来。<br>安全、权限和合规约束需要保留。项目中特殊的业务规则，也不能指望模型凭空理解。<br>至于目录结构、依赖清单，以及模型读代码就能理解的内容，值得优先清理。<br><br>以前，我们不断给 Agent 添加规则，让它少犯错。现在，模型越来越强，我们反而需要检查：这些规则是否已经过时。<br><br></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2081773347021676544/img/0EfUFfjdJGLNqHnh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/99a6999bdb160f0fc8a6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Vince 聊开发 <span style="font-size:12px;color:#999999;font-weight:400;">@vincemask</span></p>
@@ -108,7 +108,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaomovps · 2026-10-19 13:53</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">为什么把写代码全交给 agent，会让你失去指挥 agent 的能力？🔥<br><br>最近在看一篇文章，是 PI 作者推荐的：Agentic Coding is a Trap<br><br>原文地址：<a href="https://larsfaye.com/articles/agentic-coding-is-a-trap" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://larsfaye.com/articles/agentic-coding-is-a-trap</a><br><br>原文用了不同的角度和测试数据，在一遍遍地告诉我们使用 AI 但是不能完全使用，需要保留一定的摩擦和思考过程，我把整个文章提炼成了五个观点：<br><br>1、&quot;监督悖论&quot;。 用好 agent 需要你有能力审查它的代码，可过度用 agent 恰恰会让这种能力退化。他引用了 Anthropic 自己研究里的这个说法，还提到另一项 Anthropic 研究显示调试能力下降了 47%<br><br>2、这次跟以往&quot;换一层抽象&quot;不一样。 从汇编到 FORTRAN、从 C++ 到 Python，程序员没人抱怨过脑雾。现在连有近 30 年经验的 Simon Willison 都说，自己对应用越来越没有清晰的心智模型。新人更难，只审代码、不亲手写，等于只学了一半<br><br>3、AI 加速的是不重要的部分。 好开发者原本的优先级是：先理解代码，再看规范，然后代码越少越好，速度排最后。agent 把这个顺序整个倒过来了，最先追求的是快速生成大量代码<br><br>4、写代码本身就是在思考。 很多人是边写边想清楚要做什么的（OpenCode 作者 Dax 也这么说）。spec 写得再完美，概率模型也照样会幻觉，替代不了确定性的思考<br><br>5、会被厂商绑住，成本也不可控。 Claude 宕机时整个团队停摆，token 成本也一直在变。他的做法是让 AI 退居二线：让 AI 帮忙出方案，自己亲手写 20%–100% 的代码；一次只生成自己审得完的量；自己不会做的事，不交给 agent 做。原话是&quot;把它当飞船电脑，而不是 Data&quot;（Data 是《星际迷航》里那个能独立行动的人形机器人）。<br><br>如果你对这方面研究感兴趣，一定要看一下这篇文章，让我觉得非常有意思</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-KciOasAAHTKf.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-KeqbbIAAbHOd.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/35f60cc809bd65122e00.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/2052de4369d2be9f075e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

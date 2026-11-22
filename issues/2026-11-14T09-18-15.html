@@ -60,7 +60,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-14 11:47</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看到一个很巧妙的 Agent RL 训练思路：把 Harness 变成训练阶段的探索工具，帮助模型学会原本难以完成的任务。<br><br>这来自论文《Harness-S》，研究团队尝试利用不同 Harness 的互补能力，将外部执行环境带来的能力提升迁移到模型自身。<br><br>具体机制分为三个环节：<br><br>首先，从基础 Harness 的失败轨迹中分析原因，针对不同问题定向修改执行机制，构建一个各有所长的 Sibling Harness Pool。<br><br>训练时，模型先在原始 Harness 下多次尝试。如果全部失败，Adaptive Harness Router 就根据各 Harness 的历史表现和适用场景，选择最合适的几个重新探索，并将新轨迹用于 GRPO 训练。Router 还会随着模型能力变化，动态更新选择依据。<br><br>这个设计解决了一个关键问题：当 Agent 多次尝试全部失败，GRPO 很难获得有效的组内奖励信号。 不同 Harness 提供了新的成功路径，让模型有机会从失败任务中继续学习。<br><br>论文实验显示，Qwen3.5-4B 在原始 Harness 下的 SWE-Gym Pass@3，从普通 GRPO 的 24.38% 提升到 38.75%，提高了 14.37 个百分点。<br><br>所以 Harness 可以在训练阶段帮助模型突破能力边界，再通过强化学习，把这些执行经验逐渐转化为模型自身的能力。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.04277" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.04277</a><br><br>💻 GitHub: <a href="https://github.com/DeepExperience/Harness-S" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/DeepExperience/Harness-S</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXBeFSqWMAAB6oZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cea810f8e6909ed2ebee.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -96,12 +96,12 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-11-14 12:17</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎉 我翻了大厂程序员在 REA 提的代码。<br><br>除了阿里、美团、微软、网易的工程师，动作最大的是 Scale AI 的工程师，他直接拿这个逆向工具做出了 97 个训练环境。<br><br>- 美团大模型团队给浏览器分析加了截图区域框选和区域比对<br>- 阿里的工程师让安装流程支持 Qwen Code<br>- 微软工程师修复了任务取消时的BUG<br>- 网易的工程师改了 JavaScript 分析性能优化、Electron、浏览器和安装流程<br><br>其他比如腾讯、亚马逊、谷歌、英伟达、小米、字节的工程师，以及逆向圈鼎鼎有名的 radare2 的作者 pancake 和 angr 第一大贡献者 Fish 也都来提过 issue 或 PR。<br><br>更离谱的是 Scale AI 的工程师，一口气提了68个issues和PR，让REA具备了造环境的功能。对于Agent开发者来说，这个造环境的功能非常关键，真系统测试成本太高，用REA给智能体搭建一套测试场就很有必要了。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDtzYqbMAAySMi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/316a3948eec2e478ad21.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">WquGuru <span style="font-size:12px;color:#999999;font-weight:400;">@wquguru</span></p>
   <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">格斗场中这两台不管怎么挨打都一直往前冲的机器人，如果最高权限在别人手里，要怎么才能让它停下来？<br><br>这段现场视频看得我有点出神，观众隔着笼子看热闹也似乎很安全，但如果把视角切到网络安全，事情就严肃了。<br><br>全球网络安全联盟 GCSA 的研究团队，刚在一家头部机器人厂商的实机硬件上突破了设备的系统安全边界，拿到了操作系统的最高权限。这也意味着网络风险已经从软件和数据延伸到了物理世界。<br><br>看到视频里这种冲击力，买一台能自主移动的人形机器人放在家里，是保姆、保镖，还是刺客？<br></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2077931160538329088/img/r_NBEWycIo6qWIpJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/95984de472714764eddf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">

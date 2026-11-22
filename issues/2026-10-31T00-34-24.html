@@ -78,7 +78,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sundyme · 2026-10-30 21:00</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">以后做这种超酷还能正常交互的网页就简单多了，Chrome新增HTML-in-Canvas能力，可以把真实网页直接画进canvas里做特效，网页还可以正常交互。<br><br>Chrome 157 起进入稳定版，目前只有 Chromium 内核的浏览器支持。<br><br>这是来自 Nick @nickbakeddesign 的演示，他还分享了带有源代码的交互式体验页面：<a href="https://baked.design/fun/html-in-canvas/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://baked.design/fun/html-in-canvas/</a> <br>期待其他浏览器也尽快支持。 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116038950511140865/img/fwrxNo6RXUBqOvBS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/9ca161b41ffe43f90a38.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -87,7 +87,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Stephan_Talk · 2026-10-30 22:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">《pstack 完全指南 pt.2》重点总结<br><br>这篇解决两个问题：<br>1. 如何与智能体对齐需求<br>2. 如何进行有效的规划和设计<br><br>如何与智能体对齐需求<br><br>lauren 会组合使用以下四个技能：<br><br>1. /how: 系统现在怎样运行？<br>2. /why: 为什么这样设计，有什么历史约束？<br>3. /recall: 过去的对话提供了什么背景上下文？<br>4. /teach: 能否讲清机制与原因，让人检查理解？<br><br>举例：<br>&gt; /recall 我过去 7 天修复虚拟化 bug 和性能问题的工作。使用 /how 和 /why 了解我们当前的虚拟化实现是如何工作的<br><br>* 注意，/recall 能自动搜索你的 harness 的会话历史记录，但这并不是唯一方式。它的目的是为智能体扩充你的环境上下文，以便智能体能有更加全面的视角。所以我认为在这个阶段应该尽可能多的给智能体主动提供环境上下文，比如日志、数据库、外部依赖、外部文档等<br><br>这样沟通的好处不仅限于让人类更能全面的理解当前现状和问题，更重要的是推动智能体掌握更全面的上下文，避免它们基于少量的信息匆忙得出片面的结论<br><br>* 另外推荐一个我觉得很好的 skill: <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/QingYunA/answer-me-with-html</a> ，当智能体长篇大论或不说人话时，我就会用这个 skill 帮我生成一个网页来理解<br><br>如何进行有效的规划和设计<br><br>第一，lauren 推荐一种 “逆向工作法” 叫 README 驱动开发 。具体来讲她会用 /technical-writing 技能，在规划阶段写出不同层次的用户教程，打磨好后的教程将成为智能体的行动目标<br><br>把写用户文档作为打磨设计文档的手段，好处是可以站在 high-level 的视角逐层打磨设计文档，而不是事无巨细的 grill-me <br><br>第二，她建议 “用代码来做规划”，她会使用 /poteto-mode 原型设计工作流 来进行快速原型开发，使用 /architect 技能扇出（Fan-out）多个并行智能体产出不同候选设计方案，最后综合成一份最优设计方案并进入实现<br><br>多个并行智能体扇出的方式，有点像赛马机制。核心思想是利用不同家族的模型进行并行研究，以避免单一模型的局限性。然后从所有返回的内容中综合整合出最优方案（不是只选一个模型的结果）。这种机制在 pstack 的整体设计中会有多处体现<br><br>这里需要注意，并行赛马比较的并不是最终实现，而是草图、类型定义、接口定义组成的一套接口规范层面的设计草案<br><br>lauren 特别提到，她“从不费神去对抽象计划做对抗性评审”的原因就来自于此。如果用类似 grill-me 这类 skill，难免会陷入纸上谈兵的境地，既费人又容易过度设计。而让代码自己去竞争评审能更落地且节约人脑细胞<br><br>补充说明一点：/architect 在 D 阶段人类确认后，会自动进入实际代码的实现阶段。这里如果你是比较大的任务，可以在人类确认后掐断（pstack 有提供其他的长周期任务工作流），举例如下：<br><br>&gt; /skill:poteto-mode 为 &lt;功能&gt; 制订实现计划。先用 architect with checkpoint 完成设计并暂停。本轮不要进入 Phase D，也不要实现功能逻辑。将设计方案转化为一份计划<br><br>---<br><br>以上是我在看了这篇文章以及相应 skill 源码后的一份总结，有趣的是我在总结过程中就已经会应用上以上提到的技能了。包括下面这张图的文稿也来自于 /teach 和 /technical-writing。所以大家如果有不懂的地方，非常推荐直接跟 pstack 对话，另外更推荐直接看它的 skill 实现，很多宝贵的设计思想<br><br>/architect skill 流程图</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV4btRKasAAeUbm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ae62b35c222660c7b50a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Stephan <span style="font-size:12px;color:#999999;font-weight:400;">@Stephan_Talk</span></p>
@@ -117,7 +117,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dihuang111 · 2026-10-30 14:19</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源AI游戏工作室OhMyGame大升级！🔥🔥<br><br>升级到Beta 5版本后 -&gt;&gt; <br><br>1. OhMyGame 现在可以直接用Claude Code、Codex CLI 来制作游戏了，Bring your own agent!  <br><br>2. 新增加的各种游戏平台插件，让用户可以方便地把制作的游戏发布到Taptap 等游戏平台上<br><br>3. 新增加了对互动游戏的进一步支持。 OhMyGame 是第一个直接把网页作为画布节点的游戏工具。每一个节点都是可以自由控制的网页。非常适合创作各类型的交互游戏和叙事游戏，比如影游和各类型的交互故事。 <br><br>告诉我你对后续开发的建议！<br><br>#aigame #vibegame #gamedev #indiegame</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116050857464918016/img/v1r0BFk27MCqIzyk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/171b64ee210fe04a4ced.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -126,7 +126,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-30 16:30</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">又一家垂直领域的后训练小模型，金融研究领域小模型Samaya Sterling，他们的模型在 FrontierFinance 数据集上，比排行榜上最强的 Frontier 模型 Claude Fable 5.1 高出 3.0 个百分点，且每题成本降低了 11 倍（0.61 美元对比 6.89 美元）。<br><br>他们是在Nemotron 3.5 Lightning采用Thinking Machines Lab 的训练 API Tinker，通过 LoRA对其进行训练，训练分为四个阶段：两个阶段的监督式微调 (SFT) 和两个阶段的强化学习 (RL)。训练完成后，模型在 FrontierFinance 数据集上的准确率从 42.5% 提升至 58.9%（见图 ）<br><br>Samaya AI（<a href="http://samaya.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://samaya.ai</a>） 是一家专注于金融服务领域的 AI 公司，为投资专业人士（买方/卖方）提供专家级 AI 智能层（Expert Intelligence Platform / AI agents）。<br><br>创始人/团队：创始人兼 CEO 是 Maithra Raghu（博士），曾在 Google Brain 从事研究。<br><br>业务模式：为资产管理、股票研究、投行、财富管理等提供 AI 代理，用于调研、会议准备、论点审查等。客户包括 Morgan Stanley（跨研究、销售交易、投行部门）等大型机构；宣称在生产环境中有数千用户，使用量快速增长。⁠<br><br>融资：4350 万美元⁠，参与者包括前 Google CEO Eric Schmidt、Meta 首席 AI 科学家 Yann LeCun、Two Sigma 联合创始人 David Siegel、前高盛高管/现 Sixth Street 副主席 Marty Chavez。<br><br>技术报告：<a href="https://samaya.ai/blog/rl-post-trained-agentic-model" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://samaya.ai/blog/rl-post-trained-agentic-model</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV25jMpacAAmMkA.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a2b0afc419b0e504050d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -135,7 +135,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-30 18:03</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近一直在用 Orbital，一个开源的项目 Agent，非常值得推荐。它不替代 Claude Code 或 Codex，而是把项目上下文管起来，让这些 Agent 在同一份记录上接力。<br><br>Claude Code 干到一半，弹出一句 &quot;You're out of usage credits&quot;。<br><br>换 Codex 接着做不难，麻烦的是把前面的事再讲一遍：聊到哪了，哪些已经拍板，哪些还没定。<br><br>视频里就是这个场景：<br><br>Claude Code 额度用完，报错停下。<br><br>在输入框左下角把 Agent 换成 Codex，只打了四个字：&quot;你继续吧&quot;。<br><br>Codex 回：&quot;收到。我先把你刚拍板的两点和其余默认项对照现有 specs / 项目记忆，确认没有遗漏或互相冲突……&quot;<br><br>那两点，是刚才跟 Claude Code 说的。<br><br>能接上，是因为 Orbital 里的一个会话，是所有 Agent 共用的一段对话。新换上来的 Agent 会拿到前面的对话，开工前还会先读项目里的几份记忆文件：当前进展、做过的决定、踩过的坑。<br><br>而且我经常用 Claude Code 做开发、Codex 去 review。做完后项目文件夹里多了 PROJECT_STATE.md、DECISIONS.md、LESSONS.md，分工和结论都在里面，之后换哪个 Agent 进来都先读这些。<br><br>官网上有句话：上下文是你的，Agent 是可替换的。<br><br>如果你同时有 Claude 和 ChatGPT 的订阅，这个功能挺实用：一边额度用完，另一边直接接着干，不用重新交代。<br><br><a href="https://orbital.top" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://orbital.top</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116052918340071424/img/3EuRMRf0vbWCu5kv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d58e4bf81be197afb885.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -144,7 +144,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @S7even_HZ · 2026-10-30 13:39</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">之前在智谱参与一个VLA预训练的评测的工作，可惜最后因为种种原因没能好好宣传给大家。 <br>主要思想是使用大量的E-CoT进行预训练，因为我们相信，语言的边界是智力的边界，对于物理世界的Reasoning如果Scale上去是潜力无穷的。 <br>Code: <a href="https://github.com/RUCKBReasoning/ZR-0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/RUCKBReasoning/ZR-0</a> </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2xMAcbUAE0XWs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3ac2dce938d6c3c5855c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">

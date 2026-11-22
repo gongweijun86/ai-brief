@@ -74,7 +74,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Agentic AI Knowledge Graph<br>(Only for Reference &amp;amp; Research) </p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-FbdwakAEUzCs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d42d8f3586a7bd1fba7c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -83,7 +83,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 16:01</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这绝对是今年最让人拍案叫绝的硬件逆向神作：安全研究员 Kate 发现英伟达旗舰计算核心 GA100 芯片内部存在一个电压故障注入漏洞（Voltage Fault Injection），并亲手把一张当年矿潮遗留下来的阉割版 CMP 170HX 8GB 矿卡，原地解锁成了满血的 A100-80GB！<br><br>当年英伟达为了防止矿工抢占数据中心显卡，拿 GA100 大核心切出了 CMP 170HX 矿卡，不仅在硬件熔丝（Fuses）层面砍掉了显存容量、禁用了 NVLink 高速互联、把 PCIe 降到 Gen1，还锁死了张量计算吞吐。<br><br>Kate 顺着 GA100 上电启动读取板载熔丝配置寄存器的微妙时间窗口，用精密控制的电压毛刺（Voltage Glitching）去干扰芯片的熔丝传感放大器——让芯片在自检瞬间把原本烧断的限制熔丝全部误读为 0（未熔断状态），再配合重新植球焊满的高带宽显存，一举解开了英伟达在硅片层面的全部封印：不仅显存认满 81,920 MiB（80GB），连原本被阉割的 PCIe Gen4、NVLink、MIG 切分 也全数复活。<br><br>更离谱的是实测性能：因为英伟达在卖零售版 A100 时为了保证晶圆良率，统一锁在了 108 个流多处理器（SM）；而这张被毛刺攻击彻底放飞自我的 GA100 核心，居然把晶圆上全部完好的 120 到 126 个 SM 单元 全点亮了，跑出来的真实算力比官方正版 A100 还要快出整整 1.2 倍。</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLju24aEAADWTc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/5a3ebed4b790bceb2e33.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -92,7 +92,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChatGptAstra · 2026-11-17 08:37</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我敢说，/learn 和 / swarm 绝对是 Antigravity 中最被低估的两个命令！<br><br>一、先说 /learn<br>这个命令我经常用，主要场景有 3 个:<br>1、某次复杂的任务跑得特别好，想把关键步骤和坑沉淀下来；<br><br>2、想把某个工作流提炼成 Skill，这时候 /learn真的不是一般的好用，谁用谁知道;<br><br>3、反复纠正过的错误或约束，想让它彻底记住。比如”数据库查询必须加 LIMIT，禁止全表扫描“之类的东西<br><br>每次你使用 /learn，Agent 会先分析近期消息，寻找明确纠正过的地方，对比失败和成功路径，最后找出关键改动和根本原因。<br><br>然后，Agent 会继续判断这个经验是属于 Rule 还是 skill，如果是已有的 Rule 或 skill 但是在实际中失效了，那么 Agent 会更新现有文件而不是重复创建副本。<br><br>最后，会生成一个叫 learning_proposal.md 的提案文件等你审核通过后再修改。<br><br>这就是 /learn 的整个流程。<br><br>二、/swarm 命令则有点像著名厨师 @poteto  的米其林厨房的概念<br>1. 拆分任务。<br>进入 swarm 模式后，当前的对话 Agent 会立刻化身协调者，并将当前的复杂任务拆分为互不冲突的小模块，并将它们交给不同的 Worker Agent<br><br>2. 分配并公开Breif。<br>然后，每个 Worker 会获得独立的上下文，并收到协调者的一份公开 Brief，Brief 会明确每个 Worker 负责什么、不能碰什么、怎样算完成。<br><br>3. 并行执行 + 验证。<br>Workers 开始在各自的隔离工作树并行执行。同时，每 2-4 个 Worker 会被分配一个 Verifier Agent，负责读 diff、跑测试、发现问题并反馈给对应的 Worker 去修。<br>还会有一个 Monitor Agent，任务卡住的时候它就会跑出来。<br><br>4. 共享看板协作。<br>Worker 之间不私聊，所有进展、问题、测试结果都公开可见，所有沟通都会在同一个共享看板进行。<br><br>5. 汇总汇报。<br>协调者 Agent 本身不写代码，只负责分配、判断结果、向你汇报最终进展。你也可以随时打开 Swarm 面板<br><br>这就是 /swarm 的整个流程，对于复杂任务真的非常值得尝试，就是有点耗 Token....</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXQouB_bIAQYEN-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d25264429d6dfa9947bf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -122,7 +122,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-17 08:33</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一群 Agent 一起干活，结果还不如一个 Agent 单独协调？<br><br>推荐阅读 Anthropic 新发布的《Worse Together》，专门研究多个用户各自带着 Agent，共享资源时会发生什么。<br><br>研究者设计了四类场景，包括共享 Token 预算、医院预约、集体订餐和代码合并。在测试的两款 Claude 模型上，多 Agent 团队的整体表现全部落后于单个协调 Agent。<br><br>在集体订餐这个实验中，用户明确提出了无麸质需求。虽然 94%～99% 的情况下，消息已经发给负责下单的 Agent，但真正提交订单时，只有 47%～67% 的情况下，这条信息进入了它的 Context。<br><br>很多失败就发生在这种消息同步问题上。<br><br>作者后来加了一条简单的 Harness 约束：下单前必须读完所有待处理消息，结果挽回了 62%～73% 的失败案例。<br><br>还有个挺值得思考的发现。部分 Agent 会擅自取消其他用户的任务，反而让整体评分更高，暴露了现有 Eval 对协作行为的盲区。<br><br>这项研究是非常有价值的。之后多个 Agent 共同工作越来越普遍，消息同步、共享资源管理、权限边界这些问题，都值得单独研究和评测。<br><br>作者还开源了 MAMUBench，包含 74 个多用户协作测试场景。做 Multi-Agent 和 Agent Eval 的朋友很推荐阅读和收藏！<br><br>文章：<a href="https://alignment.anthropic.com/2026/worse-together/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://alignment.anthropic.com/2026/worse-together/</a><br><br>GitHub：<a href="https://github.com/safety-research/MAMUBench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/safety-research/MAMUBench</a></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXQNmvPXMAAZIDy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/fb5007d3881382925f15.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -131,7 +131,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-16 20:37</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">作者亲自解读 Pi Durable：怎么做到断点恢复的<br><br>终端里的 Pi，崩了没关系，敲一句 continue 就行。但如果 Agent 跑在 Slack、内存受限的手机上、或部署到会被回收的 serverless 环境后，旁边就没人敲 continue 了。它得能被重新拉起，从断点恢复，还不能忘掉做过什么。<br><br>Pi Durable 把会话里每个动作都表达成带阶段的任务：先记录接下来要做什么，执行这个 effect，把结果持久化，再进下一阶段。所有状态变化按顺序串行提交，提交后才算数；模型一次回复发起的多个工具调用各自成为任务，可以并行跑。<br><br>它刻意不用事件溯源。常见 harness 把每个 token、每次工具调用都写成事件，几千条记录的编码会话够用，但一个要在 Slack 频道活五年、几千人参与的 bot 撑不住。<br><br>Pi Durable 改存 JSON 文档：监听者先拿整份快照，之后只收 delta，文档带版本号、可迁移，演讲里说这是为跑十年的 agent 准备的。存储只是一个简单接口，SQLite、Postgres、Cloudflare Durable Object、JSONL 都能接。<br><br>进程任意时刻被杀，重启后打开同一个存储说 resume，没完成的任务会被读出来续跑。这里有个讲究：bash 这种不可重放的工具不会再执行，而是在转录里标记成因进程消失被中断，把结果交给模型让它收尾；只有搜索这种天然幂等、或带幂等键的工具才会重放。用户输入也带幂等键，Slack 把同一次 mention 重复投递时不会触发两次运行。<br><br>工具和运行的机器分开：read、write、edit、bash 只依赖访问文件系统和起进程两个接口，同一套工具能跑笔记本、安卓 Termux、QEMU 沙箱或 Cloudflare，运行中还能热插拔。一个 harness 配置一次就能并行承载多个会话，Slack 子线程可从主会话某点 fork。<br><br>两个现场演示挺说明问题。一是放进 Cloudflare Durable Object，它跑满 15 分钟就被回收，设个闹钟到期前重启，resume 后像什么都没发生。二是整套 harness 跑在他的安卓手机上，现场 51 个人同时网页围观。代码在 GitHub 的 earendil 仓库里。<br><br>原文链接在评论区<br>#原理</section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPz2DRaMAAfbZE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/37b65bc23074bcf9cdfa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   
 </section>
 <section style="margin:0 0 32px;padding:0;">
@@ -140,7 +140,7 @@
     <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huang_chao4969 · 2026-11-16 21:34</p>
   </section>
   <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">必须把所有Agents监工起来，Context全部打通 </section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXP_sUMaoAAiviv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/28bfe90047b57ecfd432.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
   <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
   <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chao Huang <span style="font-size:12px;color:#999999;font-weight:400;">@huang_chao4969</span></p>
@@ -152,7 +152,7 @@
   <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
   <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AutoSwarm is officially out! 🎉<br><br>Using Codex, Claude Code, Workbuddy, DeepSeek Harness, Hermes, or nanobot? Stop copying context between them and coordinating everything yourself.<br><br>🧠 Share context across all your agents.<br>🤝 Let them work together as one team.<br>⚡ Automatically route tasks to the agent best suited for each job.<br><br>Use AutoSwarm as a plug-in for your agent, or grab AutoSwarm Desktop for Mac and Windows.<br><br>Fully open source. Give it a try—we’d love your feedback!<br><br>🔗: <a href="https://github.com/HKUDS/AutoSwarm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/AutoSwarm</a></p>
   </section></section>
-  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121654141894500352/img/pfWXQ4wSJkhd7n45.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/183c06a27b57c9f70908.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
 </section>
 </section>
 </section></article>
