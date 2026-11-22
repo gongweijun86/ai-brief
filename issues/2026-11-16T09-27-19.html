@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月16日 17:27">
+<title>AI技术雷达 · 11月16日 17:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Pi Durable组装常在线Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Agent Skills规范编码工程流程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;GLM-5.3-Flash反代调用被封号</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Grok Bot用形式化验证守质量</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable组装常在线Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @verysmallwoods · 2026-11-16 00:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">结合这篇文章，整理了一套用 Pi Durable + Pi AI SDK 组装 always-on Agent 的架构。<br><br>Agent 平时等待，收到消息、Webhook 或定时事件后唤醒，推进任务、保存进度，再决定何时继续，以及是否通知用户。<br><br>各个组件可以这样组合：<br>- Conversation 保存讨论，Submission 接收输入，用稳定 requestId 关联重复请求。<br>- Harness 调度 GenerationTask 和 ToolTask，完成模型生成、工具调用与后续执行。<br>- Durable Storage 保存历史、检查点和结果，进程重启后重新打开存储并恢复。<br>- Pi AI SDK 统一接入模型服务。<br><br>应用层负责事件收件箱、长期任务、记忆、审批和通知；定时唤醒可结合持久任务实现，周期规则由应用管理。外部操作还需要幂等或结果核对。<br><br>配图分三层：全局架构、主动调度循环、可恢复执行核心。<br><br>或许我会尝试在 ChatOllama 中实现一下。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XQAABmiN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XAAAi3zB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-9XAAACF_S.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">九原客 <span style="font-size:12px;color:#999999;font-weight:400;">@9hills</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Claude 这个 Building Always on Agents，实际是 Personal Agent的最基本的设计模式。<br><br>之前在 raft build 上就看到类似的设计。<br><br><a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMHILbwAAi74g.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMMgzbYAA_Pkn.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Skills规范编码工程流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chenfacai0 · 2026-11-15 22:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一位前 Google 工程负责人、如今在 Anthropic Claude Code 团队任职的人，把软件工程师平时用的开发流程，梳理成了 25 个开源的 Agent Skills。<br><br>这套 Skills 可供 Claude Code、Codex、Cursor 等 AI 编程工具调用，让 Agent 从需求分析一路到最终上线，全程都有一份清晰的工程规范可循。<br><br>整个项目按软件开发流程来组织：<br><br>① 需求分析<br>需求不明确就先发问，把功能、约束和验收标准理清楚，形成规格文档，而不是上来就动手写。<br>② 任务规划<br>将大需求切成可执行的小任务，把依赖关系和完成条件交代明白。<br><br>③ 编写代码<br>以小步迭代的方式实现功能，配合测试驱动开发，防止一次改动过多内容。<br>④ 测试验证<br>跑真实测试，修 Bug 时补上回归测试；网页项目还能借助浏览器开发工具查看运行状态、控制台报错和网络请求。<br><br>⑤ 代码审查<br>排查代码质量、安全风险、性能问题以及不必要的复杂度，压低后续维护成本。<br>⑥ 部署上线<br>覆盖 CI/CD、版本管理、分阶段发布、回滚方案以及上线后的监控。<br>25 个 Skills 当中，24 个负责具体的工程流程，另有一个 Meta Skill，专门根据当前任务挑选合适的技能，不必每次都全量加载。<br>项目还给出了 /spec、/plan、/build、/test、/review、/ship 等命令，把这些步骤串联起来。<br><br>它为 Coding Agent 添上了具体的执行规则和验证检查点。但 Skills 本身并不能担保代码质量，测试和上线结果仍旧需要实际核验。<br>项目采用 MIT 开源协议。<br><br>GitHub：<a href="https://github.com/addyosmani/agent-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/addyosmani/agent-skills</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXElpSabQAEMgYD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GLM-5.3-Flash反代调用被封号</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zg0820 · 2026-11-15 23:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">反代智谱一封一个准！<br>Magpie反代调用GLM-5.3-Flash直接触发风控封号  <br><br>圈内已出现批量踩坑案例：通过Magpie反代调用智谱GLM-5.3-Flash时，接口直接返回405错误，错误码3012，官方判定原因为“异常行为导致请求被拦截”  该封禁为账号级风控，命中后ZCode官方App内同步失效，不会自动解除，唯一解封渠道只有联系官方客服申诉  <br><br>特别提醒：别拿自己的付费订阅账号赌风控，GLM风控下手极狠，反代调用基本一封一个准，号封了订阅直接打水漂</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot用形式化验证守质量</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-16 15:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从Lauren Tan 土豆姐在AI Engineer Code Summit 上的演讲里可以看到SpaceXSI团队已经开始在自动化coding里使用了形式化验证做质量保证，并且token的70%用于验证质量！<br><br>土豆姐在AI Engineer Code Summit 上的演讲，标题是 《All Code Is Slop (Except Mine)》（所有代码都是垃圾，除了我的）<br><br>她讲的是 SpaceXSI 的 Grok Bot 团队如何用 AI coding agents 大规模写代码，同时不牺牲质量。（看来他们已经大量的在生产环境下用形式化验证保证质量了）<br><br>-有了 AI agent 后，任何人都能变成“编码机器”，产量暴涨（她自己一个月提了约 3000 个 PR，团队一个月合并约 11,000 个 PR，回滚率约 0.5%）。<br><br>-真正的挑战不是“写得快”，而是在产量暴涨的同时守住甚至提升代码质量。<br><br>-关键不是盲目信任 agent，而是通过改善 agent 的环境来建立“earned trust”。<br><br>她用一个倒金字塔说明应该把精力放在哪里（从最重要到最次要）：<br>-代码库本身（最重要）：好的 API 设计、架构、重构。Agent 会模仿代码库里的现有模式，垃圾模式会被快速复制传播。<br><br>-静态分析 / 强制约束：lint 规则、类型系统、编译器、测试、CI。把容易误用的东西直接禁掉（例如他们在 Dune 框架里几乎全面禁用了 React 的 useEffect）。<br><br>-验证：运行时验证 + 形式化验证（他们用了 TLA+ 和 Lean）。把 token 更多地花在验证而不是生成上（提到日常 token 使用约 70% 用于验证）。<br><br>-文字规则（rules、skills、AGENTS.md 等）：最后才用，因为这些不可强制执行，容易过时。<br><br>实用做法举例：<br>-用文件夹结构和 lint 规则强制隔离（比如 Electron 的 main 和 renderer 不能互相导入）。<br>-尽量少写注释，改用能给出明确错误信息的 lint 规则，引导 agent 修根本原因而不是打补丁。<br>-让 agent 自己跑应用、用 DevTools、看截图/视频来验证，而不是只看代码。<br>-先把基础打好（干净的代码库 + 强约束 + 验证），再做自动化的“software factory”，否则自动化只会更快地生产更多垃圾。<br><br>演讲视频：<br><a href="https://www.youtube.com/watch?v=O_zcc6Xl12g" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=O_zcc6Xl12g</a><br><br>视频里提到的形式化验证工具：<br>TLA+ 和 Lean 都是形式化验证工具，用来从数学层面证明“这个系统/代码在某些情况下一定是对的”，而不是只靠测试去碰运气。<br><br>TLA+验证：<br>主要用于模型检查（model checking）核心用户流程的状态机。<br><br>gorkbot应用的典型例子：跨设备、跨平台的通知流程。<br>做法是把用户行为/系统状态变化建模成状态机，然后检查在各种可能的事件顺序下，系统是否始终满足预期的性质（比如不会丢通知、不会出现不一致状态等）。适合发现“并发/时序”类问题。<br><br>Lean验证：<br>主要用于对具体算法做形式化证明。<br>gorkbot应用的典型例子：他们自己写的一个虚拟化库（virtualization library，用于长列表只渲染可见项）。用 Lean 证明这个算法不会出现闪烁（flicker）和抖动（jitter）问题。<br><br>TLA+：官方有《Specifying Systems》和一些不错的入门教程。<br>Lean：可以看《Theorem Proving in Lean 4》或社区的数学形式化项目。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>agy CLI用Go编写脱离编辑器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChuckBass8808 · 2026-11-16 08:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看着推上开发者们纷纷从 Claude Code / Codex 切换到 Google Antigravity ，理由如下：<br><br>1 大家对 agy 的一致评价是Harness像毛坯房，但里面的 模型 Gemini 4 Carbon本身太强了。预感两个月后 harness 会追上来<br><br>2 当看到 agy 彻底地抛弃了 VS Code 界面，就感觉他们有前途了 哈哈<br><br>今年 Google 推出 Antigravity 2.0 独立桌面端 + Go 语言编写的 agy CLI，彻底摆脱了传统文本编辑器的包袱<br><br> CC Switch（已更新至支持 agy 账号切换、用量统计与 MCP/Skills 同步）</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

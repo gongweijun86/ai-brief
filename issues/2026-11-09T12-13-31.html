@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月9日 20:13">
+<title>AI技术雷达 · 11月9日 20:13 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;GrokBot 调度 Claude Code</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;MOPD 多教师蒸馏对齐学生分布</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;CodeRabbit 三档审查深度可调</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Fly.io 一键生成 Node 部署配置</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;DSH 源码七包拆解 Agent 骨架</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GrokBot 调度 Claude Code</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-11-09 19:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GrokBot × Claude Code 方案<br><br>直接利用 GrokBot 自带的云电脑，把 Claude Code 变成它的执行工具。<br><br>整个流程很简单：<br><br>1、让 GrokBot 在云电脑里安装 Claude Code CLI<br><br>2、手动完成 Claude 订阅登录在云端电脑登录<br><br>3、GrokBot 负责理解需求、拆解任务、调用 Claude Code<br><br>4、Claude Code 负责写代码、操作文件、运行测试，完成后返回结果<br><br>这样，GrokBot 负责调度，Claude Code 负责执行。手机上就能分配开发任务，不需要本地电脑一直开机。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWriSN-bwAA6kHk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Vince 聊开发 <span style="font-size:12px;color:#999999;font-weight:400;">@vincemask</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">通过 Tailscale 建立本地电脑与美国 VPS 之间的私有网络，无需暴露公网服务端口。Claude 账号凭证仅保存在 VPS，本地通过 Magpie 远程调用，实现凭证隔离与统一出口。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWM29WuaYAAZ0dy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MOPD 多教师蒸馏对齐学生分布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-09 18:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">google deepmind 的大神 @i_amanchadha 的知识蒸馏入门blog<br><br>核心内容先分别训练多个领域专家教师（比如数学专家、代码专家、工具使用专家、安全专家等），然后让学生模型自己生成轨迹，再让这些专家教师对学生实际走过的路径进行密集监督，最终把多个专家的能力整合进一个统一的模型中。它解决什么问题不同领域很难一起用一个大的混合 RL 训练（容易互相干扰、互相拉扯）<br><br>传统离线蒸馏只学教师生成的轨迹，和实际推理时学生自己会走到的状态有偏差MOPD 兼顾了学生自己的状态分布+教师的密集 token 级指导。<br><br><a href="https://aman.ai/primers/ai/knowledge-distillation/#multi-teacher-on-policy-distillation" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aman.ai/primers/ai/knowledge-distillation/#multi-teacher-on-policy-distillation</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CodeRabbit 三档审查深度可调</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @coderabbitai · 2026-07-10 06:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个代码库，三个完全相同的 PR，三个不同的 CodeRabbit 审查配置<br><br>quiet - 只输出最重要的反馈<br>chill - 均衡（默认）<br>assertive - 最全面的审查<br><br>根据你的团队调校审查深度。<br>更多有效信号，更少噪音，为你的团队量身调节。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">One codebase, three identical PRs, three different CodeRabbit review profiles<br><br>quiet - only the most important feedback<br>chill - balanced (the default)<br>assertive - most comprehensive<br><br>Dial in the review depth that fits your team.<br>More signal, less noise, tuned to your team.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fly.io 一键生成 Node 部署配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @flydotio · 2026-10-16 00:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">几秒之内即可在 Fly 上启动 Node 应用。`fly launch` 会检测你的 Node 配置并生成对应的 Dockerfile——`fly deploy` 随后即可部署上线。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Launch Node apps on Fly in seconds. `fly launch` detects your Node configuration and writes a Dockerfile for it - and `fly deploy` ships it.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH 源码七包拆解 Agent 骨架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @uudonX · 2026-11-09 06:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想读懂 dsh 的源码？先把这七个包背下来<br><br>给你一个偷懒的办法，读源码之前，背这张表：<br><br>session：只追加的事件日志。<br>system-prompt：提示词片段和工具 schema 的组装。<br>tools：带作用域的工具注册表加执行流水线。<br>agent：Agent 接口和 agent/* 事件。<br>agent-loop：默认的驱动器。<br>scope：按 agent 划分作用域的原语。<br>llm：消息、流式词汇和适配器接口。<br><br>背完你会发现，整个 agent 的骨架就这七块，其他全是围着它们长出来的。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 动画工作流拆解全套工具链</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aikangarooking · 2026-11-09 10:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">太夸张了，YouTube浏览量2700万的AI动画工作流被公开了。<br><br>生成和剪辑交给 HyperFrames、Remotion 和 Claude Animated Shorts。<br>由 DirectorSKILL、Drama Skills 和 Seedance Storyboard 来拆成一个个故事镜头。<br>像素处理、着色器、生成式画面这些特效活，PixelFX、Shader Skills、WebGPU 和 ComfyUI MCP 分着干。<br>配音、音效、配乐，就丢给 ElevenLabs Skills 和 AI Music Skills。<br><br>作者晒出来的每张卡片，都是 Claude 用同一个 Blender 文件做出来的真 3D 场景。<br>完整教程👇</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Dumble <span style="font-size:12px;color:#999999;font-weight:400;">@Y0urDumble</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这是目前 YouTube 上最被低估的格式<br><br>一个关于青铜罐的 65 秒动画短片在 8 天内获得了 2700 万次观看<br><br>2D 角色。打光的 3D 场景。一个配音。一个真实的故事。<br><br>完整课程在这里：提示词、技能和审查循环 ↓ <a href="https://x.com/i/article/2115149367057256448" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115149367057256448</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">this is the most underrated format on youtube right now<br><br>a 65-second cartoon about a bronze jar got 27M views in 8 days<br><br>2D characters. lit 3D sets. one voice. a true story.<br><br>here's the full course: prompts, skills and the review loop ↓ <a href="https://x.com/i/article/2115149367057256448" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115149367057256448</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Dalibre 开源替代 Calibre 管书</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @randyloop · 2026-11-09 15:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">苦 Calibre 久矣，开源一个它的替代品 Dalibre <a href="https://dalibre.randynamic.org/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dalibre.randynamic.org/</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWqmI23bUAAtAb8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

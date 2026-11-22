@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月31日 05:23">
+<title>AI技术雷达 · 10月31日 05:23 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;垂类Agent工程Harness设计要点</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;DeepSeek量化模型64GB可跑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Google太空AI芯片首次在轨回复</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;抖音评论抓取skill免验证码</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Claude Max 20x取消5小时限制</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>垂类Agent工程Harness设计要点</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fliaping · 2026-10-30 16:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">完整博客版：<a href="https://blog.fliaping.com/domain-agent-harness-engineering/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.fliaping.com/domain-agent-harness-engineering/</a><br><br>做好垂类 Agent，需要把基座选型、记忆、权限、执行恢复和评测接起来。整理了一篇工程实践长文，讨论 Runtime 怎样设计，以及如何用任务结果决定 Harness 该加什么、删什么。 <a href="https://x.com/i/article/2116051245425446912" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2116051245425446912</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>X推文链接尾号暴露设备类型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AI_Jasonyu · 2026-10-30 22:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从一条阿拉伯文的推文学来的：<br><br>𝕏 上的链接，你可以通过链接的尾号代码知道用户的设备类型，如果它以问号结尾，后面跟着：<br><br>s=46 iPhone  <br>s=20 浏览器  <br>s=19 Android  <br><br>不信的可以在这条推文上试试😏 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV4trYUbwAAJQbI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MAI与千问技术报告解析预训练</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Kay2289123 · 2026-10-31 02:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这周读完了MAI 和千问的技术报告。我非常确信，如果你不在前沿大模型的预训练团队，又想了解这些模型到底是怎么训练出来的，这两份报告绝对是你的 Top 2 选择<br><br>MAI-Thinking-1：从数据处理、预训练，一路讲到强化学习和训练基础设施，适合顺着完整流程学。<br><br>Qwen3.8-Flash-Next：重点看架构怎么选、训练效率怎么提高、训练稳定性怎么保证，以及这些选择背后的实验依据<br><br>我们真的应该感谢开源和技术分享</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV5dGG-bAAA9loD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV5dTx4bwAAN073.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek量化模型64GB可跑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-10-30 23:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🤯 彻底疯了！本地大模型直接变天！<br>  <br>Unsloth 刚刚放出 DeepSeek-V4.1-Flash 最新 Dynamic V3.1 量化版，现在只要 64GB 内存就能原地起飞！ 🚀<br> <br>以前跑这种体量的怪兽还得堆昂贵服务器，这次直接把门槛砸穿：<br>🔥 Engram 直接放 SSD：按需极速读取，硬生生把内存占用砍到大降！<br>⚡ 推理最高狂飙 3 倍：配合 DSpark 加速，本地跑出飞一般的丝滑感！<br>🏆 基准测试全面屠榜：Dynamic V3.1 在同级量化里几乎全线霸榜第一！<br>📚 硬刚 1M（100万）超长上下文：整个代码库、几十本书一次性直接喂进去！<br>  <br>64GB 内存设备直接封神，手里有机器的赶紧冲！👇<br><br>🔗 模型：<a href="https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF</a><br> 📖 指南：<a href="https://unsloth.ai/docs/models/deepseek-v4.1-flash" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://unsloth.ai/docs/models/deepseek-v4.1-flash</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google太空AI芯片首次在轨回复</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-31 01:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 太空 AI 芯片第一次答题：卫星发射一个月后，在轨道上写了一首俳句<br><br>Google 放在卫星上的 AI 芯片，第一次在太空里完成了一次完整的提问和回答。Google CEO Sundar Pichai 10 月 30 日发推说，团队从地面把指令发到轨道，启动 TPU，跑完提示词，收回了第一份完整回复：一首俳句。<br><br>这颗卫星属于 Google 的 Project Suncatcher（“捕光者”计划），研究能不能把 AI 算力搬到太空，用太阳能供电。Google 给的理由是，在合适的轨道上，同一块太阳能板的发电量最多能到地面的 8 倍，而且几乎不间断。地面数据中心现在最缺的就是电。<br><br>卫星是 Google 和卫星公司 Planet 合作造的，10 月 1 日搭 SpaceX 的拼车发射任务 Transporter-18 升空。据《纽约时报》此前报道，上面装了 4 颗 TPU，设计寿命约一年。<br><br>升空后几周，团队按清单逐项给主机和 TPU 上电，跑了一些简单的机器学习测试。这周走到了“Hello World”这一步。程序员写第一个程序，惯例是让它输出“Hello World”，意思就是跑通了。<br><br>过程是这样的：卫星经过地面站上空时，团队把提示词传上去，让星上的 Gemma 4 写一首关于身处太空的俳句。卫星飞过挪威斯瓦尔巴群岛时，把诗传回了地面：<br><br>Blue marble below<br>Data streams in silent grace<br>Starlight feeds my core.<br><br>大意是：脚下是蓝色弹珠（指地球），数据在寂静中流淌，星光喂养着我的核心。最后一句说的正是这个计划要验证的事：靠阳光供电跑 AI。之后团队又让它写了几首太空主题的打油诗，还让它汇报设备的运行状态。<br><br>这首诗说明，芯片扛过了火箭发射的剧烈震动，在轨道上能开机、加载模型、算出结果、再把结果传回地面。Google 称这是“数据中心级 TPU”在轨道上的第一次 AI 回复。在太空跑大模型本身不算首次：英伟达投资的创业公司 Starcloud 去年 12 月就用卫星上的 H100 显卡跑过 Gemma，还训练了一个小模型。这次是 Google 自家芯片第一次过这一关。<br><br>更难的部分在后面。太空辐射会让芯片算错甚至损坏，散热也比地面麻烦，真空里没有空气帮忙带走热量。Google 接下来要测 TPU 在冷热交替和辐射下能不能稳定干活。下一个节点是 2027 年发射两颗互相连通的卫星。<br><br>对普通用户来说，这件事短期内不会影响你用的 AI 服务。按 Google 去年发布计划时的测算，要等发射价格降到每公斤 200 美元以下，大概 2030 年代中期，太空数据中心的成本才可能和地面数据中心的电费打平。<br><br>原文：Sundar Pichai 推文（@sundarpichai，2026 年 10 月 30 日）<br>Google 博客：<a href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sundar Pichai <span style="font-size:12px;color:#999999;font-weight:400;">@sundarpichai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Project Suncatcher 的&quot;Hello World&quot;里程碑时刻 🚀<br><br>几周前我们发射了原型卫星，现在我们已成功向轨道发送了一条指令，启动了 TPU，运行了 prompt，并在地球上收到了我们的第一个完整回复——一首俳句！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A ‘hello world’ milestone for Project Suncatcher 🚀<br><br>After launching our prototype satellite a few weeks ago, we’ve now successfully sent a command up to orbit, booted up the TPU, ran the prompt, and received our first complete response back on earth - a haiku! </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116214727835828224/img/b4pQhbjRd5EDKtkl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>抖音评论抓取skill免验证码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Pluvio9yte · 2026-10-30 23:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用Agent抓抖音评论区一直弹验证码的问题，终于被一个skill彻底解决了。<br><br>这个skill，能抓取抖音评论区所有评论，不弹验证码，比浏览器自动化等方案手动点展开回复相比快了约 2.5 倍。<br><br>能做什么👇<br>1.抓痛点，找需求，看看人们在抱怨什么，然后抓到商机<br>2.如果要做视频，可以看看竞品视频评论区大家在问什么，然后参考结合到新视频中<br><br>开源🔗：<a href="https://github.com/Pluviobyte/douyin-comments" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Pluviobyte/douyin-comments</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV484qHb0AAhrxl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Max 20x取消5小时限制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @berryxia · 2026-10-31 05:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">尼玛，Claude 直接移除 5小时 reset限制。<br><br>这不是又要把Codex 按在地上摩擦了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">edwin <span style="font-size:12px;color:#999999;font-weight:400;">@edwinarbus</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude Max 20x 订阅用户：请查收你的邮箱！<br><br>我们正在取消 5 小时的限制。<br><br>因此我们需要一个新名字：Ultra。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude Max 20x subscribers: check your email!<br><br>We're removing the 5-hour limit.<br><br>And that means we need a new name: Ultra. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116232171409338368/img/H_Vl9eVzLmTSm-NJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月15日 17:37">
+<title>AI技术雷达 · 10月15日 17:37 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;DeepSeek API故障与赠金补偿</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude封号主要看支付与内容</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;pstack清理无用代码注释</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;wideEP让GB300推理提速7.2倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;ranma终端窗口关掉可接回现场</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;ManimGX GPU渲染快90倍</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek API故障与赠金补偿</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tianyi · 2026-10-15 17:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">北京时间 2026 年 10 月 15 日 8:11 至 13:04 期间，DeepSeek API 服务系统出现故障，导致该时段内 API 服务无法正常使用。对于此次故障给您带来的不便与困扰，我们深表歉意。我们已第一时间启动针对服务稳定性的全面排查和彻底整改，全面梳理并剥离单点依赖，坚决杜绝同类问题再次发生。<br><br>作为补偿，我们将按您账号 7 日内（10.8-10.14）的消耗金额以赠金形式全额返还，赠金自动到账，API 计费扣款先从赠金账户扣除。此次故障对您造成了影响，我们再次致歉，感谢您一直以来的信任与支持。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Between 8:11 and 13:04 (Beijing Time) on October 15, 2026, DeepSeek API service system experienced a failure that prevented the API service from functioning properly during that period. We sincerely apologize for the inconvenience and disruption this may have caused. We immediately launched a comprehensive investigation and thorough rectification effort focused on service stability, and have comprehensively reviewed and eliminated single points of dependency to resolutely prevent similar issues from recurring.<br><br>As compensation, we will fully refund the amount consumed within 7 days (10.8-10.14) on your account in the form of credit. The credit will be automatically deposited, and API billing deductions will be made from the credit account first. We apologize once again for the impact this failure had on you, and we thank you for your continued trust and support.<br><br>北京时间 2026 年 10 月 15 日 8:11 至 13:04 期间，我们的服务系统出现故障，导致该时段内 API 服务无法正常使用。对于此次故障给您带来的不便与困扰，我们深表歉意。我们已第一时间启动针对服务稳定性的全面排查和彻底整改，全面梳理并剥离单点依赖，坚决杜绝同类问题再次发生。<br><br>作为补偿，我们将按您账号 7 日内（10.8-10.14）的消耗金额以赠金形式全额返还，赠金自动到账，API 计费扣款先从赠金账户扣除。此次故障对您造成了影响，我们再次致歉，感谢您一直以来的信任与支持。</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LLM选1到10时几乎总答7</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AI_Whisper_X · 2026-10-15 17:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让 AI “在 1 到 10 里随便选一个数”，它几乎每次都说 7。<br><br>LLM 学的是人类语言的概率分布，预测下一个token本质是概率。人被问这个问题时，最常选的就是 7，模型从语料里学到了这个偏好。<br>但是chat是设置好的temperature，如果改变temperature，就会改变模型的输出分布方式。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Adam Zachary Wasserman <span style="font-size:12px;color:#999999;font-weight:400;">@adamzwasserman</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如果你理解梯度下降的工作原理，这将是世界上最不令人意外的一张图表。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This is the least surprising graph in the world if you understand how gradient descent works. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUi0oUfWEAA5Sxu.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude封号主要看支付与内容</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiayuan_jy · 2026-10-15 13:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天阵亡了 5+ 个 Claude 账号 &amp; 数百美金，顺便控制变量法测试了一下，封号是一个非常玄学的事情，影响因子比较大的应该只有两个：<br><br>- 支付方式（尤其是之前封过的卡，几乎秒封）<br>- 和 Agent 聊的内容（测试过一些敏感内容，基本上是小时级封禁）<br><br>影响因子相对小的：<br>- IP<br>- 时区<br>- 使用语言<br><br>X 上最近非常多告诉你如何避免封号的文章，大部分都是挂着某个 vps 的 referral 链接，很难说不利益相关。<br><br>支付方式最稳的就是 Apple 绑定卡来支付，即使被封号了还能退款。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>pstack清理无用代码注释</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-15 15:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">非常实用，让 AI 写代码的过程中，实际上可以产生非常多的无用注释，因为 Agent 很喜欢复制已有代码和注释，比如一个临时无害的 workround 类型的注释，会影响之后的 agent 的代码生成，滚雪球一样越来越多。<br><br>虽然现在根本不怎么代码了，之前抽查，会发现记录代码修改历史记录的注释，TODO的注释，还有把代码用英文重复一遍的注释，而且其他 agent 发现以后，会毫不犹豫的加进去。<br><br>所以大部分的注释应该删除，留下好注释，比如一些宏观层次的架构 公共 API/接口说明等等。<br><br>OP 的 /no-comment 的这个 skill 做这个工作很不错，而且他还抽象出了他平时的工作流 skill，他自己的用来让 AI coding agent 的工作流，大家可以看看 <a href="https://github.com/backnotprop/pstack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/backnotprop/pstack</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">禁止并删除大部分、如果不是全部代码注释！<br><br>agents 喜欢复制已经存在的东西。一条看似无害的、解释某个临时变通方案的注释，是你代码库中最糟糕的病毒之一。它像杂草一样会迅速蔓延，成为 agents 快速完成任务的工具。在你意识到之前，你的代码库已经被各种临时凑合和过时的注释所淹没。兄弟，就再多一个变通方案<br><br>你可以使用 pstack 的 /no-comments 技能作为除草剂。它会找出无用的注释，同时保留那些确实应该存在的注释（比如解释浏览器怪癖的注释），并从第一性原理出发思考如何解决这些问题<br><br>以下是一个你可以尝试向 @bot 提出的提示：<br><br>创建一个项目 agent，使用 /poteto-mode 生成一个 /swarm，使用 /no-comments 识别我们仓库中可以修剪的无用代码注释。回来时给出一个高层计划，说明这些变通方案中哪些最好通过重构来解决，哪些我们可以直接删除<br><br><a href="https://x.ai/bot/plugin/9717366" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/plugin/9717366</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">ban and delete most if not all code comments!<br><br>agents love copying what already exists. a seemingly harmless comment explaining some temporary workaround is one of the worst viruses you can have in your codebase. like a weed it'll spread quickly as a tool for agents to quickly get their job done. before you know it, your codebase is overrun with hacks and stale comments. just one more workaround bro <br><br>you can use pstack's /no-comments skill as a weedkiller. it'll seek out useless comments while keeping the ones that actually should exist (like explaining a browser quirk), and figure out how to solve them on a first principles basis<br><br>here's a prompt you can try asking @bot:<br><br>create a project agent that uses /poteto-mode to spawn a /swarm to use /no-comments and identify useless code comments we can prune in my repo. come back with a high level plan of which of these workarounds would be best solved by refactoring and which we can straight up delete<br><br><a href="https://x.ai/bot/plugin/9717366" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/plugin/9717366</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>wideEP让GB300推理提速7.2倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SemiAnalysis_ · 2026-10-15 06:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">警报🚨🚨：@vllm_project、@Inferact 和 NVIDIA 将协同设计发挥到了极致，通过 GB300 NVL72 推理优化实现了🚀 每单位 TCO 性能比其他所有 AI 芯片高出 🚀 7.2 倍🚀，使用了一种名为 wideEP 的推理协同设计优化，充分利用 NVL72 背板。我们将在下文进行说明👇️ (1/3)🧵</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">ALERT🚨🚨: @vllm_project, @Inferact &amp; NVIDIA TOOK CO-DESIGN TO THE EXTREME WITH A GB300 NVL72 INFERENCE OPTIMIZATION TO GET 🚀 7.2x 🚀  BETTER PERF PER TCO THAN LITERALLY EVERY OTHER AI CHIP, using an inference co-design optimization called wideEP take full advantage of the NVL72 BACKPLANE. We explain below👇️ (1/3)🧵</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUn9YtDWcAAzFV0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Step 5开源NeMo首日支持训练</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huiying_lii · 2026-10-15 13:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">恭喜 @StepFun_ai 开源 Step 5 Preview！🎉<br><br>NVIDIA NeMo AutoModel 首日即支持它！<br><br>训练支持包括 FSDP2、EP、PP 和 CP。我们已经验证了几种配置方案：<br>在 44×GB200 上进行 Full SFT<br>在 8×GB200 上进行 LoRA<br>长上下文 SFT：在 128×H100 上使用 PP4 + CP32 + EP32 进行 128K 打包序列训练<br><br>详细的配置方案和数值验证结果在 PR 中：<a href="https://github.com/NVIDIA-NeMo/Automodel/pull/4364" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NVIDIA-NeMo/Automodel/pull/4364</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Congratulations @StepFun_ai on open-sourcing Step 5 Preview! 🎉<br><br>NVIDIA NeMo AutoModel supports it day 0!<br><br>Training support includes FSDP2, EP, PP, and CP. We've validated a few recipes:<br>Full SFT on 44×GB200<br>LoRA on 8×GB200<br>Long-context SFT: 128K packed sequences with PP4 + CP32 + EP32 on 128×H100<br><br>Detailed recipes and numerical validations in the PR: <a href="https://github.com/NVIDIA-NeMo/Automodel/pull/4364" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NVIDIA-NeMo/Automodel/pull/4364</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ranma终端窗口关掉可接回现场</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-15 15:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在终端里给每个程序单开一个 PTY，按 i3 的容器树和 Hyprland 的 dwindle 方式平铺窗口，会话、工作区、浮动层和暂存区都配齐，配置用 Lua 写。<br><br><a href="https://github.com/masshirodev/ranma" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/masshirodev/ranma</a><br><br>每个窗格单开 PTY 再照 i3 和 dwindle 排布，这类终端窗口管理器不难想，难的是关掉终端还能接回现场、升级不关运行中的服务器，这两条它做到了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUlcFLza4AALkJt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>哈佛CS2680公开课Agent路线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-15 15:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">哈佛直接把 Agent 的学习路线给安排明白了！<br><br>从研究 Claude Code 怎么干活，到自己造 Agent、优化 Token 成本、部署大模型，连讲义和作业都全部公开了。<br><br>课程叫 CS2680，Modern AI Systems，整个学习路径分成五个阶段：<br><br>看 Agent，观察 Claude Code 如何调用工具、执行任务<br><br>造 Agent，自己实现 Agent Loop，管理上下文和工具<br><br>省 Token，优化成本、延迟和执行效果<br><br>部署模型，自己运行开源模型，研究推理服务<br><br>优化全链路，从 Agent 到模型推理，分析性能瓶颈<br><br>课程还涉及多 Agent、Memory、KV Cache、量化、推测解码等技术。<br><br>不一定非要把所有作业做完，光看课程目录，就能梳理出一条从 Agent 应用到系统底层的学习路线。<br><br>有编程基础的可以跟着作业动手实践，部分涉及 GPU 和模型部署的内容，门槛会高一些。<br><br>课程资料会随着学期推进陆续更新。<br><br>课程地址：<a href="https://cs2680.seas.harvard.edu/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cs2680.seas.harvard.edu/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ManimGX GPU渲染快90倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-15 15:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">3Blue1Brown 那种数学动画是用 Manim 做的，画面是真好看，就是渲染一段视频得等挺久。<br><br>ManimGX 沿用了 Manim 社区版的 Python 写法，底层换成 Rust 加 GPU 来渲染，原来会写 Manim 的上手没什么门槛。<br><br>官方测试里，36.2 秒的 1080p60 视频 3.08 秒就渲染完了，比 Manim 社区版快 90 多倍。<br><br>GitHub：<a href="https://github.com/academa-labs/manimgx" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/academa-labs/manimgx</a><br><br>它是冲着 Agent 设计的，把一句提示词贴给 Claude Code、Codex 或 Cursor，Agent 会自己装好环境，做出一段 3D 动画。<br><br>我觉得对 Agent 最友好的是它能自动出分镜图、检查画面排版，做完自己就能看一眼哪里挤了，不用人盯着。<br><br>公式用 LaTeX 写，不用另外装 LaTeX，旁白也能跟动画对上，浏览器里同样能跑，做数学物理讲解视频能少等很多。<br><br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109040311934889984/img/B1fDHPDTcsFhcH86.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code新增fast模式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yanhua1010 · 2026-10-15 15:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好消息：Claude Code支持了fast模式<br><br>坏消息：只支持API积分调用的形式，订阅无法使用🤡 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUp6M-UbcAACVQz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ultramarine开源模型便宜60倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bertgodel · 2026-10-15 00:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在发布 Ultramarine 1 Flash，一个为知识工作构建的前沿级模型。它是开源的，性能与 Fable 5 相当，而成本只有其六十分之一。<br><br>它由一个 5 人团队完成后续训练，总花费约 30 万美元。现已在 API 上可用，权重将在 2 周后发布。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We are releasing Ultramarine 1 Flash, a frontier-class model built for knowledge work. It is open-source and achieves similar performance to Fable 5, while being 60x cheaper.<br><br>It was post-trained by a team of 5 for ~$300k all-in. Available on API now, with weights releasing in 2 weeks.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110248922111528961/img/VPsBvcn6348iKIt8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

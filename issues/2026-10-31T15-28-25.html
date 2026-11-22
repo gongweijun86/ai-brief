@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月31日 23:27">
+<title>AI技术雷达 · 10月31日 23:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;TradingView MCP让AI自动写指标上图</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;RAW-RAG原始检索胜过复杂记忆系统</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;小米系统组件上报应用清单与录屏</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;DeepSeek Superagent用Router加Worker分层</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;ComfyUI节点免训练生成多视角角色图</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TradingView MCP让AI自动写指标上图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_zheergen · 2026-10-31 22:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好家伙！现在只要告诉 AI 一个交易想法，它就能直接把指标画到 TradingView 的 K 线上！<br><br>Moon Dev 开源的 TradingView MCP，内置 16 个 MCP 工具，支持 Claude Code 和 Claude Desktop。<br><br>以前用 AI 写 Pine Script，还得自己复制代码、粘贴到编辑器、编译检查，出错了又要重新修改。<br><br>这套工具直接连接 Chrome 里的 TradingView，让 AI 自动写代码、检查错误、加载指标，连回测结果都能读取。<br><br>核心能力：<br><br>1️⃣ AI 编写指标：一句话描述交易想法，自动生成 Pine Script 代码<br><br>2️⃣ 自动编译调试：调用 Pine 编译器检查代码，定位报错并辅助修改<br><br>3️⃣ 指标直接上图：自动写入 Pine Editor，将指标加载到真实 K 线图<br><br>4️⃣ 自动操作 K 线：切换 BTC、NVDA 等品种，修改周期、添加或删除指标<br><br>5️⃣ 读取指标数据：获取当前指标数值、图表状态，还能自动截图<br><br>6️⃣ 策略回测分析：调用 Strategy Tester，读取收益、回撤、胜率和交易次数<br><br>更实用的是，你可以直接告诉 Claude：<br><br>“打开 BTC 15 分钟图，写一个 5 条 EMA 彩虹均线指标，检查代码并添加到图表。”<br><br>从写代码到图表显示，整个流程都能交给 AI。作者的演示甚至做到了不到 3 秒。<br><br>仓库还提供 GEX、VWAP、均线带等示例脚本，可以拿来学习和修改。<br><br>项目本身免费，普通 TradingView 账号也能开始使用，但付费功能仍受订阅限制，AI 模型可能另外收费。<br><br>做 TradingView 指标、Pine Script 或 AI 量化开发的，这套值得自己试一下。<br><br>GitHub：<br><a href="https://github.com/moondevonyt/Trading-View-MCP-for-AI-by-Moon-Dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/moondevonyt/Trading-View-MCP-for-AI-by-Moon-Dev</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116542750929895424/img/IImnde3TaiKplS31.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">爱吃折耳根的Ace <span style="font-size:12px;color:#999999;font-weight:400;">@_zheergen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">卧槽！有人把 50 套量化交易策略全部公开了，连源码、回测收益和最大回撤都能直接查看！<br><br>quants.md + QuantJourney Backtester，Apache-2.0 开源，覆盖股票、ETF、期货、外汇等市场。<br><br>以前找量化策略，GitHub 上虽然代码不少，但很多只有交易逻辑，没有完整回测结果，想验证还得自己搭环境。<br><br>这套资源有点东西，直接把策略源码、历史表现和 Python 回测引擎整合起来，最长回测跨度达到 26 年。<br><br>核心能力：<br><br>1️⃣ 50 套量化策略：25 套组合权重策略、20 套订单策略、5 套滚动验证和优化案例<br><br>2️⃣ 策略类型丰富：均线趋势、RSI 反转、动量轮动、配对交易、风险平价等<br><br>3️⃣ 交易模拟：支持市价、限价、止损、追踪止损、OCO 订单，还能计算手续费和滑点<br><br>4️⃣ 参数优化：支持网格搜索、Optuna、Walk-Forward 样本外验证，检查过拟合风险<br><br>5️⃣ 可视化回测：网站展示 45 份结果看板，包含收益、Sharpe、最大回撤等指标<br><br>6️⃣ AI 辅助开发：内置 5 个 AI Skills，辅助编写策略、检查未来函数和分析回测报告<br><br>更实用的是，比如你想研究 SPY 均线策略，可以直接查看历史收益、最大回撤和 Python 源码，再修改参数重新回测。<br><br>网站还能按策略类型、市场和交易周期筛选，不用自己到处找代码。<br><br>不过部分历史数据回测需要 QuantJourney 账户及相应权限，开源引擎也不代表云端服务全部免费。<br><br>做股票量化、策略回测或者 AI 交易系统开发的，这套资源值得收藏！<br><br>策略库：<a href="https://quants.md/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://quants.md/</a><br><br>GitHub：<br><a href="https://github.com/QuantJourneyOrg/quantjourney-bt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/QuantJourneyOrg/quantjourney-bt</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116482118616518657/img/O5MO6O2cX5fywC6L.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAW-RAG原始检索胜过复杂记忆系统</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QuantumTransf · 2026-10-31 17:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我们可能从一开始，就把 Agent Memory 想得太复杂了<br><br>最近一篇论文《Is Complex Agentic Memory Always Needed?》做了一个很有意思的实验：<br><br>不做 Memory Extraction，不做复杂的知识图谱，也不让 LLM 在写入时反复总结、更新记忆<br><br>只保留原始对话历史，在需要的时候检索出来，交给 LLM 自己推理<br><br>结果呢？<br><br>在 LoCoMo、LongMemEval 等四个 benchmark 的 7 组测试设置中，这套简单的 RAW-RAG 方案拿下了 6 组第一，最多领先对比的最强 Agentic Memory 系统 5.53 分<br><br>这恰好也是我们开发 Obelisk 时一直坚持的思路<br><br>我们认为，Agent 不应该只能看到别人替它总结好的「记忆」<br><br>因为一次代码修改背后的原因、一次失败的尝试、几个决策之间的依赖关系，都可能在总结和信息提取的过程中丢失<br><br>与其猜测未来什么信息值得记住，不如保留完整历史，让 Agent 在真正需要的时候自己去找<br><br>所以我们做了 Obelisk：<br><br>一个开源的 Coding Agent Session 检索系统<br><br>它可以直接查询 Claude Code、Codex、Hermes、Pi、Opencode 等 Agent 的历史 Session，包括对话、工具调用、Subagent 和工作流。<br><br>不依赖 Embedding，也不需要预先从历史中提取 Memory<br>基于 SQLite FTS5 和 Agent 主动查询，让 Agent 能够重新找到过去的原始证据<br><br>比如：<br><br>- 为什么当初要这样设计这段代码？<br>- 上一个 Agent 的任务进行到哪里了？<br>- 我们之前尝试过哪些方案，为什么失败？<br>- 这个项目的架构是如何一步步演变的？<br><br>Memory 不应该是一份不断被改写的摘要，而应该是一段随时可以追溯的历史<br><br>也许下一代 Agent Memory 的关键，不是让 Agent 更努力地记住，而是让它拥有找回过去的能力<br><br>Obelisk 完全开源：<br><a href="https://github.com/tommy0103/obelisk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tommy0103/obelisk</a><br><br>论文：<a href="https://arxiv.org/abs/2610.30755" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.30755</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>小米系统组件上报应用清单与录屏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MeTerminator666 · 2026-10-31 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">【奉劝大家不要用国产机翻墙，不要在国产机上安卓境外 APP】<br>我某些朋友用的国产安卓手机，前不久被当地公安打电话，要求卸载 X 和 Telegram，因为我其中一个朋友的小米 14 已经 root 了，我觉得因为梯子配置不当导致的 DNS 泄露，或者别的原因，可能性不大，我就重点排查手机上会上报应用列表的应用<br><br>经排查，我朋友的小米 14，HyperOS 3，其中的“系统安全组件”和“SystemHelper”，会分别把应用列表上报给小米反诈引擎（fraud-detection.engine.miui[.]com/hyperos/fraud/app/report和flash.sec.miui[.]com/detect/app）和联通的某个网址（dm.wo[.]com[.]cn:18080/register）<br><br>SystemHelper 会默认统计过去 24 小时内有使用记录的应用，枚举已安装应用，关联使用统计和流量，跳过包名以 com[.]android 开头的条目。载荷的序列化实现还包含 IMEI、IMSI、ICCID 等字段，因此具备将应用情况与设备/SIM 标识关联上报的能力。<br><br>系统安全组件会上报第三方应用清单、包名、版本、签名摘要、名称，另有扫描结果和仿冒应用上报；有电话/QQ/微信语音反诈、屏幕视频采集、转写文本和视频片段云检测，以及用户反馈上传原始音频的实现<br><br>关于系统安全组件的录屏采集功能，分辨率 720 × 1280，24 fps，固定竖屏尺寸。相关的流程如下：<br>取得系统录屏对象<br> → 录制约 3 秒屏幕画面到私有缓存文件<br> → 读取整段 MP4，转为 Base64<br> → 加密后上传小米云端<br> → 等待返回“是否风险”<br>     ├─ 未命中：删除临时片段，延时 2 秒后继续录制，重复上述行为<br>     └─ 命中：保留一份片段供反馈，显示警告并停止服务<br><br>这些应用，SystemHelper 貌似是和 SIM 卡激活相关的，系统安全组件貌似是和反诈相关的，但是都具有高度的数据上报属性。没有 root 的机器，这些组件是无法卸载或者提取的，并且我也暂未分析这两个 APP 卸载之后，会不会自己下载回来。<br><br>综上，还是建议大家，海外产业用外版 iPhone，尽量不要碰国行安卓，要用安卓机，也是刷 ASOP 使用。<br><br>逆向由 GPT 完成，如有错误，敬请指正。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>服务商每分钟RPM查询致CPU满载</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @williamlong · 2026-10-31 17:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我发现我的一台小服务器总是定时CPU百分之百，用AI查询了一下，原来是服务商每一分钟定时跑一个程序，大约每 1 分钟就执行一次 rpm -qa | grep dmidecode（枚举全部已装包再查 dmidecode 是否存在），而且一次并行跑 3 个实例。rpm -qa 本身要遍历整个 RPM 数据库、非常慢，单核机器上 3 个一起跑就是 约 3 秒的 100% CPU，每分钟一次。我让AI把服务商这玩意儿停了，CPU也恢复正常了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV8wk6JaAAARcsv.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek Superagent用Router加Worker分层</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @janxin · 2026-10-31 20:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek Harness 团队分享了他们关于 superagent 的思考：<br><br>这篇文章探讨的是一种叫 Super-agent 的智能体架构。它的核心目标是让 AI 能像人类员工一样，持续在线、同时推进多项任务，而不是每次都要人重新交代背景。Super-agent 的目标就是让 AI 从“对话工具”进化成“自主员工”。<br><br>文章给出的解法是把系统拆成几层：<br><br>双层架构：Router + Worker<br>系统被拆成两个角色。Router 是“前台接待”，负责接收所有消息并判断该交给谁处理；Worker 是“后台员工”，接到任务后自己闷头干。如果所有任务都挤在一个模型里处理，一来上下文会爆炸，二来一个耗时任务会堵住所有后续请求。拆开之后，Router 轻量快速，Worker 专注执行，互不干扰。这样，你在群里 at Agent 说“帮我查一下上周的销售数据”，Router 收到后把任务派给数据查询 Worker，同时你还能继续问“顺便看看这周的排期”，Router 又派给日历 Worker，两个任务并行跑。<br><br>事件驱动：不是每句话都要处理<br>系统不是对每条消息都调用大模型，而是先设一套规则过滤器。比如群聊里有人发“哈哈”“好的”，直接放过去；只有涉及任务、提问、at Agent 的内容才触发 AI 判断。这是因为群聊里 90% 的消息都是闲聊，如果每条都过一遍大模型，成本高、响应慢，还会让 Agent 变得“话多烦人”。用规则筛掉噪音，把模型资源留给真正需要判断的内容。<br><br>按需读取上下文<br>Agent 不会把整个聊天历史都塞进模型，而是只取最近几轮关键对话。更早的历史存到外部数据库里，当模型需要引用某条旧消息时，通过引用链去检索。这是因为大模型的上下文窗口再大也是有限的，塞满历史不仅浪费 token，还会让模型注意力分散，回答质量下降。比如你三天前让 Agent 记了一个需求，今天问“那个需求怎么样了”，Agent 不会把三天聊天记录全读一遍，而是直接去数据库找到那条需求记录，精准回答。<br><br>异步执行<br>Agent 接到耗时任务（比如生成一份几十页的报告）后，会在后台跑，前台立刻返回“正在处理，稍后通知你”。你该干嘛干嘛，不用盯着转圈。如果每次都要等模型跑完才能继续对话，用户体验极差。异步是让 Agent 真正“多任务并行”的关键。用户不需要知道任务什么时候跑完，Agent 跑完了自然会通知。<br><br>存算分离：本地轻量，云端重算<br>Agent 的会话状态（比如当前任务进度、上下文）存在数据库里，计算（模型推理）放在云端。本地只装一个轻量程序，用来连接代码仓库、文件系统这些工具。如果所有计算都在本地跑，普通电脑根本扛不住大模型。如果所有状态都存在云端，断网就全丢了。存算分离让两者各司其职——本地负责“连接”，云端负责“思考”。用户换设备、断网重连，Agent 的状态不会丢，因为状态在数据库里，不在本地内存里。<br><br>Super-agent 这套架构的核心思路就是：别让 AI 什么都自己扛，把听、想、做、记”拆开，各找最合适的工具来干。 这样它才能像一个人一样，同时处理多件事、记住上下文、不被打断、也不打断你。<br><br><a href="https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI让主干开发取代长期分支</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-31 21:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是我最近看到的很棒的技术讨论，浏览量非常高：我们是否还需要使用 git branches？<br><br>作者之前讨论过 PR，认为应该扫尽历史垃圾堆里，branches 他认为一样，他主推的是：trunk-based development，不需要 Long-lived branches 和传统 PR 了，直接 push 到 main，大 PR 改动太多 非常不友好 branch 存活时间越长 差异越大 就越容易出问题<br><br>他先质疑现状，很多人使用分支是因为“一直这样的惯性而已”，如果只是为了 CI，那么就是一次 commit，不需要开什么 branch<br><br>一种反对意见是：“改动太大了 有数据库迁移 架构调整等等，不能直接上 main。” <br><br>他认为：可以拆成小步，先加列，部署 <br>再加 helper，部署 <br>再逐步迁移 <br>用 feature flag 配置开关等 <br>几乎所有大改动都能拆成可安全合并的小步<br><br>过去很难，是因为这种小改动多次的话，对人的心力消耗太大，所以倾向于一次大的改动<br><br>而现在有了 AI 以后就没有这种问题了，持续集成到 main 的成本大幅下降<br><br>这个想法还是很冲击我的，也是我最近看到非常精彩的一个观点，不知道大家有怎样的看法？</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Thorsten Ball <span style="font-size:12px;color:#999999;font-weight:400;">@thorstenball</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">下一个问题：你为什么还在用分支？<br><br>我们谈过了 PR。如果你从第一性原理重新思考的话，我不认为它们还有意义了。<br><br>当然，如果你只是用它们来触发 CI，那没问题，继续吧。那是一个庞大的 commit，不是一个 PR。但如果是为了强制代码审查？知识共享？得了吧。<br><br>但你们中有些人说：&quot;我们用 PR 是因为我们用分支！我喜欢把我的东西放在分支上。&quot;<br><br>我要告诉你们的是：你不需要分支！你可以直接推送到 main。<br><br>这叫做基于主干的开发（trunk-based development），其背后的理念是真正的持续集成：你持续地将你的更改集成到主干，也就是 main 分支上。<br><br>这个概念已经存在很久了，它是可行的。就在昨天，我还和一个在拥有 400 名工程师的组织中使用过它且没有任何问题的人交谈过。Ruby 这个项目就使用基于主干的开发。<br><br>核心理念是你要避免长期存在的分支。它们不好，因为分支会发散，合并会变成一件麻烦事。你不想让常规操作变成一件麻烦事。<br><br>即使在我使用 PR 和分支的团队工作时，我也认为一个分支存在超过一两天是一种坏味道。<br><br>但当我与其他人分享这个想法时，我经常会收到类似这样的回复：<br><br>&quot;好吧，那对你来说很好，但不行。我的东西，我正在做的工作，那不能在 main 上完成。它需要在分支上！它有一个数据库迁移，它改变了底层的结构、架构，它重构了这里、修改了那里。它还不能放到 main 上！我需要在最后把它们全部合并。&quot;<br><br>然后我会说：<br><br>&quot;不，我几乎可以把任何东西以小 commit 的形式持续合并到 main。你要把它拆分开。先添加那一列，合并它，部署它，现在它上线了，可以用了，很安全。<br><br>先添加那些辅助函数，合并它们，把它们上线。<br><br>想从旧模式 A 迁移到新模式 B？不要一次性全部做完。先添加依赖，然后一个一个地将 A 迁移到 B，安全地进行。&quot;<br><br>如果它能以一个大型变更的形式合并，我敢打赌它也能以小的增量步骤合并到 main 上。<br><br>是的，确实有例外情况，但那只是 0.5% 的情况，而不是 50%。<br><br>但这种做法确实有一个真正的问题：它很难！<br><br>你需要做很多&quot;元编程&quot;工作：确保这个小的第一步变更能够编译、运行且测试通过，合并它，把它上线，监控它；然后做下一个小组件，确保它可以工作并把它上线；然后可能推送一些还未使用的死代码，添加一个功能标志，添加一个配置变量；或者同时让两种配置都能工作，等等。<br><br>这意味着有时候在一个又大又臃肿的分支上做反而更容易。但又大又臃肿的分支是有风险的！<br><br>一个持续流动的系统比一个断断续续启动和停止的系统更安全。<br><br>但是——你猜到了——好消息来了：<br><br>现在，有了 AI 代理，所有这些繁琐工作都不再是繁琐工作了！<br><br>代理非常擅长添加功能标志，非常擅长拆分代码，非常擅长追踪三个变更并将它们一个一个地合并、观察它们逐步上线。它们非常擅长让两种配置同时工作一天。它们非常擅长逐个迁移。<br><br>换句话说：现在在 main 上直接工作并确保所有东西都持续集成、持续可用，比以前容易了 10 倍。<br><br>现在确保系统持续流动变得容易了。<br><br>而且你看，我不是来劝你切换到基于主干的开发的。这只是让你读这篇文章的借口。（但同时，嘿：试试吧！推送到 main 惊艳极了。）<br><br>我来是为了让你重新思考你开发软件的方式。<br><br>不要只是用代理来替代你的打字。<br><br>把代理当作它们本该成为的魔法代码编写机器来使用。所有因为涉及写代码而变得困难的软件开发工作——甚至是那些元编程工作——都变得更加容易了。<br><br>你现在可以去摘星星了！但你需要抬头看。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Next question: why are you still using branches?<br><br>We talked about PRs. I don't think they make sense anymore, if you rethink them from first principles.<br><br>Yes, if you only use them to trigger CI, then sure, go ahead. That's a fat commit, not a PR. But for mandatory code review? Knowledge sharing? C'mon.<br><br>But some of you said: &quot;we use PRs because we use branches! I love to keep my stuff on branches.&quot;<br><br>And I'm here to tell you: you don't need branches! You can just push to main.<br><br>It's called trunk-based development and the idea behind it is true continuous integration: you continuously integrate your changes with the trunk, the main branch.<br><br>It's been around for a while, it works. Just yesterday I talked with someone who said they've used it in an org with 400 engineers, without any issues. Ruby, the project, uses trunk-based development.<br><br>The main idea is that you want to avoid long-lived branches. They're bad, because branches can diverge and merging can turn into a thing. And you don't want routine operations to become a thing.<br><br>Even when I worked in teams that used PRs and branches, I considered it a smell when a branch lived for longer than a day or two.<br><br>But when I shared this with others, I'd often get something back like this:<br><br>&quot;Well, good for you, but no. MY thing, what I'm working on, that can't be done on main. It needs to be on a branch! It has a database migration, it changes the underlying shape, the architecture, it refactors this and changes that. It can't go on main yet! I need to merge it all at the end.&quot;<br><br>And then I'd say:<br><br>&quot;Nah, I can merge nearly anything continuously in small commits to main. You split things up. Add the column first, merge that, deploy it, now it's out, works, safe.<br><br>Add the helpers first, merge them, get them out.<br><br>Want to migrate from legacy pattern A to new pattern B? Don't do it all at once. Add the dependency, then migrate A to B, one by one, safe.&quot;<br><br>If it can be merged in a large change, I bet it can be done in small increments that you merge to main.<br><br>Yes, there are exceptions, but it's 0.5% of cases, not 50%.<br><br>But there was a real problem with this approach: it was hard!<br><br>There's a lot of &quot;meta programming&quot; you have to do: make sure this small first change compiles and runs and the tests work, merge it, get it out, monitor it; then do the next small piece, make sure that works and get it out; then maybe push some still-unused dead code, add a feature flag, add a config variable; or keep both configurations working at the same time, etc.<br><br>That meant sometimes it was just easier to do it in a big fat branch. But big fat branches are risky!<br><br>A system that continuously flows is safer than a system that starts and stops in spurts.<br><br>But -- you guessed it -- here's the good news:<br><br>Now, with agents, all of these chores are no chores at all!<br><br>Agents are great at adding feature flags, they're great at splitting up code, they're great at keeping track of three changes and merging them one by one and watching them roll out. They're great at keeping two configurations working for a day. They're great at migrating one by one.<br><br>In other words: it's now 10x easier to just work on main and make sure everything is continuously integrated and working.<br><br>It's now easy to make sure the system constantly flows.<br><br>And look, ...<br><br>I'm not here to convince you to switch to trunk-based development. Just a ruse to get you to read this. (But also, hey: try it! Pushing to main is amazing.)<br><br>I'm here to make you RETHINK how you develop software.<br><br>Don't just use agents to replace your typing.<br><br>Use agents as the magic code-writing machines they are. Everything that was hard about software development because it involved writing code -- even the meta programming -- has become easier.<br><br>You can now reach for the stars! But you need to look up.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ComfyUI节点免训练生成多视角角色图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-10-31 20:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">神医啊，做 AI 短剧最头疼的角色三视图和换装一致性，居然被一个 ComfyUI 节点这么丝滑地解决了？？？<br><br>刚刚扒了下源码，思路太巧妙了——不训 LoRA、不装额外依赖，直接调 MiniMax H3 原生多图参考跑 5 帧，取第 1 帧当高清设定图<br><br>1张角色主图 + 3张部位参考图 + 8个身体部位独立微调 + 最多13个视角同屏直出<br><br>想锁死五官只换外套，或者半身图补全身鞋履，直接分槽位喂图写句短英文就行😅<br><br>实测两个避坑点：<br> 1、Layout 白模引导默认关掉（OFF），不然容易把身材比例带偏<br> 2、日常选 5~7 个核心视角最稳，13 视角全开偶尔会漏特写框<br><br>做 AI 影视、漫剧、3D 建模的，这个节点必装：<br><a href="https://github.com/ukr8b3g-cmyk/H3-Character-Sheet-Designer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ukr8b3g-cmyk/H3-Character-Sheet-Designer</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

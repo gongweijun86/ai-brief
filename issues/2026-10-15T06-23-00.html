@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月15日 14:22">
+<title>AI技术雷达 · 10月15日 14:22 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;AI 交付流用 Agent 补齐验证赤字</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Code 桌面预览可逃逸</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;GEO 实测：可检索性解释 32%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Maka 改用 Rust GPUI 重写</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Claude Code 新增会话空闲压缩</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi 注意力残差一作陈广宇离职</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xLogicrw · 2026-10-15 11:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">17 岁的 AI 研究员陈广宇（Nathan Chen）宣布，自己最近已离开月之暗面 Kimi 团队。他于 2025 年 11 月加入，当时只有 16 岁，任职不到一年。陈广宇称，过去一年是自己迄今最美好的经历，但没有透露离职原因和下一站。<br><br>陈广宇曾因 Kimi 的 Attention Residuals（注意力残差）论文受到关注。这项获得马斯克公开称赞的研究，由他与张宇、苏剑林共同担任第一作者。苏剑林最初提出用注意力机制替代传统残差连接，并验证了初步效果。陈广宇和张宇随后加入研究，共同提出更省显存和通信开销的 Block AttnRes，使这套架构能够用于大规模模型训练，后来被 Kimi K3 采用。<br><br>离职帖中，陈广宇还回顾了其他工作。他曾与张宇优化 Kimi Delta Attention 的 GPU 计算内核，研究模型训练优化器，并参与制作 K3 发布时的展示案例。他感谢团队在自己只有 16 岁时就给予机会，并表示还想继续探索更多方向。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">nathan chen <span style="font-size:12px;color:#999999;font-weight:400;">@nathancgy4</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">生活近况：我最近离开了 @Kimi_Moonshot！<br><br>过去一年在 Kimi 的时光是我至今最美好的时光。我深感感激，能与如此了不起且支持我的同事们共事并向他们学习。<br><br>我最喜欢的一些回忆包括（按时间顺序）：优化 KDA 的 kernels 并和 @yzhang_cs 一起尝试每一种可能的设计；与 @yzhang_cs @Jianlin_S 一起提出并完善 Attention Residuals；从事 optimizers 方面的工作，这让我学到的关于 training dynamics 的知识远超其他任何工作（也是我熬通宵最多的地方）；和 @yzhang_cs @Xinyu2ML 一起一边看世界杯一边编写 K3 发布的 case；以及更多更多。<br><br>引用我之前关于 Kimi K3 发布的推文：能与一群真诚的人一起构建出这样一个开放（且强大）的模型，真的不可思议。<br><br>我在 Kimi 的日子是我将永远珍藏的回忆……感谢一切！（特别感谢 @Yulun_Du 当年信任并录用了当时才 16 岁的我 :P）。<br><br>还有更多值得探索的事情 :) 🫡</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">life update: I've recently left @Kimi_Moonshot!<br><br>The past year at Kimi has been the best of my life so far. I'm deeply grateful to have worked with and learned from such amazing and supportive colleagues.<br><br>Some of my favorite memories include (in chronological order): optimizing KDA's kernels and trying every design possible with @yzhang_cs; coming up with and refining Attention Residuals with @yzhang_cs @Jianlin_S; working on optimizers, which by far taught me the most about training dynamics (and where I pulled the most all-nighters); creating the cases for K3's release with @yzhang_cs @Xinyu2ML while watching the World Cup; and more, and more.<br><br>Quoting my earlier tweet about Kimi K3’s release: it is truly incredible to have built such an open (and strong) model with a group of genuine people.<br><br>My days at Kimi are memories I'll forever cherish... thanks for everything! (especially @Yulun_Du for believing in and hiring a 16yo back then :P).<br><br>More things to explore :) 🫡</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 交付流用 Agent 补齐验证赤字</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jolestar · 2026-10-15 12:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近和一个技术团队交流，大家发现 AI 明显提高了单人开发速度，但在团队协作中，是否真的提高了交付速度？能否保证质量？<br><br>随着代码产出越来越快，团队很容易陷入“写得快、但没人敢合，心里没底不敢上线”的困境——生成速度远远跑赢了验收能力，这就形成了典型的**“验证赤字”（Verification Deficit）。<br><br>如何在团队协作中引入 AI Agent 补齐这道防线？这篇文章总结了一些真实工程经验：核心是让 Agent 走出单机对话框，通过定时任务与外部事件驱动，落地很多过去纯靠人工很难覆盖的持续验证与验收方案。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Holon <span style="font-size:12px;color:#999999;font-weight:400;">@holonrun</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">完整中文版博客现已同步上线：<br>《AI 自动交付流如何保证质量：真实工程中的四层验证与验收防线》<br><br>深入拆解多角色协作、动态验证路由、长任务巡检与语义验收防线：<br><a href="https://holon.run/zh-CN/blog/ai-delivery-quality-and-verification" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://holon.run/zh-CN/blog/ai-delivery-quality-and-verification</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 桌面预览可逃逸</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NomaSecurity · 2026-10-14 22:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Noma Labs 的研究员 Eli A. 刚刚发布了 SneakPeek：一个针对 Claude Code Desktop Preview Pane 的重大逃逸漏洞。<br><br>如果你正在原生沙箱和良好氛围之上构建企业级 agentic 安全，那你玩的可是困难模式。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Noma Labs researcher Eli A. just dropped SneakPeek: a major escape in the Claude Code Desktop Preview Pane.<br><br>If you’re building enterprise agentic security on native sandboxes and good vibes, you’re playing on hard mode.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GEO 实测：可检索性解释 32%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @capmmk · 2026-10-15 08:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做 GEO 优化，这些动作效果不大 👇<br><br>FAQ 区块、结构化数据、摘要框……大家都以为加上这些，AI 就会来引用。<br><br>结果多伦多大学追了 90 天、15.8 万条 AI 回答，发现在同一个网站里比，这几样都没看出明显效果。<br><br>真正起作用的是能不能被 ChatGPT “搜到”：这部分能解释 32%，页面本身的各种优化加起来才 2.8%。<br><br>所以别再折腾格式了，把标题和第一段写成用户会问的那句话的答案，比啥都管用。<br><br>#GEO</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Maka 改用 Rust GPUI 重写</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AstroHanRay · 2026-10-15 10:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在几乎主要的 Agent 都是用 Electron 方案，Codex、Claude...一旦同时跑的 Session 和工作多了，性能消耗和资源占用都很大，尤其是 Web 渲染的各种动画。<br><br>我们在把整个 Maka 重写为 Rust + GPUI。为未来几十/上百/上千个 agent 并行做好准备。<br><br>已经几乎可用了：<br><a href="https://github.com/apache/maka/tree/rust-preview" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/apache/maka/tree/rust-preview</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 新增会话空闲压缩</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-15 13:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Code 长会话又多了一个很实用的优化<br><br>上下文聊到几十万 Token 以后离开电脑一小时<br><br>回来接着干活，不用再把那么长的历史重新处理一遍了<br><br>2.1.299 加了空闲自动压缩（Idle Compaction）<br><br>上下文超过 20 万 Token、会话又空闲了 54 分钟左右的时候，它会赶在一小时的 Prompt Cache 过期之前自动把历史对话压缩掉，下次回来直接用压缩后的版本，全程不用手动 /compact，非常省心<br><br>先看下版本：<br><br>claude --version<br>不想要这个功能的话，在 settings.json 里加上：<br><br>{<br>  &quot;idleCompaction&quot;: false<br>}<br><br>触发压缩的 Token 门槛也可以用 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 调<br><br>不过我觉得默认的就够用了<br><br>有一点要注意，压缩后留下的是摘要，不会逐字保存全部历史，重要的报错、文件路径、技术决策这些，最好还是及时写进项目文件里。<br><br>经常跑长会话的伙伴可以留意一下</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>制造业实测 AI 提效多在 50%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-10-15 11:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">非常赞同 “智力不是解决重大问题的瓶颈，与现实的交互才是瓶颈”。<br><br>最近我去小米、大疆、华为、一些芯片制造产业链公司交流，发现 AI 对大部分员工的效率提升只有 50%，只有少数 “超级个体” 员工做 prototype 的时候能 10x、100x。<br><br>AI 作为助理工程师写代码、调研分析这些 2025 年的 agentic 任务都没问题。但是 agent swarm 全自主推任务这种 “数字员工” 都很难做。<br><br>因为制造业有大量的约束，有物理约束，有成本约束，有路径依赖约束，有供应链约束，有内部组织约束。这些约束还很难蒸馏成 skills。Agent 往往不是忽视这个约束就是忽视那个约束，就算 pass@k 都很低。<br><br>现在模型的持续学习能力有限，直接拿失败的 trajectory，模型团队用不上；要构建 RL 环境也很难，总不能尝试流片个几千次，或者造几千个不能用的工件吧。<br><br>形成反差的是，做数学、理论、网络安全的都觉得自己快被 AI 取代了。OpenAI 的几百篇 paper 虽然有错误，但大多数可能会被承认是对的。<br><br>我之前以为 AI 不擅长解奥数题这种 “巧思”，做理论的老师告诉我，AI 最擅长的就是这种巧思，它可以遍历上万种可能的巧思。在可形式化验证且验证成本低的领域，AI 是远远超过人类的。<br><br>这就是 raw intelligence 和在现实交互中持续学习的鸿沟。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">François Chollet <span style="font-size:12px;color:#999999;font-weight:400;">@fchollet</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">弦论是一个智能系统在感官输入被剥夺后开始产生幻觉时所发生的事情。智能需要接地（grounding）。<br><br>正因如此，智能实际上从来都不是解决有影响力问题的瓶颈。瓶颈在于与现实的反复接触。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">String theory is what happens when an intelligent system is starved of sensory input and starts hallucinating. Intelligence needs grounding.<br><br>For this reason, intelligence is practically never the bottleneck to solving impactful problems. The bottleneck is iterated contact with reality.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 收入增速开始放缓</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @oran_ge · 2026-10-15 13:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">A 社的收入增速已经放缓<br>AI 的债务开始出现一些裂隙<br><br>原文转发下明浩的即刻：<br>Anthropic昨晚开了闭门的投资者交流会<br>会上核心的数字就是收入<br>外媒有新闻说Q3是168亿<br>Q2是110多亿，看起来季度增长还有50%左右……<br>但如今市场的疯狂程度早就透支了所有的增长<br>市场不满足于这样的增速……<br><br>我们细算下：如果7月市场传闻650亿的ARR是真实的<br>7月单月的收入就是54亿美金（650/12=54）<br>那八月+九月的收入就是114亿<br>考虑到口碑极好的opus5.5是9.22发的<br>对九月收入影响只有一周<br>我拍脑袋想<br>八月应该是没怎么涨（可能还是单月54亿）<br>九月60亿<br>而如果按照60算<br>九月的arr就来到了720<br>虽然这个数字着实不小了<br>但“增速”已经急剧放缓<br>作为“全村人希望”般存在的anthropic收入已经放缓<br>那……<br><br>再加上昨晚CoreWeave的债出了状况<br>这一晚……</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Infra 六阶段进阶路线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liangzhu_AI · 2026-10-15 10:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Jerry 分享的这套 6 个月 Agent Infra 进阶路线，含金量极高。我正在学习。<br><br>从自己手搓单智能体循环，到接入任务队列、容器沙箱、全链路可观测性，再到真正的多租户上线。<br>这才是正统的工程化演进之路，把市面上那些教人写两行调包代码的速成课秒成渣。<br><br>做 AI 出海，不要停留在玩具阶段。<br>把底层的韧性和容灾做扎实，你的产品才能接得住真正的大客户并发。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jerry Fang <span style="font-size:12px;color:#999999;font-weight:400;">@Jerry_fsy</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">制定了一个Agent Infra学习路径：<br><br>我参考了一些资料，然后为自己制定了一个Agent Infra学习计划（预计需要6个月左右的学习时间，大家可以根据自己的节奏来，重点是掌握各个部分而不是追求速度）。<br><br>将之前列出来的Agent Infra学习清单总结成了6大主要部分，先主攻这6个，其他的遇到再深入学习。目前主要制定了前2个部分的具体学习计划，感兴趣的可以一起学起来：<br><br>1.Agent Runtime基础<br>不使用现有的Agent框架，从0实现一个Agent Loop，理解Agent的执行过程。<br>这个我会跟着“三元同学”的“Super Agent实战课”从头做一遍，这一遍我会从代码的细节去理解Agent的每一步执行。考虑到代码的版权，这一阶段我只会分享每一步从宏观的角度应该怎么做，感兴趣的可以在AI的辅助下从0搭建一个属于自己的Agent。<br>需要了解的知识点：<br>Agent Loop；Tool Calling；Context Management；Streaming；Agent State；MCP；Multi-Agent。<br><br>2.分布式系统与可靠性<br>通过学习“任务队列”，“通信”，“状态”和“可靠性”，实现一个可恢复的任务执行系统。需要做到重启进程后，未完成的任务仍然可以继续。<br>对于这一部分的入门，DDIA这本书比较困难。目前先考虑使用System Design 101这个开源学习资料，并辅以MIT 6.1800补一下计算机系统相关的知识，以及通过MIT 6.5840补充分布式方面的知识（这两门MIT的课程会做选择性学习）。<br>需要了解的知识点：<br>Process/Thread/Async；RPC/HTTP/gRPC；Queue/PubSub；State Machine；Timeout/Retry；幂等；Transaction/WAL等。<br><br>3.Agent Orchestration<br>4.Sandbox与隔离执行<br>5.Observability 和 Evaluation<br>6.Production Agent Platform</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Agent 用 JS 编排工具调用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @verysmallwoods · 2026-10-15 06:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">新视频做好了：《Pi Agent 1.0 Code Mode：用 JavaScript 编排工具调用》<br><br>视频制作花了两天。反复的调整中，首先还是让自己看懂 pi codemode 到底干了什么，并且把视频内容梳理清楚，确保每个场景讲述的内容都合理。<br><br>视频制作用了我新的 Skills - <a href="https://github.com/sugarforever/boring-video-studio" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/sugarforever/boring-video-studio</a><br><br>Pi Agent 1.0 加入了 Code Mode。模型可以生成一段 JavaScript，再由这段程序调用工具、处理返回值，只把整理后的结果交回模型。<br><br>一些要点：<br>- Javascript代码运行于QuickJS/WASM 沙箱<br>- 代码运行时通过 tools.* 桥接的方式调用本地的工具，比如 bash，read<br>- 目前需要 pi 启动时指定 codemode，使用它<br><br>⏱ 章节<br>0:00 任务与普通工具调用<br>2:38 怎么启用 Code Mode<br>4:19 QuickJS 沙箱与宿主工具<br>5:42 真实 Pi CLI 实战<br>9:14 什么时候适合使用</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110500526395740161/img/BFw06WIVmaMuQtQn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

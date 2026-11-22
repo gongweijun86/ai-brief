@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月21日 23:28">
+<title>AI技术雷达 · 11月21日 23:28 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;QuePaxa 无主共识降尾延迟</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;FFmpeg 9.1 AAC 编码器重写</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;OpenAI 公开模型蒸馏指控</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Pi Bot 开源本地多 Bot 协作</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>QuePaxa 无主共识降尾延迟</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-21 11:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写分布式系统的人对 Raft 和 Multi-Paxos 一定烂熟于心：选出一个唯我独尊的 Leader（主节点），所有写请求全部发给 Leader 排队定序，从而换取简单的强一致性。<br><br>但当你的集群像 Cloudflare 的全球控制平面一样，物理节点分散在地球两端的不同大洲、跨洋光纤的物理光速往返延迟（RTT）动辄高达 150 到 250 毫秒时，传统单 Leader 共识算法的软肋就会暴露无遗：离 Leader 远的大洲每次写操作都要硬扛跨洋延迟；一旦跨洋海缆抖动触发重新选举（Leader Election），整个控制平面就会陷入恼人的可用性停顿。<br><br>近期 Cloudflare 工程团队正式揭秘了他们自研并已在生产环境落地的全新共识算法——QuePaxa。<br><br>QuePaxa 走了一条极具突破性的无主化（Leaderless）与对称多提议者（Multi-Proposer）路线：全球任何一个区域的节点都可以直接就近接收并提议状态变更，无需先向大洋彼岸的单一主节点请示；针对最棘手的多节点并发写入冲突，QuePaxa 通过确定性的偏序合并与自适应时隙调度，彻底消除了传统 Paxos 在并发争用下的“活锁（Dueling Proposers）”开销，在广域网高延迟与高丢包环境下实现了极低的尾延迟（P99）与零切主抖动。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSwTTjbkAAJrz0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>FFmpeg 9.1 AAC 编码器重写</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @don_tech1 · 2026-11-21 20:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟们！音视频圈的“基建之神” FFmpeg 刚发了 9.1「Gauss」版本。<br><br>我看了这次更新日志，最牛逼的一条，直接解决了开发者折腾了十几年的老噩梦：<br><br>它自带的原生 AAC 编码器，终于脱胎换骨了。<br><br>以前用 FFmpeg 压视频、做直播推流，最难受的就是自带 AAC 音质拉胯。你想要好音质，要么顶着开源协议冲突自己动手编译 fdk-aac，要么跨平台折腾苹果的 qaac，纯纯的编译地狱。<br><br>这次 9.1 彻底重写了底层算法，社区实测和听感测试直接追平甚至反超了 fdk-aac 和 qaac。<br><br>一句话总结：以后不用再为了好音质去碰非自由协议的外部库了，开源、免费、开箱即用。<br><br><a href="https://ffmpeg.org/download.html#release_9.1" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ffmpeg.org/download.html#release_9.1</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>rea v6.10 提升逆向可靠性</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @goan999999 · 2026-11-21 07:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">天呐！！！大肥鱼DSH现在也可以逆向一切了？！<br><br>最让我高兴的，以后逆向研究项目，再也不用天天担心 Codex 和 Claude 封号影响干活了！<br><br>大肥鱼 rea v6.10 正式上线！<br><br>124 名贡献者，累计合并 1380 多个 PR，这次更新真有点东西！<br><br>以前搞 AI 编程，最头疼的就是太依赖某个平台<br><br>Claude 一封号，项目直接卡住<br><br>Codex 一限额，开发进度又得往后拖<br><br>现在有了 rea + DeepSeek Harness，就可以多一条路，不用把所有希望都押在一个账号上！<br><br>而且 rea 主打的就是 Reverse Engineer Anything，逆向工程一切！<br><br>不仅能辅助分析代码、理解项目架构，还能研究二进制程序和软件运行逻辑<br><br>这次 v6.10 还修复了大量 Bug，让 DeepSeek Harness 重新可用，同时提升文件类型和固件处理的可靠性！<br><br>兄弟们，这可是天大的进步啊！！<br><br>GitHub：<a href="https://github.com/morluto/rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/morluto/rea</a><br><br>安装命令：<br><br>npx rea-agents setup<br><br>大肥鱼这波，属实又给 AI 开发者送了一份大礼！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI 公开模型蒸馏指控</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-21 08:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近网上一直在讨论，国产模型是不是在蒸馏 GPT Astra，这次 OpenAI 自己出来摆证据了。<br><br>它在新文章里直接点了名。2 月，OpenAI 向美国国会通报，发现 DeepSeek 在尝试蒸馏美国的前沿模型；9 月，它说拦下了一起专门套取推理过程的行动，并把其中核心部分归到和月之暗面（Kimi 背后的公司）有关的人员身上。文章还说，最近又拦下了几起，之后会公布更多。<br><br>OpenAI 担心的不只是知识产权。它的说法是，别人拿它的输出训练出能力相近的模型，却没有带上同样的安全限制，比如原模型会拒绝的网络攻击请求，蒸馏出来的模型可能就照做了。它还把这件事直接上升到了国家安全层面。<br><br>文章里有几个细节挺值得看:<br>OpenAI 每周封禁的蒸馏账号，从几千到几万个不等，今年夏天明显变多。<br>它们最想守住的是模型的思维链。内部实验发现，用完整推理过程训练出来的小模型，能力明显强过只用摘要训练的<br>GPT-6.2 Astra 加了新防护以后，从历史对话里套出推理过程的成功率，从 54% 降到了 0.2%。<br><br>目前这些指控目前都来自 OpenAI 单方面，具体是怎么判定的，外界还看不到。不过有一点比较明确，靠蒸馏追赶的路会越来越难走。<br><br><a href="https://openai.com/index/combatting-adversarial-distillation/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/combatting-adversarial-distillation/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Bot 开源本地多 Bot 协作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @geekbb · 2026-11-21 20:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源的咱就用用 👍</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">it_works <span style="font-size:12px;color:#999999;font-weight:400;">@it_works_123</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Pi Bot 开源了，Apache-2.0。<br><br>Pi Bot 是一个在你自己电脑上干活的 AI 团队：一群有名字的 Bot，可以私聊，也可以拉进群里分工，做计划、跑命令、改文件、互相交接。<br><br>从第一天起目的就是「大脑」跑在用户自己的电脑上：聊天、文件、记忆和密钥都留在本机，只有你选的模型服务商会看到你发出去的内容（追求极致数据隐私可使用自部署模型）。Bot 能调用的每个工具都要过同一套权限判断，有风险的步骤等你批准，命令在隔离环境里运行，审批和执行都记进本机的记录里，没有遥测。<br><br>代码在 GitHub，内核用的是 pi。macOS、Windows、Linux 都能用，另有安卓 App。欢迎提 issue 和 PR；官方角色和群组模板单独放在 pibot-roles 仓库，也欢迎一起完善。<br><br>明天会发 v0.0.3：群组能自己推进、随时暂停继续，Bot 做出来的文件一定送到对话里，Windows 安装包自带 Git，手机上也能看进度、暂停群组。<br><br>代码：<a href="https://github.com/w01fb0ss/PiBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/PiBot</a><br>角色库：<a href="https://github.com/w01fb0ss/pibot-roles" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/pibot-roles</a><br>下载：<a href="http://pibot.space" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://pibot.space</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124106801998352384/img/8ZWgflSzb3oa5z9j.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

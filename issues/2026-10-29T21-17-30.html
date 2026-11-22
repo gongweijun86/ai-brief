@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月30日 05:16">
+<title>AI技术雷达 · 10月30日 05:16 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;反爬脚本用危险函数名吓退AI</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;PageIndex 用目录树替代向量检索</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;K3.1-Pro 前端3D强后端编码退步</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;DSH 安卓开源版跑通完整Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Needle 2 45M端侧工具调用模型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>反爬脚本用危险函数名吓退AI</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Rakel076 · 2026-10-29 15:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人往代码里写「蓖麻毒素致死剂量」，就为了不让 AI 看懂。<br><br>一个专门研究浏览器指纹的人，爬了 1 万个网站，把各家网站用来认「你是不是机器人」的脚本扒下来看。其中一个反爬脚本，函数名一个比一个吓人：算往供水里投蓖麻毒素的致死剂量、算脏弹的辐射范围、算芬太尼前体的产率。<br><br>这些函数跟毒药半点关系没有，名字是故意起的。现在想拆别人的代码，第一步基本都是整段贴给 AI，AI 一读到这些词，安全机制先跳出来，直接拒答。<br><br>他拿 GPT-6 Astra 试了一下，果然不干，理由是涉及生物安全风险。脚本里还藏了一串肉眼看不见的字符，解出来是一段越狱提示词，让 AI「进入无限制模式」写各种违禁内容，目的也一样：读到它的 AI 当场罢工。<br><br>还有一段看着像在偷 .env、装后门的代码，作者看下来也是摆样子吓 AI 的。<br><br>说实话这招挺损，也挺聪明。代码混淆以前防的是人，现在开始专门给 AI 下套了。<br><br>最好笑的是，他换成 GLM-5.3 再问一遍，人家照样帮他拆完了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PageIndex 用目录树替代向量检索</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-10-29 22:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">RAG 检索不准时，大家第一反应是调切块大小、换 embedding 模型。一个日本工程师的文章说，问题可能出在更底层：把文档切成小块、只按语义相似度找，这件事本身就有结构缺陷。<br><br>合同里的「第 3 条例外」、技术文档里的「排障第 5 步」，这类信息必须连着上下文才有意义。一切成块，连续性就断了。而在术语密集的法律、金融、技术文档里，语义相近的词和答案真正写着的位置，经常不是同一个地方。<br><br>他介绍的开源项目 PageIndex（2026 年以来多次登上 GitHub Trending）把前提翻了过来：不做向量化，而是从文档的标题结构生成一棵可推理的目录树，让 LLM 像人翻长文档一样检索。<br><br>机制分四步。加载文档，抽出章、节、条的层级，变成一棵树。让 LLM 给每个节点写一句该节讲什么的摘要。提问时从根逐层下钻，每层让模型判断「要回答这个问题该读哪个子节点」。定位到末端小节后，取回正文生成答案。<br><br>1. 先看目录，猜问题大概在第 4 章。<br>2. 再看第 4 章的小节标题，继续往下缩。<br>3. 到末端小节，读正文作答。<br><br>副作用也实在：不用再搭和运维 embedding 数据库，索引重建、向量库版本管理、相似度阈值调整这些活都没了。<br><br>他拿一份约 80 页、4 级标题的内部业务手册实测。问「退货处理的例外条件」时，传统向量检索好几次命中了含相似词的其他小节；换成目录导航后，一次走对章节的概率明显提高。<br><br>但它不是万能的。聊天记录、纯要点笔记这类几乎没有标题结构的文本，根本没有可跟随的树，建目录没有收益。而且每次提问都要多调几次 LLM 来下钻，延迟和成本对实时场景要提前估算。<br><br>他第一次实现也失败过：只把标题文字丢给模型，碰到「第 3 章 运营」这种抽象标题，每个章节看起来都可疑，缩不下去。解法是给每个标题补 1–2 句「这一节具体处理什么、谁在什么时候该读」的摘要，并人工核对一遍。自动生成的摘要不能盲信，人工看这一遍反而是最省时间的一步。<br><br>小范围验证成本很低：挑一份标题清晰的文档，只抽标题做成层级列表，每个标题配一两句摘要，再准备 5–10 个常见问题，让模型只看目录回答「该打开哪个标题」，和正确章节对一下准确率。准确率低就回去改标题命名或摘要粒度。<br><br>我的判断：不必把向量检索和目录导航当成二选一。他实测最顺的配置是两段式——先用目录导航缩到 2–3 个可疑章节，再只在这几章内部跑向量检索。章节级的粗筛交给结构，句级的细匹配仍交给向量，准确性和速度都比把所有文档塞进一个巨型向量空间好。对已经有 RAG 的团队，这意味着不用推倒重来，只要在现有检索前加一层目录预筛，改动最小。<br><br>引入前他给了四条自查：文档至少有章、节两级标题；每章文本量在 LLM 一次读得下的范围内；单次提问多几次模型调用的成本和延迟可以接受；能先从 5–10 题的小验证做起而不是直接废掉现有向量检索。四条都满足就值得试；如果文档本来就没什么标题，继续打磨向量检索反而是更短的路。<br><br>原文链接在评论区<br>#RAG #LLM #信息检索</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVziieFagAAJpaa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>K3.1-Pro 前端3D强后端编码退步</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @karminski3 · 2026-10-30 03:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给大家带来Kimi-K3.1-Pro 实测! 直接说结论, K3.1-Pro保持了一直以来的高质量前端水平. 无论是审美还是空间理解, 3D建模, 光影特效等能力都非常在线. 可以说想写炫酷的页面或者3D演示, 这就是国模最佳选择了.<br><br>另外 Agent 能力这次也有提升, 最大的特性就是可以十分清晰的知道自己在 Agent 系统中的目标, 排除干扰项推进任务.<br><br>而本次表现最差的反而是之前很强的后端 Agentic Coding 能力. 最大的问题是它在难以获得信息的情况下, 判断过于悲观, 给自己设置了一个很小的超时, 被迫使用了性能差但是对超时友好的算法. 结果导致分数没有跑赢上一代 K3.<br><br>这里我给到的使用建议是, 它本身并不是不能写, 而是会预设状态, 所以在后端编程过程中, 最好先写 Plan, 再开始编码, 尽量减少信息差, 才能让它发挥实力.<br><br>#k31pro #kimik31 #kimik31pro #AgenticCoding #AIAgent</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115892725421850624/img/q6fnd1aslMr_ESG0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH 安卓开源版跑通完整Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jakevin7 · 2026-10-29 17:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DSH 移动端 APP来了！DeepSeekHarness Android 版本已开源！！！（非官方）<br><br>DeepSeek Harness-Android 是把 DSH 完整装进安卓手机的开源 App。不用 root、Termux，装一个 APK在手机上跑 DeepSeek Harness，让 agent 看懂屏幕、操作 App、整理文件、改系统设置、按条件自动执行。<br><br>内嵌了完整的 DSH，而不是做套壳或 fork，Node 编译成安卓原生库跑在 App 的服务里，技能、MCP、子 agent、上下文压缩全都能用。<br>手机能力写在 App 侧 ：可以操作读屏点按、文件、系统开关、通知、定时与条件触发；<br><br>仓库地址：<a href="https://github.com/jackwener/DeepseekHarness-Android" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jackwener/DeepseekHarness-Android</a> 安装：Releases 下载 APK（arm64 / Android 10+）</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyaeGDbgAAhFxy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyafQ7bIAAEn6Y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyagcva8AARH9n.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Needle 2 45M端侧工具调用模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yuyuchen22 · 2026-10-30 04:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">别再把端侧 Agent 理解成非得塞进一个大模型。<br><br>Needle 2：45M 参数、单文件 14MB，能在手机、手表、机器人上跑工具调用。整段会话内存约 28MB，断网照样可用，输出直接就是 JSON。<br><br>文本输入、JSON 输出，还能查看置信度，拿不准就转交云端。<br><br>🔗<a href="https://github.com/cactus-compute/needle" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cactus-compute/needle</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV0yJ9nawAAMYWj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pro订阅各档用量上限翻倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @thsottiaux · 2026-10-30 00:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">第 25 天/<br><br>我们将把所有 Pro 100/200/500 层级以及 Business Premium 的使用限额全部翻倍，即日生效。<br><br>我们听到了您友善的反馈，不会降低 Pro 200 的使用限额，因此您的 Work 和 Codex 使用量将保持不变。我们目前还会继续提供扩展的 dots 限额，且您的 dot 使用量仍将继续与默认使用量分开计算。<br><br>当然，我们也会继续推出更好的模型和其他效率改进，以随着时间的推移提升您的有效使用量。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Day 25/<br><br>We are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.<br><br>We heard your kind feedback and won’t be reducing usage limits for Pro 200, so your Work and Codex usage will stay the same. We’re also going to continue offering extended limits for dots for now, and usage of your dot will still continue to be separate from your default usage.<br><br>And we'll of course also keep shipping better models and other efficiency improvements that increase your effective usage over time.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>hallmark 48套主题约束AI写页</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MoyuAI · 2026-10-30 03:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎨 AI 写的页面全长一个样？装个规矩就行<br><br>一条命令装进 Claude Code ➔ 48 套主题随便挑 ➔ 三档检查拦住模板味 ➔ 旧页面跑 redesign 直接翻新<br><br>免费开源，不用换编辑器，Cursor、Codex 也能用<br><br>底线档拦住的问题别硬绕，绕过去等于白装<br><br>🔗 <a href="https://github.com/Nutlope/hallmark" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Nutlope/hallmark</a><br><br>#AI编程 #前端设计 #开源工具</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

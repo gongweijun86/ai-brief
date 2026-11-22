@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月2日 05:26">
+<title>AI技术雷达 · 11月2日 05:26 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;DeepSeek提出多任务Agent架构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code被注入IP限制</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;OpenCode自建DeepSeek推理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;DeepSearcher开源研究框架</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Claude泄露组件设计规范</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek提出多任务Agent架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cheery9998 · 2026-11-01 10:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek 最近放出了一套 Super-agent 设计，我看完最大的感受是：以后我们可能不用再盯着 Agent 干活了。<br><br>现在用 Agent，经常会遇到一个很烦的问题。<br><br>单个任务做得不错，可任务一多，就要不停切 Session、补上下文、追进度。开了五六个窗口之后，最忙的反而是人。<br><br>DeepSeek 最近发了一篇 Super-agent 架构文章，讨论的就是怎么解决这件事。<br><br>它希望做出一个长期在线的 Agent：能同时推进多个任务，在群聊、GitHub、邮件之间接着干活，还能自己观察环境，发现问题后先在后台处理。<br><br>文章里有句话说得很准：<br><br>单任务的上限取决于模型能力，多任务的上限取决于人的注意力。<br><br>我把里面最值得看的内容整理成了 5 点。<br><br>1、一个 Agent 接需求，多个 Worker 同时干活<br><br>Super-agent 把工作分成了两层。<br><br>Router 负责接收消息、记住全局情况、分配任务和对外回复。<br><br>具体的工作交给 Worker。写代码、跑测试、查资料，都可以放在不同的 Worker 里同时推进，彼此不会干扰。<br><br>用公司里的分工来理解，Router 有点像项目负责人，Worker 就是具体干活的人。<br><br>你看到的还是同一个 Agent，背后可能已经有好几个任务一起跑了。<br><br>这样一来，开多少个 Session、每个 Session 里有什么，就不用再让用户操心。<br><br>2、没人 @ 它，也能先去查问题<br><br>现在大部分 Agent 都要等你说话，它才开始行动。<br><br>Super-agent 会持续接收群消息、邮件、日程提醒、GitHub 评论和 CI 结果，再判断哪些事情需要处理。<br><br>比如有人在群里说某个功能好像出了 Bug。<br><br>Agent 可以先悄悄去复现、查原因、试着修。确认确实有问题，而且修复方案靠谱之后，再出来汇报，甚至直接准备好 Pull Request。<br><br>如果没查出有价值的结果，它就不打扰大家。<br><br>这种感觉已经很接近一个靠谱同事了：平时不刷存在感，真找到问题再说话。<br><br>3、群里聊到一半，去 GitHub 还能接着干<br><br>Super-agent 会把同一个群聊话题、邮件串或者 Pull Request 当成一条连续的任务线。<br><br>第一次收到任务时，Router 会安排一个 Worker 负责。<br><br>后面只要是这件事的消息，就直接交给原来的 Worker，不需要重新判断和分配。<br><br>比如你先在群里说用方案 A，过一会儿又在 GitHub 评论里改成方案 B，它能知道你说的是同一件事，并按新方案继续做。<br><br>这点很重要。<br><br>现在很多 Agent 一换平台就像失忆，用户只能重新解释一遍。Super-agent 想把这些零散入口连起来，让任务自己连续下去。<br><br>4、后台跑任务时，还能继续接新活<br><br>现在用 Agent 跑一个耗时操作，经常要等它执行完，才能继续聊下一件事。<br><br>Super-agent 把这类工作放到了后台。<br><br>它启动任务后就可以继续接收新消息。代码跑完、测试结束或者工具返回结果，再单独通知它。<br><br>这样你不用等上一个任务完成，就能继续安排下一件事。<br><br>它在不同地方说话的方式也会不一样。<br><br>在群聊里，尽量只说结论、问题和需要确认的事项。<br><br>到了 GitHub、邮件和文档里，再把背景、修改内容和验证结果写完整。<br><br>群里不会突然刷出一大片执行日志，这个细节挺实际的。<br><br>5、电脑关了，任务也不会跟着消失<br><br>为了长期运行，Super-agent 把几个东西拆开了。<br><br>Agent 的大脑可以放在云端，会话和任务进度存在数据库里；代码、文件、工具和本地环境，继续留在原来的电脑上。<br><br>本地只需要运行一个轻量服务，负责接收命令和返回结果。<br><br>哪怕电脑暂时离线，云端的任务状态还在。等设备重新上线，它可以继续做那些必须在本机完成的工作。<br><br>系统外面还有一个 Watchdog，专门负责盯进度。<br><br>它看的不只是服务有没有崩，还会检查 Worker 是不是真的在往前推进，有没有陷入死循环，方向有没有跑偏。<br><br>发现异常后，它会尝试介入处理。<br><br>DeepSeek 还做了一组初步实验。<br><br>Super-agent 的任务完成时间，中位数是 12.4 分钟，p95 是 15.7 分钟。<br><br>作为对比，使用普通单 Session 的方案，在中性提示词下，p95 达到了 29.5 分钟。<br><br>原因也很直接。<br><br>普通 Agent 有时会自己判断“这个任务不大，我亲自做就行”，结果主会话被占住，后面的消息不断打断它。<br><br>Super-agent 直接把分工写进了系统结构里：Router 只负责协调，具体工作交给 Worker，表现会稳定很多。<br><br>当然，这套设计也有代价。<br><br>同时运行多个会话会消耗更多 Token。跨设备连接之后，权限、凭据和提示词注入的风险也会更复杂。长期记忆怎么处理，现在也没有完整答案。<br><br>还有一点需要说明：这篇文章讨论的是架构思路，并不代表这些能力已经全部上线到 DeepSeek Harness。<br><br>但我很认同它提出的问题。<br><br>我们现在花了太多时间管理 Session：这个窗口在写代码，那个窗口在查资料，还要记住谁做到哪一步。<br><br>如果这些事情能由系统接过去，用户只负责讲清楚目标、做关键决定和验收结果，Agent 才算真正开始替人分担工作。<br><br>以后理想的使用方式可能很简单：<br><br>“这个问题你跟一下，有结果再找我。”<br><br>然后它自己去查、去分工、去执行，做完回来交付。<br><br>这才是我期待的 Super-agent。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWAZz0jbkAAiQmo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code被注入IP限制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MichaelLee009 · 2026-11-01 21:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，Anthropic 又不干人事了！连版本更新都不用发，半夜直接顺着网线往你的 Claude Code 里塞了道“紧箍咒”🤬<br><br>10月30日，@chasmmmmmmmmmmm 扒出猛料：<br>大约从 27 日起，Anthropic 通过一个叫 tengu_heron_brook 的云端配置字段，偷偷给所有人的 Claude Code 硬塞了两句系统指令：<br>- 允许做原创游戏、类型游戏、自带设计与素材的游戏；<br>- 严禁复刻任何具体的现有游戏——哪怕你改了名字、声称是原创也不行！<br>全程热更新下发，用户本地没有任何开关能关。<br><br>随后 @addyosmani 也出来实锤：这两句确实是直接焊死在 Opus 5.5 提示词里的，为了防 IP 侵权。还假惺惺补了一句：“如果它误伤了属于你自己的项目，发给我。”<br><br>结果全网最惨的大冤种立马出现了😂<br>一家做兵棋数字模组的小公司（Conflict Simulations），老板在 GitHub 哭诉：其实新规上线后他们活照干、屁事没有。结果老板嘴欠，主动问了一嘴 Claude“这条新规管不管我们？”<br>就这一句话，直接触发赛博死刑！从那以后 Claude 开始疯狂拒活，哪怕清空会话也没用，只要在同一个仓库里就死活不干了（网友怀疑是项目记忆或 Git 历史被彻底打上了“污染标记”，截至11月1日官方还在装死）。<br><br>只要我不问，就不算违规；一旦嘴欠问了一句，直接连坐整个代码库😅</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCzrEgXcAALifn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>relay-kit自部署HTTP服务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GymlinZhu · 2026-10-31 22:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源了叶天帝的 Relay server 方案🥵<br><br>你只需要准备一个 Cloudfare 账号，然后把下面的 repo 扔给你的 coding agent ，就可以自部署你的 relay server。<br>理论上，只要是 HTTP/WS 服务，都可以进行穿透。<br><br>cc @yetone <br><a href="https://github.com/nanami-0713/relay-kit" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nanami-0713/relay-kit</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenCode自建DeepSeek推理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @poolmoon6 · 2026-11-01 12:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">老有人问OpenCode和Command Code为什么那么便宜，是不是量化版，这里干脆集中写一下OpenCode吧。没有任何内幕消息，全部来自公开消息和OpenCode自己的披露。感觉最近真的是谣言越传越多了。<br><br>OpenCode最早推的是Zen服务，最低充值10美元用原价调用模型，和OpenRouter差不多。从今年较早时间开始，和中国的开源大模型公司密切合作，包括多次的匿名模型免费发布。Pony Alpha、Hunter Alpha都是先在Zen上亮相的，分别是GLM和小米的模型。（事实上，他们的联合创始人之一是华人）<br><br>Go Plan的一开始，是10美元兑换60美元可用额度。主要是有个首月半价，使得它变为最划算的订阅服务之一。后来有几次中国开源模型的发布当天他们就立即适配，甚至在官方权重放出来之前就适配，让我开始猜测他们直接接入的是官方模型。<br><br>当时，GLM套餐需要抢，但在Go里面还能用GLM。不过GLM限流无法使用的时候他们的服务也用不了。后来有几次DeepSeek API限流故障的时候他们也一起出故障，基本实锤是官方API中转。<br><br>后来他们也在自己的官网FAQ中一一列出了每个开源模型的供应商，绝大部分模型合作方只有一个，就是官方。（在我印象中，GLM还他们列出了另外的供应商如Fireworks AI）<br><br>而且Go Plan一直维持ZDR零数据保留政策。我之前提到过，国内很多的订阅Plan，包括当时很火的什么阿里Coding plan，火山Coding plan，全都是霸王条款，要用你的数据去训练的。有些官方Plan如Kimi 的coding plan也没有自己手动关闭数据共享的选项，说是要发邮件给客服。<br><br>由于海外用户对于数据传到中国供应商那里还是比较敏感的，OpenCode的联合创始人dax @thdxr 曾经在X上回应过，他们和中国的模型公司都签署了零数据保留政策的合同。这其中的例外包括部分免费提供的模型，以及DeepSeek（每月续签，没有长期合同）。<br><br>也就是说，OpenCode有很长一段时间，都是官方中转站性质。这期间，dax曾经在X上回应过，他们是通过官方给的折扣价格提供服务，所以可以比较便宜。DeepSeek的V4正式版出来的时候，他们提供过一段时间的免费，用量爆发。同时，他们悄悄增加了一个设置开关，必须允许数据传输到中国，才可以继续用DeepSeek V4. <br><br>其实，以当时的价格，如果没有首月半价，那么只有小米和DeepSeek在Go里面是更划算的。像GLM、Kimi、MiniMax都是官方Plan更划算。他们偶尔也会提供短期折扣，比如Kimi多次有3倍额度之类的，但是并不真的更便宜。（这里大家要知道，小米的token plan基本上只有什么七折或八折之类的优惠，基本上省不了什么钱，所以Go里的6倍用量就很划算）<br><br>这期间，发生了一次较大的争议。导火索是DeepSeek突然宣布降价。原本降价是好事，但是OpenCode曾经一直承诺10美元换60美元额度，而DeepSeek价格降为之前的1/4以后，Go Plan中价格却没有降。不过依然是当时能找到的最便宜的DeepSeek价格（短期促销免费的不算）。<br><br>只是随着时间推移，一些新进入用户发现DeepSeek的价调用价比官方贵，dax也不得不回应说，DeepSeek官方不愿意对DeepSeek V4 Flash提供之前的折扣，因为官方本身在API调用价格上的利润空间不够（同时也暗示，其他很多模型的官方API本来就有很大利润空间）。<br><br>然后更大的事情来了，DeepSeek又宣布涨价了！几乎是在官方涨价的第二天，Go Plan的价格就不得不随之上涨<br><br>接下来发生了什么，我只能靠猜测，但是最终的结果是，Go Plan上的API价格和官方调整为一致，但是V4 Flash的可用额度被降为$15. （V4 Pro仍然是$60）<br><br>这件事情导致非常多的中国用户尤其是新订阅用户感到自己被欺骗了，虽然他们用到的已经是最便宜的DeepSeek，但是给个人的感知就是，自己以前用不完的DeepSeek，现在很快就会用完。<br><br>从此以后，Go Plan终结了自己永远1:6兑换的年代，同时越来越多的模型厂商跟进，因此现在你去看Go Plan，五花八门的什么比例都有。而OpenCode在中国用户中的名声从此一落千丈，骂他创始人是印度人骗子，猜测模型灌水之类的声音一直没停过。<br><br>总结一下：到此时为止，Go Plan一直是官方API中转。<br><br>也正是从这个时候开始，dax宣称自己开始找第三方算力服务商，希望能够以自部署的方式提供API。这也可以理解，谁愿意把自己的好不容易培养的用户口碑，依赖于外部厂商？他基本上是把X当作找合作伙伴的窗口了。<br><br>这就诞生一个叫CheapSeek的词，意思就是找便宜的DeepSeek。期间dax还很高兴地宣布说找到了能提供之前价格的DeepSeek算力合作伙伴，把大家的胃口吊得很高。<br><br>这时候，Command Code登场了。它为DeepSeek提供的比例是1:7。此时舆论开始往对OpenCode不利的方向发展，人们认为Command Code更划算，OpenCode一直辜负了之前买了便宜API的老用户，纷纷退订。<br><br>dax则表示：他们在市场上找来找去，所有声称能提供更便宜DeepSeek的算力服务商，要么是吹牛，要么不是满血版，并且暗戳戳地指责Command Code是靠自身出血补贴用户，是不可持续的。<br><br>然后，两家就开始了频繁而激烈的价格斗争，你方唱罢我登场，dax买的B300机架也终于到位（看起来，他放弃了那些声称能低价提供的算力服务商而选择自建）。接着，DeepSeek V4.1 flash面世时，两家均在DeepSeek官方API上新后，一天左右提供了新适配。各自活动补贴一段时间后，双方都来到了10美元换80美元DeepSeek V4.1 Flash的常规状态，最近几天又来到了$100. <br><br>这时候，越来越多的声音说，他们两家为什么这么便宜，是不是量化版的。dax在多个帖子里分别解释，模型厂商的推理毛利率很高，高达85%以上。所以他们自部署是能做到低价的，不是补贴，也不是量化。<br><br>而他没说出来的是，中国厂商根本买不到那么多B300机器，宝贵的英伟达新一代显卡要留给训练，只能用早期版本或者国产GPU做推理服务。中间有适配成本，适配周期，推理效率的很多坑。即使不考虑占地面积成本，购卡成本和日常维护、电费等也基本会有4-5倍的差异。这部分，是我根据公开价格，和AI一起进行的估算。每个人都可以用公开信息自己去算一算。（梁文锋自己之前也说过华为卡对比英伟达，推理效率有4倍差异）<br><br>也就是说，在DeepSeek自己推理毛利很高，且近期开源了DeepInfra的情况下，OpenCode完全有可能做到比DeepSeek自己的成本还低。现在唯一的问题是：他们买不到新的B300，因为他们的规模太小了。<br><br>之前我在另一个帖子里分析过，一套B300的token处理规模大概是OpenCode当前处理规模的一半。dax也曾公开表示，峰值的API调用，他们必须路由到官方才能扛住。按照目前社区的信息，大家实测后，更多发现的是速度确实不如官方，但却没有找到多少模型智商打折的证据。<br><br>dax最近说deepseek本身就是一个专家权重FP4量化的模型，没有继续量化的意义，并且说要找官方认证他们提供的推理服务和官方权重一致。如果你真的需要证据，也可以再等一等。<br><br>总结一下：和DeepSeek官方权重相同的推理服务，以现在的10美元换100美元的价格提供是完全可能且并不需要补贴的，并且仍然有提升空间。只是OpenCode规模太小，买不到更多新款GPU集群。<br><br>这么随手一写，一不小心写了很长。也难怪之前很多人分析这个问题都分析不到点子上，毕竟中间的曲折太多了。此外，这里面的很多信息，也不仅仅是依赖dax一个人说的话。梁文锋的几次被爆出来的公开讲话，DeepSeek官方公告，B300和昇腾卡的公开性能等等，很多都可以作为佐证。<br><br>本文仅代表本人印象和信息综合分析，如有错漏，请予谅解。<br><br>利益相关：曾经订阅过Open Code Go Plan数月，现在仅持有Command Code 订阅。原因是Open Code API适配问题。<br><br>相关阅读：<br><a href="https://x.com/poolmoon6/status/2116007181527179361?a=MlNYSOqGg6FdgcSigmc&amp;s=20" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/poolmoon6/status/2116007181527179361?a=MlNYSOqGg6FdgcSigmc&amp;s=20</a><br><a href="https://x.com/poolmoon6/status/2114562663309295820?a=SYmqZu8_Y0SNRD-jrag&amp;s=20" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/poolmoon6/status/2114562663309295820?a=SYmqZu8_Y0SNRD-jrag&amp;s=20</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">寒塘poolmoon <span style="font-size:12px;color:#999999;font-weight:400;">@poolmoon6</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">大家有没有发现OpenCode的deepseek速度慢的问题？作为商家，透明还是最好的策略。OpenCode其实应该写清楚自己到底是中转还是部署，如果部署找的是哪家合作，不然就和野鸡中转站没区别了。<br><br>按照X上的回复来看现在是自部署和其他供应商混合的。但是网站上表述很模糊。<br><br>还有Command Code也一样哈，虽然我一般推荐别人用Command Code，主要是他们没什么请求头的幺蛾子，接起来方便点</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok/X接入支付宝支付</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_FORAB · 2026-11-01 15:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">昨天发出后，不少人都成功了。<br><br>拖马斯克把 Grok、Cursor、X Premium 账号体系合并的福，即使支付宝走的是 Grok 付款订阅，你的 X 会员（带显示蓝标的那个功能，也一样会开通生效。<br><br>每月 53.54 元人民币，支付宝自动扣款。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWBaKbHaMAA5tnF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWBaKYeasAAC9ay.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWBacwZaEAAnReB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">AB Kuai.Dong <span style="font-size:12px;color:#999999;font-weight:400;">@_FORAB</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">哇靠，马斯克还真的打通国内支付宝了。<br><br>Grok AI，绑定支付页，目前账号设置成中国大陆，会触发支付宝付款选项，在填写完中国大陆地址，点击支付后，会跳转到支付宝，自动付款授权页。<br><br>收款方为美国 xAI 有限责任公司，按美元汇率扣除对应人民币。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9XVkPaYAE_Uk1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9Xb1gbIAAzZns.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9Xh6YaIAAnb-r.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSearcher开源研究框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wangxiaoxin88 · 2026-11-02 04:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把公司内部资料直接丢给在线AI，你真放得下心？放不下的话，可以看看DeepSearcher。<br><br>这是Zilliz开源的一套深度研究框架，把大模型、向量数据库、Agent三样凑到一起，让AI围着自家知识库转，检索、分析、研究全流程都包了。<br><br>1.本地文档接进来就能用<br>2.主流大模型基本都认<br>3.资料检索靠Milvus这类向量数据库来扛<br>AI自己拆问题、找线索、复盘再收尾<br><br>GitHub上现在已经攒了8.3k+ Stars，走的是Apache-2.0开源。<br><br>要是你正琢磨给企业知识库搭一套&quot;私有版Deep Research&quot;，这项目别错过<br>🔗 <a href="https://github.com/zilliztech/deep-searcher" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/zilliztech/deep-searcher</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCeI2QbUAARNJl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude泄露组件设计规范</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ohayou792 · 2026-11-01 21:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">众所周知 Claude 的审美是顶级的，之所以这么强，就是因为Claude有一套自己极其严苛的内部设计规范。<br><br>刚刚Claude泄露了它内部的组件设计系统提示词和完整规范，直接把为什么它写出来的界面有一种高级感的秘密全抖出来了。<br><br>完整规范整理了出来，写前端和Vibe Coding的可以直接抄作业：<br><br>1. 核心设计哲学与流式规范<br>Seamless（无缝融入）：绝对不能让用户察觉到 <a href="http://claude.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://claude.ai</a> 宿主界面在哪结束、你的组件从哪开始。<br>Flat（纯粹扁平）：严禁使用渐变（gradients）、网格背景（mesh backgrounds）、噪点纹理（noise textures）或任何装饰性特效，表面必须干净平整。<br>Compact（紧凑克制）：内联区域只展示最核心的视觉内容，其余解释全部放在外面的正文里。<br>文字归回复，视觉归工具：所有的解释性文字、描述、引言和总结，必须作为正常回复写在工具调用外部。工具输出只允许包含纯粹的视觉元素（diagram, chart, interactive widget），严禁在 HTML/SVG 内部塞入解释段落、章节标题或说明性散文（用户的字体设置只对外部回复生效，对微件内部无效）。<br><br>流式代码顺序：输出是按 Token 逐个流式传输的，代码结构必须让有用内容尽早出现。HTML 强制顺序：简短的 &lt;style&gt; 放最前 →\rightarrow→ 内容 HTML 居中 →\rightarrow→ &lt;script&gt; 放最后。<br><br>2. 基础铁律与视觉禁忌（Rules）<br>严禁写注释：不准出现 &lt;!-- comments --&gt; 或 /* comments */。<br>最小字号限制：严禁出现小于 11px 的字号。<br>严禁使用 Emoji：界面里不允许出现任何表情符号。<br><br>严禁花哨特效：不准使用渐变（gradients）、阴影（drop shadows）、模糊（blur）、发光（glow）或霓虹特效（neon effects），唯一例外是功能性的焦点环（functional focus rings）。<br><br>外层容器透明：最外层容器严禁设置深色或彩色背景，必须保持透明（由宿主环境提供背景）。<br>流式传输禁令：流式输出期间严禁使用 Tab 标签页（tabs）、轮播图（carousels）或 display: none 隐藏区块——隐藏内容在流式传输时不可见。必须将所有内容垂直堆叠展示（流式传输结束后用 JS 驱动的分步器 steppers 是允许的）。<br><br>3. 图标规范<br>禁止手搓 SVG：绝对不要自己手写 SVG 路径去画图标。<br>强制使用 Tabler 线性图标库：环境已预加载 5800+ 个 Tabler 图标（写法如 &lt;i class=&quot;ti ti-home&quot;&gt;&lt;/i&gt;）。<br>只准用 Outline（线性）风格：严禁使用 -filled 填充后缀（比如 ti-heart-filled 根本没加载，渲染出来是空白）。<br><br>样式与无障碍：图标颜色和大小默认继承父元素；纯装饰图标必须加 aria-hidden=&quot;true&quot;，纯图标按钮必须加 aria-label。<br><br>常用预置图标清单：ti-home, ti-settings, ti-user, ti-search, ti-x, ti-check, ti-plus, ti-trash, ti-edit, ti-download, ti-upload, ti-file, ti-folder, ti-chart-bar, ti-calendar, ti-clock, ti-arrow-right, ti-arrow-left, ti-chevron-down, ti-external-link, ti-copy, ti-refresh, ti-player-play, ti-player-pause, ti-heart, ti-star, ti-bell, ti-mail, ti-lock, ti-eye, ti-menu-2。<br><br>4. 字体与排版规范<br>默认字体：全局默认使用 Anthropic Sans；仅在极少数社论感或引用块（blockquote）场景下，使用 font-family: var(--font-voice)。<br>标题字号与字重（全部固定 font-weight: 500）：h1 = 22px<br>h2 = 18px<br>h3 = 16px<br>标题颜色预设为 var(--text-primary)，严禁覆盖修改。<br><br>正文排版：字号 16px，字重 400，行高 1.7。<br><br>字重死命令：只允许用 400（常规）和 500（加粗）两档。严禁使用 600 或 700，在宿主 UI 下会显得过于笨重。<br><br>大小写规范：强制全局使用句首大，严禁使用每个单词首字母大写或全大写，包括 SVG 文字标签和图表标题也必须遵守。<br>严禁句中加粗：不允许在句子中间加粗文字（包括工具调用前后的回复文本）。实体名、类名、函数名一律用代码样式（code style），加粗（Bold）仅限标题和标签（labels）使用。<br><br>5. 全局 CSS 变量与强制深色模式<br>表面背景（Surfaces）：--surface-2（纯白 white）、--surface-1（卡片 card）、--surface-0（页面背景 page bg）；语义底色 --bg-{accent,danger,success,warning}。<br>文字颜色（Text）：--text-primary（黑 black）、--text-secondary（次要 muted）、--text-muted（提示 hints）；语义文字色 --text-{accent,danger,success,warning}。<br>边框颜色（Borders）：--border（默认极细线 default hairline）、--border-strong（悬停 hover）、--border-stronger；语义边框 --border-{accent,danger,success,warning}。<br>字体与布局变量：字体 --font-sans、--font-voice（衬线 serif）、--font-mono；圆角 --radius（8px，更大圆角直接写 12px / 16px）；内边距 --pad-{sm,md,lg,xl}；间距 --gap-{xs,sm,md,lg,xl}。<br>强制深色模式兼容（Dark mode is mandatory）：SVG 节点：使用预置颜色类（c-blue, c-teal, c-amber 等）自动适配深浅色，严禁写 &lt;style&gt; 块定义颜色。<br>SVG 文字：每个 &lt;text&gt; 元素必须带类名（t, ts, th），严禁省略 fill 或使用 fill=&quot;inherit&quot;（在 c-{color} 父级内文字类名会自动适配色阶）。<br>HTML 文字：始终使用 CSS 变量（--text-primary, --text-secondary），严禁硬编码颜色值。<br><br>6. UI 组件 Token 与容器布局规范<br>容器结构与宽度：微件容器默认是 display: block; width: 100%（容器宽 680px），HTML 自然撑满，不需要额外套 wrapper div，直接写内容即可；需要上下呼吸感时在第一个元素上加 padding: 1rem 0。响应式列统一使用 repeat(auto-fit, minmax(160px, 1fr))。<br><br>组件级参数：边框：始终使用极简的 0.5px solid var(--border)（强调时用 --border-strong）。<br>圆角：大多数元素用 var(--radius)（8px），卡片（cards）固定用 12px。<br>卡片（Cards）：白色背景（var(--surface-2)）、0.5px 边框、12px 圆角、内边距 padding: 1rem 1.25rem。<br>表单元素：input, select, textarea, button, range slider 已预设样式，直接写裸标签即可（文本输入框高 36px 且内置 hover/focus；滑块为 4px 轨道 + 18px 滑块头）。<br><br>严禁使用 position: fixed：因为沙盒 iframe 视口高度是靠文档流内容自动撑开的，一旦使用 fixed 定位（比如弹窗 Modal、遮罩层或 Tooltip），视口高度会直接坍缩成 min-height: 100px（h/height 同样需显式遵守高度限制）。<br>弹窗/遮罩层的标准写法：必须先用一个常规文档流的 &lt;div style=&quot;min-height: 400px; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center;&quot;&gt; 包裹在外层充当“伪视口（faux viewport）”，再把弹窗写在里面。<br>交互调用：任何需要触发 Claude 思考的交互动作，统一使用 sendPrompt()。<br><br>7. 视觉模块与复杂度硬限制<br>五大模块（按需加载）：diagram（SVG 流程图/结构图/说明图）、mockup（UI 原型/表单/卡片/仪表盘）、interactive（带控件的交互解释器）、chart（Chart.js / D3 地理与数据图表）、art（插画与生成式艺术）。<br>方框副标题限制：≤ 5 个单词。细节必须放在点击穿透（sendPrompt）或下方的正文里，严禁塞进方框内。<br>颜色数量限制：每张图 ≤ 2 组色阶（ramps）。若颜色代表状态或层级含义，必须加 1 行图例（legend）；否则只用 1 组中性色阶。<br>水平排列限制：全宽下同行 ≤ 4 个方框（每个约 140px）。若达到 5 个及以上，必须缩小到 ≤110px，或者折行成 2 行，或者拆分为“总览图 + 细节图”。<br><br>原版Prompt见评论区⬇️</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCseE_agAANnTb.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCsgAXaQAAPkSH.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCsjGNaEAEqnY3.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWCsllGb0AAfzjO.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI代码生成拉高验证成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-01 21:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">技术管理者都在兴奋地展示团队引入 Coding Agent 后的惊人战绩：代码编写速度暴增 5 倍，每天提交的 Pull Request 数量翻了三倍不止。<br><br>但在软件交付流水线的另一头，资深工程师和架构师的崩溃声几乎没人听得见。<br><br>写代码的吞吐量被 AI 暴力拉满了，但团队总的交付速度反而断崖式下跌。<br>因为 AI 生成的代码有一个极其阴险的特征：语法极其工整，变量命名无比优雅，甚至连单元测试都给你配齐了。<br><br>但只要你顺着边界条件往深处看一行，就会发现它在并发锁机制、分布式事务回滚和底层接口契约上，悄无声息地埋了一堆致命暗坑。<br>审查人手写的烂代码一眼就能看出破绽，而审查 AI 这种表面无可挑剔的“幻觉代码”，需要耗费双倍的脑力去逐行单步推演。<br><br>生成代码的边际成本归零了，但人类验证正确性的认知成本从来不会因为 AI 降价。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

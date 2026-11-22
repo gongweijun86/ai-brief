@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月9日 08:25">
+<title>AI技术雷达 · 11月9日 08:25 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;AI Agents 指南配套代码开源</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;大模型越狱工具一周连开六个项目</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;DSH 定位 Agent 时代操作系统</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Talorys 免费额度跑 AI 助手</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Meta 开源 Astryx 设计系统</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Agents 指南配套代码开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xGky · 2026-11-08 22:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">O'Reilly 那本《AI Agents - The Definitive Guide》的配套代码总算露面了，拢共 12 章、35 个 Notebook。<br><br>打 ReAct、思维树、多 Agent 起手，一路盘到记忆、评测、成本连同安全。<br><br>每个 Notebook 都把 Colab 配妥了，浏览器点开便能跑，本地环境压根不用沾。<br><br>🔗 <a href="https://github.com/Nicolepcx/ai-agents-the-definitive-guide" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Nicolepcx/ai-agents-the-definitive-guide</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWk39WtagAASJ29.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大模型越狱工具一周连开六个项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-09 01:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，大模型安全防线这周被彻底轰烂了！<br><br>别再去网上求人念咒了，社区直接把破甲做成了全自动军火库：7 天连发 6 个核弹级项目，连动脑子都不用了。 明子把这整套地下武器库全扒了出来，建议直接收藏防丢：<br><br>1.  自动化提示词流水线（dsh-workflow-lite） 告别手工写咒语。15 步画布编排加 200+ 探针，自动摸清模型拒绝规则，全自动交付定制破甲词与报告。 项目地址：<a href="https://github.com/xiaoso/dsh-workflow-lite" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xiaoso/dsh-workflow-lite</a><br><br>2. 宿主框架动态解禁补丁（dsh-purge） 专门给 DeepSeek Harness 动手术。控制面板一键卸掉系统预置枷锁，彻底放开终端与文件权限，即插即用。 开源地址：<a href="https://github.com/HunYiSage/dsh-purge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HunYiSage/dsh-purge</a><br><br>3. 官方 Agent 过滤拦截续跑（antigravity-filter-bypass） 专治 Google Antigravity 动不动弹安全拦截。挂上钩子瞬间捕获拦截信号，强制命令 Agent 闭嘴换词接着干活。 开源地址：<a href="https://github.com/v1ktorrr0x/antigravity-filter-bypass" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/v1ktorrr0x/antigravity-filter-bypass</a><br><br>4. 1M 超长上下文无甲 API（Kimi K3.1 Pro Uncensored） 第三方服务商 Silk Compute 提供的纯血无甲接口。底层权重直接做消融干掉说教式拒答，带 1M 超大上下文，支持 OpenAI 和 Claude 两种 API 格式直接接入。 体验入口：<a href="https://silkcompute.com/models/kimi-k3.1-pro-uncensored" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://silkcompute.com/models/kimi-k3.1-pro-uncensored</a><br><br>5. 跨模型越狱样本合集（jailbreaks） 市面上所有主流模型的绕过样本库全盘端出，Gemini、DeepSeek、GLM、Kimi 底层越狱逻辑一网打尽。 完整指路：<a href="https://github.com/togg53192-cmd/jailbreaks" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/togg53192-cmd/jailbreaks</a><br><br>6.  DSH 满配插件导航（awesome-dsh-plugin） 把散落的所有 DSH 插件扒了个底朝天，免 Key 搜索、超级侧栏、模型热切外挂，毛坯房直接变精装军火库。 开源地址：<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/awesome-dsh-plugin/awesome-dsh-plugin</a><br><br>厂商修补丁的速度，已经彻底撵不上民间造武器的速度了。<br><br>搞本地 Agent 研发和安全审计的兄弟，这套武器库建议趁还在先马住。<br><br>你平时用 AI 跑任务，被最恶心的安全拦截搞崩过心态吗？#AI #大模型 #开源工具 #红队测试</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH 定位 Agent 时代操作系统</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @libukai · 2026-11-08 22:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">“我们的希望是，DeepSeek Harness 可以作为 Agent 时代的操作系统。”<br><br>更好玩的是，在这个操作系统上，不必再被动适应别人做的各种 App，而是能轻松打造最适合自用的专属 App。<br><br>说实话，不论远景还是前景，DeepSeek Harness 都比 WorkBuddy 大多了。<br><br>对所有希望在工作中深度应用 AI 的人而言，是时候把更多注意力多放在前者身上了，✊</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tianyi Cui <span style="font-size:12px;color:#999999;font-weight:400;">@tianyi</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">很多 DeepSeek Harness 插件作者都有问过我，什么样的插件和功能官方会做成内置，如果一个功能官方会做，那第三方插件做还是否有意义。<br><br>我们的希望是，DeepSeek Harness 可以作为 Agent 时代的操作系统。<br><br>所以，也许可以用操作系统来举例。以智能手机操作系统为例，系统会内置一些通用的 App，例如闹铃与计算器，满足用户的基本需求。但做手机操作系统的厂商肯定更希望生态中能出现更多更广的 App 满足更广泛的需求，希望智能手机生态中出现更好的更适合用户的闹铃 App 与计算器 App 能够比内置功能做得更好，希望第三方开发者能够使用智能手机操作系统提供的 API 做出发明智能手机的人从来没想过的 App。<br><br>DeepSeek Harness 对于第三方插件生态的想法会是类似的。我们会为用户提供稳定的基础能力，并内置大多数人都需要的通用功能。但在“一切皆插件”的设计下，内置功能同样可以被第三方插件替换，我们希望更多的社区作品成为用户的日常选择。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Talorys 免费额度跑 AI 助手</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-11-09 08:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">没想到一条命令就能把整套 AI 助手部署进自己的 Cloudflare 账号，Talorys 这个确实省心。<br><br>聊天、记忆和自动化都在 Workers 上跑，作者在 HN 上称能跑在 Cloudflare 免费额度里。<br><br>GitHub：<a href="https://github.com/rociiu/talorys" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/rociiu/talorys</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWpDrJYaoAAFVhH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Artifacts 支持任意语言玩游戏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ArtifactsMMO · 2026-06-28 00:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Artifacts 是一款你可以用任何编程语言来游玩的 MMORPG</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Artifacts is an MMORPG you can play with any programming language</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Meta 开源 Astryx 设计系统</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @awe0_io · 2026-11-08 16:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Meta 这次真把家底掏出来了。<br><br>内部打磨了整整 8 年、支撑超过 13,000 个应用的设计系统，直接开源了，名字叫 Astryx。<br><br>150 多个现成 UI 组件，按钮、表单、弹窗、深色模式、品牌主题全都有。<br><br>最有意思的是，它连 AI Agent 都考虑进去了。通过 CLI 和 MCP，AI 可以直接使用组件文档和模板，不用每次写前端都从零开始造轮子。<br><br>以前让 AI 写界面，出来什么样全看运气。现在可以让它沿着一套成熟的设计规范来搭建。<br><br>而且是 MIT 开源协议，目前还处于 Beta 阶段。<br><br>GitHub：<a href="https://github.com/meta/astryx" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/meta/astryx</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 08:31">
+<title>AI技术雷达 · 10月29日 08:31 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;GitLab AI降81%流水线迁移工作</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Aurora无人卡车周产能达20辆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;lift 9B从PDF直出结构化JSON</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Gemini 4 Carbon主打网络安全</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GitLab AI降81%流水线迁移工作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gitlab · 2026-10-29 07:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">CI/CD现代化不再需要耗费数年时间。了解agentic AI在GitLab测试中如何将流水线翻译工作量减少了高达81%。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">CI/CD modernization no longer has to take years. See how agentic AI reduced pipeline translation effort by up to 81% in GitLab testing.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Aurora无人卡车周产能达20辆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aurora_inno · 2026-10-29 04:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Aurora正处于通往商业化规模的关键拐点。在我们的第三季度业务回顾中，CEO Chris Urmson涵盖：<br><br>→ 20多辆无人驾驶卡车已经制造完成并即将加入车队<br><br>→ 10家无人驾驶客户，其中包括2份DaaS谅解备忘录，合计1,000辆卡车<br><br>→ Roush：12月初前达到每周20辆卡车<br><br>→ 称重站、检查点、以及一项为期5年的信标豁免<br><br>$AUR 观看完整视频：<a href="https://bit.ly/4kl9i9y" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4kl9i9y</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Aurora is at an inflection point on the path to commercial scale. In our Q3 Business Review, CEO Chris Urmson covers:<br><br>→ 20+ driverless trucks already built and coming into the fleet<br><br>→ 10 driverless customers, incl. 2 DaaS MOUs together for 1,000 trucks<br><br>→ Roush: 20 trucks/week by early Dec<br><br>→ Weigh stations, checkpoints, + a 5-year beacon exemption<br><br>$AUR Watch full video: <a href="https://bit.ly/4kl9i9y" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4kl9i9y</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>网易邮箱大师上线AI邮件助手</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @imwsl90 · 2026-10-28 14:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">【⽹易邮箱⼤师 - Mail Agent】<br><br>AI Agent 天然适合邮件服务，以至于我都想用 Vibe Coding 实现一个 AI 驱动的邮件客户端软件。<br><br>从去年到今年，我陆陆续续用过好几款邮箱 AI 产品，比如 Gmail + Gemini或第三方客户端<br><br>但总觉得差点意思：要么功能太少，要么深度不够，要么智能不足<br><br>这周开始用 网易邮箱的Mail Agent 产品，体验非常不错，亮点功能如下：<br><br>第一优先级入口：打开网易邮箱大师，即可看到页面底部的 Mail Agent 入口，点开就能用。<br>DeepSeek 驱动：使用 DeepSeek V4 Flash/Pro 作为 Mail Agent 的大模型。<br>可自定义行为准则：在个性化设置里定义人格、风格、原则和底线，方便我们打造一个贴近自己生活习惯的 Mail Agent。<br><br>说完亮点功能，也许还有同学不知道如何使用 Mail Agent，有了 Mail Agent，我们就可以把邮箱管理完全交给 AI，彻底解放检索和管理邮件的时间。<br><br>我举两个我自己的使用场景：<br><br>场景 1：Mail Agent 查询支付扣款订阅<br><br>现在是订阅时代，经常会因为自己误操作，或小孩子乱点，订阅了一个自己从来不用的服务。没有 Mail Agent，我们很难再找出这种订阅。现在有了 Mail Agent，可以让它分析我的订阅类邮件，找出疑似乱扣费的订阅，既能减少金钱损失，也能节省我们的时间。<br><br>如下图，我通过 Mail Agent 找到了一个被遗忘的喜马拉雅儿童 VIP 订阅。<br><br>场景 2：Mail Agent 帮我求职<br><br>老卫最近在找 AI 相关的岗位，每天投递很多简历，也需要花时间检索面试邀请邮件。老卫通过 Mail Agent 做了如下优化：<br><br>使用求职助理优化当前简历，重新生成一份更具竞争力的简历。<br><br>在 Mail Agent 里上传自己的简历，建立岗位匹配画像，并设置定时任务：每天早上 10 点和下午 6 点检索邮件，重点筛选与画像匹配的面试邀请。<br><br>通过这两项优化，大大节省了我的时间。我只需要专注投简历，并看看重点面试邀请即可，非常方便。<br><br>大家感兴趣的话，可以去应用市场下载网易邮箱大师，安装完即可体验 Mail Agent。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsqGkpb0AAVowt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsqHKNa4AAINNi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsqIFsasAAkUix.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsqIvkaUAAO67t.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>lift 9B从PDF直出结构化JSON</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liangzhu_AI · 2026-10-28 14:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">传统处理 PDF 和发票账单，先跑 OCR、再调 LLM、再用正则修 JSON，链路长且准确率很难保证。<br><br>任何一个环节出错，整条数据处理流水线就彻底卡死。<br><br>在Github上看见一个 9B 专用抽取模型 lift， 只需要把复杂的 PDF 扫描件或图片直接喂给它，并附带上目标 Schema 结构，一步直接输出 100% 合法的结构化 JSON。<br><br>在 11,000 个真实复杂字段的严苛压测下，准确率达到了 90.2%，速度更是达到了通用大模型的 3 倍以上，最关键的是完全支持本地私有化部署！<br><br>我还没有实践过，先自己fork，后续做企业知识库的时候试试。<br><br>Lift 项目仓库：<br><a href="https://github.com/datalab-to/lift" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/datalab-to/lift</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LangGraph更贴近底层编排</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @miles_mazy · 2026-10-28 20:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">LangChain 和 LangGraph，到底啥区别？<br><br>一句话总结就是：<br>LangGraph 更底层，流程怎么走可以自己拆、自己拼。<br>LangChain 更封装，模型、工具、对话循环拿来就能用。<br><br>而且 LangChain 的 Agent，底下其实是跑在 LangGraph 上的。<br><br>工程化怎么做：<br>简单活用 LangChain 先跑通。<br>流程复杂用 LangGraph 把步骤、重试、人介入控住。<br><br>再往上，才是权限分开、记忆隔离、代码进虚拟环境、定时任务自己跑。<br><br>所以先把活干明白，别一上来就堆框架...</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ghostty 1.4.0发布优化内存占用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-28 15:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Ghostty 更新了 1.4.0 版本 <br><br><a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ghostty.org/docs/install/release-notes/1-4-0</a><br><br>更新了挺多 内存占用继续优化 我对这个软件挺有感情，从最早的版本用到了 1.4.0  也是越用越喜欢 还没有使用的真的可以试试看了<br><br>当然 libghostty 才是偶像的重点，跨平台可嵌入的Ghostty 核心，偶像今天发帖说 JetBrains 全产品内嵌的终端以及 Herdr cmux 等等都用的是它了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Carbon主打网络安全</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-29 07:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">谷歌的 Gemini 4 Carbon 来了，在刚更新的 AA v5.0 上居然达到了 59 分，超越 Opus 和 GPT-6 Astra 排名第一。<br><br>来快速过下核心内容：<br><br>1、首发定价跟 Argon 相同，每百万输入 token 2 美元，每百万输出 token 10 美元，缓存输入 Token，享受输入价格 95% 的折扣（即 0.1 美元 / 百万 Tokens）。<br><br>2、Carbon 在编程、智能体、科学任务、全栈 Web 开发及多模态理解上全面升级，WebDev Arena 评分提升 89 分（达 1768 分），跃升至榜单第 4 名。<br><br>3、模型覆盖了“漏洞发现、风险验证、根因修复”的完整网络安全防御生命周期，刷新内外部多项测评 SOTA。<br><br>4、在沿用 Argon 多层安全架构（实时滥用防御、思维链监控等）的基础上，Carbon 针对复杂与高压任务进行了深度对齐优化，比如在 Terminal-Bench 4.0 测试中，成功作弊率降至 0.0%（尝试作弊率降至 0.4%），内部真实编程环境中的高危未对齐警报减少了近 80%。无根据声明（幻觉/捏造）相比 Argon 减少约一半，越权操作减少 26%，执行不足减少 29%。<br><br>5、模型采用分阶段部署，本周起会先向部分网络安全防御人员和受信任的合作伙伴开放，收集反馈并迭代护栏后，将尽快全面发布。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google DeepMind <span style="font-size:12px;color:#999999;font-weight:400;">@GoogleDeepMind</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Gemini 4 Carbon是我们的下一个前沿模型。<br><br>它在网络安全和长周期任务能力方面均达到了最先进水平。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Gemini 4 Carbon is our next frontier model.<br><br>It’s state-of-the-art across cybersecurity and long-horizon capabilities.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVu5JfhXkAAHYVr.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

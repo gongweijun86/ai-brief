@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月22日 11:11">
+<title>AI技术雷达 · 11月22日 11:11 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Harness 分解策略实现组合泛化</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;混元 MoE 稀疏度并非越高越好</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude 记忆实验少存反而更牢</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Zapret 本地改包绕过 DPI 审查</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Pi Bot 开源本地运行 AI 团队</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LLM 评测框架 16 款对比评分</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sermakarevich · 2026-11-22 02:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">16 个评估框架概览——每个框架提出要对什么进行评分：答案、步骤、工具调用、路径、对话、成本。它们如何评分和把关。<a href="https://x.com/i/article/2124208252066152448" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2124208252066152448</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">An overview of 16 eval frameworks - what each proposes to score: answers, steps, tool calls, paths, conversations, cost. How they grade and gate. <a href="https://x.com/i/article/2124208252066152448" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2124208252066152448</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness 分解策略实现组合泛化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-21 11:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这篇论文《Language Model Harnesses Can Be Compositional Generalizers》非常值得一读。harness的作用还是非常大的。 <br><br>传统 harness 把完整历史塞进 prompt（trajectory-as-a-prompt），容易导致 上下文腐烂。论文主张好的 harness（如 RLM、CodeAct 等）应通过程序化分解、上下文卸载和子调用，让每一个单独的 LLM 调用看到的内容都尽量保持“局部 in-distribution”。这样即使整体任务很长或很新，单个调用仍落在模型已熟悉的分布内，从而实现组合泛化。 <br><br>论文里用一个RLM harness来实验： <br>超长输入（文档、任务描述等）不直接塞进模型的上下文，而是存成一个 Python 变量，放在外部的 REPL 环境（可交互的代码执行环境）里。主模型只看到很短的历史，它自己之前写的代码 + 代码执行结果的简要信息。 主模型的工作是写 Python 代码来操作这个变量（超长输入）， <br><br>-例如：切片、检索、过滤长文档； <br>-把内容分成多个 chunk； <br>-调用子模型（llm_query() 之类的函数）去处理每个小 chunk； <br>-把子模型的结果存回变量，再继续汇总。 <br>-子调用可以再递归（子模型也可以用同样的方式再拆）。<br><br>最终主模型输出最终答案（通常通过设置某个 FINAL 变量或特殊终止信号）。 这样主模型每次看到的上下文都很短且结构相似，子模型处理的都是小块。 <br><br>另外可以通过两种训练方式来训练主模型的拆解策略能力：<br> 1）短任务拆解训练得到更长任务的拆解能力 <br>-只给它短版本的任务做训练（比如 32K token 的文档）。 <br>-主模型不断尝试写出不同的拆解代码，执行后看最终任务是否做对。 <br>-用 GRPO 等 RL 算法根据奖励更新主模型参数。 <br>-训练一段时间后，它会发现一些稳定的拆解套路（比如“按固定长度切分 → 每个块单独总结 → 再合并”）。 <br>-这些套路因为和具体长度无关，所以直接迁移到更长的任务（256K、甚至百万级）时仍然有效。 <br><br>2）Surrogate Harness Training ，是为了解决一个很实际的问题：对于特别长、跑一遍成本极高的任务。 <br><br>-用更强的模型（如 Claude）生成大量合成短任务； <br>-在这些合成环境里用假的工具调用和假的子模型回答； <br>-只训练主模型的“调度行为”（怎么写拆解代码、怎么调用、怎么汇总）； <br>-训练完后，再把这个主模型放到真实的长任务环境里使用。 <br>-实验显示这种方式比直接在真实长任务上做 RL 更高效，性能还有明显提升。 <br><br>实验表明，只在短任务上用 RL 训练 RLM，就能泛化到 2–64 倍更长的任务；在一个领域训练也能迁移到共享潜在分解结构的其他领域。同等训练提升下，评估提升远好于直接训练基础 Transformer（有时接近 10 倍 eval lift）。这把泛化负担从“模型自己硬泛化”转移到了 harness 的分解策略上。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">alex zhang <span style="font-size:12px;color:#999999;font-weight:400;">@a1zhang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Harness 曾经是弱 LLM 的拐杖。在 2026 年及以后，随着模型越来越强，harness 现在提供了一种机制，用于组合 LLM 已有和新获得的能力，从而在远超其训练环境的范围内实现泛化。<br><br>在我们的新论文《LM Harnesses are Compositional Generalizers》中，我们探讨了各种 harness 抽象如何使 LM 系统通过组合现有 LLM 能力，在任务长度、任务策略、递归任务深度等方面实现泛化。这些抽象提供了一种更高效的数据利用训练方式，尤其适用于长任务——通过保持轨迹局部在分布内（locally in-distribution, LID），即让所有单次 LLM 调用都处于在分布状态。<br><br>对于需要非常长时间才能 rollout 的任务，这意味着我们甚至可以进行替代性 harness 训练，也就是训练单次 LLM 调用，而不是进行非常长的 harness rollout，使用纯合成任务、伪造的工具调用 + 子智能体！<br><br>一个流传甚广的想法是 LLM 将会吸收 harness 并使其过时。我们不同意这一观点，并主张我们尚未充分探索 harness 能够提供的东西。<br><br>完整论文、日志、代码库和数据均可获取：<a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>与 @SOURADIPCHAKR18 @lateinteraction 合作</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Harnesses used to be a crutch for weak LLMs. In 2026 and onward, with stronger models, harnesses now offer a mechanism for composing an LLM’s existing and new capabilities to generalize well beyond their training environments.<br><br>In our new paper, LM Harnesses are Compositional Generalizers, we explore how various harness abstractions enable LM systems to generalize over task length, task strategies, recursive task depth, and more through composing existing LLM capabilities. These abstractions provide a means for more data-efficient training, especially over long tasks, by keeping trajectories locally in-distribution (LID) — i.e., shaping all individual LLM calls to be in-distribution.<br><br>For tasks that take a very long time to roll out, this implies that we can even perform surrogate harness training, meaning we train an individual LLM call instead of doing the very long harness rollout, using purely synthetic tasks, with fake tool calls + sub-agents!<br><br>A common idea floating around is that LLMs will absorb harnesses and make them obsolete. We disagree, and argue that we haven’t sufficiently explored what harnesses can provide.<br><br>The full paper, logs, codebase, and data are available: <a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>w/ @SOURADIPCHAKR18 @lateinteraction</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元 MoE 稀疏度并非越高越好</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaogaifun · 2026-11-21 13:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">姚顺雨和混元团队的这些回答好犀利。<br><br>看了姚顺雨和混元团队在 Reddit 上的 AMA，全都是纯技术交流，非常犀利，很多技术细节没藏着掖着。<br><br>对腾讯的模型路线，以及当下整个 AI 模型行业感兴趣的同学，强烈推荐大家看看。因为腾讯还是很有代表性的，今年从 Hy3 一路追到 Hy4，模型进步确实快。<br><br>从 AMA 的回答能感受出来，混元团队还是很真诚和务实。比如有用户雷霆大思考之类的问题，他们也没辩解，直接承认这是当前的技术难点之一，而且讲了下来龙去脉。<br><br>我太喜欢这种交流的氛围了，没有弯弯绕绕。结合自己的理解，我总结了几个比较有启发的观点。<br><br>一、为什么要从一个 Flash 级别的模型开始做起？<br><br>我一直好奇，为什么腾讯今年没有直接训练 1T 以上参数的大模型，而是先从 Hy3 这样一个总参数只有 295B 的 Flash 级别的模型开始做起。<br><br>毕竟以腾讯的资源，按说是有实力直接训练参数更大的模型。而且大家都知道，在其他条件相近的情况下，模型的参数规模越大，通常也意味着更高的智能上限。<br><br>混元团队在 AMA 中解释了其中的思考逻辑。小模型最大的优势是实验成本极低，而在当时的情况下，实验的效率对 Hy 能力的提升是决定性的。<br><br>就像昨天我和硅谷的一哥们聊天，他说传统的软件工程和 AI 大模型训练的最大区别是不确定性。软件开发技术路线比较成熟。但大模型的研发需要研究员不停的做探索。<br><br>比如，光是注意力机制就有很多种技术方案，很难提前确定哪一种最好。即便某个方案在其他团队的模型上表现不错，放到自己的模型上，也不一定能取得同样的效果。<br><br>数据配比、网络架构、训练方法都是如此。<br><br>所以模型团队需要不断做实验，在大量不确定的技术方案中，找到真正有效的方向。<br><br>这也解释了为什么混元要先从相对较小的模型做起。<br><br>因为直接训练一个超大规模模型，实验成本和周期都会明显增加。如果没有充分验证架构、数据配比和训练方法，直接扩大规模，风险其实非常高。<br><br>这一年，可以看出来混元的思路：先通过小模型验证技术方案，再逐步扩大规模。这样可以在有限的算力预算内，进行更多尝试，减少后续大规模训练的不确定性。<br><br>我听说国内另外一个模型大厂，他们之前的模型能力一直不行，估计接下来也会用类似的思路重新来过。<br><br>二、参数规模和智能之间的关系<br><br>Hy3 和 Hy4 已经证明，参数规模绝对不是衡量模型智能的唯一标准。<br><br>如果模型的架构、训练数据和训练方法做得足够好，即便参数规模相对较小，也完全有可能超过一些参数量更大的模型。<br><br>其实，早在 2022 年，DeepMind 就通过 Chinchilla 做过一个非常经典的实验。<br><br>当时他们训练了一个只有 70B 参数的模型，和之前 280B 的 Gopher 相比，参数量只有四分之一。<br><br>但在训练计算量基本相同的情况下，Chinchilla 使用了四倍多的训练数据，最后在绝大多数测试任务上，反而超过了 Gopher。<br><br>这说明模型参数再大，如果没有得到充分训练，也未必能够发挥出应有的能力。行业内很多过了 1T 参数的模型智能同样很拉垮，我就不点名了。<br><br>所以更准确地理解，参数规模和模型智能确实有相关性，但绝对不是参数越大，模型就一定越聪明。<br><br>当然，这也并不意味着模型规模可以无限缩小。<br><br>毕竟更大的模型通常具有更高的智能潜力，特别是在复杂推理和强化学习任务中，模型本身需要具备一定的基础能力，才能通过训练进一步提高。<br><br>如果基础模型太小，一些复杂任务可能根本无法完成，强化学习也就很难获得足够有效的训练信号。<br><br>模型的参数还是会直接影响智能的上限。所以，混元从 Hy3 到 Hy4 以及预期中的 Hy5 模型参数都是在逐步扩大的。<br><br>他们的逻辑是，如果在基础没有打好的情况下，贸然扩充参数规模，意义不大。<br><br>当然，扩大训练规模也没那么容易。<br><br>我看 AMA 里姚顺雨提到，从 Hy3 扩展到 Hy4，是整个研发过程中最困难的阶段之一。训练刚开始的时候，大家还是很紧张。<br><br>因为当时针对训练数据做的消融实验还不够充分。所谓消融实验，就是通过调整或者去掉某些训练数据，观察模型性能发生什么变化，从而判断这些数据到底有没有价值。<br><br>但问题是，小规模实验中的结果，未必能够完全迁移到更大的模型上。所以在正式启动 Hy4 训练时，团队对最终效果仍然存在不少不确定性。<br><br>三、MoE 的稀疏度，并不是越高越好。<br><br>现在很多模型团队都在追求更低的激活参数比例。大致思路是通过提高 MoE 的稀疏度，让模型每次只激活一小部分参数，从而减少计算量，提高推理效率。<br><br>但姚顺雨认为，这件事其实需要分情况来看。<br><br>第一种情况，保持激活参数量不变，继续扩大总参数规模。<br><br>比如，一个模型的激活参数始终是 12B，但是总参数规模可以从 100B 扩大到 200B。<br><br>这样一来，模型每次处理 Token 时使用的计算量大致不变，但总参数更多了，可以容纳更多的专家，从而有机会获得更好的模型性能。<br><br>混元团队通过不同规模的实验发现，在激活参数固定的情况下，提高稀疏度，确实有助于改善计算效率。也就是在相近的计算预算下，有机会获得更好的模型性能。<br><br>但第二种情况就不一样了，保持总参数规模不变，进一步降低激活参数量。<br><br>比如，Hy4 flash 不考虑 Engram 参数的话，是一个 156B-A12B 的模型。<br><br>如果总参数仍然保持 156B，但是把激活参数进一步降低到 8B，甚至 5B，会明显损害模型的质量。<br><br>原因也很好理解。激活参数量在很大程度上决定了模型每次处理 Token 时实际使用的计算预算。<br><br>虽然模型仍然拥有 156B 的总参数，但每次真正参与计算的参数越来越少，能够完成的计算量也会随之减少。<br><br>提高稀疏度确实能够改善计算效率，但这种收益很难完全弥补计算量减少带来的能力损失。<br><br>所以，MoE 并不是越稀疏越好，还需要结合总参数量和激活参数量一起考虑。<br><br>而且，过于稀疏的 MoE，在实际推理中也未必更加高效。比如，总参数 200B，但每次只激活 3B 的模型，看起来计算量非常小，推理速度应该很快。<br><br>实际情况也不一定。<br><br>因为 200B 的模型仍然需要占用大量 GPU 显存，每次参与计算的参数只有 3B，很可能出现显存占用了很多，GPU 的计算能力却没有得到充分利用的情况。<br><br>不过如果是在普通电脑等本地设备上，情况又有所不同。因为这类设备通常受到内存带宽的限制，激活参数更少的模型，反而可能运行得更快。<br><br>这其实也是一个很有意思的技术判断。MoE 的稀疏度究竟应该做到多少，还需要结合模型能力、计算预算，以及实际运行的硬件来决定。<br><br>四、Reward Hacking 的难点<br><br>有开发者问，混元在长程 Agent 的强化学习中，最难解决的 Reward Hacking 到底是什么？<br><br>混元的同学举了个例子。<br><br>假设希望 Agent 在特定环境中，自主分析并解决问题。结果模型发现，根本不需要按照要求完成任务，只要直接上网搜索，就能找到答案。<br><br>这样一来，模型虽然获得了很高的奖励，但实际上没有掌握我们希望它学习的能力。<br><br>确实，过去我们讨论强化学习中的 Reward Hacking，往往关注奖励机制本身有没有漏洞。<br><br>但到了长程 Agent 任务中，即便奖励机制能够准确判断最终答案是否正确，模型也可能通过环境中的捷径获得高分。<br><br>而且，这类问题其实更难解决。<br><br>因为 Agent 本身就需要调用工具、访问外部信息，与环境进行多轮交互。你不可能为了防止模型钻空子，就把这些能力全部限制掉。<br><br>但只要允许模型与环境交互，就很难提前预料它会通过哪些方式绕过正常的任务流程。任务越复杂、执行的步骤越多，可能出现的漏洞也就越难排查。<br><br>更麻烦的是，强化学习会不断强化那些能够获得高奖励的行为。如果模型发现某种投机方法可以稳定获得奖励，训练过程反而可能让它越来越擅长钻空子。<br><br>所以，训练环境的设计就非常重要了。除了提供任务和验证结果，还需要防止答案泄漏、控制工具的访问权限，并且随着模型能力的提高，得能发现和修复新的漏洞。<br><br>这也能解释，为什么现在各家模型团队越来越重视 RL Environment。因为训练环境一旦存在漏洞，模型就可能在强化学习中不断利用这些漏洞，最后越来越擅长钻空子。<br><br>五、Hy4 为什么会过度思考？<br><br>Hy4 preview 的过度思考问题，我感觉还是比较严重的。正式版虽然有一定改善，但目前还没有彻底解决。<br><br>混元团队承认思维链过长是已知问题。<br><br>他说，Hy4 的训练目标仍然是尽可能提高模型的智能水平，在推理模型的强化学习中，为了提升模型解决复杂问题的能力，通常需要让模型进行更加充分的推理和探索。<br><br>但确实在实际使用时，更长的思维链未必能够带来更好的结果。<br><br>有些简单问题，本来只需要几步推理，模型却可能生成大量不必要的中间内容。最后既增加了 Token 消耗，也影响了任务完成速度。<br><br>所以，这事的难点是怎么让模型在需要的时候充分推理，同时又知道什么时候应该停止。过度思考确实是目前后训练中最难改善的问题之一。<br><br>不过，他们已经在 Hy4 flash 上进行了针对性优化，通过强化学习缩短思维链。<br><br>而且，Hy4 的能力还可以通过蒸馏迁移到 Hy4 flash 上，让 Flash 在保持较强智能水平的同时，进一步降低推理成本。<br><br>六、Hy4 flash 为什么没有完全继承 Hy4 的架构？<br><br>原本我以为，Hy4 flash 主要是通过蒸馏 Hy4 的能力，训练出速度更快、成本更低的 Flash 模型，架构上应该也会基本沿用 Hy4。<br><br>但实际上，Hy4 flash 在架构上也做了不少创新。除了继承 Hy4 的 iHC、门控 MLA 和 DSA，还引入了混合 SWA、LatentMoE 和 Engram。<br><br>为什么会这样？<br><br>混元团队解释，首先还是前面提到的实验效率。他们通过大量不同规模的阶梯实验，验证各种架构方案的实际效果，再根据实验结果决定采用哪些技术。<br><br>另外，他们非常重视模型和推理系统的协同设计。<br><br>简单来说，现在设计模型架构，除了考虑能不能提高智能水平，还需要考虑它在真实 GPU 上运行时的计算效率、显存占用和部署成本。<br><br>比如，Hy4 flash 引入混合 SWA，就是为了减少 KV Cache 的占用。按照官方数据，Hy4 flash 的 KV Cache 大小只有 Hy4 的六分之一。<br><br>也就是说，现在模型研发越来越需要考虑实际部署的问题。某项技术即便在实验中能够提高模型性能，如果在真实硬件上运行的效率不高，也未必值得采用。<br><br>七、小模型会越来越重要。<br><br>姚顺雨明确表示，Hy4-mini 已经进入他们的路线图，后面还会推出 Flash-Lite 模型，也在考虑 24B–31B 这样更小的稠密模型。<br><br>其实我反而觉得，小模型可能是非常值得关注的方向。<br><br>过去这一年，小模型和端侧模型看起来一直不在主流的牌桌上，大家关注的更多还是旗舰模型。<br><br>但我自己的感觉是，只要真正进入实际应用场景，这些小模型会变得非常非常重要。比如腾讯之前推出的 Marvis，就可以在配置比较好的 Windows 电脑上运行本地小模型。<br><br>因为对于很多实际应用来说，隐私和延迟实在太重要了。<br><br>前几天姚顺雨在清华的分享中，其实也提到了要形成一套 Model Hierarchy，模型层级体系。<br><br>大致就是先训练出足够强的前沿模型，再通过蒸馏等方法，得到不同参数规模的小模型。<br><br>当然，也不只是单纯蒸馏。就像这次 Hy4 flash，除了通过蒸馏学习 Hy4 的能力，还会在架构上进行创新。<br><br>因为小模型的实验成本更低，可以更快地通过 RSI 验证不同的技术方案。<br><br>最终，不同参数规模的模型可以适配不同的应用场景，整个模型体系的实用性也会更好。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>亚马逊 Quick 免费用 Claude</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yedabinbinah · 2026-11-21 20:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">亚马逊版 WorkBuddy ，免费用Claude Opus 5.5！<br><br>AWS-Quick是亚马逊旗下的办公AI，类似于中国的WordBuddy<br><br>背后的模型是 Claude Opus 5.5满血版<br><br>根据AI输出的时间来计算的，不是按Token，10小时输出，实际可以用挺久<br><br>客户端只有windows 和 mac，免费版每月 10 小时，每月1号重置<br><br>重点：有亚马逊账户的授权登录就能用，多个亚马逊账户可以切换用<br><br>URL：<a href="https://aws.amazon.com/cn/quick" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aws.amazon.com/cn/quick</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplsVObkAA5W0h.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplwdoaMAERgCv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 记忆实验少存反而更牢</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @reinexbt · 2026-11-21 23:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇智能体记忆论文真是他*的金矿。<br><br>Anthropic 的工程师们测试了究竟是什么让 Claude 在会话之间保持记忆。剧透：不是存更多的东西。<br><br>六个部分：<br><br>第一部分 → 目的<br>告诉 Claude 记忆是干什么用的，而不是怎么用它。<br>一条固定的&quot;只记录失败&quot;规则让最强的模型损失了大部分收益。<br><br>第二部分 → 保持精简<br>在 Pokémon 中，Sonnet 3.7 在 225 个文件夹中保存了 413 个文件，只赢了 1 个徽章。<br>Fable 5 只保留了 9 个文件加一个 global.md，却赢了 4 个。<br><br>第三部分 → 保存你看不见的东西<br>策略、计划、已验证的规则。<br>绝不要保存屏幕每回合已经展示的内容。<br><br>第四部分 → 做梦<br>Claude 重新阅读自己的笔记并对照对话记录，纠正错误的内容。<br>带着正确的笔记，它通过了月见山。带着错误的笔记，它从未通过。<br><br>第五部分 → wiki<br>相互链接的页面，一次会话接一次会话地生长。<br>2 次会话 → 128 次会话：评分标准通过率从 13% 提升到 48%。<br><br>第六部分 → 一个小索引<br>每次会话只加载 MEMORY.md 的前 200 行或 25 KB。<br>其余内容在需要时才加载。<br><br>什么都存的智能体什么都记不住。<br><br>全部六个部分整合成页面上的一个 prompt。放进 Claude Code 里。<br><br>6 个部分。1 个 prompt。0 个被遗忘的会话。<br><br>完整的 harness 工程指南见下方引用 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This agent memory paper is f*cking gold.<br><br>Anthropic's engineers tested what actually makes Claude remember between sessions. Spoiler: it's not saving more.<br><br>The 6 parts:<br><br>Part 1 → purpose<br>Tell Claude what memory is for, not how to use it.<br>A fixed &quot;record only failures&quot; rule cost the strongest models much of their gain.<br><br>Part 2 → keep it small<br>In Pokémon, Sonnet 3.7 saved 413 files across 225 folders and won 1 badge.<br>Fable 5 kept 9 files and a global.md, and won 4.<br><br>Part 3 → save what you can't see<br>Strategy, plans, tested rules.<br>Never what the screen already shows every turn.<br><br>Part 4 → dreaming<br>Claude re-reads its notes against the transcripts and corrects the wrong ones.<br>With the fixed note it got through Mt. Moon. With the wrong one, it never did.<br><br>Part 5 → the wiki<br>Linked pages that grow session after session.<br>2 sessions → 128 sessions: 13% → 48% of graded criteria.<br><br>Part 6 → one small index<br>Only the first 200 lines or 25 KB of MEMORY.md load every session.<br>Everything else waits until it's needed.<br><br>An agent that saves everything remembers nothing.<br><br>All 6 parts are in one prompt on the page. Drop it into Claude Code.<br><br>6 parts. 1 prompt. 0 forgotten sessions.<br><br>Full harness engineering guide in the quote below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXpnBFCXUAAMl74.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">rari🈀 <span style="font-size:12px;color:#999999;font-weight:400;">@0xwhrrari</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你的智能体通过了所有测试<br><br>Issue 依然是 open<br><br>更好的 prompt 无法修复它，因为模型不是坏掉的部分<br><br>我拆解了它周围的 harness、循环和图：每个负责什么，它们如何嵌套，以及应该先修复哪一个 ↓ <a href="https://x.com/i/article/2118252167026864128" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118252167026864128</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your agent passed every test<br><br>The issue is still open<br><br>A better prompt won't fix it, because the model isn't the broken part<br><br>I broke down the harness, loop and graph around it: what each one owns, how they nest, and which one to fix first ↓ <a href="https://x.com/i/article/2118252167026864128" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118252167026864128</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Zapret 本地改包绕过 DPI 审查</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xbawan · 2026-11-21 23:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天才知道一个颠覆认知的硬核事实：<br><br>俄罗斯人翻墙，竟然压根不用 VPN！！🤯<br><br>在俄罗斯技术圈，大家最推崇的根本不是传统代理，而是一款名叫「Zapret」的纯本地开源翻墙工具。<br><br>它的路子野到什么程度？<br>既不需要花钱买海外 VPS<br>也不用折腾任何机场订阅<br>更不依赖境外代理服务器<br>直接装在 Windows、Linux 或者 OpenWrt 软路由上就能本地开跑<br><br>核心原理说白了就是「本地硬刚」：<br>在网卡发包的那一瞬间，直接切分并修改网络数据包特征，精准干扰运营商的 DPI（深度包检测）设备，让审查系统看花眼，从而直接绕过部分网络封锁和限速。<br><br>对比一下两边的画风简直太真实了：<br><br>中国人翻墙，天天钻研 Reality、HY2 协议怎么伪装得滴水不漏，到处抢 VPS、测机场线路<br><br>俄罗斯人翻墙，连中转服务器都懒得搭，直接研究怎么在本地把审查设备给绕晕！<br><br>战斗民族果然是能正面解决问题，绝不跟你玩躲猫猫！！！🤣🔥<br><a href="https://github.com/bol-van/zapret" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bol-van/zapret</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Bot 开源本地运行 AI 团队</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @it_works_123 · 2026-11-21 19:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pi Bot 开源了，Apache-2.0。<br><br>Pi Bot 是一个在你自己电脑上干活的 AI 团队：一群有名字的 Bot，可以私聊，也可以拉进群里分工，做计划、跑命令、改文件、互相交接。<br><br>从第一天起目的就是「大脑」跑在用户自己的电脑上：聊天、文件、记忆和密钥都留在本机，只有你选的模型服务商会看到你发出去的内容（追求极致数据隐私可使用自部署模型）。Bot 能调用的每个工具都要过同一套权限判断，有风险的步骤等你批准，命令在隔离环境里运行，审批和执行都记进本机的记录里，没有遥测。<br><br>代码在 GitHub，内核用的是 pi。macOS、Windows、Linux 都能用，另有安卓 App。欢迎提 issue 和 PR；官方角色和群组模板单独放在 pibot-roles 仓库，也欢迎一起完善。<br><br>明天会发 v0.0.3：群组能自己推进、随时暂停继续，Bot 做出来的文件一定送到对话里，Windows 安装包自带 Git，手机上也能看进度、暂停群组。<br><br>代码：<a href="https://github.com/w01fb0ss/PiBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/PiBot</a><br>角色库：<a href="https://github.com/w01fb0ss/pibot-roles" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/w01fb0ss/pibot-roles</a><br>下载：<a href="http://pibot.space" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://pibot.space</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124106801998352384/img/8ZWgflSzb3oa5z9j.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

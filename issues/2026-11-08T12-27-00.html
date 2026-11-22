@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月8日 20:27">
+<title>AI技术雷达 · 11月8日 20:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;DSH 任务看板离线自动研判</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;AI审计实测 GPT-5抓作弊98%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Xcode 官方插件登陆 Claude</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Coding Agent 管理六条要点</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;DeepSeek+Blender本地建模</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH 任务看板离线自动研判</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mspd4100 · 2026-11-08 10:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我要坦白，我要交代！！！<br><br>Deepseek Harness 是近1个月我使用最长时间的 agent 工具！<br><br>越来越喜欢 DSH 的创造者模式了，想加什么功能，直接聊着做，太方便、太丝滑！！！<br><br>这次花了 2 天多，消耗 11 亿 token，做了个能直接装进 DSH 的 Super Kanban 任务看板。<br><br>感兴趣兄弟可以试试玩玩 → DSH “插件” → 添加插件 → 输入 “dsh-super-kanban” 即可安装<br><br>✦ 自动研判：只读扫描本机 DSH 会话，判断目标 / 进度 / 完成 / 问题；关掉 AI 用本地规则，离线也能跑<br>✦ 可追溯：每张卡带来源工作区、会话、关键事实，点一下回到原对话<br>✦ 继续任务：生成结构化提示词，确认后放回会话输入框，不自动发送，默认 0 token<br>✦ 双形态：全页看板 + 右侧栏，边聊边看<br>✦ 数据只在本地；联网只发 1.5KB 以内的摘要，AI 可开关</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWkavanbIAAAyqp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWkbjYxbEAAjPCV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI审计实测 GPT-5抓作弊98%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ahsuzm · 2026-11-08 18:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 审计员上岗了，作弊抓得住，误报拦不住。<br><br>Anthropic 的 Andy Hall 测了 5 个模型：误报 5%，GPT-5 抓作弊近 98%，Gemini 3.8 Flash 才一半。<br><br>每月10万次，3000误报对2000真问题。看麻了，真的反而漏了。<br><br>#AI审计 #AI安全 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWmNkz5bUAAnlyQ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Obsidian 核心开发者开源模板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TiagerBao · 2026-11-08 10:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我们还在纠结怎么对Obsidian 笔记进行分类和目录结构？看看大师是怎么搭知识库的。<br><br>Obsidian 核心开发者 Kepano 把自己使用的知识库模板开源了。<br><br>不是简单的几份 Markdown，而是一套完整的 Vault 结构：<br><br>-Daily：日常笔记<br>-Notes：知识和想法<br>-Clippings：网页内容收集<br>-References：参考资料<br>-Categories：内容分类<br>-Templates：书籍、人物、会议、项目等数十种模板<br><br>核心思路是自下而上整理知识，不用一开始就设计复杂的分类体系。<br><br>下载后直接用 Obsidian 打开，还能按自己的习惯修改。<br><br>项目地址：<br><a href="https://github.com/kepano/kepano-obsidian" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/kepano/kepano-obsidian</a><br>你们用 Obsidian，最头疼的是怎么分类，还是笔记越来越多却很少回头看？<br><br>#Obsidian #知识管理 #开源 #效率工具 #Agent</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Xcode 官方插件登陆 Claude</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realfxw · 2026-11-08 18:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨 苹果重磅炸弹！官方亲自下场，将 Xcode 正式“塞进”了 Claude Code！ 🍏🤖<br><br>今天移动端开发圈真正的头条：Apple 在 Claude Code 的插件目录中，上线了官方的首方（1P）Xcode 插件。这意味着，你甚至不需要打开那个庞大沉重的 Xcode 可视化界面，AI 就能全权接管 iOS 开发与调试的全链路流程！<br><br>🛠️ 这个官方插件解锁了哪些神仙能力？<br>1️⃣ 全自动构建与测试：直接在 Claude 中 Build、Run 和 Test 你的 App，无缝衔接。<br><br>2️⃣ 原生 SwiftUI 预览：无需离开终端，Claude 能够直接渲染并“看到” SwiftUI 的界面外观。<br><br>3️⃣ 设备底层联动：不仅能驱动本地模拟器，还能直接操控通过数据线连接的真实 iPhone。<br><br>4️⃣ 智能 Debug 闭环：AI 会自动读取完整的 Build logs 和系统报错，自主排查并修复 Bug。<br><br>5️⃣ 直连苹果官方文档：原生检索 Apple Developer 官方文档库，极大降低代码幻觉和旧 API 混淆问题。<br><br>💡 为什么这是一次真正的“范式转移”？评论区很多人在说：“Claude 几个月前就能通过 CLI 跑代码了，有什么新鲜的？” 这其实完全低估了它的意义。让 AI 跑几个 xcodebuild 脚本，跟苹果官方提供的深度集成插件完全是两个维度的体验。官方下场意味着 AI 不再是只能写代码的“瞎子”，它长出了“眼睛”——能直接控制模拟器视窗并读取渲染反馈。这也标志着一向封闭的苹果，正式拥抱了基于 Agent 的自动化开发工作流。<br><br>💻 如何上手体验？只要你的 Mac 安装了最新版本的 Xcode，直接在 Claude Code 终端运行这行代码：<br> <br>👉 /plugin install xcode@claude-plugins-official<br><br>以后开发独立 iOS 应用，或许真的只需要开一个终端窗口给 Claude 下发需求了。那个占满几十个 G 硬盘的 Xcode，终究变成了一个默默无闻的底层引擎。各位 iOS 开发者，你们准备好转型做纯粹的“需求架构师”了吗？欢迎在评论区聊聊你们的看法！👇<br><br>#iOSDev #Apple #ClaudeCode #AI编程 #Xcode #SwiftUI #独立开发</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Coding Agent 管理六条要点</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NFT_Chen · 2026-11-08 16:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥必读！Claude工程师最新文章指出AI代理时代，拉开差距的不是Prompt，而是管理能力！<br><br>你每天跟Coding Agent干活，本质就是在管团队。选任务、写指令、授权、验收、决定什么能上线，这些才是核心竞争力。<br><br>从Claude工程师视角浓缩的6个高杠杆要点：<br>1️⃣先给它验活的能力：必须让它自己跑测试/构建/截图，别当人工测试机。没验证，它只会停在“看起来做完了”。<br><br>2️⃣只补它看不见的上下文：目标、为什么做、边界、成功标准必须写清。代码里能读到的别废话。<br><br>3️⃣纠错要复利：同一个错误改两次以上，立刻写进CLAUDE.md或做成Skill。<br><br>4️⃣默认放权，只锁死不能弯的：让它自己决定实现方式，只有绝对不能做的事才硬约束。<br><br>5️⃣先对齐计划再动手：Plan模式聊透假设，再写代码。并行任务必须无重叠。<br><br>6️⃣任务可委托，判断权绝不外包：产品决策、安全边界、能不能上线必须自己拍板。看diff要像自己会被叫醒一样认真。<br><br>不会管理的工程师会被Agent反噬；会管理的，一个人就能当一个小队。实践成本极低，反馈以分钟计。<br><br>#ClaudeCode #AIAgents #AddyOsmani #AI编程 #工程管理 #Opus55</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Addy Osmani <span style="font-size:12px;color:#999999;font-weight:400;">@addyosmani</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ljg-card 文字转长图白板漫画</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Morry4AI · 2026-11-07 18:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近发现一个很适合内容创作者的开源 Skill：ljg-card。<br><br>它可以把一段文字，直接转换成知识长图、视觉笔记、漫画、白板等不同形式的图片。<br><br>这 3 张配图是我用这个 Skill 把之前的文字内容转换成了不同的视觉表达形式。<br><br>我觉得可以从下面 3 个场景使用。<br><br>——<br><br>01｜把文章、笔记变成知识长图<br><br>可以直接把文字交给 ljg-card，让它先分析内容结构，再生成一张完整的知识长图。<br><br>比如：<br>● AI 工具教程 → 操作步骤长图<br>● 学习笔记 → 知识总结长图<br>● 长篇文章 → 重点内容可视化<br><br>它不是简单地把文字截图，而是会重新组织信息层级，搭配插画和视觉排版。<br><br>——<br><br>02｜把复杂知识变成可视化白板<br><br>可以让 ljg-card 使用白板模式，把接收任务、分析需求、调用工具、执行任务等环节，通过手绘元素和文字组织成一张视觉白板。<br><br>比较适合：<br>● 解释复杂概念<br>● 制作知识科普<br>● 梳理工作原理<br><br>相比纯文字，读者更容易看清楚整个过程。<br><br>——<br><br>03｜把文字变成漫画<br><br>这是我觉得比较有趣的一个功能。<br><br>同样是一段文字，还可以让 ljg-card 用漫画形式重新表达。<br><br>让它把人物、场景和操作过程拆分成多个画面，制作成一组连续的漫画。<br><br>除了知识科普，也可以尝试用来制作产品介绍、教程故事和社交媒体内容。<br><br>——<br><br>04｜怎么使用？<br><br>ljg-card 是开源 Skill合集中的一个Skill，可以通过 Codex 等 Agent 安装和使用。<br><br>安装时，可以只装这1个Skill。<br><br>打开 Codex，直接告诉它：<br><br>「<br>帮我从下面的 GitHub 仓库安装 ljg-card Skill，只安装这个 Skill，不需要安装整个合集。<br>项目地址： <br>」<br><br>安装完成后，就可以把自己的文字交给 Codex。<br><br>需要注意，生成效果会受到内容长度、模型和本地环境影响，复杂内容最好检查一下文字准确性和排版。<br><br>——<br><br>我觉得 ljg-card 最有价值的地方，是可以把同一份文字内容，转换成不同的视觉表达形式。<br><br>写好的文章可以变成长图，复杂的知识可以变成白板，有趣的故事可以变成漫画。<br><br>对于内容创作者来说，不用每次都从零开始设计，也能尝试更多内容形式。<br><br>希望可以帮到你～</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWg-5QwaIAAiB_0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWg-55sbgAEt_NG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWg-654aEAAOGh7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable 四项目搭Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaomovps · 2026-11-08 14:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">自己开发一个 Personal Agent，其实可以从 Pi Durable 开始🔥<br><br>看到使用GrokBot的人越来越多，大家也越来越多Personal Agent越来越感兴趣，我也想看看能不能自己写一个呢？<br><br>我自己研究的时候就已经发现了这几个项目，可以从这 4 个项目开始，循序渐进地学习<br><br>1、pi-durable-hello｜从零理解 Pi Durable<br><br>通过 5 个简单的例子，学习任务持久化、崩溃恢复、请求去重和实时监听<br><br>不需要 API Key，适合先搞懂 Durable Agent 的运行原理<br><br><a href="https://github.com/avparkhi/pi-durable-hello" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/avparkhi/pi-durable-hello</a><br><br>2、Batty｜开发自己的私人 AI 助理<br><br>基于 Pi Durable，已经整合了长期记忆、定时任务、Subagent、Skills、MCP，还有移动端 PWA<br><br>最值得研究的是它的长期记忆系统，怎么让 Agent 记住之前的事情，又不需要每次都把所有聊天记录塞进上下文<br><br><a href="https://github.com/jeffton/batty" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jeffton/batty</a><br><br>3、Pots｜开发一个会主动工作的 Agent<br><br>有点像开源版 Grok Bot，支持 Telegram、Slack、Discord，可以主动处理消息，通过定时任务和外部事件唤醒自己<br><br>比较有意思的是，它会先用普通脚本检查任务，确定需要处理才调用大模型，减少不必要的 Token 消耗<br><br><a href="https://github.com/Crokily/pi-durable-bot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Crokily/pi-durable-bot</a><br><br>4、Hearth Pi｜让 Agent 控制智能家居<br><br>把 Pi Durable 接进 Home Assistant，让 Agent 读取设备状态，再通过人工审批控制灯光、开关等设备<br><br>虽然还处于实验阶段，但很适合学习 Agent 怎么连接现实设备，以及权限和审批机制怎么设计<br><br><a href="https://github.com/cosmyo/ha-pi-durable" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cosmyo/ha-pi-durable</a><br><br>从任务恢复、长期记忆，到主动执行和现实设备控制，这几个项目基本能串起一条 Personal Agent 的学习路线<br><br>Pi是你的Agent启蒙，也可以成为你Personal Agent路上的好帮手，真就那句话<br><br>万物基于Pi 😂</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWlET5HaoAEYBsF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HWlET5NbIAAJ7uS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">小墨同学 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaomovps</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2108833822888669184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108833822888669184</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2108833822888669184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108833822888669184</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek+Blender本地建模</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cfenghub · 2026-11-08 11:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这绝对是 DeepSeek 前端表现最惊艳的一次打样！<br><br>DeepSeek v4.1 + Blender MCP + DeepSeek Harness的纯本地技术栈<br><br>非常随意的一段Prompt：<br>只让它在 Blender 里建一座极高细节的宝塔并让它动起来，结果 40 分钟直接端出一个带樱花飞舞、月夜灯火的动态3D场景：<br><br>- 零云端 API 账单：<br>大模型直接跑在本地（4xDGX Spark），Blender 在 M5 Max 上跑渲染，用网友的话说，“唯一的支出变成了家里的电费”<br>- 空间几何理解力硬核：<br>哪怕提示词非常粗糙，模型通过 MCP 协议控制3D软件依然把多层飞檐、斗拱结构和粒子动画逐帧做得非常细腻<br><br>通过MCP直接把开源大模型插进工业级专业3D软件（Blender），这又是一个新的尝试，Deepseek这套开源+生态共建的路子对比封源模型只靠模型本身的能力，可塑性强了太多，也给普通开发者带来了更多可能性！ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119186850430550016/img/XC7sr7yTlVmDOHbz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ERP AI化：上层叠加而非重做</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HavenZhao · 2026-11-08 11:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">传统的信息化系统，有没有必要都改成AI系统？<br><br>答案未必是肯定的。<br><br>ERP、财务、生产这些核心系统，最重要的是稳定、准确、可审计。一笔账、一张单据，结果必须确定。这恰恰不是大模型的强项。为了&quot;AI化&quot;去动它们的核心逻辑，风险往往大于收益。<br><br>AI真正有用的地方，是这些系统做不好的部分：数据散在多个系统里，要跨系统汇总分析；大量的文档、合同、报告，靠人去读；需要经验和判断的环节，规则写不全。<br><br>所以更值得问的不是&quot;要不要改成AI系统&quot;，而是三个问题：<br><br>有没有一个具体的痛点，是AI能解决、而现在的系统解决不了的？<br><br>数据准备好了吗？口径乱、版本多，接上AI只会把问题放大。<br><br>投入和收益算得过来吗？模型、算力、维护都是长期成本。<br><br>三个问题都有答案，再动手。<br><br>动手的方式，也更推荐&quot;在上面加一层&quot;，而不是&quot;推倒重做&quot;：老系统继续管数据和事务，AI负责跨系统的理解、分析和协助执行。<br><br>信息化系统解决的是&quot;把事记下来、管起来&quot;，AI要解决的是&quot;把事看明白、办得更快&quot;。两者是叠加，不是替代。<br><br>你们公司的老系统，最想让AI帮忙的是哪一块？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>苹果G1机器人本地跑Qwen3.6</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QwenAIFans · 2026-11-08 12:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">苹果研究团队给一台宇树 G1 后背驮了台 Mac mini。<br>钻桌底、侧身过窄门、自己找椅子坐，默认由本地的 Qwen3.6-35B-A3B 指挥，不用联网。<br>苹果自己的机器，背包里跑的却是千问。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119282593845649408/img/XJ7mA_-tpuv8UwfP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

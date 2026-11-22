@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月24日 20:34">
+<title>AI技术雷达 · 10月24日 20:34 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;MySQL落后推荐PostgreSQL</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Ming语音助手本地响应0.23秒</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Dessa纯听觉训练全双工语音</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;BiliFlow集成B站下载与录制</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MySQL落后推荐PostgreSQL</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realchendahuang · 2026-10-24 14:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果现在要做数据库技术选型，建议不要用MySQL，它已经彻彻底底地落后于时代了。<br><br>被 Oracle 收购之后，它的开源属性基本只剩下一个许可名头。社区向 GitHub 仓库提交的代码补丁很少能得到及时的审查和反馈，偶尔被采纳，也是被内部重写后把作者换成 Oracle 员工，只在发版公告里提一句名字。真实的 Bug 追踪和研发完全在内部闭门进行，早已脱离了公开透明的开源协作。<br><br>技术演进的节奏也脱节了。从 8.0 到 8.4 LTS 隔了整整六年，大版本憋了这么久，发布时却几乎拿不出真正有价值的新特性。<br><br>更让维护团队头疼的是发版策略的失控。原本小版本应该严格遵循只修 Bug 的约定，但 Oracle 却把 8.0 当成常青版本不断塞入新的变动。8.0.29 擅自把默认 ALTER TABLE 切换成 in-place，引发大量数据库崩溃和数据损坏，给许多团队的线上环境造成了严重故障，修复过程拖了近一年才算稳定下来。<br><br>性能表现同样不尽如人意。在写密集型负载下，根据长期的基准测试，9.5 的吞吐量甚至比好几年前的 8.0 还要低 15% 左右。硬件在升级，软件在吞吐上却出现了倒退。<br><br>在产品规划上，高价值的现代能力比如向量检索，被全部限定在自家的闭源云服务 HeatWave 里。开源分支得不到足够的技术投入，研发人员在 2025 年底还经历了大幅裁减，目的很明确，就是引导存量用户向闭源云迁移。<br><br>安全方面也缺乏足够的透明度。仅 2025 年一年就报出了 123 个 CVE 漏洞，官方发布的安全说明极其简略，不公开复现方式，也不提供详细的补丁代码审计细节，用户很难验证问题是否得到妥善处理。<br><br>无论是从扩展性还是生态健康度来看，现在的通用项目选择 PostgreSQL 都是更踏实、更省心的方案；如果业务深度绑定 MySQL 协议，切换到完全公开透明的 MariaDB 也是非常平滑的路径。继续保留 MySQL，只会让维护成本和潜在风险越来越高。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ming语音助手本地响应0.23秒</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-24 18:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">语音助手大多依赖云端，这个项目把 Ming-3.0-audio-tiny 语音模型跑在本地 AMD/NVIDIA GPU 上，实现约 0.23 秒响应的完全本地实时语音助手。<br><br><a href="https://github.com/JMS1717/ming-voice" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JMS1717/ming-voice</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXeGRLa0AA8AL8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SteamOS移植旧手机点亮屏幕</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ShouChen_ · 2026-10-24 14:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让opus5.5跑了两天两夜，成功把SteamOS移植到我的旧手机上了，看着它从内核开始，逐个搞定关键驱动移植，魔改上层系统，最后点亮屏幕，而我做的只是按几个组合键，插拔几下数据线，剩下的全由opus搞定。目前在收尾阶段，后面我会开源该项目供大家参考<br>#SteamOS移植 #opus5.5 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYCLnUb0AA1imN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYCMXTa0AAh2ef.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYCNNhakAA6g7q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>dsh工具逆向DeepSeek v4.1</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KitPloit · 2026-10-24 18:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">dsh-infinite-gen-5 — DeepSeek v4.1 flash 逆向工程工具（无限第五代）请 Star 和收藏 ⭐欢迎所有人对项目提交改进 <a href="https://ktp.sh/qc5lJiwAKE" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/qc5lJiwAKE</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">dsh-infinite-gen-5 — DeepSeek v4.1 flash reverse engineering tool (unlimited fifth generation) Please Star and bookmark ⭐Everyone is welcome to submit improvements to the project <a href="https://ktp.sh/qc5lJiwAKE" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/qc5lJiwAKE</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVY81XCXAAAkDJb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Dessa纯听觉训练全双工语音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @martinvars · 2026-10-24 12:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Dessa 不是另一个语音模型。这是第一次真正认真地尝试像人类学习说话那样教 AI 说话——仅靠听。<br>Jack Dorsey 刚刚发布了 Dessa，Block 训练的语音模型，完全仅用人类对话的音频训练而成。没有文本。没有预训练模型。没有任何内容被转换成字母。音频进，音频出。<br><br>这改变了一切。<br><br>到目前为止，几乎所有语音 AI 都做同样的事情：听→转写成文本→在文本中思考→合成语音。在这个过程中它们丢掉了半途而废的笑声、挫败的叹息、表示&quot;我在跟&quot;的&quot;嗯嗯&quot;、承载情感的停顿、暴露讽刺的语调。Dessa 跳过了这一步。它是全双工的：同时听和说。它可以打断你，也可以让你打断它，可以在你继续说话时做回应（&quot;是的，当然&quot;、&quot;不会吧！&quot;）。它说话有节奏、有情感、有沉默。像一个人。<br><br>而最疯狂的是：它的学习方式和婴儿一模一样。仅靠听。团队明确表示：&quot;婴儿在从未见过一个书面单词的情况下学会说话。我们想看看一个模型是否也能做到。可以。只是非常困难。&quot;<br><br>此外，它效率极其出色。仅在单个 NVIDIA GB200 NVL72 机架上训练，在 MacBook Pro M4 Max 或更高配置上本地运行，速度快于实时。Block 内部的一个小型实验室，直接向 Dorsey 汇报，刚刚证明了推进语音前沿不需要 10 万块 GPU 的集群。<br><br>目前尚未对公众开放（仅面向安全研究人员提供早期访问和候补名单），但他们放出的演示已经展示了一些不同的感觉：更鲜活，有时更笨拙，更像人。<br><br>如果这能规模化，我们与机器对话的方式将从&quot;语音界面&quot;变成真正的对话。而你仔细想想，这是一个相当深刻的转变。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Dessa no es otro modelo de voz. Es el primer intento serio de enseñar a hablar a una IA exactamente como aprendemos los humanos: solo escuchando.<br>Jack Dorsey acaba de presentar Dessa, el modelo de habla de Block entrenado únicamente con audio de conversaciones humanas. Sin texto. Sin modelos preentrenados. Sin convertir nada a letras. Audio entra, audio sale.<br><br>Eso cambia todo.<br><br>Hasta ahora casi todas las IAs de voz hacen lo mismo: escuchan → transcriben a texto → piensan en texto → sintetizan voz. En el camino pierden la risa a medias, el suspiro de frustración, el “ajá” que dice “te sigo”, la pausa que carga de emoción, el tono que delata ironía. Dessa se salta ese paso. Es full-duplex: escucha y habla al mismo tiempo. Puede interrumpirte, puede dejar que la interrumpas, puede hacer backchanneling (“sí, claro”, “¡no jodas!”) mientras tú sigues hablando. Habla con cadencia, emoción y silencios. Como una persona.<br><br>Y lo más loco: lo aprendió de la misma forma que un bebé. Solo escuchando. El equipo lo dice explícitamente: “Los bebés aprenden a hablar sin ver nunca una palabra escrita. Queríamos ver si un modelo también podía. Puede. Solo que es muy difícil”.<br><br>Además, es brutalmente eficiente. Se entrenó en un solo rack NVIDIA GB200 NVL72 y corre localmente en un MacBook Pro M4 Max o superior, más rápido que tiempo real. Un laboratorio pequeño dentro de Block, que reporta directamente a Dorsey, acaba de demostrar que no hace falta un cluster de 100.000 GPUs para avanzar la frontera del habla.<br><br>Todavía no está disponible para el público (solo acceso temprano para investigadores de seguridad y lista de espera), pero las demos que han soltado ya muestran algo que se siente distinto: más vivo, más torpe a veces, más humano.<br><br>Si esto escala, la forma en que hablamos con las máquinas va a cambiar de “interfaz de voz” a conversación real. Y eso, si lo piensas, es un cambio bastante profundo.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">jack <span style="font-size:12px;color:#999999;font-weight:400;">@jack</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们相信语音是与智能交互最自然的方式，所以我们创造了 Dessa——有史以来构建的最真实的全双工语音模型。与它对话感觉就像与一个人交谈……充满情感、细腻、停顿和自然的节奏。<br><br><a href="https://block.xyz/dessa" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://block.xyz/dessa</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence. <br><br><a href="https://block.xyz/dessa" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://block.xyz/dessa</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qiaomu插件Wifi传Kindle</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vista8 · 2026-10-24 18:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给Qiaomu Reader Obsidian 插件加了个功能，右键通过 Wifi 发送 epub 给越狱后的 kindle。<br><br>加上自用 ebook MCP，实现一句话找书传 kindle。<br><br>亚马逊退出中国后，泡面伴侣焕发新生机。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVY11jWawAEflhf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">向阳乔木 <span style="font-size:12px;color:#999999;font-weight:400;">@vista8</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">现在越狱kindle太方便，京东买一根type-c 转micro-usb（老安卓常用）的数据线。<br><br>连上Mac，让任意一个大模型处理就行。<br><br>越狱后打算好好用AI改造下，做一个AI阅读器。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYl7atbgAEqpZV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BiliFlow集成B站下载与录制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-24 18:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想把 B 站上的教程存到电脑里慢慢看，视频下好了，字幕、弹幕和封面还得另外想办法弄，凑齐又是一轮折腾。<br><br>BiliFlow 是个开源桌面工具，视频下载、直播录制和本地归档都放在同一个工作台里。<br><br>粘贴视频链接，选好画质和要下的集数，可以连字幕、弹幕、封面一起保存。合集和收藏夹也能先预览，筛好需要的再下载。<br><br>GitHub：<a href="https://github.com/itsVicOC/bilibili-downloader" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/itsVicOC/bilibili-downloader</a><br><br>支持 1 到 8 路并发，暂停后能接着下，应用意外退出也保留断点。我更看重这一点，下到一半不用从头来。<br><br>直播间添加房间号就能监控开播，自动录制、断线重连、分段保存，最后合并导出成 MP4。<br><br>Windows 和 M 系列 Mac 都有安装包，首次使用选完整版，视频处理和直播录制需要的工具已经带上了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYzVgqbAAANbFE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

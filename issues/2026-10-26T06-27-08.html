@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月26日 14:26">
+<title>AI技术雷达 · 10月26日 14:26 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Hassan 六步闭环应用开发工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;claude-seo 全自动SEO审计</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Valkey 9.2 流压缩与B+树提速</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;GEOInflow 统计AI爬虫与转化</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Pi Agent 接Ollama断网编码</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hassan 六步闭环应用开发工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-26 12:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Hassan 把他日常做应用的工作流公开了！<br><br>语音 → 视觉参考 → 澄清问答 → v1 反馈 → 录屏验收 → 发帖或扔掉 的闭环；harness 混用 Claude Code（Opus 5.5 high） 与 OpenCode（DeepSeek V4.1 Flash / GLM 5.3），并给 Agent 接上部署/模型/设计类 CLI 与 skills。<br><br>六步工作流<br>· 用 @WisprFlow 录 1–5 分钟语音作 prompt，细节越多越好<br>· 补视觉灵感：截图，或 Inspo MCP，让 Agent 知道想要的样子<br>· 用 @mattpocockuk 的 grill-me skill，让 Agent 主动追问澄清，而不是一上来闷头写<br>· 拿到 v1 后，再发一串反馈、功能需求与设计微调（通常又是一段语音）<br>· 每个新功能合并 PR 前，先要一段 快速录屏，证明真能跑<br>· 迭代到满意再发到 X；不满意就扔掉<br><br>工具栈<br>· Harness：Claude Code + Opus 5.5（high）；OpenCode + DeepSeek V4.1 Flash / GLM 5.3<br>· 给 Agent 的能力：Vercel + GitHub CLI（推代码、部署）；Together skills（聊天/图像/语音模型）；Design/animation skills（间距与交互指引）</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVh2IOWaQAAObXh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Hassan <span style="font-size:12px;color:#999999;font-weight:400;">@nutlope</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我如今构建应用的方式：<br><br>1. 用 @WisprFlow 录制一段1到5分钟的提示词。细节越多越好。<br>2. 添加视觉灵感，让 agent 知道我脑中的想法（截图或 Inspo MCP）。<br>3. 使用 @mattpocockuk 的 grill-me 技能，让 agent 提出澄清性问题。<br>4. 拿到一个 v1，然后发送一份反馈列表、功能请求和设计调整（通常也是通过另一段语音录制）。<br>5. 对每个新功能，要求进行一次快速屏幕录制，在合并 PR 之前验证它是否正常工作。<br>6. 不断迭代直到我满意为止，然后发布到 @X 上或者直接扔掉。<br><br>我的工具组合使用 Claude Code 搭配 Opus 5.5 (high) 以及 OpenCode 搭配 DeepSeek V4.1 Flash / GLM 5.3。<br><br>我还给我的 agent 提供了一些 CLI 和技能：<br><br>• Vercel + GitHub CLI，这样它们就可以推送代码和部署应用。<br>• Together 技能，这样它们就可以使用 Together 的聊天、图像和语音模型。<br>• 设计/动画技能，这样它们就有了关于间距和交互的指导。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">How I build apps these days:<br><br>1. Record a 1-5 minute prompt with @WisprFlow The more detail, the better.<br>2. Add visual inspo so the agent knows what I have in mind (screenshots or Inspo MCP).<br>3. Use @mattpocockuk's grill-me skill to have the agent ask clarifying questions.<br>4. Get back a v1, then send a list of feedback, feature requests, and design tweaks (via another voice recording usually).<br>5. For each new feature, ask for a quick screen recording to verify it works before merging the PR.<br>6. Keep iterating until I'm happy, then post it on @X or throw it away.<br><br>For my harness, I use a mix of Claude Code with Opus 5.5 (high) and OpenCode with DeepSeek V4.1 Flash / GLM 5.3.<br><br>I also give my agents some CLIs &amp; skills:<br><br>• Vercel + GitHub CLIs so they can push code and deploy apps.<br>• Together skills so they can use chat, image, &amp; voice models from Together<br>• Design/animation skills so they have guidance on spacing &amp; interactions</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>claude-seo 全自动SEO审计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-26 12:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🤯 真是不给传统 SEO 外包和天价工具留活路了……<br>刚在 GitHub 挖到一个狂揽 20.1k Stars 的满分开源项目：claude-seo（作者 AgriciDaniel）。它直接把 Claude Code 变成了一个由 19 个专家 Agent + 26 个子技能 组成的“全自动 SEO 特种部队”。<br>以前做一次深度的全站 SEO 审计，要么买每月几百刀的 Ahrefs/SEMrush，要么花几千刀找 Agency 等上两周。现在在终端里甩给它一个网址，15 分钟、0 成本，最多 17 个 AI Agent 会在本地并发执行：<br>• 传统基建全包：爬虫抓取、死链重定向、Core Web Vitals 性能、E-E-A-T 内容质量评估，甚至自带无头浏览器渲染 React/Next.js 页面，自动帮你写好修复版的 <a href="http://Schema.org" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Schema.org</a> 结构化代码。<br>• 降维打击的 GEO（AI 搜索优化）：现在的 SEO 早就变天了。它内置 /seo geo 和 /seo agentic 命令，专门检测你的网站有多大概率被 ChatGPT、Perplexity、Gemini 和 Google AI Overviews 引用，连最新的 llms.txt 和 WebMCP 智能体就绪度都能一键排查。<br>• 交付即落地：跑完不给你堆砌一堆看不懂的警告，而是直接生成按优先级排好的 Markdown / PDF 整改方案，连“改完怎么验证生效”都给你写得明明白白。作者自己的新站靠这套工具，前 12 周直接拿下 10.8K GSC 自然点击，移动端速度干到 99 分。<br>安装极其无脑（需 Claude Code 环境）：<br>1️⃣ /plugin marketplace add AgriciDaniel/claude-seo<br>2️⃣ /plugin install claude-seo@agricidaniel-claude-seo<br>3️⃣ /seo setup<br>装完直接一句 /seo audit 你的网址 就能看 AI 军团干活了。MIT 协议完全开源，数据全在本地。做独立开发、SaaS 出海和内容站的朋友，强烈建议先马后看！🚀</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVdUAKubcAAVuWe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Valkey 9.2 流压缩与B+树提速</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangzworks · 2026-10-26 14:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在最近举行的布拉格ValkeyConf聚会中，多位Valkey核心贡献者介绍了接下来即将发布的Valkey 9.2的主要改进，包括流压缩、使用B+树加速有序集合、用于分层查找的新数据类型Path Hash等：<a href="https://valkey.io/blog/ValkeyConf2026/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://valkey.io/blog/ValkeyConf2026/</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HViRw3EaAAAbJcW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GEOInflow 统计AI爬虫与转化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vista8 · 2026-10-26 12:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 时代的 GEO 流量统计 GEOInflow 免费开源。<br><br>姚老师打磨了很久，能看到所有 AI 爬虫。<br><br>GEO 一直是黑盒，有了这套系统后，所有 AI Agent 有没有抓取过你的信息，一清二楚。<br><br>不仅能看 GEO 爬虫，也有常规网站流量统计、搜索爬虫等统计分析。<br><br>MIT 协议，可任意修改商用。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">姚金刚 <span style="font-size:12px;color:#999999;font-weight:400;">@yaojingang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">重磅开源：GEOInflow<br>一套面向GEO的网站与AI爬虫分析系统，同时支持完整的访客数据、转化数据统计与分析<br>MIT协议，Docker一键部署<br><br>GEOInflow将网站访客、AI搜索引荐、服务器抓取日志和内容目录放在同一个网站上下文中<br>帮助团队回答这些问题：哪些 AI 蜘蛛访问了网站，访问了哪些内容，哪些关键页面长期缺少抓取记录，访问是否遇到错误，以及AI搜索实际带来了多少访客和转化<br><br>核心逻辑与能力：<br>1、哪些AI平台在抓你的站（OpenAI、Anthropic、Perplexity、Google、字节、百度、Kimi、腾讯混元…），是训练、AI 搜索，还是用户触发的访问。包括，抓了哪些页面，哪些关键页从没被抓过<br>2、同时可以追踪AI搜索引荐来的会话、落地页和转化，看清GEO的真实效果<br>3、它也是一套完整的网站统计：PV/UV、事件漏斗、热力图、留存、团队权限与分享<br>4、核心统计无需模型API Key，默认无Cookie采集，数据留在你自己的服务器上<br>5、系统已整理61种全球范围内各种不同的AI爬虫身份及分类，在这个基础上构建了大量的全新数据分析看板<br><br>做GEO，每一次内容调整都值得有数据可以复盘<br>欢迎体验和提PR<br><br>GitHub地址：<a href="https://github.com/yaojingang/GEOInflow" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yaojingang/GEOInflow</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVh7d2gWAAAcfUE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVh7iW8XEAAiT9B.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVh7ksrWoAA0yVt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVh7sRrXkAAk3i4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元3D免费生成3D游戏资产</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gengdaJ · 2026-10-25 21:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Opus5.5确实在审美这一块太无敌了！我用Opus5.5做了一个3D游戏，纪念《卖火柴的小女孩》，全程花费0$。<br><br>从故事书，到精美的童话小镇，再到每一处景深，都做得特别细节，你完全也可以模仿这套流程，从零创造一个心中的世界给自己或小孩玩，或者直接做一个游戏站。<br><br>1、和Claude Opus5.5对话，构建整个故事大纲和世界脚本。<br><br>2、GPT image2.5生成完整世界画面预览和所需3D素材预览图。<br><br>3、用腾讯混元3D（每天免费20次，支持单图生3D、多图生3D，新手试玩友好）生成3D资产。<br><a href="https://3d.hunyuan.tencent.com/creation" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://3d.hunyuan.tencent.com/creation</a><br><br>4、第一版人物动作太过僵硬，所以换成开源的 Mesh2Motion 在本地绑骨。<br><a href="https://github.com/Mesh2Motion/mesh2motion-app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Mesh2Motion/mesh2motion-app</a><br><br>5、找公开音乐和音效，配合Three.js网页呈现。<br><br>《卖火柴的小女孩》试玩网址：<a href="https://huochai.yichen.ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huochai.yichen.ai/</a><br><br>当然，由于使用的模型能力限制，游戏本身不完美，我之后会用更强大的模型来试试，再来给大家做分享，而且像做出海游戏站这种，本身就有很大的商业潜力，可以围绕外国人喜欢的那种故事展开研究。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114340103720157184/img/3nbaVy3D2kFYXTbc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude提示追加四行专家追问</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Adamaestr0_ · 2026-10-26 05:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一位 ANTHROPIC 的工程师分享了 4 行话，让 CLAUDE 深入得多<br><br>写下你的提示词。不要按回车。<br><br>在末尾加上：<br><br>→ 说说一个专家在这里会做什么而我没有要求的<br>→ 说出他会从哪块原材料出发<br>→ 说出他精确的方法和工具<br>→ 说说他会用什么来验证结果是正确的<br><br>然后：「重写我的提示词，以精确地请求这些内容。」<br><br>我整个星期都在玩这个。哇哦！<br><br>保存它。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">UN INGENIERO DE ANTHROPIC COMPARTIÓ 4 LÍNEAS QUE HACEN A CLAUDE MUCHO MÁS PROFUNDO<br><br>Escribe tu prompt. No pulses enter.<br><br>Añade al final:<br><br>→ Di lo que haría un experto aquí y que yo no pido<br>→ Nombra la materia prima de la que partiría<br>→ Nombra sus métodos y sus herramientas precisas<br>→ Di lo que probaría que el resultado es correcto<br><br>Luego: «Reescribe mi prompt para pedir exactamente eso.»<br><br>He estado jugando con esto toda la semana. ¡Guau!<br><br>Guárdalo.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Felix Rieseberg <span style="font-size:12px;color:#999999;font-weight:400;">@felixrieseberg</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你好，我是 Felix。我是一名在 Claude 上工作的工程主管。我喜欢看着人们展翅高飞，去做他们从未想过可能的事情。<br><br>我们经常把这描述为在使用 AI 时&quot;更有雄心&quot;，这是一个很难执行的建议。我写了一篇教程：<br><br><a href="https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought possible.<br><br>We often describe that as &quot;being more ambitious&quot; when using AI, which is tricky advice to follow. I wrote a tutorial:<br><br><a href="https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Agent 接Ollama断网编码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HunziDaily · 2026-10-26 13:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你在体制内、涉及商业秘密，或者单纯不想花一分钱 API 费？<br>Pi Agent + 本地 Ollama 是目前开发界公认最强、最轻巧的【全离线安全孤岛】！<br><br>极简配置只需要两步：<br>1. 本地启动 Ollama，跑一个开源模型（如 deepseek-r1:8b 或 qwen2.5-coder:7b）；<br>2. 在终端启动 Pi 时直接指定本地端点：<br>`pi --provider ollama --model qwen2.5-coder:7b`<br><br>这时候你直接把网线拔掉、断开 Wi-Fi 试试看！<br>Pi 依然在你的终端里健步如飞地帮你读代码、写文件、改 Bug！<br>所有的计算全压榨在你自己电脑的显卡上，没有任何一个字节飞出你的房间，<br>极致的隐私安全感，商业大厂给再多钱都买不到！</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

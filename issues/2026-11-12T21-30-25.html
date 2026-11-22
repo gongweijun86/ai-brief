@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月13日 05:30">
+<title>AI技术雷达 · 11月13日 05:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Harness 工程六要素拆解</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Gemini 4 Hydrogen 发布</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Expo 云端模拟器接入 Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;英伟达 CEO 黄仁勋辞任</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">12</span>&nbsp;&nbsp;NVIDIA 驱动漏洞可夺宿主权限</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness 工程六要素拆解</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @taqimolavi · 2026-11-12 16:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚀 Google 发布了一份关于 Harness Engineering 的九页 PDF；我认为这是每一个从事 AI Agent 工作的人都应该认真对待的概念。<br><br>核心公式很简单：<br><br>Agent = Model + Harness<br><br>也就是说，人工智能模型本身并不是智能体。将它变成一个可信赖的执行力量的，是我们围绕它构建的基础设施。<br><br>但这个基础设施由什么组成呢？<br><br>1. Guides：将以往失败经验转化为永久知识的规则和指令。<br><br>2. Sensors：测试、Linter 和验证工具，不允许任何错误输出进入下一阶段。<br><br>3. Agentic Loop：规划、执行、审查和修正的循环；带有预算限制和向人类转介的能力。<br><br>4. External Memory：模型之外的记忆，用于保存决策、项目状态以及之前会议的成果。<br><br>5. Permissions：控制智能体对工具的访问权限，并界定其自主性的边界。<br><br>6. Observability：记录和监控所有活动、费用、错误以及重试尝试。<br><br>但故事到这里还没有结束！<br><br>一些用于实际进入该领域的开源项目：<br><br>🔹 Google Harness²<br><a href="https://github.com/google-research/harness2" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google-research/harness2</a><br><br>🔹 Learn Harness Engineering<br><a href="https://github.com/walkinglabs/learn-harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/walkinglabs/learn-harness-engineering</a><br><br>🔹 Awesome Agent Harness<br><a href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Gloriaameng/Awesome-Agent-Harness</a><br><br>🔹 Harness Engineering<br><a href="https://github.com/TrishamBP/harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/TrishamBP/harness-engineering</a><br><br>现在来看一个更吸引人的概念：<br><br>Graph Engineering<br><br>想象一下你有多个独立的智能体，每个都有自己的 Harness。<br><br>一个负责研究，另一个负责分析，第三个负责编写代码，第四个负责验证输出。<br><br>现在如果其中一个失败了，它的失败可以变成一个信号，用来修正其他成员的表现。<br><br>在这里，我们面对的已经不是一个简单的聊天机器人或单个智能体了；而是一个多智能体的执行系统。<br><br>有一点我们不应该忘记：<br><br>Hermes 可以被视为智能体的执行环境；工具、技能、记忆和工作流在这里汇聚在一起。<br><br>Harness Engineering 帮助我们将这个环境变得可控、可衡量、可信赖。<br><br>我认为未来不属于那些仅仅选择更强模型的人；而是属于那些围绕模型构建更好系统的人。<br><br>模型是大脑；Harness 是执行系统；而 Graph 是大脑之间的协作网络。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚀 گوگل یک PDF نه‌صفحه‌ای درباره Harness Engineering منتشر کرده؛ مفهومی که به نظرم باید هر کسی که با AI Agent کار می‌کند، جدی بگیرد.<br><br>فرمول اصلی ساده است:<br><br>Agent = Model + Harness<br><br>یعنی مدل هوش مصنوعی به‌تنهایی ایجنت نیست. چیزی که آن را به یک نیروی اجرایی قابل‌اعتماد تبدیل می‌کند، زیرساختی است که دور آن می‌سازیم.<br><br>اما این زیرساخت از چه چیزهایی تشکیل می‌شود؟<br><br>۱. Guides: قوانین و دستورالعمل‌هایی که تجربه شکست‌های قبلی را به دانش دائمی تبدیل می‌کنند.<br><br>۲. Sensors: تست‌ها، Linterها و ابزارهای اعتبارسنجی که اجازه نمی‌دهند هر خروجی اشتباهی به مرحله بعد برود.<br><br>۳. Agentic Loop: چرخه برنامه‌ریزی، اجرا، بررسی و اصلاح؛ با محدودیت بودجه و امکان ارجاع به انسان.<br><br>۴. External Memory: حافظه‌ای خارج از مدل برای حفظ تصمیم‌ها، وضعیت پروژه و دستاوردهای جلسات قبلی.<br><br>۵. Permissions: کنترل دسترسی ایجنت به ابزارها و تعیین مرز استقلال آن.<br><br>۶. Observability: ثبت و پایش تمام فعالیت‌ها، هزینه‌ها، خطاها و تلاش‌های مجدد.<br><br>اما داستان اینجا تمام نمی‌شود!<br><br>چند پروژه متن‌باز برای ورود عملی به این حوزه:<br><br>🔹 Google Harness²<br><a href="https://github.com/google-research/harness2" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google-research/harness2</a><br><br>🔹 Learn Harness Engineering<br><a href="https://github.com/walkinglabs/learn-harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/walkinglabs/learn-harness-engineering</a><br><br>🔹 Awesome Agent Harness<br><a href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Gloriaameng/Awesome-Agent-Harness</a><br><br>🔹 Harness Engineering<br><a href="https://github.com/TrishamBP/harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/TrishamBP/harness-engineering</a><br><br>و حالا یک مفهوم جذاب‌تر:<br><br>Graph Engineering<br><br>تصور کن چند ایجنت مستقل داشته باشی که هرکدام Harness مخصوص خودشان را دارند.<br><br>یکی تحقیق می‌کند، دیگری تحلیل می‌کند، سومی کدنویسی می‌کند و چهارمی خروجی را اعتبارسنجی می‌کند.<br><br>حالا اگر یکی شکست بخورد، شکستش می‌تواند به سیگنالی برای اصلاح عملکرد بقیه تبدیل شود.<br><br>اینجا دیگر با یک چت‌بات یا ایجنت ساده طرف نیستیم؛ با یک سیستم اجرایی چندایجنتی روبه‌رو هستیم.<br><br>یک نکته که نباید فراموش کنیم:<br><br>Hermes را می‌توان به‌عنوان محیط اجرای ایجنت در نظر گرفت؛ جایی که ابزارها، مهارت‌ها، حافظه و گردش‌کارها کنار هم قرار می‌گیرند.<br><br>Harness Engineering کمک می‌کند این محیط را قابل‌کنترل، قابل‌اندازه‌گیری و قابل‌اعتماد کنیم.<br><br>به نظرم آینده متعلق به کسانی نیست که صرفاً مدل قوی‌تری انتخاب می‌کنند؛ بلکه متعلق به کسانی است که سیستم بهتری دور مدل می‌سازند.<br><br>مدل، مغز است؛ Harness، سیستم اجرایی؛ و Graph، شبکه همکاری مغزهاست.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120793222460948480/img/unuTCC4AX6HpNbwY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Hydrogen 发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-13 02:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 发布 Gemini 4 Hydrogen：对标 Claude Sonnet 5.5 和 GPT-6.1 Terra 的主力模型，Gemini App 付费用户可选，开发者免费层就能用<br><br>Google 11 月 12 日发布 Gemini 4 Hydrogen。它是 Gemini 4 系列里主打快和省的一档，接替 Gemini 3.8 Flash，Google 发布时拿来对比的是 Anthropic 的 Claude Sonnet 5.5 和 OpenAI 的 GPT-6.1 Terra。<br><br>Gemini 4 现在三个模型的分工：<br>Carbon 最强，留给最难、最长的任务；<br>Argon 处理大多数复杂任务，比 Carbon 省 Token；<br>Hydrogen 负责日常写代码、跑 agent，也可以给 Carbon 打下手。<br><br>Google 公布的 Artificial Analysis 综合指数里，Hydrogen 默认档 51 分，略高于 Argon 的 50 分，开到最高档 54 分；Carbon 在 Artificial Analysis 官网是 60 分。<br><br>一天前，Business Insider 报道 Google 员工正在内部开发平台 Jetski 上测试代号 Hydrogen 的模型，一位工程师在内部消息里说它“非常强，又快又省”。和 Carbon 一样，内部代号直接成了正式名。<br><br>【跟 Sonnet 5.5、GPT-6.1 Terra 比】<br><br>API 单价，每百万 Token 输入 / 输出：Hydrogen 1.5 / 7.5 美元，Claude Sonnet 5.5 2 / 10 美元，GPT-6.1 Terra 1 / 5 美元。Hydrogen 是 Sonnet 5.5 的四分之三，比 Terra 贵一半。<br><br>Google 公布的 10 项评测里，Hydrogen 7 项第一。差距最大的是 SWE-sweep，要求找到并修好 bug、又不弄坏原有代码：Hydrogen 13.5%，Sonnet 5.5 3.1%，Terra 5.8%。Sonnet 5.5 赢了另外 3 项：命令行编程 Terminal-Bench 4.1（63.9% 对 57.0%）、操作电脑 OSWorld（83.9% 对 77.6%）和科学任务。<br><br>算上每个任务的花费，结论更细一些。按 Google 自己的图，三家都开到最高档时，Hydrogen 54 分、每个任务约 3 美元；Sonnet 5.5 也是 54 分左右，每个任务约 10 美元；Terra 51 分，每个任务不到 1 美元。拿同样的 51 分比，Terra 比 Hydrogen 默认档便宜一半，但 Hydrogen 只用了 Terra 不到一半的时间。<br><br>【谁能用，要不要钱】<br><br>Gemini App：Plus（每月 4.99 美元）、Pro 和 Ultra 用户能在模型菜单里手动选 Hydrogen。免费用户选不了，只能开着“自动选择模型”，碰到需要多想一点的问题，系统可能交给 Hydrogen，大多数问题还是用最轻的 Flash-Lite。关掉自动选择，全部用 Flash-Lite。<br><br>Google 搜索换上了 Hydrogen，所有用户都能用到。Google 的 AI 编程工具 Antigravity 里，付费的 Pro 和 Ultra 用户能用。<br><br>开发者：AI Studio 和 Gemini API 的免费层就有 Hydrogen，按调用频率限量；Argon 和 Carbon 都不在免费层。付费层就是上面的 1.5 / 7.5 美元，没有引入期优惠，批量和 Flex 档再打五折。<br><br>跟自家比，Argon、Carbon 的引入价 2 / 10 美元到 11 月 30 日，12 月 1 日起涨到 4 / 20 美元，到时 Hydrogen 的单价不到它们的四成。3.8 Flash 现在的优惠价 0.75 / 3.75 美元到年底，今天从 3.8 Flash 换过来，单价会先翻倍，明年 1 月起两者持平。<br><br>【能干什么】<br><br>Google 说，比 3.8 Flash，Hydrogen 完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%，编造内容的情况少了八成以上，读文件、搜索这类操作能一次并行发出好几个。<br><br>Google 建议把 Hydrogen 和 Carbon 搭配用：Carbon 做规划、啃难题，改代码、跑测试交给 Hydrogen。Antigravity 新加了 Orchestrator，在同一个会话里自动在两个模型间切换。Google 测的结果是，成功率接近全程用 Carbon，额度少用 24%，速度快 19%。<br><br>思考档在 low、medium、high 之外新增 xhigh，默认是 high；上下文 100 万 Token，输入、思考和输出共用。<br><br>以上评测成绩和花费都是 Google 自己公布的，Artificial Analysis 官网目前列了 Hydrogen，还没有它的分数；Sonnet 5.5（最高档 54.5 分）和 Terra（51.3 分）的分数能在官网核对。<br><br>来源：<br>Google 官方博客《Introducing Gemini 4 Hydrogen》（Koray Kavukcuoglu，2026-11-12）<br><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/</a><br>Gemini App 帮助中心：各套餐可用模型<br><a href="https://support.google.com/gemini/answer/18648722" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://support.google.com/gemini/answer/18648722</a><br>开发者文档《What's new in Gemini 4 Hydrogen》与价格页<br><a href="https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen</a><br><a href="https://aistudio.google.com/docs/pricing" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aistudio.google.com/docs/pricing</a><br>Business Insider 内测报道（Hugh Langley，2026-11-11）<br><a href="https://www.businessinsider.com/google-hydrogen-test-new-gemini-4-flash-model-ai-2026-11" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.businessinsider.com/google-hydrogen-test-new-gemini-4-flash-model-ai-2026-11</a><br>Artificial Analysis 综合指数<br><a href="https://artificialanalysis.ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://artificialanalysis.ai/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sundar Pichai <span style="font-size:12px;color:#999999;font-weight:400;">@sundarpichai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">继 Carbon 和 Argon 之后，Gemini 4 Hydrogen 将前沿智能带给所有人。为日常任务、编码和智能体工作流的速度和效率而构建。<br><br>与 3.8 Flash 相比，它完成任务的速度快 2.5 倍。同时拥有 4 个思考级别，因此你只需为任务所需的推理深度等待和付费。<br><br>今天开始向 @GoogleAIStudio 的所有级别、Gemini API、@GeminiApp、Search 以及 Google @Antigravity 中付费的 Google AI Pro 和 Ultra 订阅用户推出。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows.<br><br>Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay for the reasoning depth a task requires.<br><br>Rolling out today to all tiers of @GoogleAIStudio, the Gemini API, @GeminiApp, Search and paid Google AI Pro and Ultra subscribers in Google @Antigravity.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Expo 云端模拟器接入 Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-13 01:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在智能体编码中，人类的注意力是最稀缺的资源。<br><br>@expo 刚刚发布了 Expo Simulators，让你的编码智能体可以在云端 iOS 模拟器上测试其更改，并在请求你审查之前发送截图和录制视频。团队中的任何人都可以通过链接打开新构建并逐步点击体验。<br><br>很高兴看到智能体循环中有了更多的验证。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Human attention is the scarcest resource in agentic coding.<br><br>@expo just shipped Expo Simulators, so your coding agent can test its changes on a cloud iOS Simulator and send you screenshots and a recording before asking for your review. Anyone on the team can open the new build from a link and tap through it.<br><br>Great to see more verification in the agent loop.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Expo <span style="font-size:12px;color:#999999;font-weight:400;">@expo</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">编码智能体编写移动端代码的速度比任何团队审查的速度都快。<br><br>🙌 介绍 Expo Simulators：专为智能体打造的云端模拟器。<br><br>你的智能体在云端模拟器或仿真器上运行其更改，并在请求你的关注之前带回录制视频。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Coding agents write mobile code faster than any team can review it.<br><br>🙌 Introducing Expo Simulators: cloud simulators built for agents.<br><br>Your agent runs its change on a cloud simulator or emulator and brings back the recording before it asks for your attention. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120917024268595200/img/-14-4IE1lZCbwSF6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Oak 医疗转录支持 55 种语言</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Speechmatics · 2026-10-15 03:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个医疗模型。55+ 种语言 🌎<br><br>Speechmatics 的 Oak 将多语言医疗转录带入你的 AI 文书助手，无需为每种语言单独使用一个模型。<br><br>为更多患者和市场而构建。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">One medical model. 55+ languages 🌎<br><br>Speechmatics’ Oak brings multilingual medical transcription to your AI scribe, without a separate model for every language.<br><br>Build for more patients and markets.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Taan 音乐模型支持精确可控生成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mp3addi · 2026-11-13 01:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们进入了 @ycombinator，以修复 AI 制作音乐的方式。<br><br>今天我们要推出 Taan v1-preview，最具可控性的基础音乐模型。<br><br>如今的音乐模型可以制作抓耳的曲目，但你无法引导它们。要求&quot;精确在第 11 秒的小提琴&quot;，它们通常会跳过。于是你不断重新生成，希望某一次碰巧合适。<br><br>Taan 的训练就是为了解决这个问题。<br><br>哼一段旋律、说出确切的音符，或者给它一张图片、一个 MIDI 文件、一个视频或一个剧本。Taan 会创作符合你上下文并遵循你指令的音乐。<br><br>v1-preview 目前仅支持管弦乐和电影配乐类型的曲风，更多曲风即将到来。<br><br>今天上线 👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We got into @ycombinator to fix how AI makes music.<br> <br>Today we're launching Taan v1-preview, the most controllable foundation music model.<br><br>Music models today make catchy tracks, but you can't steer them. Ask for &quot;violin at exactly the 11th second&quot; and they usually skip it. So you regenerate over and over and hope one take fits. <br><br>Taan is trained to fix this.<br> <br>Hum a melody, name exact notes, or hand it an image, a MIDI file, a video or a script. Taan composes music that fits your context and follows your instructions.<br> <br>v1-preview has genre support limited to orchestral and cinematic music, with more genres on the way.<br><br>live today 👇</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120924456982061056/img/igQfNzmda0dQfBQH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChatGPT 商务入口提供点击数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sengineland · 2026-11-13 01:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">ChatGPT Business Hub 已上线。<br><br>认领你的企业，你将从 ChatGPT 的回答中获得提及、网站点击和发现话题。<br><br>@rustybrick 谈论为什么点击数据非常重要 👇<br><a href="https://searchengineland.com/chatgpt-business-hub-is-now-live-501350" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/chatgpt-business-hub-is-now-live-501350</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">ChatGPT Business Hub is live.<br><br>Claim your business and you get mentions, website clicks and discovery topics from ChatGPT answers.<br><br>@rustybrick on why the click data is a big deal 👇<br><a href="https://searchengineland.com/chatgpt-business-hub-is-now-live-501350" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/chatgpt-business-hub-is-now-live-501350</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120924961443332096/img/bl-hKrNp5pRt0VA-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>英伟达 CEO 黄仁勋辞任</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @nytchinese · 2026-11-13 00:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">黄仁勋宣布辞任英伟达ceo：随着丑闻发酵，黄仁勋在周四英伟达董事会会议结束后宣布辞职。公司首席财务官克雷斯将担任临时首席执行官。黄仁勋的离任让英伟达步入一个充满不确定性的时期，这一消息也立即在全球经济中引发震动。<a href="https://cn.nytimes.com/technology/20261113/heres-the-latest/?utm_source=tw-nytimeschinese&amp;utm_medium=social&amp;utm_campaign=cur" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cn.nytimes.com/technology/20261113/heres-the-latest/?utm_source=tw-nytimeschinese&amp;utm_medium=social&amp;utm_campaign=cur</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SpaceX 亚利桑那建超算园区</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SawyerMerritt · 2026-11-13 00:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如果 @SpaceX 按照计划建设其耗资 500 亿美元的亚利桑那州超级计算园区，这些是社区将获得的福利：<br><br>• 6,500 个就业岗位（1,000 个永久岗位，5,500 个建筑岗位）。<br>• 每年新增房产税收入最高达 1.03 亿美元。<br>• 预计当地 SSVEC 住宅用户的电费将降低 10-40%。<br>• 一次性县级销售税收入最高达 2.5 亿美元。<br>• 每年为亚利桑那州电力合作社成员带来的额外福利最高达 4.6 亿美元。<br>• SpaceX 出资 36 亿美元进行电网升级，合作社成员无需承担费用。<br>• 24 GWh 电池储能，以改善电网的稳定性和可靠性。<br>• 额外的太阳能以减轻当地电网的压力。<br>• 用水量极少，不新建水井，预计零持续工业用水消耗。<br>• 含水层和野生动物保护，包括保护倡议。<br>• 通过噪音缓解和暗天空保护，减少噪音和光污染。<br>• 支持当地学校、基础设施、企业和公共服务。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">These are the community benefits if @SpaceX builds their planned $50 billion Arizona Supercomputing Campus:<br><br>• 6,500 jobs (1,000 permanent, 5,500 construction).<br>• Up to $103M annually in new property tax revenue.<br>• 10-40% lower electricity bills projected for local SSVEC residential customers.<br>• Up to $250M in one-time county sales tax revenue.<br>• Up to $460M annually in additional benefits for Arizona electric cooperative members.<br>• $3.6B in grid upgrades funded by SpaceX at no cost to cooperative members.<br>• 24 GWh of battery storage to improve grid stability and reliability.<br>• Additional solar energy to reduce strain on the local grid.<br>• Minimal water usage, with no new wells and zero ongoing industrial water consumption projected.<br>• Aquifer and wildlife protection, including conservation initiatives.<br>• Reduced noise and light pollution through noise mitigation and dark-sky protections.<br>• Support for local schools, infrastructure, businesses, and essential services.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sawyer Merritt <span style="font-size:12px;color:#999999;font-weight:400;">@SawyerMerritt</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">SpaceX 刚刚公布了一座耗资 500 亿美元的大型超级计算园区，计划建在亚利桑那州的科奇斯县。<br><br>所有信息：<br>• 9 座超级计算建筑总功耗高达 6 GW<br>• 建设将于 2027 年开始<br>• 每座超级计算建筑的面积约为 493,000 平方英尺。<br>• 超级计算建筑总面积为 444 万平方英尺，不含配套设施。<br>• SSVEC 住宅用户预计电费将降低 10-40%。<br>• 高达 24 GWh 的并网电池储能，用于提供备用电源、稳定区域电网、支持本地电压以及吸收电力需求波动。是美国计划中最大的电池安装项目之一。<br>• 计划在该区域增加太阳能发电，白天供应可再生能源并减轻当地电网的压力。<br>• 不计划建设专用现场发电厂或燃料储存场。<br>• 每座超级计算建筑将配备 10 MW 天然气备用发电设备，用于关键设备，仅在公用事业断电和定期测试时运行。<br>• 现场不会安装燃气轮机。<br>• SpaceX 计划出资 36 亿美元进行电网基础设施升级，无偿移交给 AEPCO，其成员无需承担费用。<br>• 全面建成后，合作社成员每年额外福利最高达 2.6 亿美元，这是在住宅电费减免之上的。<br>• 全州合作社成员每年额外福利最高达 2 亿美元，这是在 SSVEC 福利之上的。<br>• 超级计算机将采用干式冷却和闭环水循环系统，而非蒸发式冷却。<br>• SpaceX 预计零持续工业用水消耗。<br>• 冷却系统初次注水后，水将重复使用长达 10 年。<br>• SpaceX 估计年度用水量相当于约 20-30 户亚利桑那州住宅。<br>• 预计年度用水量将不到单个中心轴灌溉系统年消耗量的 2.5%。<br>• 永久岗位：约 1,000 个。<br>• 建筑岗位：约 5,500 个。<br>• 房产税收入：预计每年新增收入最高达 1.03 亿美元。<br>• 区域经济效益：SpaceX 表示其投资将支持公共教育、基础设施、当地基本服务和经济发展。<br>• 本地供应商：SpaceX 正在鼓励供应商参与园区的建设和开发。<br>• 噪音缓解：设备将尽可能远离相邻房产，通过退距和额外的屏蔽来减少噪音。<br>• 夜间照明：户外照明在无施工时保持关闭，工作中的灯具会加装遮罩并朝下照射。<br>• 暗天空保护：园区将遵守科奇斯县的暗天空要求，以限制光污染。<br>• 夜间施工：SpaceX 表示在必须进行夜间施工照明时将申请豁免。<br>• 野生动物保护：园区的设计考虑了该地区沙丘鹤的越冬栖息地。<br><br>这个园区的目的是建造世界上最先进的 AI 超级计算园区之一，以训练 SpaceX 的超级智能模型，并支持科学和工程突破。<br><br>了解更多：<a href="https://www.spacex.com/sites/cochise-county" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.spacex.com/sites/cochise-county</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">SpaceX has just unveiled a massive new $50 billion Supercomputing Campus that they want to build in Cochise County, Arizona.<br><br>All info:<br>• Up to 6 GW across the 9 supercomputing buildings<br>• Construction starts 2027<br>• Size of each supercomputing building: ~493,000 square feet.<br>• Total supercomputing building space: 4.44 million square feet, excluding support facilities.<br>• SSVEC residential customers are projected to see electricity bill reductions of 10–40%.<br>• Up to 24 GWh of grid-connected battery storage to provide backup power, stabilize the regional electric grid, support local voltage, and absorb fluctuations in electricity demand. Among the largest planned battery installations in the United States.<br>• Additional solar generation in the region is planned to supply renewable electricity during the day and reduce demand on the local grid.<br>• No dedicated on-site power plant or fuel storage yard is planned.<br>• Each supercomputing building will have 10 MW of natural-gas-powered standby generation for critical equipment, operating only during utility outages and periodic testing.<br>• No gas turbines will be installed at the site.<br>• SpaceX plans to fund $3.6 billion in grid infrastructure upgrades, transferred to AEPCO at no cost to its members.<br>• Up to $260 million annually in additional benefits for cooperative members at full buildout, on top of residential bill reductions.<br>• Up to $200 million annually for cooperative members statewide, in addition to SSVEC benefits.<br>• The supercomputers will use dry cooling with a closed-loop water circulation system rather than evaporative cooling.<br>• SpaceX projects zero ongoing industrial water consumption.<br>• The cooling system will be filled initially, with water reused for up to 10 years.<br>• SpaceX estimates annual water usage equivalent to approximately 20–30 Arizona residential homes.<br>• Projected annual water use would be less than 2.5% of a single center-pivot irrigation system's annual consumption.<br>• Permanent jobs: Approximately 1,000.<br>• Construction jobs: Approximately 5,500.<br>• Annual property tax revenue: Up to $103 million in estimated new annual revenue.<br>• Regional economic benefits: SpaceX says its investment will support public education, infrastructure, essential local services, and economic development.<br>• Local suppliers: SpaceX is encouraging suppliers to participate in construction and development of the campus.<br>• Noise mitigation: Equipment will be positioned away from neighboring properties where possible, with setbacks and additional screening to reduce noise.<br>• Nighttime lighting: Outdoor lighting will remain off unless work is underway, with active lights shielded and directed downward.<br>• Dark-sky protection: The campus will comply with Cochise County's dark-sky requirements to limit light pollution.<br>• Nighttime construction: SpaceX says it will seek waivers when nighttime construction lighting is necessary.<br>• Wildlife protection: The campus is being designed with consideration for the region's sandhill crane wintering habitat.<br><br>This campus's purpose is to build one of the world's most advanced AI supercomputing campuses to train SpaceX's superintelligence models and support scientific and engineering breakthroughs.<br><br>Learn more: <a href="https://www.spacex.com/sites/cochise-county" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.spacex.com/sites/cochise-county</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120913786156556288/img/46WA4YgByxQcld6I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8CwgPWkAAUVos.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8Cw4BWUAA2lxw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 智能眼镜开启预售</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Android · 2026-11-12 22:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出智能眼镜，与 Samsung 及我们标志性的眼镜品牌 Gentle Monster 和 Warby Parker 合作打造。现已开放预购。了解更多请访问 <a href="https://goo.gle/glasses_x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/glasses_x</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing intelligent eyewear, built in partnership with Samsung and our iconic eyewear brands, Gentle Monster and Warby Parker. Now available for pre-order. Learn more at <a href="https://goo.gle/glasses_x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/glasses_x</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW7mAL-WgAAtxYE.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NextDNS 检测算法生成域名</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NextDNS · 2026-11-13 00:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">每十个新注册的域名中就有一个是算法生成的——每天数以万计。恶意软件、诈骗和恶意广告活动利用这些域名来逃避检测和封锁。<br><br>今天，我们推出另一个新的安全启发式算法——算法生成域名。<br><br>通过将先进的词法和域名相似度分析与前沿大语言模型相结合，我们可以识别并拦截看似随机的字符串、生成的单词组合以及编号系列——包括单独来看可能显得普通的名称。<br><br>这远远超出了攻击者可以刻意规避的有限已知 DGA 域名列表和基本熵检查。<br><br>现在即可在 Security 标签中启用拦截算法生成域名。<br><br>关注 @NextDNS，未来几天将有更多安全功能发布。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">One in ten newly registered domains is algorithmically generated — tens of thousands each day. Malware, scams and malvertising campaigns use these domains to evade detection and blocking.<br><br>Today, we are introducing another new security heuristic — Algorithmically Generated Domains.<br><br>By combining advanced lexical and domain similarity analysis with frontier large language models, we can identify and block random-looking character strings, generated word combinations and numbered families — including names that may look ordinary on their own.<br><br>This goes far beyond limited lists of known DGA domains and basic entropy checks that attackers can deliberately evade.<br><br>Block Algorithmically Generated Domains now in the Security tab.<br><br>Follow @NextDNS for more security releases in the coming days.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120868382241181696/img/ttqZhUTZ2yX3-Oku.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPTomics 单细胞分析技能集</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hackernoon · 2026-11-12 23:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">GPTomics 的 bioSkills 包含 17 个 MIT 许可的单细胞技能，涵盖整个分析流程：预处理、双细胞检测、聚类和注释。<br>#agentskills #bioinformatics...显示更多 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">GPTomics' bioSkills includes 17 MIT-licensed single-cell skills that cover the whole analysis: preprocessing, doublet detection, clustering, and annotations.<br>#agentskills #bioinformatics...Show more </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW71FaVWEAA7-SF.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NVIDIA 驱动漏洞可夺宿主权限</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-13 00:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">租用共享 GPU 的一个切片？一个未修补的 NVIDIA 驱动可能让某人获得整台主机的 root 权限 🐧🔓<br><br>GPU 安全公司 Stealthium 发布了两个 NVIDIA Linux 驱动漏洞，均由高级研究员 Branislav Brzak 发现：<br><br>• ForgePtr (CVE-2026-47501)：事件缓冲区设置期间的越界写入，让 GPU 容器内的无特权进程获取主机的 root 权限<br>• NvRoot (CVE-2026-47591)：驱动程序遵从&quot;CPU 只读、GPU 可写&quot;的请求，因此 GPU 可以写入操作系统标记为只读的文件<br><br>Brzak 为两个漏洞都构建了可工作的利用程序。Stealthium 表示 NvRoot 可以追溯到最早的开源 GPU 内核模块版本，即 2022 年 5 月的 515.43.04。两个漏洞的评级均为 7.8（高危）。<br><br>&quot;除了更新之外没有实际的变通方法，&quot;Stealthium 写道。任何可以打开 /dev/nvidiactl 的进程都能触达漏洞代码，而且&quot;没有任何 sysctl 或 seccomp 配置能修复其中任何一个漏洞。&quot;<br><br>修复版本：NvRoot 在 610.57.04、595.91.07 或 580.178.04 中修复。ForgePtr 在 615.71.09 或更高版本中修复。在你更新之前，不要将 /dev/nvidia* 传递给你不完全信任的租户或容器。Stealthium 表示，这只是 25 个以上仍在协调披露中的高危或严重漏洞中的第一批。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Renting a slice of a shared GPU? An unpatched NVIDIA driver could hand someone root on the whole host 🐧🔓<br><br>GPU security firm Stealthium has published two NVIDIA Linux driver bugs, both found by senior researcher Branislav Brzak:<br><br>• ForgePtr (CVE-2026-47501): an out-of-bounds write during event-buffer setup lets an unprivileged process inside a GPU container go root on the host<br>• NvRoot (CVE-2026-47591): the driver honours &quot;CPU read-only, GPU writable&quot; requests, so the GPU can write into files the OS has marked read-only<br><br>Brzak built working exploits for both. Stealthium says NvRoot goes back to the very first open GPU kernel module release, 515.43.04 from May 2022. Both bugs are rated 7.8 (high).<br><br>&quot;There's no practical workaround short of updating&quot;, Stealthium writes. Any process that can open /dev/nvidiactl reaches the vulnerable code, and &quot;There is no sysctl or seccomp profile that closes either bug.&quot;<br><br>Fixed versions: NvRoot in 610.57.04, 595.91.07 or 580.178.04. ForgePtr in 615.71.09 or later. Until you update, don't pass /dev/nvidia* through to tenants or containers you don't fully trust. Stealthium says these are the first of 25+ more High or Critical findings still in coordinated disclosure.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8DgyvXEAAxhdE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8DgyuXcAA2QYU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 新增多模态决策 API</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fofrAI · 2026-11-13 00:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这是一个决策 API，可以基于输入音频、文件、图片、视频及其组合快速做出决策。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">It's a decision API that can make fast decisions based on input audio, files, images, video and combinations of those.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google AI Studio <span style="font-size:12px;color:#999999;font-weight:400;">@GoogleAIStudio</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Gemini Decisions API<br><br>由 Gemini Decision 1 驱动，我们的新型多模态决策模型<br><br>一次最多对 1000 个问题做出快速、校准过的决策，涵盖文本、图片、音频、视频和 PDF<br><br>今天就在 AI Studio 和 Gemini API 中试用 <a href="http://ai.studio" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://ai.studio</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">introducing the Gemini Decisions API<br><br>powered by Gemini Decision 1, our new multimodal decision model<br><br>get fast, calibrated decisions on up to 1000 questions at once across text, images, audio, video, and PDFs<br><br>try it today in AI Studio and via the Gemini API <a href="http://ai.studio" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://ai.studio</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW20M16WcAAwRJC.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OptimizerDuck 一键清理后台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-13 00:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟，如果你用 Windows 系统，一定要看看这个！！<br><br>有人在 GitHub 开源了一个工具，叫 OptimizerDuck，它能列出你电脑后台所有运行的东西，还支持一键清除。<br><br>目前已经 1.1 万 Star🌟<br><br>它主要能干这几件事：<br><br>1️⃣ CPU、内存这些占用，一眼看清楚<br><br>2️⃣ 遥测和一些没必要的后台进程，可以自己选着关掉<br><br>3️⃣ 万一改错了，一键就能撤回，设置恢复成原来的样子<br><br>不用装，下载 exe 直接就能跑。不过得给管理员权限，改系统设置之前，官方也建议先建个还原点。<br><br>Github 仓库：<a href="https://github.com/itsfatduck/optimizerDuck" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/itsfatduck/optimizerDuck</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8DecvbUAAJOri.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

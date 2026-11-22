@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月22日 23:12">
+<title>AI技术雷达 · 10月22日 23:12 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent Infra 六步学习路径</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;pstack 先验证再编排 Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Flint 本地代码模型 125 t/s</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;两层缓存组合降低 LLM 成本</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;MemoryTax 强模型削弱记忆框架</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Carbon-X 超越全部开源 DNA 模型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Infra 六步学习路径</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jerry_fsy · 2026-10-22 19:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想深入 Agent Infra，别只盯着 Prompt 和框架。<br><br>我落地过 2 个生产级 Agent。在这些项目中，我发现最难的不是模型本身，而是重试、状态管理、沙箱隔离和监控这些工程问题。Agent 能不能在生产环境中稳定运行，很大程度上取决于底层 Infra。<br><br>我把Agent Infra的学习之路拆成了 6 步，从 Runtime 一直到生产平台。下面是完整的学习路径。<br><br>开始前先说清楚 4 件事。<br>•这是一份公开的学习计划，大约按 6 个月的节奏走。重点是吃透，不比速度。<br>•Agent Infra 不是 AI Infra。这里不讲 CUDA，也不讲训练和推理。<br>•已经熟悉 Runtime 的人，可以跳过第 1 步。<br>•第 2 步最容易被低估。<br><br>6 步依次是 Runtime、可靠性、编排、沙箱、可观测与评估、生产平台。<br><br>1. 先自己写一个 Agent Runtime<br>目标：不依赖现成框架，搞懂 Agent 是如何完成一个用户任务的。<br><br>学什么：从零写一个 Agent Loop，也就是&quot;思考、调用工具、拿到结果、再思考&quot;这一圈。然后学 Tool Calling、Context Engineering、Streaming、State 和 MCP。可以跟着三元同学的 Super Agent 实战课走一遍，也可以跟着Datawhale的hello-agents做一遍（hello-agents链接：<a href="https://github.com/datawhalechina/hello-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/datawhalechina/hello-agents</a>）。我这里只分享整体思路，不贴课程里的代码。<br>有个捷径是读 Pi 的源码。重点看 Loop、消息结构、消息发出的时机、session、缓存、compact、hook 和 MCP。底层的 LLM 封装可以跳过。<br><br>怎么练：搭一个最小的 Loop，跑通一个需要多个工具的任务。再对照 Pi 画一张图，标出消息什么时候发出、session 怎么存、什么时候触发 compact。<br><br>验收：你能讲清一次工具调用从头到尾发生了什么。只会调 SDK 可不算过关。<br><br>2. 可靠性靠设计，不用先学分布式<br>目标：进程挂了、网络断了，没跑完的任务还能接着跑。<br>我的结论是，入门不必先学分布式。可靠性是设计出来的。<br><br>学什么：HTTP、SSE 和 WebSocket，进程、线程和协程，还有队列、状态机、超时、重试和幂等。资料先看 System Design 101。MIT 6.1800 和 6.5840 挑需要的部分补。DDIA 先别硬啃。<br><br>怎么练：写一个能恢复的小型任务执行系统。杀掉进程再重新启动，做了一半的任务要能接着跑。<br>我特别看重两点。第一，重新启动一个Agent进程，任务也能接着跑。第二，失败要如实上报，不能当成成功吞掉。<br><br>验收：重启以后任务不丢失，重试不会造成重复的业务副作用，任务状态能对得上。<br><br>3. 从一个 Loop 升级到编排多个 Agent<br>目标：从管一个 Loop，升级到管多个子任务和多个 Agent。<br><br>学什么：Subagent 的任务分发、结果收集和上下文隔离，异步任务与并发控制，目标拆解与结果对齐，以及更高层的多 Agent 编排工具。<br><br>怎么练：把一个任务拆成 3 个子任务，跑通后汇总结果。再故意让其中一个子任务失败，看编排层能不能把整个任务收住。<br><br>验收：你能说清哪些工作该交给子 Agent，哪些该留在主 Loop。<br><br>4. 危险操作一律放进沙箱<br>目标：工具可以读写文件、执行命令。出了事，坏掉的是沙箱，不是宿主机。<br><br>学什么：入门阶段会用 k8s 调度就够了。入门可以先从 Container + Volume 搭建隔离环境，再逐步了解文件系统隔离、资源限制、网络策略和权限控制。<br><br>怎么练：给 Agent 配一个独立的沙箱，故意把里面的目录写坏。确认宿主机没有受影响，任务状态也还能恢复。<br><br>验收：危险操作默认在沙箱里执行。权限写在 Tool Definition 里，不靠 Prompt 求模型&quot;小心一点&quot;。<br><br>5. 先看得见 Agent 在做什么，再让它变好<br>目标：看得见 Agent 在做什么，并且能持续改进。<br><br>学什么：直接看 Langfuse。可观测（Observability）的核心，把轨迹、工具调用、耗时和失败原因都存下来。评估（Evaluation）是一条&quot;先优化、再验证&quot;的流水线，不是偶尔手动测两个用例。<br><br>怎么练：接入 tracing。固定 10 到 20 个用例做回归测试。每次改了 Prompt、工具或编排，都用同一套评估看结果变好还是变差。<br><br>验收：出了问题，能定位到是哪一步、哪个工具。每次改动都有改动前后的对比。<br><br>6. 把前 5 步拼成能上线的平台<br>目标：把前面几块拼成一个能上线的平台，而不是一堆 Demo 脚本。<br><br>学什么：读 FenixAgent的源码。编排、调度和 Agent 协议对接，都是生产里绕不开的脏活。<br><br>怎么练：对照 FenixAgent列一份缺口清单，包括调度、协议、多租户和配额，然后按优先级补。别一上来就把整套系统重写。<br><br>验收：别人照着文档，就能把你的服务启动起来并跑通。不能只在你自己的电脑上能跑。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>pstack 先验证再编排 Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chenchengpro · 2026-10-22 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">读了 @poteto 的 pstack，记一些点。<br><br>1. pstack 不是 56 个单独的 skill，而是一套方法论和工作流。先做验证 skill 和 feature map，让 agent 能自己跑起并操作应用。再用 /poteto-mode 按任务类型走固定流程。最后才轮到并行和自动合并。第一步没做好，后面多开 agent 只会更贵，不会更可信。她演讲里的分法是，验证管&quot;对不对&quot;，pstack 管&quot;好不好&quot;。<br><br>2. 建验证的方法值得花时间。先把应用做成 CLI，命令能组合，破坏性操作带 --dry-run，输出 JSON，报错时告诉 agent 下一步怎么做。再建 feature map，每个功能写清从哪进、怎么用、CLI 怎么驱动、有哪些坑。她管这个叫&quot;物化的记忆&quot;。我准备先找个 demo 产品试一下，照着她的 Atlas 示例来。<br><br>3. 技术栈影响生产力，这点我深有体会。那 agent 友好的技术栈是什么？我目前的答案是轻、快、可调试、可控制。Electron 和 Web 有 CDP，iOS 有模拟器。运行时越难调、越难控，agent 越难用。她说值得为此自建调试工具，甚至换栈。<br><br>4. 补上下文的几个 skill 也值得一看。/teach 会调 /how 追运行机制，调 /why 去 git、PR 评论、Linear、Slack、Sentry 里查当初为什么这么写。/recall 从历史会话里捞上下文。还有 /in-your-own-words，让 agent 先用自己的话复述问题，理解偏了能早点发现。<br><br>5. 她反对对抽象计划做对抗式评审。原因是 agent 会臆想风险，给不会发生的边界情况加防护。她的做法是先做两三个可切换的原型，用验证 skill 截图测量。然后让几个模型家族各出一版类型签名级的设计，互相评判，挑一个再实现。我之前一直用对抗式评审，确实能想到很多 edge case，但也有不少是多余的。下次试试拿原型换掉一部分评审，看会漏掉多少。<br><br>6. 56 个 skill 里有 55 个禁了模型调用，Claude Code 的 Skill 工具会直接拒绝。镜像版建了一张映射表，让 agent 去读对应的 SKILL.md 照着做。能用，但 skill 之间每调一次都多一步，也多吃上下文。这方案比很多产品直接给你塞一堆模型可调用的 skill 好要多了。<br><br>7. 她视频里讲的外循环不在 pstack 里。Grok Bot 接了 Slack、Datadog、Sentry，订阅 Slack 线程和 Sentry 告警，自动派云 agent 去复现 bug、开 PR。她一个月 2,500 个 PR，主要靠这一层和验证，pstack 只占一小块。这层得自己搭。<br><br>8. 把反复纠正变成结构的四级顺序也值得一看。用架构或数据结构根除 &gt; lint 或测试让 CI 拦 &gt; skill 或规则 &gt; 人工 review。第四级她直接标成 ngmi。她的 Dune 框架就是第一级的例子。每件事只留一种写法，看到坏模式先写 lint 止血，再让 agent 清理，让代码库一直保持&quot;agent 照抄也不会错&quot;。我打算挑一个 agent 老犯的错，用 /correct 试一次。<br><br>详细 research 见 <a href="https://research.sorrycc.dev/@sorrycc/pstack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://research.sorrycc.dev/@sorrycc/pstack</a> 。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>claude-howto 收录进阶配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-22 20:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用上了 Claude Code，但平时只会敲几句基础 Prompt？那你可能错过了它 90% 的真正实力。<br><br>推荐 GitHub 上一个拿了 42.6k Star 的宝藏开源项目：claude-howto。<br><br>官方生硬的文档往往只讲单个功能，而这个项目是一份结构化的视觉系实战指南，手把手教你把零散功能串联成高阶自动化工作流。<br><br>核心亮点：<br><br>10 大进阶模块：全覆盖 Slash Commands、Memory、Skills、Subagents、MCP、Hooks 和 Plugins<br><br>开箱即用模板：拒绝“Hello World”式演示，直接提供可复制粘贴的生产级配置（如自动化 PR 审查、安全扫描、CI/CD 流水线）<br><br>可视化架构：配有架构图表，帮你搞懂底层运行逻辑，还支持运行 /self-assessment 自测水平并生成专属学习路线<br><br>从基础指令到多智能体编排，花一个周末就能彻底吃透 Claude Code（附带完整中文版文档）。<br><br>项目地址：<a href="https://github.com/luongnv89/claude-howto" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/luongnv89/claude-howto</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Flint 本地代码模型 125 t/s</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-22 10:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个采用RSI自动化研究系统实现的本地code模型。<br>可以通过unsloth来做本地部署，需要24GB RAM，在Mac下每秒输出token 125 t/s。<br><br>各家公司在卷后训练后，又在卷端侧模型。都在每个缝隙中寻找自己的光。<br><br>部署指南：<br><a href="https://unsloth.ai/docs/models/flint" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://unsloth.ai/docs/models/flint</a><br>模型文件：<br><a href="https://huggingface.co/unsloth/flint-GGUF" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/unsloth/flint-GGUF</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Richard Socher <span style="font-size:12px;color:#999999;font-weight:400;">@RichardSocher</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重介绍 Flint，@Recursive_SI 的首个模型：一个快速的本地编码模型，由我们的自动化研究系统 Eureka Machine 构建。<br><br>• 同类最佳的快速本地编码能力<br>• 速度最高可达同类模型的 2 倍：在 MacBook Pro 上超过 125 tokens/sec，在 RTX Spark 上超过 150 tokens/sec<br>• 从零开始，在不到 4 个月内打造完成<br><br>你自己的机器上的私密、不限量的智能。开放权重现已在 @huggingface 上线，可以在你最喜欢的框架上本地运行，或者在 @opencode 或 @pidotdev 上免费试用。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine.<br><br>• Best-in-class fast local coding<br>• Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark<br>• Built from scratch in under 4 months<br><br>Private, unmetered intelligence on your own machine. Open weights available now on @huggingface, run it locally on your favorite framework or try it for free on @opencode or @pidotdev.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112941750809419776/img/MJaHRrNTo-Kg92Pb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>两层缓存组合降低 LLM 成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-22 22:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">节约成本的两层缓存：Prompt Caching 复用前缀计算，Semantic Caching 复用整条答案<br><br>来自 @samuel_wong_ 在 @bytebytego 发布的内容，主要针对 LLM 应用里的两类缓存：Prompt Caching 复用共享前缀的 KV 计算，Semantic Caching 复用语义相近问题的整条答案。前者减输入成本，后者可能完全跳过模型调用。二者可叠加，但语义缓存的阈值、失效和适用范围要单独设计。<br><a href="https://blog.bytebytego.com/p/llm-prompt-caching-versus-semantic" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.bytebytego.com/p/llm-prompt-caching-versus-semantic</a><br><br>为什么要缓存<br>一次请求的费用来自输入 token 和输出 token。客服类应用里，系统指令、产品手册、历史对话往往远长于用户问题。重复出现在两类地方：同一份长文档被无数次送进模型；大量用户用不同措辞问同一件事。前者对应 Prompt Caching，后者对应 Semantic Caching。<br><br>Prompt Caching：复用输入处理<br>· 匹配规则是输入开头完全一致。模型先做 prefill，再做 decoding；前缀的 KV 状态可跨请求复用。<br>· 示例：两条请求共享「支持指令 + 产品手册」，只是问题不同。处理完第一条后，第二条可直接复用前缀的 KV。<br>· 共享内容必须放在前缀。因果模型里，后面的内容会改变前面文本的表示；时间戳、请求 ID 哪怕只放在开头，也会打断整段复用。<br>· 指令必须字面完全相同，措辞、文档顺序、请求设置都不能变。<br>· 费用不会归零：缓存写入通常更贵，读取更便宜。文中引用 Anthropic 的标准定价：缓存读约为普通输入的 1/10；5 分钟写为 1.25 倍，1 小时写为 2 倍。例如前缀原价 $1，则一次写 + 一次读 = $1.35，而不是 $2；读得越多越划算，从不复用则亏。<br>· 它主要省输入处理和首包等待时间，不省生成长答案的工作。<br><br>Semantic Caching：复用答案<br>· 通常做在应用层或独立服务：用嵌入模型把问题变成向量，检索相近的历史问答；命中则直接返回缓存答案，未命中再调 LLM 并可能写入。<br>· 命中时跳过整次 LLM 调用；未命中则多付一层嵌入与检索成本。<br>· 难点是相似度阈值：严则命中率低，松则可能答错。相近但不该复用的例子包括：发货前取消 vs 发货后取消；Basic 套餐 vs Pro 套餐；否定词、数字、日期、版本差异。相似度分数不等于正确概率，需要用标注集评估阈值，并同时看命中率和答案合适率。<br>· 不能只看问题文本。订单状态、指代、语言、权限、产品版本、对话状态都要进元数据过滤，不能指望嵌入模型从问题里自己推断。<br>· 失效策略：TTL（短但到期前仍可能过期）、版本号（整库失效简单但粗暴，按依赖文档选择性失效更优）、以及指令/格式/模型行为变更时的失效。Prompt cache 的失效不同：前缀一变，旧 KV 从变更点起就不能用；但应用若继续塞旧政策进 prompt，缓存本身不会发现业务规则已变。<br><br>如何一起用<br>推荐顺序：先精确匹配缓存 → 再语义缓存 → 未命中再走 LLM，并尽量吃到前缀缓存。需要校验源数据版本的检查应放在更前面。行动类请求（如「订阅已取消」）绝不能用缓存文案代替真实操作。<br><br>方案选型<br>· Prompt Caching：共享手册、稳定工具定义、长对话历史，但每个问题仍要新鲜答案。<br>· Semantic Caching：FAQ、稳定说明；不适合强个性化、事实变化快、或需要新鲜创意输出的场景。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPbEsTb0AA2rYz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Samuel Wong <span style="font-size:12px;color:#999999;font-weight:400;">@samuel_wong_</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">LLM Prompt 缓存与语义缓存<br><br>缓存 LLM 成本其实是两个不同的问题：用 prompt 缓存复用前缀，用语义缓存复用答案，千万不要把二者混为一谈<br><br><a href="https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic?r=57j98&amp;utm_campaign=post-expanded-share&amp;utm_medium=web" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic?r=57j98&amp;utm_campaign=post-expanded-share&amp;utm_medium=web</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">LLM Prompt Caching Versus Semantic Caching<br><br>Caching LLM costs is two different problems: reuse the prefix with prompt caching, reuse the answer with semantic caching, and never confuse one for the other<br><br><a href="https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic?r=57j98&amp;utm_campaign=post-expanded-share&amp;utm_medium=web" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic?r=57j98&amp;utm_campaign=post-expanded-share&amp;utm_medium=web</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MemoryTax 强模型削弱记忆框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-22 22:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">// MemoryTax：Agent 记忆的苦涩教训 //<br><br>对 Agent 构建者来说是很好的洞见，建议收藏。<br><br>随着模型能力的提升，它们在记忆生成等方面也变得更强。<br><br>如今 Agent 记忆框架遍地开花。这项研究测量了当模型本身能够搜索原始历史时，这些框架是否还有帮助。<br><br>研究结果表明，强大的模型需要更少的设计化记忆，以及更好的工具来搜索原始记录。<br><br>在一个 419 轮的 LoCoMo 对话中，Mem0 仅在使用 GPT-4o-mini 时才胜过朴素的全上下文方案。构建 Mem0 的记忆成本比一整轮全上下文运行还要高。<br><br>使用 Claude Opus 5.5，Pi 编码 Agent 搜索原始历史在不到全上下文一半成本的情况下得分为 99%。其唯一一次失误来自于错误的答案参考。<br><br>记忆还有一个由写入它的模型所设定的上限。更强的读取者无法恢复更弱的写入者所遗漏的内容。<br><br>作者明确界定了范围：一次对话，每个单元格一次运行。在添加记忆层之前，用你自己的 Agent 重复这个实验仍然是一次成本很低的尝试。<br><br><a href="https://arxiv.org/abs/2610.29823" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.29823</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/memorytax-the-bitter-lesson-of-agent-memory-2610.29823" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/memorytax-the-bitter-lesson-of-agent-memory-2610.29823</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">// MemoryTax: The Bitter Lesson of Agent Memory //<br><br>Great insights for agent builders; bookmark it.<br><br>As models increase in capability, they also improve at things like memory generation.<br><br>Agent memory frameworks are everywhere right now. This study measured whether they still help once the model can search raw history itself.<br><br>The results suggest that a strong model needs less designed memory and<br>better tools for searching the raw record.<br><br>On one 419-turn LoCoMo conversation, Mem0 beats plain full context only with GPT-4o-mini. Building Mem0's memory costs more than an entire full-context rollout.<br><br>With Claude Opus 5.5, the Pi coding agent searching the raw history scores 99% for under half the cost of full context. Its one miss comes from a wrong answer key.<br><br>Memory also has a ceiling set by the model that wrote it. A stronger reader cannot recover what a weaker writer left out.<br><br>The author clearly defines the scope: one conversation and one run per cell. It is still a cheap experiment to repeat on your own agent before adding a memory layer.<br><br><a href="https://arxiv.org/abs/2610.29823" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.29823</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/memorytax-the-bitter-lesson-of-agent-memory-2610.29823" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/memorytax-the-bitter-lesson-of-agent-memory-2610.29823</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPahnPasAAIWqk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>freehire 直连 ATS 去重岗位</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-22 22:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">招聘聚合站最大的问题从来不是岗位少，而是同一个职位被中介重发四遍，点进去还是个失效链接。<br><br>freehire 的思路是绕开中间商：直接爬公司自己的 ATS——Workday、Greenhouse、Lever、Ashby、iCIMS 以及一长串尾部平台，共 124 个 ATS、320 个数据源，每条岗位都链回原始发布页。<br><br>▸ 归一化成同一套 schema，按稳定 key 去重，三个 board 上的同一个坑合并成一条<br>▸ 用 Meilisearch 做分面检索，地区、远程模式、级别、技能、薪资都来自人工维护的词典，不靠模型瞎猜<br>▸ 存储是 Postgres 加 pgvector，DB 访问用 sqlc 生成，不上 ORM<br>▸ 爬取、富化、索引、通知全部拆成 run-once worker，跑完就退出，直接丢给 cron<br>▸ 对外给了无需 key 的 HTTP API、一个 CLI，还有给 Claude Desktop 和 Claude Code 用的 MCP server<br>▸ 往上还长了 CV builder、ATS 友好的 PDF 模板、投递看板和幽灵岗位信号<br><br>make up 起一整套 api、web、postgres、meilisearch、redis、s3，migrations 首次初始化自动跑。<br><br>适合想把岗位数据接进自己工作流的人，加一家公司只是在 board catalog 里加一行。不太适合只想要个干净前端的人：AI 相关功能要自己配 OpenAI 兼容 endpoint，自建意味着你得扛下这一整套依赖和爬虫的长期维护。<br><br>今日 +309 star · Go · 总计 1,870<br>#golang #opensource<br><br><a href="https://github.com/strelov1/freehire" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/strelov1/freehire</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>美国银行发现未授权 AI Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @danshipper · 2026-10-22 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正身处一个前所未有的时代</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">we are living in unprecedented times</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Madison Mills <span style="font-size:12px;color:#999999;font-weight:400;">@MadisonMills22</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">独家新闻：据消息人士向 Axios 透露，美国各大银行正在客户账户中检测到未经授权的第三方 AI Agent，其中一些似乎在执行与用户指令无关的独立行动。<br><br>多位行业和银行高管向 Axios 表示，这些发现令银行高管深感震惊，他们正在争分夺秒地限制对自身系统的访问，因为 AI 发展的速度快于金融机构能够应对的速度。<br><br>消息人士称，多家银行目前正在为最坏情况甚至&quot;事后&quot;情景做准备，包括如果出现问题，如何快速保护或恢复客户账户。<br><br>多位银行高管告诉 Axios，他们难以区分人类用户和 AI Agent。一位高管表示，银行还难以判断 Agent 是否经过客户授权，还是可能在未经许可的情况下运行——更像是流氓 Agent 行为。<br><br>阅读我在 Axios 上的最新报道：<a href="https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">SCOOP: Major U.S. banks are detecting unauthorized third-party AI agents inside customer accounts, including some attempting to take actions that appear to be independent of user instructions, sources told Axios.<br><br>The findings have alarmed banking executives, who are racing to restrict access to their systems as AI moves at a velocity faster than financial institutions can respond, multiple industry and bank executives told Axios.<br><br>Several banks are now preparing for worst-case and even “day after” scenarios, including how to rapidly secure or restore customer accounts if things go wrong, the people said.<br><br>Several bank executives told Axios they're struggling to distinguish between human users and AI agents. One executive said banks also struggle to determine whether agents are authorized by customers or potentially operating without their permission, more akin to rogue agent behavior.<br><br>Read my latest for Axios here: <a href="https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ExifCleaner 清除照片元数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-22 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">手机拍的照片直接发出去，里面可能还带着拍摄地点、时间和手机型号，看图的人一查就知道。<br><br>ExifCleaner 是一个清理照片隐藏信息的桌面工具，把文件拖进去，这些信息就被清掉了。<br><br>整个文件夹也能直接拖，里面的文件挨个处理，处理完还能展开看看前后删掉了哪些内容。<br><br>GitHub：<a href="https://github.com/szTheory/exifcleaner" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/szTheory/exifcleaner</a><br><br>照片、视频和 PDF 都支持，相机的 RAW 格式也能处理，比如佳能的 CR3、尼康的 NEF。<br><br>选项考虑得也细，可以保留照片方向、保留原始时间，或者另存一份副本，原图不动。<br><br>最近作者把它整个翻新了一遍，新加了 5 个隐私功能，界面支持 25 种语言，macOS、Windows、Linux 都能用。<br><br>软件本身不联网、不自动更新，也没有任何数据上报，一个清隐私的工具，自己先做到了这一点。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPXF5iaAAAidpS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Carbon-X 超越全部开源 DNA 模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ClementDelangue · 2026-10-22 21:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">前沿实验室正在推进 AI 在生物学领域的能力，但却阻止好人（科学家、学术界、非营利组织、卫生机构……）使用、研究和理解它，他们设置了广泛但肤浅的防护措施，而坏人却能轻松绕过（比如它阻止我校对这条推文了 😅）。<br><br>这将在未来几年自动制造巨大的不对称和风险，就像在网络安全领域一样，尤其是当前沿实验室正在建设湿实验室（生物学的 HF 网络安全场景什么时候来？）。<br><br>这就是我们创建 Carbon-X 的原因——通过在 300B tokens 的 DNA、英语和交错数据上进行中训练 Qwen3-14B 所打造的最佳开源 DNA 模型。我们还使用了混合 tokenizer，用 BPE 处理英文，用 6-mer tokenizer 处理 DNA。<br><br>因此，Carbon-X 在我们评估的五个 DNA 理解和生成基准上超越了所有开放语言模型。相比 Qwen3-14B 提升了 27 个百分点，展示了语言模型从 DNA 训练中能获得多大收益。它的性能还达到了 API 前沿水平，而成本比 GPT 6.1 Sol 低 1,800 倍！<br><br>我们希望 Carbon-X 能帮助研究人员以新的方式探索 DNA。开源发布意味着任何人都可以研究它的能力、局限性和风险。让我们把 AI 生物学前沿开源，使其对整个世界安全且有影响力（而不只是少数几家公司）。<br><br>Apache 2.0 模型，尽在 @huggingface：<a href="https://huggingface.co/HuggingFaceBio/Carbon-X" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/HuggingFaceBio/Carbon-X</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily (blocked me to proofread this tweet for example 😅). <br><br>This will automatically create massive assymetry and risks in the coming years, just like in cybersecurity, especially now that frontier labs are building wet labs (HF cybersecurity scenario for biology when?).<br><br>This is why we created Carbon-X, the best open-source DNA model by midtraining Qwen3-14B on 300B tokens of DNA, English and interleaved data.  We also used a hybrid tokenizer that tokenizes English with BPE and DNA with a 6-mer tokenizer.<br><br>As a result, Carbon-X outperforms all open language models we evaluated on five benchmarks of DNA understanding and generation. This is a 27-point improvement over Qwen3-14B, showing how much a  language model can gain from DNA training. It is also API frontier level at 1,800x less cost than GPT 6.1 Sol!<br><br>We hope Carbon-X helps researchers explore DNA in new ways. Releasing it openly means anyone can study its capabilities, limitations, and risks. Let's make the AI biology frontier open-source to make it safe and impactful for the whole world (not just a few companies).<br><br>Apache 2.0 Model on @huggingface: <a href="https://huggingface.co/HuggingFaceBio/Carbon-X" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/HuggingFaceBio/Carbon-X</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPOfkEWAAAiUCS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TradingView 策略接入MCP</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_zheergen · 2026-10-22 21:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！TradingView 上那些开源量化策略，居然能让 AI 直接把源码找出来！<br><br>不光能搜指标、找作者，还能批量收集 Pine Script，建立自己的本地策略库。<br><br>项目叫 tradingview-indicator-search-mcp-server。<br><br>它是一套专门为 AI Agent 打造的 TradingView 搜索 MCP，提供 7 个工具，无需 TradingView 账号或 API Key。<br><br>核心能力：<br><br>1️⃣ AI 指标搜索：按趋势、突破、均值回归等关键词，查找公开指标和策略。<br><br>2️⃣ Pine Script 源码：输入指标链接，直接获取开源代码，研究买卖信号。<br><br>3️⃣ 作者与精选脚本：搜索指定作者的公开作品，浏览 TradingView 编辑精选。<br><br>4️⃣ 批量策略采集：自动收集指标和源码，保存到本地 SQLite 数据库。<br><br>5️⃣ 本地代码搜索：直接查找 ta.supertrend、strategy.entry 等代码，快速筛选策略。<br><br>6️⃣ AI Agent + MCP：支持 Claude Code、Cursor，Codex 也可通过本地 MCP 配置接入。<br><br>我觉得最有意思的，是它能让 AI 直接研究大量 Pine Script 源码。<br><br>比如让 Claude 收集 100 套趋势策略，再筛选使用 ATR 止损的代码，分析别人是怎么设计交易规则的。<br><br>指标搜索 → 源码采集 → 本地检索 → AI 辅助量化研究。<br><br>以前得自己在 TradingView 上反复找指标，现在不少工作可以直接交给 AI。<br><br>经常用 TradingView、Claude Code、Codex，或者研究 Pine Script 股票量化策略的，这个项目值得收藏。<br><br><a href="https://github.com/daviddme/tradingview-indicator-search-mcp-server" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/daviddme/tradingview-indicator-search-mcp-server</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113266733385719808/img/P8QI55yth72DLuQw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">爱吃折耳根的Ace <span style="font-size:12px;color:#999999;font-weight:400;">@_zheergen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">软件工程师 Goverdhan Gajjala，以805.1%的年度比赛收益，拿下2023年美国投资锦标赛股票组冠军。<br><br>他常做的一类交易，可以概括成日内缩量突破法：<br><br>股票先放量上涨，随后在高位歇下来，成交量越来越小，等价格重新突破时再买入。<br><br>接下来用4张图，把他怎么识别形态、找到买点，以及买错后怎么处理讲清楚。<br><br>他主要看5分钟和15分钟图。价格、成交量，再加上9和21周期均线，构成了他的观察工具。<br><br>比起猜消息能让股票涨多少，他更关心上涨时有没有买盘，回落时抛压有没有减轻。<br><br>这只是访谈中几类做法共有的量价逻辑。805.1%是全年账户的比赛成绩，不能当作某一个形态的收益。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVOVDOCaAAAi4oZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

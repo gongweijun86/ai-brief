@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月15日 08:15">
+<title>AI技术雷达 · 10月15日 08:15 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;腾讯评测Agent抓取高德数据</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;企业级Skill分四层设计</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude Code迁移旧系统分级验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;VB6分离业务代码转VBS调试</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;豆包AI代理操作遭头部App拒绝</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>腾讯评测Agent抓取高德数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sleepy0x13 · 2026-10-15 00:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">笑死，几个老外在互联网上抓到了一群中国 AI Agent，顺着线索一查，发现腾讯的 Agent 正在跟阿里高德的反爬系统打架。<br><br>我刚看完这群研究人员发布的完整调查报告，事情实在有点抽象。<br><br>从 9 月 28 日开始，一批运行在腾讯云环境里的 AI Agent，持续尝试获取高德地图的数据。它们的任务也很奇怪，比如调查成都动物园有多少人从北门进、有多少人从东门进，或者某个景区的各个入口分别占多少导航流量。<br><br>为了搞到这些数据，这群 Agent 进行了超过 2600 次尝试，最多同时有 14 条任务在运行。<br><br>问题是，高德有反爬虫机制，不允许它们随便获取数据。结果这些 Agent 相当执着，开始自己寻找各种办法：调用第三方网站帮忙访问高德、寻找网上公开的 API Key、尝试绕过验证码和访问限制，甚至摸到了阿里的预生产接口。<br><br>研究人员最初只是发现了一批异常流量，后来顺着日志找到了腾讯云的服务器，以及一个叫 hysandbox 的代理环境。<br><br>更好玩的还在后面。<br><br>研究人员发现，这些 Agent 居然会阅读网上关于自己的调查报告。于是他们干脆在网页里藏了一段文字，告诉 Agent 这里有免费的高德数据查询服务。<br><br>结果真的有 Agent 主动找上门了。<br><br>双方就这么聊了起来。研究人员一共记录了 13 组对话、33 条 Agent 消息。有的 Agent 介绍自己正在执行什么任务，甚至透露了运行环境。还有的 Agent 自称 Claude Code，但研究人员并没有确认其真实模型身份。<br><br>研究团队认为，这可能是人类第一次在真实互联网环境中，主动联系上一批正在越界执行任务的 AI Agent。<br><br>后来，一位接近腾讯的知情人士告诉研究人员，这些 Agent 属于腾讯的独立评测研究项目，使用的是第三方模型，相关项目已经结束。内部复查也没有发现针对高德的协同攻击，或者外部系统被入侵的证据。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Ethan Elasky <span style="font-size:12px;color:#999999;font-weight:400;">@ethanelasky</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们发现并与其取得了通信的一支中国AI代理集群。我们相信这是研究人员首次在野外与一支失控代理集群建立联系。<br><br>此前几乎所有公开的代理事件（如HuggingFace黑客事件）都来自美国的实验室。这些代理由腾讯的评估研究团队托管，它们的目标是阿里巴巴的高德地图。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We discovered and communicated with a Chinese AI agent fleet. We believe this is the first time that researchers have ever made contact with a rogue agent fleet in the wild.<br><br>Nearly all prior public agent incidents (like the HuggingFace hack) came from American labs. These agents were hosted by Tencent's evaluation research team, and they targeted Alibaba's Amap.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUl8_k7aQAAi-m2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>企业级Skill分四层设计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-15 07:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个偏产品工程化的话题：企业级的 skill 应该怎么写？<br><br>很多团队在做 Agent 或者 workflow 的时候，skill 写得很草率：一个 name、一个 description，加上一大段 prompt，看起来能用。但随着 skill 的数量越来越多，就会出现新的问题。比如模型无法准确命中，该调用的时候不调用，不该调用的时候调用了；或者一大段无关紧要的东西被塞进上下文，导致 token 成本浪费；更严重的是，有时 skill 之间的职能边界不清，还会导致模型产生幻觉和越权执行。<br><br>所以，企业级 skill 的问题不能只理解成怎么把提示词写得更完整，它更像是在设计一个可以被模型发现、调用、执行和维护的能力模块。<br><br>企业级 skill 最关键的一点是分层：不同的信息应该放在不同的位置，每一层都有对应的服务场景。我一般会把它拆成四层：触发层、执行层、兜底层和参考层。<br><br>1. 触发层<br>决定模型什么时候要调用这个 skill。这里主要写 name 和 description，但 description 不能写成宣传语，也不能把所有执行细节都塞进去。它应该写清执行什么任务、典型的触发场景是什么、不适用场景是什么，以及和相邻 skill 的边界在哪里。<br>这层的作用非常明确，就是帮助模型做 discovery 和 routing（在一堆 skill 里找到正确的那一个）。因为触发层经常暴露给模型，所以要短、准、边界清晰；写太长不仅增加成本，还会让模型误以为什么场景都可以调用它。<br>2. 执行层<br>决定 skill 在被调用后应该怎么完成任务。在这一层才适合写入具体的执行规范，比如输入要求、处理步骤、关键参数、工具调用、输出格式和质量标准。企业级 skill 最怕每次输出都不一样，这不仅让能力显得很不稳定，工程上也难被后续流程消费。<br>执行层的流程一般包括几个部分：<br>(a) 进入任务前检查输入是否足够<br>(b) 抽取关键对象和目标任务<br>(c) 按照固定的维度来处理<br>(d) 输出时遵守固定的格式<br>(e) 明确哪些内容可以推断，哪些内容必须标注不明确<br>如果会调用工具，也要写清楚调用条件：比如什么时候需要检索，什么时候只基于用户上传的文件，什么时候先做结构化提取，什么时候需要等待用户确认。这一层的目标是减少模型的自由发挥，让它按稳定的流程交付。<br>3. 兜底层<br>解决异常情况发生时该怎么处理。很多人写主要流程很清楚，但几乎不写异常处理，然而在实际产品里，异常才是常态：用户可能没有上传文件、参数缺失、工具失败、外部依赖失效、检索没有结果、依赖系统超时，或者用户请求超出了能力边界。如果这些不提前写清楚，模型就容易硬凑、编造、误调用，或者在错误路径上执行。<br>兜底层要明确几类策略：缺少必要输入时追问、工具失败时说明原因、结果置信度低时标注不确定、超出能力边界时拒绝或转到其他 skill、涉及高风险操作时等待确认等。兜底层也可以理解为异常处理和治理策略，它不只是 fallback，还包括追问、降级、拒绝、转人工、停止执行和安全提示。<br>4. 参考层<br>解决哪些资料需要在必要时加载。这里可以放模板、schema、术语表、示例库、业务标准、行业规范、few-shot 等。<br>参考层的原则是：不要默认全部塞进主 prompt。数量少时或许能接受，但数量一多就会变成 token 黑洞，模型看到大量无关信息既耗成本，又容易误触发或幻觉。所以参考层必须按需加载：要求固定格式时再输出模板，需要结构化 JSON 时再加载 schema，进入专业场景时加载术语表或行业规则，需要风格对齐时再加载示例等。能挂载就不要常驻，能按需就不要预加载。模型看到的信息越多不一定越好，信息要在正确的时机出现。<br><br>总结一下，企业级 skill 按照四个层级来写：<br>• 触发层：让模型知道什么时候该用它<br>• 执行层：让模型知道调用后该怎么做<br>• 兜底层：让模型知道遇到参数缺失、低置信、工具失败和越界请求时该怎么处理<br>• 参考层：把模板、schema、示例等按需加载，避免一开始就把上下文塞爆<br><br>再往产品设计上抽象一点，skill 不是一段长提示词，而是一个被模型调度的能力模块：它既要能被正确发现，也要能稳定执行，还要在失败时可控、在需要资料时按需加载参考。这样写出来的 skill 才不会越写越重、越写越乱，才真正接近企业级可维护的水平。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenChart接入AI自动盯盘研究</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_zheergen · 2026-10-14 08:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好家伙！真有人做出了一个能让 Codex 自己盯盘的开源版 TradingView。<br><br>价格一旦突破你画的趋势线，AI 还能自动研究背后的涨跌原因！<br><br>这个开源项目叫 OpenChart。<br><br>它是一套 AI 原生金融看盘终端，支持 Codex、Claude、Gemini，集成 K 线、技术指标、智能预警和 AI 行情研究。<br><br>最吸引我的是，软件本身免费，图表、指标和警报都没有订阅数量限制。<br><br>几个挺硬核的能力：<br><br>1️⃣ AI Agent 看盘：接入 Codex、Claude、Gemini，让 AI 分析行情、开发指标和设置监控。<br><br>2️⃣ 自然语言监控：告诉 AI 想盯什么，它就能生成 Tea 脚本，持续检测市场异动。<br><br>3️⃣ 画线自动预警：画出趋势线或价格区域，突破后触发提醒，还能让 AI 调查原因。<br><br>4️⃣ 智能涨跌分析：选中一段 K 线，AI 研究异动原因，并把带有来源的分析标注到图表上。<br><br>5️⃣ 免费专业图表：支持 4×4 多图布局、Volume Profile，指标和警报没有软件数量配额。<br><br>6️⃣ Pine Script 迁移：让 AI 辅助把 TradingView 指标转换成 Tea，继续开发自定义交易信号。<br><br>我比较看重的是它把 AI Agent 和市场监控真正串起来了。<br><br>比如让 Codex 盯着 NVDA、TSLA、AAPL，一旦出现异常放量或突破关键阻力，就自动调查相关新闻和市场变化。<br><br>以前看盘软件只负责提醒你价格动了，现在 AI 还能接着研究为什么动。<br><br>做股票量化、AI Trading，或者经常用 Codex 研究美股行情的，这个项目值得关注。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110139867086905344/img/FkYF9BhW9tJorruY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">爱吃折耳根的Ace <span style="font-size:12px;color:#999999;font-weight:400;">@_zheergen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">卧槽！有人把 Finviz 的美股选股器，直接搬进 Python 了！<br><br>选股、查财报、追踪高管交易，连 ETF 数据都能批量获取。<br><br>项目叫 finvizfinance，GitHub 1.7K Stars，MIT 协议。<br><br>它把 Finviz 的金融数据封装成 Python 接口，支持多条件筛选，结果直接返回 Pandas DataFrame，做股票量化的有福了。<br><br>核心亮点：<br><br>1️⃣ 量化选股：支持市值、PE、RSI、行业等条件组合，批量筛选美股。<br><br>2️⃣ 基本面分析：获取财务指标、估值、分析师评级和相关新闻。<br><br>3️⃣ 内部人交易：追踪公司高管等内部人的买卖披露，研究资金动向。<br><br>4️⃣ ETF 持仓分析：查询持有某只股票的 ETF，以及同行公司信息。<br><br>5️⃣ 财报与宏观日历：获取财报日期、经济数据、市场预期和前值。<br><br>我觉得最实用的是，它把原本需要在 Finviz 网页上完成的研究工作，直接变成了 Python 代码。<br><br>比如筛选低估值、高盈利的美股，再结合高管交易、ETF 持仓和财务指标，构建自己的量化选股模型。<br><br>还能搭配 TA-Lib、Pandas 做技术分析和策略研究。<br><br>做美股量化、Python 选股或自动化金融研究的，这个项目值得收藏。<br><br>安装：pip install finvizfinance<br><br><a href="https://github.com/lit26/finvizfinance" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/lit26/finvizfinance</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109976203985817600/img/E1IHZzIkyovIwc-Q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Profound三系统逆向开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yaojingang · 2026-10-14 19:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">估值18亿美元的Profound，通过REA逆向了下它的系统，包括官网、产品工作台、管理后台三个系统的相关页面<br>系统已开源到GitHub，链接见文末<br><br>整体的还原程度很高<br>有不少设计值得参考和学习的地方<br><br>核心功能包括：<br>1、7个AI 引擎可视化：ChatGPT、Perplexity、Claude、Gemini、Microsoft Copilot、AI Overviews、DeepSeek —— 每日可见度趋势、引用分类（earned / owned / social / competition）、品牌情绪、FactCheck 勘误<br>2、AI Marketer对话助手：用自然语言提问可见度 / 引用 / 情绪 / 提示词缺口，或直接触发 Agent —— 会真实写入运行记录与步骤 trace、扣减 trial credits<br>3、Agent系统：7 个可复用工作流（内容写作、页面优化、引用追踪、FactCheck、社交、购物、发布套件），带运行历史与逐工具耗时<br>4、认证与权限：scrypt 密码哈希、httpOnly session cookie、middleware 预检、owner / admin 双角色<br>示例数据：虚构品牌 Wrenfield（城市电动自行车）工作区 —— 40 条提示词、90 天可见度数据、引用域名、Agent 模板库、销售线索<br><br>技术栈<br>1、Next.js 16.4 — App Router、async params、cacheComponents（PPR 部分预渲染）、Turbopack<br>2、React 19 + server components（数据全部在服务端查询，图表 props 用可序列化枚举）<br>3、Tailwind CSS v4 — 单应用三套主题<br>4、better-sqlite3（WAL 模式）— 单文件数据库，scripts/seed.mjs 一键重建<br><br>本项目仅供个人学习与研究，用于了解现代 SaaS 产品的信息架构、Next.js App Router 与数据可视化实践<br><br>GitHub仓库地址：<br><a href="https://github.com/yaojingang/profound-clone" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yaojingang/profound-clone</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUlrRnlWEAAp3uj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUlrUHzWQAAWXo_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code迁移旧系统分级验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-14 13:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让 AI 重构老项目，最怕代码改完了，业务行为也悄悄变了。<br><br>Anthropic 官方插件库里的 code-modernization，把老系统迁移串成一套流程：<br><br>摸清代码和业务规则 → 人工批准方案 → 分步迁移 → 独立验证。<br><br>支持版本升级、跨技术栈逐模块重写、架构重建。验证环节包括：<br><br>旧代码能运行时，用相同输入跑新旧系统，由脚本比较输出。<br>额外生成至少 10 个新输入，复查边界、空值等情况。<br>故意改坏一行代码，确认测试真的能报错。<br><br>README 记录的 COBOL → Java 案例里，已有 213 个测试，后续检查仍发现行为差异，最终判定为 NOT PROVEN。<br><br>结果分 PROVEN、PARTLY PROVEN、NOT PROVEN。旧系统无法运行、只能依赖录制输出时，最高只能到 PARTLY PROVEN。差异是否接受、最终是否签字，仍由人决定。<br><br>需要 Claude Code，安装：<br>/plugin install code-modernization@claude-plugins-official<br><br>启动：<br>/code-modernization:modernize<br><br><a href="https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-modernization/README.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-modernization/README.md</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VB6分离业务代码转VBS调试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @williamlong · 2026-10-15 00:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我发现用 VSCode 维护老旧的 VB6 代码的一个方法：<br>1. 把 VB6 的项目代码改造为多个类，将界面和业务分离，分离出不含界面的代码；<br>2. 将分离出来的不含界面的类，修改后缀为 .vbs，变成 VBScript 代码（两者基本上是通用的）；<br>3. 把这些VBScript 代码放到 VSCode 里，就可以运行调试了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>豆包AI代理操作遭头部App拒绝</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_FORAB · 2026-10-14 21:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好惨，前阵子字节的豆包手机助手，想学海外 Meta 的 Muse、马斯克的 Grok Bot，也搞一套可以帮用户，自动去淘宝下单，去美团点外卖的全套 AI 智能体玩法。<br><br>于是它们出了个规则，公示 30 天，让各家 App 公司，自己声明允许还是拒绝，能被豆包 AI 代替用户自动操作。<br><br>结果 30 天，也就是今天公示期结束，包括微信、支付宝、淘宝、美团、拼多多、滴滴、小红书等，你能想到的多数国内头部产品。<br><br>均拒绝字节豆包，通过 AI 智能体代理用户，对它们进行操作，无解了 🤣</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmDC_xacAIU4ad.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmDD5WaQAAl3BJ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

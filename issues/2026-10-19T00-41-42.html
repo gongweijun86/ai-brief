@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月19日 08:40">
+<title>AI技术雷达 · 10月19日 08:40 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;OpenPencil设计稿接入Codex</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;XERJ检索相似开源仓库辅助AI编码</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;mubeng自动轮换代理绕过IP封锁</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;vLLM连续批处理实现23倍吞吐</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;DataWorld合成数据分析训练环境</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Athenaion用代码生成古希腊3D城</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenPencil设计稿接入Codex</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Lonely__MH · 2026-10-18 18:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎉喜大普奔！老艺术家开源了！<br><br>把压箱底的底裤🩲都掏出来了<br><br>这底裤的含金量👇 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111767785638592512/img/QAP-0iZEA_PZyCHW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Fini.Yang <span style="font-size:12px;color:#999999;font-weight:400;">@FiniYang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">💥 开源！专业设计工具现已接入 Codex！<br>上次把 OpenPencil 接进了 DSH<br>这次轮到 Codex 了：codex-openpencil<br><br>🤗 一句话开始设计：<br><br>“用 op 设计一个单页服装 APP”<br><br>生成的是可编辑的设计稿<br>选中元素，让 Codex 局部修改<br>也可以在无限画布手动微调、预览交互，保存为 .op 文件<br><br>满意后，可导出 HTML / Vue / React / SwiftUI 等代码，交给 Codex 继续实现<br><br>除了 APP、网页<br>还能做教程图、对比图、轮播图、卡片和 PPT<br>这么多场景，兄弟们总有一个能用上吧 😎<br><br>👇 把这句话交给 Codex，自动安装并完成第一份设计：<br><br>按照 <a href="https://github.com/ZSeven-W/codex-openpencil" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ZSeven-W/codex-openpencil</a> 的 INSTALL.md 帮我安装并配置 OpenPencil，然后用 op 设计一个单页手机任务管理 APP，在 Codex 内置浏览器中打开可编辑画布。<br><br>插件免费开源。默认使用 Codex 内置生图，可能消耗生图额度；不想生图，补一句“只搜图”即可<br><br>使用教程晚些时候就来<br>欢迎晒设计稿、分享心得，也欢迎提 Issue ⬇️<br>#Codex #OpenPencil #OpenSource #deepseek #dsh</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4b1hUbsAAm61q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4kFcDbEAEe-sb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4kQ3QbEAA13ih.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4kXOOaIAAF1-e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>XERJ检索相似开源仓库辅助AI编码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xicilion · 2026-10-19 06:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这个好，码住</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">铁锤人 <span style="font-size:12px;color:#999999;font-weight:400;">@lxfater</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">AI 再聪明，写代码时我还是更信 GitHub 上成熟仓库里验证过的解法<br><br>AI 还没爆发的时候，我就经常参考这些仓库来写代码，质量也很好<br><br>现在有人把这套方法做成了工具，叫 XERJ：<br><br>帮 AI 下载相近的开源仓库，把代码整理成可搜索的资料，动手写之前先查相关实现<br><br>效果怎么样？<br><br>项目方用专门构造的陌生代码库做了对照测试：<br><br>两组都通过了 16/16 次运行，用 XERJ 的组比用 grep 搜源码的组，生成的文本量少了约 62%（按 token 计）<br><br>挺高兴看到自己以前的做法，有人把它做成工具，还测了效果<br><br><a href="https://github.com/xerj-org/xerj" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xerj-org/xerj</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>mubeng自动轮换代理绕过IP封锁</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bkdgiffug · 2026-10-19 02:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">玩爬虫、跑批量请求最窝火的，莫过于IP被端，一端就是一大片，代码写得再花哨也全白搭。<br><br>给你推个狠货：mubeng，Go语言写的，快得没边，就专心干两桩事：<br>1️⃣ 本地起一台代理服务器，每发一次请求自动换IP，暴力破解防护、API限速、WAF按IP封这套，通通绕开<br>2️⃣ 捎带手给代理池做个体检，哪个活哪个死一眼看穿，别的验代理工具可以卸了<br><br>HTTP、SOCKS、Amazon API Gateway全都认，Windows、Linux、Mac连树莓派都能跑，一堆配置不用折腾，扔个代理文件进去就完事。轮换逻辑也用不着自己手搓了。<br>🔗 <a href="https://github.com/mubeng/mubeng" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mubeng/mubeng</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU6VJ3AaYAAqZKR.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Lex访谈502期全文配中文翻译</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ayuan1000 · 2026-10-19 04:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">好人有好报！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">好人有好报！</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">向阳乔木 <span style="font-size:12px;color:#999999;font-weight:400;">@vista8</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">AI 乃至全领域最强主播 Lex Fridman 全部访谈整理好了！<br><br>一共 502 期，全都用本地 ASR 识别配了文稿和中文改写翻译。<br><br><a href="https://lex.qiaomu.ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lex.qiaomu.ai/</a><br><br>为提供最好的阅读体验，让 AI 加了中文开源字体、精细排版功能，支持亮色、暗色和护眼模式。<br><br>特意支持了 PWA，可安装成手机应用阅读。<br><br>强烈建议收藏，开源仓库见评论区。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU7cloKbMAA3IGX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>vLLM连续批处理实现23倍吞吐</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-10-18 18:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">LLM 中的连续批处理，可视化讲解：<br><br>（一个常见的 LLM 面试题；请收藏）<br><br>在传统机器学习推理中，一个批次就是一个矩阵。<br><br>每个输入都被填充到相同长度，一次前向传播运行，每一行在同一时刻完成。<br><br>LLM 解码并非如此工作。<br><br>一次前向传播为每个序列生成一个 token，所以一个请求需要与其输出 token 数量相同的前向传播次数，而且在模型发出停止 token 之前，没有人知道那个数量。<br><br>在静态批处理下，批次开始时成员关系就已固定。<br><br>一个在 30 个 token 内完成的请求会一直占用它的槽位，直到同一批次中最慢的请求在 400 个 token 时完成。<br><br>GPU 持续为一个大部分为空的批次支付完整的权重读取开销。<br><br>从 HBM 中加载模型权重的成本，无论有四个槽位在生成 token 还是只有一个，都是一样的。<br><br>连续批处理改变了决策边界。<br><br>调度器不再每个批次调度一次，而是运行一次前向传播，取回控制权，然后再次决策。<br><br>一个完成的请求在下一个迭代边界离开，一个排队的请求就在那里取而代之。没有任何槽位为已经完成的工作保留。<br><br>Anyscale 在单块 A100 上对两者都进行了基准测试，使用的是 OPT-13B。<br><br>在生成长度统一的情况下，两种策略大致持平（符合预期），而随着输出长度方差的增大，静态批处理降至约每秒 81 个 token，而 vLLM 达到了朴素 Hugging Face 服务吞吐量的 23 倍。<br><br>方差驱动了整个差距。<br><br>生产流量将 30 个 token 的回复与 400 个 token 的回复混合在一起，而这正是静态批处理处理最差的条件。<br><br>所有这些都没有改变模型本身。<br><br>vLLM、SGLang、TGI 和 TensorRT-LLM 都默认运行它，NVIDIA 以 in-flight batching 之名实现了相同的机制。<br><br>下面的动画描绘了连续批处理的过程。我从 Sreedath Panat 最近的一篇帖子中获得灵感来创作它。<br><br>要深入了解连续批处理本身，我写了一篇关于其底层调度器的完整解析。<br><br>它涵盖了两次前向传播之间发生的事情、token 如何在固定预算下被分配、为什么调度器不需要为 prefill 和 decode 设置单独的路径，以及当 KV 缓存在生成中途填满时抢占（preemption）的代价。<br><br>在下方阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Continuous batching in LLMs, explained visually:<br><br>(a popular LLM interview question; bookmark this)<br><br>In traditional ML inference, a batch is a matrix.<br><br>Every input is padded to the same length, one forward pass runs, and every row finishes at the same moment.<br><br>LLM decoding does not work that way.<br><br>One forward pass produces one token per sequence, so a request needs as many passes as it has output tokens, and nobody knows that count until the model emits a stop token.<br><br>Under static batching, membership is fixed when the batch starts.<br><br>A request that finishes in 30 tokens holds its slot until the slowest request in the same batch finishes at 400.<br><br>The GPU keeps paying the full weight read for a batch that is mostly empty.<br><br>Loading model weights out of HBM costs the same whether four slots are producing tokens or one.<br><br>Continuous batching moves the decision boundary.<br><br>Instead of scheduling once per batch, the scheduler runs a single forward pass, gets control back, and decides again.<br><br>A finished request leaves at the next iteration boundary, and a queued request takes its slot right there. No slot stays reserved for work that is already done.<br><br>Anyscale benchmarked both OPT-13B on a single A100.<br><br>With uniform generation lengths, the two policies came out about level (as expected), and as output length variance rose, static batching fell to around 81 tokens per second while vLLM reached 23x the throughput of naive Hugging Face serving.<br><br>Variance drives the entire gap.<br><br>Production traffic mixes 30-token replies with 400-token ones, which is exactly the condition static batching handles worst.<br><br>None of this alters the model.<br><br>vLLM, SGLang, TGI, and TensorRT-LLM all run it by default, and NVIDIA implements the same mechanism under the name in-flight batching.<br><br>The animation below depicts the continuous batching process. I took inspiration from Sreedath Panat's post on a recent post to create it.<br><br>To dive deeper into continuous batching specifically, I wrote a full breakdown of the scheduler underneath it.<br><br>It covers what happens between two forward passes, how tokens get handed out against a fixed budget, why the scheduler needs no separate path for prefill and decode, and what preemption costs you when the KV cache fills up mid-generation.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HU6EWDFbgAAC60g.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2087787705211994112" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2087787705211994112</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2087787705211994112" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2087787705211994112</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DataWorld合成数据分析训练环境</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-19 05:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">关于从零扩展数据环境的一篇好论文。<br><br>他们构建了一个从零开始创建数据分析环境的引擎。他们应用了强化学习，在 DABstep-Hard 上增加了 20.9 个百分点。<br><br>Data World 首先写下生成数据集的机制，然后生成文件、任务和评分标准。由于生成过程是已知的，开放式发现可以被验证，独立审计确认每个答案都可以从文件中还原出来。<br><br>使用 2,135 个此类任务对 Qwen3.6-35B-A3B 进行强化学习训练（不使用蒸馏轨迹），在 DAComp 上增加了 14.28 个百分点，在 JobBench 上增加了 12.13 个百分点。<br><br>基准测试的发现同样有用。十个前沿模型算出正确数字的频率高于从这些数字中得出正确结论的频率。<br><br><a href="https://arxiv.org/abs/2610.21656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.21656</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/data-world-scaling-data-environments-from-scratch-2610.21656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/data-world-scaling-data-environments-from-scratch-2610.21656</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Nice paper on scaling data environments from scratch.<br><br>They built an engine that creates data-analysis environments from scratch. They apply RL, which adds 20.9 points on DABstep-Hard.<br><br>Data World first writes down the mechanisms that generate a dataset, then produces the files, tasks, and grading rubrics. Because the generating process is known, open-ended findings can be checked, and independent audits confirm each answer can be recovered from the files.<br><br>Training Qwen3.6-35B-A3B with RL on 2,135 of these tasks, with no distilled trajectories, also adds 14.28 points on DAComp and 12.13 on JobBench.<br><br>The benchmark finding is just as useful. Ten frontier models compute the right numbers more often than they draw the right conclusion from them.<br><br><a href="https://arxiv.org/abs/2610.21656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.21656</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/data-world-scaling-data-environments-from-scratch-2610.21656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/data-world-scaling-data-environments-from-scratch-2610.21656</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU8bKTIaEAAneQe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>中国69座功率半导体厂在建扩产</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zephyr_z9 · 2026-10-18 12:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">中国正在58家供应商中建设约69座功率半导体晶圆厂（在建、规划或爬坡中）<br>其中15座为规划中，29座在建，25座正在爬坡量产 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">China is building around 69 power semiconductor fabs (under construction, planned, or ramping) across 58 suppliers<br>15 are planned, 29 are under construction, and 25 are ramping up production </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4s4tiakAA1xOp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4s81KbMAARAh_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jukan <span style="font-size:12px;color:#999999;font-weight:400;">@jukan05</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这张图表非常有意思。<br>我昨天参加了 TrendForce 旧金山路演，这张图表让我思考了很多。<br><br>预计中国现在将实现超过一半或接近一半的大多数设备类别的国产化，光刻和涂胶显影除外。<br>这意味着什么？这意味着中国现在可以使用中国国内制造的设备，比以前更加容易地扩展成熟节点产能。<br><br>成熟节点代工厂现在正在蓬勃发展，对吧？这要归功于 AI 超级周期推动了对 PMIC、功率半导体等的需求。<br><br>三星和台积电关闭其成熟节点产能也帮了很大忙。<br>但这是我想象的情况……中国可能会导致成熟代工产能过剩。<br><br>想想看。如果中国在设备上实现自给自足，那它扩展产能就没有限制了。那么像 TI 这样对中国有大量收入敞口的公司，真的安全吗？<br><br>我认为是时候重新审视那些中国收入占比很高的西方成熟代工厂公司了。<br><br>当然，我不是说现在就卖掉 TI。我只是说我们应该思考一下，是否还有像持有可口可乐那样持有它们十年甚至更久的意义。<br><br>如果你有不同的看法，请随时分享。我很想学习。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This is a really interesting chart.<br>I attended the TrendForce San Francisco roadshow yesterday, and this chart got me thinking about a lot of things.<br><br>China is now expected to localize more than half, or close to half, of most equipment categories, excluding lithography and track.<br>What does this mean? It means China can now expand mature node capacity far more easily than before, using equipment made domestically within China.<br><br>Mature node foundries are booming right now, right? That's thanks to the AI supercycle driving demand for PMICs, power semiconductors, and so on.<br><br>Samsung and TSMC shutting down their mature node capacity has also helped a lot.<br>But here's what I imagine... that China could oversupply mature foundry capacity.<br><br>Think about it. If China can be self sufficient in equipment, there's no limit to how far it can expand capacity. Then are companies like TI, with large revenue exposure to China, really safe?<br><br>I think it's time to take another look at Western mature foundry companies with a high share of China revenue.<br><br>Of course, I'm not saying sell TI right now. I'm just saying we should think about whether it makes sense to hold them for 10 years or more, like Coca Cola.<br><br>If you have a different view, please feel free to share it. I’d love to learn.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU18on5WYAAUoh8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot电话预订餐厅全流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-10-19 01:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Grok @Bot 可以通过电话呼叫餐厅并为你订座</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Grok @Bot can call restaurants by phone and book you a table</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Brian Roemmele <span style="font-size:12px;color:#999999;font-weight:400;">@BrianRoemmele</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">&quot;亲爱的，我的 Grok Bot 打电话给我们最喜欢的意大利餐厅，帮我们预约了位子&quot;<br><br>我构建了一个 Grok Bot，它唯一的工作就是拿起电话在餐厅给你订一张桌子。字面意义上用动听的 Grok 声音打电话。这绝对太棒了！而且是免费的。<br><br>试试看：<a href="https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL</a><br><br>昨天我告诉它&quot;预约 Temecula 的 Gourmet Italia，4 个人，今晚，大概 7 点。&quot;它自己找到了餐厅的号码，询问我们对时间有多灵活、用什么名字预约、留什么回拨号码。然后它把所有信息复述给我，在我确认 OK 后才拨号。一次通话涵盖了所有对我们可行的时间，所以不需要来回沟通。<br><br>通话结束后，它用通俗易懂的英文告诉我发生了什么，引用餐厅实际说的话，并提议把预约添加到我的日历上。如果我没有连接日历，它会给我一个文件，可以直接在 Apple Calendar 中打开。<br><br>一个提案：Grok 电话<br>Grok Bot 需要自己的电话号码来拨出和接听电话。我接入了一个叫 ClawCall 的通话服务，免费层级给了我 30 次通话或 30 分钟起步。我和那家公司没有任何关系。只是我使用了它。一旦 Grok Bot 有了号码，它就不再是你打字对话的东西，而变成了一个可以在现实世界中真正完成事情的东西。@Grok 你需要一个老式电话服务，老兄。<br><br>我设置了一些防护栏。它永远不会交出信用卡或押金信息，除非你要求否则不会留言，一次只打一通电话，而且永远不会自己打电话。<br><br>而且这其实不只关于餐厅。改几个词，同一个 bot 可以：<br><br>- 预约理发、按摩或牙科洗牙<br><br>- 预约开球时间或球场<br><br>- 查询酒店是否有房间或是否可以提前入住<br><br>- 预约汽车保养或换机油<br><br>- 打电话向水管工、电工或餐饮服务商询价<br><br>这是我使用 Grok Bot 来打造生意、让生活更轻松的众多方式之一。我过去会拖延几天的电话，现在只需 30 秒。<br><br>我把它做成了可分享的，所以你可以获取&quot;Call A Restaurant Reservation&quot;并自己使用。<br><br>链接：<a href="https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">“HUNNY MY GROK BOT CALLED OUR FAVORITE ITALIAN RESTAURANT AND MADE US RESERVATIONS”<br><br>I built a Grok Bot whose only job is to pick up the phone and book you a table at restaurant. Literally make the call in a beautiful Grok voice. It is absolutely amazing! And it’s free.<br><br>Try it: <a href="https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL</a><br><br>Yesterday I told it &quot;book Gourmet Italia in Temecula, 4 people, tonight, around 7.&quot; It found the restaurant's number on its own, asked how flexible we were on time, what name to book under, and what callback number to give. Then it read everything back and waited for my OK before it dialed. One call covers every time that works for us, so there's no back and forth.<br><br>When the call ends, it tells me what happened in plain English, quotes what the restaurant actually said, and offers to put the reservation on my calendar. If I don't have a calendar connected, it hands me a file that opens right in Apple Calendar.<br><br> A Proposal: Grok Phone<br><br>Grok Bot needs its own phone number to make and receive calls. I connected a calling service called ClawCall, and the free tier gave me 30 calls or 30 minutes to start. I have no connection to that company. It's just what I used. Once Grok Bot has a number, it stops being something you type to and becomes something that can actually get things done in the real world. @Grok you need an old tyme phone service, buddy.<br><br>I built some guardrails. It never hands over a credit card or deposit info, never leaves voicemails unless you ask, makes one call at a time, and never calls on its own.<br><br>And this isn't really about restaurants. Change a few words and the same bot can:<br><br>- Book a haircut, a massage, or a dentist cleaning<br><br>- Get a tee time or a court reservation<br><br>- Check if a hotel has a room or will let you check in early<br><br>- Schedule a car service or an oil change<br><br>- Call around for quotes from a plumber, an electrician, or a caterer<br><br>This is one of many ways I use Grok Bot to build businesses and make life easier. The calls I used to put off for days now take me 30 seconds.<br><br>I made it shareable, so you can grab &quot;Call A Restaurant Reservation&quot; and use it yourself.<br><br>LINK: <a href="https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/bot/TIMrxLJHbEEpdr25yYgvL</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU6qPzIbMAA2dqB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kor扫描K8s集群未清理闲置资源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @learnk8s · 2026-10-19 01:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Kor 是一个 CLI 工具，扫描你的集群并列出没有人清理过的未使用资源，从被遗忘的 ConfigMap 和 Secret 到过期的 Service 和 PVC<br><br>➤ <a href="https://ku.bz/YzcpnL3gj" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/YzcpnL3gj</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Kor is a CLI tool that scans your cluster and lists the unused resources nobody cleaned up, from forgotten ConfigMaps and Secrets to stale Services and PVCs<br><br>➤ <a href="https://ku.bz/YzcpnL3gj" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/YzcpnL3gj</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU7bULzWMAAycvp.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Athenaion用代码生成古希腊3D城</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sundyme · 2026-10-19 00:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">值得说一句，这个项目的作者是个高中生。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">sundyme <span style="font-size:12px;color:#999999;font-weight:400;">@sundyme</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这个也太猛了！<br><br>@LexnLin 让 Opus 5.5 用 three.js 从零搭了一座古希腊城，全程不用任何外部素材，网格、贴图、着色器、树、雕像、瀑布全是代码生成的。仓库叫 Athenaion。<br><br>做法是先生成 9 张 AI 参考图，然后把构图、比例、材质、颜色尽量对准它们。他给 Claude Code 立了规矩：弱核显也能跑，质量靠离线渲染；瀑布和水要真实；远看也得够细。接着引擎、气氛、阴影先写好，再开 12 个并行专员分别管地形、水、建筑、雕像、树这类模块，对照参考图一轮轮修。<br><br>大概 45 小时墙钟时间，27 小时在搭建迭代，55 个子代理，约 45k 行 JS。最后在集显 AMD Radeon 780M 上逐帧渲了 4K 成片，渲了十几小时。<br><br>提示词和代码已开源。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111581258383794177/img/5dlK_lrTgipJeqHf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>claude-switcher防泄漏切换</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-18 23:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在同一个 macOS 机器上切换多个 Claude 账号，同时保证代理断掉时真实 IP 不会漏出去一次。<br><br><a href="https://github.com/YOURSJEYO/claude-switcher" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/YOURSJEYO/claude-switcher</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU5PxCka0AAO_qO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Waymo获50亿美元贷款扩车队</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @iotguide · 2026-10-18 23:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Waymo 从 Blackstone、PIMCO 获得 50 亿美元贷款，以推动 robotaxi 扩张<br><a href="https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/</a> #Robotaxis #IoTFunding</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Waymo locks in $5B loan from Blackstone, PIMCO to fuel robotaxi expansion <br><a href="https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/</a> #Robotaxis #IoTFunding</p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

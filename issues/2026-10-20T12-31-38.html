@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月20日 20:30">
+<title>AI技术雷达 · 10月20日 20:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;中国数学知识图谱诊断知识点缺口</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;AI补丁令Linux内核吞吐提至三倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;DeepInfer 开源生产级推理引擎</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Meta 30B模型单卡4bit实用速度</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Clairic 低成本结构化信息提取</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>中国数学知识图谱诊断知识点缺口</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aigclink · 2026-10-20 18:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前两天分享的这个项目，中国课程版的已经有人做出来了，包含531个知识点、909条依赖关系，2271道诊断题<br><br>1-9年级数学课程，2022年版数学课标和人教版教材<br><br>用这个有前置依赖关系的数学知识图谱，通过诊断题就能追溯学生具体是哪块知识点没学会，给推荐补习路径<br><br>支持跨年级追溯知识缺口<br><br>AI辅导工具可以升级成AI个性化学习规划工具了。对自动化查漏补缺，或者是喜欢先理解知识体系再按依赖关系系统学习的学生比较友好<br><br>这个项目商用需授权<br><br>#cnmathtaxonomy #课程知识图谱</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVER5ulbUAAJKXX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">AIGCLINK <span style="font-size:12px;color:#999999;font-weight:400;">@aigclink</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">有人开源了小学全学科知识图谱：os-taxonomy，数据涵盖1590个知识点、3221条依赖关系<br><br>可以拿来做AI家教或者RAG外挂，也有人把它包成MCP，让Agent直接查询“学这个之前要掌握什么”、“到这个目标的最近路径”<br><br>我认为值得关注的地方是：它把知识之间的先后依赖关系显式化了，AI不只能回答孩子眼前的问题，还可以结合测评结果识别可能缺失的前置知识，来规划下一步应该学什么<br><br>比如说，孩子要理解水为什么会沸腾，就需要先理解温度、热量以及水的状态变化<br><br>那知识图谱能把这些前置知识与后续概念连接起来，让学习不再只是孤立的硬记课本内容<br><br>它解决了教育的三个关键问题：<br>学什么？ 把分散的课程内容拆成结构化知识单元<br>先学什么？ 显式标记知识之间的依赖关系<br><br>怎么学？ 为AI辅导、知识缺口诊断、个性化学习路径提供结构化基础<br><br>他们自家也基于这个图谱，做了一个孩子可以交互实验式学习的产品<br><br>图谱目前覆盖了科学、数学、英语等8个学科，对齐的是美英课标，NGSS/Common Core/英国国家课程<br><br>#AI教育 #教材知识图谱 #AI小学教育</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111307180372873216/img/T90ylB-VW7FHfQdS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI补丁令Linux内核吞吐提至三倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @YFeng2022 · 2026-10-20 12:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">上周最魔幻的 AI 编程新闻，反转了。<br>10 月 10 日，Linux 之父 Linus Torvalds 用 Claude Code 写了一套 8 个补丁，修 Linux 内核一个两年没搞定的 page cache 瓶颈：8 线程 16 字节小读，吞吐从约 1000 万次/秒干到 3000 万以上，单次读的内核周期从约 2950 降到约 725。AI 写补丁、写测试、写 cover letter 草稿，林纳斯只负责跑 benchmark 和拍板。分支名就叫 noref-filemap-read-with-llm，明明白白写着 AI 参与。<br>然后评审们审出了一个 race condition，还有内存回收的疑虑。林纳斯把后续开发交给了内核开发者 Kiryl Shutsemau。<br>反转在哪：两年前林纳斯还说 90% 的 AI 言论是营销炒作；这次他承认 AI 在自己指导下干了活，但坚持一条铁律——提交者必须懂自己提交的代码，用 AI 也要打 Co-developed-by 披露标签。<br>判断：AI 写代码不难，难的是证明代码是对的。3 倍加速是真的，race condition 也是真的——这就是为什么最顶尖的工程师用 AI 的姿势是&quot;AI 写、我审&quot;，而不是&quot;AI 写、我发&quot;。#AI</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepInfer 开源生产级推理引擎</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-20 17:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek 居然把支撑他们大规模生产服务的高性能推理框架开源了：DeepInfer<br><br>这是 DeepSeek 线上真实跑 DeepSeek 服务的同源技术栈首次对外公开，本次发布聚焦离线推理，采用 Apache 2.0 许可证，主要基于 @vllm_project 构建，并借鉴了 @sgl_project 和 TensorRT-LLM。<br><br>开源地址：<a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/deepseek-ai/DeepInfer</a><br><br>DeepSeek 此前已陆续开源了推理栈的“零件”：FlashMLA（MLA 注意力内核）、DeepGEMM（矩阵乘法内核）、DeepEP（MoE 通信库）、EPLB（专家负载均衡）等，但一直缺少把它们组装成完整引擎的“骨架”。DeepInfer 补上了这一环：它是这些内核的集成者，加上调度、并行、投机解码等系统层的完整实现。配合本次同时出现的 DeepSeek-V4.1-Flash 模型，构成了“模型 + 引擎”的完整开源推理方案。硬件层面同时支持 NVIDIA SM100 GPU 和华为昇腾 950 NPU，双平台支持是它的一个鲜明特征。<br><br># 核心技术拆解<br><br>1. 内核与运行时。 集成 FlashMLA、DeepGEMM、DeepEP、TileKernels、DeepSelect，以及用 TileLang 编写的自定义内核（位于 deepinfer/model_executor/layers/tilelang_ops）。这些是吞吐和延迟的底层保障。<br><br>2. 并行策略：Attention 与 MoE 分治。 注意力部分采用 DP（数据并行）或均衡的 CP（上下文并行，处理超长序列）；MoE 部分采用 EP（专家并行）加 EPLB（专家并行负载均衡），并支持冗余专家（默认 32 个，向上取整到能被 EP 数整除）来缓解专家负载不均。这种“注意力 DP/CP + MoE EP”的组合是 DeepSeek 生产验证过的架构。<br><br>3. DSpark 投机解码。 基于 MTP（multi-token prediction）draft token 加速解码，亮点是“置信度调度验证”；按置信度决定接受多少 draft token，而非固定规则。默认最大 draft 长度 5。这是推理加速比的主要来源之一。<br><br>4. YoCo SWA 有界重放。 针对 YoCo 式解码器 + 滑动窗口注意力（SWA）的优化：prefill 时只保留并重放有界的 token 后缀（默认 140 个，需覆盖 SWA 窗口加最大回溯长度），大幅削减 decoder prefill 的计算量。仓库还专门提供了 YoCo mask/compact 等价性验证。<br><br>5. 异步调度。 CPU 上的批调度与 GPU/NPU 上的执行重叠，做到“零开销调度器”，默认开启。<br><br>6. 批不变与确定性推理。 开启 DEEPINFER_BATCH_INVARIANT=1 后，不同批次组合下结果完全一致；再配合固定 seq_seed、关闭 MTP varlen，可实现逐 token 确定性的采样输出。这对可复现评测和回归测试（仓库用逐样本精确对比的 PPL 基线来把关）很关键，目前仅限 NVIDIA 平台。<br><br>7. 结构化输出。 原生支持 regex、JSON schema、EBNF 三种约束生成，通过 SamplingParams 的 so_args 传入。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVEHoXQaMAAsKG7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Meta 30B模型单卡4bit实用速度</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yangleiocx3 · 2026-10-20 19:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好家伙，Meta 发了 Muse Glimmer 的技术报告<br><br>按官方说法，30B 模型用 4-bit 精度，单张消费级 GPU 就能跑到实用速度<br><br><a href="https://x.com/AIatMeta/status/2112265822274302066" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/AIatMeta/status/2112265822274302066</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">AI at Meta <span style="font-size:12px;color:#999999;font-weight:400;">@AIatMeta</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天我们发布了关于 Muse Glimmer 的技术报告，这是我们为消费级硬件上的 agentic 任务而构建的 30B 开放权重模型。<br><br>它可以在配备单张消费级 GPU 的 Mac 或 PC 上以 4-bit 精度实现实用的运行速度，并在工具使用和多步规划方面领先于同等规模的开放模型。<br><br>了解模型架构、蒸馏配方、量化等更多内容：<a href="https://go.meta.me/4Bcvxol" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://go.meta.me/4Bcvxol</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today we published a technical report on Muse Glimmer, our 30B open-weight model built for agentic tasks on consumer hardware.<br><br>It runs at practical speeds on a Mac or PC with a single consumer GPU at 4-bit precision, and leads comparably-sized open models on tool use and multi-step planning.<br><br>Read about the model architecture, distillation recipe, quantization and more: <a href="https://go.meta.me/4Bcvxol" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://go.meta.me/4Bcvxol</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVBGWzGboAEu_NE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>蓝河OS 用Rust重写消费级系统</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-20 15:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">当国内技术圈还在争论“Rust 到底适不适合写大型客户端和底层系统”时，vivo 其实从 2019 年就开始干一件极其激进的事：用 Rust 从零全栈重写一套消费级操作系统——蓝河 OS（BlueOS）。<br>注意，不是跑在模拟器里的实验室玩具，而是已经量产上机、跑在最低只有 32MB 内存穿戴设备上的生产级系统。<br>最近蓝河 OS 架构负责人贺程做了一次硬核分享《Rust × AI：vivo 蓝河操作系统的架构创新与实践》。通篇没有公关吹水，全是几百万行 Rust 代码落地过程中的“拆雷实录”。<br>我把里面最有价值的 5 块工程硬骨头和他们至今没解决的痛点完整梳理了出来，做系统级研发和客户端架构的朋友可以直接当避坑指南看 👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU6x2aqbMAAn2hL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Clairic 低成本结构化信息提取</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-20 14:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个新的System One模型Clairic，这个是受Jev模型的启发，专门做结构化信息提取的模型，并且支持图片中提取，比如购物小票这类的结构化信息提取。<br><br>Clairic只收取低廉的输入费用（比LLM类便宜很多），不收取输出费用。看图就能看懂这个模型干嘛的了，同时也支持文本结构化信息提取，仍然是一个非常实用的模型，让LLM干结构化提取确实准确率和成本都过高了，市场上那些做人才AI搜索的，以及做结构化检索的产品很多（比如闷声赚钱的商机搜索，人才搜索等等），这个应该是比较好的解决方案。<br><br><a href="https://blog.cloudflare.com/clairic-extraction-model/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.cloudflare.com/clairic-extraction-model/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVDeKDXbUAApl4N.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">michelle <span style="font-size:12px;color:#999999;font-weight:400;">@michellechen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个全新的模型范式！隆重介绍 𝚌𝚕𝚊𝚒𝚛𝚒𝚌：一个系统一模型，用于从非结构化输入中提取、计算、估算和预测数值。<br><a href="https://blog.cloudflare.com/clairic-extraction-model/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.cloudflare.com/clairic-extraction-model/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">a brand new model paradigm! introducing 𝚌𝚕𝚊𝚒𝚛𝚒𝚌: a system one model for extracting, computing, estimating, and predicting values from unstructured inputs.<br><a href="https://blog.cloudflare.com/clairic-extraction-model/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.cloudflare.com/clairic-extraction-model/</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月21日 17:29">
+<title>AI技术雷达 · 11月21日 17:29 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Harness 论文主张长任务组合泛化</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Antigravity 扩容缓存池提配额</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;混元 AMA 谈后训练过度思考难题</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;AnyMachine 开源机械建模流水线</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;ProteoCraft 蛋白设计八成命中</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;tinybrain 开源小模型训练全链路</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness 论文主张长任务组合泛化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-21 11:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">模型越来越强，Harness 迟早会被吃掉，这篇论文给了个相反的看法。<br><br>以前搭 Harness，更多是在给能力不够的模型兜底。alex zhang 他们的新论文认为，现在模型强了，Harness 的作用变成了把模型已有的能力组合起来，让它能处理更长、更复杂的任务，甚至是训练里没见过的任务。<br><br>我觉得最有意思的是这个思路：把长任务拆成很多次小调用，让每一次调用都落在模型熟悉的范围里。这样训练时就不用跑完整条很长的流程，用合成任务加模拟的工具调用和子 Agent，单独训练其中一次调用就行，省数据也省时间。<br><br>自己做 Agent 产品下来，感觉也差不多。模型升级以后，Harness 里确实有不少东西可以删掉，但怎么拆任务、怎么调度子 Agent，这些设计会更重要。<br><br>目前论文、代码和数据都开源了，做 Agent 的朋友可以去翻翻。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">alex zhang <span style="font-size:12px;color:#999999;font-weight:400;">@a1zhang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Harnesses过去一直是弱LLM的拐杖。到了2026年及以后，随着模型变得更强大，harnesses现在提供了一种机制，通过组合LLM已有的和新获得的能力，使其泛化能力远超训练环境。<br><br>在我们的新论文《LM Harnesses are Compositional Generalizers》中，我们探讨了各种harness抽象如何通过组合现有LLM能力，使LM系统在任务长度、任务策略、递归任务深度等方面实现泛化。这些抽象提供了一种更加数据高效的训练手段，尤其是在长任务上，通过保持轨迹局部在分布内（LID）——即让所有单次LLM调用都处于分布内。<br><br>对于需要很长时间才能展开执行的任务，这意味着我们甚至可以进行替代harness训练，即我们训练单次LLM调用，而不是执行非常长的harness展开，使用纯合成任务，配合假的工具调用和子代理！<br><br>一个常见的说法是LLM将会吸收harnesses并使其过时。我们不同意，并认为我们尚未充分探索harnesses所能提供的能力。<br><br>完整论文、日志、代码库和数据均可获取：<a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>与 @SOURADIPCHAKR18 @lateinteraction 合作</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Harnesses used to be a crutch for weak LLMs. In 2026 and onward, with stronger models, harnesses now offer a mechanism for composing an LLM’s existing and new capabilities to generalize well beyond their training environments.<br><br>In our new paper, LM Harnesses are Compositional Generalizers, we explore how various harness abstractions enable LM systems to generalize over task length, task strategies, recursive task depth, and more through composing existing LLM capabilities. These abstractions provide a means for more data-efficient training, especially over long tasks, by keeping trajectories locally in-distribution (LID) — i.e., shaping all individual LLM calls to be in-distribution.<br><br>For tasks that take a very long time to roll out, this implies that we can even perform surrogate harness training, meaning we train an individual LLM call instead of doing the very long harness rollout, using purely synthetic tasks, with fake tool calls + sub-agents!<br><br>A common idea floating around is that LLMs will absorb harnesses and make them obsolete. We disagree, and argue that we haven’t sufficiently explored what harnesses can provide.<br><br>The full paper, logs, codebase, and data are available: <a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>w/ @SOURADIPCHAKR18 @lateinteraction</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity 扩容缓存池提配额</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-21 14:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你们关心 Antigravity 的重置，不用看 Tibo，应该关注 Varun。<br><br>比如这条：Antigravity 正在通过大幅扩容缓存池，将  Neon 的缓存命中率提升约 4%，能让同等配额下可完成的任务量至少提升 20%。<br><br>由于之前配额消耗过快，更新完成后会重置一次配额！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Varun Mohan <span style="font-size:12px;color:#999999;font-weight:400;">@_mohansolo</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在推出一项变更，通过大幅增加缓存池大小，将Antigravity上Neon的缓存命中率提高约4%。这将使你在配额内能完成的工作量至少增加20%。<br><br>完成后会进行一次重置，因为它消耗配额更快了！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We’re rolling out a change to increase cache hit rate on Neon by around 4% on Antigravity by massive increasing the cache pool size. This will increase what you can get done in quota by at least 20%.<br><br>Will issue a reset after it’s done since it burned quota faster!</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元 AMA 谈后训练过度思考难题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AI_Whisper_X · 2026-11-21 17:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">昨天，姚顺雨和混元团队的研究员在 Reddit 做了一场 AMA。今天早上看完，收获特别大，挑几个我喜欢的点分享。<br>混元这个月先后开源了 Hy4（770B-A49B）和 Hy4 flash（224B-A12B）。两个模型一个走智力密度，一个走性价比。尤其是 Hy4 flash，单任务成本只有 Hy4 的二十分之一。<br><br>1/ 稀疏度不是越高越好。他们做过 scaling ladder 实验，结论是激活参数固定时，提高稀疏度确实能提效率；但总参数不变、去砍激活参数，模型会明显变弱。<br>激活参数量本质上决定了你的计算预算。<br>太稀疏的 MoE 对推理也不友好，占着大量显存，算力却用不满。（不算 Engram，Hy4 flash 的激活比例是 7.7%，Qwen3.8-Flash 是 4.8%，DeepSeek V4.1 是 2.9%）<br><br>2/ 为什么还在做 700B 和 200B。字节、Kimi 已经往 3T、5T 推了。但团队觉得，Hy3 和 Hy4 已经证明，做扎实的小一点的模型，往往能打赢更大的模型，成本还更低，过程中你能学到更多。<br>当然，他们仍相信 scaling，下一代会明显做大，只是不急着追参数。<br><br>3/ 更强调通用能力，还要补写作。问两个模型是偏编程还是通用，回答就两个字，通用。有用户说大模型的写作能力在退化，团队说他们也注意到了，可能和训练目标有关，希望模型写得更像人、少些套路，创意写作和可读性已经列成重点改进方向。<br>现在各家都在卷 coding，但他们很明确不做偏科模型。<br><br>4/ 后训练最难改进的是过度思考。问后训练阶段最难改善什么行为，回答就一个词，Overthinking。这个非常合理，我之前用 Hy3 的时候就觉得有点过度思考。Hy4 虽然明显改善，但团队也说，Hy4 的目标是把智力堆上去，CoT 长是已知问题，但正好可以拿它蒸馏出 flash，flash 再用 RL 把 CoT 压短。<br><br>另外还聊了网络层怎么调、GQA 和 MLA 怎么取舍、flash 为什么选 SWA、Hy4 为什么用门控 DSA，还有量化、红队测试、本地部署，都偏技术，感兴趣的可以看原帖。<br><br>看完这个 AMA，我觉得非常非常真实，问到的问题基本都正面答了。<br>这就是一个懂行的科学家、年轻人带队的好处，不追求评测、不追求刷榜，即使做得慢点，即使不是阶段性的第一。<br><br>· · ·<br><br>最后说下我对混元今年的看法。<br><br>今年国内开源模型里，混元确实是进步最快的之一。从之前的路边，到在圈子内有声音、到模型采用率上来，甚至现在混元是大厂里边我最看好的两家之一。<br><br>回头看，<br>4 月 Hy3 preview；<br>7 月 Hy3 正式版，295B-A21B；<br>8 月底 Hy4 preview，770B-A49B；<br>11 月 Hy4 正式版，两周后就是 flash。<br>差不多两个月一个大版本，每一版都往前挪一点点。<br><br>最近的 Hy4 flash，主打速度快、效果好、性价比高，开源之后调用量也确实起来了。单任务成本是 Hy4 的 1/20，解码速度 150 到 200 token 每秒，峰值每秒处理超过 10 亿 token。Hy4 挤进开源最强的一档，紧接着用一个 flash 版本把性价比打下来，模型能力和商业化，都走到了一个挺有利的位置。<br><br>另一件做成的事是 WorkBuddy。WorkBuddy 做出来了，有足够多、足够杂的真实用户，模型好不好用，产品能看到最真实的数据。flash 的 WorkIndex 就是从 WorkBuddy 的真实任务里来的。<br><br>我们之前写姚顺雨的时候聊过他的观点，现在的秘方越来越标准化，再难的 benchmark 也很快会被平推，下半场要追求的是真实世界的效用。<br>这次 AMA 看下来，一以贯之。<br><br>原帖：<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>1984 Hosting 攻击后全面停服</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-21 17:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">1984 Hosting——冰岛最大的网络托管商，也是隐私和言论自由网站的长期家园——在一次网络攻击后关闭了几乎全部服务。<br><br>关闭始于周五，至今仍在持续：其状态页面显示托管、仪表盘、<a href="http://git.1984.is" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://git.1984.is</a>、网页邮件和邮件服务全部宕机，5个名称服务器中只有2个仍在响应。数千个网站离线，且其65%的客户位于冰岛境外。<br><br>&quot;这些人是专业人士，这很可能是一次资金极其雄厚的攻击，&quot;董事总经理Mörður Áslaugarson告诉RÚV。CERT-IS表示，攻击方明显使用了AI来测绘1984 Hosting的基础设施。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">1984 Hosting, Iceland's biggest web host and a long-time home for privacy and free-speech sites, has switched off almost everything after a cyberattack.<br><br>The shutdown began Friday and is still on: its status page shows hosting, dashboards, <a href="http://git.1984.is," target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://git.1984.is,</a> webmail and mail down, with only 2 of 5 nameservers answering. Thousands of sites are offline, and 65% of its customers are outside Iceland.<br><br>&quot;These are professionals, and this is probably an enormously well-funded attack,&quot; managing director Mörður Áslaugarson told RÚV. CERT-IS says AI was clearly used to map 1984 Hosting's infrastructure.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXo2Y1yW0AAq8-9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXo2Y13W8AAyYgc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity 加入主屏远程控制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @petergyang · 2026-11-21 04:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">对于那些正在尝试@antigravity来使用Neon的朋友们，这里有一个小技巧：<br><br>1. 前往 <a href="http://antigravity.google.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://antigravity.google.com</a><br>2. 点击&quot;查看更多&quot;，然后点击分享按钮<br>3. 点击&quot;添加到主屏幕&quot;<br><br>然后你就可以通过手机上的远程控制功能与所有Antigravity会话进行对话。<br><br>虽然Antigravity目前还没有（移动端）应用程序，但我发现它的远程控制功能实际上比Claude的更好，因为所有会话默认都是可用的。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">For those of you trying out @antigravity for Neon, here's a quick tip:<br><br>1. Go to <a href="http://antigravity.google.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://antigravity.google.com</a><br>2. Tap see more and then the share button<br>3. Tap Add to Home Screen<br><br>Then you can talk to all your Antigravity threads via remote control on mobile.<br><br>Even though Antigravity doesn't have a mobile app (yet), I find its remote control actually better than Claude's because all the threads are available by default.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXmI-fZboAA7IDd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Peter Yang <span style="font-size:12px;color:#999999;font-weight:400;">@petergyang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Gemini 4 Neon收获了大量好评，所以我制作了一个新视频，将它与Opus 5.5进行对比——Opus是我日常工作中最喜欢的模型。<br><br>一些要点：<br><br>1. 从我的测试来看，Opus在3D和设计方面仍然更出色，但Neon在写作和个性方面与之持平甚至更好，这是一项巨大的成就。<br><br>2. @Google Gemini 4有3个模型，但实际上我觉得99%的任务我会用Neon。它比Carbon快得多，效果同样出色。<br><br>3. 每月100美元的Gemini Ultra订阅太超值了。你可以获得Gemini 4、YouTube Premium家庭版（我有史以来最喜欢的订阅）用于无广告的YouTube和Music、20 TB存储空间用于所有照片和文件，以及更多。<br><br>📌 在这里观看我用5个用例测试Neon与Opus：<a href="https://youtu.be/iYIWuI5WfUo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/iYIWuI5WfUo</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Gemini 4 Neon is getting rave reviews, so I made a new video comparing it to Opus 5.5, my favorite model for everyday work.<br><br>Some takeaways:<br><br>1. Opus is still better at 3D and design from my testing, but Neon is on par or better at writing and personality, which is a huge accomplishment.<br><br>2. @Google Gemini 4 has 3 models, but in reality I think I'll use Neon for 99% of tasks. It's much faster than Carbon and its results are just as good.<br><br>3. The $100/mo Gemini Ultra subscription is a steal. You get Gemini 4, YouTube Premium Family (my favorite subscription ever) for ad-free YouTube and Music, 20 TB of storage for all your photos and files, and more.<br><br>📌 Watch me test Neon vs Opus across 5 use cases here: <a href="https://youtu.be/iYIWuI5WfUo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/iYIWuI5WfUo</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChatGPT 上线AI协作工作空间</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @abskoop · 2026-11-21 16:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">ChatGPT Space 干啥的？刚刚更新完客户端 给我推送了<br><br>把玩了一会发现，类似于AI 协作工作空间，集文档编辑、文件管理、PPT 制作和团队协作于一体，相当于内置 AI 的 Notion + Google Docs<br><br>而且还有回收站 ，现在AI账号用的越久，账号资产越重了，善待 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXohBcqbMAAAGE3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXohBcga0AAQew6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AnyMachine 开源机械建模流水线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-21 16:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你是做 Blender 3D 的，一定不要错过这条内容！！<br><br>国外有人把让Claude Code和Fable 5.2作机械3D模型的完整步骤公开了<br><br>用的是 AnyMachine ！<br><br>它是一份流程说明和脚本合集，顺序是：先出各个方向的参考图，再出部件近景，然后用 Blender 的 Python 逐个部件去搭。<br><br>细说的话👇<br><br>・全长 30 米，这台会走路的机器人一共 160 个部件，关节上带着液压，骨骼是 104 根<br><br>・直升机一共 31,477 个三角面<br><br>・会跟参考图摆在一起出图，缺了的部分再补做一遍<br><br>而且整份流程都记在 PIPELINE.md 里，按 MIT 许可公开了。<br><a href="https://github.com/apekshik/anymachine" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/apekshik/anymachine</a><br><br>人这边要做的，就是选定设计，再核对各个环节。<br><br>要重新出参考图的话，得有 fal 的密钥；做出来的东西，有些地方比起那些参考图还是更简单，作者把这点也写进去了。<br><br>机械 3D 得靠手来搭，这种看法眼下明显在松动。<br><br>把流程说明交过去再让它去做，这种办法在 Blender 之外的事上同样能用。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123139231728173056/img/8LqGcHLHNYmGkQrv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ProteoCraft 蛋白设计八成命中</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiqizhixin · 2026-11-21 16:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">ProteoCraft报告了在35个成功表达的PD-L1迷你蛋白候选物中，有29个产生了结合命中，前瞻性实验验证中的命中率为82.9%。<br><br>斯坦福大学领衔的团队与香港科技大学（广州）及合作方一起，在一份官方预印本中描述了该蛋白质设计框架。<br><br>该方法将候选序列视为一个搜索状态。来自结构预测器的近似梯度提出有前景的突变，而完整的结构预测则单独评估每个由此产生的离散序列。树搜索首先通过多点变化探索若干序列区域，然后将验证精力用于通过单点编辑精炼有前景的候选物。<br><br>该框架还评估了从头设计的结合物、TCR靶向目标和局部抗体重新设计。其实验室PD-L1结果涉及该实验中被表达的候选物。报告的最佳SPR拟合值为0.879 nM，更广泛的治疗用途需要对结合以外的性质进行额外测试。<br><br>ProteoCraft: Protein Design as Proposal–Verification Search<br><br>论文：<a href="https://github.com/smiles724/ProteoCraft_v1/blob/main/docs/ProteoCraft.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/smiles724/ProteoCraft_v1/blob/main/docs/ProteoCraft.pdf</a><br>代码：<a href="https://github.com/smiles724/ProteoCraft_v1" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/smiles724/ProteoCraft_v1</a><br>我们的报道：<a href="https://www.jiqizhixin.com/articles/2026-11-03-7" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-11-03-7</a><br><br>📬 #PapersAccepted 被机器之心收录</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">ProteoCraft reports 29 binding hits among 35 successfully expressed PD-L1 miniprotein candidates, an 82.9% hit rate in its prospective experimental validation.<br><br>The Stanford-led team, with HKUST Guangzhou and collaborators, describes the protein-design framework in an official preprint.<br><br>The method treats a candidate sequence as a search state. Approximate gradients from structure predictors propose promising mutations, while complete structure prediction separately evaluates each resulting discrete sequence. A tree search first explores several sequence regions through multi-site changes, then spends verification effort refining promising candidates with single-site edits.<br><br>The framework also evaluates de novo binders, TCR-facing targets and localized antibody redesign. Its wet-lab PD-L1 result concerns the expressed candidates in that experiment. The reported best SPR fit is 0.879 nM, and broader therapeutic usefulness would require additional testing of properties beyond binding.<br><br>ProteoCraft: Protein Design as Proposal–Verification Search<br><br>Paper: <a href="https://github.com/smiles724/ProteoCraft_v1/blob/main/docs/ProteoCraft.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/smiles724/ProteoCraft_v1/blob/main/docs/ProteoCraft.pdf</a>  <br>Code: <a href="https://github.com/smiles724/ProteoCraft_v1" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/smiles724/ProteoCraft_v1</a>  <br>Our Report: <a href="https://www.jiqizhixin.com/articles/2026-11-03-7" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-11-03-7</a><br><br>📬 #PapersAccepted by Jiqizhixin</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW5C-J5b0AAmTdT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>tinybrain 开源小模型训练全链路</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-21 16:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🌱 后生可畏，tinybrain 把一个中文小模型从数据集、分词器一路做到强化学习，代码和数据全部开源。<br><br>tinybrain 的作者在 GitHub 简介里写着自己是一名中学生，11 月 19 日刚在 ModelScope 放出 Small 和 Medium 两个对话研究权重。<br><br>学大模型的人大多卡在同一个地方：教程要么只讲原理，要么直接甩一个训好的权重，中间数据怎么攒、分词器怎么训、预训练和对齐怎么接起来，全是黑箱。<br><br>tinybrain 把这条链路整个摊开了：数据集来自 26 个公开来源，按 nano、mini、base、full 分四档，最大一档约 600 亿 token；分词器、模型结构、SFT、多老师蒸馏，到 GRPO 一类的强化学习，全在一个仓库里。按 README 的实测速度，一张 RTX 5070 Ti 16GB 预训练最小一档约 4 小时，mini 档约 20 小时，普通玩家也够得着。<br><br>别指望拿它当聊天助手，README 写得很实在：90 道开发题每题答两次，Small 可用回答 13/180，Medium 29/180，定位就是研究权重。<br><br>想看懂大模型是怎么从零长出来的，这个仓库比十篇科普都管用。<br><br>GitHub：<a href="https://github.com/logitcai/tinybrain" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/logitcai/tinybrain</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

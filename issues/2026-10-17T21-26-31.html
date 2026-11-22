@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月18日 05:26">
+<title>AI技术雷达 · 10月18日 05:26 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;asd-STE100 受控英语改写提示</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;PLM 1.8B 端侧持续学习至96%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude Code 项目状态页自更新</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;头部 VC 自建数据中心备算力</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;ThinkRail 开源 Pi 桌面客户端</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>asd-STE100 受控英语改写提示</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-18 04:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">航空和国防业有一套强制的受控英语标准 ASD-STE100，存在的理由很直白：一条飞机维修指令被看错，是会死人的。规则就那几条——一个词只准一个意思、用主动语态、只用简单时态、一句话只给一条指令、不许省词。<br><br>asd-ste100-skill 做的事，是把这套纪律搬给另一类读者：读上游 agent 输出、读 tool description、读报错信息的模型。它的理由也说得通，下游 agent 和当年那个非母语机械师处境一样，没有回传通道，没法反问&quot;你指的是 X 还是 Y&quot;。<br><br>以前写 tool description，很容易写成 README 里那种句子：这个工具会尝试在各个已配置的后端之间同步状态，如果检测到冲突，可能会根据已设置的策略自动处理，否则就暴露出来人工审查。一句话里塞了三个条件分支，模型按哪条走全看运气。<br><br>接上 skill 之后，它会逐句标出违规项：被动语态且施事不明、一句多指令、名词堆叠过长、现在完成时、分号、营销形容词、堆叠的模糊限定词，然后拆成四个短句重写，同时要求不丢掉任何事实、条件和范围限定。如果缩短会损失精度，它保留长句并标注取舍，而不是悄悄简化。输出默认只给改写后的正文，想看依据就问 show the diff，它才列出规则对照表。<br><br>两种模式：Strict 用于流程、报错、tool description；STE-flavored 用于 README 和 PR 描述，保留句式纪律但不锁词表。<br><br>代价要说清楚。仓库里的 scripts/ste-lint.py 只做结构检查，不比对原文和改写、不验证语义是否保留，零告警只代表结构规则没命中。短语动词也只认 spin up、reach out 这类固定一小串，take off the panel 就能混过去。它自己的 SKILL.md 都要带 baseline 41 才跑得干净，作者直接写在 README 里了。<br><br>今日 +945 star · Python · 总计 4,450<br>#ClaudeCode #AIAgents<br><br><a href="https://github.com/danyuchn/asd-ste100-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/danyuchn/asd-ste100-skill</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 网关自建统一模型路由</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vista8 · 2026-10-18 00:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在海外 VPS 上部署了一套 @yetone 开发的Magpie 网关。  <br><br>这时，你就有拥有了专属的 “真·OpenRouter”<br><br>以后 AI 模型配置、开发就变得简单多了。<br><br>不仅能用上自己 Codex 里的 TOken，装社区插件后还能用 TRAE、Workbuddy 送的免费模型。<br><br>建议在服务器端部署，感觉使用场景会更多。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU2CxMmaQAADzSY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PLM 1.8B 端侧持续学习至96%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alainl_ · 2026-10-18 02:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">无论你给共享模型教了什么，下一个人得到的都是你当初得到的那个模型。<br><br>我们构建了一个模型，它能从使用它的人身上持续学习，而且是在他们自己的设备上。<br><br>一个人的30轮纠正，就能让PLM 1.8B在保留任务上的表现从75.7%提升到96.0%。所有数据不离开设备🧵</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Whatever you teach a shared model, the next person gets the model you got.<br><br>We built a model that keeps learning from the person using it, on their own device.<br><br>30 rounds of one person’s corrections take PLM 1.8B from 75.7% to 96.0% on held-out tasks. Nothing leaves the device🧵</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111527961568694272/img/LVHO8bYzRGwCUg2Z.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 项目状态页自更新</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TiagerBao · 2026-10-17 21:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Code 现在可以把整个项目直接变成一个“实时状态页”了。<br><br>Anthropic 官方这个插件叫 project-artifact。<br><br>它会读取你的：<br>GitHub 仓库、PR、CI、Review<br>项目 tracker<br>设计文档<br><br>然后生成一个可以分享给团队的私有 Claude Artifact。<br>重点不是做一次汇报，而是它会记住数据来源。<br><br>以后直接执行：<br>刷新工件<br>它就会重新拉取 PR、CI、审查状态，更新同一个页面，并告诉你这次发生了什么变化。<br><br>页面会自动整理：<br>项目概览、成功标准、工作流、下一步行动，以及有内容时才出现的风险、计划、FAQ。<br>它还会按 1.0、1.1、2.0 给 PR 分组，把依赖关系直接展示出来。<br>拉取失败的数据会标记为 stale，不会自己猜；PR 里的文字也只当数据，不当指令执行。<br><br>这比每周手动写一次项目周报实用多了。<br><br>安装：<br>/plugin install project-artifact@claude-plugins-official<br><br>运行：<br>/project-artifact<br><br>#ClaudeCode #Claude #AI #Agent #GitHub #ProjectManagement</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>WhosellsData RL数据黄页</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-17 16:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">美国这些RL环境/数据方面的业务，这几天看了非常多，有做数据市场的，有做信息中介的。今天看到这个则是这个品类的一个，网站涵盖了，谁在销售数据，谁在购买，以及RL/数据公司的黄页目录。这个比较全的涵盖了RL数据市场上的一些重要信息。<br><br><a href="https://whosellsdata.com/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://whosellsdata.com/</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU0b3uJa4AAu0ik.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU0cx4_aIAA0VPv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>头部 VC 自建数据中心备算力</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-18 05:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">风投开始自己盖数据中心了。a16z 两年前给旗下初创公司搭过一个两万块 GPU 的集群，现在在谈把规模做大，可能借它投过的两家数据中心公司来落地。General Catalyst 更直接，自己在建一座数据中心供组合公司用。还有一批基金没这个体量，就找中间商去市场上淘紧俏的芯片。<br><br>我原来以为 VC 在算力上帮忙，顶多是帮你谈个折扣、给点云额度。现在是真金白银买卡、建机房。这说明排队顺序比价格更要命，一家 A 轮公司拿不到配额，训练就停摆，融资节奏跟着全乱。<br><br>这也改变了 VC 自己的生意。以前的差异化是品牌、人脉、帮你招人，现在是账上有没有芯片。能保证你进门就有两千块卡的基金，估值开低一截创始人也会签。代价是 LP 的钱从纯投资变成了重资产，折旧和空置都得自己扛。<br><br>我的判断是，头部基金正在往基础设施运营商那边滑，这条线一旦跨过去就很难退回来。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Coding 落地六类工程范式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xulijian1994 · 2026-10-17 11:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Vibe Coding 玩到最后，拼的可能不是模型，而是软件工程基本功。<br><br>最近一直在思考一个问题：Claude Code、Codex 越来越强，代码生成速度已经不是瓶颈了，但为什么项目越做越大，反而越来越难维护？<br><br>尤其是复杂业务系统，前期 AI 写得飞快，后期改一个需求，可能牵扯十几个文件，修一个 Bug 又引入三个 Bug。<br><br>我觉得问题不完全在模型，而在于我们缺少一套真正适合 AI Coding 的工程范式。<br><br>目前比较值得了解的有这么几类：<br><br>1. SDD（Spec-Driven Development，规格驱动开发）<br><br>先写清楚需求、技术方案、任务拆分，再让 AI 编码。<br><br>核心是把自然语言需求变成结构化 Spec，降低 AI 自由发挥的空间。<br><br>代表工具：OpenSpec。<br><br>适合需求复杂、开发周期长、需要跨会话持续开发的项目。<br><br>但 SDD 解决的是「做什么、怎么执行」，不代表生成的架构一定合理。<br><br>2. TDD（Test-Driven Development，测试驱动开发）<br><br>先定义测试，再实现功能，最后重构。<br><br>在 AI Coding 场景下，我觉得 TDD 的价值反而被放大了。<br><br>因为 AI 最大的问题不是不会写代码，而是经常写出「看起来正确」的代码。<br><br>有了测试，至少能让 AI 的实现过程形成反馈闭环。<br><br>不过测试本身也可能写错，不能把测试通过等同于业务正确。<br><br>3. DDD（Domain-Driven Design，领域驱动设计）<br><br>这是我认为复杂业务系统尤其值得重视的部分。<br><br>SDD 管流程，DDD 管业务边界。<br><br>比如开发一个 ERP 系统：<br><br>库存、采购、销售、财务应该如何划分？<br><br>哪些逻辑属于库存领域？<br><br>哪些数据可以跨模块访问？<br><br>哪些操作必须通过领域服务完成？<br><br>如果这些边界不明确，AI 很容易把业务逻辑写得到处都是。<br><br>DDD 的核心价值不是增加多少抽象层，而是让业务边界清晰、模块职责稳定。<br><br>当然，不是每个小项目都需要完整的 DDD。<br><br>4. Context Engineering（上下文工程）<br><br>这是 AI Coding 特有的重要能力。<br><br>很多人觉得模型上下文越长越好，但上下文长度不等于有效信息质量。<br><br>项目越大，历史对话、无关代码、过期需求越容易干扰模型。<br><br>我更倾向于：<br><br>- 用 AGENTS.md / CLAUDE.md 记录项目级约定<br>- 用模块级规则约束局部实现<br>- 用独立文档记录关键架构决策<br>- 每次任务只提供必要的上下文<br>- 跨会话依靠文档恢复状态，而不是依赖聊天记录<br><br>核心就是让 AI 在正确的上下文里做正确的事。<br><br>5. Workflow / Harness（工作流与执行约束）<br><br>这类方案解决的是执行过程的稳定性。<br><br>比如：<br><br>需求分析 → 方案设计 → 人工确认 → 任务拆分 → 编码 → 测试 → Review。<br><br>Superpowers、Trellis、PStack 等工具都可以作为研究对象。<br><br>它们的价值在于减少遗漏，让开发过程更可重复。<br><br>但必须认识到：Workflow 不能替代架构设计。<br><br>流程执行得再标准，如果一开始模块划分就错了，最后仍然可能是一座结构规范的屎山。<br><br>6. Project Rules / Skills（项目规则与技能沉淀）<br><br>我觉得这可能是个人开发者最容易落地的一种方式。<br><br>通用 Skills 可以提高效率，但真正有价值的，是根据项目不断沉淀自己的规则。<br><br>比如：<br><br>- Controller 不直接操作数据库<br>- 跨模块调用必须通过明确接口<br>- 新增 API 必须补充契约和测试<br>- 修改公共组件前必须检查调用方<br>- 数据库结构变更必须提供迁移脚本<br><br>这些规则不需要一开始就写得非常复杂，而是随着项目不断迭代。<br><br>最后，我觉得还有一个很重要的判断标准：可重建性。<br><br>假设今天把项目代码全部删除，只保留需求文档、架构设计、接口规范和测试用例。<br><br>你能不能让另一个 AI 会话重新实现出业务行为基本一致的系统？<br><br>如果完全做不到，说明很多关键知识其实只存在于代码和聊天记录里，并没有真正沉淀下来。<br><br>当然，这不是要求每次生成完全相同的代码，而是业务行为、模块边界和核心约束能够被复现。<br><br>我的观点是：<br><br>SDD 管需求，TDD 管正确性，DDD 管架构，Context Engineering 管信息，Workflow 管执行，Rules 管约束。<br><br>它们不是互相替代的关系，而是不同层面的工程能力。<br><br>对于简单的小工具，直接 Vibe Coding 完全没问题。<br><br>但对于需要长期维护的商业项目，最终还是得回到软件工程本身。<br><br>AI 可以替我们写代码，但不能因为代码生成成本降低，就忽略设计成本。<br><br>未来真正拉开 AI Coding 差距的，可能不是谁的 Prompt 更厉害，而是谁能把软件工程经验转化成 AI 可以稳定执行的规则。<br><br>大家现在用 Claude Code 或 Codex 开发项目，主要采用哪种范式？有没有真正能长期坚持使用的工程化方案？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ThinkRail 开源 Pi 桌面客户端</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaomovps · 2026-10-17 23:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">JetBrains开源的 Pi 桌面端 ThinkRail，大厂实力强啊🔥<br><br>我看了一下这个项目基座是：pi-coding-agent，但是基于这个项目 他还做额外的优化，比如说针对代码方面 JetBrains 就发挥了他的强项<br><br>优点：<br><br>1. 底座就是 pi-coding-agent 模型、技能、会话还是 Pi 自己管<br><br>2. 每个工作区一个 git worktree 并行不碰你手上的代码<br><br>3. 内置编辑器和 Git 变更视图 能在 diff 上留评论直接发给 Agent<br><br>4. 用 SPEC.md 维护项目规格 上下文跨会话留存<br><br>社区给 Pi 套 GUI 的不少，但是这次是 JetBrains 亲自下场 Apache 2.0 开源<br><br>没有自己的账号，也可以直接走 Pi 的认证 现有技能和 mcp.json 接着用，无缝的衔接直接去使用，非常建议大家去使用</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU14nZsbEAALvYU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU14nZvaoAAk9G9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">小墨同学 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaomovps</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">今天看到，JetBrains 给 Pi 做了一个 GUI 客户端🔥<br><br>从我的角度来说还是命令行最舒服，但是GUI、TUI才是大众更能接受的表现形式。<br><br>如果想把Pi 分享给更多的人，GUI这条路总要有人来跑一跑。<br><br>JetBrains 给 Pi 做的 GUI 客户端，叫做ThinkRail，底层的引擎还是 Pi，比如模型、skills、压缩还是交给Pi自己管，但是外面多了一层能看的工作区。<br><br>这次的GUI 我觉得比较有意思的点有三个：<br><br>1.、聊天、编辑器、终端摊在一个界面里  <br>不用来回切窗口，改哪看哪，Agent 在干什么一眼能跟上。<br><br>2. 一个仓库能开多个工作区  <br>每个 Agent 单独一条 git worktree，界面上并排跑，main 不会被一起改乱。这才是多 Agent 能看懂的 GUI，不是多开几个对话框。<br><br>3. 规格和改动都能看见  <br>Spec graph + diff 在界面上，中间态不会只剩最终结果。想回溯，不用翻一堆日志。<br><br>虽然命令行的形式符合 Pi 这条极简路线，但是在复杂的工作当中，如果有人帮我配置和安装好对应的功能，我想大家也会很高兴，最主要的是终于有一条能把人留住的 GUI 路径。<br><br>使用什么是你的权利，但是社区给你提供不一样的选择，这和Pi的理念不谋而合</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HQswVF1bQAA7_pW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HQswVF3bUAAHTeB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

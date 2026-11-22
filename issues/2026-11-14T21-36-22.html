@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月15日 05:36">
+<title>AI技术雷达 · 11月15日 05:36 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Magpie 用 agy-cli 降封号风险</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;REA v6.9 支持更多可逆向格式</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;figures4papers 顶会配图脚本</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;树莓派整机成本不敌 300 元二手机</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Anthropic 指南拆解常驻 agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;huobao-drama 开源短剧流水线</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 用 agy-cli 降封号风险</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @magpie_router · 2026-11-14 23:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在 magpie 里用 Antigravity 的话，建议改用社区插件「Antigravity (local agy CLI)」（agy-cli）。<br><br>它通过 ACP 驱动你本机装好、登录好的 agy CLI，请求由 Google 官方客户端自己发出，不再模拟客户端直连 Google 接口，被封的风险会低一些。<br><br>只是更低，不是没有：封不封仍由 Google 决定，建议用备用号，别多号同时高频跑。<br><br>安装：Plugins 页搜 agy，或<br>magpie plugin add @magpie-community/opencode-agy-cli-auth</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agentic 系统课程讲透生产级设计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-14 18:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🏫 想把 AI agent 真正做上线的看这里，Agentic System Course 用 22 章讲透生产级 agent 怎么设计、搭建和运维。<br><br>Agentic System Course 的 fork 已经接近一百个，而且整套课是写给你和你的 AI 一起读的，仓库里同时放了 AGENTS.md 和 CLAUDE.md。<br><br>以前学 agent 开发，要么跟着某个框架的教程一步步敲，换个技术栈就全废；要么零散看博客，记忆、多 agent 协作、成本控制各讲各的。<br><br>这门课只给骨架：把记忆与状态、多 agent 协调、外部接口、可观测性、成本与延迟、安全运维这些承重的主题和取舍讲清楚，具体代码交给你的 AI 按你的技术栈去补。最后一章是一张设计画布，直接拿来设计你自己的 agent。<br><br>还有个顺手的：仓库自带一个评审 skill，把你的 PRD、设计文档或 agent 代码丢给它，它先判断你做的是个人项目、团队工具还是面向客户的产品，再挑相关章节出报告，每条问题都带严重程度、证据、章节出处和修复建议。课程拿 OpenCode、Hermes Agent、OpenClaw、Paperclip 四个开源项目当参考实现。<br><br>用 agent 学 agent，这个思路挺对味。<br><br>GitHub：<a href="https://github.com/bryanyzhu/agentic-ai-system-course" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bryanyzhu/agentic-ai-system-course</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>REA v6.9 支持更多可逆向格式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tonbistudio · 2026-11-15 02:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">REA 获得了一次重大升级！<br><br>我做了一个快速视频，展示你现在可以逆向工程的一些新格式，还包括一个在 bun 可执行文件上运行 REA 的实时演示！<br><br>来看看！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">REA got a big upgrade!<br><br>I did a quick video showing some of the new formats you can now reverse engineer, plus a live demo running REA on a bun executable file!<br><br>Check it out! </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121674683284418560/img/aEepNd09BOt9C9NX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">morluto <span style="font-size:12px;color:#999999;font-weight:400;">@morluto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">rea v6.9 现已上线<br>169 位贡献者，1000+ 已合并的 PR！<br><br>更可靠 + agent 使用时更少的上下文开销<br>支持更多硬件和软件方面的格式<br>agent 现在可以根据请求构建桌面任务环境<br><br><a href="https://github.com/morluto/rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/morluto/rea</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">rea v6.9 is now live<br>169 contributors, 1000+ merged PRs!  <br><br>more reliable + less context overhead for agents to use<br>support for more formats across hardware &amp;amp; software<br>agents can now build desktop task environments from a request<br><br><a href="https://github.com/morluto/rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/morluto/rea</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>figures4papers 顶会配图脚本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-15 02:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">📊 耶鲁计算机博士生刘晨把自己发 Nature 子刊和 NeurIPS 的论文配图脚本全开源了，figures4papers 让你的论文图一眼看上去就有顶会的样子。<br><br>figures4papers 在 GitHub 揽获 1.1 万 star，也上了 HelloGitHub 的推荐。<br><br>以前赶论文 deadline，图往往是最后一晚用默认样式凑出来的，配色、字号、图例都不讲究，审稿人扫一眼就觉得粗糙。<br><br>这个仓库里放的是作者真实发表过的图：柱状图、雷达图、折线图、3D 球体图、趋势图，每张都配好生成它的 Python 脚本，照着换上自己的数据就能出同款。<br><br>更省事的是，figures4papers 里还附了一套科研绘图 skill，能在 Cursor、Claude Code、Codex 里引用，让 AI 编程助手按这套风格直接帮你画。<br><br>论文的门面，往往就是那几张图。<br><br>GitHub：<a href="https://github.com/ChenLiu-1996/figures4papers" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ChenLiu-1996/figures4papers</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>树莓派整机成本不敌 300 元二手机</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ec12edfae2cb221 · 2026-11-15 01:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">智能硬件是在重新发明手机。<br>迷你智能硬件是在重新发明小天才手表。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lifcc <span style="font-size:12px;color:#999999;font-weight:400;">@mylifcc</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">极客圈最大的消费陷阱，可能就是“为了省事买了个树莓派，结果买配件买到破产”。<br>最近有个做野外昆虫监测装置的老哥，原本老老实实用树莓派 4 攒机器。<br>结果算盘打到一半发现不对劲：单买主板 880 块，加个高清摄像头 400 块，再把 GPS、触摸屏、UPS 电池板、4G 联网模块一个个像乐高一样叠上去，整套零件算下来居然要 2317 块人民币，而且连外壳都还没算。<br>老哥一怒之下打开淘宝，花 300 块钱淘了台二手红米 13C 5G。<br>到手一看乐了：5000 万像素主摄、GPS、触摸屏、内置存储、自带电池、甚至比树莓派高一代的 5G 联网，这台 300 块的破手机里全都是现成的。<br>他直接把红米刷机 Root，插上电脑让 AI 工具 Codex 自动写好配置脚本，底部 USB-C 口一根线连上自己画的灯控电路板，定时休眠、唤醒拍照一气呵成，成本直接砍到原来的七分之一。<br>更绝的是他给商业布展想出的骚操作：以前给美术馆做数字艺术装置，还得苦哈哈去求场馆网管开 Wi-Fi 权限、映射端口；现在直接给客户寄一台插了流量卡的旧手机，插上大屏就能跑，半夜出 Bug 自己躺家里用移动网络就能远程修好。<br>工业供应链卷了几十亿部出来的智能手机，随便捡台二手的，集成度都是树莓派这种开发板拍马难及的降维打击。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXFYPXZbAAAb0Q7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>sniplite 开源轻量截图工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-11-15 01:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎺 #发现频道<br><br>【开源自荐】分享一个自己做的截图工具 sniplite: 有 Snipaste 的核心功能，但是更快，开源，极其轻量<br><a href="https://meta.appinn.net/t/topic/95945" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://meta.appinn.net/t/topic/95945</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 指南拆解常驻 agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-15 01:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Anthropic 发布了一篇很棒的新指南。<br><br>它讨论了常驻 agent 的核心原语。<br><br>涵盖了事件收件箱的重要性、使用定时器实现主动能力、通过记忆确保连续性，等等。<br><br>阅读更多：<a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Banger new guide from Anthropic. <br><br>It discusses the core primitives of always-on agents. <br><br>It covers the importance of an event inbox, using timers for proactive capabilities, ensuring continuity with memory, and more. <br><br>Read more: <a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGh94UW8AA3rhx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>huobao-drama 开源短剧流水线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-15 01:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，做短剧的天塌了！！😱<br><br>刷到一个开源项目叫 huobao-drama，它不搞 PPT 那套吹嘘，拿来就能直接干活：<br><br>1️⃣ 分镜、视频、配音、剪辑、字幕，整条流程一次跑完<br>2️⃣ 几分钟就能做完一部短剧，你基本只用在旁边看着进度<br>3️⃣ 最关键的是开源，谁都可以拿去改，想批量跑都行<br><br>说到底，靠短剧订单吃饭的那些小团队看到这个，心里估计就两个字：完了。<br><br>以前比的是人多、能熬，现在就看谁先把工具玩熟。慢半拍的话，单子可能就被别人抢走了。<br><br>🔗：<a href="https://github.com/chatfire-AI/huobao-drama" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/chatfire-AI/huobao-drama</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGh1i3agAA-4Pd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>KubeDesk 桌面端管理 K8s 资源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @learnk8s · 2026-11-15 01:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">KubeDesk 是一个跨平台的 Kubernetes 桌面应用，用于浏览资源、查看健康状况和拓扑结构、流式查看日志、打开 shell 以及进行 dry-run 验证的变更<br><br>➤ <a href="https://ku.bz/-x0txgkcy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/-x0txgkcy</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">KubeDesk is a cross-platform Kubernetes desktop app for browsing resources, viewing health and topology, streaming logs, opening shells, and making dry-run validated changes<br><br>➤ <a href="https://ku.bz/-x0txgkcy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/-x0txgkcy</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>prompt-audit 审计 Claude 配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @petergyang · 2026-11-15 00:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">两个非常有用的 prompt，值得在 Fable 5.2 上试试：<br><br>&quot;/doctor prompt-audit&quot;：审计你的 Claude Code 配置（Claude md、skills、commands）并提出修复建议。<br><br>&quot;/claude-api prompt-audit [skill name]&quot;：深入审计单个 skill。<br><br>我真希望 Claude Code 在 Anthropic 每次发布新模型时都能自动建议运行这些。<br><br>📌 观看我关于如何使用 Fable 和 Opus 的完整教程：<a href="https://youtu.be/fAkm3YQg73s" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/fAkm3YQg73s</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Two very useful prompts to try with Fable 5.2:<br><br>&quot;/doctor prompt-audit&quot;: Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes.<br><br>&quot;/claude-api prompt-audit [skill name]&quot;: Audits one skill in depth.<br><br>I wish Claude Code auto-suggested running these every time Anthropic releases a new model.<br><br>📌 Watch my full tutorial on how I use Fable and Opus here: <a href="https://youtu.be/fAkm3YQg73s" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/fAkm3YQg73s</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGcyp1bsAAefPe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Peter Yang <span style="font-size:12px;color:#999999;font-weight:400;">@petergyang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">多亏了 Fable 5.2 和 Opus 5.5，Claude 又成了我的日常主力工具。<br><br>我的新教程展示了我在 5 个使用场景中实际工作时用的是哪个模型：<br><br>1. 为我的收件箱运行一位幕僚长<br>2. 获取职业和生活建议<br>3. 自动化我的播客制作流程<br>4. 构建一个移动健身应用<br>5. 帮助我妈妈度过癌症治疗期<br><br>我还分享了一个 claude-api prompt，可以让 Fable 改进你所有的 skills 和工作流。<br><br>📌 在这里观看完整教程：<a href="https://youtu.be/fAkm3YQg73s" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/fAkm3YQg73s</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude is my daily driver again thanks to Fable 5.2 and Opus 5.5.<br><br>My new tutorial shows which model I use for real work across 5 use cases:<br><br>1. Running a chief of staff for my inbox<br>2. Getting career and life advice<br>3. Automating my podcast production<br>4. Building a mobile fitness app<br>5. Helping my mom through cancer<br><br>I also share a claude-api prompt that gets Fable to improve all your skills and workflows.<br><br>📌 Watch the full tutorial here: <a href="https://youtu.be/fAkm3YQg73s" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/fAkm3YQg73s</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

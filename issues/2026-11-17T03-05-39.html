@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 11:05">
+<title>AI技术雷达 · 11月17日 11:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;LoopForge 管控 Agent 开发交付</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Harness 以硬约束替代提示词要求</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Alpine 线程栈128KB 引发段错误</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Colab CLI 一条命令跑通云端 GPU</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 公开记录误实现已叫停需求</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @runes_leo · 2026-11-17 08:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前几天看到 Magpie，我是真的有点羡慕。<br><br>它把写代码、审查、合并、发版本都交给 Agent。听着就像我一直想把自己的系统做成的样子。<br><br>今天翻它公开的 LESSONS.md，看到一条 2026 年 10 月 13 日的记录：<br><br>提出这条需求的 Fallmonkey 已经说了「先别做」，相关改动还是被实现了，后来又撤回。记录里连提交都列了：def3a41e3 实现，2c30e5cee 撤回。<br><br>我觉得这个项目挺难得的一点，反而是把这种乌龙也写得明明白白。<br><br>最近我在折腾自己的浏览器插件 Exo，也碰上了另一种尴尬。<br><br>有次界面更新，AI 交上来两百多项自动化检查的通过结果。我看了一眼，差点就觉得完工了。<br><br>回头翻验收记录，才看到「真实安装插件试用」那一步，当时还在待验证。<br><br>Magpie 的问题是需求被叫停了，改动却继续做；我这边是自动检查过了，真实使用还没有确认。不是同一回事，但都和「什么时候才算完成」有关。<br><br>我现在每天看一堆 Agent 的「已完成」「已修复」。<br><br>可要是最后还是得我挨个追问「你看用户最新那句话了吗」「实际装上去试过没有」，自动化到底帮我省了多少心？<br><br>我准备在自己的流程里加两条：用户最新指令可以叫停旧任务；有没验证的关键步骤，状态就写「待验证」，别写「完成」。<br><br>Magpie 的公开复盘：<br><a href="https://github.com/yetone/magpie/blob/main/LESSONS.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yetone/magpie/blob/main/LESSONS.md</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LoopForge 管控 Agent 开发交付</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-17 09:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐腾讯开源的 LoopForge，一个面向 Coding Agent 的软件开发与交付工作台。<br><br>它把 Agent 的开发、代码评审、测试和人工验收组织成可重复执行的 SOP（标准工作流程）。<br><br>比如，一个需求进来后，可以让不同 Agent 分别负责设计、实现和 Review，脚本负责运行测试，最后由人来审批。如果某一步没通过，还能退回指定节点重新执行，整个过程的日志和产物都会保留。<br><br>它支持 Codex、Claude Code、Pi、DeepSeek Harness 等 Coding Agent，可以在 Docker 沙箱中运行，也提供直接集成到现有 Coding CLI 的本地工作流。<br><br>我比较关注这类项目对 Agent 工程化落地的价值。<br><br>Coding Agent 能力越来越强，如何让多个 Agent 按照稳定的流程协作，让每次代码修改都有检查、有记录、失败后能够恢复，可能会成为团队大规模使用 Agent 的关键。<br><br>💻 GitHub: <a href="https://github.com/Tencent/LoopForge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent/LoopForge</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness 以硬约束替代提示词要求</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-17 08:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Reddit 有一个热门讨论：已经有 Claude Code/Codex 了，企业为什么还要招聘 Harness Engineer、自建 Agent Harness？难道是在重复造轮子？<br><br><a href="https://www.reddit.com/r/ClaudeCode/comments/1xxk5ak/what_actually_is_an_ai_harness_and_why_are/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.reddit.com/r/ClaudeCode/comments/1xxk5ak/what_actually_is_an_ai_harness_and_why_are/</a><br><br># Harness 是让模型持续工作的配套系统<br><br>讨论中一个比较清晰的解释是：模型负责推理和生成，harness 则负责把模型接进实际工作。<br><br>它管理上下文、提供并执行工具、保存运行状态、处理失败和重试，并决定什么时候停止、什么时候需要人工批准。Claude Code 本身就包含这样一套面向编程的运行框架，并不是“裸模型”。<br><br>因此，自建 harness 未必是在复制聊天界面或代码编辑器，也可能只是为特定任务设计更合适的执行循环、工具接口和控制规则。这里讨论的是 Agent 运行框架，不是负责出题和打分的评测框架。<br><br># 为什么不把规则都写进 CLAUDE. md？<br><br>发帖人也追问：把仓库规范、测试要求和权限限制写进说明文件，不就够了吗？<br><br>高赞回应强调了一个重要区别：告诉模型应该怎么做，与由系统限制它只能怎么做，不是一回事。<br><br>例如，“生产操作前必须审批”可以写进提示词，但真正可靠的限制，需要工具或权限系统拒绝未经批准的操作。类似地，费用预算、数据访问范围和审计记录，也不能只依赖模型记住要求。<br><br>不过，这不意味着 Claude Code 只有提示词约束，它自身也有权限控制。企业真正需要判断的，是现成机制能否覆盖自己的要求，而不是一看到硬约束就必须从零开发。<br><br># 企业需要的，可能只是适配而非重写<br><br>支持定制的评论主要关注内部系统、持续集成、评审流程、数据权限和成本控制。这些需求未必能直接套用通用编程助手。<br><br>一个很具体的例子是处理测试输出：先截取与失败有关的信息，避免把整份冗长日志交给模型，既减少上下文占用，也降低费用。这类工程工作不改变模型，却会影响它完成任务的效率。<br><br># 我自己的想法<br><br>需要把两个问题分开：模型有没有能力完成任务，系统能不能让它在规定条件下可靠完成任务。<br><br>Harness 主要处理后者。企业是否需要自建，应从现成工具覆盖不了的具体约束出发。能通过配置、扩展工具和接入内部流程解决，就不必重写整套框架；只有运行方式确实不同，定制才有明确价值。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSba6Eb0AA_6I2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSbp7laUAAp80Q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Clef 协调让 DeepSeek 胜 Opus</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @borjaperfra · 2026-11-16 19:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">👀😏 我们测试了一种新的架构来协调AI智能体，在benchmark中与DeepSeek一起使用的结果已经超过了Claude Opus 5.5。<br>这个想法相当有趣。👇<br><br>我们没有把所有决策都交给LLM，而是引入了规则和Clef——@Cloudflare的一个决策模型——来帮助协调智能体的工作。<br><br>结果如何？<br>DeepSeek V4.1 Flash在评估的执行中从83%的成功率提升到了100%。Opus则停留在93%。<br><br>这个实验是我们的朋友@agent__swarm 完成的，我们正在与他们合作研究开源模型在多智能体系统中的表现。请关注他们，他们正在做非常有趣的事情。也请关注@voidisomorphism 和@ecura<br><br>样本仍然很小，还有很多需要研究的地方，但我认为这开辟了一条非常有前景的途径：通过改变架构来提升智能体的性能，而无需总是使用更大的模型。<br><br>我们将用更多软件工程任务来重复这个实验。<br><br>下周我们将发布一篇文章和视频，解释该架构、方法论和所有结果。<br><br>我把benchmark放在这里：<br><a href="https://api.desplega.agent-swarm.dev/p/ab1bf515eb3a4f819d725fe29ac2c058" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://api.desplega.agent-swarm.dev/p/ab1bf515eb3a4f819d725fe29ac2c058</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">👀😏 Hemos probado una arquitectura nueva para coordinar agentes de IA y los resultados con DeepSeek han superado a Claude Opus 5.5 en el benchmark.<br>La idea es bastante interesante. 👇<br><br>En vez de dejar todas las decisiones al LLM, hemos introducido reglas y Clef, un modelo de decisión de @Cloudflare, para ayudar a coordinar el trabajo de los agentes.<br><br>¿Los resultados?<br>DeepSeek V4.1 Flash pasa del 83% al 100% de éxito en las ejecuciones evaluadas. Opus se queda en el 93%.<br><br>El experimento lo han hecho nuestros amigos de @agent__swarm , con quienes estamos colaborando para investigar cómo funcionan los modelos abiertos en sistemas multiagente. Seguidles, que están haciendo cosas muy interesantes. Y también a @voidisomorphism y @ecura <br><br>La muestra todavía es pequeña y hay bastante que investigar, pero creo que esto abre una vía muy prometedora: mejorar el rendimiento de los agentes cambiando la arquitectura, sin necesidad de utilizar siempre un modelo más grande.<br><br>Vamos a repetir el experimento con más tareas de ingeniería de software.<br><br>La semana que viene publicaremos un artículo y vídeo explicando la arquitectura, la metodología y todos los resultados.<br><br>Os dejo el benchmark por aquí:<br><a href="https://api.desplega.agent-swarm.dev/p/ab1bf515eb3a4f819d725fe29ac2c058" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://api.desplega.agent-swarm.dev/p/ab1bf515eb3a4f819d725fe29ac2c058</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPjOVoXwAA2GvU.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Alpine 线程栈128KB 引发段错误</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-16 20:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多开发团队为了追求极致精简的 Docker 镜像，习惯把基础镜像一律换成仅有 5MB 的 Alpine Linux，然而这往往是生产环境神秘崩溃噩梦的开端。<br><br>代码在本地 Ubuntu 开发机上跑得稳如磐石，一旦打包成 Alpine 容器上线，高并发下服务就会频繁发生无预警的 SIGSEGV 段错误与直接退出。<br><br>很多人第一反应是内存泄漏，但真正的元凶是底层 C 运行时库的隐藏硬限制。标准的 Ubuntu/Debian 采用 glibc，通过 pthread_create 创建的每个新线程，默认会慷慨分配 8 MB 的栈空间（Stack Size）。<br><br>而 Alpine 出于极致轻量化的目标，采用了小巧的 musl libc，其线程默认栈空间被暴力砍到了只有区区 128 KB。<br><br>当业务代码调用了嵌套深层的 JSON 序列化库、执行了复杂的递归 AST 解析，或者在局部函数内声明了较大的缓冲区结构体时，128 KB 的内存栈瞬间发生溢出击穿保护页，操作系统内核毫无商量余地直接下发 SIGSEGV 强杀进程。在轻量化与工业容错之间，盲目削减基础镜像往往会付出沉重代价。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Colab CLI 一条命令跑通云端 GPU</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-17 10:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚀 Google Colab 团队刚开源了 Colab CLI，在自己电脑的终端里一条命令就能借云端 GPU 跑脚本。<br><br>Colab CLI 上了 GitHub 热榜，GitHub 上已经 2400 多 star。<br><br>以前用 Colab，得打开浏览器、新建笔记本、把代码一段段贴进去、手动选 GPU，跑完再把结果一个个下载回来。<br><br>现在在本地终端里一条命令搞定：开一台新的云端机器，把本地脚本传上去跑、参数照转，跑完把输出文件取回来，再自动把机器销毁，不用惦记着关。<br><br>GPU 从 T4、L4 一直到 A100、H100 都能选，还有 TPU；想多折腾可以开交互式 REPL 或直接 SSH 进去，Google Drive 也能挂上。目前只支持 Linux 和 macOS，Windows 用户还得等等。<br><br>本地写代码、云端借 GPU，这下真的只隔一条命令了。<br><br>GitHub：<a href="https://github.com/googlecolab/google-colab-cli" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/googlecolab/google-colab-cli</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

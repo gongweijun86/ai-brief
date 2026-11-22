@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月8日 05:14">
+<title>AI技术雷达 · 11月8日 05:14 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;大厂 AI Native 组织落地方法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;MVVM 用 DWARF 降低迁移开销</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Reviewer Agent 反降通过率</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Claude Code 三层模型分工配置</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;agent-desktop 后台控桌面</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;RAG 优化先修检索再换模型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大厂 AI Native 组织落地方法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hocyzon · 2026-11-07 10:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">以我了解到的某大厂业务部门实践为例，详细讲讲怎么成为AI Native组织。<br><br>1. 先搭建AI基础设施<br><br>首先需要解决模型接入、使用成本和工具复用的问题，让员工主动使用AI。<br><br>他们搭建了一个模型广场，作为公司统一的模型API入口，员工接入外部模型可以通过这个平台完成，同时分成个人空间和业务空间。个人空间有独立额度，供员工自行探索；业务空间则分配给具体业务团队，方便管理使用额度和成本。<br><br>另外还建立了Skill和MCP中心，员工可以把自己开发的Skill、MCP上传共享，其他人直接复用。平台也制定了接入规范和身份鉴权标准，避免不同团队重复造轮子。对于使用量和人气排名靠前的Skill，每个月还有相应奖励。<br><br>在这些基础设施之上，开始出现实际的效率提升。一些可以参考的数据：coding和测试提效约三成，内容审核的初审工作基本可以由AI承担，AI告警定位平均可以在分钟级完成定位，三分之一的告警能够通过AI完成处理。<br><br>2. AI Coding到产品经理交付<br><br>下一步需要解决的是如何让AI从一个员工主动使用的工具，变成能够主动承担完整任务的生产力。<br><br>他们把AI封装成不同层级的任务执行能力，并开发了一个接入企业IM的研发数字人，员工可以像和同事沟通一样直接提交任务。<br><br>像是L2层级，主要面向研发人员，属于研发辅助模式。研发已经拿到产品需求文档，可以直接让数字人完成写代码、部署、测试环境验证。如果结果不符合预期，就退回去重新修改，直到验证通过，最后由研发人员完成代码合入和正式发布。<br><br>L3则更进一步，面向产品经理，属于自主交付模式。产品经理可以直接向数字人描述一个简单需求，Agent首先判断这个需求是否适合自主开发，符合条件后再进行写代码和验证。<br><br>这套模式目前主要适用于B端简单需求，C端业务还比较复杂，无法直接套用。<br><br>提效还是很明显的，原本需要十几个小时的简单需求，现在可以压缩到约1小时。<br><br>但也带来一个问题，个人效率提高了，组织效率却没有同步提高。<br><br>3. 重新设计研发工作流<br><br>为什么个人效率提高了，组织效率却没有同步提高？<br><br>研发流程存在大量交接。产品经理完成需求分析，需要把信息传递给研发；研发完成代码，又要交给测试；测试完成后，还要经过审核和发布。<br><br>每个环节都有自己的上下文，信息在不同岗位和工具之间不断损耗。即使AI已经大幅提高了coding速度，其他环节的等待和交接依然存在。<br><br>因此，他们把原来的研发工作流拆成需求流和发布流。<br><br>需求流负责从一个想法开始，一直到代码合并；发布流负责把一段时间内完成的多个需求整合起来，统一发布到线上。<br><br>为什么需求和发布要分开处理呢？<br>我觉得核心原因是，多个需求还需要进行整合、版本管理和发布验证。<br><br>B端和C端的流程也有明显差异。<br><br>B端业务的需求流相对简单。像是一个中间件业务，用户反馈或系统工单可以自动进入平台，由产品Agent完成需求分析和方案设计，人工确认需求文档后，再交给研发Agent写代码，最后由人工完成发布。<br><br>C端业务则复杂得多。以小游戏业务为例，需求可以从用户反馈VOC进入工作流，经过产品设计、研发实现、测试验证，最后还要进行效果回收。中间可能涉及设计、翻译、埋点等多个专业环节。<br><br>发布阶段还涉及客户端、服务端等多端协同，现在仍然以人工发布为主，AI目前无法取代。<br><br>4. 专业能力沉淀为公共Agent<br><br>重新设计工作流之后，还需要解决不同专业领域的能力如何参与的问题。<br><br>过去设计、翻译、埋点、测试等工作都需要对应岗位的人员参与，现在逐渐把这些领域的专业知识和工作方法封装成公共Agent，不同业务可以直接调用这些能力，也可以根据自己的实际需求进行定制。<br><br>在实践中发现，测试和翻译Agent的接入率、采纳率都比较高。但设计Agent的表现相对有限，原因在于设计本身具有较强的主观性，简单的L1、L2级需求可以交给AI处理，涉及复杂审美判断的设计仍然需要人工参与。<br><br>发布Agent目前也主要打通了B端业务。<br><br>很多人没意识到，这是一个显著变化：现在不同岗位积累的专业经验，能变成其他岗位直接调用的Agent。<br><br>5. 建设平台<br><br>有了工作流和公共Agent，还需要一个统一的平台，把任务、知识和上下文连接起来。<br><br>他们建设了两套基础设施，一套叫知识库，另一套叫交付平台。<br><br>知识库最初从代码仓开始建设，定期同步代码信息，同时允许员工上传业务文档和其他资料。<br>但有价值的往往是员工在日常工作中产生的经验。代码和文档只能提供一部分信息，比如一个需求为什么提出，中间遇到了哪些问题，为什么最终采用某个方案，这些信息也应该被记录下来。<br><br>因此，知识库与交付平台进行了打通。交付平台负责管理整个工作流，把不同任务交给对应的Agent，同时让人和Agent共享上下文。<br><br>举个例子，产品经理完成需求设计后，研发Agent可以直接获得需求背景、目标和交付要求，不需要重新解释一遍。即使研发人员使用Cursor或Codex等外部工具，也可以通过MCP把执行结果和状态回传到平台，后续环节继续沿用之前的上下文。<br><br>交付平台还支持流程回退。如果研发发现代码不符合预期，可以退回编码节点重新执行；如果发现产品需求本身有问题，也可以直接退回需求设计环节，重新走后续流程。<br><br>6. 组织结构的调整<br><br>当工作流、专业Agent和知识库都建立起来之后，才真正有条件尝试改变原来的组织协作方式。<br><br>一些真实业务场景进行试点，在新的工作模式下，人主要负责需求判断、关键决策和最终结果，Agent承担更多具体执行工作。原来依赖不同岗位之间反复沟通才能完成的事情，现在可以通过统一工作流和公共Agent完成协作。<br><br>很多人理解的AI Native组织是给所有人买ChatGPT Pro，这是错误的。<br>就像给汽车装上飞机发动机，汽车也不会因此飞起来。原来的工作流程没有改变，再强的AI也只能提高其中某些环节的效率。<br>企业引入AI，最初改变的是员工完成工作的方式，随后改变的是不同岗位之间的协作方式，最后才可能改变整个组织的结构。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>mpv 快捷键校准字幕延迟</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LovesangR · 2026-11-08 03:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">演员还没张嘴，字幕已经把包袱抖完了。<br>先别急着折腾视频，把字幕的时钟拨一拨。<br><br>开源播放器 mpv 里，默认快捷键就能调字幕延迟：<br>字幕整体抢跑，按 Shift+Z，让它晚一点出现；<br>字幕整体慢半拍，按 z，让它提前一点。<br>每按一次移动 0.1 秒，找一句清楚的对白对齐就行。<br><br>调的是播放时机，不用重新压制视频。<br>但得是独立字幕轨或外挂字幕，已经烧进画面的字，不归这两个键管。<br><br>让字幕跟上对白，别让脑子兼职校时。<br><br>文档：<a href="https://mpv.io/manual/stable/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://mpv.io/manual/stable/</a><br>#开源工具 #视频</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MVVM 用 DWARF 降低迁移开销</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yyw2000 · 2026-11-08 04:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">利用 C++26 反射和 DWARF 加速 WebAssembly 迁移。<br><br>我一直在围绕 GCC 16 的实验性 C++26 反射支持、std::format 以及基于 DWARF 的原生状态提取来更新 MVVM。<br><br>反射简化了序列化流程并移除了遗留依赖。DWARF 使我们能够在编译器安全点处提取原生局部变量和操作数栈的值，然后在恢复时重建调用链。<br><br>性能优化工作集中在减少正常执行路径上的寄存器溢出和簿记开销。<br><br>在我们最新的 x86-64 NAS 基准测试中，与纯 WAMR AOT O3 相比，优化后的 DWARF 路径在 CG 上增加了约 1.0% 的执行开销，在 LU 上增加了 0.3%，数据取自七次运行的中位数。<br><br>结果仍然取决于工作负载。这些数字衡量的是稳态执行开销——而非完整的检查点/恢复延迟——且收益来自实现层面的变更，并非仅来自反射。<br><br>代码、基准测试方法和原始结果：<br><a href="https://github.com/Multi-V-VM/MVVM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Multi-V-VM/MVVM</a><br><br>#WebAssembly #Cpp26 #DWARF #SystemsProgramming #CheckpointRestore</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Making WebAssembly migration faster with C++26 reflection and DWARF.<br><br>I’ve been updating MVVM around GCC 16’s experimental C++26 reflection support, std::format, and DWARF-based native state extraction.<br><br>Reflection simplifies serialization and removes legacy dependencies. DWARF lets us extract native locals and operand-stack values at compiler safe points, then reconstruct the call chain during restore.<br><br>The performance work focuses on reducing spills and bookkeeping along the normal execution path.<br><br>In our latest x86-64 NAS benchmarks, the optimized DWARF path added approximately 1.0% execution overhead on CG and 0.3% on LU compared with plain WAMR AOT O3, using medians from seven runs.<br><br>Results remain workload-dependent. These numbers measure steady-state execution overhead—not total checkpoint/restore latency—and the gains come from the implementation changes, not reflection alone.<br><br>Code, benchmark methodology, and raw results:<br><a href="https://github.com/Multi-V-VM/MVVM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Multi-V-VM/MVVM</a><br><br>#WebAssembly #Cpp26 #DWARF #SystemsProgramming #CheckpointRestore</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Transformer 训练单步可视化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-07 20:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让学 Transformer 的人能在浏览器里单步观察 Token、矩阵、注意力和损失的真实数值变化，而不是只看公式和架构图。<br><br><a href="https://github.com/ninetyhe-90/training-explore" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ninetyhe-90/training-explore</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWa0_r4bQAAlbcu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Reviewer Agent 反降通过率</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-08 00:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多团队在设计多 Agent 架构时，都喜欢在 Worker 后面挂一个专门的 Reviewer Agent，以为多一层把关就能兜住幻觉。<br><br>最近 arXiv:2611.03931 的控制变量实验测出了一组非常残酷的数据：在固定模型和 Token 预算下，显式加入 Reviewer 后的系统整体任务通过率，反而比单一 Agent 跑完后直接调外部编译器更低。<br><br>问题出在 LLM 天生的共识偏置与语义谄媚上。当 Worker 输出了一段包含隐蔽逻辑漏洞但语法结构极漂亮的代码时，Reviewer 的注意力权重会被上游输出的自然语言解释严重锚定。它不会像静态分析器一样去遍历控制流图，而是顺着 Worker 的伪逻辑去帮它“润色”变量命名、补齐文档注释。<br><br>更要命的是，Reviewer 往往在输出里给出一个格式化的假 APPROVE，直接把调度引擎的重试逻辑给旁路掉了。真正的纠错入口不是另一个靠概率预测 token 的审查者，而是终端里退出的 non-zero exit code。<br><br>论文地址：<a href="https://arxiv.org/abs/2611.03931" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.03931</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen3.5 9B 无审查本地模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-07 21:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，大的真来了！！<br><br>Hugging Face 上最近冒出一个炸裂级的无审查模型，下载直接被冲爆<br><br>DeepSeek-V4-Pro 蒸馏进 Qwen3.5 9B 的完全体，量化后只要 5.6GB 左右，一上线就被疯狂下载<br><br>实测结果相当凶残：<br><br>· 拒答率断崖下跌：100 个刁钻测试提示词，原版 100% 拒答，它只拒了 3 个<br>· 顶级推理蒸馏：吃了 DeepSeek-V4-Pro 约 25 万条高质量数据，逻辑和数学推理直接拉满<br>· 几乎零损耗去审查：底层用 Heretic 的 ARA 算法消融限制，把道德锁卸掉，智商基本不掉<br>· 普通电脑本地就能跑：Q4 量化后 5.6GB 左右，显存要求很低，轻薄本也能带得动<br><br>完全开源免费，Apache 2.0 协议，想在本地跑一个听话、推理又强的大模型，建议直接收藏<br><br>你本地跑大模型时，被拒答最多的是写代码还是角色扮演？<br><br><a href="http://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 三层模型分工配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-06 11:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这绝对是一座真金矿！<br><br>Anthropic 刚发了一个 Claude Code 封神级的高阶玩法。<br><br>思路极其简单：同时跑 Sonnet、Haiku 5.5 和 Opus 5.5，每个模型只干自己最擅长的活。<br>不仅写代码效果更好，还能省下大笔 token。<br><br>启动 Claude Code 这样写就行：<br>`claude --model sonnet --advisor opus`<br><br>三层模型各司其职：<br>· Sonnet 5.5 负责主会话，专心写代码、改 bug<br>· Haiku 5.5 并行扫整个代码库，只读搜索、grep 和查文档<br>· Opus 5.5 坐镇当顾问，只在关键决策时出手，最后审核改动<br>不需要 Opus 的活，绝不浪费它一丝一毫的上下文。<br><br>Opus 只在三个时候介入：<br>① 计划敲定之前<br>② 同一个错误出现第二次的时候<br>③ 宣布完成之前<br><br>底层逻辑和 JEV 工程完全一致：不需要动脑的小选择（选文件、选工具、重试或停止）交给 JEV 毫秒级处理，大模型只用来思考真正的硬骨头。<br><br>把这段提示词直接贴进 Claude Code 重新配置：<br>“按这个结构重新配置我的 Claude Code：<br>1. 主会话用 Sonnet 5.5，Opus 5.5 当顾问。<br>2. 在 .claude/agents 里建三个 Haiku 5.5 子代理：search（梳理代码库）、grep（查找调用位置）、audit（检查改动）。<br>3. 给 audit 设置 worktree 隔离，让它的检查不碰我的工作分支。<br>4. 在 CLAUDE.md 里加一条规则：所有代码库搜索和测试都交给 Haiku 5.5 子代理，让主上下文保持精简。<br>5. 快速、确定性的小选择（选工具、选路径、重试）交给 JEV 处理。<br>所有改动先用 diff 给我看，我说开始之前不要动任何文件。”<br><br>👉 官方子代理文档：<a href="http://code.claude.com/docs/en/sub-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://code.claude.com/docs/en/sub-agents</a> #ClaudeCode</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118545810514448384/img/Q0EbqAISkv3ogelH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>agent-desktop 后台控桌面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Pluvio9yte · 2026-11-07 22:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">全体起立，Vercel推出的agent-desktop现在才是Agent操控电脑的真神。<br><br>它是 Vercel Labs 的开源项目，Apache-2.0 协议，GitHub 已经有 1.8 万 star，仓库地址在下面<br><br>它是一个命令行工具，让 Claude Code、Codex 这类 Agent 直接操作你电脑上的 App：点按钮、填表单、打字、切菜单、读界面。<br><br>之前大部分 Computer Use 的做法是截图，再让模型猜该点哪个坐标。慢，还容易点歪。<br><br>agent-desktop 不截图。它直接读系统的无障碍树（就是读屏软件用的那套接口），给界面上每个按钮、输入框编一个号，Agent 按编号去点、去输入。<br><br>最关键的一点：它默认不动你的鼠标，也不把窗口切到前台。<br><br>Agent 在后台操作电脑的时候，你可以照常刷微信、写东西，两边互不干扰。真要用物理鼠标键盘时，再加 --headed。<br><br>我在自己的 Mac 上实测了一轮：<br><br>- 打开系统设置，读完整个界面 0.3 秒左右<br>- 点击「蓝牙」0.17 秒，页面切过去了，设备列表也读出来了<br>- 给不在前台的文本编辑输入一段中英文加数字，0.15 秒，读回来一字不差<br>- Electron 写的 App 也能读，侧栏、对话列表的文字都拿得到<br>- 整个过程我一直在用微信，前台一次都没被抢<br><br>我原来用 LCU，它要借 ChatGPT 桌面端里面的运行时，ChatGPT 一更新就可能坏，也卡过。今天卸了，换成 agent-desktop。<br><br>几个让我决定换的点：<br><br>1. 不依赖任何 App，npm 一装就能用<br>2. macOS（Intel 和 M 芯片）、Windows、Linux 都支持<br>3. 自己不带模型，任何能跑命令的 Agent 都能用，也可以当 MCP 服务接进去<br>4. 60 个命令，窗口管理、剪贴板、通知、菜单栏都包了<br><br>安装就两步：<br><br>npm install -g agent-desktop<br>agent-desktop permissions --guide<br><br>第二条在 Mac 上会一步步引导你打开辅助功能权限。<br><br>然后在 AGENTS.md 或 CLAUDE.md 里加一句：<br><br>Use `agent-desktop` to see and operate desktop apps. Before the first use, run<br>`agent-desktop skills get desktop` and `agent-desktop skills get platform`, and follow them.<br><br>你的 Agent 就会用了。<br><br>仓库：<a href="https://github.com/vercel-labs/agent-desktop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vercel-labs/agent-desktop</a><br><br>实测截图👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWh8H09bgAEtMMv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAG 优化先修检索再换模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-11-07 20:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人对 RAG 的理解，还停留在把文档切一切、做个 Embedding、塞进向量数据库，最后接个大模型，就觉得自己搭建了一套知识库系统。<br><br>但真正做过企业 AI 落地就会发现，RAG 最难的根本不是把系统跑起来，而是怎么让它长期、稳定、准确地回答问题。<br><br>你会发现一个特别有意思的现象：一旦 AI 回答不准确，很多人的第一反应就是换模型，从 DeepSeek 换到 GPT，再从 GPT 换到其他更贵的模型或者不停修改 Prompt，觉得模型能力强了，答案自然就准确了。<br><br>但问题是，很多时候根本不是模型不够聪明，而是你连正确的资料都没有检索出来。<br><br>知识库里的文档有没有正确解析？Chunking 有没有把原本完整的语义切碎？Embedding 能不能准确匹配用户的问题？用户问的是一个具体型号或者价格，你还在用纯向量检索，而不是结合 BM25 做 Hybrid Search？检索出来几十个结果，有没有经过 Reranking？真正重要的证据有没有被排到前面？<br><br>这些问题不解决，换再强的模型也未必有用。<br><br>而且 RAG 远不止检索这一步。<br><br>用户的问题表达不清楚，需要 Query Rewriting；一个问题涉及多个知识点，需要 Query Decomposition；检索片段太短，丢失了上下文，可以考虑 Small-to-Big Retrieval；文档之间存在复杂的实体关系，可以研究 GraphRAG；涉及多轮决策、多知识源和工具调用，可以进一步考虑 Agentic RAG。<br><br>但这不意味着你要把这 15 种技术全部堆进系统里。<br><br>我反而觉得，现在很多 AI 开发者特别容易陷入一种技术自嗨：什么技术新就接什么，什么架构复杂就上什么。最后技术栈越来越庞大，调用成本、延迟和维护复杂度都上来了，但客户最关心的问题依旧没有解决。<br><br>真正有价值的是，你知道每一项技术在解决什么问题，什么时候值得使用，什么时候根本没必要使用。<br><br>尤其是最后两个概念：Faithfulness 和 Precision / Recall。<br><br>我觉得这才是很多人从做 AI Demo 到做企业级 AI 系统，真正需要跨过去的一道坎。<br><br>你不能只凭自己问了几个问题、觉得回答还不错，就说系统已经做好了。<br><br>你得有测试集，知道正确资料有没有被召回，召回的资料有多少真正相关，模型生成的每一个关键结论能不能找到证据，以及每次优化之后准确率、延迟、成本到底发生了什么变化。<br><br>如果连这些都没有，所谓的 RAG 优化，很大程度上就是凭感觉调参数。<br><br>而企业真正需要的，也不是什么特别炫酷的 Agent 架构。<br><br>它需要的是客户问一个问题，你能找到正确的资料，给出有依据的回答；不知道的东西不要乱编；不同客户的数据不能串；知识库更新之后系统能够同步；出了问题还能定位到具体是哪一个环节。<br><br>这才是工程。<br><br>所以我一直觉得，未来做 FDE、AI Engineer，真正拉开差距的，不是你会调用多少模型 API，也不是你知道多少 Agent 框架，而是你能不能把一个看起来很简单的 AI 功能，做成真正能够被企业长期使用的系统。<br><br>能跑起来只是起点，能解释为什么这样设计、能定位问题、能量化效果、能稳定交付，才是真正的技术能力。<br><br>这张图的 15 个 RAG 概念值得系统学习，但比记住这 15 个名词更重要的，是理解它们背后的工程取舍。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Gauri Tripathi <span style="font-size:12px;color:#999999;font-weight:400;">@GauriTripa94282</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">15 个需要了解的 RAG 概念<br><br>① 分块（Chunking）<br>② 嵌入（Embeddings）<br>③ 向量数据库（Vector DBs）<br>④ 元数据过滤（Metadata filtering）<br>⑤ 查询改写（Query rewriting）<br>⑥ HyDE<br>⑦ 查询分解（Query decomposition）<br>⑧ 混合检索（Hybrid search）<br>⑨ 重排序（Reranking）<br>⑩ 由小到大检索（Small-to-big retrieval）<br>⑪ GraphRAG<br>⑫ 上下文压缩（Context compression）<br>⑬ 智能体 RAG（Agentic RAG）<br>⑭ 忠实度（Faithfulness）<br>⑮ 精确率与召回率（Precision &amp;amp; recall） </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">15 RAG concepts to know<br><br>① Chunking<br>② Embeddings<br>③ Vector DBs<br>④ Metadata filtering<br>⑤ Query rewriting<br>⑥ HyDE<br>⑦ Query decomposition<br>⑧ Hybrid search<br>⑨ Reranking<br>⑩ Small-to-big retrieval<br>⑪ GraphRAG<br>⑫ Context compression<br>⑬ Agentic RAG<br>⑭ Faithfulness<br>⑮ Precision &amp;amp; recall </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWdmoTBbIAA6DUn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VoxCPM2 语音合成开源可用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chenfacai0 · 2026-11-07 08:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">真是离谱得没边了，这个东西是真厉害。<br><br>GitHub 趋势榜第一、星标冲到 3.8 万的语音合成 AI「VoxCPM2」，在海外已经彻底引发轰动，它生成的声音你根本分辨不出真假。<br><br>1️⃣ 你只需要输入一行文字“沉稳的 30 代女声”，它立刻就能为你合成出来<br>2️⃣ 放入一小段录音，连说话的口癖、语速都能给你一比一复刻<br>3️⃣ 48kHz 录音棚级音质，还采用 Apache 2.0 协议，商用随便用<br><br>🔗<a href="https://github.com/OpenBMB/VoxCPM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/OpenBMB/VoxCPM</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWa_jShbsAAjMBW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

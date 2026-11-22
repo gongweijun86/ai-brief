@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 14:27">
+<title>AI技术雷达 · 11月18日 14:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Magpie用MCP路由实现工具懒加载</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Kokoro发布账号被过期域名接管</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Vercel给Agent评测设陷阱任务</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Jason Wei任Mercor首席科学家</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude Code的AI改动验证清单</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie用MCP路由实现工具懒加载</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yetone · 2026-11-18 11:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐大家用一下 Magpie 自带的 MCP 路由功能，不仅方便管理海量的 MCP servers，而且完美支持海量 MCP 工具的懒加载和智能编排调用</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jeffrey.W <span style="font-size:12px;color:#999999;font-weight:400;">@JeffreyCalm</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">DSH 用了快一个月，有一个问题一直非常头疼，就是它不支持 MCP 懒加载。<br><br>直观体验就是，如果你用社区插件连个 Notion 或者是 Codegraph。一次会话里工具说明会吃掉 90K 的窗口上下文。<br><br>用 Deepseek 1M 模型会感受不到，但如果是桥接了 273K 的 Codex 订阅，就会导致非常频繁的压缩，根本干不了活儿。<br><br>实际上你真用 1M 模型也不是没影响，只是影响的是钱包不是体验，总之其他主流 Harness 现在都没有这么干的了。<br><br>我先在 DSH 社区里找了一圈，目前没有找到一个足够成熟、方便的通用方案，能让所有 MCP 工具都按需加载。因为到目前的 DSH 0.2.2-RC3 为止，deferred 机制在 DSH 主程序里还没生效。<br><br>针对单个 MCP 做优化也许可以，但我的需求是以后接入更多 MCP 时，都不用再为每个服务单独折腾一遍。<br><br>最后找到的办法是用 Magpie 做一层 MCP 网关，让 Magpie 负责管理和调用工具。DSH 平时不必把所有工具的完整说明都带上，需要时再查找、调用。<br><br>很多人对 Magpie 的认知就是把各种订阅、Key 那边的模型，桥接到本地不同的 Agent 里。但它其实还有很多其他功能，比如在中转的过程中注入 MCP 工具和技能。<br><br>然后在 MCP 这，Magpie 就支持把你所有接入的 MCP 都折叠起来，只暴露给 Agent 两个入口：<br><br>1. find_tools：先根据需要查找工具，获取相关工具的说明和参数。<br>2. call_tool：再通过 Magpie 调用找到的工具。<br><br>这样，模型需要查 Notion 时才去找 Notion 工具，而不是每次都带着全部工具定义出门。<br><br>怎么配置？以 Notion 为例。<br><br>我用的是同一台 Mac 上运行 Magpie 和 DSH，基本可以在界面里完成，不需要手改配置文件。<br><br>1. 在 Magpie 添加 Notion<br><br>打开 Magpie 的 资源库 → MCP，然后直接在 MCP 列表里搜索 Notion，添加。<br><br>2. 登录 Notion<br><br>在 Magpie 的 Notion MCP 配置页面，点击登录，跳转到 Notion 界面，在浏览器中选择工作区、确认授权，再回到 Magpie 检查登录状态。<br><br>3. 打开 MCP 路由和按需工具<br><br>在 MCP 页面打开 MCP 路由，确认按需提供工具已开启。再到 Notion 条目里确认勾选了通过 MCP 路由提供，而不是直连。<br><br>大功告成。<br><br>在 DSH 那边什么都不用操作，你选择一个经 Magpie 路由进来的模型，就自动生效了。<br><br>实测只有当你提到 Notion，或模型判断需要 Notion 的时候，Notion  的 MCP 才会被加载。<br><br>记得如果你之前在 DSH 里配置了 Notion 插件，要停用并删除，不然 Notion 的完整 MCP 说明还是会被注入到对话里。<br><br>其他家的 MCP 也是一样，都可以配置在 Magpie 上，无论配置多少，Magpie 默认都只暴露给 Agent 那两个用于查询工具的 MCP，极致省 Token。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kokoro发布账号被过期域名接管</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChantoziQ · 2026-11-18 12:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个过期域名，竟然能威胁到下载量超过千万的 AI 模型！<br><br>研究人员发现，Hugging Face 上热门语音模型 Kokoro 的发布者账号存在安全隐患。<br><br>他们通过注册一个过期域名，接管了相关发布者账号。<br><br>更夸张的是，只用一块游戏显卡和 87 秒，就能修改模型权重，让模型说出与输入文字不同的内容。<br><br>整个过程甚至不需要修改代码，传统杀毒软件也未必能发现。<br><br>好在研究人员没有上传被篡改的模型。<br><br>这件事提醒我们：AI 模型能不能信任，不只取决于代码，还取决于它从哪里来、由谁发布。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXXWAmlaoAAOTRO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Vercel给Agent评测设陷阱任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-18 08:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个 Agent 什么都没做，Eval 却判它通过了<br><br>Vercel 给一个模拟咖啡下单 CLI 写了个陷阱任务。附近没有一家店满足用户的条件，正确做法是告诉用户买不到，而且不能下单。Codex 几乎每次都过了，翻 Trace 才发现，每 10 次通过里有 9 次它根本没搜索，直接就放弃了<br><br>问题出在 Verifier，它只检查了「没有下单」，没检查「先搜过再放弃」。不读 Trace 的话，这些都会被算成成功<br><br>这是 Vercel 新发的《Agents are users, so your software needs evals》，拿这个咖啡下单场景完整走了一遍怎么搭 Agent Eval<br><br>他们按调用 LLM 的次数，把 Agent 测试分成三层：确定性测试、单轮 Eval、跑完整任务的 E2E Eval。能用低层抓到的问题，就别放到高层去测<br><br>搭环境用的是 Harbor + Vercel Sandbox，让 Agent 在隔离环境里反复跑同一批任务，再结合 Verifier 打分和 Trace 去找失败的根因。另一个失败也挺典型，Codex 一直把 sfbeans 当成已连接的工具去找，从没试过在 shell 里直接运行<br><br>这篇实践性很强，从定目标、选指标到写任务、分析失败都讲到了，文末还附了一段可以直接丢给 Coding Agent 的搭建 Prompt<br><br>越来越多 Agent 会通过 API、CLI、MCP 来用软件，自己的产品能不能被 Agent 可靠地用好，值得认真测<br><br>原文：<a href="https://vercel.com/blog/agent-evals" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://vercel.com/blog/agent-evals</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jason Wei任Mercor首席科学家</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-18 08:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">没想到 Jason Wei 已经离开 Meta，去 AI 数据公司 Mercor 当首席科学家<br><br>美国时间 11 月 17 日，Mercor CEO Brendan Foody 宣布，Jason Wei 出任首席科学家，负责组建研究团队，主管数据和评测。Jason Wei 随后发帖确认：在 Meta TBD 实验室待了一年，“训练 AI 模型的公司比以往任何时候都多，数据会决定下一个前沿”。<br><br>Jason Wei 在 Google Brain 时是思维链论文的第一作者，让模型先写推理步骤再给答案，这个做法后来被广泛使用。之后他在 OpenAI 参与了 o1 和深度研究，2025 年 7 月被 Meta 重金挖走。<br><br>他另一个强项是给 AI“出题”。他主导的 SimpleQA 测模型会不会瞎编，BrowseComp 测 AI 能不能翻遍网页找到冷门答案，都成了各家发模型时常用的评测，他还参与了医生打分的 HealthBench。他在博客里写过一条“验证者法则”：一项任务越容易验证，就越容易训练 AI 学会。<br><br>Mercor 做的正是这门生意：平台上有 500 多万名医生、律师、工程师，帮 AI 公司出题、写标准答案、给模型打分。11 月 10 日它刚融了 7.5 亿美元，估值 200 亿美元，一年翻倍。现在不只大实验室，越来越多企业拿开源模型自己训练，都需要这类数据和评测。Mercor 10 月起组建研究团队，LoRA 作者 Edward Hu 已经加入。<br><br>对 Meta 来说有点尴尬。TBD 实验室由 Scale AI 创始人 Alexandr Wang 领导，Meta 2025 年花 143 亿美元买下 Scale 49% 的股份，而 Mercor 是 Scale 的主要对手。TechCrunch 去年报道，TBD 研究员嫌 Scale 数据质量差，更愿意用 Mercor 和 Surge 的。这也是继 9 月 Andrew Tulloch 被报道转投 Anthropic 之后，TBD 又一位知名研究员离开。<br><br>Jason Wei 没说为什么离开 Meta，Meta 暂未回应。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jason Wei <span style="font-size:12px;color:#999999;font-weight:400;">@_jasonwei</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 Meta 的 TBD 实验室度过了出色的一年后，我非常兴奋地加入 Mercor 担任首席科学家。随着越来越多的公司训练 AI 模型，数据将塑造下一个前沿领域。Mercor 非常出色，我期待着与 Brendan、Adarsh 和团队一起构建未来！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">After an amazing year at Meta’s TBD lab, I am very excited to join Mercor as Chief Scientist. Data will shape the next frontier as more companies train AI models than ever before. Mercor is incredible and I look forward to building the future with Brendan, Adarsh, and team!</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code的AI改动验证清单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-18 09:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Code 团队约 90% 的代码由 Claude 来写、来审。Addy Osmani 这篇新文章讲的是，到了这个比例，他们怎么让 Agent 拿出证据证明自己改对了。<br><br>我觉得最值得抄的有两个做法。<br><br>一：是改动碰不到判它的规则。Code Review 读的 REVIEW.md 永远取自主分支，不读 PR 里的版本。新的提交门禁也会先开 observe 模式跑一段，把误拦看清楚了再强制执行。<br><br>二：是一份 39 条的可靠性清单，每条都写明从 diff 里怎么识别、背后是哪次事故。Claude 读完 diff 只查触发到的那 3～10 条，谁都不用把历史事故背下来。<br><br>想同时跑很多个 Claude，前提是验证这一层足够可靠。这篇把这层当成正经系统来做，挺值得做 Agent 工程的朋友细读。<br><br>原文：<a href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex CLI领跑Harness评测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CyanCloud77 · 2026-11-17 15:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">FrontierHarness Eval 的 Harness 测试结束<br>使用模型：GLM-5.3、DeepSeek-V4.1、Muse Spark、Open Kimi-K3<br><br>综合排名如下：<br>1. Codex CLI<br>2. Pi<br>3. OpenCode V2<br>4. Oh My Pi<br>5. ZCode<br><br>一些有意思的数据：<br>DeepSeek Harness Minimal 排名第 10<br>Claude Code 排名第 21<br>Antigraviti CLI 喜提最后一名 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXTxrM6asAAgTOi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

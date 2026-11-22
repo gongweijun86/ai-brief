@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 05:32">
+<title>AI技术雷达 · 10月29日 05:32 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Axiom 将有限单群分类写入 Lean 核验</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Google 研究睡眠清醒循环让 LLM 学新知识</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Agent 上下文工程与记忆管理实践要点</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;MiniMax Code 开源 Agent 技能集</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Axiom 将有限单群分类写入 Lean 核验</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-28 21:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Axiom 官宣，人类最长的数学证明之一，有限单群分类（CFSG）已经整条写进 Lean，并通过机器核验。<br><br>原证明散落在 500 多篇文章，约 15000 页纸里，大约 100 位数学家接力干了三十多年。<br><br>Axiom 这边大约用 24 天指挥 agent 集群，写出约 4300–5000 万行 Lean，过程中修了 5000 多处勘误，其中 600 多处比较实质。<br><br>Lean 是一门用来写数学证明的编程语言，你可以把定义、定理、推理步骤写成代码，它自带一个很小的检查器，会一步步核对是不是按规则推出来的。<br><br>对比一下，2025 年夏天，最大的自动形式化项目大约还只有 3000 行，一年后这个单定理库已经到了千万行级。<br><br>CFSG 第一次有了可复算的完整形式化版本，AI 在人画的任务地图上扛起了大规模搬砖和校对的工作。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Axiom <span style="font-size:12px;color:#999999;font-weight:400;">@axiommathai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">人类历史上最大的数学证明现已通过计算机验证。<br><br>今天，Axiom 宣布完成了有限单群分类（有限单群的分类，被称为&quot;对称性的周期表&quot;）的完整 Lean 自动形式化。<br><br>约 15,000 页，由跨世代的 100 多位数学家共同构建。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The largest math proof in human history is now computer-verified.<br><br>Today, Axiom announces a complete Lean auto-formalization of the Classification of Finite Simple Groups, the &quot;periodic table of symmetry.&quot;<br><br>About 15,000 pages, built by over 100 mathematicians across generations. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVpOm-eaUAAZZVL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 编程 20 条工程实践规则</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-10-28 21:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最简明的AI编程教程</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tw93 <span style="font-size:12px;color:#999999;font-weight:400;">@HiTw93</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">假如把我的 AI Coding 经验沉淀成一些最佳实践规则，可以给到大伙复用，会是怎么样的，于是乎，今天一下午我就在琢磨这个事情，手写反复调整后给到大伙，可以让你和你的 Agent 一起去学习。<br><br>需求<br>1.  从技术实现细节编程转变成许愿式编程，现在模型能力已经住足够强大，你只需要大胆把自己想法说出来，给它提足够高的要求和任务，不要担心 AI 实现不了。<br>2. 多给你的 Agent  讲做这件事情的背景和目标，少替他考虑技术细节，告诉它为什么要做，是给谁用的，做成什么样子你认为是最好的，具体的技术细节让它自己去判断，学会放手。<br>3. 优先用业界最好的模型，用差模型浪费的时候，一来回让你很不高兴的干活，二来也浪费了很多时间。<br>4. 要不要做一个新功能以及加一个新配置、开关的时候，让 Agent 来先问你找你确定，没有人用的功能、开关、文案都不要让他去加，慢慢把这一套你的产品规范让他沉淀起来。<br>5. 你的想法可以很大，但是让 Agent 干活的时候，尽量让他每次拆分成最小的可用功能版本，不要一次写非常多的代码，即使提交，这样出问题了你可以随时撤回。<br><br>规则                                                                                                                                                            <br>6. 让你的 Agent 了解你的说话风格，比如说看看、分析一下这个问题的时候，它只需要去读代码分析问题不要去改代码，你说修复、修改的时候才去动手，每次提交、发布和删除的时候都找你确定。                                                                        <br>7. Agent md、CLAUDE md 里面除去重点的项目型要求外，只写代码里面看不出来的那种规则，以及之前被否决过的方案也可以分流进去。对你而言密钥和 token 不要贴给 Agent，贴了就当已经泄露了，立马去更换一个。<br>8. 对于Agent必须遵守的规则不要完全信 prompt，可能会拦不住，一定要用规则脚本去限制，让它真实跑一遍通过后才算完成了。<br><br>编码<br>9. 开始写代码之前，先让 Agent 讲清楚要改什么地方，会影响到什么功能和效果，这样是为了补充你的上下文，方便后面更好判断决策做什么。<br>10. 一定要让 Agent 基于项目补充一个能够让自己验证各种结果的脚本，每次特定的时候需要去跑一下验证效果，完成功能后需要检查，让他输出结果给你看，并基于此逐步沉淀你的项目 Agent 测试功能集。<br>11. 假如有多个 Agent 同时干活的时候，让他们各自用一份独立的 worktree 代码目录，同时提交的时候只提交自己改的代码，不要碰他人的代码，等到各自改完合到一起，再完整跑一遍测试。<br>                                                                                                                                                                                                                                                                                                          <br>排查<br>12. 修 Bug 的时候先找到原因再去动手，假如两次都没有修好，就去加一些日志看真实的数据以及运行效果，不要盲目去猜问题在哪儿。<br>13. 假如尝试修复了3次还不对，直接清空上下文重新写清楚你的问题、诉求，以及尝试过的解法让 Agent 重新开始。                                                        <br><br>审查                                                                                                                                                     <br>14. 让写代码的 Agent 和 Review 审查代码的 Agent 分开，保持解耦，这样一方不会被另一方带偏。<br>15. Review 代码的时候最多让 Agent 跑 3轮，防止跑着停不下来，第二轮开始只看新改动的地方，不要再把之前 Review 的再看一遍。                                                                                                                   <br>16. 对于你和 Agent 判断危险的改动，越危险让他查得越深，特别对于删除、付费、发布这种单向门改动你都需要自己去看一遍，点一下，看实际效果。                                                                                                                                                                           <br><br>发布<br>17. 每次提交的时候，让Agent 写清楚做了什么，怎么去验证这个改动，除了问题怎么来回滚，用于给到后面开发过程中 git 记录本身就是 Agent 的一个非常好的上下文。<br>18. 需要对外的功能，可以先给自己用，或者给一批愿意尝鲜的用户使用，不要一上来就全量，可以在你的软件里面假如 beta 更新的开关，防止全量有问题，也是对用户负责。<br>18. 先给自己和愿意尝鲜的人用，没问题再发给所有人。                                                                                                              <br><br>复盘<br>19.  Agent 需要对每一个线上 Bug 和用户反馈的问题都留一个测试案例，每次上线前都来跑一遍，防止继续踩坑，包括你换模型的时候也可以把这些旧问题全部都跑一遍，看看模型是否还行。<br>20. 修复问题的时候，让 Agent 学会举一反三，把同类的问题一起修复掉。优化功能的功能，完善视觉的时候也是一样，防止只改一个地方，忘记了其他的地方。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVtKM1rboAA_Ztw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 研究睡眠清醒循环让 LLM 学新知识</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-10-28 23:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">小路精读了 Google Research 今天发的这篇博客，值得讲一讲。它想解决的问题：模型部署之后就不会再长新知识了，怎么办？<br><br>整篇的主线，用一条链表示：<br><br>清醒（Wake）-&gt;睡眠（Sleep）-&gt;巩固（Consolidation）+做梦（Dreaming）-&gt;写进参数（短期记忆变成长期记忆）<br><br>现在的 LLM 靠预训练和上下文学习（ICL）。部署之后，知识停在截止日期。想更新参数，就会撞上灾难性遗忘，学了新的，旧的变差。只靠 ICL 也不行，上下文窗口一结束，学到的东西就没了。<br><br>作者（Ali Behrouz 和 Vahab Mirrokni）的思路是，借鉴人脑休息时整理记忆的方式，让模型有一个周期性的生命循环：<br><br>清醒阶段。模型正常接收和处理输入，临时信息放在快速的短期记忆里。<br><br>睡眠阶段。模型暂停接收新输入，把算力用在记忆巩固和自我提升上。<br><br>睡眠阶段分两步。<br><br>记忆巩固。对应人脑慢波睡眠里的抽象与蒸馏。这里有三个动作。第一，参数扩展：睡眠时解锁预留的 MoE 低秩专家，放进更稳定、更新频率更低的记忆块里，新知识有地方放，不去动旧参数。第二，知识播种：把高频层（比如上下文记忆）里脆弱的短期记忆，蒸馏进新扩展的长期参数，用的是 GKD 加上基于 RL 的模仿学习。第三，突触修剪：巩固完成后，高频的临时参数重置，给下一轮清醒腾出容量。<br><br>做梦。对应 REM 睡眠。模型自己生成训练样本（&quot;梦&quot;），生成时 MoE 路由器会随机激活非标准专家，逼模型把不相干的领域混在一起。然后用基于梯度的数据选择，挑出最能提升能力的样本，再做监督微调，并检查下游任务有没有变好。<br><br>&quot;睡眠&quot;、&quot;做梦&quot;这些词只是借用神经科学的说法，整个框架仍然跑在固定的模型架构和人类定义的训练规则之内。也就是说，这是一套自动化的后训练循环。<br><br>从理论解释： 记忆巩固被看作一个低秩压缩问题：模型不需要把短期痕迹的每个细节都抄进参数，只挑出一小组最能保住行为和语义的方向。做梦上，随机专家让梯度方向更丰富，梯度过滤再把有用的信号放大，优化起来更平衡。<br><br>结果<br><br>翻译方面，在 Manchu 和 Kalamang 这两种没见过的语言上，多阶段评测里性能几乎不差，ICL、Cartridges、SFT 都出现了严重遗忘。<br><br>长上下文。在 BABILong 上近乎完美地扩展到 10M tokens，超过 GPT-4 和 Titans，做法是把长上下文直接压进参数记忆。<br><br>事实知识。SQuAD 单任务 48.9%，持续预训练（CPT）46.2%，高于基础模型、SFT 和 SEAL。<br><br>数学推理。AIME 24/25 和 HMMT 25 分别是 79.2%、69.0%、46.1%，高于 SFT、GRPO 和 OPSD。<br><br>小路自己的看法：这个工作它把&quot;记住&quot;和&quot;变强&quot;放进同一个循环里。一般的持续学习只管记新东西，这里的做梦阶段同时在练推理。另外架构用到了 Hope，就是 Nested Learning 那篇论文里的架构，所谓&quot;不同更新频率的记忆层&quot;在这里有了落地的用法。<br><br>简单总结一下就是：清醒时用高频的短期记忆应付输入，睡眠时先把值得留的压缩进低频的长期参数，再用做梦生成并筛选样本来提升推理，最后清掉临时参数，开始下一轮。<br><br>博客原文：<br><a href="https://goo.gle/4iICkyD" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/4iICkyD</a><br>论文：<br><a href="https://arxiv.org/abs/2606.03979" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2606.03979</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>红米 K90 Pro Max 上跑通 iOS</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jlxc2001 · 2026-10-28 23:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">成功在红米 K90 Pro Max 上运行 iOS，并且完成了 GPU 驱动和 120 Hz 高刷，在我去上海参加 miku 演唱会之前，我看看能不能搞定 WiFi 和屏幕亮度，以及 ipa 侧载 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVukDu6aYAASOBY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVukEc3bQAAxkVu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVukFQoasAADKFn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVukGEma8AAIITz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 上下文工程与记忆管理实践要点</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jerry_fsy · 2026-10-28 20:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从0搭建一个Agent（2）：Context Engineering + Memory + RAG<br><br>上一篇讲完了Agent Loop和Tool System。Loop能跑起来之后，下一个坑通常不是工具不够，而是上下文越塞越乱。<br>很多人一上来就接Memory，上RAG，觉得“记得越多，检索越多，Agent就越聪明”。<br><br>说实话，我自己搭的时候发现不是这样。<br>Context Engineering要解决的，不是多给信息，而是在有限窗口里，决定这一步该看见什么，不该看见什么。<br><br>下面是在这两部分需要注意的点：<br>第一，对于session，为什么很多选择了JSONL？<br>JSONL这种格式有它自己的优势所在：<br>1.只需要在文件末尾追加新的内容。<br>天然适合防住断电等突发情况，即使遇到断电，也只是损失了当前这条，之前的所有信息仍然保留。<br>2.方便调试。<br>直接打开jsonl文件即可查看里面的内容，不需要复杂的工具。<br>3.不需要依赖。<br>整体使用没有什么依赖项，不需要安装数据库等等。<br><br>第二，使用Prompt Pipeline来组建Pormpt。<br>对于一个完整的prompt，按照是否变化可以分成两组，再按照模块化可以分成多种，最后按照模块化的prompt按照条件链式组装，并将不变的prompt放前面，会变的prompt放后面从而最大化KV Cache命中率。<br><br>第三，常见的两种压缩方式：Compaction和Summarization。<br>Compaction：不修改历史对话的结构，只缩小内容。<br>Summarization：用LLM生成整段历史对话的摘要。<br><br>第四，需要记忆的内容。<br>参考Claude Code，常存于记忆中的内容包括：<br>1.用户画像；<br>2.用户的反馈和纠正；<br>3.项目动态；<br>4.外部资源。<br><br>第五，需要防范的记忆变坏的情况。<br>1.把LLM推测的内容存了下来；<br>2.只知道往记忆中存储，却不知道如何剔除噪音；<br>3.代码已经更新，但记忆还是旧的；<br>4.新存的记忆和旧的记忆存在冲突。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MiniMax Code 开源 Agent 技能集</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-28 23:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">MiniMax Code 团队刚刚开源了内部正在使用的 Agent 工作流和技能集合。<br><br>包括 15 个核心的工程技能，按日常研发流程可以分为 5 大场景，分别是规划与拆分，上下文与工具，长会话与长命令，代码审查，实验与热修复。<br><br>整个项目采用了通用的 Skill.md 格式与插件目录规范，适配主流的 Coding Agent，支持一键安装和使用。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">RonnyHe <span style="font-size:12px;color:#999999;font-weight:400;">@Ronny_MiniMax</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们刚刚开源了 MCode Stack：MiniMax Code 团队每天实际用来构建 MiniMax Code 的工作流程和技能。<br><br><a href="https://github.com/MiniMax-AI/mcode-stack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/MiniMax-AI/mcode-stack</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We just open-sourced MCode Stack: the actual workflows and skills the MiniMax Code team uses every day to build MiniMax Code. <br><br><a href="https://github.com/MiniMax-AI/mcode-stack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/MiniMax-AI/mcode-stack</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

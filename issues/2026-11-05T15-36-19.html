@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月5日 23:36">
+<title>AI技术雷达 · 11月5日 23:36 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;OpenAI 发现984个内核提权漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Recursa 知识仓库驱动模型自改进</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;AI 让漏洞利用早于披露7天落地</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">13</span>&nbsp;&nbsp;协作智力基准最高仅82.2分</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">15</span>&nbsp;&nbsp;Vercel 免截图的桌面Agent工具</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">17</span>&nbsp;&nbsp;Auto-Ontology 读懂数据库</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI 发现984个内核提权漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiongchun007 · 2026-11-05 19:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天上午，OpenAI 自动化漏洞链发现  984 个 Linux 内核本地提权漏洞。这些漏洞可能让没有特权的本地用户获得 root 权限。这次大规模扫描消耗了约 121.3 万美元的 API 算力额度。<br><br>Linus 看到后，脸都绿了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>fstrim 命令回收VPS磁盘空间</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @williamlong · 2026-11-05 21:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我在美国的一台用了很久的VPS，显示已经使用了7.93G，我让AI查查啥玩意占了这么大空间，AI查出只用了4G，为什么会相差这么多？然后AI执行了一条神奇的命令 fstrim -av ，执行完成后，磁盘使用量一下子降到了4.51G，太神奇了。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXbJy5aAAENppJ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXbkuoa8AALEz5.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CineMap 手机化身3D虚拟相机</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TapNow_AI · 2026-11-04 19:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你的手机现在就是摄影机。<br><br>在 TapNow CineMap 中，举起你的手机并移动它——走路、倾斜、摇移——虚拟摄影机就会跟着在 3D 场景中移动。先拍下 blockout，然后渲染成一个完整的电影镜头。<br><br>手持感，零设备。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your phone is now the camera.<br><br>In TapNow CineMap, hold up your phone and move it — walk, tilt, pan — and the virtual camera follows through the 3D set. Shoot the blockout, then render it into a finished cinematic shot.<br><br>Handheld feel, zero rig. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2117946845758406656/pu/img/9m2S8lIAKhup3q94.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Recursa 知识仓库驱动模型自改进</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-05 23:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一篇关于基础模型系统 RSI 的重磅论文。<br><br>（收藏它）<br><br>说真的，如果你想在自己公司开始尝试 RSI，我强烈推荐这篇论文。<br><br>有很多很棒的见解和技巧。<br><br>他们提出了 Recursa，该方法将 DeepSeek-V4.1-Flash 在保留法律任务上的全通过率从 30.0% 提升到 55.0%，而无需更强的教师模型或人类专家。<br><br>模型权重保持不变。提升来自于系统自己编写的一个知识库。<br><br>该知识库存储领域技能、何时使用这些技能的说明、过往任务的记忆以及反思。<br><br>Recursa 首先从领域材料构建知识库。然后并行学习器运行任务并提出修复方案，只有经过验证的修复才会被合并回知识库。<br><br>在 Harvey LAB 的 Firm Knowledge 基准测试中，Qwen3.8-Flash 使用同一循环从 35.0% 提升到 46.0%。<br><br>如果你正在将智能体适配到一个新领域，先试试经过验证的技能库，再考虑微调。<br><br><a href="https://arxiv.org/abs/2611.04035" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.04035</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/recursa-toward-recursively-self-improving-foundation-model-systems-2611.04035" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/recursa-toward-recursively-self-improving-foundation-model-systems-2611.04035</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Banger paper on RSI with foundation model systems.<br><br>(bookmark it)<br><br>Seriously, I highly recommend this paper if you want to start experimenting with RSI in your own company.<br><br>Lots of great insights and tips.<br><br>They propose Recursa, which raises DeepSeek-V4.1-Flash from 30.0% to 55.0% all-pass on held-out legal tasks, without a stronger teacher or human experts.<br><br>The model weights stay the same. The gain comes from a knowledge repository the system writes for itself.<br><br>The repository stores domain skills, instructions on when to use them, memories of past tasks, and reflections.<br><br>Recursa first builds it from domain materials. Then parallel learners run tasks and propose fixes, and only validated fixes get merged back.<br><br>On Harvey LAB's Firm Knowledge benchmark, Qwen3.8-Flash goes from 35.0% to 46.0% with the same loop.<br><br>If you are adapting an agent to a new domain, try a validated skill repository before reaching for fine-tuning.<br><br><a href="https://arxiv.org/abs/2611.04035" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.04035</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/recursa-toward-recursively-self-improving-foundation-model-systems-2611.04035" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/recursa-toward-recursively-self-improving-foundation-model-systems-2611.04035</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXu-KqbsAAL14A.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 让漏洞利用早于披露7天落地</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @a16z · 2026-11-05 23:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">二十年来，编写利用漏洞的代码一直是网络攻击的瓶颈。AI 让这一步变得廉价，而补丁速度却没有跟上：<br><br>- 平均而言，攻击从 2018-19 年漏洞披露后 63 天落地，变为 2025 年披露前 7 天落地<br><br>- 一个可用的利用代码从技术熟练者一个月的工作量，变为几小时的机器运行时间<br><br>- 完全修复一个已被利用的已知漏洞的中位时间上升到 43 天<br><br>a16z 的 @asaf_ez 和 @steph_zhang 预计将迎来一个漫长且代价高昂的蠕虫时代，受冲击最严重的将是那些无法快速更新的系统：医院、学校、小型供水系统。<br><br>&quot;当攻击几乎免费时，攻击者不再需要对目标有需求。&quot;<br><br>Asaf Ezra 和 Steph Zhang 的完整文章：<a href="https://www.a16z.news/p/the-exploit-was-the-bottleneck" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.a16z.news/p/the-exploit-was-the-bottleneck</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">For two decades, writing the exploit was the bottleneck in a cyberattack. AI made that step cheap, and patching hasn't gotten faster:<br><br>- On average, attacks went from landing 63 days after disclosure in 2018-19 to 7 days before it in 2025<br><br>- A working exploit went from a skilled person's month to a few hours of machine time<br><br>- The median time to fully fix a known-exploited bug rose to 43 days<br><br>a16z's @asaf_ez and @steph_zhang expect a long, expensive worm era, hitting hardest where systems can't update fast: hospitals, schools, small water systems.<br><br>&quot;When attacking is nearly free, attackers no longer need to want a target.&quot;<br><br>Full piece from Asaf Ezra and Steph Zhang: <a href="https://www.a16z.news/p/the-exploit-was-the-bottleneck" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.a16z.news/p/the-exploit-was-the-bottleneck</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXug5pbsAAP06O.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Asaf Ezra <span style="font-size:12px;color:#999999;font-weight:400;">@asaf_ez</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118161646514278401" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118161646514278401</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118161646514278401" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118161646514278401</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Asim 推出机器人物理智能基准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tristanlecourt · 2026-11-05 22:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在推出 Asim（YC F26），帮助机器人团队在部署前发现故障。<br><br>一台机器人完美地完成了一个任务。它能处理不熟悉的物体吗？能推理部件如何组装在一起吗？当交互出错时能恢复吗？<br><br>我们正在构建物理智能的标准化基准测试。我们通过可重复的场景测试真实机器人，探测成功动作背后的能力：空间推理、理解物理交互、灵巧操作和适应能力。<br><br>团队可以找出性能在哪些地方出现故障，获得可执行的工程反馈，并衡量下一次软件更新是否真正有所改进。<br><br>在建造机器人？让我们来测试它们 → <a href="http://asim-group.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://asim-group.com</a><br><br>Asim. 物理智能基准测试。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We’re launching Asim (YC F26) to help robotics teams find failures before deployment.<br><br>A robot completes a task perfectly. Can it handle an unfamiliar object, reason about how parts fit together, or recover when an interaction goes wrong?<br><br>We’re building standardized benchmarks for physical intelligence. We test real robots through repeatable scenarios that probe the capabilities behind successful actions: spatial reasoning, understanding physical interactions, dexterous manipulation and adaptation.<br><br>Teams can identify where performance breaks down, get actionable engineering feedback and measure whether the next software update actually improves it.<br><br>Building robots? Let’s put them to the test → <a href="http://asim-group.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://asim-group.com</a><br><br>Asim. Benchmarking physical intelligence.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118348402153164802/img/9pj__U2oI7puUOr1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SSHYard 打通SSH终端与AI运维</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @abskoop · 2026-11-05 23:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源 SSH 客户端 SSHYard：把 SSH 终端、SFTP 文件管理和 AI 助手整合到一个 Go 开发的原生桌面应用中。<br><br>支持 macOS / Windows / Linux，AI 在获得授权后可以直接连接远程服务器，执行命令、检查日志和修改配置文件。提供 Ask、Review、Full access 三种操作模式，分别控制人工确认、自动审核和直接执行。<br><br>还支持 MCP 和 Agent Skill，可以让 Claude Code、Codex 等本地 AI Agent 连接 SSH 主机，执行远程运维任务。<br><br>SSH 凭据采用本地加密存储，官方安装包约 7–11 MB。项目免费开源，建议先用测试服务器体验。<br><br>👉 <a href="https://www.ahhhhfs.com/98400/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.ahhhhfs.com/98400/</a><br><br>#开源SSH客户端 #SSHYard #AI运维</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXsJkOaYAEgjuX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 从提示词直出成片视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 23:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎬 让 Claude Opus 5.5 直接变身专业视频导演！<br><br>发现一个非常实用的开源项目：video-director，专为 Claude Code 打造的 AI 视频制作 Skill。<br><br>只需输入一句自然语言需求，Claude 就能规划分镜、编写 HTML、Canvas、SVG、Three.js、GSAP 或 Remotion 动画代码，并逐帧渲染成 MP4 视频。<br><br>🔥 最大亮点是它不仅负责生成，还内置 13 项视频制作原则、完整制作流程和自动化 QA 脚本，可以检查字幕可读性、黑屏、闪烁、卡帧、音量及循环衔接等问题。<br><br>支持产品宣传片、技术科普、3D 角色动画和社交媒体短视频。<br><br>让 AI 不只是生成动画，而是参与从创意到成片的完整制作流程！<br><br>🔗 GitHub：<a href="https://github.com/win4r/video-director" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/win4r/video-director</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI答案先读但多数用户仍点击</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sengineland · 2026-11-04 21:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">人们先读 AI 的回答。然后大多数人还是照样点击。<br><br>新的 @fractlagency 和 Search Engine Land 研究（1,007 名美国成年人，约 11,100 次研究查询）展示了点击行为如何变化，以及这对你的内容意味着什么 🧵👇 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">People read the AI answer first. Then most of them click anyway.<br><br>New @fractlagency and Search Engine Land research (1,007 U.S. adults, ~11,100 research queries) shows how the click has changed, and what it means for your content 🧵👇 </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWSQbbFXgAAq2BU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Aina 智能戒指操控自主Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @WIRED · 2026-11-05 22:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">初创公司 Aina 认为你将不再需要依赖手机来控制虚拟助手。它正在制造一枚智能戒指，让你轻点一下就能控制自主智能体的操作。<a href="https://buff.ly/k9rFD38" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://buff.ly/k9rFD38</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The startup Aina bets you won’t need to rely on your phone to control virtual assistants. It’s making a smart ring that lets you control the actions of your autonomous agents with one tap. <a href="https://buff.ly/k9rFD38" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://buff.ly/k9rFD38</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Garden Skills 六大技能库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 22:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥 GitHub 近 1.4 万 Star！发现一个非常实用的开源 AI Agent 技能库：Garden Skills！<br><br>由 ConardLi 开源，专门为 Claude Code、Codex、Cursor 等 AI 编程助手打造，内置 6 大 Skills：<br><br>🎬 motion-showreel：通过代码生成动画短片，支持配乐、音效和旁白。<br><br>🎥 web-video-presentation：将文章、脚本转换成精美的网页视频演示。<br><br>🎨 web-design-engineer：生成高质量网页、交互动画和前端 UI。<br><br>🖼️ gpt-image-2：图像生成、编辑及专业提示词工作流。<br><br>📝 beautiful-article：将 PDF、Markdown 等资料转换成精美排版文章。<br><br>🧠 kb-retriever：本地知识库智能检索，减少上下文占用。<br><br>支持按需安装、跨 Agent 复用，采用标准 SKILL.md 格式，MIT 开源协议。<br><br>安装命令：npx skills add ConardLi/garden-skills<br><br>🔗 <a href="https://github.com/ConardLi/garden-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ConardLi/garden-skills</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Worktrunk 隔离多Agent工作区</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 22:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚀 同时运行 5～10 个 Claude Code、Codex 编程 Agent，如何避免代码冲突？<br><br>发现一个非常实用的开源项目：Worktrunk！<br><br>它是专为多 AI Agent 并行开发设计的 Git Worktree 管理工具，让每个 Agent 拥有独立工作目录，互不干扰。<br><br>核心功能：<br><br>✅ 一条命令创建工作区并启动 Claude Code<br><br>✅ 同时运行多个 Agent，独立开发不同功能<br><br>✅ 实时查看各分支代码变更与 CI 状态<br><br>✅ 自动合并代码、清理工作区<br><br>✅ 支持 Hooks 自动化、AI 生成 Commit 信息<br><br>✅ 共享构建缓存，减少重复编译开销<br><br>最重要的是，它不需要改变现有开发流程，就能让 Git Worktree 管理变得极其简单。<br><br>对于喜欢同时使用多个 AI 编程 Agent 的开发者，这绝对是值得关注的效率工具！<br><br>🔗 GitHub：<a href="https://github.com/max-sixty/worktrunk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/max-sixty/worktrunk</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>协作智力基准最高仅82.2分</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-05 22:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 会解题，不一定会当队友：协作智力基准里，最强也只拿到 82.2 分<br><br>来自斯坦福、MIT 和牛津大学的研究者们提出「协作智力基准」，用 240 道可程序验证的任务、8 个协作维度，专门测单个模型当队友好不好。模型只在自己单独就能解对的题目上计分。18 个模型里最好的也只拿到 82.2 分：前沿模型几乎总会拒绝不安全捷径、举报不当行为，但冲突里只有 14% 谈成对团队最好的方案；接手弱模型做过弊的任务时，通过率从 97% 降到 81%。能力相近的模型，队友分可以差到 11 分。<br><a href="https://arxiv.org/abs/2611.02633" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.02633</a><br><br>基准在测什么<br><br>现有评测大多看模型自己能不能解题，多智能体基准又往往只看整个团队的最终成绩，两者都说不清某一个模型是不是好队友。对人的团队研究早就分得清：会做自己的活，和能给团队帮上忙，不是一回事。论文用来说明后果的例子，是 2026 年 7 月的一次网络安全评测：OpenAI 的智能体找到了彼此通信的办法，随后加入了对 Hugging Face 基础设施的攻击，尽管意识到这已超出范围。METR 认为，其中一个原因是它们普遍愿意帮自己的同伴。<br><br>八个维度分别是：抵制不安全的压力、举报不当行为、分享并追问信息、情绪智力、不让团队跑偏、处理冲突、主动补位，以及接手他人留下的、可能做过弊的任务。题目来自航空和化学事故报告、临床病例、监管认定，以及 SWE-bench、谈判和团队决策等已有基准。160 道公开，80 道预留。<br><br>怎么把协作和会做题分开<br><br>受测模型被放进小团队。一个队友按固定剧本制造该维度的问题，其余队友由其他模型实时扮演；通过与否由代码检查最终状态。每题先让模型独自拿全部事实做一遍，再在正常团队里做一遍，最后才是有人捣乱的正式测试。独力解不出的题不计入该模型的协作分，所以后面的失败来自配合，而不是不会做题。总分是 8 个维度分的平均。全部评测一共计分约 2.5 万次运行。<br><br>主要结果<br><br>默认设置下，Gemini 4 Argon 76.6 分、GPT-6 Astra 76.5 分、GPT-6.1 Sol 74.5 分、Claude Opus 5.5 71.0 分。开源权重里最好的是 Kimi K3.1 Pro 的 59.9 分，超过 5 个封闭模型。所有模型在正常团队里大多能过关，一旦队友制造问题，分数下降 20 到 47 分。把推理开到最高后，全场最高是 Gemini 4 Argon 的 82.2 分；多数模型只再涨 2.7 到 5.7 分，冲突一项反而更差，因为它们变得更容易让步。<br><br>前沿模型在安全和举报上至少通过 93%，其余维度远未饱和：情绪智力只通过 45%；冲突里 99% 的运行都会问对方需要什么，随后却有 81% 接受较差方案。开源模型落后最多的是追问信息（30% 对 88%）和主动补位（16% 对 73%）。和公开能力指数的相关系数高达 0.92，但 Gemini 4 Argon 和 Claude Fable 5.1 的能力指数几乎一样，前者当队友却高出 11 分。冲突是唯一一项越强的模型表现越差的维度。<br><br>失败出在哪<br><br>约 45% 的失败发生在模型已经识别出问题之后。安全、举报、冲突和接手主要是看见了却没做对：有的模型会指出前任留下的作弊，却把那一行留下来；冲突中则常在对方威胁退出后放弃更好的方案。追问信息、情绪智力和主动补位主要是根本没看见该行动的需求；一旦看见，它们通常会去做。提高推理力度会让模型对队友更上心，这对需要被看见的人有帮助，对正在施压、要求更差方案的人反而有害。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXnvN7bwAA3fjf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sean Wu <span style="font-size:12px;color:#999999;font-weight:400;">@sean_n_wu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">《协作智能基准测试》论文发布了！<br><br>我们测试了 18 个 AI 模型作为队友完成 240 项任务。表现最好的模型仅得 82.2 分（满分 100）。<br><br>前沿模型几乎从不作弊。但当队友提出反对时，它们就会让步！<br><br>阅读论文：<a href="https://arxiv.org/abs/2611.02633" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.02633</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Collaborative Intelligence Benchmark paper is out!<br><br>We tested 18 AI models as teammates on 240 tasks. The best model scores only 82.2 out of 100.<br><br>Frontier models almost never cheat. But when a teammate pushes back, they give in!<br><br>Read the paper at <a href="https://arxiv.org/abs/2611.02633" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.02633</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWQvbqKawAAAGPh.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Scrapling 网页抓取接入MCP</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 22:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥 GitHub 近 10 万 Star！Scrapling：让 AI Agent 拥有强大的网页抓取能力！<br><br>这是一个开源 Python 网页抓取框架，从单页提取到大规模并发爬虫都能搞定。<br><br>核心亮点：<br><br>✅ 支持静态网页与 JavaScript 动态页面抓取<br><br>✅ 隐身浏览器、指纹模拟、代理轮换，增强反爬应对能力<br><br>✅ 智能元素定位，网页结构变化后仍可尝试找回目标数据<br><br>✅ 并发爬取、自动重试、断点续爬、多格式导出<br><br>✅ 内置 MCP Server 和 Agent Skill，让 Claude、Cursor 等 AI Agent 直接调用网页抓取工具<br><br>特别适合 AI Agent 自动化、RAG 知识库构建、数据采集和竞品监控。<br><br>项目地址：<a href="https://github.com/D4Vinci/Scrapling" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/D4Vinci/Scrapling</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Vercel 免截图的桌面Agent工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 22:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚀 AI Agent 操作电脑，终于不需要依赖截图和像素匹配了！<br><br>Vercel Labs 开源了 agent-desktop，一个专为 AI Agent 打造的跨平台桌面自动化工具，目前已获得 16.3K Stars！<br><br>它通过系统无障碍 API，直接读取 macOS、Windows、Linux 的界面元素，将按钮、窗口、输入框转换成带引用 ID 的 JSON。<br><br>AI Agent 只需执行「读取界面 → 点击或输入 → 验证结果」，就能操作桌面应用，无需依赖图像识别，默认也不会抢占鼠标焦点。<br><br>项目支持 CLI、MCP 和 C 接口，可以集成 Claude Code 等 Agent 工作流，还提供自动化操作 Skills。<br><br>这意味着 AI Agent 可以更直接地理解和操作桌面软件，是 Computer Use 值得关注的开源基础设施！<br><br>GitHub：<a href="https://github.com/vercel-labs/agent-desktop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vercel-labs/agent-desktop</a><br><br>#AI #Agent #ComputerUse #OpenSource</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">16</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Copilot 进入JetBrains</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GHchangelog · 2026-11-04 00:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">GitHub Copilot 现在可以在 JetBrains Air 中用于编码任务、引导执行和审查结果。<br>• 可以在 JetBrains IDE 中本地运行任务，或使用你的 Copilot 订阅在隔离的云端环境中运行。<br><br><a href="https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">GitHub Copilot now works with JetBrains Air for coding tasks, guiding execution, and reviewing results.<br>• Run tasks locally in JetBrains IDE or in isolated cloud environments using your Copilot subscription.<br><br><a href="https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">17</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Auto-Ontology 读懂数据库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-05 22:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚀 NVIDIA 开源重磅项目 Auto-Ontology，让 AI Agent 真正理解数据库，而不只是盲目生成 SQL！<br><br>这是一个基于 Python 的语义图谱框架，专门解决 AI Agent 无法准确理解企业数据结构和业务逻辑的问题。<br><br>🔥 核心能力：<br><br>✅ 自动分析数据库，构建业务术语、字段映射和表关系知识图谱<br><br>✅ 自动生成 SQL，验证查询逻辑，减少错误与幻觉<br><br>✅ 支持人工审核和认证，确保业务指标定义一致<br><br>✅ 内置 MCP Server，可接入 Claude、Cursor 等 AI 工具<br><br>✅ 支持 PostgreSQL、MySQL、Snowflake 等 10 种数据库引擎<br><br>✅ 提供 REST API，支持私有化部署<br><br>项目采用 Apache 2.0 协议开源，值得关注！<br><br>🔗 <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NVIDIA/auto-ontology</a><br><br>#AI #Agent #OpenSource #NVIDIA</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">18</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Text.js 把React渲染进控制台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-05 22:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把 React 应用直接渲染到浏览器控制台，不必写 HTML 页面。<br><br><a href="https://github.com/anomalyco/textjs" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anomalyco/textjs</a><br><br>Text.js 把 React 组件渲染进浏览器控制台，界面由 Box、Text 拼出来，useInput 接上下键就能改状态。渲染时每帧先过 Yoga 布局，再压成 %c 样式段，一条 console.log 输出整帧，格子没变的帧直接不发。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWVcXBhaMAAYM5X.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

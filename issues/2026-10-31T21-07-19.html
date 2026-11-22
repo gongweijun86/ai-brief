@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月1日 05:06">
+<title>AI技术雷达 · 11月1日 05:06 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Binance 被盗暴露实时结算安全短板</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;GitHub 榜单 Agent 搭配工具集中上榜</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;AI Skill 死路清单比标准答案更有效</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;三款国产OCR模型横评与选型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Xray-core 因 MPTCP 漏洞紧急更新</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 用沙盒复现防 Agent 腐化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Karadokuy · 2026-10-31 18:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">昨晚看了 @poteto 的推文，她有一句话说得很好：代码不再一滴一滴地来，而是一条连续奔涌的河。哀悼写代码的时代早就过去了，现在要做的是设计系统和护栏，让 Agent 在里面长好。<br><br>具体到我自己的实践，认知是这样的：<br><br>1. 先把测试条件给 AI 补齐。Agent 只能在它现有的条件下往前推，很多时候没做好，是我们没把条件给够。今晚 Switch 2 23.01 被破解，工程师做的第一件事也是把物理和软件环境全部搭好。做软件也一样，所有端、所有用户场景的设备和测试（E2E、功能测试）都要先配齐。<br><br>2. 建一套防腐化的上下文系统。AI 写代码天然是熵增的，便宜的模型尤其抓不住意图，容易走弯路、走进死胡同。要有一个往前盯着的监控，再加上 MCP、skill、hook，把上下文管住。这样仓库被 AI 提交成百上千次 PR 之后，还能稳、不出错、不膨胀。<br><br>非常推荐我自己一直在用的开源项目，@yetone 的 magpie。它是怎么做成一套自我递归、自我成长的系统的？也是这个思路：把条件给够，护栏建好，剩下的交给用户。每次修改之前，他都先让 AI 在沙盒里用真实账号把问题详细复现一遍，测试条件齐了才动手。所以它现在已经跑了 2000 多个版本号，每天都在飞快迭代，整套系统却越跑越稳，没有出现 Agent 腐化。<br><br><a href="https://github.com/yetone/magpie" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yetone/magpie</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>腾讯 AI Agent 手册拆解研发运维全链路</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-31 21:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">周末继续完整学习「2026 AI Agent 企业解决方案及落地实践手册」 <br><br>这份腾讯、腾讯云和 WorkBuddy 联合发布的 78 页手册，来到第二章「内部提效 - 企业研发运维全链路提效」。<br><br>这一章用六套方案加八个标杆案例，把内部场景铺成一条链：办公数字员工 → AI Coding → 游戏研发与运营 → SRE 故障定位 → 数据库 Agent。用 WorkBuddy / CodeBuddy / DataBuddy / CloudQ / DatabaseClaw 把「判断—行动—回写」和专家经验 Skill 化，串进办公、研发、游戏与运维；标杆数字集中在淘米、游族、游卡、畅游等。<br><br>全章地图<br>2.1 WorkBuddy：第三代办公；数字员工当业务大脑，接 MCP 改真实系统状态。<br>2.2 CodeBuddy：AI Coding 从辅助 → 驱动 → 原生三阶段，SPEC 规约驱动流水线。<br>2.3 游戏研发：策划/Web 原型用 WorkBuddy，联调与上线用 CodeBuddy（SDD）。<br>2.4 游戏精细化运营：WeData / Oceanus / TCHouse-D / DLC + DataBuddy 三 Agent（用数、建数、治数）。<br>2.5 SRE 故障定位：WorkBuddy × CloudQ，USE + PMC 双引擎、五层白盒、远程闭环（诊断只读）。<br>2.6 DatabaseClaw：生产可控 DBA Agent（Safety / Skill / Memory，L1–L4）。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9gtvGaoAExLnO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9qM9-awAAGSJQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9qRHNakAArJu5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">腾讯、腾讯云和 WorkBuddy 联合发布了一份 78 页的「2026 AI Agent 企业解决方案及落地实践手册」<br><br>整份材料用同一条产品叙事串起来：先用 WorkBuddy 把个人助手推成进业务系统的「数字员工」，再用 ClawPro、Agent Runtime、TokenHub 做开通、隔离、模型与治理；其余章节是这条底座在研发运维、SaaS、内容、社交、游戏、客服上的行业铺开。<br><br>总框架：三阶段 × 三代办公<br>· 能对话 → 能干活 → 能上岗：问答工具（文中举例 ChatGPT / DeepSeek）→ 嵌工作流、调工具的办公助手（WorkBuddy）→ 进入业务系统、对结果负责、按 KPI 交付的数字员工（Agent 工作台 + 业务系统集成）。<br>· 三代办公：人操作软件（Office）→ 人在协同平台里催办填报 → 人给目标、设边界、做判断，数字员工理解上下文、调工具、持续执行并交付完成的工作。<br>· 「超级个人 → 超级团队」：个人侧 LightClaw / QClaw 等，企业侧以 WorkBuddy 为入口，把人、Skill、连接器和管控面收成可复制的执行力。文中还区分狭义办公（个人生产力入口）与广义办公（真正改 CRM / ERP / MES 里的业务状态）。<br><br>手册中也对 WorkBuddy、CodeBuddy、ClawPro、ADP、SkillHub 等在企业中的定位做了详细解释和区分。<br><br>企业内部提效（方案册第 2 块）<br>· WorkBuddy：用「业务大脑」拼全局判断；举例经鼎捷 MCP 操作真实 CRM/ERP/MES，强调联调验的是改状态而不只是能回答。上岗配置、财务/销售/交期等「以前 → 用了」对照页很多。安全侧自称工信部首批、信通院云端智能体基线首批、个保影响评估「二星级+」等。<br>· CodeBuddy：从 AI 辅助到 AI 原生；规约（SPEC）显性化；需求—编码—QA—交付链路由 Agent 打底、人审验收。<br>· 游戏研发 / 运营：策划与原型走 WorkBuddy，研发联调走 CodeBuddy；运营侧 DataBuddy 等数据 Agent。文称策划周期、Demo 周期明显缩短（具体倍数为自述）。<br>· SRE / 数据库：WorkBuddy × CloudQ 做故障定位；DatabaseClaw 称积累十万级工单经验、1600+ OpenAPI、十余款库、分级处置。<br>· 案例名：盛和、淘米（内容效率近 80%、覆盖约 80% 员工）、游族（47 模型、Agent 渗透率超 75%，并挂海外收入/毛利率变化）、游卡（MTTR 5–15 分钟、运维成本约 -40%）、搜狐畅游（P0 恢复缩短、重复运维 -70% 等）、花椒、紫龙、马帮等。<br><br>业务创新的几个章节<br>· SaaS Agent：订阅 → Credits → 按结果付费；界面操作走向 Skill/API。点名明略、熵简、慧算账、富通 JoinfClaw、蓝色光标、六度人和、光魔、天财商龙等。<br>· 内容生产：营销图视频、游戏美术（Miora / Ardot 等）；2D 序列帧等效率对比为文中自述。筷子、LiblibAI、必凡、玩心不止、紫讯、小影、懂球帝等。<br>· 社交陪伴 / 游戏内 AI / 客服：TokenHub + 音视频与语音链路；NPC 记忆与任务；客服/质检/外呼（天润融通、轻喜到家、智齿等）。延迟与解决率数字均为文中宣称。<br>· 生态共建：Buddy 应用、专家、Skill、连接器、硬件；自称桌面办公智能体头部、千万级安装、十万级生态资产、百余伙伴（文中自述）；智慧芽、蜜度、MasterGo 等出现在伙伴页。<br><br>完整报告，可以私信我获取（不是刻意引流哈，是因为没找到免费可公开访问的 PDF 地址，是一个付费下载地址，私信或留言我可以把 PDF 发给你）</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVzFmHpa4AExYaA.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>江山时序动态地图复现中国历史疆域</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grgerwcwetwet · 2026-10-31 19:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！有人把中国两千多年的历史，做成了一张可以拖动的动态地图！<br><br>GitHub 上这个开源项目叫《江山时序》，已经获得 1.9K Star！<br><br>从战国到现代，覆盖 18 个历史时期、164 张疆域快照。<br><br>最有意思的是，你可以拖动时间轴，亲眼看秦灭六国、三国鼎立、唐宋元明清的疆域变化。<br><br>还能查询古今地名、历史事件，甚至跟着李白、苏轼、玄奘的足迹在地图上走一遍！<br><br>以前看历史靠死记硬背，现在直接把两千多年历史演给你看。<br><br>在线体验：<a href="https://deanchen.me/jiangshan-map/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://deanchen.me/jiangshan-map/</a><br><br>GitHub：<a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/DeanChensj/jiangshan-map</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9Rpl4bkAE0Tk3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Komari 开源服务器监控探针</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @suversal · 2026-11-01 00:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">手里VPS太多管不过来？推荐一个开源探针 Komari<br><br>一个面板管所有机器<br>CPU、内存、流量、延迟、丢包，一眼就能看完<br><br>轻量，小鸡也能跑<br>自己部署，数据都在自己手上<br><br>安装也很简单<br>面板用Docker部署在一台机器上<br>其他机器一条命令装agent<br>Linux、Windows、macOS、Docker都能装<br><br>被监控的机器不用公网IP，家里的电脑、NAS也能挂上去<br><br>开源免费，链接👇<br><a href="https://github.com/komari-monitor/komari" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/komari-monitor/komari</a><br><br>图片里用的是Horizon主题</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV-R5ZhaUAAKVU1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV-R6TjaAAA3lrJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>福建实测 TCP 遭封杀 Hysteria2 存活</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @y95277777 · 2026-10-31 22:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">实测确认 VLESS + TCP + REALITY + Vision+IPV4/IPV6 在福建地区稳定被端 TCP目前可以确定遭遇稳定封杀<br>无论是AWS大鸡 还是冷门小鸡 均存活不超过半天<br>Hysteria2+UDP 目前还能苟活 <br>自建梯子以后得猥琐发育了</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Binance 被盗暴露实时结算安全短板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @timyangnet · 2026-10-31 17:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">针对币安最近的安全事件，一般的观点都是“在新一代AI大模型下，大部分系统都会变得很脆弱”，不过 Marcus 看法有明显不同：<br><br>（1）被攻击的并不是技术系统本身（密码学、账本或区块链没有被破解）；<br><br>（2）这类通过社会工程或内部权限泄露的金融系统攻击方式一直都存在，真正变化的是资金流出的速度。传统银行系统结算较慢，大部分攻击会被时间窗口拦住；而实时支付和区块链热钱包在几分钟到几小时内完成，拦截窗口大幅收窄。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">David Marcus <span style="font-size:12px;color:#999999;font-weight:400;">@davidmarcus</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">2014年，我将近一周没有睡觉。当时我在管理PayPal，而攻击者已经进入了我们的企业网络。他们攻破了一台eBay员工的笔记本电脑，接入了VPN，控制了一台域控制器，并把自己提升为域管理员。eBay和PayPal当时是同一家公司，共用一个Windows网络。他们窃取了1.45亿条eBay用户记录，然后转而攻击存放PayPal银行卡凭据的隔离金库。我们把他们挡了回去。他们始终没能突破，但距离突破非常之近。太近了。<br><br>昨天，Binance遭受了约63亿美元的损失，看起来是同一种手法。先是一台DevOps工程师的笔记本电脑被入侵，然后是提现流程中的一个服务被控制，接着是签名者批准了提现，因为这些请求来自一个受信任的来源。热钱包在不到四小时内被清空。没有任何密钥被窃取。<br><br>没有人的密码学被攻破，也没有人的账本被篡改。他们找到了一个有访问权限的人，并利用了随之而来的信任。银行遭遇的攻击方式完全一样。<br><br>2016年：攻击者潜入孟加拉国银行内部，利用该银行自身的SWIFT权限，向纽约联储发送了9.51亿美元的支付指令。8100万美元丢失。剩下的资金之所以被拦下，是因为一个毫不相关的制裁过滤器因为&quot;Jupiter&quot;这个词触发了拦截。那是运气，而且之所以能奏效，是因为电汇需要数天才能完成结算。<br><br>2025年6月：C&amp;M Software的一名IT员工（该公司负责将巴西银行接入Pix系统）以约2700美元的价格卖掉了自己的凭据。攻击者利用这些凭据，从六家机构在央行的储备账户中发出了虚假的Pix转账。不到三小时内转移了约1.4亿美元。<br><br>2025年8月：另一家Pix连接器Sinqia的供应商凭据被盗。HSBC和另一家机构在一个下午内损失约7.1亿雷亚尔。央行冻结了大部分资金，但资金已经转移出去了。<br><br>每次都是同样的攻击。变化的只是速度。当结算需要数天时，一个过滤器、一家代理行或者运营部门的某个人就能拦下一笔有问题的支付。Pix、FedNow、SEPA Instant和区块链都在几秒内完成结算。支付安全体系基本上是为慢速世界构建的。<br><br>PayPal的银行卡和用户数据在2014年之所以幸存，是因为企业网络上的域管理员无法快速解锁它们，而且我们的告警系统发现了网络中的异常活动。这就是模式。审批策略必须是任何笔记本电脑或供应商登录都无法触及的。频率和异常限制必须在发送系统之外执行。对任何一个钱包、账户或服务每小时能转出的金额设置动态上限。所有这些都要实时执行。<br><br>从Binance流出的资金中约有30亿美元已被冻结，几乎全部是稳定币。那14亿美元的比特币现在躺在19个钱包里，没人能动。我不认为那是问题所在。几十年来，撤销一笔电汇或一笔信用卡扣款的能力，让很多薄弱的安全措施蒙混过关。你要么在签名之前阻止这笔转账，就得自认损失。<br><br>这里的技术没有任何失败。区块链准确地处理了交给它们的交易。是Binance自己的系统交给了它们错误的交易，因为一名工程师的笔记本电脑被入侵了。这是运营安全问题。2014年的eBay、孟加拉国银行和两家Pix连接器，在各自的技术轨道上都在运营安全上栽了跟头。<br><br>2014年，攻击者始终没有到达金库。如果他们到了，欺诈损失将是较小的部分。PayPal存在的意义是让人们可以不向互联网上每一个商户提交自己的银行卡信息就能完成支付。我们保管了那些信息，这样他们就不必这么做。丢失这些信息将摧毁这家公司赖以建立的唯一支柱，我不确定我们能否从那样的打击中恢复过来。<br><br>我相信区块链和数字资产将成为资金转移的标准方式。每一个数字资产的托管方，或者在实时支付轨道上托管法币的机构，现在都处于同样的境地。无论是否涉及加密货币，控制体系都必须适应秒级结算。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">In 2014 I went nearly a week without sleep. I was running PayPal and attackers were inside our corporate network. They'd compromised an eBay employee's laptop, got onto the VPN, taken over a domain controller and made themselves domain admins. eBay and PayPal were one company then, on one Windows network. They stole 145M eBay user records, then came for the segregated vault holding PayPal's card credentials. We fought them off. They never got in, but they got close. Too close.<br><br>Yesterday Binance lost ~$6.3B in what looks like the same way. A DevOps engineer's laptop, then a service inside the withdrawal stack, then withdrawals the signer approved because they came from a trusted source. Hot wallets emptied in under four hours. No key was stolen.<br><br>Nobody broke cryptography or a ledger. They found someone with access and used the trust that came with it. Banks get hit exactly the same way.<br><br>2016: attackers inside Bangladesh Bank used its own SWIFT access to send $951M of payment orders to the NY Fed. $81M was lost. The rest was held because an unrelated sanctions filter tripped on the word &quot;Jupiter&quot;. That was luck, and it only worked because wires took days to settle.<br><br>June 2025: an IT employee at C&amp;M Software, which connects Brazilian banks to Pix, sold his credentials for about $2,700. Attackers used them to send fake Pix transfers out of six institutions' reserve accounts at the central bank. ~$140M in under three hours.<br><br>August 2025: stolen vendor credentials at Sinqia, another Pix connector. ~R$710M out of HSBC and one other institution in a single afternoon. The central bank froze most of it, after it had already moved.<br><br>Same attack every time. Speed is what changed. When settlement took days, a filter, a correspondent bank or someone in ops could catch a bad payment. Pix, FedNow, SEPA Instant and blockchains settle in seconds. Payment security was mostly built for the slow world.<br><br>PayPal's card and user data survived 2014 because domain admin on the corp network couldn't unlock it quickly enough, and our alerting caught the unusual activity on the network. That's the model. Approval policy no laptop or vendor login can reach. Velocity and anomaly limits enforced outside the system that sends. Dynamic caps on what any one wallet, account or service can move per hour. All of it in real time.<br><br>About $3B of what left Binance has been frozen, almost all of it stablecoins. The $1.4B in bitcoin is sitting in 19 wallets and nobody can touch it. I don't think that's the problem. For decades the ability to reverse a wire or a card charge let a lot of weak security slide. You either stop the transfer before it's signed or you eat the loss.<br><br>Nothing about the technology failed here. The chains processed exactly the transactions they were handed. Binance's own systems handed them the wrong ones because an engineer's laptop was compromised. That's operational security. eBay in 2014, Bangladesh Bank and two Pix connectors all failed at it on their own rails.<br><br>In 2014 the attackers never reached the vault. If they had, the fraud losses would have been the small part. PayPal existed so people could pay without handing their card details to every merchant on the internet. We held those details so they didn't have to. Losing them would have broken the one thing the company was built on, and I'm not sure we would have recovered.<br><br>I expect blockchains and digital assets to become the standard way money moves. Every custodian of digital assets, or of fiat on a real-time rail, is in that position now. The controls have to adapt to settlement in seconds, crypto or not.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GitHub 榜单 Agent 搭配工具集中上榜</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitTrend0x · 2026-10-31 08:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天 GitHub 被「Agent 记忆 + 遥控台 + 自带电脑的 AI 同事」联手屠榜了！<br><br>5 个星标暴增最狠的项目，专业拆解下！<br><br>1. thedotmack/claude-mem<br><br>给所有 Agent 装上跨会话的长期记忆，Claude Code、Codex、Gemini、Hermes、OpenCode、Pi 通通能接。<br><br>自动记录 Agent 在会话里用过的工具和观察，用 AI 压缩成语义摘要，下次开新会话再把相关上下文注入回去；分层检索还能看到每次取记忆花多少 token，自带 mem-search 搜索技能，用标签就能把敏感内容排除在外。一行 npx claude-mem install 搞定。<br><br>🔗 直达：<a href="https://github.com/thedotmack/claude-mem" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/thedotmack/claude-mem</a><br><br>Agent 终于不再是「金鱼脑」了！10.6 万星一天再涨 1,145 星，今日涨星王！<br><br>🟢<br><br>2. pingdotgg/t3code<br><br>Theo 团队出品的「Agent 遥控台」，一个界面控制你电脑上所有编程 Agent。<br><br>直接用你已有的订阅：Claude Code、Codex、Cursor、Grok Build、OpenCode、Antigravity 都能接；有桌面端、Web 端，还有 iOS / Android 手机 App，人在外面也能远程盯 Agent 干活。npx t3@latest 一键试用，完全开源。<br><br>🔗 直达：<a href="https://github.com/pingdotgg/t3code" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/pingdotgg/t3code</a><br><br>躺在沙发上用手机指挥一整支 Agent 军团！3.3 万星一天再涨 920 星，Vibe Coding 正式进入遥控时代！<br><br>🟢🟢<br><br>3. milind-soni/OpenMausBot<br><br>开源的「Grok Bot 平替」：把一支 AI bot 小队装进一个聊天 App。<br><br>每个 bot 都是本地跑的真实 Agent（claude / codex / grok CLI），各有自己的性格、模型、云端电脑和连接的应用；跑 Shell、改文件前会弹出 Allow / Deny 卡片让你拍板；数据都存在本机 ~/.openmausbot，支持 macOS、Windows、Ubuntu。<br><br>🔗 直达：<a href="https://github.com/milind-soni/OpenMausBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/milind-soni/OpenMausBot</a><br><br>像加好友一样招 AI 员工！8,582 星一天狂涨 899 星，个人 Agent 团队的开源版来了！<br><br>🟢🟢🟢<br><br>4. CopilotKit/OpenBot<br><br>CopilotKit 开源的企业级 AI 同事模板，每个同事都有自己的一台电脑：浏览器、文件和工具。<br><br>基于 AG-UI 协议，LangGraph、Mastra、CrewAI、Pydantic AI、Google ADK 写的 Agent 都能直接接入；Bot 对电脑、文件、MCP 的每个动作都要先过网关审批、事后留痕；Docker Compose 一键拉起，数据落在你自己的 PostgreSQL。<br><br>🔗 直达：<a href="https://github.com/CopilotKit/OpenBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CopilotKit/OpenBot</a><br><br>公司自己能掌控的 AI 同事，终于有开源模板了！8,756 星一天涨 707 星，企业 Agent 落地的标准答案！<br><br>🟢🟢🟢🟢<br><br>5. lightpanda-io/browser<br><br>专为 AI Agent 和自动化从零打造的无头浏览器，不是 Chromium 魔改，而是用 Zig 重写的全新内核。<br><br>README 实测：抓 100 个真实网页，内存峰值 123MB 对比 Headless Chrome 的 2GB，耗时 5 秒对比 46 秒，约省 16 倍内存、快 9 倍；提供 CDP 服务，Puppeteer、Playwright 直接连，还自带原生 MCP 和技能。<br><br>🔗 直达：<a href="https://github.com/lightpanda-io/browser" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/lightpanda-io/browser</a><br><br>爬虫和浏览器 Agent 的成本直接砍到脚踝！3.8 万星一天再涨 652 星，轻量化浏览器卷疯了！<br><br>⚠️⚠️<br><br>总结：<br>今天的榜单一句话：Agent 正在从「一次性工具」变成「有记忆、有电脑、能远程指挥的数字同事」。谁先把记忆层、控制台和执行环境搭好，谁就先拥有自己的 AI 团队。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Skill 死路清单比标准答案更有效</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AxtonLiu · 2026-10-31 21:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">搭了 80 多个 Skill、用了大半年后，我删掉了规则文件里一大半「教 AI 怎么干活」的聪明话。<br><br>以前总想把「正确做法」写得面面俱到。<br>后来发现，只要给够上下文，正确做法模型自己能推出来。<br><br>真正让它在长项目里反复翻车的，是每隔几天它就会一脸真诚地向你推荐一个你上个月刚踩过坑、已经彻底放弃的方案。<br><br>模型可以推出一个合理的答案，但它推不出你过去为什么已经否决过这个答案。<br><br>现在我的规则文件里，最值钱的不再是「标准答案」，而是「死路清单」：<br>1）当时否决了哪个方案<br>2）为什么不这么做<br>3）哪条红线一步都不能退<br><br>决定不做，也是一种结果。<br><br>原文链接见回复 👇</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>三款国产OCR模型横评与选型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-31 22:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">横向对比中国团队最新发布的三个 OCR 模型<br><br>@OpenBMB @XiaomiTech_ @Baidu_Inc 分别发布了自己最新的 OCR 模型，MiniCPM-OCR-1.0、Xiaomi-OCR-0 和 Unlimited-OCR-2，三个模型 OCR 能力都很强，但也各有侧重，咱们展开看看。<br><br>MiniCPM-OCR-1.0 (1.3B)<br>以 MiniCPM-V 4.6：SigLIP + Qwen3.5 为基座，主攻中英文档解析质量 × 页吞吐，Real5 - 93.68、OmniDoc v1.6 - 96.51、Wild - 92.39、olmOCR - 82.7、OCRBench v2 - 54.7，吞吐 1.217 pages/s<br><br>Xiaomi-OCR-0 (0.8B)<br>以 Qwen3.5-0.8B-Base 为基座，主攻单页解析 + OCR 向理解（VQA/KIE），Real5 - 95.24、OmniDoc v1.6 - 96.83、Wild - 87.94、五榜 OCR-VQA - 均 83.2，吞吐 0.724 pages/s<br><br>Unlimited-OCR-2 (3B/A0.5B)<br>以 DeepEncoder + MoE 解码器、v2 全层换 SR-SWA 为基座，主攻超长文档「一次通读」、自推 MarathonDocBench，MPDocBench Overall - 约 84.6、MarathonDocBench - 77.06，吞吐 0.246 pages/s<br><br>怎么选（按场景）<br>· 单页/少页、要质量与理解（问答、字段 JSON）、显存紧：优先看 Xiaomi-OCR-0，参数最小，Real5 / OmniDoc 自报最强档之一，且原生 KIE/VQA。<br>· 批量流水线、要 pages/s、要 SDK/量化/质检闭环：优先看 MiniCPM-OCR-1.0，同场吞吐最高，Wild + 版面管线完整，Jev 适合「解析完先过一道闸」。<br>· 合同/书籍/论文包一次解析、跨页表文不能断：优先看 Unlimited-OCR-2，赛道本身不同；拿 OmniDoc 单页分和前两家硬刚意义不大。<br><br># 各家模型卖点展开梳理<br><br>MiniCPM-OCR-1.0：解析流水线 + 速度与工程完整度<br>任务面写清：文本、表、公式、图表、印章、KIE；管线是 模型 + PP-DocLayoutV3 + minicpmvocr SDK（先版面再分块再拼 Markdown）。视觉侧 4× 压缩、scale_resolution 448、最多 9 片。和 Xiaomi 比：OmniDoc v1.6 略低（96.51 vs 96.83）、Real5 略低（93.68 vs 95.24），但 Wild 明显更高（92.39 vs 87.94），且官方注明 Wild 分数含 SDK 旋转校正，横向比时要留心。OCRBench v2 54.7 是它强调的「通用识别」数字。吞吐在 OpenBMB 同场表里领先；同表里 Xiaomi、Unlimited-OCR2 分别约其 0.59× / 0.20×。另配 MiniCPM-OCR Jev：不解析，只判对错并给概率，做自动放行 / 人审分流。微调路径写了 LLaMA-Factory、ms-swift。<br><br>Xiaomi-OCR-0：小参数把「解析」和「读懂」绑在一起<br>训练称约 1.7 亿 OCR 向样本：Q-Mask 锚点 → OCR 向 CPT → Mix-RL。数据引擎用多专家共识（ETC）、渲染回判、失败驱动合成；专家池点名 PaddleOCR-VL-1.5/1.6、MinerU2.5-Pro、GLM-OCR、TeleOCR、OvisOCR2 等。卖点是：一份权重覆盖整页 Markdown（表 OTSL、式 LaTeX）、区域文本/表/式、以及按 schema 的 KIE。基准上 Real5 压过同档开源；OCR-VQA 五榜均分 83.2，高于同尺 Qwen3.5-0.8B（72.9）和更大的 Qwen3.5-2B（80.9），仍低于 Qwen3.5-4B（84.9）；报告自己也写：理解比解析更吃参数。手写/书法 Chronicles-OCR 成熟书体约 73，与 Seed 2.0 Pro（72）同量级。社区已有 GGUF，官方未背书量化精度。<br><br>Unlimited-OCR-2：把「页循环」收成一次前向<br>问题陈述很清楚：常规端到端 OCR 一页一页 for-loop，KV 随输出变长；人抄书只盯当前段。v1 用 R-SWA（始终看见全部视觉参考 token，输出侧只滑窗看最近 n 个，默认 128），在 DeepSeek-OCR 上续训约 2M 文档样本，OmniDoc 上相对基线大涨，并宣称数十页一锅端。v2 再上 SR-SWA：把超长序列上的文视交互压到固定规模工作参考（例如 512 token），使逐步解码延迟与显存近似与文档长度无关；百页规模自称相对 Full Attention / R-SWA 有约 7.0× / 5.6× 逐步加速。配套 MarathonDocBench（100–300 页、跨页文本/表更密），Overall 77.06；较短的多页榜 MPDocBench 约 84.6。推理上单页默认 gundam 动态切块，多页 base 全局一页一视图；SGLang 侧有页窗调度与大量显存旋钮。代价是：在「单页吞吐」同场赛里偏慢，工程依赖定制服务栈，不如 MiniCPM「开箱多后端」。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9x0k6W4AAYNvq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Xray-core 因 MPTCP 漏洞紧急更新</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @geekbb · 2026-10-31 21:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Xray-core 紧急安全更新<br><br>Linux 内核新漏洞 CVE-2026-98432（CVSS 9.8）：IPv4 TCP 释放后使用，已有远程拿到 root 的 PoC。而 Go 1.24+ 默认给 TCP 监听开 MPTCP，用 Go 写的代理服务端（Xray、Caddy 等）首当其冲。<br><br>本版直接把 MPTCP 默认关掉，显著缩小攻击面。v26.10.29 已撤版，请尽快升级。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9orr7bgAAMQ4F.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

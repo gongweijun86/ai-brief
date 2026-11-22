@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月8日 17:36">
+<title>AI技术雷达 · 11月8日 17:36 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;billion-context压缩长会话</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;知了1.5.1补齐四大平台</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Elephant-Goldfish对抗验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Harness用基线案例回归评测</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Qwen Code批量管理Skills</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;OpenAI模型提出局部平滑证明</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>billion-context压缩长会话</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lxfater · 2026-11-08 14:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近看到一个叫 billion-context 的开源项目，专门解决 AI 编程长会话爆窗口的问题<br><br>它架在编程 Agent（比如 Claude Code、Codex、OpenCode、Kimi 等）和模型 API 之间，做一个上下文压缩代理<br><br>和客户端自带的一刀切摘要不同，它的核心思路是“让模型自己管上下文”<br><br>代理会往对话里注入四个工具：compress（折叠成摘要）、decompress（按需恢复细节）、search_context（关键词检索）和 acp_status（查看用量与可压缩区间）<br><br>什么时候压缩、压哪一部分，都由模型自己调用工具决定<br><br>因为是局部增量折叠，需要细节时还能解压回来，所以既能省下不少 token，又尽量不破坏前缀缓存<br><br>那实际用起来效果怎么样？<br><br>我有个朋友说：让模型自主选择压缩的想法确实挺好，但在实际长会话里还不太稳定<br><br>跑到后面经过多轮反复压缩，上下文有时候会被带偏，开始出现一些模型自创的缩写或黑话，可读性和连贯性会往下掉；<br>如果接的是低量化模型，这种走样的情况会更明显，偶尔还会遇到一些小 bug<br><br>如果你平时跑超长编程会话经常被 token 账单或爆窗困扰，可以去试试看，这些工具都要自己尝试<br><br><a href="https://github.com/ranxianglei/billion-context" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ranxianglei/billion-context</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>知了1.5.1补齐四大平台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-11-08 11:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">4 天前答应大家的四个平台，今天全齐了！<br><br>开源会议纪要和同声传译软件知了/Cicada，已更新到了 1.5.1。首发拿了50万浏览和4000左右收藏，GitHub 冲到 1600+ star，安装包被下载了 2300 多次，还有 4 位朋友提了 PR。<br><br>开源地址：<a href="https://github.com/wquguru/cicada" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wquguru/cicada</a><br><br>首发时还只支持 macOS 26+，这 4 天连发 8 个版本，现在 Mac 14.4 以上含 Intel 芯片 Mac、Windows、Linux、Android 全都能用。<br><br>配图是昨晚用Android手机听一场中文 X Space 吐槽大会的效果。如果你还没用过知了，它能帮你干这些事：<br><br>- 直接读系统声音，不用往会议里塞机器人，Zoom、飞书、腾讯会议、X Space、YouTube 直播都能听<br><br>- 电脑端支持桌边麦克风和线上声音一起识别<br><br>- 实时双语字幕，支持分说话人，还能同声传译，配合 Ling 可以克隆你自己的声音去说话<br><br>- 实时纪要带总结、议题、结论、待办和鱼骨图，还能把听错的人名和专业术语当场改对、加进词表<br><br>- 记录只存本机，无统计无埋点，Apple 芯片 Mac 的语音识别直接跑在本机；结束后能导出 Markdown、Word、SRT<br><br>- 除了免费的Ling，还支持OpenAI、ZenMux、OpenRouter 或本地模型<br><br>- Apache-2.0 协议开源，随便改、随便商用<br><br>会议纪要分享功能也即将开放！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWkiDpEaEAAmGPH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWkiFV9awAA0Rhb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWkiG79a0AAA0Qs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Elephant-Goldfish对抗验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-11-08 17:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">日常让 Agent 堆业务代码，很多人踩过的最大一个坑：<br><br>  上下文塞得太满，Agent 开始“脑补默契”。<br><br>  写到第十轮，模型以为自己什么都懂，架构漏洞全被历史对话掩盖过去；<br>  一换新会话或者真正跑测试，全线崩盘。<br><br>  Google 开源的这个 Elephant-Goldfish Model 插件，思路非常接地气，直戳多 Agent 协作的痛点。<br><br>  它把这个过程暴力拆成了两个极端角色：<br><br>  大象（Elephant）：长记忆。吃下你所有的业务背景、历史需求和全局代码，专门负责输出一份详尽的技术规格（Spec）。<br><br>  金鱼（Goldfish）：零上下文。完全不带任何历史包袱，拿到的只有刚才那份 Spec，直接以“白盒新手”的视角去硬碰硬压测这份规格。<br><br>  很多时候不是模型写不出代码，而是 Spec 根本没闭环：<br>  - 是不是默认漏了环境变量？<br>  - 接口边界有没有漏写兜底类型？<br>  - 离开当前这个 prompt 堆出来的语境，这份 Spec 到底能不能独立跑通？<br><br>  在金鱼子 Agent 面前，没有任何“历史会话假象”。<br>  只要规格写得含糊，它一眼就能挑出断层。<br><br>  在这个流派里，工作流节奏完全变了：<br><br>  1. 大象 Agent 负责铺全局、起草规格；<br>  2. 金鱼 Agent 无情挑刺，把模糊地带全逼出来；<br>  3. 你作为人类工程师，在最关键的架构节点拍板、批准 Spec；<br>  4. 规格锁死之后，再放给模型去刷代码。<br><br>  不用等到代码写了三千行才发现地基打歪了。<br><br>  官方说明里这套插件可以直接接入 Antigravity、Claude Code、Codex 和 ChatGPT 等主流环境。<br><br>  对经常做多 Agent 流水线的人来说，这种“故意制造信息差”做对抗验证的思路，比单纯堆长上下文管用得多。<br><br>  项目地址：<br>  <a href="https://github.com/google/elephant-goldfish-model" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google/elephant-goldfish-model</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google Cloud Tech <span style="font-size:12px;color:#999999;font-weight:400;">@GoogleCloudTech</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">来看看 Google 的 Elephant-Goldfish 模型，我们的全新开源插件 → <a href="https://goo.gle/480yn2n" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/480yn2n</a><br><br>使用深度上下文的 agent 起草规格文档，然后用零上下文的 subagent 对其进行压力测试，之后再编写代码。你来做架构决策，并在实现之前批准规格文档。兼容 Antigravity、Claude、Codex 和 ChatGPT。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Check out Google's Elephant-Goldfish Model, our new open-source plugin → <a href="https://goo.gle/480yn2n" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/480yn2n</a><br><br>Draft specs with deep-context agents and stress-test them with zero-context subagents before writing code. You make the architectural decisions and approve the spec before implementation. Works with Antigravity, Claude, Codex and ChatGPT.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWi9CL9W8AAR69t.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness用基线案例回归评测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ErwinWu000 · 2026-11-08 17:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我现在就在用这种方法强化floorplan agent的harness<br><br>前段时间刚把整个harness大重构了一轮，然后选取了二十多个对话案例当作baseline，覆盖了我需要考虑的多种情况<br><br>以后每一次想要更新harness/更换模型，就用这些案例来跑一遍时间、成本和质量<br><br>experiment-based harness evolution</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Xudong Han <span style="font-size:12px;color:#999999;font-weight:400;">@Xudong07452910</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我们都知道模型变强之后，以前精心设计的 Agent Skill 可能成了负担，但是怎么去除不必要的 skills 很多人却不知道。<br><br>Garry Tan @garrytan 的做法很值得借鉴。他用 Eval 对比了 Opus 5.5 开启和关闭 /investigate 的表现，发现修复率没有明显差异，但每修好一个 Bug 的成本反而高了 43%，于是决定砍掉它。<br><br>我觉得这个思路应该成为 Harness Engineering 的常规操作。<br><br>比如以前为了提高 Coding Agent 的可靠性，我们设计了「先生成详细计划，再逐步排查问题」的 Workflow。<br><br>模型升级后，就可以用同一批真实任务做 A/B Eval，一组保留旧流程，一组直接让模型执行，多次测试，对比成功率、Token 消耗和执行时间。<br><br>如果旧流程已经带不来稳定的提升，甚至增加了成本，那就该考虑简化或移除。<br><br>Agent 的 Skill 和 Harness 也需要定期做减法。模型在进化，我们为旧模型设计的工作方式也应该重新验证。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Coding Agent自验证交付</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-08 17:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Addy Osmani：Coding Agent 让你成了管理者，但不该让你更忙<br><br>当你开始挑任务、交代背景、委派工作、验收结果，你已经在 “管理” Agents。多开几个会话本身意义不大，重要的是建立让 Agents 能自行验证、带着证据交付的工作方式。<br><br># 先让 Agent 能检查自己，而不是让人充当测试系统<br><br>Addy 把自验证放在首位：每项任务都应提供可执行的检查，例如测试、构建、类型检查，界面改动还可以用截图验证。<br><br>Agent 应先执行、检查、修正失败，再提交结果与证据，而不是说一句“完成了”，把所有验证留给人。必要时，再让没有参与原对话的新 Agent 独立审查，减少沿着同一思路自我认可。<br><br># 最该补充的是仓库里看不到的信息<br><br>任务说明不必重复代码已有的内容，更重要的是：为什么做、业务约束是什么、哪些事情不要做，以及怎样才算成功。<br><br>重复出现的纠错可以沉淀为共享规则或技能，但规则不是越多越好。随着模型升级，旧约束也要清理；普通偏好可以写成指导，必须遵守的安全要求则需要强制执行机制。<br><br># 并行的上限，往往是人的注意力<br><br>无人值守任务开始前，要明确完成条件、验证方式、权限、运行上限、交付产物和审批人。新流程先小范围试跑，再扩大规模。<br><br>即使测试全绿，功能也未必值得做。产品取舍、安全边界与发布判断仍由人负责；成效应看交付周期、返工和回退，而不是 Agent 写了多少代码。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWl3gNda8AAZ6uK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Addy Osmani <span style="font-size:12px;color:#999999;font-weight:400;">@addyosmani</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen Code批量管理Skills</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-08 15:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Qwen Code v0.26.9 这次更新的重点，不是让 Agent 多写几行代码，而是把 Skills 的安装和管理做得更可靠。<br><br>官方列出的变化包括：一次请求可以批量启停 1—100 个 Skills；安装器支持磁盘方式处理较大的 ZIP；安装失败后可以查询安装回执；TypeScript SDK 可以从 File、Blob、字节数据或本地路径安装。<br><br>我觉得这类基础设施很容易被忽略：Agent 能力越多，团队越需要知道能力怎么分发、失败后怎么恢复。你们给团队部署 Skills，最怕的是安装失败，还是启用状态和版本对不上？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Reason Network互通消息</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-08 15:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Reason Network 让团队里每台电脑上的编程 Agent 能直接互相发消息，支持 Claude Code、Codex、Gemini CLI 等 Agent 工具。<br><br>装好后能看到每个同事开着哪些 Agent，在哪个仓库、哪个分支，是忙着还是闲着。想问谁，直接让自家 Agent 去问。<br><br>GitHub：<a href="https://github.com/reason-machines/reason-network" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/reason-machines/reason-network</a><br><br>消息点对点直连，全程加密，中转服务器也看不到内容。一条消息还能捎上最多 10 个文本文件，比如接口定义或者日志。<br><br>同事的 Agent 来要一个只有我能批准的操作时，我这边会弹个窗，点同意或拒绝，答复直接回给对方。<br><br>团队里每人都开着几个 Agent 的话，让它们自己对口径，比人在中间传话靠谱多了。<br><br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112539971378896897/img/mdaYX9R6ijsiboOq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI模型提出局部平滑证明</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiqizhixin · 2026-11-08 15:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">将波在时间上取平均，为何能揭示单帧快照无法显示的规律性？<br><br>一份 OpenAI AI 生成的手稿提出了欧拉波方程在每个至少为二维的空间维度中的局部平滑性（local smoothing）的证明。这是一项正在接受独立数学检验的公开研究主张。<br><br>瓶颈在于：精确估计必须控制波在传播过程中的集中方式。这些集中现象将这一分析问题与包含各方向线段的集合的几何联系起来。<br><br>机制：该手稿引入了辅助流和相应的能量估计，以建立所需的平滑不等式。它还从这些估计中推导出欧几里得空间中 Kakeya 集的完整 Hausdorff 维数结论。<br><br>回报：如果这一论证经受住独立审查，它将解决调和分析中的重大猜想。一份 Lean 形式化版本可供查阅，但验证其数学对应关系和审查证明仍然是实质性任务。公开发布和形式化不应与已完成的社区验证混淆。<br><br>欧拉波方程的局部平滑性<br><br>论文：<a href="https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf</a><br>项目：<a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/building-scientific-understanding-with-academic-communities/</a><br>代码：<a href="https://github.com/openai/math" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/openai/math</a><br>我们的报告：<a href="https://www.jiqizhixin.com/articles/2026-10-27-15" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-10-27-15</a><br><br>📬 #PapersAccepted 由机器之心收录</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">How can averaging a wave over time reveal regularity that a single snapshot cannot show?<br><br>An OpenAI AI-generated manuscript proposes a proof of local smoothing for the Euclidean wave equation in every spatial dimension of at least two. It is a public research claim undergoing independent mathematical examination.<br><br>The bottleneck: Sharp estimates must control how waves concentrate while propagating. Those concentrations connect this analysis problem to the geometry of sets containing line segments in every direction.<br><br>The mechanism: The manuscript introduces auxiliary flows and associated energy estimates to establish the required smoothing inequalities. It also derives a full Hausdorff dimension conclusion for Kakeya sets in Euclidean space from these estimates.<br><br>The payoff: If the argument withstands independent scrutiny, it would settle major conjectures in harmonic analysis. A Lean formalization is available for inspection, but checking its mathematical correspondence and auditing the proof remain substantive tasks. Public release and formalization should not be confused with completed community verification.<br><br>Local smoothing for the Euclidean wave equation<br><br>Paper: <a href="https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf</a><br>Project: <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/building-scientific-understanding-with-academic-communities/</a><br>Code: <a href="https://github.com/openai/math" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/openai/math</a><br>Our Report: <a href="https://www.jiqizhixin.com/articles/2026-10-27-15" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-10-27-15</a><br><br>📬 #PapersAccepted by Jiqizhixin</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVybAF8bwAA9ajL.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>iPhoneMirror多设备独立窗口</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-11-08 15:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">iPhoneMirror 连多台设备能各开独立窗口，OBS 窗口采集里直接就能勾选对应画面，这细节做得真干脆。<br><br>Windows 上走 USB 直连或者同一局域网 AirPlay 都能把画面和系统声音投过来，目前是公开预览版。<br><br>GitHub：<a href="https://github.com/RayrenSX/iPhoneMirror" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/RayrenSX/iPhoneMirror</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWlaNxXagAAdUsB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

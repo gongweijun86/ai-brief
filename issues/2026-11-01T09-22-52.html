@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月1日 17:22">
+<title>AI技术雷达 · 11月1日 17:22 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Cursor Agent 自主编码实践</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;dsh-superagent 无状态架构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Karpathy 公开 AI 编码工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;GitHub Actions 提速十法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Mika 手机 Agent 实测成本</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cursor Agent 自主编码实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Tao100086 · 2026-11-01 09:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Lauren Tan（@poteto）在一个视频中分享她在 Cursor 使用 AI 编程 Agent 的经验, 值得看一下。<br><br>我用我的skill，抓取字幕，翻译并重新烧录了双语字幕。<br><br>贯穿整场的观点是：要让 Agent 可靠地自主完成工作，工程师需要先建设好验证工具、项目知识和自动化约束。信任来自这些机制持续产出的可靠结果。<br><br>1. 信任决定了你能把多少工作交给 Agent。〔00:54–05:39〕<br><br>如果 Agent 经常凭猜测定位问题，你就不得不盯着每一步操作。此时，即使同时启动很多 Agent，你自己的检查能力仍然会成为瓶颈。<br><br>她描述的成长路径是：从紧盯一两个 Agent，到让它们独立完成任务，再到自动合并代码。她自述曾一个月合入约 1,000 个 PR，也有睡醒后发现 20 多个 PR 已经合入的经历；这些成果建立在前期大量建设工作之上。<br><br>2. 首先让 Agent 能够亲自验证自己的工作。〔05:40–13:37〕<br><br>Agent 应当能够启动应用、操作界面、复现问题、查看运行日志和性能数据，并检查修改后的实际表现。如果这些步骤都由人来完成，人就会一直困在“运行—截图—反馈—再修改”的循环里。<br><br>她特别强调 Feature Map，也就是“功能地图”：告诉 Agent 一个功能在哪里、如何进入、有哪些快捷键、怎样定位界面元素。这样，面对“侧边栏很卡”或一张模糊截图，它才知道应该去哪里检查。<br><br>这里有一个关键区分：验证用于判断功能是否解决了问题；代码是否清晰、易维护，还需要其他机制。<br><br>3. 把反复出现的失败，转化为可复用的 Skill，并检验它是否有效。〔13:37–23:56〕<br><br>她把 Agent 比作“很会写代码、但刚入职五秒钟的新同事”：缺少业务背景，也不了解团队的工作习惯。Skill 就是把这些背景、标准和操作方法写下来，供它反复使用。<br><br>她的 PStack 工具集来自持续观察：发现 Agent 没读相关代码就下结论，就补上调查流程；发现它不会验证，就补上验证能力。<br><br>Skill 本身也需要评估。她会设定评分标准，让多个 Agent 或模型执行任务、交叉检查结果，再根据表现修改 Skill。写下一条要求，并不等于 Agent 已经稳定掌握了它。<br><br>4. 先在本地建立可靠流程，再扩展到云端和自动化。〔24:32–30:11〕<br><br>起步阶段适合在本地观察：应用能否启动、Agent 会不会操作、是否真的复现和验证了问题。流程稳定之后，再把相同能力搬到云端。<br><br>她举了一个名为 Benny 的 Agent：它接收 Bug 报告，在云端启动应用并尝试复现。有一次，它确认问题在主分支中已经修复，只需要发布新版本，省去了人工重复排查。<br><br>她明确不建议在基础能力尚未可靠时，直接启动成百上千个 Agent，那会放大失败和费用。<br><br>5. 代码库本身需要适合 Agent 工作。〔30:17–38:54〕<br><br>她认为，有成熟规范和检查机制的老项目，可能比毫无约束的新项目更适合 Agent。快速拼出来的原型虽然交付快，但 Agent 不断选择眼前最省事的做法，会逐渐积累难以维护的结构。<br><br>因此，某些项目值得投入重构。她自述为迁移到新架构进行了超过 600 个 PR 的改动，目的是让后续开发更稳定，让整个团队受益。<br><br>她也鼓励把工作拆成目标单一的小 PR，便于理解修改、定位问题和回滚，没有规定统一的代码行数上限。<br><br>6. 把重要规范变成自动执行的检查，让最省事的路径就是正确路径。〔39:07–48:43〕<br><br>这是整场最重要的工程方法之一。她认为，规则文档、Skill 和 AI 审查都可能被遗漏，重要约束需要落实到项目结构、编译检查和 CI——也就是提交代码时自动执行的检查。<br><br>她介绍的 Dune 架构会把同一功能的代码集中存放，并检查模块之间的引用关系。例如，限制界面渲染部分引入不该承担的繁重计算，减少卡顿风险。<br><br>Agent 喜欢沿用已有模式、选择捷径，因此应该把项目设计成：照着现有方式做，就容易做对。<br><br>她在自己的项目中甚至禁用了 useEffect 和代码注释。这些是针对其项目失败模式制定的具体规则；更值得提炼的方法是：把反复出现的审查意见转化为可以自动检查的约束。<br><br>7. 前期建设有成本，回报要放到整个团队和长期使用中看。〔49:23–54:15〕<br><br>她承认自己拥有非常充足的 Token 资源，其他人不应原样照搬。重构、编写 Skill 和建立验证体系，都需要时间与费用。<br><br>她的判断是：如果这些投入能减少后续返工，让更多人持续贡献代码，甚至让能力较弱的模型也能做好工作，就可能带来可观回报。但分享中没有给出普通团队可直接套用的成本预算。<br><br>8. 工程师的职责，会更多地转向设计工作环境和质量标准。〔23:15–23:44；54:18–57:03〕<br><br>她用“主厨”作比喻：工程师不必亲自做每一道菜，而要设计厨房、制定流程、分配任务，并保证出品质量。<br><br>当工具、架构和检查足够完善后，产品经理、设计师也能借助 Agent 修改功能和修复问题。工程师的重要贡献，是让这种参与可以长期、稳定地进行。<br><br>按她的思路，可以把实践顺序整理为：<br>观察失败 → 补充项目知识和 Skill → 建立实际运行验证 → 评估并改进流程 → 把关键规范变成自动检查 → 逐步扩大自主工作的范围。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116705163482398720/img/hWZsPA-6f1NvnlJn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>dsh-superagent 无状态架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-01 12:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">dsh-superagent（DeepSeek 刚开源的主动 coding agent 架构）非常赞。<br><br>1. Router-Worker 架构实现了 sessionless，Router 负责与用户交互，调度消息和事件，维持记忆和全局上下文，多个 Worker 并行执行具体任务。<br><br>Sessionless 不是简单把多个 session 合成一个 session，难的是实现活人感，有事响应及时、说话简洁，没事少打扰用户。<br><br>2025 年在 Pine 做全球首个 personal agent 的时候，Pine 的用户都是不懂 AI 的普通人，总是抱怨 agent 跟用户说话啰嗦，agent 忙着干活的时候不搭理用户、不响应紧急事件。为了让 agent 在文字沟通中也具备活人感，我们引入了前台 agent 跟用户沟通，后台 agent 实际干活。在全双工语音架构中，也是前台 full duplex 说话，后台做长程任务。<br><br>Router agent 在电话、短信、Web、邮件等多种渠道跟用户和第三方交互时，适合的信息密度不同，因此 agent 必须知道该用何种渠道跟用户交互，不同渠道的交互规范也不同。<br><br>2026 年初，OpenClaw 把这个多 channel 的 sessionless 架构带给了 agent 社区。但 OpenClaw 在多 channel 交互细节上仍然有很多待打磨的地方。<br><br>2. 事件驱动的 agent 架构，飞书消息、GitHub issues 都是事件，事件首先经过规则和 Jev 类轻量模型过滤，再送给 LLM 处理。<br><br>事件驱动的难点在于，单一的 ReAct loop 可能来不及处理所有事件，也就是 25 年我们遇到的 agent 忙着干活的时候不响应新的事件。但简单交给独立的 agent 来做，又会导致 agent 上下文割裂，不同 agent 的决策互相打架。<br><br>dsh-superagent 的解法是根据数据源把事件组织成 thread，每个 thread 在同一时间只有一个实例（Eval），这样不同数据源可以并行处理，相同数据源可以批量处理，就像 Linux epoll 一样。dsh-superagent 把计算机系统的经典 event driven 架构引入到了agent。<br><br>3. 异步 ReAct loop，也就是工具调用可以异步执行。以往长时间运行的工具都要像 Claude Code 一样利用后台命令、monitor 等机制来实现异步化。GPT-6 模型原生支持了异步工具。dsh-superagent 把耗时的命令与子任务工具调用改为异步的start() 和 stop()，构成异步 ReAct Loop。<br><br>2025 年初我刚提出异步 ReAct loop 的思想时，有些人认为没有必要，有些人认为模型很难支持。今天异步执行命令已经成为 coding agent 必不可少的能力，异步 ReAct 这个思想也终于落地了。<br><br>4. dsh superagent 采用了“脑手分离”、“存算分离”的思想，harness 无状态，因此脑可以在端侧也可以在云上，摆脱了单机生命周期限制。Claude Code、OpenClaw 等 agent 仅在端侧，Manus 等 agent 需要昂贵的云侧沙盒，其实把 agent 做进端侧 OS，端云结合是最正确的设计。<br><br>从 2025 年至今，我们坚持 agent 无状态化，不做 E2B sanbox 这种重量级的沙盒，很多人好奇我们怎么做到通用 agent 成本还这么低的。这种架构对 agent 开发确实带来了很多约束和麻烦，但对一个服务数百万用户的系统来说是值得的。<br><br>5. dsh superagent 的 Watchdog 是非常实用的设计，我在本地也用蓝色大肥鱼做了一个“监工” agent，专门处理 provider 429、rate limit、agent 崩溃、VPN 出问题等。agent 一崩，人在睡觉，几个小时时间就浪费了。对工具调用不太稳定，经常死循环或者早停的模型，watchdog 就更重要了。<br><br>6. 在事件内容和工具调用结果注入上下文时，dsh superagent 充分利用了局部性原理，直接喂进去摘要和 ID，agent 需要更多细节时再根据 ID 读取细节。系统中的主要对象都有 ID，构成一张引用图，可以按需读取，便于 agent 协作。<br><br>这也是很多 agent 初学者最容易犯的错误：要么把信息一股脑灌进上下文，要么只留摘要导致信息缺失。需要让每个对象有 ID 或路径，渐进式披露。<br><br>上述架构设计观点在我的开源书《深入理解 AI Agent》里面基本都有，当然也不是我原创的，是大家做 agent 摸爬滚打的共识。很高兴 dsh superagent 把这些设计原则都开源落地了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Karpathy 公开 AI 编码工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bozhou_ai · 2026-11-01 15:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">大神karpathy 公开了自己现在怎么用 AI 写代码<br><br>karpathy 最近花了大约 2 小时做了个小项目 HackerTube，把 Hacker News 上被推荐过的 YouTube 视频整理成了一个合集。他在博客里顺带公开了自己的配置和工作方式 ：<br><br>1. 不再读写代码，也不在终端里跑命令，所有事都在对话里交给 Claude。<br><br>2. 工具是 Claude Code 的 Mac 桌面 app，不用终端界面。<br><br>3. 模型默认用 Opus 5.5，effort 只开 Medium，不追求最高档。<br><br>4. 只做 AI 做不了的事：在 Google Cloud 后台建 API key、开一台 VPS、买域名，而且都是趁 Claude 干活的间隙做的。<br><br>5. 服务器开好后，把 IP 交给 Claude，让它自己完成更新、部署、安全加固和优化。<br><br>原文链接  <a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://karpathy.bearblog.dev/hacker-tube/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Yuchen Jin <span style="font-size:12px;color:#999999;font-weight:400;">@Yuchenj_UW</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Andrej Karpathy 今天在他的 HackerTube 博客上分享的配置：<br><br>- &quot;我使用 Claude Code（Mac 桌面应用）。&quot;<br><br>正如我一直以来所说的，终端对于编程智能体来说是错误的界面。桌面应用才是目前最好的界面。<br><br>- &quot;我默认使用 Opus 5.5，中等推理力度。&quot;<br><br>对于大多数任务来说，没有必要在最高推理力度下使用最聪明的模型。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Andrej Karpathy’s setup from his HackerTube blog today:<br><br>- “I use Claude Code (desktop app for Mac).”<br><br>As I’ve been saying, terminal is the wrong interface for coding agents. Desktop apps are the best interface today.<br><br>- “I use Opus 5.5 on Medium effort as my default.”<br><br>There’s no point to use the smartest model at the highest reasoning effort for most tasks.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWAzHMqbAAAXZD-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Accidental CTO 系统设计书</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xGky · 2026-10-31 18:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">学系统设计最怕的就是翻来翻去全是“标准答案”。<br><br>一本颇有意思的开源书：《The Accidental CTO》。<br><br>作者并非科班出身，却一路把系统从零做到支撑 100 万+ 在线商店。<br><br>它跟传统教材的路数相去甚远，倒更接近一份真实生产现场里的“事故复盘”：<br><br>数据库复制延迟、分片、缓存、Kafka、可观测性、熔断降级、云成本……全都围绕真实问题来讲，技术选型背后的取舍也会摊开来细说。<br><br>🔗 <a href="https://github.com/subhashchy/The-Accidental-CTO" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/subhashchy/The-Accidental-CTO</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV6w4-ja0AAZajU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GitHub Actions 提速十法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HiTw93 · 2026-11-01 15:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有了 AI 以后写代码速度快了非常多，但是校验的速度其实还是不快的，特别是在 GitHub 上跑 Actions CI 的速度，下午花了一些时间对 Mole、Kaku、Pake 的 CI 全部彻底优化了一下，效果很不错，分享给大伙。<br><br>你可以这样直接 Copy 下面给到你的 Agent，我们来看看可以帮你节约多少时间。<br><br>帮我把这个仓库的 GitHub Actions 提速，在不减少必要的测试项以及功能校验下，最大幅度减少耗时。<br><br>1. 先使用 gh 拉最近 50 次的运行情况，把每一个 job 拆成排队、准备、真正跑测试的 3 个时间段，去看规律，可能很多时候慢的是准备的阶段，不是测试本身。<br>2. 同一个 PR 连着推好几次时，只跑最新的那次，旧的直接取消掉，用 cancel-in-progress 去实现。不过 main 分支不要这么做，需要确保发版 main 上的每一个提交都完整跑过一遍。<br>3. 只改 README 和文档的这种提交不要触发跑 CI，可以用 paths 过滤掉，另外被跳过的必需检查会一直卡住 PR 合不进去，这个要提前注意一下。<br>4. 优先用 setup 类 action 自带的缓存，setup-node 打开 cache，setup-go 默认就开，Rust 用 Swatinem/rust-cache，注意每个仓库缓存只有 10 GB，用不上的就不要放到这里面去。<br>5. 本地连着构建两次，第二次应该几乎不花时间，假如有多余的花时间的地方，一定是哪些写得有问题，比如 Dockerfile 装依赖前先 COPY 了整个仓库，或者构建脚本盯着一个不存在的文件，类似的问题记得检查。<br>6. 工具直接下载预编译好的，不要用 go install、cargo install 现场安装编译，这里会很费时间。<br>7. 不互相依赖的 job 并行跑，删掉不传数据的 needs，最长的那套测试拆到多台机器上去跑。<br>8. 免费账号的 macOS 最多同时跑 5 个，所有 workflow 共用，格式化、lint、依赖审计这些不挑系统的都移到 Ubuntu 去跑更好。<br>9. 做过的事情就不要做重复了，以及不要多此一举做事情，比如别的 job 跑过的检查就不要套重复再跑，比如只构建前端的 job 就不要多此一举去拉整个 Rust 缓存。<br>10. 改完去 push 那个上面测试运行效果，看运行的时间，发现规律，再次查漏补缺来优化一遍，做到最好，最后给到我优化前后的对比。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mika 手机 Agent 实测成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mofan9006 · 2026-11-01 12:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">试了一下让 AI 替我操作手机的开源项目 Mika，顺便算了算账<br><br>我之前做过一个微信群聊机器人，靠 Shizuku 拿 shell 权限（也就是系统命令行权限），靠截图加 OCR 认屏幕。用下来有两个老问题：USB 一拔或者手机一重启，机器人就停了；OCR 经常认错群名和发送按钮，发送前的核对就过不去。<br><br>后来在 GitHub 上看到一个开源项目 Mika，它说自己是“你手机上的私人 AI 助理”：你用一句话告诉它要做什么，它自己去打开 App、点按钮、打字，把事办完。它刚好不用 Root，也不用一直连着电脑。于是我试了一下。<br><br>先说结果<br><br>我拿一台闲置的 Android 12 手机，让 Mika 操作微信：发了三轮私聊消息，又在群里发了一轮消息。<br><br>模型用的是阿里云百炼的 qwen3.8-27b。一共 6 个任务，包括失败的 2 次，消耗约 82 万 tokens，按官方原价算约 0.92 元，平均每个任务约 0.15 元。<br><br>过程不太顺，中间踩了三个坑，后面细说。<br><br>用人话说一下它怎么干活<br><br>Mika 主要做了三件事：<br><br>拿权限：在 App 里自己实现了一套无线调试（ADB）协议，配对后拿到系统 shell 权限，不需要 Root，也不需要电脑。<br>看屏幕：主要读无障碍控件树，也就是系统给每个按钮、文字留的结构化信息；读不到的再用 OCR 补。<br>做决定：每一步都交给大模型。模型读一遍当前界面，决定点哪里，执行完再读一遍，一直循环到任务完成。<br><br>它在一块后台虚拟屏上操作别的 App。你在前台照常刷手机，它在后台干活。<br><br>过程：三个坑<br><br>第一个坑在早期版本：Android 12 上一配对就崩溃。我抓了日志，发现代码里用了 BigInteger.TWO，这个常量要 Android 13 才有。我本来打算自己 fork 一份来修，结果作者先发了 v0.1.29，把这个问题修掉了。<br><br>第二个坑在 ColorOS：系统只帮我打开了“无障碍快捷按钮”，真正的无障碍服务并没有启用，需要手动再开一次。<br><br>第三个坑是配对码：配对码弹在主屏上，但 Mika 只看得到自己的虚拟屏。所以我让它“自己去读配对码”，两次都失败了。这一步只能在它的设置向导里完成。<br><br>算一下账<br><br>82 万 tokens 的构成是这样的：<br><br>显式缓存命中的输入：67.9 万<br>显式缓存创建的输入：10.9 万<br>输出：2.3 万<br>缓存未命中的输入：0.9 万<br><br>单价按北京地域的官方原价，每百万 tokens：输入 3 元，输出 12 元，显式缓存创建 3.75 元，显式缓存命中 0.3 元。合起来约 0.92 元。<br><br>单看这个数不贵，但有两点值得注意。<br><br>第一，97% 的 tokens 都是输入。 这类 Agent 每走一步，都要把系统提示词和整屏界面内容重新发给模型一遍，输出反而很少。发一条微信大概要走十几步，一个任务就是十几万 tokens。<br><br>第二，省钱全靠缓存。 没有缓存的话，同样的用量要 2.65 元左右，大约是现在的三倍。失败的任务也照样计费。新账号送的 100 万免费 tokens，我半天就用掉了八成。<br><br>所以我的判断是：让大模型一步一步操作手机，适合没有固定流程的一次性任务；回群消息这种高频、固定的动作，每条都要花一毛多、等十几秒，不划算。<br><br>我想搬走的两个设计<br><br>一是在手机上自己拿权限。我的机器人靠 Shizuku，启动要连电脑。Mika 在手机上自己完成无线调试配对，不用再依赖电脑。<br><br>二是读控件树、用虚拟屏。我原来用截图加 OCR 认群名和按钮，经常认错，而且每次都要亮屏解锁、在主屏上操作。改成读控件树，识别应该会准很多；放到虚拟屏上，回消息时也不会打扰我正常用手机。<br><br>现在做到哪了<br><br>我正在把这两点搬进自己的机器人：流程还是写死的，大模型只负责写回复内容，权限和读屏用 Mika 的思路。改完的效果还没验证，跑通后再写。<br><br>做 AI Agent 不一定每一步都要交给大模型。让模型只做它擅长的部分，其余交给写死的流程，往往更便宜，也更稳定。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">王赞 <span style="font-size:12px;color:#999999;font-weight:400;">@wangzan101</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Mika 开源 48 小时不到，GitHub 破 2000 Star 🎉 感谢每一位支持的朋友。<br><br>Mika是一个跑在你手机上的AI诸侯，一句话交给他，他在一块独立的命上帮你操控app、上网、把事干完。<br><br>想到，就能做到！目前他能做的事包括但不限于下面这些：<br><br>1、操控任何app：你使用的app他都能操控，发微信，看小红书、发推特、看广告领VIP、打游戏刷金币…… <br><br>2、在网页上帮你把活干完：搜索、抓取内容、填写表单，你在网页上的操作，他依旧都行，模仿人的痕迹，大幅度减少被风控。<br><br>3、悬浮胶囊：随时随地，在任何app里，想到就能唤起Mika，分析当前屏幕，或者让他去帮你把干活<br><br>4、同时内置Linus沙箱，他也能帮你跑脚本，处理文件  他干活的时候你照样用你的手机，互不打扰，无需root，不用电脑，纯本地运行，复用你本地的app和网页登录态干活。<br><br>发布后得到了，很多朋友的反馈，群里、GitHub、推特上，每时每刻都有人在认真反馈问题，提交修复，因为你们，Mika才会更好。<br><br>经过48小时的开发，目前已新增下面的功能，更多功能也正在赶来的路上：<br><br>1、自学习：操控的app和网页，做过的事，他会总结到知识库，每一次都比上次更快更稳，越用越好用<br><br>2、MCP支持：现在已经支持在你电脑上的Agent下调用Mika帮你干活，锁屏也能轻松唤醒，想到，就能做到  <br><br>3、更多的知识库，通过内置知识库app.md、site.md，Mika在对应的网站上能更快的把活干好，正在添加更多的内容<br><br>拟人操作、插话打断、授权登陆、多语言支持、更多的机型适配…… <br><br>接下来，让我们一起把Mika做好，不管你是开发者还是用户，都欢迎加入，遇到问题提 issue，有想法提 PR。<br><br>一起把手机上的 AI 助理做好，再次感谢大家的支持🙏</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9GT9tboAAkPxH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV9GXSrb0AAX3_0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cloudflare 暴露本地推理服务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-11-01 10:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把我本地Mac Studio的推理模型，语音识别模型这些服务，变成了互联网服务。<br><br>让我的本地Agent 安装上了 Cloudflare Tunnel，然后再配置一下Workers VPC，Cloudflare 就可以访问我本地强大的计算能力了。<br><br>测试了一下，速度比预期快。比方说访问Mac本地的PostgreSQL，100多ms的延迟。用上数据库连接池，延迟更低。<br><br>所以，现在唯一的瓶颈就是我的家庭宽带了，上行带宽只有40Mbps。但是也比我的云主机强，那个云主机带宽只有5Mbps。<br><br>话说，Cloudflare是真的很好用，前端页面和前端服务都可以交给它了，简单的后端服务它自己也有很多基础设置可用，复杂的，可以接第三方服务，或者直接用我本地Mac Studio。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenMetadata 数据血缘与治理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-11-01 17:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">公司数据散落在各种数据库、数据仓库、BI 仪表盘和数据管道里，想知道一张表从哪里来、被哪些业务使用，经常要跨好几个系统排查。<br><br>OpenMetadata 是一个值得关注的开源数据治理平台，把数据发现、数据血缘、数据质量和元数据管理整合到了一起。<br><br>它支持 130+ 数据源连接器，可以自动采集数据库、消息队列、BI 工具、数据管道等系统的元数据，统一建立企业的数据资产目录。<br><br>比较实用的是它的列级数据血缘追踪，可以直观看到一个字段从哪里来，经过了哪些转换，最终流向了哪些表和仪表盘。排查数据问题和评估变更影响会方便很多。<br><br>数据质量方面，支持配置各种测试规则，检查数据的完整性、唯一性、及时性等指标，还能通过看板追踪整体数据健康状况。<br><br>另外，它还支持 MCP，可以把企业的数据资产信息开放给 AI 助手和 Agent 使用，让 AI 不只是能查询数据，还能理解数据背后的业务含义和上下游关系。<br><br>对于数据工程师、数据分析师，以及正在建设数据治理体系的团队，这个项目值得研究一下。<br><br>GitHub：<a href="https://github.com/open-metadata/OpenMetadata" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/open-metadata/OpenMetadata</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

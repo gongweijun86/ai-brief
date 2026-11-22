@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月12日 17:16">
+<title>AI技术雷达 · 11月12日 17:16 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Magpie 更新源迁至官方域名</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Horizon 聚合多源新闻生成日报</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Pi 扩展生态新增子Agent与插件</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Eigent 发布Agent做RL基准</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 更新源迁至官方域名</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @magpie_router · 2026-11-12 15:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">回应一下这位老朋友，Magpie 把更新源从直链 GitHub 改到了 Magpie 官方域名下，主要是因为 GitHub 每天免费访问 release artifacts 的请求数量是有限的，这就很容易导致用户访问 GitHub 出现 rate limit，再加上近期 GitHub 的 artifacts 服务的稳定性有很大的问题，所以就把更新源放到了 Cloudflare R2，前面挂的是 Magpie 的官方域名，下载完毕后会做 SHA 校验。所以我不知道恐怖在何处。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW6IjkoboAAmWXP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Toast 与通知组件的场景分工</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Kubai087 · 2026-11-12 09:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">✨ Toast 和 Notification 怎么选？——《999 个小技巧，让你 Vibe 的产品更有质感》016<br><br>在网页端，尤其是给操作反馈时，我们常用 Toast 或 Notification 传递信息。两者的使用场景有什么区别？<br><br>Toast 用于即时、直接的反馈：展示某个操作的结果，用户知道即可。<br><br>它可以附带一个按钮（比如撤销），配合倒计时，到时自动消失，避免打扰。耗时的操作，也可以先显示进度，完成后原地变为结果。<br><br>如果某件事必须由用户处理，就不适合用 Toast：不可撤销的操作，应在执行前用弹窗确认；需要处理的失败，应留在原处，直到解决。<br><br>Notification 常见于操作系统，一些工作台类产品也会使用。它与 Toast 最大的区别在于：内容可以与用户当前的操作无关，由他人或系统主动发出，而不是由用户的操作触发。<br><br>因此，它适合展示需要用户看到、但不必立刻打断的信息，这也是它与弹窗的区别。<br><br>Notification 会一直保留，直到用户处理或关闭；多条可以堆叠，也可以附带操作按钮。<br><br>附一条 Prompt（比较长，如果你需要）：它会先读取你的产品，逐条判断每条提示该用 Toast、Notification 还是都不用，列出表格由你决定；确认后，还可以按视频中的效果改造 Toast 和 Notification ⬇️<br><br>001–016 期都在主页 Highlights，栏目日更中<br>正在冲刺万粉（10k），期待你的推荐！🫶 非常感谢</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120553195240144902/img/5wtsqgmObPDIw-Ua.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Horizon 聚合多源新闻生成日报</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-12 16:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">沃德发！有个 AI 新闻监控的开源项目，在 GitHub 上已经冲到 1.3 万多星了！？！<br><br>项目名叫 Horizon ，它会替你把各路消息先过一遍，只把真正有用的消息推给你。<br><br>1、Telegram、X、GitHub、RSS、Reddit、Hacker News，这些渠道都能一次接进来。<br><br>2、它自己会筛一遍、打个分，重复的消息合并成一条，剩下的才是值得看的。<br><br>3、每天自动给你出一份中文、一份英文的日报，还会顺手补上事情的来龙去脉和大家的讨论。<br><br>地址在这：<a href="https://github.com/Thysrael/Horizon" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Thysrael/Horizon</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW6ZPUjbAAAAkpR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi 扩展生态新增子Agent与插件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitTrend0x · 2026-11-12 15:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pi 扩展生态又燃爆了 🔥<br><br>tintinweb 的子 Agent 军团、code-yeongyu 的嵌套规则注入、ben-vargas 的扩展百宝箱、opensec 的原生编译闪电版、jmfederico 的网页指挥台……全网玩家把 Pi 玩成了下一代「多 Agent 指挥部 + 目录规则管家 + 插件军火库 + 秒开引擎 + 远程驾驶舱」:<br><br>1️⃣ tintinweb/pi-subagents（<a href="https://github.com/tintinweb/pi-subagents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tintinweb/pi-subagents</a>）<br><br>给 Pi 带来 Claude Code 式的子 Agent 和工作流编排：每个子 Agent 独立会话、自带工具和模型，可后台跑、中途改方向、续跑，还能用 JS 脚本写确定性流程；1,433 星。<br>“一个 Pi，秒变一支施工队”！<br><br>2️⃣ code-yeongyu/pi-nested-agents-md（<a href="https://github.com/code-yeongyu/pi-nested-agents-md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/code-yeongyu/pi-nested-agents-md</a>）<br><br>Agent 读到子目录里的文件时，自动把附近各层的 AGENTS 规则文件附进上下文，补上 Pi 只加载根目录规则的空缺；移植自 oh-my-openagent。<br>“走到哪个目录，就守哪个目录的规矩”！<br><br>3️⃣ ben-vargas/pi-packages（<a href="https://github.com/ben-vargas/pi-packages" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ben-vargas/pi-packages</a>）<br><br>作者自用后开源的一组 Pi 包：扩展、技能、提示词模板和主题，包括 Synthetic 模型接入（Kimi、GLM、MiniMax、Qwen 等）、Antigravity 生图等。<br>“别人的私房工具箱，直接拎包入住”！<br><br>4️⃣ opensec-git/Pi-Bolt（<a href="https://github.com/opensec-git/Pi-Bolt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/opensec-git/Pi-Bolt</a>）<br><br>把 Pi 提前编译成一个原生可执行文件，不要 Node 也不要 Bun：README 实测 41 ms 就能开始输入（Node 版 423 ms），写 400 KB 文件快 120 倍；803 星。<br>“同一个 Pi，换上了火箭发动机”！<br><br>5️⃣ jmfederico/pi-web（<a href="https://github.com/jmfederico/pi-web" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jmfederico/pi-web</a>）<br><br>Pi 的网页界面：会话跑在你自己的机器或服务器的真实工作区里，断开连接也不停，电脑和手机浏览器都能同时盯多个会话；935 星。<br>“人在地铁上，Agent 在机房里干活”！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Eigent 发布Agent做RL基准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-12 11:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Amazing work！<br><br>Eigent AI 新发布的 AgenticRL-Bench，探讨 Agent 能否逐步接手 RL 研究人员的工作，甚至参与训练下一代 Agent？<br><br>他们直接拿真实 RL 研发中遇到的问题来测试。目前 Agent 已经能自己调整训练策略、跑出实际收益，不过很多时候连自己的工作是否真正完成还是判断不准。<br><br>但是未来真的走向 AI 的 Recursive Self-Improvement，验证能力会变得非常重要。<br><br>顺便说个小插曲，当时 Guohao 老师团队还在伦敦的时候，我还私信老师问团队招不招线下实习🙃，一晃眼两年过去了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Guohao Li 🐫 <span style="font-size:12px;color:#999999;font-weight:400;">@guohao_li</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">智能体能执行 agentic RL 吗？如果 RSI 发生，智能体将需要接手研究人员在 agentic RL 方面的工作<br><br>隆重推出 AgenticRL-Bench：这是 The Environment Lab @env_lab_ai 在 Eigent AI 的努力所产出的第一项发布<br><br>22 个任务从生产级 agentic RL 系统的真实世界 RL 事故中重建，包括 Miles、Slime、Verl、SGLang 和 Harbor，涵盖技术栈的 8 个领域：训练数据、harness、算法、RL 基础设施、配方、评估、监控和能力迁移<br><br>我们运行了 6 个智能体，每个任务尝试 3 次。在 19 个可验证任务上，没有智能体通过超过其尝试的 14.0%<br><br>在三个开放式任务中，智能体使用 4×H200 GPU 在 10–16 小时内改进了真实策略或训练步骤。在其中一个任务 Zero Signal Hill Climb 上，基座模型无法解决 38 个任务中的任何一个，最好的一次尝试开发了自己的方法：智能体首先使用带提示的文本反馈生成成功的 rollout，然后从轨迹中移除这些反馈，并将这些成功的 rollout 与常规 GRPO rollout 混合以形成混合训练组。它监控训练过程并调整 KL loss 权重以防止训练崩溃。这将 pass@1 从 0 提升到 0.186（38 个任务中的 12 个）</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Can agents perform agentic RL? If RSI happens, agents will need to take over researchers' work on agentic RL<br><br>Introducing AgenticRL-Bench: the first release from The Environment Lab @env_lab_ai effort at Eigent AI <br><br>22 tasks rebuilt from real-world RL incidents on production-grade agentic RL systems, including Miles, Slime, Verl, SGLang, and Harbor, spanning 8 areas of the stack: training data, harnesses, algorithms, RL infrastructure, recipes, evaluation, monitoring, and capability transfer<br><br>We ran 6 agents with 3 attempts per task. On the 19 verifiable tasks, no agent passes more than 14.0% of its attempts<br><br>Across the three open-ended tasks, agents improved real policies or training steps using 4×H200 GPUs over 10–16 hours. On one of these tasks, Zero Signal Hill Climb, where the base model fails to solve any of the 38 tasks, the best attempt developed its own method: the agent first used hinted text feedback to generate successful rollouts, then removed the feedback from the trajectories and blended these successful rollouts with regular GRPO rollouts to form mixed training groups. It monitored the training process and adjusted KL loss weight to prevent training collapse. This improved pass@1 from 0 to 0.186 (12 out of 38 tasks)</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW3c6v-bcAAVNRS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

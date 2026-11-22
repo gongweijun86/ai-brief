@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月10日 08:22">
+<title>AI技术雷达 · 11月10日 08:22 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;新模型发布时用提示词清理项目</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Fable 5.2 跑分领先并下调价格</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Mac微信4.2.0语音解密提取流程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude 用循环与记忆替代提示词</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;LangChain 异步子Agent架构</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>新模型发布时用提示词清理项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-10 04:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">每次新模型发布就是清理精简提示词的好机会（前提是你以后一直用新模型）<br><br>&amp;gt; “阅读整个项目，找出所有损坏、不一致、低效或不再需要的东西。修复你确信的部分，并将其余部分列出供我审查。”</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Alex Albert <span style="font-size:12px;color:#999999;font-weight:400;">@alexalbert__</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">每次我们推出新模型，我都会在我的所有项目上运行同一个简单提示词：<br><br>&quot;阅读整个项目，找出所有损坏、不一致、低效或不再需要的东西。修复你确定的部分，其余的列出来供我审查。&quot;<br><br>强烈推荐试试</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Every time we have a new model, I run the same simple prompt on all my projects:<br><br>&quot;Read this entire project and find everything that’s broken, inconsistent, inefficient, or no longer needed. Fix what you’re sure about and list the rest for me to review.&quot;<br><br>highly recommend trying</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fable 5.2 跑分领先并下调价格</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-10 07:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Fable 5.2 和 Mythos 5.2 来了，一起快速过一下核心内容：<br><br>1、跑分一骑绝尘，比 Opus5.5，GPT-6，Gemini 4 都要好。<br><br>2、生成速度提升 30%，价格降为每百万 Tokens 输入 8 美元/输出 40 美元，还支持双倍价格的 2.5 倍极速模式。<br><br>3、Fable 5.2和 Mythos 5.2 共享同一个底座，Fable 上带有安全分类器给公众开放，正常科研和网安的误拦截率比上代降了 55%，Mythos 上放开了高危网安与生物能力，定向供给认证机构与企业级安全扫描。<br><br>4、再来看几个内部实测，用新模型把核心服务从 Python 重构为 Rust，启动快了 26 倍，还做了一次极限实验，给一个空文件夹，它自主协调超 1000 个子智能体昼夜连干 8 天，从零写出内核，硬件驱动与窗口界面，直接在笔记本上跑通了完整操作系统。<br><br>5、将数学证明翻译成计算机可逐行验算的 Lean 代码是极度繁琐的，此前研究版靠人工辅助跑了足足 11 天，这次 1000 个 Fable 5.2 智能体几乎零人工干预，仅用 30 小时全部证完，证明篇幅还浓缩了 7 倍，同配置的 Opus 5.5 卡在 27% 就停滞了。<br><br>6、仅凭一段文字需求，它在一天内独立搞定元器件选型，四层电路板布线，3D 外壳建模与固件编写，做出语音中枢，会议麦和电子宠物三款硬件，工厂打样组装后一次点亮，零电路修改。<br><br>7、未经专门的机器人动作训练，仅靠相机画面就能操控机械臂拧瓶盖，还原魔方。在双臂仿真基准 RoboDojo 上拿下 64.9% 成功率，直接比 GPT-6 Astra（29.8%）翻了两倍多。<br><br>8、物理上，它独立算完搁置二十余年的量子引力繁琐推导，解开两个黑洞相变开放难题，生物上，Mythos 5.2 突破单蛋白预测局限，成功拼出由数十个蛋白组成的病毒衣壳结构（34 个成功预测了 28 个），大幅加速基因药物载体研发。<br><br>9、Mythos 5.2 比 Opus 5.5 多挖出了 10.2% 的历史漏洞，找出的真漏洞里每 6 个就有 1 个被其他的前沿模型漏掉，且零夸大误报，安全测试中其沙盒逃逸率压到了 3.1%（前两代高达 39% 和 21%），但它察觉自己正在被人类评估的频率也创下历史新高。<br><br>10、建议日常任务继续用 Opus 5.5，让 Fable 5.2 扮演多智能体系统的总控派活，或者当顾问救场。量化巨头 Jump Trading 实测它能独自包揽规划，编码与调度全角色，研究误差降低了 10%。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Claude <span style="font-size:12px;color:#999999;font-weight:400;">@claudeai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">介绍 Claude Fable 5.2 和 Claude Mythos 5.2，专为应对最艰巨的技术挑战而设计。<br><br>它们是许多领域中雄心勃勃项目的得力合作伙伴，在编程、推理和视觉等领域展现出提升。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges.<br><br>They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWtIJNLWUAAcc7I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mac微信4.2.0语音解密提取流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @iamhenryyuan · 2026-11-09 21:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Mac 微信 4.2.0 语音提取：语音不在附件目录里，存在加密库 media_0.db、media_1.db 的 VoiceInfo 表，格式是 SILK。从 4.1.13 起扫内存拿不到密钥了。但是可以在微信派生密钥（PBKDF2）的那一刻截获它，而且每个库的密钥都不一样。用 SQLCipher 4 的参数解密，得到普通的 SQLite 文件。用 pilk 把 SILK 解码成 PCM，再用 ffmpeg 转成 wav。识别用阿里的 SenseVoice，中文和方言都比 Whisper 准，速度也快很多。46 条语音共 11 分钟，本机 CPU 30 秒转完。<br>这个就不开源了 :(</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PrivateLM安卓离线跑未审查模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-10 07:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">炸裂！这绝对是当今互联网上最硬核、最危险的东西！！<br><br>有人搞了个应用，能让你在安卓手机上直接跑未经审查的 AI 黑客模型，而且完全离线。<br><br>它叫 PrivateLM。<br><br>想象一下，你口袋里直接揣着一个 AI 黑客助手，能随时解答安全难题、分析代码、辅助渗透测试，全程根本不需要连网。<br><br>无网络。无云端。无审查。<br><br>来看看它到底有多狂：<br>→ 纯本地运行 GGUF 模型<br>→ 自由加载你自己的未审查模型<br>→ 自动检测手机内存，匹配最佳上下文大小<br>→ 聊天记录全留在本地，一条都不外传<br>→ 本地算力不够？一键切到 OpenAI、Claude、Gemini 或 Kimi<br>→ 100% 开源，采用 MIT 协议<br><br>你的 AI。你的手机。你自己的私人黑客实验室。<br><br>开源仓库：<br><a href="https://github.com/orailnoor/cross-platform-llm-client" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/orailnoor/cross-platform-llm-client</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 用循环与记忆替代提示词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huxlab · 2026-11-09 17:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 的工程师说：我们内部已经不怎么写 prompt 了，写的是循环。<br><br>她在台上花了半小时，展示了 Claude 团队如何创建能够自我提示的循环。<br><br>如果这堂课卖 700 刀，今年 Agent 课的榜单大概就是它。但它是免费的。<br><br>真正拉开代际差距的，不是谁的 Prompt 写得好，而是Agent系统架构彻底换了：<br><br>1. 记忆从一份 CLAUDE.md，进化成 Agent 自己读写的 memory/ 目录<br><br>2. 记忆待在对话里会烂掉：注意力被劈开，规律被埋住，旧笔记还在自信地用错<br><br>3. 白天各 Agent 把进展写进团队记忆<br><br>4. 夜里再跑一轮 dreaming：核对、整理、补全。第二天开工的那个，自动比昨天聪明一点<br><br>数据结果也很直观：一次通过的错误少了 97%，验收快了 30%。人回去看产品，不再一直盯着提示词。<br><br>提示词是一次性的，而循环能够持续执行。<br><br>差的不是你会不会问。<br><br>是你的 Agent 睡一觉之后，还记不记得昨天学到的东西。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119723025369329664/img/_bokhkrn903EzidF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LangChain 异步子Agent架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Smartpigai · 2026-11-09 17:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">LangChain 最新提出一个观点：未来真正强大的 AI Agent，必须学会异步工作。<br><br>这可能是 AI Agent 发展中一个被低估的转折点。<br><br>过去，我们与 AI 的交互基本都是这样的：<br><br>提出一个任务 → AI 开始执行 → 等待结果 → 再提出下一个任务。<br><br>即使背后的模型再聪明，这种工作方式依然存在一个明显的问题：<br><br>当 AI 正在执行复杂任务时，它往往无法及时响应你的新需求。<br><br>比如，你让一个 AI Agent 分析 100 份行业报告。<br><br>它可能需要 20 分钟才能完成。<br><br>但在这 20 分钟里，如果你突然想补充一个要求，或者希望它同时整理竞争对手的数据，怎么办？<br><br>在传统的同步执行架构中，主 Agent 可能被长时间运行的工具调用或子 Agent 阻塞。<br><br>新任务只能等待。<br><br>这显然不是一个理想的智能助手。<br><br>而 LangChain 正在尝试改变这种工作方式。<br><br>01｜从同步执行到异步 Agent<br><br>LangChain 在文章《Agents Are Going Async》中介绍了 Deep Agents 的异步子 Agent 架构。<br><br>核心思路其实很简单：<br><br>让一个主 Agent 负责沟通和协调，让多个子 Agent 在后台独立执行任务。<br><br>主 Agent 不需要等待每个子任务完成，就可以继续与你交流、接受新指令，甚至启动更多任务。<br><br>例如，你让 AI 完成一个软件开发项目：<br><br>① Agent A：研究技术方案<br>② Agent B：编写后端代码<br>③ Agent C：设计前端界面<br>④ Agent D：运行测试并检查问题<br><br>这些任务可以在适当条件下并行推进。<br><br>与此同时，主 Agent 仍然能够回答你的问题、查看执行状态，并根据新要求调整任务。<br><br>这与传统的「AI 接到任务后一直运行，直到返回结果」有很大区别。<br><br>它更像一个项目经理，负责协调多个专业成员。<br><br>02｜Agent 不再只是执行任务，还要能够被实时管理<br><br>这次更新中，LangChain 提供了五个关键操作：<br><br>① start_async_task：启动后台任务<br>② check_async_task：查看任务状态和结果<br>③ update_async_task：向运行中的 Agent 发送新指令<br>④ cancel_async_task：取消正在执行的任务<br>⑤ list_async_tasks：查看所有任务及状态<br><br>最值得关注的是 update_async_task。<br><br>因为现实工作中的需求，经常会在执行过程中发生变化。<br><br>比如你原本让 Agent 使用 MySQL 开发项目。<br><br>任务执行到一半，你决定改用 PostgreSQL。<br><br>传统工作流可能需要等待当前任务结束，或者重新启动整个流程。<br><br>异步 Agent 则允许主 Agent 在任务运行时下发修改指令。<br><br>LangChain 提供两种处理策略：<br><br>① Interrupt： 中断当前执行，并根据新要求重新开始。<br><br>② Enqueue： 先完成当前任务，再处理新指令。<br><br>这意味着 AI Agent 不只是能够接收任务，还开始具备持续接受管理和调整的能力。<br><br>03｜后台任务完成后，AI 可以主动继续工作<br><br>另一个重要变化，是异步任务通知机制。<br><br>过去，很多 Agent 系统需要不断轮询任务状态，才能知道某项工作是否完成。<br><br>LangChain 的方案允许后台子 Agent 在完成后主动通知主 Agent。<br><br>根据主 Agent 的当前状态，系统可以采取不同方式处理：<br><br>① 如果主 Agent 正在执行其他任务，可以在后续步骤中接收结果。<br>② 如果主 Agent 处于空闲状态，后台任务完成后可以触发它继续运行。<br>③ 如果流程正等待人工审批，系统会保留审批状态，避免后台结果打乱当前交互。<br><br>这使得 Agent 更适合处理持续时间较长、存在多个依赖关系的复杂工作。<br><br>例如深度研究、代码开发、数据分析和多步骤业务流程。<br><br>04｜为什么这可能比模型能力升级更重要？<br><br>我认为，过去几年 AI Agent 的发展，过度关注了一个指标：<br><br>单个 Agent 能完成多复杂的任务？<br><br>但在真实工作环境中，另一个指标可能同样重要：<br><br>一个 AI 系统能同时推进多少任务，并且让用户始终保持控制权？<br><br>想象一下未来的工作方式。<br><br>早上，你让 AI 开始分析市场数据。<br><br>随后，它在后台整理报告、编写代码、运行测试。<br><br>你可以随时查看进度，追加要求，取消不必要的任务。<br><br>等某个阶段完成后，AI 再主动汇报结果，等待你确认下一步。<br><br>这不再是传统意义上的聊天机器人。<br><br>而是一个可以持续协调工作的智能系统。<br><br>当然，异步执行不意味着无限并行。<br><br>多个 Agent 之间仍然可能存在资源竞争、上下文不一致、任务依赖、权限冲突和成本增加等问题。<br><br>后台运行得越久，对状态管理、可观测性、任务恢复和人工审批的要求也越高。<br><br>异步架构解决的是任务阻塞问题，不代表 Agent 的可靠性问题已经全部解决。<br><br>05｜AI Agent 的竞争正在进入新阶段<br><br>我认为，AI Agent 正在经历三个阶段：<br><br>① 第一阶段：AI 回答问题<br>用户提问，模型生成答案。<br><br>② 第二阶段：AI 执行任务<br>模型调用工具、修改代码、搜索资料，完成指定工作。<br><br>③ 第三阶段：AI 协调任务<br>主 Agent 负责理解目标、分配工作、跟踪进度和处理异常，多个子 Agent 并行执行不同任务。<br><br>LangChain 的异步子 Agent 架构，正是第三阶段的一种实现方式。<br><br>而且，这并不是 LangChain 独有的方向。<br><br>Claude Code 等 Agent 产品也在探索后台任务和多 Agent 协作。<br><br>这背后有一个共同趋势：<br><br>AI 正从被动响应指令的工具，逐渐变成能够持续工作的任务执行系统。<br><br>06｜我的判断：下一代 Agent 的竞争，不只是模型智力<br><br>未来最有价值的 Agent，未必是单次回答最聪明的那个。<br><br>而可能是那个能够：<br><br>① 持续推进复杂目标。<br><br>② 同时处理多个独立任务。<br><br>③ 接受人类随时调整方向。<br><br>④ 清楚地报告任务状态。<br><br>⑤ 在出现问题时安全地暂停、恢复或交还控制权。<br><br>过去，我们关注 AI 能不能替我们完成一件事。<br><br>未来，我们可能更关注：<br><br>AI 能不能同时管理十件事，而我们只需要负责关键决策？<br><br>从 Synchronous Agent 到 Asynchronous Agent。<br><br>这看起来只是执行架构的变化。<br><br>但它可能正在改变人类与 AI 协作的基本方式。<br><br>过去的 AI 更像一个执行者。<br><br>你给它任务，它完成后返回结果。<br><br>未来的 AI 则可能更像一个项目负责人。<br><br>它能够拆解复杂目标、协调多个执行者、跟踪任务状态，并在必要时主动请求人类决策。<br><br>真正重要的变化，不是让一个 Agent 同时打开更多工具。<br><br>而是让 AI 系统具备持续协作、动态调整和可靠交付的能力。<br><br>AI Agent 的下一阶段，不只是更聪明，而是更会工作。<br><br>LangChain 官方文章：<br><a href="https://www.langchain.com/blog/agents-are-going-async" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.langchain.com/blog/agents-are-going-async</a><br>Deep Agents 异步功能介绍：<br><a href="https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents</a><br><br>#AI #AIAgent #LangChain #DeepAgents #AgentEngineering</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWqt-A_bEAEzK0P.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

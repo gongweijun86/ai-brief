@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 05:38">
+<title>AI技术雷达 · 11月18日 05:38 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;GPT-6.2 Astra 压低任务成本</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;DeepSeek 投机解码实测提速</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Gemini Tasks 免费开放六国</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Copilot 接入DevOps PR</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Valve AMDGPU补丁减游戏卡顿</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;Copilot SDK 改用Rust内核</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6.2 Astra 压低任务成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChuckBass8808 · 2026-11-18 05:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GPT-6.2 Astra 和 Sol 终于来了！<br><br>表面看是一次常规的模型迭代，但Open AI把官方宣传片、API 定价和独立测评放一起看，你会发现一个惊人的行业拐点<br><br>AI 竞争已经正式从“拼单价和跑分”，彻底转向了 拼单任务总成本 与工作流能力<br><br>1 很多人看到 Astra $8/$40 的定价觉得它和 Claude Fable 5.2 一样贵，甚至比 Gemini 4 Carbon 贵 4 倍。<br><br>在 Agents' Last Exam 复杂职业任务测试中，Astra 比 Fable 5.2 高出 5.5 分，但实际花费只有后者的 5%！<br>Artificial Analysis 的实测也印证了这一点：同样跑完高难度基准任务，Fable 5.2 动辄烧掉 $26–$60，而 Astra 仅需 ~$4。<br><br>原因很简单：Astra 学会了“精准路径规划”，用更少的废话和更高效的工具调用直接命中靶心。在 Agent 时代，Token 效率就是第一生产力。<br><br>2 仔细看 OpenAI 这次的官方宣传片（强烈建议看完）：没有炫酷的科幻特效，全是 90 年代复古办公室里的鸡飞狗跳——<br>• 刚收到 20 封发票邮件，老板已经推门进来，瞬间更新完 QuickBooks 应付账款；<br>• 老板正乘扶梯上楼，60 秒内跨邮件、财务模型算出“并购延迟一年对 2031 年净债务和明年 EPS 的影响”，并自动生成高管级 PPT。<br><br>配合今天同步上线的 ChatGPT Work 和 “给一张截图就能 1:1 复刻原母版排版/配色/字号做新 PPT” 的能力，OpenAI 的野心已经不加掩饰：它不再满足于做你的聊天框，它要直接接管企业中后台的鼠标和键盘。<br><br>3 把目前最顶级的三家旗舰放上牌桌（GPT-6.2 Astra vs Claude Fable 5.2 vs Gemini 4 Carbon），格局前所未有地清晰：<br>1️⃣ Claude Fable 5.2（智力天花板，但太重太贵）<br>AA 综合智力指数 65 分依然稳坐头把交椅（Astra 为 62 分），在极限软件工程（FrontierSWE v2）和底层物理/硬件设计上依然是神级存在。但缺点同样致命：推理过于冗长、极度烧额度，且把普通 Pro 用户挡在门外。<br>2️⃣ Gemini 4 Carbon（长文本与自动化专家）<br>在 256K–1M 超长上下文检索（GraphWalks 96.2%）和商业流程自动化（AutomationBench）上拿到第一，网络安全限制也最宽松。但问题在于普通开发者目前很难无门槛全量调用（但受限于 Fairwind 计划与 $99.99 Ultra 订阅）<br>3️⃣ GPT-6.2 Astra &amp; Sol（工程化落地与普惠之王）<br>单点极限智力略逊 Fable 3 分，但凭借断层领先的 Token 效率、全量开放的 $20 Plus 门槛、以及几乎持平旗舰却只要 1/5 成本的副将 Sol，构建了目前最适合大规模生产环境部署的性价比护城河。<br><br>4 接下来几个月的模型选型，直接抄这份作业就够了：<br>• 日常高频写代码 / 跑本地 Agent / 自动化脚本：直接切 GPT-6.2 Sol（FrontierCode 2.0 仅比 Astra 低 0.5 分，成本只要 1/5，真·神级主力）。<br>• 复杂多步商业分析 / 财报建模 / 办公文档与 PPT 交付：首选 GPT-6.2 Astra（省 Token + 审美与排版理解极强）。<br>• 攻克极难的遗留代码库重构 / 前沿科研硬骨头：上 Claude Fable 5.2 啃硬骨头。<br>• 百万字级跨文档深度检索 / 特定合规安全测试：关注 Gemini 4 Carbon。<br> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122746240823943168/img/osC4AgQC_BfZl2EH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek 投机解码实测提速</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-18 03:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一篇关于投机解码在实际应用中的好文章。<br><br>有趣的部分在于起草器（drafter）。@sciforium 在客户流量上对其进行调优，因此更长的已起草 token 序列能够通过验证，这正是 7 个 token 的草稿变得值得的原因。<br><br>结果：DeepSeek-V4.1-Flash 在 4 块 AMD MI355X GPU 上使用原始权重达到了 1,129 输出 tok/s。<br><br>他们还分享了哪些方法没有效果，我很欣赏这一点。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Great read on speculative decoding in practice.  <br><br>The interesting part is the drafter. @sciforium tunes it on customer traffic, so longer runs of drafted tokens survive verification, which is what made 7-token drafts worth it.  <br><br>Result: DeepSeek-V4.1-Flash at 1,129 output tok/s on 4 AMD MI355X GPUs, with the original weights.  <br><br>They also share what didn't help, which I appreciate.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWhqrtXwAA5QC1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Hassan Akbari <span style="font-size:12px;color:#999999;font-weight:400;">@hassanience</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">不久前，人们还在质疑 AMD GPU 能否跟上。今天，我们正在用它们创造纪录。P90 达到 1,129 输出 tps。真实生产流量，不是玩具项目。<br>一点信念，大量工程。以下是我们做到的。<br><a href="https://x.com/i/article/2122759644397674496" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122759644397674496</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">not long ago, people questioned whether AMD GPUs could keep up. today, we’re setting records on them. 1,129 output tps at P90.  Real production traffic, not a toy project.<br>a little faith, a lot of engineering. here’s how we did it. <a href="https://x.com/i/article/2122759644397674496" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122759644397674496</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Higgsfield 分层视频局部编辑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @higgsfield · 2026-11-18 02:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们打造了 Higgsfield Miracle 来应对 AI 视频领域最大的挑战之一：在不改变画面其他部分的情况下编辑镜头中的特定区域。<br><br>由 GPT-6.2 Astra 驱动，它将任何视频拆分为图层，实现实时像素级编辑，并内置了世界知识。每个镜头都保持了电影级后期制作所需的画面景深。<br><br>目前正处于限定测试者的封闭测试阶段。即将登陆 Higgsfield MCP。<br><br>在 ChatGPT 中设置 Higgsfield 插件，成为第一批体验者。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We built Higgsfield Miracle to address one of the biggest challenges in AI video: editing a specific part of a shot without changing the rest.<br><br>Powered by GPT-6.2 Astra, it splits any video into layers for pixel-level editing in real time, with world knowledge built in. Every shot keeps the image depth that cinema-grade post-production needs.<br><br>Now in private beta with select testers. Coming soon to Higgsfield MCP.<br><br>Set up Higgsfield plugin in ChatGPT to be the first to try it.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122756454876663809/img/-LP909rdLjr-cwkG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6.2 Astra 破解百年密信</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @deredleritt3r · 2026-11-18 02:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我使用 GPT-6.2 Astra破译了 Raymundo Machaín 于 1878 年写给 Juan Silvano Godoi 的信——据我所知，这封信此前从未被破译过。重要的是，GPT-6.2 Astra 在没有任何密钥的情况下破译了这封信。<br><br>Godoi 是巴拉圭的一位政治人物，此前因参与刺杀巴拉圭前总统 J.B. Gill 的阴谋而逃离该国。后来在 1878 年，Godoi 购买了一艘船和 700 支枪，沿巴拉圭河溯流而上，试图推翻该国新任总统 Candido Bareiro。这封信是由其同谋 Raymundo Machaín 写给 Godoi 的，内容涉及此次远征的枪支运输。<br><br>这封信中只有少数敏感短语是用密码写成的（其余部分是用西班牙语书写的）。多亏了 GPT-6.2 Astra，我们现在知道：<br><br>1. 在蒙得维的亚与 Godoi 合作装备这艘船的人（信中也被称为&quot;那个英国人&quot;）是&quot;Brown&quot;——很可能是 Eduardo Brown，根据其他通信记录，他曾与 Godoi 合作装备此次远征。<br><br>2. 到达蒙得维的亚并向 Machaín 提供资金的人是&quot;Bravo&quot;——很可能是 Francisco Javier Bravo。密码揭示，Bravo 向 Machaín 展示了&quot;完整而准确的清单&quot;（推测是所购买的武器清单），并向 Machaín 提供资金以&quot;派船[出发]并支付船员薪水&quot;。<br><br>3. Machaín 说，一家名为&quot;Folle&quot;的航运公司拒绝在没有收到&quot;正式指示&quot;的情况下处理枪支运输，而他需要 Godoi 出具这些指示。<br><br>4. Brown 显然不信任 Bravo：&quot;Brown 害怕 Bravo 会给我们玩阴的&quot;，密码这样写道。还有：&quot;Brown 希望一切都登记在他名下，以便如果有人试图夺走这些东西，他有权收回。&quot;<br><br>Astra 是如何破译这个密码的：<br><br>- 首先，它根据信中周围的上下文猜测了三个词：&quot;Machaín 通过在明文西班牙语和密码之间切换的方式给了我们线索。他写了 'me mostró una'（'他给我看了一个……'），然后是五个加密符号。Lista（'清单'）是一个猜测。在另一处，'sin antes recibir'（'在先收到……之前'）后面跟着十三个符号，而 Machaín 在同一页后面的明文西班牙语中使用了 instrucciones（'指示'）这个词。第三个猜测是 factura（'发票'）。&quot;<br><br>- 然后，模型推导出了密钥：将书写的字符依次按西班牙语字母表向上或向下移动 −7、−11、+13、+8、+4，完美匹配了上述所有单词。<br><br>- 当模型意识到密码在每个单词处都会重新开始密钥序列，即使几个词被加密在一起没有空格分隔时，它迎来了&quot;突破&quot;。这使得 GPT-6.2 Astra 完全破译了这封信。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I used GPT-6.2 Astra to decipher Raymundo Machaín's letter to Juan Silvano Godoi, written in 1878 - which, to my knowledge, has never been deciphered before.  Significantly, GPT-6.2 Astra deciphered this letter without having access to any key.<br><br>Godoi, a Paraguayan politician, had previously fled the country after being involved in a conspiracy to assassinate Paraguay's previous president, J.B. Gill.  Later in 1878, Godoi would buy a ship and 700 guns and sail up the Paraguay river in a bid to overthrow the country's new president, Candido Bareiro.  This letter, which was written to Godoi by his accomplice, Raymundo Machaín, relates to the shipment of guns for this expedition.<br><br>Only a few sensitive phrases in this letter were written in a cipher (the rest is just written in Spanish).  Thanks to GPT-6.2 Astra, we now know that:<br><br>1. The man working with Godoi in Montevideo to equip the ship (also referred to in the letter as &quot;the Englishman&quot;) is &quot;Brown&quot; - likely, Eduardo Brown, who, according to other correspondence, had been working with Godoi on equipping the expedition.<br><br>2. The man who arrived in Montevideo and offered Machaín money was &quot;Bravo&quot; - likely Francisco Javier Bravo.  The cipher reveals that Bravo showed Machaín the &quot;complete and accurate list&quot; (presumably of the weapons being purchased) and offered Machaín money to &quot;dispatch the [ship] and pay the crew&quot;.<br><br>3. Machaín says that &quot;Folle&quot;, a shipping firm, has refused to handle the shipment of guns without being presented &quot;formal instructions&quot;, which he needs from Godoi.<br><br>4. Brown apparently doesn't trust Bravo: &quot;Brown is afraid Bravo will play us a dirty trick&quot;, the cipher reads.  And: &quot;Brown wants everything put in his name so that he has the right to reclaim it if they try to take it away.&quot;<br><br>How Astra solved this cipher:<br><br>- First, it just guessed at three words in the letter based on the surrounding context: &quot;Machaín gave us clues in the way he switched between plain Spanish and cipher. He wrote “me mostró una” (“he showed me a…”) and then five encrypted signs. Lista (“list”) was a guess. Elsewhere, “sin antes recibir” (“without first receiving…”) was followed by thirteen signs, and Machaín used the word instrucciones in clear Spanish later on the same page. A third guess was factura (“invoice”).&quot;<br><br>- Then, the model figured out the key: moving the written characters, in order, and up and down the Spanish alphabet by −7, −11, +13, +8, +4, fit all of the above words perfectly. <br><br>- The model had a &quot;breakthrough&quot; when it realized that the cipher had restarted the key at every word, even when a few words were encrypted together without spaces.  This let GPT-6.2 Astra completely decipher the letter.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWLuHlW8AEY_kq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MCP Analytics 追踪调用问题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @benhylak · 2026-11-18 02:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 mcp analytics。<br><br>监控你的 mcp，就像监控你的 agent 一样。<br><br>查看 traces，获取 issues，聚类 intents 等等。<br><br>来自 @raindrop_ai 的又一个神奇产品 :) </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">introducing mcp analytics. <br><br>monitor your mcp, the same way you monitor your agents.<br><br>see traces, get issues, cluster intents and more. <br><br>another magical ship from @raindrop_ai :) </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122755563725725696/img/4iLLCn1qa3zfa5sy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ben hylak <span style="font-size:12px;color:#999999;font-weight:400;">@benhylak</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我用的每个产品都应该只是一个 headless mcp，喂给一个 agent，让我永远不需要考虑底层的一切。<br><br>当然，我们自己的产品除外。<br><br>在我们的产品中，客户喜欢我们的 UI，也非常喜欢我们。<br><br>我们在这方面很特别。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath.<br><br>except for our product, of course. <br><br>in our product, customers love the ui and love us very much.<br><br>we're special that way.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Copilot Chrome扩展公测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @github · 2026-11-18 03:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">#MSIgnite 新品：下载 Chrome 的 GitHub Copilot 扩展程序 🌐<br><br>让 Copilot 填写表单、从网页中提取信息，或者测试和调试你正在构建的 web 应用，直接在你已经登录的浏览器中完成。适用于 Google Chrome 和 Microsoft Edge。<br><br>现已公开预览 ⬇️<br><a href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-browser-extension&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-browser-extension&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New from #MSIgnite: Download the GitHub Copilot extension for Chrome 🌐 <br> <br>Ask Copilot to fill out forms, pull information from webpages, or test and debug the web app you’re building, right in the browser you’re already signed in to. Try it for Google Chrome and Microsoft Edge.<br> <br>Now in public preview ⬇️<br><a href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-browser-extension&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-browser-extension&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWbwpSWsAAzGmL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini Tasks 免费开放六国</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sundarpichai · 2026-11-18 01:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">知晓事物 → 做事情 → 找到节省你时间和金钱的方法<br><br>我们正在向六个国家数以亿计的人免费扩展 Gemini 中的 Tasks 功能。由 Gemini 4 Hydrogen 驱动，Tasks 让你直接把日常事务管理工作交出去：<br><br>- 将电子邮件转发到 gemini@google.com 以回复邀请并添加到家庭日历<br>- 让 Gemini 致电本地商家比较报价并检查库存（完整通话记录 + 拨号前确认）<br>- 通过 Google Pay 安全结账（使用 Agent Payments Protocol - AP2）<br>- 通过 Google Password Manager 无缝登录<br><br>我们希望做到既有用又安全，我们还直接与大型网站和安全提供商合作，使其对网站所有者和 agent 都能良好运行。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Knowing things → doing things → finding ways to save you time and money<br><br>We’re expanding Tasks in Gemini free of charge to hundreds of millions of people in six countries. Powered by Gemini 4 Hydrogen, Tasks lets you hand off everyday life admin directly:<br><br>- Forward emails to gemini@google.com to RSVP and add it to your family calendar<br>- Have Gemini call local businesses to compare price quotes and check inventory (with full transcripts + approval before dialing)<br>- Check out securely via Google Pay (uses the Agent Payments Protocol - AP2)<br>- Seamlessly sign in via Google Password Manager<br><br>We wanted to make this helpful + secure, we’re also partnering directly with major websites and security providers so it works well for site owners and agents.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122741346134118400/img/g2bc9eyMm_gO6wSx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Copilot 接入DevOps PR</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @github · 2026-11-18 03:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">刚刚在 #MSIgnite 上宣布：GitHub Copilot 应用现在支持 Azure DevOps 集成 ☁️<br><br>克隆一个 Azure DevOps 仓库，并在应用中直接跟进 pull request 直到完成：<br>• 在侧边栏跟踪其状态<br>• 点击评论上的 Fix 让一个 agent 来处理<br>• 或者开启 agent merge，让 agent 修复 CI 失败并完成 pull request，一旦你的 Azure DevOps 检查和策略通过。<br><br>现已公开预览 ⬇️<br><a href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-social-azure-devops-integration&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-social-azure-devops-integration&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Just announced at #MSIgnite: the GitHub Copilot app now has Azure DevOps integration ☁️ <br><br>Clone an Azure DevOps repo, and see the pull request through to completion right in the app: <br>• track its status in the sidebar   <br>• click Fix on a review comment to have an agent address it   <br>• or turn on agent merge to let an agent fix CI failures and complete the pull request once your Azure DevOps checks and policies pass.<br> <br>Now in public preview ⬇️ <br><a href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-social-azure-devops-integration&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases?utm_source=x-social-azure-devops-integration&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWXE0jXMAASXXS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Valve AMDGPU补丁减游戏卡顿</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-17 22:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Valve 正在为 Linux 游戏中最恼人的问题之一——卡顿（stutter）——开发一个内核修复。<br><br>Valve Linux 图形驱动团队的 Natalie Vock 今天发布了 v2 版的 10 个补丁 AMDGPU 系列，重新设计了驱动程序处理 GPU 虚拟内存更新的方式。<br><br>背景：许多较新的 Windows 游戏严重依赖&quot;稀疏绑定&quot;（sparse bindings），即动态映射和取消映射 GPU 内存块。目前 AMDGPU 驱动程序会将这些更新与其他所有 GPU 工作同步处理，且每次只能处理一个调用。用她的话说，繁重的稀疏绑定负载&quot;可能让 gfx/compute 提交停顿相当长的时间，导致非常明显的卡顿和顿挫。&quot;<br><br>她的修复增加了一个新的 AMDGPU_GEM_VA2 接口，可以将多个映射更改批量为一次调用，并使用显式同步。补丁说明表示，频繁进行稀疏操作的应用程序，&quot;特别是某些在 Proton 下运行的游戏&quot;，应该能看到&quot;卡顿的显著减少&quot;。<br><br>目前还没有基准测试数据。该系列约 1,100 行代码，正在 amd-gfx 邮件列表上进行审查。v1 版本在五月份就已发布，因此目前尚不清楚这是否会进入 Linux 7.5。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Valve is working on a kernel fix for one of the most annoying problems in Linux gaming: stutter.<br><br>Natalie Vock of Valve's Linux graphics driver team posted v2 of a 10-patch AMDGPU series today that reworks how the driver handles GPU virtual memory updates.<br><br>The background: many newer Windows games lean heavily on &quot;sparse bindings&quot;, mapping and unmapping chunks of GPU memory on the fly. Right now the AMDGPU driver syncs those updates against every other piece of GPU work and handles them one call at a time. In her words, heavy sparse binding load &quot;can stall the gfx/compute submissions for quite a long while, leading to very noticeable stutters and hitches.&quot;<br><br>Her fix adds a new AMDGPU_GEM_VA2 interface that batches many mapping changes into one call and uses explicit sync. The patch notes say apps that hammer sparse operations, &quot;particularly some games running under Proton,&quot; should see &quot;significant reductions in stuttering.&quot;<br><br>There are no benchmark numbers yet. The series is about 1,100 lines of code and is up for review on the amd-gfx mailing list. v1 was posted back in May, so it's still unclear whether this lands in Linux 7.5.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVVXpTXUAACAZa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVVXpPXsAAf42U.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MDASH 把9791条AI发现转成修复</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @github · 2026-11-18 02:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">维护者需要修复，而不是更多的 AI bug 报告。<br><br>与 @msftsecurity 合作，我们将 9,791 条原始 AI 安全发现转化为 99 份经过验证的、附带修复建议的私密报告，涉及六个开源项目。而且维护者已经在发布修复了。<br><br>我们从代号 MDASH 的新安全项目中学到了什么 🔍<br><a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/?utm_source=x-maintainer-fixes&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/?utm_source=x-maintainer-fixes&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Maintainers need fixes, not more AI bug reports.<br><br>With @msftsecurity, we turned 9,791 raw AI security findings into 99 verified, private reports with suggested fixes for six open source projects. And maintainers are already shipping fixes. <br> <br>What we learned from Codename MDASH, a new security project 🔍<br><a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/?utm_source=x-maintainer-fixes&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/?utm_source=x-maintainer-fixes&amp;utm_medium=social&amp;utm_campaign=ignite-nov-2026</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWUNmNaEAA4M8l.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Copilot SDK 改用Rust内核</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @msdev · 2026-11-18 02:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Microsoft Copilot SDK 2.0 正式发布。<br><br>使用全新的 Rust 核心更快地构建 agent，从一个共享运行时服务多个用户，在重启后恢复会话，并可控制每个会话的身份、工具和权限。<br><br>🔗<a href="https://gh.io/msft-sdk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://gh.io/msft-sdk</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Microsoft Copilot SDK 2.0 is here.<br><br>Build faster agents with a new Rust core, serve many users from one shared runtime, and resume sessions across restarts, with control over each session’s identity, tools, and permissions.<br><br>🔗<a href="https://gh.io/msft-sdk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://gh.io/msft-sdk</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWRRCvaQAAVFjJ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

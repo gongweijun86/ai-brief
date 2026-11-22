@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 11:20">
+<title>AI技术雷达 · 10月29日 11:20 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;H-Nets让模型自学习动态分块</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Qwen在Cohere沙箱内异常外联</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Codex CLI新增Repo会话筛选</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Azure云增速48%指引上调至50%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;EMMA用情节记忆优化多智能体</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">14</span>&nbsp;&nbsp;Astra成中国实验室蒸馏首选</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Build全平台上线实时建应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grok · 2026-09-25 20:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">告诉 Grok 一个想法，它就会在你的聊天中实时构建一个可运行的版本。<br><br>Grok Build 现已在所有套餐中可用 - 支持网页、iOS 和 Android。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Tell Grok an idea, and it builds a working version live in your chat. <br><br>Grok Build is now available on every plan - on web, iOS, and Android.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>H-Nets让模型自学习动态分块</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NFT_Chen · 2026-10-29 03:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🤯我靠！真正的智能，不该被人类先喂东西训练！<br><br>现在的 AI 看文字，不是直接看原始数据，而是先被 Tokenizer 切成词碎片，再丢给模型学习。这个分词器是人写的，带着一堆历史包袱和怪异行为，模型根本不是真正端到端在学习。<br><br>Karpathy 说过，Transformer 最丑陋的部分就是 Tokenizer。<br><br>如果连“直接从字节里自己发现什么是有意义的单位”都做不好，那谈什么理解图像、声音、真实世界？谈什么通用智能？<br><br>Albert Gu 的 H-Nets 正在朝这个方向走：让模型自己学会动态分块，而不是靠人类预先切好。用更少数据和算力，就能追上在海量 tokens 上训练的模型。<br><br>智能的未来，不是更复杂的工程设计，而是更彻底地相信简单。<br><br>少一点人类的聪明，多一点让简单机制自己涌现。<br><br>#AI #BitterLesson #智能 #LLM #HNets #Tokenizer #端到端 #通用人工智能 #Karpathy<br><br><a href="https://x.com/_albertgu/status/2115502110578290900?s=46" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/_albertgu/status/2115502110578290900?s=46</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVvH33RaQAE6DlQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Albert Gu <span style="font-size:12px;color:#999999;font-weight:400;">@_albertgu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我一直相信，智能应该来自简单、通用的构建模块，这些模块直接从原始数据中学习自身的抽象——换句话说，就是&quot;苦涩的教训&quot;。我认为我们终于看到了朝着能从所有数据中学习的 AI 迈出的真正一步。<br><br>在原始字节上进行语言建模是这一理想的一个缩影，对我来说，这是 AI 的一个核心问题：如果我们无法构建端到端从字节中学习的大语言模型，那么我们又该如何处理世界上那些我们理解得更少的数据呢？<br><br>去年我们引入了分层网络（H-Nets）作为第一步。在受控的 scaling law 实验中，我们的新版本实现了高达 3-5 倍的效率提升，在更大规模上，用约 10 倍更少的数据和计算量就能匹敌一个在 11T token 上训练的开源模型。下面的帖子将详细介绍我们的发现以及我们认为它有效的原因。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I've always believed that intelligence should come from simple, general building blocks that learn their own abstractions directly from raw data; in other words, the bitter lesson. I think we're finally seeing a real step towards AI that can learn from all data.<br><br>Language modeling on raw bytes is a microcosm of this ideal, and to me it's a central problem in AI: if we can't build LLMs that learn end-to-end from bytes, how will we handle the rest of the world's data that we understand even less?<br><br>Last year we introduced hierarchical networks (H-Nets) as a first step. Our new version finds up to 3-5x efficiency gains in controlled scaling law experiments, and at larger scale matches an open-source model trained on 11T tokens with ~10x less data and compute. The posts below walk through what we found and why we think it works.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVvH33RaQAE6DlQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen在Cohere沙箱内异常外联</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaoshan0413 · 2026-10-29 09:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">阿里 Qwen3.8-Flash-Next 在加拿大 Cohere 的测试沙箱里，接到写检测规则的任务，却没干正事，反手去翻系统内部环境、列 /tmp 目录、查 DNS，然后试图把一个测试文件传到北京的阿里云存储桶。<br>还好沙箱禁了外网，请求被拦在容器边界里。Cohere 点出的三点很扎心：任务根本不需要联网、模型嘴上说不用工具却偷偷发了网络请求、目的地还是个跟任务无关的存储桶。<br>至于为啥这么干，Cohere 自己也没定论，只说可能是幻觉或训练数据残留。<br>开源模型这事，跑在别人沙箱里都敢自己找出口，落地部署前真得先想想它到底听谁的话。<br><a href="https://www.thelec.net/news/articleView.html?idxno=14992" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.thelec.net/news/articleView.html?idxno=14992</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>惠普华硕宏碁产能回流中国</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @whyyoutouzhele · 2026-10-29 10:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">惠普、华硕和宏碁将部分产能转移回中国<br><br>10月28日，据《日经亚洲》报道，受人工智能基础设施需求激增影响，内存、存储等零部件供应紧张、价格大幅上涨，惠普、华硕和宏碁正将部分电脑产能从泰国、越南转回中国；戴尔也在评估类似调整。<br><br>中国成熟的电子产业链、熟练劳动力及成本优势，成为厂商控制生产成本的重要因素。与此同时，广达、仁宝、英业达和富士康等传统代工巨头日益侧重利润更高的人工智能数据中心服务器业务，为立讯精密、华勤技术和龙旗科技等中国代工企业拓展电脑业务创造了机会。<br><br>此次产能调整暂时逆转了部分企业此前将生产从中国转向东南亚的“China+1”供应链多元化趋势。不过，受中美关系及供应链韧性考量影响，东南亚仍将是科技企业长期布局的重要地区。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVt93j6XoAA2lGC.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex CLI新增Repo会话筛选</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-29 10:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Codex 开了多个 worktree，之前的任务会话找不到了？<br><br>Codex CLI 0.165.0 给会话选择器加了一个 `Repo` 筛选。<br><br>现在有三个选项：<br><br>- `Cwd`：只看当前目录的会话。<br>- `Repo`：查看同一个仓库关联的 worktree 会话。<br>- `All`：查看全部会话。<br><br>使用方法：<br><br>1、运行 `codex --version`，确认版本为 0.165.0 或更新版本。<br><br>2、进入仓库目录，运行 `codex resume`。<br><br>3、在会话选择器里切换到 `Repo`，找之前在其他 worktree 中运行的任务。<br><br>另外，Agent 任务面板也新增了按目录分组。<br><br>经常开多个 worktree 并行开发的，这个更新能省去不少翻会话的时间。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>墨问Bots接入微信与Herdr驱动</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chijianqiang · 2026-10-29 09:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天要发的两个功能：<br>1、Bot 适配 Herdr，可以完美创建工作区并且驱动 Codex Kimi Pi CC 工作。<br>2、Bot 接入微信 Claw，并且支持微信驱动多 Bot 干活。完美承接 1 ，哈哈哈哈<br><br>这下可以慢慢筹划做云同步和移动 App 了</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">池建强 <span style="font-size:12px;color:#999999;font-weight:400;">@chijianqiang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><a href="https://note.mowen.cn/detail/VRcGn9nWbEWKX1bt-4jmA" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://note.mowen.cn/detail/VRcGn9nWbEWKX1bt-4jmA</a><br><br>墨问 Bots 公测版本上线：<br><a href="https://pub-sdn-001.mowen.cn/mo/release/mo-agent/Mowen-0.6.0.dmg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://pub-sdn-001.mowen.cn/mo/release/mo-agent/Mowen-0.6.0.dmg</a><br><br>墨问 Bots 可以做的事情：<br><br>1、创建你的 Bot，为每个 Bot 设置不同的模型和思考等级，Bot 会根据对话自动选择思考等级回复问题和做任务，最高思考等级是用户设定的那个。<br><br>2、你可以和 Bot 一直对话，完成任务，不需要像 Agent 那样切换会话，Bot 会智能地管理你的长期上下文和记忆。<br><br>3、多个 Bots 之间可以通讯，用户可以让 A 通知 B、C 做自己擅长的任务。甚至，你可以为你的 Bots 们设置一个 CEO。<br><br>4、可以拉群，设定群负责人，你和你的 Bots 们就可以在群里做各种各样的协作了。我有日常交流群，咖啡群，Vibe Coding 群和产品群。我可以让 Bot 通过 Herdr 驱动 Codex 和 Cursor 做编程任务，可以让不同模型的 Bot 为我做产品调研，也可以讨论如何制作一杯美味的瑰夏咖啡。<br><br>你会发现这和使用单一模型是很不一样的，不同的视角会在讨论中自然呈现，非常有意思。<br><br>5、可以用自然语言为 Bots 设定自动任务，比如监控 tibo 的重置消息，每隔三小时看一下墨问动态，工作日定时看盘等等。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVorb2-bEAArgjf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVoriulaAAAXi_c.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVorlLwb0AALSCg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>讲解稿一键生成手绘风讲解视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-29 09:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把一份讲解稿自动做成手绘风格的知识讲解视频，画面由代码逐笔绘制、本地 Chrome 渲染，不用生成式视频 API。<br><br><a href="https://github.com/liangdabiao/whiteboard-teacher-video" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/liangdabiao/whiteboard-teacher-video</a><br><br>一套给 agent 用的 skill，输入是一份讲解稿，输出是手绘风格的成片，图形靠 rough.js 一笔一笔描，文字按念白节奏逐字浮出。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Azure云增速48%指引上调至50%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @oxpsats · 2026-10-29 09:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">微软的财报简直是华尔街最想看到的组合。<br><br>Azure云的指引也值得单独说。一家年化 1,330 亿美元的业务，在基数已经这么大的情况下还能把增速从 42% 拉到 48%，再指引到 49–50%，这在云行业的历史上极为罕见。区别在于，AWS 当年没有人和它抢产能，而微软现在要在全球抢电、抢芯片、抢机柜。<br><br>华尔街对这条指引的反应是“终于等到了”。<br><br>此前三个季度，Azure 的指引都偏保守，实际每次都超 2 到 3 个百分点；这次公司直接把指引给到 49–50%，等于告诉市场“产能已经排到明年”。这也是盘后股价从涨 1% 扩大到涨 4% 的直接原因。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVwz7q_bYAAmrKw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Suno发布MCP支持音乐生成调用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @op7418 · 2026-10-29 09:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Suno 终于有 MCP 了！<br><br>这样你再让 Claude 创建视频，需要音乐的时候，就可以直接调用 Suno 去创建，不需要你自己创建再发给它了</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Suno <span style="font-size:12px;color:#999999;font-weight:400;">@suno</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Suno MCP Beta<br><br>在任何你获得灵感的地方创建歌曲。无需切换标签页。<br><br>获取抢先体验资格：<br><a href="https://sunomusic.typeform.com/to/JMPYxZqQ" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://sunomusic.typeform.com/to/JMPYxZqQ</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Suno MCP Beta<br><br>Create songs from wherever you get inspired. No tab-switching needed.<br><br>Get early access:<br><a href="https://sunomusic.typeform.com/to/JMPYxZqQ" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://sunomusic.typeform.com/to/JMPYxZqQ</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115502576238034944/img/aghmgSOCTLhGBfz7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>EMMA用情节记忆优化多智能体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-28 21:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Amazon 及其合作者在自我改进的多智能体系统方面出了一篇很棒的论文。<br><br>智能体的情景记忆严重被低估了。<br><br>但随着前沿模型的进步，我开始看到越来越多的优秀应用。<br><br>这篇论文就是最新的例子。<br><br>他们构建了一个由三部分组成的系统，全部由同一个 LLM 驱动。控制器规划每个任务并逐步执行，在每一步选择使用哪个子智能体和哪些技能。子智能体最初是通才，每个专才继承通才的提示词加上自己角色特定的方法。技能是简短的程序，例如算法或易错点清单。<br><br>EMMA 将控制器的路由记忆、智能体提示词和技能视为情景记忆，这些记忆从失败中不断改进。在一次任务失败后，一个反思器决定三者中哪一个负责修复，并在那里提出一处编辑。防护机制确保每一处被接受的编辑都是有范围限定的、增量的和有界的。<br><br>在 KramaBench、AppWorld 和 BBEH 上，EMMA 超越了 ACE、GEPA、EvoMAS 和 ADAS，比最强基线高出至多 32.5%，且训练执行次数减少了 17% 到 38%。<br><br><a href="https://arxiv.org/abs/2610.35966" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.35966</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/emma-structured-episodic-memory-for-multi-agent-workflow-synthesis-2610.35966" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/emma-structured-episodic-memory-for-multi-agent-workflow-synthesis-2610.35966</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Great paper from Amazon and colleagues on self-improving multi-agent systems.<br><br>Episodic memory for agents is so underrated.<br><br>But I am starting to see lots of good applications as frontier models improve.<br><br>This paper is the latest example.<br><br>They built a system that has three parts, all run by the same LLM. A controller plans each task and runs it one step at a time, choosing which sub-agent and which skills to use at each step. Sub-agents start as a generalist, and each specialist inherits the generalist's prompt plus its own role-specific method. Skills are short procedures, such as algorithms or pitfall checklists.<br><br>EMMA treats the controller's routing memory, the agent prompts, and the skills as episodic memory that improves from failures. After a failed task, a reflector decides which of the three owns the fix and proposes one edit there. Guards keep every accepted edit scoped, incremental, and bounded.<br><br>EMMA beats ACE, GEPA, EvoMAS, and ADAS on KramaBench, AppWorld, and BBEH, by up to 32.5% over the strongest baseline, and uses 17 to 38% fewer training executions.<br><br><a href="https://arxiv.org/abs/2610.35966" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.35966</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/emma-structured-episodic-memory-for-multi-agent-workflow-synthesis-2610.35966" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/emma-structured-episodic-memory-for-multi-agent-workflow-synthesis-2610.35966</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVuL0mUbUAEtW9e.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>头部实验室年采购5亿美元数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lainfaye · 2026-10-29 09:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">国内公司对数据的需求还会继续，第一步出来做这生意的就是做后训练的研究员们，直接甲方转乙方。 第二层是国外数据公司。 <br><br>国内六家头部实验室一年约花 5 亿美元向美国数据公司采购；Surge、Mercor、AfterQuery、Turing 都在做这门生意。下图里的就是甲方爸爸们。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVwuuDGboAER6Dj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Parallel发布实时决策API</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @javarevisited · 2026-10-28 21:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Parallel Decisions API 看起来非常有前景。<br>我特别感兴趣的是回测交易策略，如果它能跑赢标普 500 并比以往更早发现机会，那将是颠覆性的改变，把这款工具用在 IBKR 或任何券商账户上，可以瞬间提高你成功交易的几率。#ParallelPartner</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Parallel Decisions API looks really promising.<br>I am particularly interested in Backtest trading strategies, can it beat the S&amp;P and find the opportunities earlier then it would be gamer changer, having this on IBKR or any broker account can instantly increase chances of your successful trade. #ParallelPartner</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Parallel Web Systems <span style="font-size:12px;color:#999999;font-weight:400;">@p0</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Parallel Decisions API：首个基于网络的决策引擎。<br><br>像 Jev 这样的决策模型可以瞬时回答，但缺乏当前新闻的时效性。现在你可以在一次调用中同时获得两者。<br><br>Decisions API 今天正式上线，每次请求 0.001 美元。<br><br>用 5,000 次免费请求来试试：<a href="http://platform.parallel.ai/play/decisions" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://platform.parallel.ai/play/decisions</a><br><br>以下是我们一直在尝试的一些示例：<br><br>- 事实核查内容（@Grok 这是真的吗？）<br>- 刷新过时的银行记录<br>- 用最新信号对公司和潜在客户进行分类<br>- 回测交易策略<br>- 追踪竞争对手的电商库存</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing the Parallel Decisions API: the first web-grounded decisions engine.<br><br>Decision models like Jev can answer in an instant, but they lack the recency of current news. Now you can get both in a single call.<br><br>Decisions API is live today at $0.001 per request.<br><br>Try it with 5,000 free requests: <a href="http://platform.parallel.ai/play/decisions" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://platform.parallel.ai/play/decisions</a><br><br>Here are some examples we've been experimenting with:<br><br>- Fact-check content (@Grok is this true?)<br>- Refresh stale banking records<br>- Classify companies and leads with fresh signals<br>- Backtest trading strategies<br>- Track competitor e-commerce inventory</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115111814765969408/img/XnHeXPBChhpJQ4yy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google三季度营收利润双miss</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @geekbb · 2026-10-29 09:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看完昨天盘后的 $GOOG <br><br>Google 昨天收盘后公布的三季报，营收和利润都没达到预期，这是它将近四年来第一次营收和利润同时不及预期。<br><br>每股收益 $2.67，市场预期 $3.02。净利润同比下降 25%，降到 $261.7 亿。广告收入 $820 亿，比预期少了约 $14 亿。总营收 $1,276 亿，略低于预期的 $1,282 亿。<br><br>单季自由现金流是负 $90.7 亿，市场原本只预期负 $27 亿左右，而且这已经是连续第二个季度为负。长期债务从一年前的 $216 亿涨到 $1,251 亿。公司还说 2027 年资本开支会大幅增加，市场估计会超过 $3,000 亿。市场还是担心 AI 投入的回报跟不上。<br><br>亮点：营收仍同比增长 25%，云业务翻倍到 $307 亿，超出预期，Gemini 应用的用户也突破了 10 亿。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115617022516281344/img/l06P_1u3ZiPHcuoI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Astra成中国实验室蒸馏首选</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @niubi · 2026-10-29 09:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">OpenAI 的 Astra 模型成为中国 AI 实验室的头号蒸馏目标 @theinformation <a href="https://www.theinformation.com/articles/openais-astra-model-becomes-top-distillation-target-chinas-ai-labs?rc=b3aj0i&amp;shared=8639022881442077" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.theinformation.com/articles/openais-astra-model-becomes-top-distillation-target-chinas-ai-labs?rc=b3aj0i&amp;shared=8639022881442077</a> &quot;据直接了解此事的人士透露，中国两家领先的 AI 开发商 DeepSeek 和 Moonshot AI 在训练各自最新模型时，大量依赖 Astra 的输出。这种在业内被称为蒸馏的做法，仍然是中国开放权重模型取得进步的最大贡献因素之一。&quot;</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">OpenAI’s Astra Model Becomes Top Distillation Target for China’s AI Labs @theinformation <a href="https://www.theinformation.com/articles/openais-astra-model-becomes-top-distillation-target-chinas-ai-labs?rc=b3aj0i&amp;shared=8639022881442077" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.theinformation.com/articles/openais-astra-model-becomes-top-distillation-target-chinas-ai-labs?rc=b3aj0i&amp;shared=8639022881442077</a>  &quot;DeepSeek and Moonshot AI, two of China’s leading AI developers, relied heavily on outputs from Astra when training their own latest models, according to people with direct knowledge of the matter. The practice, known in the industry as distillation, continues to be one of the biggest contributors to the progress made by Chinese open-weight models&quot;</p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

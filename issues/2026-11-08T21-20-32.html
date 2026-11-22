@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月9日 05:20">
+<title>AI技术雷达 · 11月9日 05:20 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Anthropic Agent管理五律</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;微信读书全本导出EPUB等格式</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Ropedia W0 人类经验训世界模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;LeHami 用哈密顿力学防JEPA坍缩</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Evolver 让Agent复用历史经验</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic Agent管理五律</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AYi_AInotes · 2026-11-09 00:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 官方 Agent 管理学来了！值得连看3遍学习和品味！<br>Anthropic  Claude Code 的开发主管Addy Osmani详解管理 Agent 的 5 条高杠杆铁律非常干货，强烈推荐给大家！<br>很多程序员老哥走纯技术路线就是为了不当经理，就是为了远离冗长的例会、复杂的协作和管理人的琐事，只想安安静静写代码，<br>结果用上 Coding Agent 的第一天，就被逼着当上了五人团队的技术主管，因为工程师的核心工作已经从写代码变成了让好代码发生，<br> Addy Osmani刚发的这篇文章戳破了一个无法回避的现实： 当你每天开始在后台挂着三五个 Coding Agent 帮你跑任务时，你其实已经被系统直接推上了技术经理的位置。<br>你每天做的事情早已不是敲击键盘，而是在选定任务、交代背景、制定验收标准、审查代码变更，并决定哪些东西可以正式上线。 工程师的核心工作，已经从亲自写代码，彻底变成了让好代码发生。<br><br>Addy Osmani 把 Anthropic 内部管理 Agent 的高杠杆经验全盘摊开，提炼出五条最值钱的执行铁律：<br><br>建立自检闭环，绝不当人肉测试机 这是最高杠杆的一步。不要自己一遍遍肉眼找 Bug，而是给 Agent 提供明确的测试用例、构建命令和代码规范，让它自己去跑、自己看失败报错、自己修复。没有自检护栏的人，最后自己会沦为系统的最大瓶颈。<br><br>早干预与两次重置原则 看到模型走偏立刻按 Esc 叫停。如果连续纠偏两次模型依然理解不了，不要尝试第三次辩论，果断清空会话重新写更清晰的提示词。第三次纠错往往只是在给充满噪音的历史上下文添乱。<br><br>警惕隐形的调度税 同时跑的 Agent 绝不是越多越好。超过三五个之后，每一个新增的智能体都在指数级掠夺你的审查注意力。用自动化评审接管监控，把有限的注意力留给最终的架构决策。<br><br>认真审查代码，而不是给代码盖章 不要因为测试全绿、文件看起来合理就顺手批准大段代码变更。不理解逻辑的批准不是审查，而是认知层面的投降。看变更时必须假设这个逻辑漏洞上线后会半夜把你叫醒。<br><br>让每一次纠错变成制度记忆 同一个错误在不同任务里出现两次以上，必须立刻固化进 CLAUDE.md 或者封装成专属 Skill。把个人脑子里的纠偏，变成所有智能体都能终身继承的系统规范。<br><br>以前管理技能只有带团队的主管才被迫去学；现在每一个用 Agent 的工程师，都会在日常开发里被逼着学会这一整套高维心智。<br><br>Addy Osmani 深度长文原文与 Agent 管理行动清单整理在一楼。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWnYRGGWYAA17S5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Addy Osmani <span style="font-size:12px;color:#999999;font-weight:400;">@addyosmani</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118901185377964033" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118901185377964033</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>微信读书全本导出EPUB等格式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Huahuazo · 2026-11-08 08:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">微信读书的伙计们怕是要乐出声了！竟有人把全本导出这桩事给开源了！<br><br>开源项目 weread-book-exporter，但凡你在微信读书里攥着阅读权限的书，它都能径直扒拉到本地！<br><br>1、PDF、EPUB、Markdown 三样格式全兜得住。<br>2、原书的目录、标题层级连同高清插图，它自个儿就给你留着。<br>3、网页端翻页爱漏字、段落错位这些个糟心事，一并给收拾了。<br>4、导出来的 Markdown，径直塞进 Obsidian、Notion 知识库便能使。<br><br>仓库：<a href="https://github.com/WANGXIN-567/weread-book-exporter" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/WANGXIN-567/weread-book-exporter</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWjz2oNbsAAQI5p.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ropedia W0 人类经验训世界模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiqizhixin · 2026-11-09 02:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">人类经验可以帮助机器人世界模型学到比孤立手部动作更多的东西。<br><br>Ropedia W0，来自 Ropedia、南洋理工大学及其合作者的一篇预印本，研究了跨运动和操作的视频预测。三件事需要了解：<br><br>1. 其训练数据集将 10,000 小时的人类视频与 3,000 小时的机器人视频结合起来。相机轨迹和投影骨架提供了跨不同身体的共享运动条件表示，将初始观察和文本与预测的未来自我中心视频联系起来。<br><br>2. 用 5B W0 模型初始化 FastWAM 视频骨干，使报告的 LIBERO-Plus 成功率从 50.06% 提高到 56.82%。在所报告的设置下，这是 6.76 个百分点的提升，动作头和训练方案保持不变。<br><br>3. 视频世界模型与下游动作系统扮演不同角色。迁移实验证实了利用人类经验来改进机器人学习骨干的可行性；它并未表明仅靠视频生成就能提供一个完整的机器人控制器。该项目提供了代码和模型链接供进一步检视。<br><br>Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience<br><br>Paper: <a href="https://arxiv.org/abs/2610.26855" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.26855</a><br>Project: <a href="https://ropedia.github.io/ropedia-w0/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ropedia.github.io/ropedia-w0/</a><br>Code: <a href="https://github.com/Ropedia/ropedia-w0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Ropedia/ropedia-w0</a><br>Model: <a href="https://huggingface.co/ropedia-ai/Ropedia-W0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/ropedia-ai/Ropedia-W0</a><br>Our Report: <a href="https://www.jiqizhixin.com/articles/2026-10-27-11" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-10-27-11</a><br><br>📬 #PapersAccepted by Jiqizhixin</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Human experience can help a robot world model learn more than isolated hand movements.<br><br>Ropedia W0, a preprint from Ropedia, Nanyang Technological University and collaborators, studies video prediction across locomotion and manipulation. Three things to know:<br><br>1. Its training collection combines 10,000 hours of human video with 3,000 hours of robot video. Camera trajectories and projected skeletons provide a shared motion-conditioning representation across different bodies, linking an initial observation and text to predicted future egocentric video.<br><br>2. Initializing the FastWAM video backbone with the 5B W0 model raises reported LIBERO-Plus success from 50.06% to 56.82%. That is a 6.76 percentage-point gain under the reported setup, with the action head and training recipe unchanged.<br><br>3. The video world model and the downstream action system have different roles. The transfer experiment supports using human experience to improve a robot-learning backbone; it does not show that video generation alone supplies a complete robot controller. The project provides code and model links for further inspection.<br><br>Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience<br><br>Paper: <a href="https://arxiv.org/abs/2610.26855" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.26855</a><br>Project: <a href="https://ropedia.github.io/ropedia-w0/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ropedia.github.io/ropedia-w0/</a><br>Code: <a href="https://github.com/Ropedia/ropedia-w0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Ropedia/ropedia-w0</a><br>Model: <a href="https://huggingface.co/ropedia-ai/Ropedia-W0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/ropedia-ai/Ropedia-W0</a><br>Our Report: <a href="https://www.jiqizhixin.com/articles/2026-10-27-11" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-10-27-11</a><br><br>📬 #PapersAccepted by Jiqizhixin</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVybP6ebIAARSVI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Atomarine 建海上核能数据中心</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @DimitrisKoute · 2026-11-07 06:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天我们宣布 Atomarine 完成 1900 万美元种子轮融资！<br>我们得到了优秀投资者的支持，包括 @ycombinator、@PanteraCapital、@Soma_Capital、@sevensevensix、@Liquid2V、@AudaciousHQ、@e14fund 等等。<br><br>@Atomarine_co 正在解决当今 AI 的主要制约因素：物理基础设施建设。我们以核能为动力的浮式数据中心，设计为可在单一生产线上建造，并锚定在近海。<br><br>通过转移到海上，我们不会与社区争夺水、电或土地，也不会推高他们的电费或租金。这使得美国能够在不将负担转嫁给当地社区的情况下保持 AI 竞争中的竞争力，同时通过用核能而非化石燃料来扩展 AI 来应对气候变化。<br><br>我们已经构建了一个功能性的概念验证原型，目前正在全力冲刺下一个重大里程碑。<br><br>如果你是船舶设计、核能或数据中心设计领域非常优秀的工程师，或者只是热爱在改变世界的快节奏公司工作，请联系我们。我们正在招聘！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today we're announcing Atomarine's  $19M seed round!<br>We are supported by great investors including @ycombinator, @PanteraCapital, @Soma_Capital , @sevensevensix, @Liquid2V, @AudaciousHQ, @e14fund, and many others.<br><br>@Atomarine_co is solving the main constraint to AI today: physical buildout. Our floating data centers powered by nuclear, are designed to be built on a single production line, and anchored offshore.<br>By moving offshore, we do not compete with communities for water, power or land, and we do not drive up their electricity bills or rent. This allows America to stay competitive in the AI race without putting the burden on local communities, while fighting climate change by scaling AI on nuclear instead of fossil fuels.<br>We have already built a functional proof of concept and we are now racing towards our next big milestone.<br><br>If you are a very talented engineer in naval architecture, nuclear or data center design, or just love to work at world-changing, fast-paced companies, reach out. We are hiring!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118814030689079297/img/vFj6zoX0HJsfW9ln.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Alpie 9B 基本复制Qwen3.5</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dongxi_nlp · 2026-11-08 22:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">印度光明节，号称 built in 印度的 Alpie 9B 发布。看了一下，完全是向 Qwen3.5-9B “致敬”：<br><br>- 架构方面，完全 copy<br>- 分词器方面，词表一个字没动<br>- 权重结构和数值：基本逐位相同<br><br>哦，唯一不同的是模型的自我认知：<br><br>chat template 每轮都注入指令，问来自哪里就答 “India”。<br><br>把 X 网友当傻子么？<br><br><a href="https://huggingface.co/169Pi/Alpie_seed/blob/main/chat_template.jinja#L3" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/169Pi/Alpie_seed/blob/main/chat_template.jinja#L3</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWnGxZBWsAAgeDf.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">169Pi <span style="font-size:12px;color:#999999;font-weight:400;">@169Pi_ai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在这个排灯节，让印度 AI 研究社区向全球 AI 领域投射更多的光芒。<br><br>隆重介绍来自 Alpie Seed 的最新基准测试结果，这是我们 @169Pi_ai Research 开发的 9B 多模态推理模型。<br><br>我们相信，下一代 AI 不仅将由规模更大的模型来塑造，更将由让小模型日益强大的研究与工程来塑造。<br><br>我们将 Alpie Seed 通过了涵盖推理、科学知识、数学、编码和软件工程的多项严苛评估。<br><br>以下是一些结果：<br><br>→ MMLU-Pro 上达到 82.54%<br>→ GPQA Diamond 上达到 84.32%<br>→ LiveCodeBench v6 上达到 72.99%<br>→ SWE-Bench Verified 上达到 61.20%<br><br>对比凸显出一些有趣的结果。<br><br>Alpie Seed 在所示模型中取得了 GPQA Diamond 的最高分。在 MMLU-Pro 上，它与更大的模型表现相当，而其 LiveCodeBench 成绩则接近规模大得多的系统。<br><br>其 SWE-Bench Verified 上 61.20% 的结果是又一个重要的里程碑，反映了它处理真实世界软件工程任务的能力。该评估使用了 mini-SWE-agent，未进行重试。<br><br>除了基准测试准确率之外，我们还考察了推理效率。<br><br>在单独的性能分析评估中，Alpie Seed 记录了：<br><br>→ 36.66 毫秒的首 token 延迟<br>→ 41.37 tokens/s 的生成速度<br>→ 9,796.22 tokens/s 的 prompt 处理速度<br><br>这些测量来自单独的性能分析设置，不应与对比基准测试结果混淆。<br><br>让我们觉得这项工作有意义的是其背后的过程：通过监督微调和强化学习开发一个紧凑的模型，在多样化的任务上评估它，并使所得权重对更广泛的社区开放使用。<br><br>对比包括来自其他模型开发者的已发布结果。这些评估并非在统一框架下重新运行，因此在解读这些数字时应考虑方法论和配置上的差异。<br><br>在印度构建。为全球研究者和开发者社区开发。<br><br>这就是 Alpie Seed。这是 169Pi Research 更宏大旅程中的一步。<br><br>探索模型：<br><br>Hugging Face: <a href="https://huggingface.co/169Pi/Alpie_seed" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/169Pi/Alpie_seed</a><br>GGUF: <a href="https://huggingface.co/169Pi/Alpie_Seed_GGUF" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/169Pi/Alpie_Seed_GGUF</a><br>Ollama: <a href="https://ollama.com/169pi/alpie-seed" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ollama.com/169pi/alpie-seed</a><br>Kaggle: <a href="https://www.kaggle.com/models/alpie/alpie-seed-9b" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/models/alpie/alpie-seed-9b</a><br><br>来自 169Pi 全体成员的排灯节祝福。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This Diwali, a little more light from India's AI research community onto the global AI landscape.<br><br>Introducing the latest benchmark results from Alpie Seed, our 9B multimodal reasoning model developed at @169Pi_ai Research.<br><br>We believe the next generation of AI will be shaped not only by models that scale bigger, but by the research and engineering that make smaller models increasingly capable.<br><br>We put Alpie Seed through a range of demanding evaluations across reasoning, scientific knowledge, mathematics, coding and software engineering.<br><br>Here are some of the results:<br><br>→ 82.54% on MMLU-Pro<br>→ 84.32% on GPQA Diamond<br>→ 72.99% on LiveCodeBench v6<br>→ 61.20% on SWE-Bench Verified<br><br>The comparison highlights some interesting results.<br><br>Alpie Seed records the highest GPQA Diamond score among the models shown. On MMLU-Pro, it performs competitively with larger models, while its LiveCodeBench result is within striking distance of substantially larger systems.<br><br>Its SWE-Bench Verified result of 61.20% is another important milestone, reflecting its ability to work through real-world software engineering tasks. This evaluation used mini-SWE-agent without retries.<br><br>Beyond benchmark accuracy, we also examined inference efficiency.<br><br>In a separate profiling evaluation, Alpie Seed recorded:<br><br>→ 36.66 ms time to first token<br>→ 41.37 tokens/s generation speed<br>→ 9,796.22 tokens/s prompt processing speed<br><br>These measurements come from a separate profiling setup and should not be confused with the comparative benchmark results.<br><br>What makes this work meaningful to us is the process behind it: developing a compact model through supervised fine-tuning and reinforcement learning, evaluating it across diverse tasks, and making the resulting weights accessible to the wider community.<br><br>The comparison includes published results from other model developers. These evaluations were not rerun under a common harness, so differences in methodology and configuration should be considered when interpreting the numbers.<br><br>Built in India. Developed for a global research and developer community.<br><br>This is Alpie Seed. And this is one step in a much larger journey for 169Pi Research.<br><br>Explore the model:<br><br>Hugging Face: <a href="https://huggingface.co/169Pi/Alpie_seed" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/169Pi/Alpie_seed</a><br>GGUF: <a href="https://huggingface.co/169Pi/Alpie_Seed_GGUF" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/169Pi/Alpie_Seed_GGUF</a><br>Ollama: <a href="https://ollama.com/169pi/alpie-seed" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ollama.com/169pi/alpie-seed</a><br>Kaggle: <a href="https://www.kaggle.com/models/alpie/alpie-seed-9b" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/models/alpie/alpie-seed-9b</a><br><br>Happy Diwali from everyone at 169Pi.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWlhX0LawAAfCjj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LeHami 用哈密顿力学防JEPA坍缩</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TheTuringPost · 2026-11-07 21:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">有一个很好的例子展示了物理学如何帮助升级 AI 世界模型，那就是 LeHami。<br><br>@ylecun、@randall_balestr 和 @RominaYalov 将哈密顿力学引入 JEPA，以保持相空间体积并防止长期预测中的潜在崩塌。<br><br>为什么偏偏是哈密顿力学？<br><br>• 变量是坐标 q 和动量 p（而非拉格朗日力学中的速度），这为 LeHami 提供了用于更新其状态的配对一阶方程。<br><br>• 这使得哈密顿量 H 成为核心函数。在经典力学中，它通常是总能量：动能 + 势能。<br><br>• LeHami 通过类动能的 K(p) 和类势能的 V(q, u) 分量来学习这个 H 函数，其中 u 代表动作。<br><br>• 辛蛙跳积分器利用这个函数来预测状态如何根据所采取的动作而演化，同时不违反任何约束。<br><br>为了更好地理解这一点，想一想钟摆是有帮助的。它可以在任一方向上经过同一个位置。但仅凭物理位置无法预测接下来会发生什么，你还需要动量。<br><br>LeHami 遵循类似的原则，但处理的是位置和动量的学习表示。<br>→ 最重要的是，它在预测演化的方式中内建了一个约束。<br><br>也许这正是像 JEPA 这样的世界模型现在需要的东西——少一种出错的方式。<br><br>我们在本指南中对 LeHami 的设计和结果进行了更深入的探讨。另外，还有一个面向 AI 和物理 AI 从业者的小型力学课值得学习 → <a href="https://www.turingpost.com/p/lehami-explained-can-physics-help-world-models-predict-motion" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.turingpost.com/p/lehami-explained-can-physics-help-world-models-predict-motion</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">There's one great example that shows how physics can help upgrade AI world models, and it's LeHami.<br><br>@ylecun, @randall_balestr and @RominaYalov brought Hamiltonian mechanics into JEPA to preserve phase-space volume and prevent latent collapse during long-term predictions.<br><br>Why exactly Hamiltonian mechanics?<br><br>• Variables are coordinates q and momenta p (not velocities like in Lagrangian mechanics), giving LeHami paired first-order equations for updating its states.<br><br>• This makes Hamiltonian H a central function. It's often total energy: kinetic + potential, in classical mechanics.<br><br>• LeHami learns this H function with kinetic-like K(p) and potential-like V(q, u) components, where u represents actions.<br><br>• A symplectic leapfrog integrator uses this function to predict how states evolve depending on the actions taken, while no constrains are violated.<br><br>To understand this better it's useful to think of a pendulum. It can pass the same position in either direction. But physical position alone won’t predict what comes next, you also need momentum.<br><br>LeHami follows a similar principle, but works with learned representations of position and momentum.<br>→ And most importantly, it builds a constraint into how those predictions evolve.<br><br>Maybe that's exactly the kind of thing world models like JEPA need now - one less way to go wrong.<br><br>We've taken a much deeper look at LeHami's design and results in this guide. Plus, there's a little mechanics lesson for AI and physical AI folks that's worth learning → <a href="https://www.turingpost.com/p/lehami-explained-can-physics-help-world-models-predict-motion" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.turingpost.com/p/lehami-explained-can-physics-help-world-models-predict-motion</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWhsnlla4AA3lI_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>KubeIntellect K8s排障</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @learnk8s · 2026-11-09 01:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">KubeIntellect 让你可以用自然语言排查 Kubernetes 问题，通过检查 kubectl、Prometheus 和 Loki，同时在它更改集群之前需要人工批准。<br><br>➤ <a href="https://ku.bz/mx5k0KyWt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/mx5k0KyWt</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">KubeIntellect lets you troubleshoot Kubernetes in plain English by checking kubectl, Prometheus, and Loki, while requiring human approval before it changes the cluster<br><br>➤ <a href="https://ku.bz/mx5k0KyWt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/mx5k0KyWt</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HWnktoMXgAA8LW6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>UsbScan 把USB摄像头变高拍仪</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-11-09 01:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎺 #发现频道<br><br>【开源自荐】UsbScan - 任何 USB 摄像头都可以变成高拍仪<br><a href="https://meta.appinn.net/t/topic/95500" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://meta.appinn.net/t/topic/95500</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Evolver 让Agent复用历史经验</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-09 00:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个令人印象深刻的复用 agent 轨迹来演进 agent harness 的方式。<br><br>鉴于 LLM agent 在上下文感知方面越来越出色，这值得一试。<br><br>这个想法并不新鲜，但它正成为 harness 工程中一个重要的模式：使 agent harness 能够复用积累的知识，而无需修改模型参数。<br><br>他们引入了 Evolver，一个将短暂的 agent 探索转化为持久的、可复用的程序性经验的框架。<br><br>他们发现，Claude Code 和 Codex 当能够复用之前运行所学到的东西时，能解决更多任务并使用更少的 token，且模型本身没有任何改变。<br><br>该框架将这些程序性知识存储为结构化的&quot;Gene&quot;资产。Evolver 在探索过程中收集它们，在任务开始时检索相关的资产，并根据反馈对其进行修订。<br><br>在跨 Terminal-Bench 2.1、SWE-bench Multilingual、SWE-rebench 和 GAIA 的 320 组配对运行的选定诊断集上，任务成功率从 83.13% 上升到 87.50%。记录的 token 使用量下降了 24.24%。<br><br>在使用和不使用 Evolver 都解决了的 265 个任务上，token 仍然下降了 17.57%。agent 用更少的 token 达到了相同的结果。<br><br><a href="https://arxiv.org/abs/2611.07595" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.07595</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/evolver-turning-agent-exploration-into-evolving-capabilities-2611.07595" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/evolver-turning-agent-exploration-into-evolving-capabilities-2611.07595</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Impressive way to reuse agent trajectories to evolve agent harnesses.<br><br>Given how good LLM agents are getting at context awareness, this is worth a look.<br><br>This idea isn't new, but it's becoming an important pattern in harness engineering: enabling the agent harness to reuse accumulated knowledge without modifying model parameters.<br><br>They introduce Evolver, a framework for transforming transient agent exploration into<br>persistent, reusable procedural experience.<br><br>They find that Claude Code and Codex solve more tasks and use fewer tokens when they can reuse what earlier runs learned, with no change to the models.<br><br>The framework stores that procedural knowledge as structured &quot;Gene&quot; assets. Evolver collects them during exploration, retrieves the relevant ones at the start of a task, and revises them based on feedback.<br><br>On a selected diagnostic set of 320 paired runs across Terminal-Bench 2.1, SWE-bench Multilingual, SWE-rebench, and GAIA, task success rises from 83.13% to 87.50%. Recorded token use drops by 24.24%.<br><br>On the 265 tasks solved both with and without Evolver, tokens still drop by 17.57%. The agent spends fewer tokens to reach the same result.<br><br><a href="https://arxiv.org/abs/2611.07595" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.07595</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/evolver-turning-agent-exploration-into-evolving-capabilities-2611.07595" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/evolver-turning-agent-exploration-into-evolving-capabilities-2611.07595</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWniK-Aa0AA2bgc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

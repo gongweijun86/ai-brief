@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月22日 05:42">
+<title>AI技术雷达 · 11月22日 05:42 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Harness是组合化泛化关键机制</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code生产密钥泄漏防护</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Kimi海外算力合同因美国新规取消</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Antigravity缓存扩容提效20%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Anthropic Agent六层构建法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;混元AMA：稀疏度并非越高越好</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness是组合化泛化关键机制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-21 11:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">模型越来越强，Harness 迟早会被吃掉，这篇论文给了个相反的看法。<br><br>以前搭 Harness，更多是在给能力不够的模型兜底。alex zhang 他们的新论文认为，现在模型强了，Harness 的作用变成了把模型已有的能力组合起来，让它能处理更长、更复杂的任务，甚至是训练里没见过的任务。<br><br>我觉得最有意思的是这个思路：把长任务拆成很多次小调用，让每一次调用都落在模型熟悉的范围里。这样训练时就不用跑完整条很长的流程，用合成任务加模拟的工具调用和子 Agent，单独训练其中一次调用就行，省数据也省时间。<br><br>自己做 Agent 产品下来，感觉也差不多。模型升级以后，Harness 里确实有不少东西可以删掉，但怎么拆任务、怎么调度子 Agent，这些设计会更重要。<br><br>目前论文、代码和数据都开源了，做 Agent 的朋友可以去翻翻。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">alex zhang <span style="font-size:12px;color:#999999;font-weight:400;">@a1zhang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Harnesses 曾经是弱 LLM 的拐杖。到了 2026 年及以后，随着模型变强，harness 现在提供了一种机制，用于组合 LLM 的现有能力和新能力，使其泛化远超训练环境。<br><br>在我们的新论文《LM Harnesses are Compositional Generalizers》中，我们探讨了各种 harness 抽象如何使 LM 系统通过组合现有 LLM 能力，在任务长度、任务策略、递归任务深度等方面实现泛化。这些抽象提供了一种更加数据高效的训练手段，尤其是在长任务上——通过保持轨迹在局部上属于分布内（LID），也就是说，让每一个单独的 LLM 调用都处于分布内。<br><br>对于需要非常长时间才能展开的任务，这意味着我们甚至可以进行替代 harness 训练，即用纯合成任务（带有假工具调用和子代理！）来训练单个 LLM 调用，而不是进行极长的 harness 展开。<br><br>一个常见的流行观点是 LLM 会吸收 harness 并使其过时。我们不赞同，并认为我们还没有充分探索 harness 能提供什么。<br><br>完整论文、日志、代码库和数据均可获取：<a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>与 @SOURADIPCHAKR18 @lateinteraction 合作</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Harnesses used to be a crutch for weak LLMs. In 2026 and onward, with stronger models, harnesses now offer a mechanism for composing an LLM’s existing and new capabilities to generalize well beyond their training environments.<br><br>In our new paper, LM Harnesses are Compositional Generalizers, we explore how various harness abstractions enable LM systems to generalize over task length, task strategies, recursive task depth, and more through composing existing LLM capabilities. These abstractions provide a means for more data-efficient training, especially over long tasks, by keeping trajectories locally in-distribution (LID) — i.e., shaping all individual LLM calls to be in-distribution.<br><br>For tasks that take a very long time to roll out, this implies that we can even perform surrogate harness training, meaning we train an individual LLM call instead of doing the very long harness rollout, using purely synthetic tasks, with fake tool calls + sub-agents!<br><br>A common idea floating around is that LLMs will absorb harnesses and make them obsolete. We disagree, and argue that we haven’t sufficiently explored what harnesses can provide.<br><br>The full paper, logs, codebase, and data are available: <a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>w/ @SOURADIPCHAKR18 @lateinteraction</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code生产密钥泄漏防护</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-22 00:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">r/ClaudeCode 社区近期最炸的一条热帖（1,181 赞 / 539 条评论），讲了一个几乎每个用 AI 写代码的团队迟早都会撞上的真实惊魂时刻：<br><br>团队里的一名初级工程师在跑数据库迁移脚本时卡在了 Schema 报错上。为了图快，他直接从生产环境配置里把包含明文管理员密码的完整数据库连接串（Connection String）复制出来，原封不动贴进了 Claude Code 的终端对话框里。不得不说模型确实好使，只花了 4 分钟 就帮他精准定位并修好了迁移冲突。<br><br>但当 Tech Lead 发现后要求立刻全量轮换生产数据库密码、滚动重启所有线上服务（前前后后折腾了 1 个小时）时，这位新人并没有顶嘴，而是非常诚恳地反问了一句让很多技术主管一时接不上来的话：<br><br>“我们用的不是公司付费的 Claude 企业版（Business Plan）账号吗？官方协议承诺过绝不拿我们的数据训练模型，这个密码还能跑到哪儿去？”<br><br>底下五百多条一线架构师与安全工程师的回复，把“企业版不训模型 ≠ 可以裸贴生产密钥”的四个致命盲区彻底扒清了：<br><br>1. 本地明文会话日志（Transcript）落盘：你贴进 Claude Code 的每一个字符，都会以纯文本 JSONL 格式实时写进你笔记本磁盘上的本地会话目录里。一旦开发机装了未沙盒化的第三方插件、同步盘，或者几个月后像最近爆出的恶意技能包那样去扫本地 .claude 历史记录，生产库密码就是躺着任人拿。<br>2. 多 MCP 工具链的上下文串门：在多工具协同的会话里，放进主上下文的明文连接串，很容易在后续轮次被模型当成上下文摘要或参数，顺手转发给挂载在同一个会话下的第三方 MCP 服务、日志分析插件或 Web 抓取工具。<br>3. 破窗效应：如果团队默认“因为是企业号所以贴生产密码没关系”，不出两周，私钥、Stripe 生产 Secret、客户 PII 就会出现在各种临时调试脚本和 Git 提交历史里。<br><br>真正成熟的 Agent 团队从来不靠考验新人的安全自觉，而是从工具链上直接把“手贴密码”的路堵死：本地调试统一走 1Password CLI（op run） 或 Infisical 在子进程拉起瞬间按环境变量注入凭证，让 Agent 可以正常执行数据库诊断命令但上下文里永远见不到明文；同时在项目的 .claude/settings.json 里配一道 UserPromptSubmit / PreToolUse Hook，一旦正则扫出 postgres://、mysql:// 带密码串或高熵 Token，直接在本地终端拒绝发送。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi海外算力合同因美国新规取消</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @laopai1990 · 2026-11-20 23:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刚刷了下外网，感觉杨植麟杨总这回可能真碰上事儿了。<br><br>Kimi K4 训练不出来？不是。<br><br>是现在没算力去训了，租的都没。<br><br>The Information 爆料，月之暗面原本谈好一笔 1.5 亿美元的海外算力合同，<br><br>地点在印尼，用的是英伟达 B300，<br><br>甚至愿意接受 50% 的预付款，<br><br>结果美国新规一出，交易直接取消...<br><br>而 DeepSeek 那边，据传正在乌兰察布规划吉瓦级智算中心，准备部署大规模华为昇腾集群。<br><br>这俩人完全是走的两条路：<br><br>杨植麟想尽办法获取海外先进算力，<br><br>梁文锋押注国内自建算力基础设施。<br><br>兄弟们觉得，谁有先见之明？？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity缓存扩容提效20%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-21 14:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你们关心 Antigravity 的重置，不用看 Tibo，应该关注 Varun。<br><br>比如这条：Antigravity 正在通过大幅扩容缓存池，将  Neon 的缓存命中率提升约 4%，能让同等配额下可完成的任务量至少提升 20%。<br><br>由于之前配额消耗过快，更新完成后会重置一次配额！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Varun Mohan <span style="font-size:12px;color:#999999;font-weight:400;">@_mohansolo</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在推出一项更改，通过大幅增加缓存池大小，将 Neon 上的缓存命中率在 Antigravity 上提升约 4%。这将使你在配额内能完成的工作至少增加 20%。<br><br>完成后会进行一次重置，因为它消耗配额的速度更快了！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We’re rolling out a change to increase cache hit rate on Neon by around 4% on Antigravity by massive increasing the cache pool size. This will increase what you can get done in quota by at least 20%.<br><br>Will issue a reset after it’s done since it burned quota faster!</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AWS-Quick免费用Opus 5.5</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yedabinbinah · 2026-11-21 20:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">亚马逊版 WorkBuddy ，免费用Claude Opus 5.5！<br><br>AWS-Quick是亚马逊旗下的办公AI，类似于中国的WordBuddy<br><br>背后的模型是 Claude Opus 5.5满血版<br><br>根据AI输出的时间来计算的，不是按Token，10小时输出，实际可以用挺久<br><br>客户端只有windows 和 mac，免费版每月 10 小时，每月1号重置<br><br>重点：有亚马逊账户的授权登录就能用，多个亚马逊账户可以切换用<br><br>URL：<a href="https://aws.amazon.com/cn/quick" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aws.amazon.com/cn/quick</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplsVObkAA5W0h.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplwdoaMAERgCv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VECTOR六问画出AI工作流地图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-21 09:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Matt Pocock 为非开发者做的第一个 Skill /vector：用 VECTOR 六问，把现有工作流映射成可验证、会记忆的流程地图<br><br>/vector 会带着人走完把一项任务委托给 AI 的过程；按六个步骤走下来，会得到一条好用、信得过、还会随时间变好的工作流。他计划一并放出配套框架和文档，方便公司自己组织 VECTOR 讨论。<br><br>先问怎么验收，再决定交给 Agent 什么<br><br>VECTOR 用来想清楚：怎样把一块知识工作交给 AI Agent。先拿一条自己已经在做、至少要花 20 分钟的流程，比如每天早上清理收件箱，再按顺序回答六个问题。<br><br>1. Verification，怎么确认这件事做完了<br>2. Existing process，现在的流程是怎样的<br>3. Context，它需要哪些上下文<br>4. Trust，哪些事可以放心交给它<br>5. Order，新工作流该按什么顺序走<br>6. Remember，它应该记住什么<br><br>走完之后，得到的是一张工作流地图：做完是什么样子、怎么检查，每一步用什么，Agent 被允许做哪些事，人和 Agent 之间怎么分轮交接，以及两次运行之间它该记住什么。<br><br>他计划给公司用的讨论材料，目前公开的四条是：找出 AI 能帮忙的工作流，给 Agent 配上合适的上下文，重新安排流程顺序，再找出靠记忆随时间变好的办法。这四条和六问是同一套方法的不同切面：六问用来画一张图，讨论材料用来在团队里把它跑起来。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXnHy2lW0AAXE7T.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Matt Pocock <span style="font-size:12px;color:#999999;font-weight:400;">@mattpocockuk</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">正在为非开发者制作我的第一个 skill<br><br>它叫 /vector，引导你如何将任务委派给 AI。<br><br>六个简单步骤，你就能获得一个易于使用、易于信任、且会随时间改进的工作流<br><br>我计划围绕它发布框架和文档，这样你可以在自己的公司运行你自己的 VECTOR 会话：<br><br>- 找到 AI 可以帮助的工作流<br>- 给 agent 正确的上下文<br>- 重新排列工作流<br>- 识别它随时间改进的方式（通过记忆）<br><br>即将发布。你会使用它吗？</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Cooking my first skill for non-devs<br><br>It's called /vector, and it guides you on how to delegate AI for any task.<br><br>Six simple steps, and you'll have a workflow that is easy to use, easy to trust, and gets better over time<br><br>I'm planning on releasing frameworks and docs around it so you can run your own VECTOR sessions at your company:<br><br>- Find workflows that AI could help with<br>- Give agents the right context<br>- Reorder the workflow<br>- Identify ways it can improve over time (via memory)<br><br>Releasing soon. Would you use this?</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXlJNMsXkAA4PvD.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Zapret本地改包干扰DPI绕过封锁</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xbawan · 2026-11-21 23:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天才知道一个颠覆认知的硬核事实：<br><br>俄罗斯人翻墙，竟然压根不用 VPN！！🤯<br><br>在俄罗斯技术圈，大家最推崇的根本不是传统代理，而是一款名叫「Zapret」的纯本地开源翻墙工具。<br><br>它的路子野到什么程度？<br>既不需要花钱买海外 VPS<br>也不用折腾任何机场订阅<br>更不依赖境外代理服务器<br>直接装在 Windows、Linux 或者 OpenWrt 软路由上就能本地开跑<br><br>核心原理说白了就是「本地硬刚」：<br>在网卡发包的那一瞬间，直接切分并修改网络数据包特征，精准干扰运营商的 DPI（深度包检测）设备，让审查系统看花眼，从而直接绕过部分网络封锁和限速。<br><br>对比一下两边的画风简直太真实了：<br><br>中国人翻墙，天天钻研 Reality、HY2 协议怎么伪装得滴水不漏，到处抢 VPS、测机场线路<br><br>俄罗斯人翻墙，连中转服务器都懒得搭，直接研究怎么在本地把审查设备给绕晕！<br><br>战斗民族果然是能正面解决问题，绝不跟你玩躲猫猫！！！🤣🔥<br><a href="https://github.com/bol-van/zapret" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bol-van/zapret</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic Agent六层构建法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xTrackmind · 2026-11-22 00:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇 Anthropic 论文简直是他*的黄金<br><br>Anthropic 刚刚揭示了他们如何构建自己的 agent。不是模型。而是他们围绕模型构建的一切。<br><br>他们构建到每个 agent 中的 6 层：<br><br>1/ 工具<br>6 个精炼的工具，而不是 20 多个重叠的工具。每个错误都会告诉 agent 下一步该尝试什么。<br><br>2/ 上下文<br>一个简短的 CLAUDE.md。文件仅在需要时加载。绝不把整个仓库一次性加载。<br><br>3/ 权限<br>读取和测试自动运行。部署和删除始终询问人类。<br><br>4/ hooks<br>他们不会要求模型记住去 lint。一个 hook 在每次编辑后进行 lint。<br><br>5/ 验证<br>agent 从不给自己的工作打分。一个全新的 reviewer 会阅读 diff 并运行测试。<br><br>6/ 评估<br>harness 的每次变更在发布前都会被打分。<br><br>同样的模型。完全不同的结果。差异在于围绕它的一切。<br><br>他们甚至把所有 6 层打包进了一个 prompt。粘贴到 Claude Code 中，它会为你构建 harness。<br><br>6 层。1 个 prompt。0 个死循环。<br><br>完整的拆解在下面的 Harness Engineering 指南中 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">this Anthropic paper is f*cking gold<br><br>Anthropic just revealed how they build their own agents. not the model. everything they put around it.<br><br>the 6 layers they build into every agent:<br><br>1/ tools<br>6 sharp tools, not 20+ overlapping ones. every error tells the agent what to try next.<br><br>2/ context<br>a short CLAUDE.md. files loaded only when needed. never the whole repo on turn one.<br><br>3/ permissions<br>reads and tests run on auto. deploys and deletes always ask a human.<br><br>4/ hooks<br>they don't ask the model to remember to lint. a hook lints after every edit.<br><br>5/ verification<br>the agent never grades its own work. a fresh reviewer reads the diff and runs the tests.<br><br>6/ evals<br>every change to the harness gets scored before it ships.<br><br>same model you use. completely different results. the difference is everything around it.<br><br>they even packed all 6 layers into one prompt. paste it into Claude Code and it builds the harness for you.<br><br>6 layers. 1 prompt. 0 infinite loops.<br><br>full breakdown in the Harness Engineering guide below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXqSVNHXYAAd1hg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Trackmind <span style="font-size:12px;color:#999999;font-weight:400;">@0xTrackmind</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2123519916913373184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2123519916913373184</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2123519916913373184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2123519916913373184</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元AMA：稀疏度并非越高越好</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AI_Whisper_X · 2026-11-21 17:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">姚顺雨带队AMA，很多反常识的认知<br><br>1/ 稀疏度不是越高越好。他们做过 scaling ladder 实验，结论是激活参数固定时，提高稀疏度确实能提效率；但总参数不变、去砍激活参数，模型会明显变弱。<br>激活参数量本质上决定了你的计算预算。<br>太稀疏的 MoE 对推理也不友好，占着大量显存，算力却用不满。（不算 Engram，Hy4 flash 的激活比例是 7.7%，Qwen3.8-Flash 是 4.8%，DeepSeek V4.1 是 2.9%）<br><br>2/ 为什么还在做 700B 和 200B。字节、Kimi 已经往 3T、5T 推了。但团队觉得，Hy3 和 Hy4 已经证明，做扎实的小一点的模型，往往能打赢更大的模型，成本还更低，过程中你能学到更多。<br>当然，他们仍相信 scaling，下一代会明显做大，只是不急着追参数。<br><br>3/ 更强调通用能力，还要补写作。问两个模型是偏编程还是通用，回答就两个字，通用。有用户说大模型的写作能力在退化，团队说他们也注意到了，可能和训练目标有关，希望模型写得更像人、少些套路，创意写作和可读性已经列成重点改进方向。<br>现在各家都在卷 coding，但他们很明确不做偏科模型。<br><br>4/ 后训练最难改进的是过度思考。问后训练阶段最难改善什么行为，回答就一个词，Overthinking。这个非常合理，我之前用 Hy3 的时候就觉得有点过度思考。Hy4 虽然明显改善，但团队也说，Hy4 的目标是把智力堆上去，CoT 长是已知问题，但正好可以拿它蒸馏出 flash，flash 再用 RL 把 CoT 压短。<br><br>另外还聊了网络层怎么调、GQA 和 MLA 怎么取舍、flash 为什么选 SWA、Hy4 为什么用门控 DSA，还有量化、红队测试、本地部署，都偏技术，感兴趣的可以看原帖。<br><br>混元这个月先后开源了 Hy4（770B-A49B）和 Hy4 flash（224B-A12B）。两个模型一个走智力密度，一个走性价比。尤其是 Hy4 flash，单任务成本只有 Hy4 的二十分之一。<br>看完这个 AMA，我觉得非常非常真实，问到的问题基本都正面答了。<br>这就是一个懂行的科学家、年轻人带队的好处，不追求评测、不追求刷榜，即使做得慢点，即使不是阶段性的第一。<br><br>· · ·<br><br>最后说下我对混元今年的看法。<br><br>今年国内开源模型里，混元确实是进步最快的之一。从之前的路边，到在圈子内有声音、到模型采用率上来，甚至现在混元是大厂里边我最看好的两家之一。<br><br>回头看，<br>4 月 Hy3 preview；<br>7 月 Hy3 正式版，295B-A21B；<br>8 月底 Hy4 preview，770B-A49B；<br>11 月 Hy4 正式版，两周后就是 flash。<br>差不多两个月一个大版本，每一版都往前挪一点点。<br><br>最近的 Hy4 flash，主打速度快、效果好、性价比高，开源之后调用量也确实起来了。单任务成本是 Hy4 的 1/20，解码速度 150 到 200 token 每秒，峰值每秒处理超过 10 亿 token。Hy4 挤进开源最强的一档，紧接着用一个 flash 版本把性价比打下来，模型能力和商业化，都走到了一个挺有利的位置。<br><br>另一件做成的事是 WorkBuddy。WorkBuddy 做出来了，有足够多、足够杂的真实用户，模型好不好用，产品能看到最真实的数据。flash 的 WorkIndex 就是从 WorkBuddy 的真实任务里来的。<br><br>我们之前写姚顺雨的时候聊过他的观点，现在的秘方越来越标准化，再难的 benchmark 也很快会被平推，下半场要追求的是真实世界的效用。<br>这次 AMA 看下来，一以贯之。<br><br>原帖：<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MIT制造课新增边缘AI与Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-20 19:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">MIT 有门很特别的课程，叫《How to Make (Almost) Anything》，中文可以理解为“如何制造（几乎）任何东西”。<br><br>课程编号 MAS.863，官网就是一份现成的自学路线图。<br><br>这门课有意思的地方是，它不满足于让学生只会写代码、画电路图或者设计 3D 模型，而是要求他们真正把东西做出来。不按传统机械、电子、计算机专业拆分，而是逼着学生在三个月里每周攻克一个物理制造环节：<br><br>- 结构与加工：CAD 参数化建模、激光切割、3D 扫描与打印、大型 CNC 数控铣削、模具设计与浇铸<br>- 电子与嵌入式：EDA 原理图与 PCB 布局、桌面雕刻机亲手铣板焊接、传感器输入与电机驱动输出<br>- 通信与智能：Mesh 组网、上位机界面开发，以及 2026 年课表里新加的 AI Agent 与边缘端 AI（Edge AI）实战<br><br>官网上不仅挂着完整的每周课表和工具清单，还能直接点进历届学生的个人主页，看他们每周踩了什么坑、怎么一步步把零件拼成能跑起来的机器。<br><br>课程主页：<a href="https://fab.cba.mit.edu/classes/MAS.863/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fab.cba.mit.edu/classes/MAS.863/</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

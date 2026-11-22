@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月2日 11:18">
+<title>AI技术雷达 · 11月2日 11:18 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;MPTCP 漏洞未波及普通 Go 服务</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Super-agent 原型仅部分实现</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;HackerBooks 聚合 HN 书单</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;PyTorch pin 提速源于免拷贝</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Mika、DSH Go 解决安卓后台</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;GPT-6.2-astra 开始灰度测试</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>领域专用小模型新书聚焦本地部署</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-11-02 02:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐一本 @ManningBooks 的新书《Domain-Specific Small Language Models: Efficient AI for local deployment》，《领域专用小语言模型：面向本地部署的高效 AI》作者 Guglielmo Iozzia，2026 年 5 月出版，<br><br>书的内容是，做垂直领域的任务，大模型庞大的容量有时反而帮倒忙。用领域数据训练的小模型，跑在普通硬件上，也能在特定任务上做出高质量的结果。<br><br>全书 15 章，骨架是：<br><br>微调-&gt;量化-&gt;领域生成-&gt;部署服务<br>（第 2、3 章 -&gt; 第 5、6、9 章，含 ONNX -&gt; 第 7、8 章，生成 Python 代码和蛋白质结构 -&gt; 第 11 到 15 章，含笔记本运行、RAG、Agent）<br><br>看目录有两点值得说。一是它把&quot;在自己的机器上跑起来&quot;当成目标，量化、性能分析、安全 API、笔记本运行都有专门章节。二是书里的 RAG 系统和 Agent 只靠小模型，不依赖基础大模型的调用成本。适合熟悉 Python 的 AI 工程师。<br><br>书：<a href="https://amzn.to/4g7mVqW" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://amzn.to/4g7mVqW</a><br>Andrej Karpathy关于小模型的学习资料：<br><a href="https://drive.google.com/file/d/1Aw6vxDkjwE12T01UpD6FA5LZlDsc2tzn/view" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://drive.google.com/file/d/1Aw6vxDkjwE12T01UpD6FA5LZlDsc2tzn/view</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWDvBgnbcAAGMne.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWDvHUaaIAA92Pi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MPTCP 漏洞未波及普通 Go 服务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-02 01:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这几天安全圈和科技博主全在疯传一条核弹级预警：任何暴露了 TCP 端口的 Linux 服务器，只要用 Go 写的 Web 服务就会被黑客远程完全接管。<br><br>评论区瞬间哀鸿遍野，无数公司的后端运维连夜爬起来打内核补丁。但只要你把 Go 标准库的 net 包源码和 Linux 内核的 socket 机制看一遍，就知道这是最典型的概念移花接木。<br><br>这个漏洞（CVE 涉及的内核多路径 TCP 模块）确实存在，严重级别也确实高，但攻击的前提条件被自媒体故意掐掉了。<br><br>Go 语言的 net.Listen(&quot;tcp&quot;, &quot;:8080&quot;)，底层调用的是操作系统最原始的 AF_INET、SOCK_STREAM 和 IPPROTO_TCP。<br>它走的是规规矩矩的单路径普通 TCP 协议栈，根本不会主动去协商 MPTCP。<br><br>MPTCP（MultiPath TCP，RFC 8684）在 Linux 5.6 之后确实合入了主线内核，但它是一个必须显式声明的特异协议。<br>除非你在代码里显式写了 IPPROTO_MPTCP，或者服务器管理员手动在 sysctl 里开启了 net.mptcp.enabled 并且配置了强制路由代理，否则内核根本不会把进来的普通 TCP 握手包扔给 MPTCP 状态机处理。<br><br>真正受影响的，是那些跑在移动回传网络、跨多网卡聚合或者特定 CDN 边缘节点上、主动启用了 MPTCP 的特定网关。<br><br>普通跑在内网或者反向代理后面的 Go 业务服务，被这波恐慌吓得睡不着觉，纯粹是替概念炒作买了单。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Super-agent 原型仅部分实现</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ZhihuFrontier · 2026-11-02 10:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">DeepSeek的Super-agent：一位终审评审者解释其设计与局限<br>知乎贡献者@tianyi（崔添翼），来自DeepSeek产品部门，也是其Super-agent设计文章的终审评审者之一，阐述了该提案的核心权衡：跨任务的连续性与任务吞吐量之间的取舍。<br>他将主要的撰写、架构、代码和实验工作归功于DeepSeek Harness团队的同事，尤其是第一作者乔宇佳。<br><br>&quot;Super&quot;意味着位于工作agent之上的一层<br>这个名字描述了一种架构关系。Super-agent在执行工作的主agent之上添加了一层，而sub-agent则在其之下添加一层。&quot;Super&quot;并不是对更高级智能的声称。<br>崔明确否认团队引入了一种全新的理论。在与其他团队的对话中，他发现类似的架构在几个月前就已被探索过。他指出，更难的挑战在于识别并坚定地确定正确的长期方向。<br><br>两层设计回应了一个未解决的记忆问题<br>关于如何实现长期agent记忆，目前仍没有共识。截至他发文时，DeepSeek Harness本身尚无跨会话的内置长期记忆，不过他暗示这可能会很快改变。<br>在此背景下，团队将跨任务的持续性和维持任务吞吐量视为长运行agent系统中的一个根本性权衡。<br>两层架构提供了一种分解该问题的方式。崔并不声称其特定实现是最优的。<br><br>该原型仅实现了所提设计的一部分<br>该代码仓库 dsh-superagent-prototype 仍是一个探索性原型。<br>文章中讨论的一些想法，包括将计算与状态和执行环境解耦，在DeepSeek Harness中实现仍需要大量工作。因此，发布的代码不应被解读为对每个架构提案的完整实现。<br><br>内部验证留下了大量部署问题<br>崔将系统在内部使用中相对较低的复杂度部分归因于工程和运营场景中有意的简化。<br>该原型仅在公司内部一个小型、可信的环境中进行了验证。更广泛的部署仍面临第8节中提出的未解决问题：扩展两层架构、超越会话的人机协作、上下文边界与agent间通信，以及安全与隐私。<br>他的描述将Super-agent呈现为一个需要探索的方向，具有可行的内部经验，并明确了已展示内容的边界。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">DeepSeek’s Super-agent: A Final Reviewer Explains the Design and Its Limits<br>Zhihu contributor @tianyi (崔添翼), from DeepSeek’s product department and one of the final reviewers of its Super-agent design article, explains the proposal’s central trade-off: continuity across tasks versus task throughput.<br>He credits his DeepSeek Harness colleagues, especially lead author Yujia Qiao, with the main write-up, architecture, code and experiments.<br><br>&quot;Super&quot; means a layer above the working agent<br>The name describes an architectural relationship. A Super-agent adds a layer above the main agent doing the work, whereas a sub-agent adds one below it. &quot;Super&quot; is not a claim of superior intelligence.<br>Cui explicitly rejects the idea that the team has introduced an entirely new theory. In conversations with other teams, he found similar architectures had already been explored months earlier. The harder challenge, he argues, is identifying and committing to the right long-term direction.<br><br>The two-layer design responds to an unresolved memory problem<br>There is still no consensus on how to implement long-term agent memory. As of his post, DeepSeek Harness itself had no built-in long-term memory spanning sessions, though he suggested that might change soon.<br>Against that backdrop, the team sees maintaining continuity across tasks and sustaining task throughput as a fundamental trade-off in long-running agent systems.<br>The two-layer architecture offers a way to decompose that problem. Cui does not claim its particular implementation is optimal.<br><br>The prototype implements only part of the proposed design<br>The repository, dsh-superagent-prototype, remains an exploratory prototype.<br>Some ideas discussed in the article, including decoupling computation from state and execution environments, still require substantial work to implement in DeepSeek Harness. The released code should therefore not be read as a complete implementation of every architectural proposal.<br><br>Internal validation leaves substantial deployment questions<br>Cui attributes the system’s relatively low complexity in internal use partly to deliberate simplifications in engineering and operating scenarios.<br>The prototype has only been validated in a small, trusted environment inside the company. Broader deployment still faces the open questions identified in Section 8: extending the two-layer architecture, human-agent collaboration beyond sessions, context boundaries and agent-to-agent communication, and security and privacy.<br>His account presents Super-agent as a direction to investigate, with working internal experience and explicit limits on what has been demonstrated.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFbk57bYAAPX7w.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFbm1FbQAE1H77.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFboT5bwAACg4U.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFbp1QbkAAW7VP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>HackerBooks 聚合 HN 书单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-11-02 09:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">继昨天 Karpathy 用 Opus5.5 花两个小时开发 HackerTube 以后，有人又做了 HackerBooks<br><a href="https://hackerbooks.org/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hackerbooks.org/</a><br>从 HackerNews 的发帖中抽出 1万5多千本书来，只有两个人提到过的才算在里面，我觉得这个书库是一个很好的资源库，排名前几的都是大著作：《The Art of Computer Programming》以及 《GEB》什么的</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWFXB5rbQAA8cnZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PyTorch pin 提速源于免拷贝</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liumengxinfly · 2026-11-01 22:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一直没搞明白为啥 pytorch 里的 pin memory 能加速 CPU Memory 和 GPU Memory 之间的传递。<br><br>从字面上看 pin memory 就是把内存页锁住不让换出，能避免缺页中断的开销。但是理论上如果关闭了 swap，使用 mlock 锁住内存，内存页一样不会被换出，为啥还需要用一个新的 pin 操作呢？<br><br>因为 mlock 只能解决内存页不被换出，解决不了物理地址的变化。在 numa balancing, compaction 和 fork 的情况下，同一个 tensor 对应的物理地址可能发生变化。而 CPU Memory 和 GPU Memory 之间传递使用了 DMA，需要提前提交要迁移的内存页物理地址，如果这个期间发生了这些物理地址变化的操作也回到只传递失败。<br><br>但这解释了为什么需要 pin，没有解释为什么 pin 之后性能会好。真实原因是为了避免 DMA 的复制错误，如果不是 pin memory 的传递，CUDA 会额外创建一个 pin memory 的 buffer 把原先的 tensor 复制一份到这个 buffer 然后再 DMA。为什么不原地 pin？因为 pin 需要按 page 操作然后 DMA 后还要 unpin 反而不如额外创建个 buffer 快。<br><br>所以所谓的 pin memory 速度快，更多的是因为 pin memory 没有这一部分 DMA 前的准备开销。但 pin 这个动作本身的开销是很大的，每次 pin 其实性能也不好，所以 pytorch 里还有一套专门的池化管理机制，来平摊掉这部分开销。<br><br>说了这么半天就想说一个表面的 pin memroy 性能更好其实是个很复杂的权衡，不明就里就去用并不会达到预期的效果。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mika、DSH Go 解决安卓后台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xulijian1994 · 2026-11-01 13:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近看了两个挺不错的安卓开源 Agent，Mika 和 DSH Go，目前 GitHub 分别有约 2.9K 和 3.7K Stars。<br><br>专门翻了一下它们的实现，发现这两个项目都不简单，而且定位还挺不一样的。<br><br>先说 Mika，我比较喜欢它的一个设计，就是给 Agent 单独开一块虚拟屏幕。比如我让它去微信整理消息、刷小红书总结内容，或者去 BOSS 直聘处理招聘信息，它可以自己在后台操作，我前台该干嘛干嘛，互不影响。不需要 Root，也不需要一直连着电脑。<br><br>它还有几个细节我觉得做得不错。比如一次可以批量执行最多 20 个操作，减少模型来回思考的开销；成功执行过的任务还能保存操作经验，下次遇到类似任务直接复用。再加上定时任务、条件触发，以及 MCP 接入，甚至可以让电脑上的 Codex 去指挥手机干活。<br><br>DSH Go 则是另一条路线，我觉得它对开发者更有吸引力。<br><br>它直接在安卓手机里通过 PRoot 跑 Ubuntu、Node.js 和 DeepSeek Harness，相当于把一套 Coding Agent 环境搬到了手机上。不仅能在手机本地写代码、执行命令，还能通过 SSH 或 DSH Remote 连接电脑，接着之前的开发会话继续干。<br><br>而且它也支持直接控制手机 App，Android 14 以上可以借助 Shizuku 或 ADB 实现后台虚拟屏操作。<br><br>看源码时还发现一个有意思的细节，DSH Go 在点击界面元素之前会重新检查目标，尽量避免页面变了还按照旧坐标乱点。对于发送消息、删除内容、付款这些操作，它默认也比较谨慎，会要求用户确认。<br><br>Mika 在这方面相对放得开一些，普通操作默认可以直接执行，主要在涉及花钱时要求确认。两种策略各有取舍。<br><br>如果让我选，日常手机自动化我会更倾向 Mika，它的功能基本就是围绕让 AI 替你操作手机来设计的。<br><br>但如果是我自己平时的开发场景，DSH Go 可能更实用。毕竟我更需要的是随时拿起手机，就能接着电脑上的 Coding 任务继续干活。<br><br>这两个项目让我比较期待的一点，是安卓端的 Agent 开始认真解决后台运行、权限管理、任务恢复这些实际问题了。比单纯演示 AI 自动点击手机屏幕有价值多了。<br><br>Mika：<br><a href="https://github.com/wangzan101/Mika" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wangzan101/Mika</a><br><br>DSH Go：<br><a href="https://github.com/ccch1mneyyy/dsh-Go" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ccch1mneyyy/dsh-Go</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6.2-astra 开始灰度测试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @rchen1386 · 2026-11-02 09:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 开始偷偷搞 6.2 的灰测了。虽然前端选择器里还写着 ⁠GPT-6 Astra⁠，但 Codex 后台日志已经彻底出卖了他们。大批开发者的 Usage 账单里突然冒出了 ⁠gpt-6.2-astra⁠ 的调用记录，连返回 JSON 里的 model 字段都实锤了。<br><br>现在 Polymarket 上赌它下周（11/2）正式官宣的概率已经冲到第一了。用 Codex CLI（记得升到 0.153.0 以上）的朋友可以去后台翻翻 analytics，看看自己被灰度到了没：<br><br><a href="https://kingy.ai/blog/gpt-6-2-astra-tracker-screenshot-evidence/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://kingy.ai/blog/gpt-6-2-astra-tracker-screenshot-evidence/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">smlay <span style="font-size:12px;color:#999999;font-weight:400;">@Smlay_ero</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">gpt-6.2-astra 正在推出！<br>你可以直接从 Codex CLI 运行 gpt-6.2-astra。<br>在终端中：`codex --model gpt-6.2-astra` </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">gpt-6.2-astra is rolling out!<br>You can run gpt-6.2-astra straight from Codex CLI.<br>In the terminal: `codex --model gpt-6.2-astra` </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWDanM1bkAApqdO.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

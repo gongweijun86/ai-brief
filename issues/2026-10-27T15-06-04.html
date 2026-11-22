@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月27日 23:05">
+<title>AI技术雷达 · 10月27日 23:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;VLX系列实现实时视频理解与目标定位</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;提示词驱动网页达Awwwards级视觉标准</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;OpenAI模型独立破解三大科学难题</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;昇腾950PR实测吞吐仅为H100的43%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Anthropic招股书曝7人控制50.1%投票权</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VLX系列实现实时视频理解与目标定位</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yyyole · 2026-10-27 10:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">JEV 把 AI 决策模型带火了，但如果让 AI 在现实世界里自己判断、及时提醒，会怎么样？<br><br>查了一下发现 VLX-Flow 和 VLX-Seek 这两个面向具身场景的流式视频理解与视觉定位模型！<br>一个能持续理解视频里正在发生什么，一个能精准定位画面中的目标，<br>我就在想，既然 AI 都能持续感知环境变化了，能不能让它帮我盯着宝宝，发现异常动作就及时提醒？<br><br>我家娃最近刚学会翻身，正在兴奋期，随时他都想翻一个！<br>但又不可能24小时看着它，就想着买一个婴儿摄像头，<br>可以有那种智能监护的功能，比如遮脸提醒，呛奶预警，翻身提示等等，<br>在网上看了一下，但凡有这种“AI智能”的，很多都卖到小一千了  感觉没有什么太高的技术门槛啊！<br>真就是和母婴沾上边，价格可以翻几番？<br><br>突发奇想，看能不能自己搓一个！<br>我找了一段录像，准备接入视觉模型来验证一下我的思路，<br>尝试过两三个很火的视觉模型，感觉都不太行，我的需求不是看懂一张静态图，<br>而是需要“流式多模态模型”，需要AI能理解一个动态的、不断变化的场景。<br>最后，我接入了@OmAI_lab 的VLX 系列模型，找到了解法！<br>VLX-Flow 专门针对连续视频流，可以实时交付，不断更新对画面的上下文理解。<br>VLX-Seek 能够在视频画面里精准定位指定对象，可以用来找东西、计数等等。<br><br>跑了一下，还真有点那感觉！！<br>视频一边播，画面分析、主体检测就同步开始了！<br>对真实场景的感知非常迅速，并且能够很快的给出结论和决策！<br>它精准识别到小孩的翻身和动作轨迹，有“异常位移”时，果断给出了提醒。<br>这就已经是一个“婴儿监护摄像头”的雏形，<br><br>剩下的睡眠监测、呛奶提醒、遮脸提醒，就更容易实现了！!<br>不得不说，这种视觉模型可玩性还是非常高的。<br>模型链接已经放到下面了，有兴趣可以玩一下！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114900752132952064/img/fDwqiEJJ0MrY8WH7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>提示词驱动网页达Awwwards级视觉标准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangyun_122 · 2026-10-27 19:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让你的网页，从性冷淡风，到热恋狂奔，就查这一个提示词，太优雅了：<br><br>::OBJECTIVE{site_design|pri:OVERRIDE_ALL}<br>  target: build page to award-tier visual standard<br>  ACCEPT: no visible improvement remaining across all CHECK dimensions<br>  BENCHMARK: Awwwards | Webby Awards | FWA winning entries<br><br>::CHECK{typography|standard:award_tier}<br>::CHECK{whitespace|standard:award_tier}<br>::CHECK{visual_hierarchy|standard:award_tier}<br>::CHECK{color|standard:award_tier}<br>::CHECK{motion|standard:award_tier}<br>::CHECK{micro_interaction|standard:award_tier}<br>::CHECK{responsive|standard:award_tier}<br>::CHECK{originality|standard:award_tier}<br><br>::LOOP{self_review|trigger:on_completion}<br>  [READ] current page against CHECK list<br>  [COMPARE] each dimension to BENCHMARK entries<br>  [IF] gap found =&gt; [PATCH] then re-enter LOOP<br>  [IF] no gap =&gt; [Ω]</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVolI_SbsAAqblw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVolMhxbAAA3aJe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI模型独立破解三大科学难题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Phoenixyin13 · 2026-10-27 10:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">不想传播焦虑，但这次我无话可说。<br><br>今年科学界最大的新闻，没有之一。OpenAI 的内部 AI 模型自己做出了三个科学难题的成果。我用我自己的理解说一下。<br>第一，Kakeya 猜想。这个问题研究波聚焦时会怎样。原来的猜想我记得是说最极端的聚焦只会持续很短时间。人类以前只在低维度证明过，OpenAI 说它的模型证明了所有维度的情况，因此顺带解决了 Kakeya 猜想和 Stein 限制猜想。纯逆天。<br><br>第二，指数时间假说 ETH 被推翻。这个太难以置信了。ETH 好像是说有一类逻辑难题不可能被比暴力穷举快很多地解决。而之前学界普遍相信它成立，几百篇论文都以它为前提，现在 AI 却证明它是错的。<br>这个太他喵逆天了，因为我之前是研究过一段时间理论计算机的。这几十年ETH几乎被当成公理在用。很多论文的结论都写成假设 ETH 成立，那么某某问题不可能在多少时间内解决。现在地基没了，这些不可能，全都要打问号。<br>最让我感觉匪夷所思的是 AI 证明的方式。据 Lean 证明的说明文档，它给出的是一个确定性算法，应该是对固定宽度的 k-CNF 公式，它能在亚指数时间、多项式空间内精确数出所有满足的赋值。但是，懂行的人应该都知道“数出有多少个解”通常比“判断有没有解”难得多，它连更难的那个都做到了，所以 ETH 只是顺带被推翻。<br><br>第三，杨-米尔斯、量子色动力学。AI 应该是给出了一套严格的数学证明，证明描述强核力的理论在数学上确实成立，其中包括纯杨-米尔斯理论的存在性，这是千禧年七大难题之一的一部分。我不太了解，但是只是知道一些浅层的理论，就不评论了。<br><br>最让我恐惧和惊骇的是第二个。今天晚上我看了又看，感觉这是地震级别。如果最终确认无误，这会是 AI 第一次独立推翻一个被广泛相信的核心猜想。说它是一个时代的分界点，也毫不夸张。<br>如果这三个都核查通过，这代表 AI 第一次在多个顶尖领域独立解决了几十年没人能解决的难题，影响史无前例。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Greg Brockman <span style="font-size:12px;color:#999999;font-weight:400;">@gdb</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">宣布三项重大科学发现，分别在数学（调和分析）、计算机科学（复杂性理论）和物理学（量子场论）领域各一项。<br><br>AI开始帮助我们增进对宇宙的理解！<a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/building-scientific-understanding-with-academic-communities/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory).<br><br>AI starting to help us improve our understanding of the universe! <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/building-scientific-understanding-with-academic-communities/</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>昇腾950PR实测吞吐仅为H100的43%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xLogicrw · 2026-10-27 17:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">去年，DeepSeek 尝试用华为昇腾芯片训练 R2，华为工程师驻场协助也没能跑通。芯片稳定性、跨卡通信和软件支持都存在问题。今年双方继续深入合作。9 月底，DeepSeek 集中公开了六套昇腾适配代码；10 月，《The Information》又披露，华为正在按照 DeepSeek 的模型需求调整下一代芯片设计。<br><br>半导体研究机构 SemiAnalysis 最近公布了昇腾 950PR 的实测结果。研究人员选取 1055 组大模型常用的矩阵计算，发现华为自己的底层程序已经让 950PR 发挥出自身 86% 的可达算力，高于英伟达 H100 的 75.5%。实际运算吞吐量的中位数却只有 H100 的 43%，与更新的 B300 相比更只有 21%。<br><br>DeepSeek 正在从软件入手，减少芯片搬运数据和等待的时间。例如，注意力计算库 FlashMLA 原本需要分两次读取的数据，调整存储方式后一次就能取齐。另一套工具 TileLang 可以让芯片一边计算，一边提前加载下一批数据。SemiAnalysis 实测，自动调度让部分小型计算任务的耗时最多缩短约 40%。负责 MoE 专家跨芯片通信的 DeepEP 也推出了昇腾版，但通信和计算仍会争抢内存带宽，华为计划继续改进固件。<br><br>目前报告还没有测出这些软件优化能让完整模型提速多少。此次测试的 950PR 主要用于推理输入处理，DeepSeek 准备最快年底用于大规模预训练的是 950DT。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">SemiAnalysis <span style="font-size:12px;color:#999999;font-weight:400;">@SemiAnalysis_</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">华为Ascend 950PR深入解析与微基准测试，<br>DSv4.1 Flash分析，DeepSeek对Ascend的支持，<br>AICPU，Tilelang Ascend<br><a href="https://newsletter.semianalysis.com/p/huawei-deepseek" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://newsletter.semianalysis.com/p/huawei-deepseek</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Huawei Ascend 950PR Deep dive &amp;amp; µbenchmarks,<br>DSv4.1 Flash Analysis, DeepSeek support for Ascend,<br>AICPU, Tilelang Ascend <br><a href="https://newsletter.semianalysis.com/p/huawei-deepseek" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://newsletter.semianalysis.com/p/huawei-deepseek</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic招股书曝7人控制50.1%投票权</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xshawnpang · 2026-10-27 20:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic的招股书还是一贯的强势的，在股份结构上有一个只有1股的Class F股份，发给一个叫 Founder LLC 的壳。这一股单独就占全体股东投票权的 50.1%。壳里只有 7 个人，每人一票，多数说了算。不管怎么稀释最终都是这7哥创始人掌握决策权。<br><br>进这个壳的 7 人：<br><br>1 - Dario Amodei（@DarioAmodei），CEO；<br><br>2 - Daniela Amodei（@DanielaAmodei），President / 董事会 Chair。兄妹俩。Dario 从 Baidu、Google Brain 做到 OpenAI 研究 VP，GPT-2/3 和 RLHF 都深度参与。<br><br>3 - Tom Brown（@NotTomBrown），Chief Compute Officer，GPT-3 论文第一作者，现在管算力。<br><br>4 - Jack Clark（@jackclarkSF），以前是 Bloomberg 记者，OpenAI 做过 Policy，现在管 Public Benefit 和 Anthropic Institute。<br><br>5 - Jared Kaplan，Chief Science Officer，物理背景，Scaling Laws 共同作者。（不在X上面）<br><br>6 - Sam McCandlish（@samsamoa），Chief Architect，做过 CTO，Scaling laws 和 GPT-3 都有署名。<br><br>7 - Chris Olah（@ch402），负责AI可解释性，之前在Google Brain / OpenAI Clarity，也是Thiel Fellow。<br><br>这 7 人基本都是 2020–2021 从 OpenAI 出来、2021 年 1 月一起办 Anthropic 的。<br><br>然后有个第 8 个名字：Ben Mann（@8enmann）。<br>招股书里面还专门标注：他常被称作联合创始人，但不是 Founder LLC 成员，也不参与创始人的绝对控制权投票。<br><br>Ben也是参与 GPT-3研发，然后一起出来办 Anthropic。现在和 Instagram 联合创始人 Mike Krieger 联席带 Anthropic Labs。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月30日 23:16">
+<title>AI技术雷达 · 10月30日 23:16 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Skill是行为指导Tool是原子操作</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;火山引擎MaaS毛利率超55%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Grok Bot按角色组队执行任务</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;openGym开源健身配AI教练</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Anthropic制药聚焦工程摩擦</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>代码Review按风险分级而非逐行看</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ZJM330 · 2026-10-30 22:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DHH：真正的 AI psychosis，是还觉得这只是又一个工具、只是随机鹦鹉、人还得 review 每一行。他还说 AI review 代码比写代码还强。<br><br>我的看法：逐行人工 review 确实跟不上 agent 产出，但支付、登录、权限这类改动出错代价不对称，更现实的是按风险分级，高风险仍留人看。<br><a href="https://x.com/dhh/status/2116109588554498081" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/dhh/status/2116109588554498081</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">DHH <span style="font-size:12px;color:#999999;font-weight:400;">@dhh</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">真正的AI精神错乱是认为&quot;这不过是又一个工具&quot;或&quot;这不过是只随机鹦鹉&quot;，以及&quot;人类仍然需要审查每一行&quot;。你得清醒过来。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The real AI psychosis is thinking &quot;this is just another tool&quot; or &quot;it's just a stochastic parrot&quot; and &quot;humans still need to review every line&quot;. You gotta snap out of it.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Skill是行为指导Tool是原子操作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jerry_fsy · 2026-10-30 19:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从0搭建一个Agent（3）：Skills + Plugins + Multi-agents<br><br>如果你已经会给 Agent 塞 Context、Memory、RAG，但一上手还是只会“一个大 Prompt 包打天下”——这篇就是给你的。<br>单 Agent 再聪明，也扛不住三件事：能力要可插拔、工具要可扩展、复杂任务要拆给人协作。对应就是 Skills、Plugins、Multi-Agents。<br><br>下面是这三部分需要注意的点：<br>第一，Skill不是Tool。<br>Tool可以理解为对于Agent来说是一个“原子操作”，Agent只想获得这个Tool的执行结果，Tool无法指导Agent去做什么。<br>而Skill是一份行为指导，Agent看到它后知道先做什么，后做什么。<br>Skill想解决的问题是让Agent在某一个领域成为“专家”。<br><br>第二，能力通过Plugin动态加载。<br>随着 Agent 的能力不断增加，如果工具、Skill、RAG 都写死在核心代码里，每接入一个新功能，就要修改代码、重新测试和发布。<br>Plugin 的作用，就是把核心逻辑与具体能力解耦：核心只负责运行循环和工具调度，具体功能由独立插件提供，按需动态加载。这样，无论是接入数据库，还是增加消息通知，都可以通过扩展插件完成，插件之间也相互隔离，让 Agent 在保持核心稳定的同时持续扩展能力。<br><br>第三，使用Sub-agents的主要目的：控制上下文/并发提高效率/隔离。<br>当我们使用主Agent的时候，如果遇到想执行一些操作，只是希望获得操作的最终结果，而不希望执行的中间结果（比如读取文件的内容）浪费有限的上下文，就可以使用Sub-agents来执行这些操作，最终接受相应的结果即可。<br>此外，有的时候，我们希望在主Agent执行的过程中，并行执行一些操作，也可以使用Sub-agents。<br>最后，如果想同时做重构的尝试和正常开发，通过Sub-agents隔离也是一种方法。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>火山引擎MaaS毛利率超55%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @latepostnews · 2026-10-30 21:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">晚点独家丨火山引擎重心全面转向商业化，MaaS 上半年毛利率超 55%<br><br>《晚点 LatePost》独家了解到，字节跳动旗下云服务平台火山引擎的 MaaS（模型即服务）业务收入达到 48 亿元，毛利率超过 55%，这也是字节跳动当前收入规模最大的 AI 业务。 <a href="https://x.com/i/article/2116165775291793412" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2116165775291793412</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot按角色组队执行任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xluffy_eth · 2026-10-30 18:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">马斯克和 SpaceXSI 团队内部是怎么用 Grok Bot 的？<br><br>1. 把 @bot 接进你的 𝕏 私信<br><br>马斯克原话：“最好用的方式。”<br><br>2. 在任何帖子下 @bot<br><br>在回复里 @bot，任务就会转进你的私密 Bot 聊天。<br><br>3. 把 bot 当集群来跑<br><br>每个 bot 只给一个角色，喂给它文件和技能。提示词：“现在分头行动，组队完成［任务］。”<br><br>4. Cursor 团队内部怎么用 Bot（示例团队）<br><br>→ 销售 bot 每晚发简报<br>→ 工程 bot 给 bug 分类、提工单<br>→ 市场 bot 对照品牌语调检查文案<br>→ 数据 bot 用只读权限回答问题<br><br>5. 把任务变成技能<br><br>一个任务跑通了，就存成技能。再设成例行任务，让它自己跑。<br><br>6. 用演示来教它<br><br>用“教一个任务”功能，演示一遍浏览器里的操作流程。<br><br>7. 审批别关<br><br>团队建议：涉及敏感信息时保持审批开启。<br><br>收藏这些技巧，别忘了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>openGym开源健身配AI教练</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grgerwcwetwet · 2026-10-30 19:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上一个 1.7 万 Star 的开源健身神器，连 AI 私人教练都给你配好了！<br><br>项目叫 openGym，完全免费、无广告、无订阅，功能相当硬核：<br><br>1、内置 5600+ 健身动作，附带动画演示。<br>2、自动制定训练计划，记录重量、组数和休息时间。<br>3、肌肉热力图，直观看出哪里练到了、哪里还没练。<br>4、支持 AI 教练，根据训练记录给出调整建议。<br>5、支持 iPhone、Android、Apple Watch，还能 Docker 私有部署。<br><br>最舒服的是，健身数据自己掌控，不用每个月给健身 App 交会员费！<br><br>GitHub：<a href="https://github.com/DuarteSantos8/openGym" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/DuarteSantos8/openGym</a><br><br>在线体验：<a href="https://opengym.ch/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://opengym.ch/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV4HcnDbQAAwnag.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Bot接入瑞幸MCP实现点单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shenpengwdh · 2026-10-30 16:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有朋友问怎么用Bot点咖啡，我也是参考了我们研发同事@QianXiguaAI 的方法：给Bot接上瑞幸的MCP服务，它就能直接找店、选咖啡、用券下单。<br><br>他还整理了不少用法：滴滴打车、麦当劳点餐、高德地图，感兴趣的朋友可以看看他的分享。<br><br>也有人问：“Bot点的，会比手动点的好喝吗？”😄是一样的。以后会有越来越多的Agent帮忙打理这些重复的事，但是最终想喝什么，还是我们自己的选择。<br><br>最近大家聊把生活“全面AI化”。我自己也在用Oura Ring看心率和睡眠。平时也会让AI算算每天吃的热量，以后它再了解我的口味、预算和日程，帮我把餐点好，就不用每天纠结吃啥了～<br><br>往深了想，这会改变整个竞争逻辑。<br><br>Agent替用户货比三家，商家想单靠吸引注意力赢得订单，会越来越难。产品好不好、价格实不实惠、服务靠不靠谱，会更直接地影响下单。<br><br>谁能给用户带来实实在在的价值，谁就更有机会被选中。<br><br>对认真做产品的公司来说，这反而是最好的时代。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic制药聚焦工程摩擦</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grapeot · 2026-10-30 11:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人对AI制药的想象是，有一个超级智能的大脑在电脑前敲打着键盘，就能生成一个神奇的药物分子。但制药工业的实际情况是，FDA在过去五年中高达74%的首轮拒批的原因是工厂生产和质控不达标。而分析化学家的75%工作时间用于肉眼核对几百页手写扫描批记录。甚至分子设计端也是如此，就在上周，Anthropic自己披露的蝎毒测试中，大模型一下生成了31.8万种候选蛋白质，送进实验室测试，能真正中和毒素的抗毒血清是0个。<br><br>可就在几天后的 10 月 27 日，Anthropic 公布了最新的药物研发进展：不仅和六家生物医药机构达成了深度合作，还在湿实验中实现了超越临床标准药的数据表现，更收购了一家制药公司并成立了自营制药公司 Mithril Medicine。在一个生物世界连可靠的物理模拟器都没有的时代，一个 LLM 究竟是如何推动新药研发的？<br><br>拆开这六个真实的管线会发现，Claude 真正在实验室里跑通的路线，从来不是当灵光一现的神医去做核心科学决断，而是帮科学家打下手，解决那 80% 最折磨人的工程摩擦：<br><br>第一，在物理模拟器都不靠谱的时候，帮科学家换个能算的题。AlphaFold 擅长算刚性积木，但遇到细胞里像软面条一样乱晃的柔性尾巴，或者慢动作撬开过敏分子的动态过程，模拟软件直接交白卷。Claude 不去死磕物理模拟，而是翻遍两百多篇文献把现成的信号模块整理成词典重新拼装，把抗癌免疫细胞的信号尾巴砍短约 70%，让癌细胞探测器产量暴增约 10 倍；在重度食物过敏项目里，它把动态撬锁题换成静态门折页几何题，一个月内筛出 20 个能把过敏分子从细胞表面强行撬下来的抗体，3 个效果超过现有临床标准药。<br><br>第二，现成软件卡死、实验仪器报假账时，钻进底层修Bug。在抗体耐热测试里，第一轮七种预测模型全军覆没，仪器自带质控软件把一半以上实验孔标为废数据。人类研究员督促Claude调出几千条原始激光升温曲线逐一排查，抓到了仪器软件的荒唐漏洞：有些抗体在高温下像煮鸡蛋一样结块沉淀，仪器公式分不清受热展开和高温结块，把耐热分数算成一团乱麻。Claude重写物理打分公式抢救回四百多个实验孔，帮团队选出耐热提高18摄氏度的分子。<br><br>第三，死板代码+超级项目经理抹平压垮救命药的管理成本。Enveda 用 Python 逐页账本把 Claude 关进合规笼子审核一千多页临床批记录，不仅找齐人工审出的问题，还多揪出 7 处人类漏掉的偏差，把近 26 小时人工耗时压到 2.8 小时。更动人的是儿童先天性肌营养不良这类超罕见病，欧美患者不到 5,000 人，因为要同时协调 11 家外包实验室，传统药企雇二三十人管理团队的固定成本直接判了罕见病死刑。而在 Mithril，一位创始科学家单枪匹马带 Claude 统管这 11 家外包商，不到 18 个月跑通患病小鼠验证，让小鼠肌肉力量恢复到近两倍。<br><br>一旦没有真实实验反馈，仅凭大模型瞎选方案，五个前沿模型盲测打分跟抛硬币差不多；科学家漏掉一条底线规则，算法甚至会把免疫细胞的报警开关全删掉，造出指标满分却不会开火的瞎子细胞。AI 不用当无所不知的神医，只要老老实实钻进工程死角，把算不出的题换成现成的、把失真的仪表调准、把压垮救命药的管理摩擦抹平，就已经足够改变科学探索的经济账了。<br><br>完整分析请见长文：<br><a href="https://yage.ai/share/anthropic-drug-development-legwork-20261029.html?utm_source=twitter&amp;utm_medium=thread&amp;utm_campaign=anthropic-drug-development-legwork-20261029" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://yage.ai/share/anthropic-drug-development-legwork-20261029.html?utm_source=twitter&amp;utm_medium=thread&amp;utm_campaign=anthropic-drug-development-legwork-20261029</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

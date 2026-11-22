@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月19日 08:42">
+<title>AI技术雷达 · 11月19日 08:42 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Gemini 4 Neon 主打高频推理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;GrokBot 用代码库约束替代提示词</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Chrome 指南技能把 CLS 归零</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Anthropic IPO 定价83美元</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;ABFS 把 AOSP 检出缩到 8 秒</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">12</span>&nbsp;&nbsp;Xing 4 昇腾训练 285B MoE</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Neon 主打高频推理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-19 08:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Gemini 4 Neon 果然来了，一块来快速看下核心内容：<br><br>1、如果把 Gemini 4 家族比作团队，Carbon 是啃极限硬骨头的首席科学家，Hydrogen 是跑腿极快的执行助理，Neon 则是既懂深度推理，又能高频干活的主力业务骨干。<br><br>2、早期企业实测中，Neon 以 3 倍的速度和 60% 的成本，追平甚至超越了旗舰 Carbon，站在帕累托前沿上，它的单任务开销比同类竞品最高档便宜 36%～80%。<br><br>3、原生支持 100 万 Token 上下文，API 定价为输入 $3/百万，输出 $15/百万，命中缓存输入直接打 0.5 折（仅 $0.15/百万）。<br><br>4、拿下 Artificial Analysis 编程智能体榜全球第 1（58.6 分），搭配 Antigravity 时，SWE-sweep 代码修复率提升三倍至 39.0% SOTA，擅长多文件精准重构。<br><br>5、官方实测用它的 /swarm 模式，零贴图，零脚本，纯靠 50 多万条实时公式，把一张图片生成了带 3D 景深与交互打光的 10 万格 Google 表格，还从零手搓了上万行着色器代码的勃朗峰滑雪模拟器。<br><br>6、在 4200+ 真实会话的 Agent Arena 拿下全球第 2，其中中途改需求可控性排名第 2，内部幻觉率创历史新低，代码测试 0% 作弊，智能体诚实度达 99.2%。<br><br>7、包揽法律检索、税务代理，Zapier 自动化与长线商业经营模拟多项第 1，数理科研同样领跑，极其擅长把碎片化多模态资料整理成可交付报表。<br><br>8、内置从 low 到 xhigh 四档思考深度按需控费，不仅以一半成本拿下漏洞挖掘 SOTA（SEC-bench Pro 90.5%），最高思考档还实现了，网页与邮件间接提示词注入 0% 攻破率。<br><br>9、在长链路任务中不仅不乱读冗余文件，上下文压缩极稳，还能在 Antigravity 中充当高判断力的主控大脑，并行调度一群轻量 Hydrogen 子智能体协同作战。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Logan Kilpatrick <span style="font-size:12px;color:#999999;font-weight:400;">@OfficialLoganK</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重介绍 Gemini 4 Neon！在各个领域推动前沿，并以有意义的方式超越其模型级别。对我来说，Neon 在智能、速度和可用性之间达到了恰到好处的平衡。现已在 @GoogleAIStudio、API 等平台上线！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Gemini 4 Neon! Pushing the frontier across domains and punching above its model class in a meaningful way. To me, Neon feels like the right balance of intelligence, speed, and usability. Available now across @GoogleAIStudio, the API, and more! </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXb9c3sbEAA9-y7.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GrokBot 用代码库约束替代提示词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wanerfu · 2026-11-18 15:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个人一个月合并 3000 个 PR，回滚率只有 0.5%！这是什么神仙效率？<br><br>在 AI Engineer Code Summit 上，SpaceX / xAI 的 GrokBot 工程师 Lauren Tan 分享了她的 AI 编程方法。<br><br>她的核心思路很反直觉：别死磕提示词，把约束直接写进代码库，让 Agent 自己写、自己测、自己合<br><br>方法就 4 个：<br>1. 代码库比提示词重要：直接用架构约束封死错误路径。<br>2. Agent 犯错就加 Lint：别只往 AGENTS.md 里堆规则。<br>3. 让 Agent 自己验证：跑测试、抓截图、录视频，拿结果证明。<br>4. 建立信任金字塔：代码约束 &gt; 静态分析 &gt; 运行时验证 &gt; 人工 Review。<br>17 分钟讲透了 AI 编程最反直觉的一件事：<br><br>别想着把 Agent 教得更听话，而是把环境改造成让它没法犯同样的错。<br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121705772543332352/img/Sy5GHB84DxnzjxeQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Collabora 接手文档编辑层</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CollaboraOffice · 2026-11-05 17:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Office Online Server 的支持将于 2026 年 12 月 31 日结束。<br><br>Collabora Online 替代了编辑层，这样你可以保留 SharePoint，并继续在浏览器中编辑文档。与我们的专家一起探索你的选择方案。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Office Online Server support ends on 31 December 2026.<br><br>Collabora Online replaces the editing layer, so you can keep SharePoint and continue editing documents in your browser. Explore your options with our experts.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Chrome 指南技能把 CLS 归零</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lencx_ · 2026-11-19 08:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Chris Tate 分享了一个新技能，它基于 Google Chrome 团队推出的 Modern Web Guidance（现由 Chrome、Edge、Firefox 和 MDN 共同维护）。AI 代理会先查询这些官方最佳实践，再应用到代码中，并通过 vercel-labs/agent-browser 在真实浏览器里验证结果。覆盖布局偏移、减少动画、深色模式、对话框焦点等方面，示例中通过补全图片宽高等调整，CLS 从 0.14 降到了 0，性能明显提升。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chris Tate <span style="font-size:12px;color:#999999;font-weight:400;">@ctatedev</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">新技能：modern-web-guidance<br><br>你的 agent 会查阅 Chrome 的 Modern Web Guidance，将其应用到你的代码中，然后在真实浏览器中检查结果<br><br>布局偏移、减少动画、深色模式、对话框焦点，等等<br><br>从这里开始：<br>npx skills add vercel-labs/agent-browser </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New skill: modern-web-guidance<br><br>Your agent looks up Chrome's Modern Web Guidance, applies it to your code, then checks the result in a real browser<br><br>Layout shift, reduced motion, dark mode, dialog focus, more<br><br>Start here:<br>npx skills add vercel-labs/agent-browser </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXXCgyWWcAArZZU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic IPO 定价83美元</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fxtrader · 2026-11-19 08:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic IPO定价最终落在83美元，高于原定区间。发行9.8亿股，11月19日在纳斯达克上市，交易代码为“ANT”。<br><br>另外，Anthropic设置了F类股，拥有公司普通股东投票事项中合计50.1%的投票权。<br>$ANT <br><br>#行情 纳指期货涨1%。Anthropic此次募资约813.1亿美元，超过此前SpaceX创下的纪录。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcpTTQbIAAca6R.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">外汇交易员 <span style="font-size:12px;color:#999999;font-weight:400;">@fxtrader</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">路透社报道，发给投行的电子邮件显示，Anthropic曾发布其备受瞩目的IPO申报文件详情，随后又予以撤回。文件显示Anthropic计划以每股70至80美元的价格区间出售约8.67亿股股票，随后又发送了一封电子邮件称定价细节有误。Anthropic在第二封电子邮件中表示，将稍后更新招股说明书。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 驱动 Blender 动画</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-19 08:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在自家 Blender 里用 Claude 做写实动画，分镜怎么拆、运动怎么按物理算、夜里怎么布光、渲染怎么不整夜白跑，这套 skill 把三条成品视频里跑通的步骤和脚本摊开给人抄。<br><br><a href="https://github.com/mromidev/claude-blender-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mromidev/claude-blender-skills</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYS6QSa0AAPiH3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Genie 4 世界模型向用户开放</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-19 08:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Ginie 4向部分Ultra用户开放了，目前最强的交互世界模型，一次能生成3分钟</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google <span style="font-size:12px;color:#999999;font-weight:400;">@Google</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Genie 4，我们来自 @GoogleDeepMind 的最逼真、最交互的世界模型，现已在 Project Genie 中上线 🌐<br><br>以下是新内容：<br><br>Genie 4：在会话中通过文本提示编辑环境，并配有实时原生音频和对话。<br><br>Project Genie agent：通过对话共同创建世界，配有自定义配乐和实时 Gemini 指导。<br><br>社区画廊：发现、探索并再创作来自创作者和 Project Genie 社区的世界。<br><br>Genie 3 升级：更长的会话（最长 3 分钟）、世界链式连接，以及 360 度全景定位。<br><br>走进新内容 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Genie 4, our most realistic and interactive world model from @GoogleDeepMind, is now available in Project Genie 🌐<br><br>Here’s what’s new:<br><br>Genie 4: Edit environments mid-session with text prompts, paired with real-time native audio and dialogue.<br><br>Project Genie agent: Co-create worlds conversationally with custom soundtracks and live Gemini guidance.<br><br>Community gallery: Discover, explore, and remix worlds from creators and the Project Genie community.<br><br>Genie 3 upgrades: Longer sessions up to 3 minutes, world chaining, and 360-degree panorama grounding.<br><br>Step inside what’s new ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123104789080797184/img/JyEBeReoho12TfBT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ABFS 把 AOSP 检出缩到 8 秒</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-19 08:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 开源 ABFS：Android 源码检出从约 36 分钟降到 8 秒内<br><br>Android 17 开源版本有 1084 个 Git 仓库、约 162 万个文件，代码 161 GB，构建产物 155 GB，完整工作区大约 300 GB。再加上硬件厂商代码和自有应用，规模还要再放大两到三倍。传统流程里，拉一份 AOSP 往往超过 30 分钟，完整构建也常常超过一小时。新工作区、切分支，或 Agent 的临时会话，几乎每次都要从头开始。<br><br>Google 的 Android ABFS 团队为此做了 Another Build File Service，并已在 GitHub 开源。它用内容寻址的方式，按需加载并缓存源码、工作区、中间文件和构建结果。<br><a href="https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/</a><br><br>先挂上目录元数据，真正读到再拉文件<br><br>ABFS 包含 Linux 内核里的内容寻址文件系统 CASFS、用户态的缓存和管理进程，以及服务端存储。服务端持续接收来自 Gerrit 或其他 Git 主机的对象；开发机上先只下载带有 Git 哈希的目录元数据，文件内容要到第一次读取时，才通过本地缓存拉取。标准的 git 和 repo 命令仍可照常使用。<br><br>以 Cuttlefish 模拟器目标为例，一次构建有 192249 个 Ninja 步骤。开发者通常只改 1 到 10 个仓库，即便改的是比较核心的 system/libbase，构建图里仍有 97% 与持续集成已经做过的工作相同。可是按时间戳做增量时，隐藏依赖可能留下过期产物，最后只好清空输出目录重来。<br><br>两阶段校验，让本地构建敢复用已有结果<br><br>Ninja-go 不再只看文件时间。它先按命令、环境和已声明输入的哈希，去已有构建里查找候选结果；再用这份结果当初实际读过的文件，核对当前文件系统是否一致。如果连未声明的依赖都变了，就拒绝缓存并重新执行。这样即使构建规则不完整，也能保持接近干净构建的正确性。<br><br>在同一云网络的 64 核虚拟机上，三次运行的平均值是：按官方文档做部分克隆，检出要 36 分 19 秒；ABFS 在本地缓存为空时是 7.4 秒，缓存已热时是 3.6 秒。完整构建方面，现有流程要 1 小时 20 分 35 秒；本地缓存为空但远端缓存完整时是 2 分 11 秒，本地也有完整缓存时是 1 分 19 秒。同一台机器上可以并排挂载五个发布分支，每个不到 8 秒。Agent 能在 10 秒内检出完整源码树，并在 10 分钟内完成一次完整构建，再把同一修复并行移植到多个版本上验证。Android 17 之前的版本，使用 ABFS 还需要一些补丁。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcmuBSaYAAOhUU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Richard Seroter <span style="font-size:12px;color:#999999;font-weight:400;">@rseroter</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Android 的源代码非常庞大。1000 个 git 仓库，162 万个文件，构建后的工作区需要 300GB。<br><br>我们如何将检出时间从 36 分钟缩短到 8 秒？将完整构建从 80 分钟缩短到 2 分钟？<br><br>我们刚刚将这个方案开源了。<br><a href="https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Android's source code is huge. 1k git repos, 1.62 million files, and it takes 300GB for a built workspace.<br><br>How did we reduce checkout time from 36 minutes to 8 seconds? Full builds from 80 minutes to 2 minutes?<br><br>We just open sourced the solution.<br><a href="https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWEDOYawAAIyQO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot 1.2.3 优先连接器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-19 08:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Grok Bot 1.2.3 稳定包更新了，最实用的是少折腾连接和操作方式。<br><br>之前在 Cursor、现在在 SpaceXSI 的 Eric 发了 1.2.3 稳定版，三个变化：<br><br>1. 每个工具怎么运行，可以分别选。<br>2. 账号掉线，直接在聊天里重新连接。<br>3. 能用连接器处理的事，优先走连接器，不急着开浏览器。<br><br>我更在意第三点。服务已经提供了直接操作的接口，就少绕一遍网页，浏览器留给确实需要它的步骤。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">eric zakariasson <span style="font-size:12px;color:#999999;font-weight:400;">@ericzakariasson</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">grok @bot 1.2.3 已稳定！<br><br>可以选择每个工具的运行方式，直接在聊天中重新连接账户，而且该 bot 现在会先使用连接器再使用浏览器<br><br><a href="https://x.ai/changelog/bot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/changelog/bot</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">grok @bot 1.2.3 is stable! <br><br>pick how each tool runs, reconnect accounts right from chat, and the bot now reaches for connectors before the browser<br><br><a href="https://x.ai/changelog/bot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.ai/changelog/bot</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcLaqXXEAAQVnf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcLcVHXwAAHAO0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcLddZXQAAi9Zg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcLejhXkAIr-VN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mailflare 开源自建域名邮箱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-19 08:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">买了个域名，想弄个带自己名字的邮箱，一查才知道得自己搭邮件服务器，不然每个月得给企业邮箱交一笔钱。<br><br>Mailflare 是一套能自己部署的开源办公工具，域名邮箱、日历、网盘、预约页都在里面，对标的就是 Google Workspace。<br><br>收信走 Cloudflare 的邮件路由，不花钱，发信可以用 Resend 每月 3000 封的免费额度，个人和小团队基本够用。<br><br>GitHub：<a href="https://github.com/hieunc229/mailflare" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/hieunc229/mailflare</a><br><br>还内置了 AI 邮件助手，能搜邮件、起草回复、排日程，它写的回信要人看过点确认才发，这点我觉得挺稳。<br><br>Cloudflare 上有一键部署按钮，也能用 Docker 跑在自己的服务器上，界面支持 34 种语言，中文也有。<br><br>手里有闲置域名的，可以拿它搭个 hi@自己名字 的邮箱玩玩。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXcjXwRacAAeYHL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>FrontierML 评测自主科研</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SynScience · 2026-11-19 07:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重介绍 FrontierML，一个用于评估 AI agent 在自主实证机器学习研发方面表现的基准测试。<br><br>大多数现有的机器学习&quot;研究&quot;基准测试会给 agent 一个验证集或验证器，这与它的最终得分紧密相关。在实践中，人类研究者很少拥有这些。实证研究的很大一部分在于决定如何衡量一个问题上的进展，以及这些衡量结果在多大程度上值得信任。<br><br>在 FrontierML 的 25 个开放式问题中，agent 必须通过自己的实验来实现进展的操作化，构建局部代理并校准其可信度，同时朝着一个它们从未直接观察到的目标努力。它们提交的模型或方法随后在留出的评估集上进行评分。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing FrontierML, a benchmark for evaluating AI agents on autonomous empirical ML R&amp;D.<br><br>Most existing benchmarks for ML &quot;research&quot; give the agent a validation set or verifier that closely tracks its final score. In practice, human researchers rarely have that. Much of empirical research is deciding how to measure progress on a problem and how far to trust those measurements.<br><br>In FrontierML's 25 open-ended problems, agents have to operationalize progress through their own experiments, constructing local proxies and calibrating how far to trust them, while working toward an objective they never directly observe. Their submitted model or method is then scored on a held-out evaluation.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123188146431291392/img/DbpO6lTuBQOJCF1V.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Xing 4 昇腾训练 285B MoE</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-18 18:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">8,192 张华为的昇腾 910C，预训练了一个 285B 参数的 MoE 模型。<br><br>这是中国电信星辰 AGI Lab 刚发的 Xing 4 技术报告。在拿不到高端 NVIDIA GPU 的情况下，国产芯片到底能不能撑起前沿模型训练，这份报告给了一个很具体的答案。<br><br>大规模训练涉及远比单卡算力复杂的工程问题。团队基于 MindSpore HyperParallel，针对昇腾集群优化了混合并行、跨节点通信、分布式优化器和显存管理。<br><br>而且在 8,192 卡集群上，仅通过 CPU 绑核与核心隔离，就让训练吞吐量提升了 5–10%。<br><br>至于后训练部分，他们做了 TeleGym，把不同 Agent Harness 的执行、评测和轨迹接进同一套强化学习流程。长任务跑到一半模型更新了，轨迹也能接着跑下去。<br><br>他们还开源了一个 29B 的版本，每个 token 激活 4B，全程在昇腾和 MindSpore 上训练。<br><br>国产算力能走多远，看的是整套软硬件能不能配合好，Xing 4 算是一个很实在的工程样本。当然，模型效果、成本和长期稳定性还需要更多公开数据，才好判断和主流 NVIDIA 集群的差距。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.22115" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.22115</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZFaO-WkAAr8I6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZF2fHWMAAQO-R.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZGM5PW8AAAVQU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月14日 14:28">
+<title>AI技术雷达 · 11月14日 14:28 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;e2e 框架 Agentic 测试五条实践</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Anthropic 拆解常驻 Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Swamp 工作流省下九成 Token</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Orca 卸载残留拖慢编码 Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;OrbStack 稀疏文件卡死系统迁移</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>e2e 框架 Agentic 测试五条实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-14 12:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 时代的 e2e 测试该怎么做?<br><br>最近 GitHub 斩获 13.8k Star，刚拿了 800 万美金融资的开源 AI 测试框架 e2e，其创始团队技术布道师 Kacper Kapuściak 写了一篇非常扎实的工程实践，下面总结几条核心内容：<br><br>1、测用户意图目标，而非前端实现，越过 DOM 节点与 test-id 绑定，直接用自然语言向 Agent 下达具体，收敛的业务意图。由 AI 自主感知界面完成选日期，点生成等交互，哪怕前端重构组件库，测试照样稳定。<br><br>2、废弃拖慢 CI 流水线的固定 Sleep 读秒，改用带超时上限的 AI 动态条件等待。忽略Loading 消失这类弱的 UI 信号，直接等上月报表已打开可查看等强业务状态，并将负责异步加载的动态等待，与只抓拍当前画面的瞬时断言严格解耦。<br><br>3、执行 Agent 汇报点击完成，不能代表报表没空数据或串数据，更不能让大模型盲猜什么才是正确的画面。必须先从后端 API 查出真实任务列表作为唯一真值源，再调用独立的 AI Judge，严格比对屏幕渲染明细与 API 底账。<br><br>4、严禁测试用例之间产生顺序依赖，开跑前通过可复用的 Fixture 调接口独立构造专属工作区与测试数据，跑完后在生命周期钩子中自动清理还原，确保单测重试或并发执行绝对幂等。<br><br>5、将“生成报表，下载 CSV，发邮件”拆成命名清晰的独立原子测试。一旦断言失败，框架自动打包故障追踪轨迹，涵盖前置步骤、应用日志、Agent 推理上下文与屏幕快照，不仅人类能秒级定位，更能直接喂给 Coding Agent 自动修 Bug。<br><br>传送门：<a href="http://e2e.com/blog/5-tips-for-writing-good-agentic-tests" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://e2e.com/blog/5-tips-for-writing-good-agentic-tests</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDtIvybsAA5LRw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>风控检测跨区用户的十二种手段</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AyakaAteliers · 2026-11-14 10:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">总有一些自以为是觉得自己最聪明的程序员，作为最顶级的安全工程师不妨给你们透露一下大概有什么途径可以检测你们这些小白<br><br>1. SSH ：终端 SSH_CONNECTION 这个环境变量，包括你的真实 IP，不信 echo 一下<br>2. 远程桌面：常见远程桌面把你们机器上日志收集一下就能知道真实 IP 是啥了，再不济 dump tcp connection 看应用程序也能筛一下远程 IP<br>3. 全局你顶不住 ICMP 的包，说白了 ping 都能检测出来你的 src IP<br>4.接一个远程命令下发执行器，服务端提前准备好若干检测命令，周期性无规律下发，客户端你是逆向天才都不知道干了什么<br>5. 顶着 300ms 的请求时延，好难猜啊，在哪啊，ping 三点根据时延确定一下大致地区<br>6. GPS 读一下就行了定位，读不出来的默认扣风控分<br>7. 网卡型号设备，WiFi 监管域读一下标识码<br>8. 服务器增加一个分类器，对于疑似不支持地区的用户维护一个封禁词表，把类似大厂内部域名的包名记录进来<br>9. 检测到了异常并不马上封号，一点点扣掉用户账号的风控分数，低于阈值就要求 KYC<br>10. 营造出封号没有规律的假象，定期收割即可<br>11. Agent 每天叮着 X 上各类防封教程博主，自迭代更新检测机制，有截图的识别里面可以抓到的账号信息<br>12. 周期 Pull 用户 GitHub Readme 检测一下自述地区</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">拓跋鼠 <span style="font-size:12px;color:#999999;font-weight:400;">@qwerty__cs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">愿意花钱租国外Mac mini用Claude按道理都不是电脑/网络小白<br><br>为什么他们想不通，在国内弄个Mac/Windows机器，用软路由全局透明代理接入国外真正家宽的独享VPS，所有协议包括IPV4/IPV6全走这个家宽，难道不是一回事吗？<br><br>别给我说没有真家宽，有，而且还不少，3位数人民币一个月起步，低于这个价的呵呵一声！<br><br>Claude它就是天王老子来了也检测不出来啊！<br><br>这有任何区别吗？</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>《深入理解 AI Infra》开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-13 23:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">📚 李博杰刚开源了一本《深入理解 AI Infra》，想搞懂大模型推理和训练到底卡在哪，这本书直接从硬件极限一路算给你看。<br><br>《深入理解 AI Infra》的仓库 8 月下旬才建，现在已经 7500 多 star。它是李博杰《深入理解 AI Agent》的姊妹篇，那本在 GitHub 上是 5 万+ star。<br><br>以前学 AI Infra，看到的多是「用了什么框架、调了哪些参数」，为什么要这么设计，往往没人讲透。<br><br>这本书反过来，从约束推导设计，反复追问五个问题：搬什么、搬多少、搬几次、经过哪里、谁必须等它。十二章从模型架构、加速器、超节点、数据中心网络，一路讲到推理优化、分布式推理、训练系统和端边云协同。<br><br>配套的计算工具只要 Python 标准库就能跑，不用 GPU，也不用下模型权重，书里的数可以自己算一遍。中文原版之外还有英文、繁中和俄语的社区译本，PDF、EPUB、在线阅读都有。<br><br>要说明的是，书稿目前还是初稿，作者在持续修订。<br><br>想把 AI Infra 从「会用」学到「会算」，这本值得放进书单。<br><br>GitHub：<a href="https://github.com/bojieli/ai-infra-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-infra-book</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 拆解常驻 Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-14 08:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">24 小时在线的 AI Agent 助理，靠这五样东西<br><br>一直在线的 AI 助理，会盯邮件、等回复、到点提醒你。可它大部分时间其实在睡觉，不调用模型，也不花钱。<br><br>Anthropic 刚发文拆开讲了这种一直在线的 Agent：<br>一件事进了收件箱，它才醒过来跑一次；<br>定时器让它没人叫也能主动；<br>记忆文件夹让它醒来还记得你；<br>权限让它拿着你的账号也不乱来；<br>发件箱决定它什么时候开口。<br><br>这期一样一样讲清楚：它怎么醒、两件事同时来会不会打架、记忆为什么要省、要紧的事怎么等你拍板，以及为什么一开始最好让它安静一点。<br><br>来源<br>- Anthropic《Building always-on agents》（2026.11.13），作者 William Hu：<a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121406799081361408/img/5jfFFcI4ZvwPLhHh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121406799064477696/img/E6gZM3q0iQmt-OzC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Swamp 工作流省下九成 Token</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NpieAI · 2026-11-14 12:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">同一个代码评审，token 从 460 万降到 50 万，时间从 12.8 分钟砍到 6.6 分钟。<br><br>问题不在模型，在技能的用法。我把重复流程写成技能，agent 每次跑都要重新读一遍技能、重新决定每一步该怎么走。等于每跑一次，都要花 token 把流程从头想一遍。<br><br>Swamp 的办法是反过来的：让写代码的 agent 把重复的技能一次性搭成工作流，搭好之后反复跑。<br><br>每个步骤的输入和输出都是事先定好的，下一步走哪条由代码决定，不由模型临时想。模型只在真正需要判断的那几步才出场。<br><br>Swamp 官方公布的一组实测是这样：同一个代码评审技能，在 Codex 里跑要花约 460 万 token、23 个 agent、12.8 分钟；改成 Swamp 工作流后，约 50 万 token、3 个 agent、6.6 分钟。<br><br>省得最多的一块，是把协调这活儿从 agent 手里交给了代码。<br><br>流程跑第二遍的时候，就不该再花 token 想流程——判断请模型，流程交给代码。<br><br>我的做法是这样：<br>第一，新任务第一次跑，照常用技能，先跑通。<br><br>第二，同一个任务跑到第二遍，就让 agent 把它改成工作流。<br><br>第三，改的时候先问三个问题：哪几步真的需要模型判断？上周那次跑到底发生了什么？需要判断的那一步，换个便宜模型行不行？<br><br>一句话：技能是草稿，工作流才是定稿。<br><br>你手里现在跑得最勤、每次都要重新讲一遍的那个流程，是哪一个？</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDsLXRbsAA-JBv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDsLalbIAAu18e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDsMgRbcAAWLBR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDsNlfaQAEXCOO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>腾讯元宝重做搜索整合资产</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-11-14 11:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">对了，这几天腾讯还有个事儿，被淹没在马化腾的内部训话热搜里，就是元宝团队又把搜索业务拣起来做了。<br><br>在腾讯的历史里，搜索这款产品可谓命运多舛，大起大落的经历非常有意思。<br><br>最早是通过租借的方式，把搜索外包给当时苦寻入华渠道的Google，腾讯提供流量入口和搜搜品牌，Google负责搜索能力和广告变现，两边一起分钱。<br><br>2009年，双方合作结束，腾讯搜搜切回自己的引擎，然后开始挖人大干，吴军、朱会灿等好几个Google背景的人才就是这个时候引进的。<br><br>虽然投入不可谓不多，但很不凑巧的赶上了从桌面互联网向移动互联网的时代巨变，搜索业务的商业价值大打折扣，腾讯失去了继续扶持搜搜的耐心，转而选择在2013年投资搜狗，继续沿用了「高下限、低上限」的外包路线。<br><br>新的变数出现在WGX，2017年，微信成立搜索应用部，并把「搜一搜」提高到了独立入口，后来更是被升级到了自有品牌的级别。<br><br>一直以来都有传闻，微信团队是有自己来做搜索的想法的，所以虽然搜狗后来被腾讯全资收购了，它也不怎么能拿到微信的接口，只能在PCG——新闻、浏览器、内容社区——的自家兄弟地盘上做事情，结果自然乏善可陈。<br><br>现在元宝得以重做搜索，也是因为去年PCG把QQ浏览器、搜索输入法都交到了CSIG手上，相当于CSIG拿到了绝大部分搜索资产，而元宝也是CSIG的嫡子，合权了。<br><br>顺便说一句，除了游戏业务所在的IEG，CSIG应该是腾讯这几年来最受重视的BG了，地位一升再升，资源一给再给，业务一涨再涨，战绩非常过硬。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW_wuXGbkAAw5AG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW_wu5YbcAE_yr5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Orca 卸载残留拖慢编码 Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @t20000622yy · 2026-11-14 10:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">本来在排查 Antigravity 网络卡顿的问题，结果顺藤摸瓜抓出个大冤种：Orca。<br>之前装过一次就卸载了，结果今天翻配置才发现，这玩意儿把我电脑上 11 个 coding agent（Antigravity、Codex、Gemini、Qwen、Kimi、OpenCode 等等）的全局配置全塞满了同步 hooks，而且卸载 App 居然完全不清理 ~/.orca/agent-hooks！<br><br>最离谱的是它的 <a href="http://antigravity-hook.sh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://antigravity-hook.sh</a>：因为脚本文件还在，哪怕 App 早删了，我在 Antigravity 里每发一句话、AI 每调一次工具前后，它都要同步阻塞套两层 /bin/sh 再冷启动一个 python3 去 select 读 stdin（超时设了 5 秒）。<br>一轮任务调二十次工具，后台白白串行拉起四十多次 python……<br><br>一直以为全是梯子抽风，合着每一步都在本地被僵尸 hook 踩一脚刹车 😅装过 Orca 又卸载了的朋友，强烈建议搜一下自己的 ~/.orca 和各个 agent 的 hooks.json / settings.json，清完体感瞬间丝滑</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDZAHWbsAAemJn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OrbStack 稀疏文件卡死系统迁移</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chijianqiang · 2026-11-13 17:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">之前老 Mac 装了 OrbStack，使用迁移助理的时候遇到了这个大坑，真是被这个软件气死了，他妈的。<br><br><a href="https://shivankaul.com/blog/migration-assistant-sparse-files" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://shivankaul.com/blog/migration-assistant-sparse-files</a><br><br>我的新 Mac 是 4T，旧的是 2T，迁移系统的时候居然告诉我空间不足。苹果也是够弱智的。啥原因呢？这里：<br><br>新 Mac 的存储容量是旧机的四倍，迁移却报“没有足够的可用空间来完成迁移”。真正原因是 OrbStack 留在 ~/Library/Group Containers/HUAQ24HBR6.dev.orbstack/data/data.img 的一个虚拟磁盘镜像：它只有 6.5 MB 实际占用，但逻辑大小 8.0 TB。<br><br>• 作者用两条命令把这个矛盾量化出来：sudo du -sh ~ 得到 282G，sudo du -shA ~ 得到 8.3T。在 1 TB 的 SSD 上出现 8.3 TB 的表观体积，说明有文件在尺寸上“说谎”。<br>• 定位方式：sudo du -hA -d 2 ~ | sort -h | tail -30 按表观大小聚合排序，锁定到具体文件后，再分别用 du -hA（8.0T）和 du -h（6.5M）复核。<br>• 删除该镜像后，第五次运行 Migration Assistant 在 3 小时内完成。OrbStack 自己的 FAQ 也提到这个 8 TB 文件，并说明稀疏文件会干扰 Migration Assistant。<br><br>这老哥迁移了五次，我迁移了两次，目前在进行第三次，说起来苹果的迁移助理也真是傻叉。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

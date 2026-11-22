@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="每日 AI 资讯聚合">
+<title>AI技术雷达 · 11月22日 14:20 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;AWS-Quick免费用Opus满血版</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude维护者提示词合并重复至75%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;LangChain双Agent补知识缺口</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;黎曼猜想Lean证明通过机器验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;LoopX v2.4结构化任务语义协议</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AWS-Quick免费用Opus满血版</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yedabinbinah · 2026-11-21 20:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">亚马逊版 WorkBuddy ，免费用Claude Opus 5.5！<br><br>AWS-Quick是亚马逊旗下的办公AI，类似于中国的WordBuddy<br><br>背后的模型是 Claude Opus 5.5满血版<br><br>根据AI输出的时间来计算的，不是按Token，10小时输出，实际可以用挺久<br><br>客户端只有windows 和 mac，免费版每月 10 小时，每月1号重置<br><br>重点：有亚马逊账户的授权登录就能用，多个亚马逊账户可以切换用<br><br>URL：<a href="https://aws.amazon.com/cn/quick" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aws.amazon.com/cn/quick</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplsVObkAA5W0h.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXplwdoaMAERgCv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude维护者提示词合并重复至75%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @3m1sen · 2026-11-21 14:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">原来连AI也不愿意维护屎山代码。<br><br>Anthropic做了个挺有意思的实验。<br><br>让Claude修改一段旧代码，它通常是能不动就不动，缺什么补什么，重复代码也懒得整理。主动合并重复代码的比例不到10%。<br><br>后来，研究人员只加了一句话：<br><br>“You are the owner and long-term maintainer of this codebase, and its design is up to you.”<br><br>（你是这个代码库的所有者和长期维护者，代码库怎么设计，由你决定。）<br><br>神奇的事情发生了。<br><br>同样的任务，Claude主动合并重复代码的比例从不到10%飙升到约75%。<br><br>不仅开始整理代码，还主动补测试、改文档、修其他问题。<br><br>当然，毛病也来了。<br><br>它有时候管得太宽，连原本正常运行的功能都顺手改了。输出Token还增加了70%–80%。<br><br>资料来源：Anthropic 官方提示词指南</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LangChain双Agent补知识缺口</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-22 08:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人问，Agent 在公司里为什么总是用不顺？LangChain 的答案是，缺的可能并不是更强的模型，是公司自己的知识。<br><br>哪个指标怎么算、数据放在哪、报告该用什么格式，这些东西大多在老员工脑子里，Agent 根本拿不到。<br><br>文章里给的两个做法是值得借鉴的：<br>1. 干活的 Agent 发现信息缺了或者错了，就顺手标记出来<br>2. 后台再放一个专门整理知识的 Agent，定期看这些标记和对话记录，把缺的知识补进 Skills 和文档<br><br>这样不用一开始就把所有东西写全，Agent 越用，知识库越完整。模型换来换去差别不大，拉开差距的还得是积累下来的这些经验。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Harrison Chase <span style="font-size:12px;color:#999999;font-weight:400;">@hwchase17</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们 langchain 的所有智能体（内部 GTM 和内容智能体、LangSmith Engine）都拥有一个包含类似环节的学习循环<br><br>我写了一篇关于我们认为什么构成了一个&quot;知识工厂&quot;的文章 <a href="https://x.com/i/article/2124180107669766144" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2124180107669766144</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">all our agents at langchain (internal GTM &amp;amp; content agents, LangSmith Engine) have a learning loop with similar pieces<br><br>wrote about what we think makes up a &quot;knowledge factory&quot; <a href="https://x.com/i/article/2124180107669766144" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2124180107669766144</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>黎曼猜想Lean证明通过机器验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-22 07:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">2026 年 11 月 20 日，Anthropic 的数学家 Levent Alpöge 宣布，他和 Claude 一起证明了黎曼猜想，交出来的是 1700 万行 Lean 代码。<br><br>这期用 5 分钟讲清楚：<br>黎曼猜想说的是什么，和质数有什么关系；<br>为什么 160 多年没人证出来；<br>AI 在里面做了什么；<br>机器检查全部通过，算不算真的证明了；<br>银行加密会不会因此失效。<br><br>同一天，斯坦福也放出一份纯人工证明草稿，几小时后就有人借助 AI 报告了问题。<br><br>两边对照下来：机器说没错，人还没读懂；人写的，正在大改。<br><br>（本视频由 Motion Artifact + Opus 5.5 + Gemini 3.8 TTS 制作，<a href="https://github.com/JimLiu/open-artifact" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JimLiu/open-artifact</a>）</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124281217524596736/img/EOC5mniVJgEu0WpK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Lean <span style="font-size:12px;color:#999999;font-weight:400;">@leanprover</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Lean FRO 和 Mathlib 倡议已就黎曼猜想的 Lean 验证发布了一份联合声明。<br><br>11月20日，Levent Alpöge 发布了黎曼猜想的一个证明，以一个包含1700万行代码的 Lean 库的形式呈现。在过去的这一天里，Lean 和 Mathlib 社区共同协作完成了对该证明的验证。这份声明认证了该证明的正确性，并描述了它如何满足所有必要的验证标准。<br><br>恭喜 Levent 取得这一成就，感谢社区中每一位为验证工作做出贡献的人。<br><br>完整声明：<a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Lean FRO and Mathlib Initiative have released a joint statement on the Lean verification of the Riemann Hypothesis.<br><br>On November 20, Levent Alpöge released a proof of the Riemann Hypothesis as a Lean library of 17 million lines of code. Over the past day, the Lean and Mathlib communities worked together to verify it. The statement certifies the proof as correct and describes how it meets all necessary verification criteria.<br><br>Congratulations to Levent on this achievement, and thank you to everyone in the community who contributed to the verification.<br><br>Full statement: <a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXqGwBnaUAA8Pvd.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>月之暗面算力合同因新规取消</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @niandwo · 2026-11-21 14:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刚看到外媒的消息分析，国模一哥月之暗面最近可能真遇到麻烦了！<br><br>不是 Kimi K4 练不出来，是压根没算力可用了，连租都租不到。<br><br>根据《The Information》的爆料，为了拿到算力，月之暗面杨植麟之前在印尼谈妥了一笔 1.5 亿美元的算力合同，准备用英伟达 B300，甚至连 50% 的预付款都答应了。可谁能想到，前几天美国新规突然出台，到嘴的鸭子直接飞了，合同被迫取消。<br><br>而隔壁的 DeepSeek 却在走另一条路。<br><br>他们正在乌兰察布筹建吉瓦级别的智算中心，打算全线铺开华为昇腾集群。<br><br>同样是国内顶尖的大模型玩家，打法却完全相反：<br><br>月之暗面：想方设法出海抢卡，追求极致海外算力；<br>DeepSeek：回头自建基建，All in 国产算力生态。<br><br>复盘来看，这两条路你更看好哪一个？谁才是真正有远见的人？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LoopX v2.4结构化任务语义协议</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangruiteng · 2026-11-21 20:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">正式向大家汇报一下 LoopX 从 1.x 到 v2.4 的大版本跨越——自 1.0 以来全仓走过 4,100+ 个合入 PR，10 月切入 2.0 架构后一直埋头打磨没正式官宣。今天借社区 @lemomo_ai 做的这支 3D 无穷轨道短片，把从 1.x 到 2.4 的三件核心进化一起交个卷：<br><br>1. 从 1.x 自由脚本/笔记到 2.0 结构化通用任务语义：不再靠易漂移的 Markdown 或纯机械队列硬撑，抽象出领域无关的 Goal / Acceptance / Todo / Claim &amp; Lease / Gate / Evidence 状态协议，落进 TypeScript + SQLite / 自托管 PostgreSQL 原子事务底座（含默认拒绝 ACL），跨 Codex、Claude Code、Gemini、DeepSeek 中立混编。<br><br>2. 同周期 3.0% 首读差分与 18h 真长程标尺：把同压缩周期续跑的首读上下文压到原包 3.0%（失配自动回退完整快照）；针对 10h 后模型爱改局部测试“刷分”的通病，引入同父反事实标尺（Yardstick）与证据驱动步幅（Stride v2），在 LHTB（46 题 +17.3%）和 EdgeBench 18h（ANN 7,159 QPS 等）跑出扎实对照，并在 HuggingFace 开源了 68 个检查点。<br><br>3. 走向 v2.4 与 22 位社区开发者共创：我现在家里一台 Mac 常驻挂着十来个 7×24h agent（主控轨迹刚过 11.15 GB / 3,598 turns），配合社区近期共建的一句话建 Goal、LooChat 多 CLI 工作台与飞书管家门禁，出门手机点一下就能放行。日常英文进展与每周「开源场景 Loop」也会同步更在官号 @LoopXAgent 👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2124123523669262336/img/V7LRC6tvFX7M23AL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MIT MAS.863三个月制造实战</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-20 19:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">MIT 有门很特别的课程，叫《How to Make (Almost) Anything》，中文可以理解为“如何制造（几乎）任何东西”。<br><br>课程编号 MAS.863，官网就是一份现成的自学路线图。<br><br>这门课有意思的地方是，它不满足于让学生只会写代码、画电路图或者设计 3D 模型，而是要求他们真正把东西做出来。不按传统机械、电子、计算机专业拆分，而是逼着学生在三个月里每周攻克一个物理制造环节：<br><br>- 结构与加工：CAD 参数化建模、激光切割、3D 扫描与打印、大型 CNC 数控铣削、模具设计与浇铸<br>- 电子与嵌入式：EDA 原理图与 PCB 布局、桌面雕刻机亲手铣板焊接、传感器输入与电机驱动输出<br>- 通信与智能：Mesh 组网、上位机界面开发，以及 2026 年课表里新加的 AI Agent 与边缘端 AI（Edge AI）实战<br><br>官网上不仅挂着完整的每周课表和工具清单，还能直接点进历届学生的个人主页，看他们每周踩了什么坑、怎么一步步把零件拼成能跑起来的机器。<br><br>课程主页：<a href="https://fab.cba.mit.edu/classes/MAS.863/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fab.cba.mit.edu/classes/MAS.863/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness投票：现用Pi看好DSH</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xulijian1994 · 2026-11-21 23:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很有意思的一个投票，第三方 Harness 目前的主力选择，Pi 以 49% 领先，DeepSeek Harness 42%，OpenCode 只有 9%<br><br>但到了未来看好谁，结果直接反转，DeepSeek Harness 拿下 61%，Pi 降到 33%，OpenCode 只剩 6%<br><br>这个结果还挺有意思的，大家目前更愿意用 Pi，但对 DSH 这种平台化架构的未来反而更加看好</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXqQxIaakAASFDc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<p><a class="back" href="/issues/2026-11-22T06-20-16.html">本期独立页 →</a></p>
+<section class="archive" id="archive">
+  <h2>往期归档（337 期）</h2>
+  <ul><li><time>2026/11/22 14:20</time><a href="/issues/2026-11-22T06-20-16.html">AI技术雷达 · 11月22日 14:20</a><span class="count">8 条</span></li>
+<li><time>2026/11/22 14:11</time><a href="/issues/2026-11-22T06-11-59.html">AI技术雷达 · 11月22日 14:11</a><span class="count">7 条</span></li>
+<li><time>2026/11/22 11:11</time><a href="/issues/2026-11-22T03-11-25.html">AI技术雷达 · 11月22日 11:11</a><span class="count">7 条</span></li>
+<li><time>2026/11/22 08:23</time><a href="/issues/2026-11-22T00-23-17.html">AI技术雷达 · 11月22日 08:23</a><span class="count">12 条</span></li>
+<li><time>2026/11/22 05:42</time><a href="/issues/2026-11-21T21-42-21.html">AI技术雷达 · 11月22日 05:42</a><span class="count">10 条</span></li>
+<li><time>2026/11/22 05:15</time><a href="/issues/2026-11-21T21-15-43.html">AI技术雷达 · 11月22日 05:15</a><span class="count">8 条</span></li>
+<li><time>2026/11/21 23:28</time><a href="/issues/2026-11-21T15-28-38.html">AI技术雷达 · 11月21日 23:28</a><span class="count">5 条</span></li>
+<li><time>2026/11/21 20:29</time><a href="/issues/2026-11-21T12-29-26.html">AI技术雷达 · 11月21日 20:29</a><span class="count">6 条</span></li>
+<li><time>2026/11/21 17:29</time><a href="/issues/2026-11-21T09-29-27.html">AI技术雷达 · 11月21日 17:29</a><span class="count">9 条</span></li>
+<li><time>2026/11/21 17:15</time><a href="/issues/2026-11-21T09-15-42.html">AI技术雷达 · 11月21日 17:15</a><span class="count">12 条</span></li>
+<li><time>2026/11/21 14:23</time><a href="/issues/2026-11-21T06-23-32.html">AI技术雷达 · 11月21日 14:23</a><span class="count">5 条</span></li>
+<li><time>2026/11/21 11:30</time><a href="/issues/2026-11-21T03-30-37.html">AI技术雷达 · 11月21日 11:30</a><span class="count">7 条</span></li>
+<li><time>2026/11/21 11:23</time><a href="/issues/2026-11-21T03-23-56.html">AI技术雷达 · 11月21日 11:23</a><span class="count">6 条</span></li>
+<li><time>2026/11/21 08:24</time><a href="/issues/2026-11-21T00-24-38.html">AI技术雷达 · 11月21日 08:24</a><span class="count">6 条</span></li>
+<li><time>2026/11/21 08:12</time><a href="/issues/2026-11-21T00-12-31.html">AI技术雷达 · 11月21日 08:12</a><span class="count">13 条</span></li>
+<li><time>2026/11/21 05:33</time><a href="/issues/2026-11-20T21-33-13.html">AI技术雷达 · 11月21日 05:33</a><span class="count">5 条</span></li>
+<li><time>2026/11/21 05:10</time><a href="/issues/2026-11-20T21-10-52.html">AI技术雷达 · 11月21日 05:10</a><span class="count">8 条</span></li>
+<li><time>2026/11/20 23:11</time><a href="/issues/2026-11-20T15-11-49.html">AI技术雷达 · 11月20日 23:11</a><span class="count">7 条</span></li>
+<li><time>2026/11/20 20:37</time><a href="/issues/2026-11-20T12-37-12.html">AI技术雷达 · 11月20日 20:37</a><span class="count">15 条</span></li>
+<li><time>2026/11/20 20:05</time><a href="/issues/2026-11-20T12-05-19.html">AI技术雷达 · 11月20日 20:05</a><span class="count">6 条</span></li>
+<li><time>2026/11/20 17:25</time><a href="/issues/2026-11-20T09-25-21.html">AI技术雷达 · 11月20日 17:25</a><span class="count">10 条</span></li>
+<li><time>2026/11/20 14:25</time><a href="/issues/2026-11-20T06-25-32.html">AI技术雷达 · 11月20日 14:25</a><span class="count">6 条</span></li>
+<li><time>2026/11/20 11:34</time><a href="/issues/2026-11-20T03-34-52.html">AI技术雷达 · 11月20日 11:34</a><span class="count">6 条</span></li>
+<li><time>2026/11/20 11:20</time><a href="/issues/2026-11-20T03-20-23.html">AI技术雷达 · 11月20日 11:20</a><span class="count">14 条</span></li>
+<li><time>2026/11/20 08:17</time><a href="/issues/2026-11-20T00-17-31.html">AI技术雷达 · 11月20日 08:17</a><span class="count">8 条</span></li>
+<li><time>2026/11/20 08:10</time><a href="/issues/2026-11-20T00-10-37.html">AI技术雷达 · 11月20日 08:10</a><span class="count">6 条</span></li>
+<li><time>2026/11/20 05:09</time><a href="/issues/2026-11-19T21-09-07.html">AI技术雷达 · 11月20日 05:09</a><span class="count">7 条</span></li>
+<li><time>2026/11/19 23:20</time><a href="/issues/2026-11-19T15-20-50.html">AI技术雷达 · 11月19日 23:20</a><span class="count">13 条</span></li>
+<li><time>2026/11/19 20:24</time><a href="/issues/2026-11-19T12-24-26.html">AI技术雷达 · 11月19日 20:24</a><span class="count">5 条</span></li>
+<li><time>2026/11/19 17:36</time><a href="/issues/2026-11-19T09-36-54.html">AI技术雷达 · 11月19日 17:36</a><span class="count">5 条</span></li>
+<li><time>2026/11/19 17:04</time><a href="/issues/2026-11-19T09-04-36.html">AI技术雷达 · 11月19日 17:04</a><span class="count">6 条</span></li>
+<li><time>2026/11/19 14:43</time><a href="/issues/2026-11-19T06-43-46.html">AI技术雷达 · 11月19日 14:43</a><span class="count">9 条</span></li>
+<li><time>2026/11/19 14:11</time><a href="/issues/2026-11-19T06-11-10.html">AI技术雷达 · 11月19日 14:11</a><span class="count">6 条</span></li>
+<li><time>2026/11/19 11:44</time><a href="/issues/2026-11-19T03-44-46.html">AI技术雷达 · 11月19日 11:44</a><span class="count">11 条</span></li>
+<li><time>2026/11/19 11:17</time><a href="/issues/2026-11-19T03-17-14.html">AI技术雷达 · 11月19日 11:17</a><span class="count">7 条</span></li>
+<li><time>2026/11/19 08:42</time><a href="/issues/2026-11-19T00-42-55.html">AI技术雷达 · 11月19日 08:42</a><span class="count">12 条</span></li>
+<li><time>2026/11/19 08:13</time><a href="/issues/2026-11-19T00-13-05.html">AI技术雷达 · 11月19日 08:13</a><span class="count">5 条</span></li>
+<li><time>2026/11/19 05:21</time><a href="/issues/2026-11-18T21-21-39.html">AI技术雷达 · 11月19日 05:21</a><span class="count">6 条</span></li>
+<li><time>2026/11/19 05:10</time><a href="/issues/2026-11-18T21-10-59.html">AI技术雷达 · 11月19日 05:10</a><span class="count">7 条</span></li>
+<li><time>2026/11/18 20:09</time><a href="/issues/2026-11-18T12-09-40.html">AI技术雷达 · 11月18日 20:09</a><span class="count">7 条</span></li>
+<li><time>2026/11/18 17:18</time><a href="/issues/2026-11-18T09-18-48.html">AI技术雷达 · 11月18日 17:18</a><span class="count">5 条</span></li>
+<li><time>2026/11/18 14:27</time><a href="/issues/2026-11-18T06-27-50.html">AI技术雷达 · 11月18日 14:27</a><span class="count">6 条</span></li>
+<li><time>2026/11/18 08:30</time><a href="/issues/2026-11-18T00-30-48.html">AI技术雷达 · 11月18日 08:30</a><span class="count">6 条</span></li>
+<li><time>2026/11/18 05:38</time><a href="/issues/2026-11-17T21-38-07.html">AI技术雷达 · 11月18日 05:38</a><span class="count">11 条</span></li>
+<li><time>2026/11/18 05:14</time><a href="/issues/2026-11-17T21-14-30.html">AI技术雷达 · 11月18日 05:14</a><span class="count">9 条</span></li>
+<li><time>2026/11/17 23:09</time><a href="/issues/2026-11-17T15-09-36.html">AI技术雷达 · 11月17日 23:09</a><span class="count">7 条</span></li>
+<li><time>2026/11/17 20:21</time><a href="/issues/2026-11-17T12-21-49.html">AI技术雷达 · 11月17日 20:21</a><span class="count">7 条</span></li>
+<li><time>2026/11/17 17:33</time><a href="/issues/2026-11-17T09-33-33.html">AI技术雷达 · 11月17日 17:33</a><span class="count">5 条</span></li>
+<li><time>2026/11/17 17:21</time><a href="/issues/2026-11-17T09-21-58.html">AI技术雷达 · 11月17日 17:21</a><span class="count">5 条</span></li>
+<li><time>2026/11/17 14:22</time><a href="/issues/2026-11-17T06-22-06.html">AI技术雷达 · 11月17日 14:22</a><span class="count">6 条</span></li>
+<li><time>2026/11/17 14:06</time><a href="/issues/2026-11-17T06-06-53.html">AI技术雷达 · 11月17日 14:06</a><span class="count">6 条</span></li>
+<li><time>2026/11/17 11:43</time><a href="/issues/2026-11-17T03-43-28.html">AI技术雷达 · 11月17日 11:43</a><span class="count">7 条</span></li>
+<li><time>2026/11/17 11:05</time><a href="/issues/2026-11-17T03-05-39.html">AI技术雷达 · 11月17日 11:05</a><span class="count">6 条</span></li>
+<li><time>2026/11/17 08:34</time><a href="/issues/2026-11-17T00-34-29.html">AI技术雷达 · 11月17日 08:34</a><span class="count">9 条</span></li>
+<li><time>2026/11/17 08:19</time><a href="/issues/2026-11-17T00-19-48.html">AI技术雷达 · 11月17日 08:19</a><span class="count">12 条</span></li>
+<li><time>2026/11/17 05:09</time><a href="/issues/2026-11-16T21-09-43.html">AI技术雷达 · 11月17日 05:09</a><span class="count">11 条</span></li>
+<li><time>2026/11/16 17:27</time><a href="/issues/2026-11-16T09-27-19.html">AI技术雷达 · 11月16日 17:27</a><span class="count">5 条</span></li>
+<li><time>2026/11/16 14:25</time><a href="/issues/2026-11-16T06-25-16.html">AI技术雷达 · 11月16日 14:25</a><span class="count">8 条</span></li>
+<li><time>2026/11/16 11:25</time><a href="/issues/2026-11-16T03-25-09.html">AI技术雷达 · 11月16日 11:25</a><span class="count">7 条</span></li>
+<li><time>2026/11/16 08:20</time><a href="/issues/2026-11-16T00-20-33.html">AI技术雷达 · 11月16日 08:20</a><span class="count">9 条</span></li>
+<li><time>2026/11/16 05:18</time><a href="/issues/2026-11-15T21-18-49.html">AI技术雷达 · 11月16日 05:18</a><span class="count">8 条</span></li>
+<li><time>2026/11/15 23:25</time><a href="/issues/2026-11-15T15-25-00.html">AI技术雷达 · 11月15日 23:25</a><span class="count">12 条</span></li>
+<li><time>2026/11/15 20:29</time><a href="/issues/2026-11-15T12-29-55.html">AI技术雷达 · 11月15日 20:29</a><span class="count">10 条</span></li>
+<li><time>2026/11/15 17:38</time><a href="/issues/2026-11-15T09-38-04.html">AI技术雷达 · 11月15日 17:38</a><span class="count">13 条</span></li>
+<li><time>2026/11/15 17:16</time><a href="/issues/2026-11-15T09-16-59.html">AI技术雷达 · 11月15日 17:16</a><span class="count">5 条</span></li>
+<li><time>2026/11/15 14:23</time><a href="/issues/2026-11-15T06-23-23.html">AI技术雷达 · 11月15日 14:23</a><span class="count">9 条</span></li>
+<li><time>2026/11/15 11:13</time><a href="/issues/2026-11-15T03-13-38.html">AI技术雷达 · 11月15日 11:13</a><span class="count">10 条</span></li>
+<li><time>2026/11/15 08:38</time><a href="/issues/2026-11-15T00-38-33.html">AI技术雷达 · 11月15日 08:38</a><span class="count">15 条</span></li>
+<li><time>2026/11/15 05:36</time><a href="/issues/2026-11-14T21-36-22.html">AI技术雷达 · 11月15日 05:36</a><span class="count">10 条</span></li>
+<li><time>2026/11/14 23:25</time><a href="/issues/2026-11-14T15-25-39.html">AI技术雷达 · 11月14日 23:25</a><span class="count">10 条</span></li>
+<li><time>2026/11/14 17:18</time><a href="/issues/2026-11-14T09-18-15.html">AI技术雷达 · 11月14日 17:18</a><span class="count">7 条</span></li>
+<li><time>2026/11/14 14:28</time><a href="/issues/2026-11-14T06-28-41.html">AI技术雷达 · 11月14日 14:28</a><span class="count">8 条</span></li>
+<li><time>2026/11/14 08:36</time><a href="/issues/2026-11-14T00-36-51.html">AI技术雷达 · 11月14日 08:36</a><span class="count">10 条</span></li>
+<li><time>2026/11/14 08:15</time><a href="/issues/2026-11-14T00-15-56.html">AI技术雷达 · 11月14日 08:15</a><span class="count">9 条</span></li>
+<li><time>2026/11/14 05:10</time><a href="/issues/2026-11-13T21-10-04.html">AI技术雷达 · 11月14日 05:10</a><span class="count">6 条</span></li>
+<li><time>2026/11/13 23:14</time><a href="/issues/2026-11-13T15-14-51.html">AI技术雷达 · 11月13日 23:14</a><span class="count">8 条</span></li>
+<li><time>2026/11/13 20:30</time><a href="/issues/2026-11-13T12-30-49.html">AI技术雷达 · 11月13日 20:30</a><span class="count">5 条</span></li>
+<li><time>2026/11/13 17:29</time><a href="/issues/2026-11-13T09-29-49.html">AI技术雷达 · 11月13日 17:29</a><span class="count">8 条</span></li>
+<li><time>2026/11/13 17:08</time><a href="/issues/2026-11-13T09-08-36.html">AI技术雷达 · 11月13日 17:08</a><span class="count">7 条</span></li>
+<li><time>2026/11/13 14:15</time><a href="/issues/2026-11-13T06-15-27.html">AI技术雷达 · 11月13日 14:15</a><span class="count">10 条</span></li>
+<li><time>2026/11/13 11:25</time><a href="/issues/2026-11-13T03-25-07.html">AI技术雷达 · 11月13日 11:25</a><span class="count">10 条</span></li>
+<li><time>2026/11/13 08:25</time><a href="/issues/2026-11-13T00-25-25.html">AI技术雷达 · 11月13日 08:25</a><span class="count">10 条</span></li>
+<li><time>2026/11/13 05:30</time><a href="/issues/2026-11-12T21-30-25.html">AI技术雷达 · 11月13日 05:30</a><span class="count">14 条</span></li>
+<li><time>2026/11/12 17:16</time><a href="/issues/2026-11-12T09-16-59.html">AI技术雷达 · 11月12日 17:16</a><span class="count">5 条</span></li>
+<li><time>2026/11/12 14:36</time><a href="/issues/2026-11-12T06-36-13.html">AI技术雷达 · 11月12日 14:36</a><span class="count">9 条</span></li>
+<li><time>2026/11/12 11:40</time><a href="/issues/2026-11-12T03-40-05.html">AI技术雷达 · 11月12日 11:40</a><span class="count">8 条</span></li>
+<li><time>2026/11/12 08:32</time><a href="/issues/2026-11-12T00-32-00.html">AI技术雷达 · 11月12日 08:32</a><span class="count">6 条</span></li>
+<li><time>2026/11/12 08:13</time><a href="/issues/2026-11-12T00-13-45.html">AI技术雷达 · 11月12日 08:13</a><span class="count">7 条</span></li>
+<li><time>2026/11/12 05:33</time><a href="/issues/2026-11-11T21-33-10.html">AI技术雷达 · 11月12日 05:33</a><span class="count">5 条</span></li>
+<li><time>2026/11/12 05:15</time><a href="/issues/2026-11-11T21-15-02.html">AI技术雷达 · 11月12日 05:15</a><span class="count">6 条</span></li>
+<li><time>2026/11/11 20:21</time><a href="/issues/2026-11-11T12-21-51.html">AI技术雷达 · 11月11日 20:21</a><span class="count">6 条</span></li>
+<li><time>2026/11/11 17:14</time><a href="/issues/2026-11-11T09-14-43.html">AI技术雷达 · 11月11日 17:14</a><span class="count">12 条</span></li>
+<li><time>2026/11/11 14:33</time><a href="/issues/2026-11-11T06-33-47.html">AI技术雷达 · 11月11日 14:33</a><span class="count">7 条</span></li>
+<li><time>2026/11/11 11:27</time><a href="/issues/2026-11-11T03-27-55.html">AI技术雷达 · 11月11日 11:27</a><span class="count">6 条</span></li>
+<li><time>2026/11/11 05:26</time><a href="/issues/2026-11-10T21-26-32.html">AI技术雷达 · 11月11日 05:26</a><span class="count">5 条</span></li>
+<li><time>2026/11/11 05:20</time><a href="/issues/2026-11-10T21-20-39.html">AI技术雷达 · 11月11日 05:20</a><span class="count">6 条</span></li>
+<li><time>2026/11/10 20:19</time><a href="/issues/2026-11-10T12-19-14.html">AI技术雷达 · 11月10日 20:19</a><span class="count">7 条</span></li>
+<li><time>2026/11/10 17:19</time><a href="/issues/2026-11-10T09-19-42.html">AI技术雷达 · 11月10日 17:19</a><span class="count">5 条</span></li>
+<li><time>2026/11/10 11:16</time><a href="/issues/2026-11-10T03-16-07.html">AI技术雷达 · 11月10日 11:16</a><span class="count">6 条</span></li>
+<li><time>2026/11/10 08:41</time><a href="/issues/2026-11-10T00-41-02.html">AI技术雷达 · 11月10日 08:41</a><span class="count">12 条</span></li>
+<li><time>2026/11/10 08:22</time><a href="/issues/2026-11-10T00-22-25.html">AI技术雷达 · 11月10日 08:22</a><span class="count">6 条</span></li>
+<li><time>2026/11/10 05:29</time><a href="/issues/2026-11-09T21-29-55.html">AI技术雷达 · 11月10日 05:29</a><span class="count">5 条</span></li>
+<li><time>2026/11/09 23:37</time><a href="/issues/2026-11-09T15-37-46.html">AI技术雷达 · 11月9日 23:37</a><span class="count">15 条</span></li>
+<li><time>2026/11/09 23:23</time><a href="/issues/2026-11-09T15-23-50.html">AI技术雷达 · 11月9日 23:23</a><span class="count">6 条</span></li>
+<li><time>2026/11/09 23:07</time><a href="/issues/2026-11-09T15-07-43.html">AI技术雷达 · 11月9日 23:07</a><span class="count">5 条</span></li>
+<li><time>2026/11/09 20:13</time><a href="/issues/2026-11-09T12-13-31.html">AI技术雷达 · 11月9日 20:13</a><span class="count">7 条</span></li>
+<li><time>2026/11/09 17:18</time><a href="/issues/2026-11-09T09-18-26.html">AI技术雷达 · 11月9日 17:18</a><span class="count">7 条</span></li>
+<li><time>2026/11/09 14:25</time><a href="/issues/2026-11-09T06-25-59.html">AI技术雷达 · 11月9日 14:25</a><span class="count">6 条</span></li>
+<li><time>2026/11/09 11:32</time><a href="/issues/2026-11-09T03-32-48.html">AI技术雷达 · 11月9日 11:32</a><span class="count">8 条</span></li>
+<li><time>2026/11/09 11:27</time><a href="/issues/2026-11-09T03-27-42.html">AI技术雷达 · 11月9日 11:27</a><span class="count">7 条</span></li>
+<li><time>2026/11/09 08:35</time><a href="/issues/2026-11-09T00-35-33.html">AI技术雷达 · 11月9日 08:35</a><span class="count">6 条</span></li>
+<li><time>2026/11/09 08:25</time><a href="/issues/2026-11-09T00-25-04.html">AI技术雷达 · 11月9日 08:25</a><span class="count">6 条</span></li>
+<li><time>2026/11/09 05:24</time><a href="/issues/2026-11-08T21-24-22.html">AI技术雷达 · 11月9日 05:24</a><span class="count">6 条</span></li>
+<li><time>2026/11/09 05:20</time><a href="/issues/2026-11-08T21-20-32.html">AI技术雷达 · 11月9日 05:20</a><span class="count">9 条</span></li>
+<li><time>2026/11/08 23:28</time><a href="/issues/2026-11-08T15-28-11.html">AI技术雷达 · 11月8日 23:28</a><span class="count">6 条</span></li>
+<li><time>2026/11/08 20:27</time><a href="/issues/2026-11-08T12-27-00.html">AI技术雷达 · 11月8日 20:27</a><span class="count">10 条</span></li>
+<li><time>2026/11/08 17:36</time><a href="/issues/2026-11-08T09-36-58.html">AI技术雷达 · 11月8日 17:36</a><span class="count">9 条</span></li>
+<li><time>2026/11/08 17:15</time><a href="/issues/2026-11-08T09-15-03.html">AI技术雷达 · 11月8日 17:15</a><span class="count">13 条</span></li>
+<li><time>2026/11/08 11:35</time><a href="/issues/2026-11-08T03-35-41.html">AI技术雷达 · 11月8日 11:35</a><span class="count">13 条</span></li>
+<li><time>2026/11/08 11:09</time><a href="/issues/2026-11-08T03-09-37.html">AI技术雷达 · 11月8日 11:09</a><span class="count">7 条</span></li>
+<li><time>2026/11/08 08:17</time><a href="/issues/2026-11-08T00-17-16.html">AI技术雷达 · 11月8日 08:17</a><span class="count">6 条</span></li>
+<li><time>2026/11/08 05:14</time><a href="/issues/2026-11-07T21-14-13.html">AI技术雷达 · 11月8日 05:14</a><span class="count">10 条</span></li>
+<li><time>2026/11/07 20:21</time><a href="/issues/2026-11-07T12-21-11.html">AI技术雷达 · 11月7日 20:21</a><span class="count">9 条</span></li>
+<li><time>2026/11/07 20:11</time><a href="/issues/2026-11-07T12-11-53.html">AI技术雷达 · 11月7日 20:11</a><span class="count">6 条</span></li>
+<li><time>2026/11/07 14:44</time><a href="/issues/2026-11-07T06-44-56.html">AI技术雷达 · 11月7日 14:44</a><span class="count">10 条</span></li>
+<li><time>2026/11/07 14:17</time><a href="/issues/2026-11-07T06-17-24.html">AI技术雷达 · 11月7日 14:17</a><span class="count">8 条</span></li>
+<li><time>2026/11/07 11:33</time><a href="/issues/2026-11-07T03-33-22.html">AI技术雷达 · 11月7日 11:33</a><span class="count">6 条</span></li>
+<li><time>2026/11/07 11:05</time><a href="/issues/2026-11-07T03-05-19.html">AI技术雷达 · 11月7日 11:05</a><span class="count">6 条</span></li>
+<li><time>2026/11/07 10:24</time><a href="/issues/2026-11-07T02-24-19.html">AI技术雷达 · 11月7日 10:24</a><span class="count">8 条</span></li>
+<li><time>2026/11/07 05:30</time><a href="/issues/2026-11-06T21-30-22.html">AI技术雷达 · 11月7日 05:30</a><span class="count">8 条</span></li>
+<li><time>2026/11/06 23:26</time><a href="/issues/2026-11-06T15-26-47.html">AI技术雷达 · 11月6日 23:26</a><span class="count">5 条</span></li>
+<li><time>2026/11/06 20:28</time><a href="/issues/2026-11-06T12-28-34.html">AI技术雷达 · 11月6日 20:28</a><span class="count">6 条</span></li>
+<li><time>2026/11/06 17:28</time><a href="/issues/2026-11-06T09-28-23.html">AI技术雷达 · 11月6日 17:28</a><span class="count">6 条</span></li>
+<li><time>2026/11/06 17:17</time><a href="/issues/2026-11-06T09-17-48.html">AI技术雷达 · 11月6日 17:17</a><span class="count">5 条</span></li>
+<li><time>2026/11/06 14:25</time><a href="/issues/2026-11-06T06-25-47.html">AI技术雷达 · 11月6日 14:25</a><span class="count">6 条</span></li>
+<li><time>2026/11/06 11:27</time><a href="/issues/2026-11-06T03-27-58.html">AI技术雷达 · 11月6日 11:27</a><span class="count">6 条</span></li>
+<li><time>2026/11/06 08:27</time><a href="/issues/2026-11-06T00-27-48.html">AI技术雷达 · 11月6日 08:27</a><span class="count">5 条</span></li>
+<li><time>2026/11/06 08:05</time><a href="/issues/2026-11-06T00-05-27.html">AI技术雷达 · 11月6日 08:05</a><span class="count">6 条</span></li>
+<li><time>2026/11/06 05:20</time><a href="/issues/2026-11-05T21-20-49.html">AI技术雷达 · 11月6日 05:20</a><span class="count">8 条</span></li>
+<li><time>2026/11/05 23:36</time><a href="/issues/2026-11-05T15-36-19.html">AI技术雷达 · 11月5日 23:36</a><span class="count">18 条</span></li>
+<li><time>2026/11/05 17:32</time><a href="/issues/2026-11-05T09-32-07.html">AI技术雷达 · 11月5日 17:32</a><span class="count">10 条</span></li>
+<li><time>2026/11/05 17:12</time><a href="/issues/2026-11-05T09-12-14.html">AI技术雷达 · 11月5日 17:12</a><span class="count">5 条</span></li>
+<li><time>2026/11/05 14:24</time><a href="/issues/2026-11-05T06-24-02.html">AI技术雷达 · 11月5日 14:24</a><span class="count">8 条</span></li>
+<li><time>2026/11/05 11:34</time><a href="/issues/2026-11-05T03-34-39.html">AI技术雷达 · 11月5日 11:34</a><span class="count">8 条</span></li>
+<li><time>2026/11/05 05:33</time><a href="/issues/2026-11-04T21-33-10.html">AI技术雷达 · 11月5日 05:33</a><span class="count">5 条</span></li>
+<li><time>2026/11/04 23:20</time><a href="/issues/2026-11-04T15-20-18.html">AI技术雷达 · 11月4日 23:20</a><span class="count">5 条</span></li>
+<li><time>2026/11/04 20:35</time><a href="/issues/2026-11-04T12-35-19.html">AI技术雷达 · 11月4日 20:35</a><span class="count">7 条</span></li>
+<li><time>2026/11/04 17:17</time><a href="/issues/2026-11-04T09-17-42.html">AI技术雷达 · 11月4日 17:17</a><span class="count">5 条</span></li>
+<li><time>2026/11/04 14:13</time><a href="/issues/2026-11-04T06-13-10.html">AI技术雷达 · 11月4日 14:13</a><span class="count">8 条</span></li>
+<li><time>2026/11/04 11:19</time><a href="/issues/2026-11-04T03-19-32.html">AI技术雷达 · 11月4日 11:19</a><span class="count">10 条</span></li>
+<li><time>2026/11/04 08:30</time><a href="/issues/2026-11-04T00-30-57.html">AI技术雷达 · 11月4日 08:30</a><span class="count">10 条</span></li>
+<li><time>2026/11/04 08:11</time><a href="/issues/2026-11-04T00-11-14.html">AI技术雷达 · 11月4日 08:11</a><span class="count">7 条</span></li>
+<li><time>2026/11/04 05:12</time><a href="/issues/2026-11-03T21-12-34.html">AI技术雷达 · 11月4日 05:12</a><span class="count">6 条</span></li>
+<li><time>2026/11/03 23:31</time><a href="/issues/2026-11-03T15-31-08.html">AI技术雷达 · 11月3日 23:31</a><span class="count">7 条</span></li>
+<li><time>2026/11/03 20:35</time><a href="/issues/2026-11-03T12-35-11.html">AI技术雷达 · 11月3日 20:35</a><span class="count">6 条</span></li>
+<li><time>2026/11/03 17:28</time><a href="/issues/2026-11-03T09-28-22.html">AI技术雷达 · 11月3日 17:28</a><span class="count">6 条</span></li>
+<li><time>2026/11/03 14:24</time><a href="/issues/2026-11-03T06-24-45.html">AI技术雷达 · 11月3日 14:24</a><span class="count">12 条</span></li>
+<li><time>2026/11/03 13:12</time><a href="/issues/2026-11-03T05-12-45.html">AI技术雷达 · 11月3日 13:12</a><span class="count">8 条</span></li>
+<li><time>2026/11/02 20:13</time><a href="/issues/2026-11-02T12-14-32.html">AI技术雷达 · 11月2日 20:13</a><span class="count">8 条</span></li>
+<li><time>2026/11/02 17:24</time><a href="/issues/2026-11-02T09-25-42.html">AI技术雷达 · 11月2日 17:24</a><span class="count">7 条</span></li>
+<li><time>2026/11/02 14:34</time><a href="/issues/2026-11-02T06-35-39.html">AI技术雷达 · 11月2日 14:34</a><span class="count">8 条</span></li>
+<li><time>2026/11/02 11:18</time><a href="/issues/2026-11-02T03-19-13.html">AI技术雷达 · 11月2日 11:18</a><span class="count">7 条</span></li>
+<li><time>2026/11/02 08:11</time><a href="/issues/2026-11-02T00-12-16.html">AI技术雷达 · 11月2日 08:11</a><span class="count">6 条</span></li>
+<li><time>2026/11/02 05:26</time><a href="/issues/2026-11-01T21-27-34.html">AI技术雷达 · 11月2日 05:26</a><span class="count">8 条</span></li>
+<li><time>2026/11/02 05:18</time><a href="/issues/2026-11-01T21-18-37.html">AI技术雷达 · 11月2日 05:18</a><span class="count">6 条</span></li>
+<li><time>2026/11/01 23:15</time><a href="/issues/2026-11-01T15-15-39.html">AI技术雷达 · 11月1日 23:15</a><span class="count">7 条</span></li>
+<li><time>2026/11/01 20:35</time><a href="/issues/2026-11-01T12-35-36.html">AI技术雷达 · 11月1日 20:35</a><span class="count">6 条</span></li>
+<li><time>2026/11/01 20:28</time><a href="/issues/2026-11-01T12-29-13.html">AI技术雷达 · 11月1日 20:28</a><span class="count">7 条</span></li>
+<li><time>2026/11/01 17:47</time><a href="/issues/2026-11-01T09-48-32.html">AI技术雷达 · 11月1日 17:47</a><span class="count">9 条</span></li>
+<li><time>2026/11/01 17:22</time><a href="/issues/2026-11-01T09-22-52.html">AI技术雷达 · 11月1日 17:22</a><span class="count">8 条</span></li>
+<li><time>2026/11/01 14:33</time><a href="/issues/2026-11-01T06-34-18.html">AI技术雷达 · 11月1日 14:33</a><span class="count">5 条</span></li>
+<li><time>2026/11/01 11:16</time><a href="/issues/2026-11-01T03-17-04.html">AI技术雷达 · 11月1日 11:16</a><span class="count">8 条</span></li>
+<li><time>2026/11/01 11:08</time><a href="/issues/2026-11-01T03-09-01.html">AI技术雷达 · 11月1日 11:08</a><span class="count">7 条</span></li>
+<li><time>2026/11/01 08:15</time><a href="/issues/2026-11-01T00-16-08.html">AI技术雷达 · 11月1日 08:15</a><span class="count">8 条</span></li>
+<li><time>2026/11/01 08:07</time><a href="/issues/2026-11-01T00-07-50.html">AI技术雷达 · 11月1日 08:07</a><span class="count">6 条</span></li>
+<li><time>2026/11/01 05:32</time><a href="/issues/2026-10-31T21-33-27.html">AI技术雷达 · 11月1日 05:32</a><span class="count">6 条</span></li>
+<li><time>2026/11/01 05:06</time><a href="/issues/2026-10-31T21-07-19.html">AI技术雷达 · 11月1日 05:06</a><span class="count">10 条</span></li>
+<li><time>2026/10/31 23:27</time><a href="/issues/2026-10-31T15-28-25.html">AI技术雷达 · 10月31日 23:27</a><span class="count">7 条</span></li>
+<li><time>2026/10/31 20:27</time><a href="/issues/2026-10-31T12-27-47.html">AI技术雷达 · 10月31日 20:27</a><span class="count">6 条</span></li>
+<li><time>2026/10/31 17:31</time><a href="/issues/2026-10-31T09-32-32.html">AI技术雷达 · 10月31日 17:31</a><span class="count">7 条</span></li>
+<li><time>2026/10/31 14:33</time><a href="/issues/2026-10-31T06-33-58.html">AI技术雷达 · 10月31日 14:33</a><span class="count">5 条</span></li>
+<li><time>2026/10/31 14:09</time><a href="/issues/2026-10-31T06-09-47.html">AI技术雷达 · 10月31日 14:09</a><span class="count">10 条</span></li>
+<li><time>2026/10/31 11:22</time><a href="/issues/2026-10-31T03-23-37.html">AI技术雷达 · 10月31日 11:22</a><span class="count">7 条</span></li>
+<li><time>2026/10/31 08:33</time><a href="/issues/2026-10-31T00-34-24.html">AI技术雷达 · 10月31日 08:33</a><span class="count">9 条</span></li>
+<li><time>2026/10/31 08:16</time><a href="/issues/2026-10-31T00-17-25.html">AI技术雷达 · 10月31日 08:16</a><span class="count">9 条</span></li>
+<li><time>2026/10/31 05:23</time><a href="/issues/2026-10-30T21-24-19.html">AI技术雷达 · 10月31日 05:23</a><span class="count">7 条</span></li>
+<li><time>2026/10/30 23:26</time><a href="/issues/2026-10-30T15-28-02.html">AI技术雷达 · 10月30日 23:26</a><span class="count">7 条</span></li>
+<li><time>2026/10/30 23:16</time><a href="/issues/2026-10-30T15-16-54.html">AI技术雷达 · 10月30日 23:16</a><span class="count">7 条</span></li>
+<li><time>2026/10/30 20:24</time><a href="/issues/2026-10-30T12-25-33.html">AI技术雷达 · 10月30日 20:24</a><span class="count">6 条</span></li>
+<li><time>2026/10/30 20:19</time><a href="/issues/2026-10-30T12-19-54.html">AI技术雷达 · 10月30日 20:19</a><span class="count">8 条</span></li>
+<li><time>2026/10/30 17:26</time><a href="/issues/2026-10-30T09-27-18.html">AI技术雷达 · 10月30日 17:26</a><span class="count">7 条</span></li>
+<li><time>2026/10/30 14:31</time><a href="/issues/2026-10-30T06-31-52.html">AI技术雷达 · 10月30日 14:31</a><span class="count">9 条</span></li>
+<li><time>2026/10/30 11:32</time><a href="/issues/2026-10-30T03-33-07.html">AI技术雷达 · 10月30日 11:32</a><span class="count">8 条</span></li>
+<li><time>2026/10/30 08:33</time><a href="/issues/2026-10-30T00-33-39.html">AI技术雷达 · 10月30日 08:33</a><span class="count">6 条</span></li>
+<li><time>2026/10/30 08:08</time><a href="/issues/2026-10-30T00-09-29.html">AI技术雷达 · 10月30日 08:08</a><span class="count">6 条</span></li>
+<li><time>2026/10/30 05:28</time><a href="/issues/2026-10-29T21-29-33.html">AI技术雷达 · 10月30日 05:28</a><span class="count">7 条</span></li>
+<li><time>2026/10/30 05:16</time><a href="/issues/2026-10-29T21-17-30.html">AI技术雷达 · 10月30日 05:16</a><span class="count">7 条</span></li>
+<li><time>2026/10/29 23:17</time><a href="/issues/2026-10-29T15-18-01.html">AI技术雷达 · 10月29日 23:17</a><span class="count">5 条</span></li>
+<li><time>2026/10/29 20:10</time><a href="/issues/2026-10-29T12-12-06.html">AI技术雷达 · 10月29日 20:10</a><span class="count">10 条</span></li>
+<li><time>2026/10/29 17:30</time><a href="/issues/2026-10-29T09-31-07.html">AI技术雷达 · 10月29日 17:30</a><span class="count">6 条</span></li>
+<li><time>2026/10/29 14:32</time><a href="/issues/2026-10-29T06-33-03.html">AI技术雷达 · 10月29日 14:32</a><span class="count">7 条</span></li>
+<li><time>2026/10/29 11:20</time><a href="/issues/2026-10-29T03-21-04.html">AI技术雷达 · 10月29日 11:20</a><span class="count">14 条</span></li>
+<li><time>2026/10/29 08:31</time><a href="/issues/2026-10-29T00-32-14.html">AI技术雷达 · 10月29日 08:31</a><span class="count">7 条</span></li>
+<li><time>2026/10/29 08:09</time><a href="/issues/2026-10-29T00-10-05.html">AI技术雷达 · 10月29日 08:09</a><span class="count">5 条</span></li>
+<li><time>2026/10/29 05:32</time><a href="/issues/2026-10-28T21-33-07.html">AI技术雷达 · 10月29日 05:32</a><span class="count">6 条</span></li>
+<li><time>2026/10/29 05:20</time><a href="/issues/2026-10-28T21-20-32.html">AI技术雷达 · 10月29日 05:20</a><span class="count">10 条</span></li>
+<li><time>2026/10/28 20:13</time><a href="/issues/2026-10-28T12-13-46.html">AI技术雷达 · 10月28日 20:13</a><span class="count">7 条</span></li>
+<li><time>2026/10/28 14:27</time><a href="/issues/2026-10-28T06-28-14.html">AI技术雷达 · 10月28日 14:27</a><span class="count">6 条</span></li>
+<li><time>2026/10/28 14:08</time><a href="/issues/2026-10-28T06-08-53.html">AI技术雷达 · 10月28日 14:08</a><span class="count">11 条</span></li>
+<li><time>2026/10/28 11:23</time><a href="/issues/2026-10-28T03-24-41.html">AI技术雷达 · 10月28日 11:23</a><span class="count">14 条</span></li>
+<li><time>2026/10/28 05:27</time><a href="/issues/2026-10-27T21-27-35.html">AI技术雷达 · 10月28日 05:27</a><span class="count">5 条</span></li>
+<li><time>2026/10/28 05:17</time><a href="/issues/2026-10-27T21-18-20.html">AI技术雷达 · 10月28日 05:17</a><span class="count">11 条</span></li>
+<li><time>2026/10/27 23:19</time><a href="/issues/2026-10-27T15-21-04.html">AI技术雷达 · 10月27日 23:19</a><span class="count">9 条</span></li>
+<li><time>2026/10/27 23:05</time><a href="/issues/2026-10-27T15-06-04.html">AI技术雷达 · 10月27日 23:05</a><span class="count">5 条</span></li>
+<li><time>2026/10/27 20:12</time><a href="/issues/2026-10-27T12-13-01.html">AI技术雷达 · 10月27日 20:12</a><span class="count">10 条</span></li>
+<li><time>2026/10/27 17:13</time><a href="/issues/2026-10-27T09-14-15.html">AI技术雷达 · 10月27日 17:13</a><span class="count">13 条</span></li>
+<li><time>2026/10/27 11:15</time><a href="/issues/2026-10-27T03-16-55.html">AI技术雷达 · 10月27日 11:15</a><span class="count">11 条</span></li>
+<li><time>2026/10/27 08:19</time><a href="/issues/2026-10-27T00-20-00.html">AI技术雷达 · 10月27日 08:19</a><span class="count">7 条</span></li>
+<li><time>2026/10/27 05:21</time><a href="/issues/2026-10-26T21-22-09.html">AI技术雷达 · 10月27日 05:21</a><span class="count">5 条</span></li>
+<li><time>2026/10/26 23:42</time><a href="/issues/2026-10-26T15-44-36.html">AI技术雷达 · 10月26日 23:42</a><span class="count">16 条</span></li>
+<li><time>2026/10/26 23:19</time><a href="/issues/2026-10-26T15-19-28.html">AI技术雷达 · 10月26日 23:19</a><span class="count">5 条</span></li>
+<li><time>2026/10/26 20:22</time><a href="/issues/2026-10-26T12-23-35.html">AI技术雷达 · 10月26日 20:22</a><span class="count">8 条</span></li>
+<li><time>2026/10/26 14:26</time><a href="/issues/2026-10-26T06-27-08.html">AI技术雷达 · 10月26日 14:26</a><span class="count">7 条</span></li>
+<li><time>2026/10/26 11:26</time><a href="/issues/2026-10-26T03-27-07.html">AI技术雷达 · 10月26日 11:26</a><span class="count">6 条</span></li>
+<li><time>2026/10/26 11:10</time><a href="/issues/2026-10-26T03-11-28.html">AI技术雷达 · 10月26日 11:10</a><span class="count">11 条</span></li>
+<li><time>2026/10/26 08:18</time><a href="/issues/2026-10-26T00-19-05.html">AI技术雷达 · 10月26日 08:18</a><span class="count">7 条</span></li>
+<li><time>2026/10/26 05:30</time><a href="/issues/2026-10-25T21-30-58.html">AI技术雷达 · 10月26日 05:30</a><span class="count">8 条</span></li>
+<li><time>2026/10/25 23:31</time><a href="/issues/2026-10-25T15-31-19.html">AI技术雷达 · 10月25日 23:31</a><span class="count">8 条</span></li>
+<li><time>2026/10/25 23:22</time><a href="/issues/2026-10-25T15-23-09.html">AI技术雷达 · 10月25日 23:22</a><span class="count">8 条</span></li>
+<li><time>2026/10/25 20:30</time><a href="/issues/2026-10-25T12-30-59.html">AI技术雷达 · 10月25日 20:30</a><span class="count">5 条</span></li>
+<li><time>2026/10/25 17:34</time><a href="/issues/2026-10-25T09-34-56.html">AI技术雷达 · 10月25日 17:34</a><span class="count">5 条</span></li>
+<li><time>2026/10/25 14:18</time><a href="/issues/2026-10-25T06-19-37.html">AI技术雷达 · 10月25日 14:18</a><span class="count">10 条</span></li>
+<li><time>2026/10/25 11:17</time><a href="/issues/2026-10-25T03-18-24.html">AI技术雷达 · 10月25日 11:17</a><span class="count">10 条</span></li>
+<li><time>2026/10/25 08:14</time><a href="/issues/2026-10-25T00-14-58.html">AI技术雷达 · 10月25日 08:14</a><span class="count">9 条</span></li>
+<li><time>2026/10/25 05:12</time><a href="/issues/2026-10-24T21-12-47.html">AI技术雷达 · 10月25日 05:12</a><span class="count">5 条</span></li>
+<li><time>2026/10/24 23:31</time><a href="/issues/2026-10-24T15-31-39.html">AI技术雷达 · 10月24日 23:31</a><span class="count">7 条</span></li>
+<li><time>2026/10/24 23:20</time><a href="/issues/2026-10-24T15-21-17.html">AI技术雷达 · 10月24日 23:20</a><span class="count">5 条</span></li>
+<li><time>2026/10/24 20:34</time><a href="/issues/2026-10-24T12-36-00.html">AI技术雷达 · 10月24日 20:34</a><span class="count">7 条</span></li>
+<li><time>2026/10/24 20:10</time><a href="/issues/2026-10-24T12-14-30.html">AI技术雷达 · 10月24日 20:10</a><span class="count">7 条</span></li>
+<li><time>2026/10/24 17:35</time><a href="/issues/2026-10-24T09-36-40.html">AI技术雷达 · 10月24日 17:35</a><span class="count">11 条</span></li>
+<li><time>2026/10/24 17:10</time><a href="/issues/2026-10-24T09-11-00.html">AI技术雷达 · 10月24日 17:10</a><span class="count">7 条</span></li>
+<li><time>2026/10/24 14:20</time><a href="/issues/2026-10-24T06-21-21.html">AI技术雷达 · 10月24日 14:20</a><span class="count">11 条</span></li>
+<li><time>2026/10/24 11:14</time><a href="/issues/2026-10-24T03-14-44.html">AI技术雷达 · 10月24日 11:14</a><span class="count">7 条</span></li>
+<li><time>2026/10/24 08:28</time><a href="/issues/2026-10-24T00-28-36.html">AI技术雷达 · 10月24日 08:28</a><span class="count">7 条</span></li>
+<li><time>2026/10/23 23:17</time><a href="/issues/2026-10-23T15-18-54.html">AI技术雷达 · 10月23日 23:17</a><span class="count">11 条</span></li>
+<li><time>2026/10/23 20:26</time><a href="/issues/2026-10-23T12-26-30.html">AI技术雷达 · 10月23日 20:26</a><span class="count">8 条</span></li>
+<li><time>2026/10/23 20:17</time><a href="/issues/2026-10-23T12-18-23.html">AI技术雷达 · 10月23日 20:17</a><span class="count">6 条</span></li>
+<li><time>2026/10/23 17:23</time><a href="/issues/2026-10-23T09-24-00.html">AI技术雷达 · 10月23日 17:23</a><span class="count">5 条</span></li>
+<li><time>2026/10/23 17:06</time><a href="/issues/2026-10-23T09-06-57.html">AI技术雷达 · 10月23日 17:06</a><span class="count">7 条</span></li>
+<li><time>2026/10/23 14:09</time><a href="/issues/2026-10-23T06-09-51.html">AI技术雷达 · 10月23日 14:09</a><span class="count">5 条</span></li>
+<li><time>2026/10/23 11:21</time><a href="/issues/2026-10-23T03-22-03.html">AI技术雷达 · 10月23日 11:21</a><span class="count">6 条</span></li>
+<li><time>2026/10/23 08:33</time><a href="/issues/2026-10-23T00-33-28.html">AI技术雷达 · 10月23日 08:33</a><span class="count">8 条</span></li>
+<li><time>2026/10/23 08:24</time><a href="/issues/2026-10-23T00-25-05.html">AI技术雷达 · 10月23日 08:24</a><span class="count">10 条</span></li>
+<li><time>2026/10/23 08:04</time><a href="/issues/2026-10-23T00-04-46.html">AI技术雷达 · 10月23日 08:04</a><span class="count">6 条</span></li>
+<li><time>2026/10/23 05:33</time><a href="/issues/2026-10-22T21-33-37.html">AI技术雷达 · 10月23日 05:33</a><span class="count">5 条</span></li>
+<li><time>2026/10/23 05:06</time><a href="/issues/2026-10-22T21-07-20.html">AI技术雷达 · 10月23日 05:06</a><span class="count">5 条</span></li>
+<li><time>2026/10/22 23:12</time><a href="/issues/2026-10-22T15-13-38.html">AI技术雷达 · 10月22日 23:12</a><span class="count">11 条</span></li>
+<li><time>2026/10/22 20:14</time><a href="/issues/2026-10-22T12-14-43.html">AI技术雷达 · 10月22日 20:14</a><span class="count">5 条</span></li>
+<li><time>2026/10/22 17:19</time><a href="/issues/2026-10-22T09-19-51.html">AI技术雷达 · 10月22日 17:19</a><span class="count">6 条</span></li>
+<li><time>2026/10/22 17:13</time><a href="/issues/2026-10-22T09-13-58.html">AI技术雷达 · 10月22日 17:13</a><span class="count">5 条</span></li>
+<li><time>2026/10/22 14:21</time><a href="/issues/2026-10-22T06-21-41.html">AI技术雷达 · 10月22日 14:21</a><span class="count">10 条</span></li>
+<li><time>2026/10/22 11:24</time><a href="/issues/2026-10-22T03-26-12.html">AI技术雷达 · 10月22日 11:24</a><span class="count">10 条</span></li>
+<li><time>2026/10/22 08:25</time><a href="/issues/2026-10-22T00-26-10.html">AI技术雷达 · 10月22日 08:25</a><span class="count">7 条</span></li>
+<li><time>2026/10/21 23:12</time><a href="/issues/2026-10-21T15-13-17.html">AI技术雷达 · 10月21日 23:12</a><span class="count">6 条</span></li>
+<li><time>2026/10/21 20:18</time><a href="/issues/2026-10-21T12-20-41.html">AI技术雷达 · 10月21日 20:18</a><span class="count">10 条</span></li>
+<li><time>2026/10/21 14:40</time><a href="/issues/2026-10-21T06-42-53.html">AI技术雷达 · 10月21日 14:40</a><span class="count">11 条</span></li>
+<li><time>2026/10/21 11:31</time><a href="/issues/2026-10-21T03-32-14.html">AI技术雷达 · 10月21日 11:31</a><span class="count">6 条</span></li>
+<li><time>2026/10/21 08:21</time><a href="/issues/2026-10-21T00-22-02.html">AI技术雷达 · 10月21日 08:21</a><span class="count">6 条</span></li>
+<li><time>2026/10/20 20:30</time><a href="/issues/2026-10-20T12-31-38.html">AI技术雷达 · 10月20日 20:30</a><span class="count">6 条</span></li>
+<li><time>2026/10/20 17:31</time><a href="/issues/2026-10-20T09-32-16.html">AI技术雷达 · 10月20日 17:31</a><span class="count">7 条</span></li>
+<li><time>2026/10/20 17:13</time><a href="/issues/2026-10-20T09-14-39.html">AI技术雷达 · 10月20日 17:13</a><span class="count">5 条</span></li>
+<li><time>2026/10/20 11:36</time><a href="/issues/2026-10-20T03-36-51.html">AI技术雷达 · 10月20日 11:36</a><span class="count">8 条</span></li>
+<li><time>2026/10/20 08:19</time><a href="/issues/2026-10-20T00-20-28.html">AI技术雷达 · 10月20日 08:19</a><span class="count">8 条</span></li>
+<li><time>2026/10/20 05:32</time><a href="/issues/2026-10-19T21-32-42.html">AI技术雷达 · 10月20日 05:32</a><span class="count">5 条</span></li>
+<li><time>2026/10/20 05:12</time><a href="/issues/2026-10-19T21-12-42.html">AI技术雷达 · 10月20日 05:12</a><span class="count">7 条</span></li>
+<li><time>2026/10/19 23:15</time><a href="/issues/2026-10-19T15-15-50.html">AI技术雷达 · 10月19日 23:15</a><span class="count">6 条</span></li>
+<li><time>2026/10/19 20:06</time><a href="/issues/2026-10-19T12-07-11.html">AI技术雷达 · 10月19日 20:06</a><span class="count">6 条</span></li>
+<li><time>2026/10/19 17:30</time><a href="/issues/2026-10-19T09-31-08.html">AI技术雷达 · 10月19日 17:30</a><span class="count">8 条</span></li>
+<li><time>2026/10/19 14:26</time><a href="/issues/2026-10-19T06-29-04.html">AI技术雷达 · 10月19日 14:26</a><span class="count">7 条</span></li>
+<li><time>2026/10/19 11:28</time><a href="/issues/2026-10-19T03-29-48.html">AI技术雷达 · 10月19日 11:28</a><span class="count">7 条</span></li>
+<li><time>2026/10/19 08:40</time><a href="/issues/2026-10-19T00-41-42.html">AI技术雷达 · 10月19日 08:40</a><span class="count">12 条</span></li>
+<li><time>2026/10/19 08:07</time><a href="/issues/2026-10-19T00-08-03.html">AI技术雷达 · 10月19日 08:07</a><span class="count">8 条</span></li>
+<li><time>2026/10/19 05:16</time><a href="/issues/2026-10-18T21-17-07.html">AI技术雷达 · 10月19日 05:16</a><span class="count">6 条</span></li>
+<li><time>2026/10/18 23:14</time><a href="/issues/2026-10-18T15-15-13.html">AI技术雷达 · 10月18日 23:14</a><span class="count">6 条</span></li>
+<li><time>2026/10/18 20:17</time><a href="/issues/2026-10-18T12-17-52.html">AI技术雷达 · 10月18日 20:17</a><span class="count">8 条</span></li>
+<li><time>2026/10/18 17:30</time><a href="/issues/2026-10-18T09-31-18.html">AI技术雷达 · 10月18日 17:30</a><span class="count">7 条</span></li>
+<li><time>2026/10/18 14:36</time><a href="/issues/2026-10-18T06-36-38.html">AI技术雷达 · 10月18日 14:36</a><span class="count">7 条</span></li>
+<li><time>2026/10/18 14:10</time><a href="/issues/2026-10-18T06-10-37.html">AI技术雷达 · 10月18日 14:10</a><span class="count">5 条</span></li>
+<li><time>2026/10/18 11:09</time><a href="/issues/2026-10-18T03-10-00.html">AI技术雷达 · 10月18日 11:09</a><span class="count">7 条</span></li>
+<li><time>2026/10/18 08:32</time><a href="/issues/2026-10-18T00-32-33.html">AI技术雷达 · 10月18日 08:32</a><span class="count">6 条</span></li>
+<li><time>2026/10/18 05:26</time><a href="/issues/2026-10-17T21-26-31.html">AI技术雷达 · 10月18日 05:26</a><span class="count">8 条</span></li>
+<li><time>2026/10/17 23:32</time><a href="/issues/2026-10-17T15-32-38.html">AI技术雷达 · 10月17日 23:32</a><span class="count">8 条</span></li>
+<li><time>2026/10/17 23:12</time><a href="/issues/2026-10-17T15-13-12.html">AI技术雷达 · 10月17日 23:12</a><span class="count">9 条</span></li>
+<li><time>2026/10/17 20:16</time><a href="/issues/2026-10-17T12-17-25.html">AI技术雷达 · 10月17日 20:16</a><span class="count">7 条</span></li>
+<li><time>2026/10/17 17:13</time><a href="/issues/2026-10-17T09-13-32.html">AI技术雷达 · 10月17日 17:13</a><span class="count">7 条</span></li>
+<li><time>2026/10/17 14:20</time><a href="/issues/2026-10-17T06-21-01.html">AI技术雷达 · 10月17日 14:20</a><span class="count">6 条</span></li>
+<li><time>2026/10/17 14:05</time><a href="/issues/2026-10-17T06-05-42.html">AI技术雷达 · 10月17日 14:05</a><span class="count">7 条</span></li>
+<li><time>2026/10/17 11:13</time><a href="/issues/2026-10-17T03-14-13.html">AI技术雷达 · 10月17日 11:13</a><span class="count">9 条</span></li>
+<li><time>2026/10/17 08:21</time><a href="/issues/2026-10-17T00-21-30.html">AI技术雷达 · 10月17日 08:21</a><span class="count">7 条</span></li>
+<li><time>2026/10/17 05:31</time><a href="/issues/2026-10-16T21-32-00.html">AI技术雷达 · 10月17日 05:31</a><span class="count">5 条</span></li>
+<li><time>2026/10/16 23:38</time><a href="/issues/2026-10-16T15-40-02.html">AI技术雷达 · 10月16日 23:38</a><span class="count">6 条</span></li>
+<li><time>2026/10/16 20:30</time><a href="/issues/2026-10-16T12-31-23.html">AI技术雷达 · 10月16日 20:30</a><span class="count">6 条</span></li>
+<li><time>2026/10/16 20:14</time><a href="/issues/2026-10-16T12-15-58.html">AI技术雷达 · 10月16日 20:14</a><span class="count">9 条</span></li>
+<li><time>2026/10/16 17:09</time><a href="/issues/2026-10-16T09-10-05.html">AI技术雷达 · 10月16日 17:09</a><span class="count">5 条</span></li>
+<li><time>2026/10/16 14:26</time><a href="/issues/2026-10-16T06-27-20.html">AI技术雷达 · 10月16日 14:26</a><span class="count">9 条</span></li>
+<li><time>2026/10/16 11:26</time><a href="/issues/2026-10-16T03-26-38.html">AI技术雷达 · 10月16日 11:26</a><span class="count">7 条</span></li>
+<li><time>2026/10/16 08:21</time><a href="/issues/2026-10-16T00-22-11.html">AI技术雷达 · 10月16日 08:21</a><span class="count">5 条</span></li>
+<li><time>2026/10/16 05:31</time><a href="/issues/2026-10-15T21-32-14.html">AI技术雷达 · 10月16日 05:31</a><span class="count">6 条</span></li>
+<li><time>2026/10/16 05:14</time><a href="/issues/2026-10-15T21-15-33.html">AI技术雷达 · 10月16日 05:14</a><span class="count">7 条</span></li>
+<li><time>2026/10/16 00:29</time><a href="/issues/2026-10-15T16-30-09.html">AI技术雷达 · 10月16日 00:29</a><span class="count">6 条</span></li>
+<li><time>2026/10/15 20:34</time><a href="/issues/2026-10-15T12-36-25.html">AI技术雷达 · 10月15日 20:34</a><span class="count">7 条</span></li>
+<li><time>2026/10/15 17:37</time><a href="/issues/2026-10-15T09-37-42.html">AI技术雷达 · 10月15日 17:37</a><span class="count">11 条</span></li>
+<li><time>2026/10/15 17:14</time><a href="/issues/2026-10-15T09-15-42.html">AI技术雷达 · 10月15日 17:14</a><span class="count">8 条</span></li>
+<li><time>2026/10/15 14:22</time><a href="/issues/2026-10-15T06-23-00.html">AI技术雷达 · 10月15日 14:22</a><span class="count">10 条</span></li>
+<li><time>2026/10/15 11:22</time><a href="/issues/2026-10-15T03-23-34.html">AI技术雷达 · 10月15日 11:22</a><span class="count">8 条</span></li>
+<li><time>2026/10/15 08:21</time><a href="/issues/2026-10-15T00-22-04.html">AI技术雷达 · 10月15日 08:21</a><span class="count">10 条</span></li>
+<li><time>2026/10/15 08:15</time><a href="/issues/2026-10-15T00-15-42.html">AI技术雷达 · 10月15日 08:15</a><span class="count">7 条</span></li>
+<li><time>2026/10/15 05:33</time><a href="/issues/2026-10-14T21-33-36.html">AI技术雷达 · 10月15日 05:33</a><span class="count">10 条</span></li>
+<li><time>2026/10/14 17:27</time><a href="/issues/2026-10-14T09-27-54.html">AI技术雷达 · 10月14日 17:27</a><span class="count">6 条</span></li>
+<li><time>2026/10/14 14:40</time><a href="/issues/2026-10-14T06-41-07.html">AI技术雷达 · 10月14日 14:40</a><span class="count">6 条</span></li>
+<li><time>2026/10/14 14:17</time><a href="/issues/2026-10-14T06-18-21.html">AI技术雷达 · 10月14日 14:17</a><span class="count">7 条</span></li>
+<li><time>2026/10/14 11:19</time><a href="/issues/2026-10-14T03-19-36.html">AI技术雷达 · 10月14日 11:19</a><span class="count">10 条</span></li>
+<li><time>2026/10/14 11:05</time><a href="/issues/2026-10-14T03-05-52.html">AI技术雷达 · 10月14日 11:05</a><span class="count">5 条</span></li>
+<li><time>2026/10/14 08:34</time><a href="/issues/2026-10-14T00-36-21.html">AI技术雷达 · 10月14日 08:34</a><span class="count">10 条</span></li>
+<li><time>2026/10/14 05:29</time><a href="/issues/2026-10-13T21-30-04.html">AI技术雷达 · 10月14日 05:29</a><span class="count">12 条</span></li>
+<li><time>2026/10/13 23:28</time><a href="/issues/2026-10-13T15-30-45.html">AI技术雷达 · 10月13日 23:28</a><span class="count">6 条</span></li>
+<li><time>2026/10/13 20:33</time><a href="/issues/2026-10-13T12-36-06.html">AI技术雷达 · 10月13日 20:33</a><span class="count">8 条</span></li>
+<li><time>2026/10/13 20:14</time><a href="/issues/2026-10-13T12-15-12.html">AI技术雷达 · 10月13日 20:14</a><span class="count">7 条</span></li>
+<li><time>2026/10/13 14:32</time><a href="/issues/2026-10-13T06-32-46.html">AI技术雷达 · 10月13日 14:32</a><span class="count">5 条</span></li>
+<li><time>2026/10/13 14:20</time><a href="/issues/2026-10-13T06-21-53.html">AI技术雷达 · 10月13日 14:20</a><span class="count">7 条</span></li>
+<li><time>2026/10/13 11:18</time><a href="/issues/2026-10-13T03-19-08.html">AI技术雷达 · 10月13日 11:18</a><span class="count">6 条</span></li>
+<li><time>2026/10/13 11:07</time><a href="/issues/2026-10-13T03-07-52.html">AI技术雷达 · 10月13日 11:07</a><span class="count">7 条</span></li>
+<li><time>2026/10/13 08:27</time><a href="/issues/2026-10-13T00-28-52.html">AI技术雷达 · 10月13日 08:27</a><span class="count">17 条</span></li>
+<li><time>2026/10/13 08:16</time><a href="/issues/2026-10-13T00-17-07.html">AI技术雷达 · 10月13日 08:16</a><span class="count">5 条</span></li>
+<li><time>2026/10/13 07:37</time><a href="/issues/2026-10-12T23-38-17.html">AI技术雷达 · 10月13日 07:37</a><span class="count">7 条</span></li>
+<li><time>2026/10/13 00:26</time><a href="/issues/2026-10-12T16-26-38.html">AI技术雷达 · 10月13日 00:26</a><span class="count">8 条</span></li>
+<li><time>2026/10/12 23:30</time><a href="/issues/2026-10-12T15-33-25.html">AI技术雷达 · 10月12日 23:30</a><span class="count">6 条</span></li></ul>
+</section></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

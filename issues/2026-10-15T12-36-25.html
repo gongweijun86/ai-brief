@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月15日 20:34">
+<title>AI技术雷达 · 10月15日 20:34 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;OpenAI GPT-6 代码库清理实践</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;pstack 将纠错经验压成短原则</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Step 5 Preview开源权重</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude Code 循环自动修Bug</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Horizon 聚合多源生成AI简报</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>php_parkour 让机器人跑酷</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aigeeknews · 2026-10-15 19:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让类人机器人跑酷<br><br>RSS 2026 的论文用 motion matching 把翻越、跳跃这些人类动态动作串起来，先挑动作再按地形调度，视频和代码都放出来了。<br><br><a href="https://github.com/amazon-far/php_parkour" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/amazon-far/php_parkour</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110644023157575680/img/uyxckXsSPUfQThzu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI GPT-6 代码库清理实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CopperForgeAI · 2026-10-15 13:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 官方博客披露了核心团队用 GPT-6 系列维护代码库的一手工程实践。直接公布了几个实际运行的提示词，<br>靠这些提示词在两周内合并了 1400 多个清理 PR，删除超过 800k 行代码，并将一个服务的容器镜像压缩48%。<br><br>第一个提示词用于清理死代码<br><br>  “请帮我找出并清理仓库里的无用代码。你可以随意查看<br>  Slack、Statsig（功能开关平台）或任何需要的来源，用来确认这些代码确实不再被使用、可以被清理或简化。”<br>  这个提示词的关键在于允许 GPT-6 Astra 自主去翻阅 Slack 讨论、Statsig 实验配置甚至生产环境的性能 profiling数据，只有在确认生产环境零调用后才在 PR 中列出删除依据。<br><br>第二个提示词用于清理更棘手的废弃实验与功能开关<br><br>  “/goal 找出整个仓库中所有陈旧、常量化、已废弃或全量上线的 Statsig开关、配置和实验，在不改变生产行为的前提下安全移除。审计所有项目资产，不限于标记为陈旧的对象。通过枚举、常量、包装函数、别名和动态拼<br>  接名称寻找间接引用。核对生产引用的常量，不只给保守清单。结合生产遥测与性能分析评估 CPU 开销，找出昂贵的无用判断。生成 Markdown报告，按归属和文件工作流分组以便并行处理，附带生产取值、证据与 CPU 开销。不要修改线上配置或服务。”<br><br>第三组提示词用于 CI 优化与规则自省<br>  <br>“关于减轻本仓库的 CI 负载你有什么想法？请将想法列成表格，并根据该仓库的历史运行记录，按每天预估节省的 CI 分钟数进行排序。”<br>  <br>面对不稳定测试修复，他们运行：<br>  <br>“/goal 查看所有最近的 CI 运行记录，找出偶发失败的测试并尝试修复，成功则提交PR。你的任务是针对简单问题找到明确修复方案，而不是穷尽修复所有问题。”<br> <br> 针对 agent 上下文规则的自检提示词更精妙：<br> <br> “翻阅我最近的 Codex 会话记录，找出一条误导了 agent 或导致无效工作的 AGENTS.md指令。选出该会话提示词，在相同仓库快照和模型下重放两次：一次保持原指令不变，一次仅移除或修正该指令。对比任务质量、agent<br>  行为、工具调用、token 消耗与成本，展示该指令并说明修改是否有效。”<br><br>强烈建议好好学习和利用这些应用于超大工程实践的提示词</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUplSvwasAArsBk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>pstack 将纠错经验压成短原则</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @runes_leo · 2026-10-15 16:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">pstack 有个设计值得借鉴：把 Agent 纠错经验压成短原则，而不是不断堆 Skill。 更重要的是，它要求 Agent 说明：哪个原则影响了哪个具体决策。 我自己的多 Agent 系统也在做「重复错误 → 规则/Validator → 实际回读」。 理想状态不是规则越来越厚，而是原则更精炼、验证更可靠。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">pstack 最持久的部分之一或许是其工程原则：非常精简的技能（约 10-20 行代码），将良好的实践提炼为其核心。<br><br>随着模型变得更加智能，我预计 pstack 的大多数技能将被压缩为简短的原则或工作流（一系列通用的步骤），并且我将能够删除其中一些。<br><br>其工作方式是，/poteto-mode 包含一个可用原则的简短索引，并告诉代理&quot;在你的回复中，指出每一条影响了决策的原则，以及它改变的具体选择。&quot;这就是为什么你经常会看到代理回复末尾有一个 Principles Named or Used（已命名或使用的原则）部分<br><br>许多这些原则是从我今年年初以来纠正代理的会话中提取出来的。其中一些受到我看到人们讨论的问题的启发，比如 Attack the Premise，灵感来自 @VictorTaelin 的帖子 <a href="https://x.com/VictorTaelin/status/2096273196412498057" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/VictorTaelin/status/2096273196412498057</a><br><br>如果你想要更大的控制权，也可以将这些原则作为技能使用，通过调用 /principle-&lt;name&gt;<br><br><a href="https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">perhaps one of the most durable parts of pstack are its engineering principles: very concise skills (~10-20 loc) that distill down good practices into its core. <br><br>as models get smarter, i expect most of pstack skills to compress into short principles or workflows (a generic list of steps) and that i will be able to delete a few of them. <br><br>how it works is that /poteto-mode contains a short index of available principles and tells agents &quot;In your reply, name each principle that shaped a decision and the specific choice it changed.&quot; this is why you'll often see a Principles Named or Used section at the end of the agent's response<br><br>many of these principles were extracted from my sessions correcting agents since the start of this year. some are inspired by problems i see people talk about, like Attack the Premise, inspired by @VictorTaelin's post <a href="https://x.com/VictorTaelin/status/2096273196412498057" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/VictorTaelin/status/2096273196412498057</a><br><br>you can also use the principles as skills if you want greater control, by invoking /principle-&lt;name&gt; <br><br><a href="https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Step 5 Preview开源权重</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-15 19:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">阶跃星辰的 Step 5 Preview 开源了，包括 BF16 与 FP8 模型权重，技术博客和配套的开源开发工具。<br><br>总参数量 600B，稀疏 MoE 架构，每 token 激活参数 27B，100 万 token 上下文窗口，原生支持文本和视觉输入。<br><br>最近 Step 5 Preview 在OpenRouter 周调用量，日调用量榜单中都排到了全球第二。<br><br>传送门：<a href="http://huggingface.co/stepfun-ai/Step-5-Preview" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://huggingface.co/stepfun-ai/Step-5-Preview</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 循环自动修Bug</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kevinma_dev_zh · 2026-10-15 15:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">claude code loop 还是要多用，越用越爽。<br><br>这个 issue loop 连续跑了两天，效果特别好，集中处理一批问题，也发现了生产环境中的一些问题。除了健壮性更好，这个 loop 还会自动总结积累经验，跑越久，codebase 的 agent 运行环境越成熟。<br><br>真正实现了 human in the loop，opus 5.5 做主控，subagent 独立分析和解决每个 issue，fable 做决策兜底和 code review验收。涉及到架构设计、文案、产品交互的必需由我确认，对于产品功能及架构方面需要优化的，建立独立 issue 由另外的流程再推进。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Kevin Ma <span style="font-size:12px;color:#999999;font-weight:400;">@kevinma_dev_zh</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我现在也是使用 Claude Code 搭配 Opus 和 Fable 模型自动化去分析和处理产品问题的，主要是 Bug。<br><br>首先，所有错误收集都统一接入了 Sentry，包括移动端、桌面端、服务端、浏览器插件和官网。<br><br>然后给予 Agent 连接 Sentry、PostHog 和 Supabase 的访问权限，让它能够充分获取上下文去分析问题。对了，我使用 monorepo, 所有文档和代码都在一个仓库。<br><br>最后，启动一个 loop 去监控和分析，定期总结经验，并使用 github issue 处理需要我确认的事项。<br><br>这个过程不断迭代，流程和经验沉淀到文档与 skill，最近刚开始跑，还不错，预期会越来越方便。<br><br>提示词可以给大家参考下<br><br>```<br>/loop 盯一下 sentry issues, 仔细分析，看看哪些是值得修复的，必须是确定性分析出来的问题，然后去修复，拿不准的就由 fable agent 去评估，修复完之后也是交给 fable agent 去 review。每个问题的处理启动一个新的 subagent. 每个 issue 的评估都需要创建对应的 github issue, 放问题详情、评估报告、解决方案和验收结果，不确定的问题原因、修复方案的，需要跟我确认的，就特殊标记并通知我，特别是涉及到用户能感知到的交互改动比如文案、按钮、提示等交互层面改动必须由我确认。 确定性已修复的，就标记 sentry issue 为下个版本解决，简单的工具操作的可以让 sonnet 去做. 还有：1. 定时自动沉淀这个工作流的经验到相关的文档，下次启动这个 loop 可以复用; 2. 每个问题处理之后，总结经验，避免以后再次出现这样的问题; 3. 定期查看需要我 review 的 issue，我会在那个上面回复。最后，涉及到交互流程、技术架构变更的，也需要我确认。<br>```</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkILYba8AATtp6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkILYZbQAAIdfO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUkcRS-aMAA3Qmn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Arena AI开源模型跌出前15</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-10-15 17:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">主打盲测模式的大模型竞技场Arena AI更新了总榜排名，最近两个月来，开源模型再次被甩开，其中排名最高的GLM-5.2，已经滑到了15名，得加把劲儿了呀。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmi3YfbgAEdt2O.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Horizon 聚合多源生成AI简报</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grgerwcwetwet · 2026-10-15 19:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 狂揽 9.7K Star！有人做了个 AI 新闻雷达，直接帮你从全网挖掘高价值信息！<br><br>1、聚合 X、Telegram、Reddit、GitHub、Hacker News、RSS 等多个信息源。<br><br>2、AI 自动筛选、评分、去重，把真正值得看的内容留下来。<br><br>3、自动生成中英文每日简报，还能补充事件背景和网友讨论。<br><br>GitHub： ⁠<a href="https://github.com/Thysrael/Horizon" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Thysrael/Horizon</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUqz6muboAAf67C.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

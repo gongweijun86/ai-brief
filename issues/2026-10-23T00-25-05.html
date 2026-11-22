@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月23日 08:24">
+<title>AI技术雷达 · 10月23日 08:24 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;JIT-Agent 动态生成任务专属执行框架</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;微软开源跨平台轻量 MicroVM nvx</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;agent-beacon 沉淀跨工具会话轨迹</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Artex 智能体遭用于攻击数百家机构</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>JIT-Agent 动态生成任务专属执行框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Manorgw · 2026-10-23 08:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">眼下 AI Agent 都在拼模型，可 Harness 到底怎么搭，其实同样关键。<br><br>JIT-Agent 换了个玩法：先让一个 27B 模型按任务即时生成一套专属 Harness，再交由另一个模型去执行。<br><br>换句话说，模型不用动，任务一变就重新生成一套执行框架。<br><br>按官方实验，这种动态 Harness 在部分任务上能贴近、甚至反超人工设计方案，Token 消耗也明显下降。<br><br>项目全部开源，想琢磨 Agent 工作流的可以去看看。<br>🔗 <a href="https://github.com/bingreeky/JIT" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bingreeky/JIT</a><br>🔗 <a href="https://arxiv.org/abs/2608.25593" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2608.25593</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVMB1GaaAAAaaiC.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>微软开源跨平台轻量 MicroVM nvx</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aiandcloud · 2026-10-21 19:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">微软也加入了开源 sandbox 的战局，跨平台的轻量级 microvm 实现。<br><br>无论是 Windows 还是 Linux 都可以跑，应该也是 azure sandbox 的底层开源实现<br><br><a href="https://github.com/microsoft/nvx" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/microsoft/nvx</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>shiji-kb 把史记做成结构化知识图谱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bkdgiffug · 2026-10-23 08:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把《史记》做成知识图谱，这个开源项目有点意思。<br><br>shiji-kb 用 AI 将古籍中的人物、地点、官职和历史事件结构化，方便查询关系、梳理年代，不用再只靠脑内记忆拼历史。<br><br>📚 收录 14,065 条实体，标注超过 12 万次<br>🗓️ 整理 3,198 个事件，提供 130 条交互时间线<br>🔎 正文支持分类高亮，人物地名可点击跳转<br>项目也公开了 AI 标注的误差和多轮校准记录，因此更适合探索、学习和辅助研究，不宜直接当作权威史料。<br>另外，许可为 CC BY-NC-SA 4.0，商业使用前需要先确认授权条件。<br>🔗 <a href="https://github.com/baojie/shiji-kb" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/baojie/shiji-kb</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVOGJR4bUAApeTZ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>agent-beacon 沉淀跨工具会话轨迹</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-23 06:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">你昨天在 Claude Code 里纠正过一次的做法，今天换到 Cursor 还得重新教一遍吗？大多数人的答案都是要。agent-beacon 想解决的就是这件事。<br><br>它是个用 Go 写的本地记忆层，在后台持续采集你的 agent 会话历史，覆盖 Claude Code、Cursor、Codex、OpenCode、Cline 在内的二十多种 harness。装完之后你照常用自己的工具，不改工作流。<br><br>采到的不是摘要，是完整轨迹。prompt、模型回复、工具调用、执行过的命令、文件改动、审批记录、MCP 活动和 token 消耗都在同一条 trace 里，可以精确回放。数据落在 ~/.beacon/endpoint/logs/runtime.jsonl，想看就跑 beacon traces 开一个终端浏览器，或者 beacon endpoint dashboard 看本地网页版。<br><br>再往上一层才是它说的自我改进：从这些历史里识别出有用的工作流、纠正和调试模式，以及仓库自身的约定，经过审阅后变成知识库，后续 agent 通过 MCP 或 Agent Skills 直接检索。同一个问题不必被第二个 agent 从零学一遍。<br><br>两点要讲清楚。一是它是系统级的端点 agent，macOS 走 brew，Linux 有 deb/rpm，Windows 是 MSI，另外提供 MDM 和 CI 的无交互安装路径，侵入性比一个 npm 包高；好在 release 带 build provenance，可以用 gh attestation verify 核验。二是交互式安装默认预选了 Beacon Cloud 并要求登录，想完全留在本机需要手动选 Local，这个选择最好别点快了。<br><br>今日 +447 star · Go · 总计 2,400<br>#ClaudeCode #AIAgents<br><br><a href="https://github.com/Asymptote-Labs/agent-beacon" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Asymptote-Labs/agent-beacon</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>多 Harness 配置提升 Agent RL 泛化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-23 01:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在使用多种 harness 配置来扩展 agentic RL 方面，这项工作做得非常出色。<br><br>许多方法主要使用单一固定的 harness，这会让模型过于特化而无法很好地泛化。这项工作将多种 harness 配置作为一个扩展维度。<br><br>但最大的问题是，模型能否泛化到训练中从未见过的 harness 配置。<br><br>他们选择了一个具有平衡因子覆盖的紧凑训练子集，并在同一任务上每次只改变 harness 的一个部分。<br><br>在各种基准、模型规模和 RL 算法上，这种方法在训练中从未见过的 harness 配置上提升了结果。以这种方式训练的模型在迁移到未见过的外部黑盒 harness 时，也比通过单个复杂黑盒 harness 训练的模型表现更好。<br><br>如果你的模型将运行在你没有用来训练它的 harness 中，请将 harness 多样性视为一个独立的扩展轴。<br><br><a href="https://arxiv.org/abs/2610.29458" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.29458</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/harness-scaling-for-generalizable-agentic-reinforcement-learning-2610.29458" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/harness-scaling-for-generalizable-agentic-reinforcement-learning-2610.29458</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Brilliant work on using many harness configurations to scale agentic RL.<br><br>Many approaches use mainly one fixed harness, which specializes the model but doesn't generalize well. This work uses many harness configurations as a scaling dimension.<br><br>But the big question is whether it can generalize to harness configurations never seen in training.<br><br>They pick a compact training subset with balanced factorial coverage, and vary one part of the harness at a time on the same task.<br><br>Across benchmarks, model sizes, and RL algorithms, this improves results on harness configurations never seen in training. Models trained this way also transfer to unseen external black-box harnesses better than models trained through one complex black-box harness.<br><br>If your model will run inside harnesses you did not train it in, treat harness diversity as its own scaling axis.<br><br><a href="https://arxiv.org/abs/2610.29458" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.29458</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/harness-scaling-for-generalizable-agentic-reinforcement-learning-2610.29458" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/harness-scaling-for-generalizable-agentic-reinforcement-learning-2610.29458</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVQA-eTbkAA8_T3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MinisSkill 免 Xcode 端侧开发 iOS 应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wsvn53 · 2026-10-23 01:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">作为一名 iOS 开发者，我从未想到自己会直接在 iPhone/iPad 上创建原生应用——不需要 Xcode，不需要云服务器，不需要远程会话。<br><br>介绍一个全新的 Minis Skill：ios-dev（目前仅支持 C/ObjC）。编译、自签名、安装、启动、读取日志——所有这些都在设备上完成。<br><br>演示：一条提示词，10 分钟，DeepSeek V4.1 Flash 发布了 &quot;Voicemore&quot;，一个类似 Typeless 的语音输入应用。虽然 UI 粗糙，逻辑有 bug——但它确实被编译了、签名了、安装了，而且真的能运行：你说话，文字就出现了。<br><br>这部分依然感觉像魔法。✨<br><br>技能链接：<br><a href="https://github.com/OpenMinis/MinisSkills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/OpenMinis/MinisSkills</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">As an iOS dev, I never imagined I'd be creating a native app on the iPhone/iPad itself — no Xcode, no Cloud server, no Remote session.<br><br>Introduce a new Minis Skill: ios-dev(C/ObjC only now). Compile, self-sign, install, launch, read logs — all of it happens on-device.<br><br>The demo: one prompt, 10 minutes, DeepSeek V4.1 Flash shipped &quot;Voicemore&quot;, a Typeless-style voice input app. Although The UI is rough, the logic is buggy — but it was compiled, signed, installed and it really runs: you speak, and the words appear.<br><br>That's the part that still feels like magic. ✨<br><br>Skill Link:<br><a href="https://github.com/OpenMinis/MinisSkills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/OpenMinis/MinisSkills</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113319836516601856/img/gD0LgDClt7Xl8IM7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Artex 智能体遭用于攻击数百家机构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-23 06:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">攻击自动化终于有了具体的工具名字。微软说，一个被它编号为 Storm-0940、与中国政府有关联的组织，正在用一款中国产的 AI 智能体 Artex 来跑攻击流程，目标是全球数百家机构，行业跨度很宽，最早的痕迹能追到九月。<br><br>微软同一篇通报里还提到 ConnectWise 的供应链被攻破。远程管理工具一旦被拿下，下游客户基本是一次性全开。一个能自己干活的智能体，加上一条直通几百家企业内网的通道，这个组合挺要命。<br><br>我之前就觉得，AI 在安全这行先出成果的会是攻击这一侧。防守讲准确率、讲不能误伤业务，攻击只要够便宜、试错次数够多就行。数百家这个量级，不太像人力堆出来的，侦察、筛选、横向移动这些重复活交给智能体，边际成本几乎为零。<br><br>国家背景的组织用上智能体本来就是时间问题，Artex 被点名说明这类工具连自研都省了，拿现成的就能打。靠人盯告警、靠人工响应的那套防守，从现在起是真的不够用了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 默认子代理更耗额度</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jesselaunz · 2026-10-23 05:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">claude确实没改，但是其中一次更新，缺省调用sub-agents<br><br>消耗速度至少快6倍(我这里)<br><br>全局关掉sub-agents，不需要这么加速<br><br>本周第一天我用了42%，后面3天全部顺序执行，目前也只用到67%，完成的task比用sub-agents多几倍</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Boris Cherny <span style="font-size:12px;color:#999999;font-weight:400;">@bcherny</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">@CampbellKaleb23 我们这边没有做任何更改。你能运行这个命令并把完整输出贴在这里吗？很乐意帮你调试。<br><br>claude -p /usage | pbcopy</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">@CampbellKaleb23 No changes on our end. Can you run this command and paste the full output here? Happy to help debug.<br><br>claude -p /usage | pbcopy</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Raindrop 跟踪 Agent 改动线上效果</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @benhylak · 2026-10-23 01:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天，我们很高兴地宣布 change reports。<br><br>@raindrop_ai 监控每一个 PR，并通过 Slack 私信向你汇报你的 agent 变更在生产环境中的实际表现 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">today, we're excited to announce change reports. <br><br>@raindrop_ai watches every PR and sends you slack dm's on how your agent changes actually performed in production </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113317364301475840/img/756mthxWIbF1FCsJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Argon 用 Blender 生成 3D 场景</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Google · 2026-10-23 03:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">从一张单独的 Nano Banana 图片开始，Gemini 4 Argon 创造了这个完整的 3D 大教堂音频响应式场景。<br><br>在 @Antigravity 中通过自主循环驱动 Blender MCP 来：<br><br>🏛️ 雕塑精细的哥特式建筑<br>🎥 对齐复杂的相机网格<br>🔊 搭建动态的、音频响应式的灯光</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Starting from a single Nano Banana image, Gemini 4 Argon created this finished 3D cathedral audio-reactive scene.<br><br>Driving Blender MCP in an autonomous loop in @Antigravity to:<br><br>🏛️ Sculpt intricate Gothic architecture<br>🎥 Align complex camera grids<br>🔊 Stage dynamic, audio-reactive lighting</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113352975426924544/img/L8zW6T68fclCrRT6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

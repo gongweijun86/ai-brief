@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月16日 20:30">
+<title>AI技术雷达 · 10月16日 20:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Orca 打通多 Agent 会话上下文</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;DeepSeek DSH 开放插件索引源</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;E2B 沙箱用量 5 个月到 20 亿</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Codex 设计六层飞控 PCB 已点亮</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Orca 打通多 Agent 会话上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @poolmoon6 · 2026-10-16 14:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">听我的，就4步，应该不超过5分钟：<br><br>1. 去这里下载Orca并安装：<a href="https://www.onorca.dev/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.onorca.dev/</a><br>2. 在Orca设置里面找到“Agents”，确保登录了Codex和Claude Code（或者其他你想用的agent），默认用Claude Code；<br>3. 在Orca左栏添加你的Project文件夹，用默认Agent打开，这时应该会出现Claude Code终端窗口，先resume你之前的会话；<br>4. 窗口右上角有个带加号的气泡图标，点一下后在弹框里面选你想继续的agent，如图是Codex<br><br>好了，成功！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuzRLabEAA9PA_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">陈大黄 <span style="font-size:12px;color:#999999;font-weight:400;">@realchendahuang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我很好奇一个问题：<br><br>大家在不同的 Coding Agent 之间到底怎么共享上下文？<br><br>比如我现在在Claude Code里跑完了一个项目，或者项目跑到一半，然后需要在CodeX里继续。<br><br>这两块的上下文怎么衔接比较好？有没有优雅的解决方案？</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Opus 5.5 单人开发可玩农场游戏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-16 20:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个人做游戏的门槛，正在被 AI 一点点打穿<br><br>过去需要建模、动画、场景设计、程序开发等多个岗位配合，现在一个人指挥 AI，就能把这些流程串起来，做出可玩的游戏原型<br><br>对独立开发者来说，这是难得的机会<br><br>但游戏越来越容易做出来，真正难的可能是，怎么让玩家愿意玩下去</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Mnimiy <span style="font-size:12px;color:#999999;font-weight:400;">@Mnilax</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">游戏工作室完蛋了<br><br>我是如何用 Opus 5.5 和 Unity 6 独自制作一款轻松农场游戏的<br><br>诀窍是像一个工作室一样构建它，每个提示词负责一个部门：<br><br>步骤 1 -&gt; 通过 MCP 将 Claude Code 连接到 Unity 6 和 Blender<br>步骤 2 -&gt; 写一页文档：种植 &gt; 浇水 &gt; 收获 &gt; 出售，4 个季节<br>步骤 3 -&gt; 在 Tripo 中生成所有模型：农民、谷仓、风车、农作物<br>步骤 4 -&gt; Opus 在 Blender 中清理它们，并在 Unity 中构建岛屿<br>步骤 5 -&gt; 每个提示词负责一个系统：种植、生长计时器、市场、金币<br>步骤 6 -&gt; Opus 用自动驾驶进行游戏测试，在修复任何问题之前先列出 bug<br><br>谁负责什么：<br><br>&gt; tripo：所有模型<br>&gt; unity 6：世界、物理、ui<br>&gt; opus 5.5：脚本、场景搭建、游戏测试<br>&gt; 你：玩一下然后说哪里感觉不对<br><br>拯救一切的规则……构建一个系统，玩一下，然后下一个<br><br>我接下来应该构建什么？</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">game studios are cooked<br><br>how i build a cozy farm game solo with Opus 5.5 and Unity 6<br><br>the trick is building it like a studio, one department per prompt:<br><br>step 1 -&gt; connect Claude Code to Unity 6 and Blender through MCP<br>step 2 -&gt; write a 1-page doc: plant &gt; water &gt; harvest &gt; sell, 4 seasons<br>step 3 -&gt; generate every model in Tripo: farmer, barn, windmill, crops<br>step 4 -&gt; Opus cleans them in Blender and builds the island in Unity<br>step 5 -&gt; one system per prompt: planting, growth timers, market, coins<br>step 6 -&gt; Opus playtests with an autopilot and lists bugs before fixing any<br><br>who does what:<br><br>&gt; tripo: every model<br>&gt; unity 6: the world, physics, ui<br>&gt; opus 5.5: scripts, scene setup, playtests<br>&gt; you: play it and say what feels off<br><br>the rule that saves it... build one system, play it, then the next<br><br>what should i build next?</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110763018568998912/img/hxCEZzHeFEs-E95N.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek DSH 开放插件索引源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiangxiang103 · 2026-10-16 16:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨变天了！DeepSeek 把插件市场的大门，拆了！！！<br><br>昨晚 DSH alpha.4 一个不起眼的更新：支持自定义插件索引源<br><br>翻译成人话：<br>以后 DSH 能装什么插件，不再只看官方，任何人都能开一家插件商店🏪<br><br>更炸的是速度——<br>官方发布不到 2 小时，就有人把 Grok Bot 市场整整 90 个 bot，连夜搬进了 DeepSeek 🤯<br><br>改稿去 AI 味、给创业点子挑刺、投资人视角审 PPT、网站体检……<br>别人家的现成 AI 员工，现在用 DeepSeek 就能跑<br><br>这意味着什么？<br>✅ 模型便宜的 DeepSeek，开始吃别家生态了<br>✅ 插件不再被平台锁死，谁做得好谁上<br>✅ 接下来，各种「XX 市场搬进 DSH」只会越来越多<br><br>我宣布：DSH 的「App Store 时刻」，来了🔥<br><br>⚠️冷静一句：社区搬运、非官方、没 license，还是 alpha 尝鲜版。bot 能跑命令、读写文件，别让它碰你的 key<br><br>传送门👇<br>1️⃣ DSH alpha.4 更新说明：<a href="https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.4" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.4</a><br>2️⃣ 90 个 Grok Bot 插件仓库：<a href="https://github.com/brokep/grok-bots-for-deepseek-harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/brokep/grok-bots-for-deepseek-harness</a><br>3️⃣ 插件索引地址（加到 DSH 自定义插件源里）：<a href="https://brokep.github.io/grok-bots-for-deepseek-harness/index.json" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://brokep.github.io/grok-bots-for-deepseek-harness/index.json</a><br><br>装法（亲测）👇<br>1️⃣ DSH 升到 alpha.4<br>2️⃣ 网页版 → 插件 → 实验性插件旁边点「更多」→ 打开「自定义插件市场」<br>3️⃣ 进「发现」→「添加索引源」→ 粘贴：<br><a href="https://brokep.github.io/grok-bots-for-deepseek-harness/index.json" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://brokep.github.io/grok-bots-for-deepseek-harness/index.json</a><br>4️⃣ 搜想要的 bot → 安装 → 立即启用<br>我试了 Imogen，装上就能用，列表里一共 90 个</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvM-Vqa4AASSFL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvRrEuawAA1ONl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvRuqXbYAAvIsy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>E2B 沙箱用量 5 个月到 20 亿</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-10-15 23:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">沙箱公司 E2B，5 个月用量翻倍到 20 亿<br><br>@e2b 今天说：3 年到 10 亿个沙箱，5 个月到 20 亿。Manus 爆火时用的「一次性电脑」就是 E2B，CEO 说 61% 的流量已经是 agent。<br><br>可沙箱本身越来越像自来水：CEO 自己说是「大路货」，底层亚马逊开源，接口被腾讯直接兼容。16 个人的 E2B 押的是：开源到底、每个 agent 一朵私有云、守住安全。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110757849014095872/img/FSnMTXS6NatwRxmF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex 设计六层飞控 PCB 已点亮</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GoGoFly23 · 2026-10-15 20:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI全流程设计六层飞控PCB，成功点亮！<br>之前让 AI 设计的这块六层无人机飞控板，真的做出来了，而且已经连上 Betaflight，跑起来了！<br>我用的是 ChatGPT Codex 加 Claude。从原理图设计、元器件布局、六层板走线，到上传嘉立创、填写 PCB 和 SMT 贴片订单，都是 Codex 操作，Claude 负责检查。<br>为了让首次调试更顺利，我也让 AI 精简了设计，去掉暂时用不到的功能，先保留主控、陀螺仪、加速度计和 USB 等基础功能。<br>收到板子后，AI 又完成了 Betaflight 4.5.2 固件的适配、编译和烧录。现在主控能启动，USB 能连接，传感器数据也能正常读取。<br>我负责提需求、插线和按按钮，从设计、下单到烧录测试，全都由 AI 完成。 这次先跑通了基础功能，实际飞行还没测试。看到它真的工作起来，还是觉得：太疯狂了！<br>#Codex #Claude #PCB设计 #无人机飞控 #六层PCB #嘉立创EDA #Betaflight #硬件开发 #科技区 #AI实战</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110712608043192322/img/dxTuqufG_YssAwNp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hermes 上线 REA 官方插件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Lonely__MH · 2026-10-16 14:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎉重磅！REA + Hermes Agent 官方插件来了！为所欲为！<br><br>最近一段时间，Hermes 发的比较少，并不是因为它不好，而是因为它太顺畅、太润物细无声，已经成了不需要刻意夸赞的生产力工具<br><br>只要是市面上实用的 Bot 能力，Hermes 团队基本都会第一时间跟进支持<br><br>比如最近很火的 REA ，Hermes 官方插件也第一时间奉上！<br><br>在 Hermes 面前，都是弟弟，一个能打的都没有🙂<br><br>安装命令👉🏻  hermes plugins install rea<br><br>传送门👇🏻</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110987724408983552/img/a9h3NhwOhKfkN92-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Lonely <span style="font-size:12px;color:#999999;font-weight:400;">@Lonely__MH</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">🎉 重磅！Hermes Agent 也支持控制手机了！<br><br>官方社区新上 phone-harness 插件，可以让 Hermes 看屏幕、打开 App、点击、滑动、输入文字<br><br>🔥支持以下三种<br><br>- iPhone：通过 Mac 的 iPhone 镜像<br>- Android：通过 ADB<br>- 云手机：接入云端 iPhone / Android<br><br>极简安装👉🏻：hermes plugins install phone-harness<br><br>那些没有 API、只能进 App 手动操作的流程，现在可以玩起来了！<br><br>@NousResearch Nice ！<br><br>传送门👇🏻</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUruNLMboAMWHLx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

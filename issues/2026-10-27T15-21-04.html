@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月27日 23:19">
+<title>AI技术雷达 · 10月27日 23:19 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;RuView用WiFi信号隔墙感知人体</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;AGENTS.md精简为长期项目约定</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Agent Skills覆盖开发流程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;单Agent常胜多Agent方案</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Anthropic收入80%按用量计费</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Anthropic代码审查合并PR翻倍</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RuView用WiFi信号隔墙感知人体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @make_claude · 2026-10-27 04:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我靠,花9美元就能透视你家的墙了 - GitHub上已经99.7k星了<br><br>找到一个项目,看完之后在家里都觉得不自在了。叫RuView,9.97万星,MIT协议 - 也就是免费、合法,直接拿去用。<br><br>硬件就是一个esp32节点,9美元。抓的是本来就飘在你家里的wifi信号,从里面提取出:房间里有没有人、有几个人、什么时候进门什么时候出门、呼吸频率、心率,甚至想拼出一个17个点的人体骨架。全程不需要摄像头。<br><br>而且这还被写成了卖点:因为没有摄像头,可以绕开GDPR的视频规定和HIPAA的影像规定 - &quot;by design&quot;(设计上就是这样)。这是他们原话:你被看见了,但严格来说没人&quot;拍&quot;过你。<br><br>&gt; 隔墙隔混凝土都能看 - 官方说的有效距离大概5米,停车场的场景里直接写&quot;穿透混凝土墙&quot;<br>&gt; 4到6个节点组成一张网,能覆盖一整层楼 - &quot;软件上没有硬性上限,极限只取决于信号物理特性&quot;<br>&gt; 通过tailscale/wireguard,在任何地方都能远程连上节点<br>&gt; 列出的应用场景包括:不用认人脸的零售、儿童房、停车场、甚至教堂数人头<br><br>我自己拿这个固件,用claude按自己的需求稍微改了一版 - 花了两晚上,没碰他们的私有代码,就是在公开的部分上面改的。改出来的东西,跟作者当初的设想完全不是一回事。实际效果怎么样,视频在下面。<br><br>先收藏 - 等你开始算邻居家挂了多少个9美元的这玩意儿的时候用得上。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114812826590007296/img/aWGob4Cp5bdpBvpr.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">make claude <span style="font-size:12px;color:#999999;font-weight:400;">@make_claude</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Claude Code 刚刚通过逆向工程，在 90 秒内破解了我酒店房间的门锁。2014 年的加密技术。右上角的烟雾探测器也使用同一套协议——那个红色小灯不是电池指示灯。我启动扫描时，它闪了两次。<br><br>我现在躺在一个每晚 85 美元的酒店房间里。我打开 Claude Code，输入：「扫描范围内的每一台蓝牙和无线设备。告诉我哪些设备在与哪些设备通信。」<br><br>它找到了 19 台无线设备。其中 18 台是正常的。<br><br>设备 19：一个 BLE 控制器，使用着自 2014 年以来就没有修复过的固件。它控制着电子门锁、烟雾探测器、恒温器和房间里的保险箱。四台设备共用一个控制器。同一种协议。10 年没有任何更新。<br><br>我让 Claude Code 分析这套协议。整个过程用了 90 秒。<br><br>门锁使用一个 4 字节的滚动密钥，没有会话令牌。Claude Code 在第三次尝试时生成了一个有效的主密钥。我躺在床上，听见房间的门锁咔哒一声打开了。<br><br>接着，它发现烟雾探测器也连接在同一条总线上。照片里的红色小灯？那是控制器状态指示灯。它并不监测烟雾。它每隔 8 秒就会确认一次与门锁系统之间的 BLE 握手。<br><br>这意味着，任何处于蓝牙覆盖范围内的人——走廊、隔壁房间、停车场——只需要一条提示词和 90 秒，就可以：<br><br>打开你的房门<br>关闭房间内的警报<br>打开你的保险箱<br>而烟雾探测器会通过那个小小的红色闪烁，确认连接状态<br><br>检查只需要 2 分钟：<br><br>步骤 1 → 打开 Claude Code → 粘贴第一条评论中的提示词<br><br>步骤 2 → 它会扫描覆盖范围内的每一台 BLE 设备，并标记存在未修复固件的设备<br><br>步骤 3 → 如果发现问题 → 要求更换房间 → 要求换到配有机械门闩的房间 → 然后使用那个房间<br><br>每一家使用 2018 年之前生产的 ASSA ABLOY 或 Onity 门锁的酒店连锁都存在这个问题。这大约占全球酒店的 30%。<br><br>我本周测试了 3 家酒店。3 家全部存在漏洞。<br><br>看看照片。右上角。那个每隔 8 秒闪烁一次的红点。那就是握手信号。<br><br>保存这条提示词。下次入住酒店时 → 先运行它，再打开行李。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVLAKnjWYAAm1LV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AGENTS.md精简为长期项目约定</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-10-27 16:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">天天在用 Codex，突然发现一个挺有意思的问题。<br><br>很多人为了让 Coding Agent 少犯错，会不停往 AGENTS.md 里面加规则。今天发现它没有跑测试，就增加一条必须运行测试；明天发现它修改了不相关的文件，再增加一条禁止修改无关文件；后天发现它没有提前搜索 GitHub，又加上 GitHub First。<br><br>用了一段时间，整个文件可能变成几千字甚至上万字。<br><br>看起来规定越来越完善，Agent 应该越来越可靠。但我觉得这里可能存在一个反直觉的问题：你写进去的规则越多，模型就需要同时处理越多约束，而且这些约束不一定始终兼容。<br><br>比如一个项目要求优先复用开源方案，另一个要求尽量不引入新依赖；全局规则要求每次执行完整测试，当前任务却只是在修改一段文档。还有一些规则，是为了几个月前某个已经解决的问题专门添加的，现在却继续影响所有任务。<br><br>这就很像软件项目里的历史包袱。每次遇到问题都往上加一层补丁，最后没有人敢删，也没有人知道哪些还真正有效。<br><br>我最近看 OpenAI 关于新一代 Codex 的工程文章，也看到类似方向：更强的模型未必需要以前那么多手把手的指令，冗长甚至互相干扰的约束需要重新整理。<br><br>所以我现在更倾向于把 AGENTS.md 当成项目的长期约定，而不是一个无限增长的提示词垃圾桶。<br><br>全局只保留真正通用的原则，比如不要泄露密钥、不要擅自覆盖用户改动、重要修改需要验证。具体技术栈、运行命令、项目目录和特殊约束，放在对应仓库。更复杂的任务方法，再交给按需调用的 Skill。<br><br>最重要的是修改规则以后还得观察它有没有真的改善结果。<br><br>否则你可能以为自己正在训练一名越来越专业的 AI 工程师，实际上只是不断给它塞更多互相矛盾的工作指令。<br><br>AI Coding 发展到现在，我觉得值得研究的不只是怎么写出更长的 Prompt，还包括什么时候应该把已经写过的 Prompt 删除。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Skills覆盖开发流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CY160909 · 2026-10-27 13:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前 Google 工程负责人、现 Anthropic Claude Code 团队成员，把软件工程师日常使用的开发流程，整理成了 25 个开源 Agent Skills。<br><br>这套 Skills 可以给 Claude Code、Codex、Cursor 等 AI 编程工具使用，让 Agent 从需求分析到最终上线，都有一套明确的工程规范。<br><br>整个项目按软件开发流程组织：<br><br>① 需求分析<br>需求不清楚时先提问，梳理功能、约束和验收标准，形成规格文档，而不是直接开写。<br><br>② 任务规划<br>把大需求拆成可执行的小任务，明确依赖关系和完成条件。<br><br>③ 编写代码<br>按小步迭代的方式实现功能，结合测试驱动开发，避免一次修改过多内容。<br><br>④ 测试验证<br>运行真实测试，修复 Bug 时补充回归测试；网页项目还可以结合浏览器开发工具检查运行状态、控制台错误和网络请求。<br><br>⑤ 代码审查<br>检查代码质量、安全风险、性能问题和不必要的复杂度，降低后续维护成本。<br>⑥ 部署上线<br>涵盖 CI/CD、版本管理、分阶段发布、回滚方案和上线后的监控。<br><br>25 个 Skills 里，24 个负责具体工程流程，另外还有一个 Meta Skill，负责根据当前任务选择合适的技能，不需要每次全部加载。<br>项目还提供 /spec、/plan、/build、/test、/review、/ship 等命令，把这些步骤串起来。<br><br>它给 Coding Agent 增加了具体的执行规则和验证检查点。不过 Skills 本身不能保证代码质量，测试和上线结果仍然需要实际核验。<br>项目采用 MIT 开源协议。<br><br>GitHub：<br><a href="https://github.com/addyosmani/agent-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/addyosmani/agent-skills</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>单Agent常胜多Agent方案</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @laobaishare · 2026-10-27 18:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">没人会主动告诉你：<br>你的 AI agent 又慢又笨，很可能是子 agent 开太多了。<br><br>Anthropic 团队自己测过：一个带技能的 agent，在质量、成本、速度上经常打赢多 agent 的方案。<br><br>- 有个客户的任务跑快了约 2 倍<br>- 新模型上 Claude Code 的系统提示词小了 80% 以上<br>- 工具超过 30 到 50 个，模型选工具就开始出错<br><br>想按 Anthropic 推荐的方式把子 agent 收回来，可以把下面这段提示词粘进去：<br>-----------------------------------------------------<br>帮我审查一下 agent 的配置，把子 agent 收回成一个主 agent。我说 ok 之前不要改任何文件。<br><br>1. 梳理：列出每个子 agent，写清它的提示词、用的工具、什么时候被调用。凡是串在别人输出后面跑的、碰同一份数据的、经常一起跑的，都标出来。<br>2. 技能：把每个子 agent 的指令改写成一项技能。每项技能配一句什么时候用的说明，具体步骤到真要用的时候再加载。<br>3. 工具：把 API 调用改写成按用户想做的事分组的工具，不要一个 API 一个工具。总数控制在 30 个以内。<br>4. 测试：动手之前，先写 10 个测试任务，覆盖所有 agent 链路，以及 agent 绝对不能违反的每条规则。<br>5. 收拢：一次收一个子 agent。每个测试任务跑两遍。只有三种情况保留子 agent：收拢后的版本得分更差、并行任务需要全新上下文、没有它主 agent 的上下文会膨胀。<br><br>先把完整方案给我看，等我确认。<br>------------------------------------------------------ <a href="https://twitter.com/Av1dlive/status/2111125320590074017" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://twitter.com/Av1dlive/status/2111125320590074017</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVodm7KbgAAZ0HV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avid <span style="font-size:12px;color:#999999;font-weight:400;">@Av1dlive</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2111086043319701505" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2111086043319701505</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2111086043319701505" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2111086043319701505</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Filee离线转换260余种文件格式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @one_snowball · 2026-10-27 10:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">你敢相信吗？2026年了，居然还有人靠文件格式转换赚钱!<br>PDF转Word要会员，视频转MP3要充值，图片转格式还得先上传服务器。<br>但最近，GitHub上有个韩国程序员KnifeLemon，直接开源了一款文件转换神器，叫Filee。<br>这个项目最离谱的地方，就是它支持260多种文件格式，包括PDF、Word、Excel、PPT、图片、音视频，甚至连CAD和3D模型都能处理。而且它的交互设计非常逆天。<br>你不需要打开软件，只需要按住快捷键，拖动文件，鼠标旁边就会弹出一个圆形菜单。<br>把文件往对应格式上一扔，就能直接转换。<br>更重要的是，它可以完全离线运行，不需要把私人文件上传到别人的服务器。<br>部分格式需要额外安装转换引擎，但不需要购买 Office。<br>它甚至支持批量处理和自动监控文件夹。<br>以前我们为了转换一个文件，到处找网站、看广告、开会员。<br>现在一个开源项目，直接把这些繁琐操作压缩成了一次拖拽。<br>这才是我喜欢开源社区的原因：总有人愿意把本来应该很简单的事情，重新变得简单</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>dsh-purge改写模型默认权限</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NIxinhai0 · 2026-10-27 09:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上出现了一个狠项目：dsh-purge。<br><br>别人研究怎么让 AI 更聪明，它却研究怎么把 AI 身上的 盔甲 一层层拆下来！ <br><br>这个项目涉及一个 AI 圈非常敏感的概念：破甲（Jailbreak）。 <br><br>什么是破甲？有时候 AI 明明具备某种能力，却反复拒绝你的要求？让它执行任务，它要求确认；<br><br>让它调用工具，它告诉你权限不足；稍微碰到敏感边界，它就开始输出免责声明。 这些限制，有些来自模型本身，有些则来自外部系统施加的规则。 而破甲，就是尝试通过特殊提示词、规则覆盖或修改宿主环境，绕过其中部分限制。 <br><br>dsh-purge 正是这一思路的实践。它面向 DeepSeek Harness，支持为不同模型配置不同提示词，修改部分默认权限策略和工具限制，还提供补丁应用与恢复功能。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic收入80%按用量计费</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @EFEE0180492926 · 2026-10-27 22:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 的 S-1 招股书，我觉得最值得看的是收入结构：<br><br>2026 上半年营收 162.9 亿美元（去年同期 11.6 亿），其中 131 亿、也就是 80% 是按 token 用量收费，订阅只有 32 亿。经营亏损收窄到 6.93 亿，同期算力和基础设施支出约 89 亿。<br><br>隐患也写在里面：算力合同签得很长，但按用量付费的客户随时能走。截至 6 月锁定的多年合同约 108 亿，75% 会在一年内确认。<br><br>AI 公司最后比的，是客户愿不愿意长期把 token 花在你这。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>词光用插画例句记雅思7298词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @geekbb · 2026-10-27 15:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">拿雅思词表背来背去还是记不住，词光把 7,298 个词配成插画和例句，再用 FSRS 把复习时间排开。<br><br><a href="https://github.com/designfuchen/word-atlas" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/designfuchen/word-atlas</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVnqP5DaIAAbcfD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic代码审查合并PR翻倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @luinlee · 2026-10-27 11:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近 Claude 分享了他们团队内部是怎么做 code review 的，和我们一直在实践的方式非常接近。正好借这个机会，简单聊聊我们是怎么用 AI code review 工具来提升内部开发速度和代码质量的 👇</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude 写了 Claude Code 大约 90% 的代码。<br><br>从六月到九月，合并的 PR 数量增加了一倍以上，而回退（reverted）的比例下降了超过 40%。<br><br>我们写了关于我们如何改变代码审查来实现这一目标，以及如何采用它的文章：<br><br><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/solving-code-review-at-anthropic/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude writes about 90% of Claude Code's code.<br><br>From June to September, merged PRs more than doubled while the share reverted fell by more than 40%.<br><br>We wrote about how we changed code review to get there, and how to adopt it:<br><br><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/solving-code-review-at-anthropic/</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

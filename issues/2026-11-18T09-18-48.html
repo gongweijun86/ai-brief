@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 17:18">
+<title>AI技术雷达 · 11月18日 17:18 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Airbnb用Presidio去标识数据</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude最佳实践173篇中文知识图谱</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;数仓补数未登记血缘致报表分叉</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Qwen用LoRA适配pi编码Agent</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Airbnb用Presidio去标识数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-18 15:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Airbnb 用 Presidio 做文本去标识：把真实信息换成可训练的假数据<br><br>训练模型前，Airbnb 会先处理消息、评价和客服对话里的个人信息：按公司统一分类，把姓名、住址、支付信息等替换成尽量逼真的模拟数据，既减少真实信息的副本和泄露，也尽量保留训练价值。政策由 Privacy Architecture 团队会同法务、政策和工程制定，再落实为代码。<br><a href="https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0</a><br><br>做成共享训练步骤，不另建中心服务<br><br>他们以开源库 Presidio 为基础。它最初由 Microsoft 开发，现已交由社区治理，以 Python 包在调用进程内运行。但只有每条流水线都使用当前版本和合规配置，保护才会生效。因此它被做成共享机器学习工作流中的可复用步骤，使用方只需标明哪些字段含有个人信息。<br><br>处理后的数据集会打上去标识标记，进入模型注册表，用来把关生产部署，并记录所用版本和配置。训练前还会先过滤已选择退出的记录。<br><br>用模式匹配和 GLiNER 识别，再用假值填回<br><br>Analyzer 先标出疑似个人信息的片段和置信度，Anonymizer 再处理重叠并替换。有固定形态的标识，用正则加上下文词识别。多种编号都可能是一串数字，他们扩展了短语级匹配，让更具体的词组优先得分。<br><br>默认的 spaCy 会把城市、地标也标成地点，在他们的评测中往往覆盖不到带门牌号的完整住址。姓名和地点因此改用可在推理时指定「街道地址」的 GLiNER。团队写道，两类实体的精确率都有提升；GLiNER2 已接入评测，只有基准证明有增益时才会换上。语言按整条记录或区域元数据判断，不稳时改用更保守的配置。<br><br>替换不用占位符或空白，以免模型把「这里被删过」也学成一种模式，大多数类型用 faker 生成自然假值。同一轮内，假值由真实值和当次密钥生成，同一真值始终对应同一假值，跨次运行则不同，且不保存对照表。房源自身链接会保留，电话保留国家码和区号；结构化字段中，标识符用调用方提供的盐值做哈希，坐标按隐私团队设定的精度截断，64 位内部编号用保形加密，以便通过原来的结构校验。<br><br>质量按语言和类型分开衡量<br><br>衡量时看召回、精确和吞吐，并优先保证召回，因为漏检就是泄露。指标按实体类型和语言分开统计，评的是重叠处理之后真正输出的结果。新语言要有标注数据才会上线，已稳定的类型发版时不能回退。<br><br>他们给出的评测图显示：电子邮件、信用卡和房源编号在英、西、法、德、日、波兰语上表现完整，姓名和地址在英语、西班牙语、法语、德语上较好，在日语和波兰语上明显偏弱，总体评分为 9/10。目前仍只交付文本，其他介质的去标识已经开始做。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZCsTzasAA0X23.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Airbnb Engineering <span style="font-size:12px;color:#999999;font-weight:400;">@AirbnbEng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如何在保护个人数据的同时，让AI训练数据仍然有用？<br><br>Airbnb构建了一个系统，可以大规模地检测并替换敏感信息，同时不会丢失模型学习所需的上下文信息。<br><br>以下是其工作原理。👇<br><br><a href="https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">How do you protect personal data while keeping AI training data useful?<br><br>Airbnb built a system that detects and replaces sensitive information at scale, without losing the context models need to learn.<br><br>Here’s how it works. 👇<br><br><a href="https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude最佳实践173篇中文知识图谱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-18 13:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我发现，Claude 团队的「最佳实践」系列（Best Practice）总是言之有物，给别人指明了正确的方向。<br><br>所以，我花了一上午的时间，整理这一系列大概 100 多篇文章和内容：<br><br>- 完整地翻译了 Best Practice 里的文章，一共 173 篇。<br><br>- 我将里面的概念抽出来，综合提到这些概念的文章，对其进行诠释，每一个概念都有独立的页面，分以下几个小节：摘要、关键做法、Claude 里的用法、常见误区、相关概念、来源。<br><br>- 我将这些概念组织成了知识图谱，让你可以可视化知道概念与概念之间的关系，点击知识图谱上的节点，还会直接查看该概念的内容。<br><br>- 这些概念还组织成了思维导图，让你一眼看清楚概念与概念之间的上下层级关系。<br><br>希望对你有用！<br><br>地址：<a href="https://claude-best-practices-zh.vercel.app/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude-best-practices-zh.vercel.app/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYjH1faoAAiN7Q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYjTKKb0AAi_Ri.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYjbSzaUAAzrBR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYjjW5bQAA0puP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>数仓补数未登记血缘致报表分叉</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-18 16:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">数仓值班交接时，一个同行说他们补一次数，下游两张报表补成了两个版本。<br><br>上游任务改了口径重新跑，DAG 调度里依赖没写全，一张报表接到了新数据，另一张还挂在旧链路上，一张是新口径，一张是旧口径。<br><br>两个组各拿各的数开会，谁也说服不了谁，最后翻回刷记录才发现，差的那一层是当天临时补的，没走血缘登记。<br><br>治理的同事补了句“表是对的，链路是断的”，把两张截图钉进了质量周报。<br><br>数据本身不会错，错的永远是那条没登记的路。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen用LoRA适配pi编码Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-18 13:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给一个 coding agent 单独训练模型<br><br>Hugging Face 给开源模型 Qwen3.8-27B 配了一个 LoRA，只在 pi 这个 coding agent 里用强化学习训练，不动基座权重。<br><br>做法上有两个值得看的点。训练在没改过的 pi 里跑，模型每发一次工具调用，中间的 safeagents 代理先用规则查一遍，明显在钻奖励空子的调用直接拦掉、记 0 分。任务是从公开 agent 会话重建的可验证环境，分修 bug、问答、从零搭建、扩展代码四类，对错由任务自带的验证器判，不靠人打分。奖励里还专门加了一项：答对的前提下工具调用越少加分越多。<br><br>效果是准确率和效率一起涨。SWE-bench Pro 最难的 51 题，基座模型 pass@1 是 29.4%，适配器到 62.7%，工具调用少 55%。Terminal-Bench 2.1 从 39.5% 到 55.8%，工具调用少 62%。评测是同任务配对、温度 0.8、关思考，显著性也给了。<br><br>模型卡里有个真实例子：同一个 SWE-bench 任务，基座反复搜索、重跑片段，撞到 100 步上限没过；适配器找到函数、改掉、跑测试、补最后一个用例，一共 8 次调用。<br><br>我觉得真正的信号是 LoRA 把适配成本压到了小团队够得着的程度：不用重新训一个 agent 模型，给自家工具和 harness 单独训一个小适配器就行。权重已经开放，vLLM、llama.cpp 都能挂。<br><br>两点保留。数字都是 Hugging Face 自测，没有第三方复现；最终检查点是看着评测子集的分数挑的，而且训练计划 1000 步、第 191 步就提前停了。<br><br>原文链接在评论区<br>#评测</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYfTCEaIAAFUgu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">clem 🤗 <span style="font-size:12px;color:#999999;font-weight:400;">@ClementDelangue</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Qwen3.8-27B-pi-adapted 🤗<br><br>我们使用强化学习和 LoRA 适配器，专门为 pi coding agent 调整了 Qwen 的模型。<br><br>结果以 pass@1 衡量：<br>🚀 SWE-bench Pro（Hard 51）：29.4% → 62.7%<br>💻 Terminal-Bench 2.1：39.5% → 55.8%<br>⚡ 每个任务的工具调用减少 55–62%<br><br>这就是开放模型的力量：你可以将它们适配到你自己的工具和你自己的用例上。让我们一起构建吧！💛<br><br>开放权重：<a href="http://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted</a><br>方法论：<a href="https://huggingface.co/blog/harness-hub/harness-adapters" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/harness-hub/harness-adapters</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Qwen3.8-27B-pi-adapted 🤗<br><br>We adapted Qwen's model specifically for the pi coding agent using reinforcement learning and a LoRA adapter.<br><br>The results, measured as pass@1:<br>🚀 SWE-bench Pro (Hard 51): 29.4% → 62.7%<br>💻 Terminal-Bench 2.1: 39.5% → 55.8%<br>⚡ 55–62% fewer tool calls per task<br><br>This is the power of open models: you can adapt them to YOUR tools and YOUR use cases. Let’s build! 💛<br><br>Open weights: <a href="http://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted</a><br>Methodology: <a href="https://huggingface.co/blog/harness-hub/harness-adapters" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/harness-hub/harness-adapters</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWkpZZXYAARbeP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MSTACK按能力分配Agent任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @molamaker11 · 2026-11-18 16:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">严肃推出<a href="https://github.com/Mola-maker/mstack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Mola-maker/mstack</a><br>MSTACK for all agents<br>为什么在空闲的时候做这个呢？因为本人曾经被OMC的整个插件的栈大为震撼，因为当时各大agents也没有专门的任务导向还有按能力分配和编排的项目的harness出现。<br>现如今，team mode orchestra层出不穷，多种bots还有智能体之间的任务编排五花八门。但是都需要钱。。。是啊，即使是omc 或者OMXXXX类型的这种插件，都并没有考虑到magpie里面的使用环境。而是粗浅的将整个模型按照自己的能力设定分级，不考虑实测的模型benchmark<br>而这个mstack的思路，就是和magpie深度绑定，然后加上注册的plugin hud的思路，联网获取模型的benchmark然后按照你使用的模型的能力给模型分配任务。比如，让电脑操控能力强的gpt6使用mola-cua，让说人话的gemini撰写文档，让3D建模榜单第一的kimi去建模......<br>这种术业有专攻的设计，能极大增强最终的产品输出质量，而减少花费。<br>可惜了但是我现在做的还不够完善，现在的软件栈不够深入，非常急切大手子的加入和指导（<br>btw 我的m-cua也是一枝独秀啊，本质上是把vercel的agent-desktop+传统的截屏+鼠标+截屏的ReAct模式用一个路由层串起来。因为前者是对于UI树的理解，快，后者是最广泛通用的模式，适合兜底。二者相辅相成<br>if possible 也可以star小心心支持一下<br>如果你有更好想法，或者适配更多客户端（我目前制作了dsh，claude tui）那么直接call我留言我把你拉到maintainer里面<br>谢谢</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月14日 11:19">
+<title>AI技术雷达 · 10月14日 11:19 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Clypra 开源无付费墙视频剪辑器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;ChatGPT 桌面端磁盘占用降60%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;PyTorch 分布式RPC现RCE漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;CLAUDE.md 规则隔离AI过期资料</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Clypra 开源无付费墙视频剪辑器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-14 11:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎥 爽了，Clypra 这个开源视频剪辑器，没水印、没付费墙、不用订阅，剪完直接导出。<br><br>GitHub 上 3.3K star，十月这十来天已经连发了三四个版本，更新按天算。<br><br>剪个两分钟的片子，以前的流程是试用版剪完才发现导出带水印，换个免费软件，时间线一拖就卡成 PPT。Clypra 走的是另一条路，后端拿 Rust 加 FFmpeg 解码，渲染直接走 GPU，项目自己说解码延迟能压到 10 毫秒以内，拖时间线、看波形、对音画都是跟手的。<br><br>常见格式基本不用操心，MP4、MOV、MKV 丢进去，ProRes 和 H.264 导出来；macOS、Windows、Linux 三个桌面端都能装，还能靠 Capacitor 跑到手机上，出门用 iPad 补一刀也行。<br><br>免费软件最怕的不是功能少，是导出那一刻才告诉你要付钱。<br><br>GitHub：<a href="https://github.com/AIEraDev/Clypra" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/AIEraDev/Clypra</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Sentient 无服务器本地个人助理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-10-14 10:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Sentient 是一个可以在自己电脑上跑的个人助理。<br><br>它支持长任务处理、记忆功能、主动提醒和语音对话。无论是本地模型还是云端模型都可以用。<br><br>README 里强调的是，它不需要账号、不需要服务器、不需要一堆配置文件，所有东西都在本地的一个文件夹里，密钥直接存到系统钥匙串就行。<br><br>还可以描述任务让它去规划，确认一次之后可以立即执行、定时执行，或者在收到邮件、价格变动的时候自动触发。v3 版本目前还是 alpha 阶段，需要从源码跑，Windows 和 Linux 都有测试版本。<br><br>GitHub：<a href="https://github.com/existence-master/Sentient" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/existence-master/Sentient</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjyZI0bcAAA-fc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjyZVNbQAAJ_kL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChatGPT 桌面端磁盘占用降60%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @thsottiaux · 2026-10-14 07:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">第 9 天/<br><br>我们已经推出了对 ChatGPT 和 Codex 桌面应用在磁盘上存储状态方式的优化，这应该能将磁盘存储量减少 60%。虽然这是个小改动，但我们已经收到了足够多的反馈，关于重度用户磁盘空间不够用的问题。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Day 9/<br><br>We've rolled out optimizations to how we store state on disk for the chatgpt &amp;amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power users running out of disk space.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>zipic CLI 批量压缩子目录图片</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @oldj · 2026-10-14 10:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">zipic CLI 和 AI 组合真是太方便了，一句话就把散步在 n 个子文件夹中的符合条件的图片找出来批量压缩了。<a href="https://docs.zipic.app/zh-cn/guides/zipic-cli/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://docs.zipic.app/zh-cn/guides/zipic-cli/</a> 😀 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjtINpacAAPfba.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PyTorch 分布式RPC现RCE漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mtrainier2020 · 2026-10-13 23:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">字节没有那么菜，他的同事们也不是傻子。<br>如果通过代码commit进去的，早就被发现了。<br><br>他这个大部分的破坏行为并不是通过commit的方式直接checkin的。而是直接登陆生产环境机器直接改本地代码的方式，或者利用pytorch 漏洞自己注入攻击代码方式来攻击的。是黑客行为。<br><br>这还有个CVE专门记录这个RCE 漏洞的。<br><br>CVE-2024-48063 是开源机器学习框架 PyTorch 的一个高危远程代码执行（RCE）漏洞，CVSS 评分为 9.8（最高等级危险）。 [1]<br><br>漏洞概述<br>•漏洞类型：反序列化远程代码执行 (RCE) / 缺乏鉴权机制 <br>•成因：在 PyTorch 的分布式 RPC（远程过程调用）框架中，RemoteModule 在反序列化过程中没有对输入数据进行适当的验证或清理。攻击者可通过客户端将带有恶意方法的 RemoteModule 实例序列化并通过 RPC 发送到服务端，触发反序列化后可在服务端执行任意代码，可能干扰分布式训练集群。<br>•争议说明：部分意见认为，该行为属于 PyTorch 分布式计算的“预期设计”，但这在实际集群环境中带来了严重的未授权访问与代码执行隐患。 <br><br>这小子利用这个漏洞，攻击了字节的训练集群。<br><br>所以，字节对他还行，没有起诉他破坏计算机系统罪。这个完全够的上，主观，恶意，破坏。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">山景城小路 <span style="font-size:12px;color:#999999;font-weight:400;">@Zen_with_AI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">還是那句話 ：<br>生产环境的代码 一个实习生可以随便checkin 随便deploy？？？<br>字节也是草台班子作风啊！</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Apple TV 4K新款示价299美元</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @geekplux · 2026-10-14 10:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Apple TV 一直以来都是我觉得性价比最高的产品，但今天发布的新款 Apple TV 4K，感觉唯一更新的就是价格？跟 2022 年的比<br><br>- 价格涨了 200% 多，129 -&gt; 299<br>- 负价值的 Siri AI... 我为什么要对着 Apple TV 用 Siri？况且 2022 款在更新 tvOS 后马上也支持 Siri 了<br>- A19 芯片从官网列出的数字看让新款 Apple TV 快了 50%，但我使用当前款（2022 款）毫无卡顿啊<br><br>这样来看，原来是 2022 款性价比巨高，考虑新版的还不如买二手 2022 款 😅</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>阶跃星辰发布STEPX Neo智能体手机</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NewsCaixin · 2026-10-14 10:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">【阶跃星辰智能体手机推出 和其他智能体手机有何不同？】10月13日晚，阶跃星辰正式推出首款智能体手机STEPX Neo先行版，售价3999元。阶跃星辰称，这一定价包含了Step系列模型、智能体操作系统Step AOS、面向创客的AI终端原生开发工具Step Studio以及STEPX Neo手机硬件。<a href="https://www.caixin.com/2026-10-14/102493079.html?originReferrer=twitter" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.caixin.com/2026-10-14/102493079.html?originReferrer=twitter</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjpEFIaMAAumhu.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Argon低价订阅方法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-10-14 10:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Gemini 4 Argon免费或低价使用方法：<br><br>1、Gemini Pro领赠金，然后在AI Studio里使用。每月10美元，可以用于谷歌云或Gemini API调用任意模型。需要注意一定要在AI Studio里把限额设置好，否则容易被反薅。几块钱就能买到的哈基米会员，超值的。<br><br>2、土耳其区苹果订阅，5x+20TB档位的Ultra，270块人民币左右。适合长期用谷歌的重度用户。<br><br>3、Devin订阅，20美元订阅起，里面的Gemini 4 Argon目前特价，价格为官方的四分之一，1刀输入，5刀输出。特价截至本月28号。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>不忙脚本盒子图形化运行命令行脚本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-10-14 10:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎺 #发现频道<br><br>【开源自荐】不忙脚本盒子 - Windows 跨语言脚本管理器，命令行脚本也能图形化运行<br><a href="https://meta.appinn.net/t/topic/93524" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://meta.appinn.net/t/topic/93524</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CLAUDE.md 规则隔离AI过期资料</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-14 10:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 写文章总是混入旧价格、过期活动？可能是你的资料库该整理了。<br><br>旧资料别急着删除，可以单独建一个归档目录，保留历史版本，避免 AI 写作时把过期信息当成最新内容。<br><br>比如你经常用 Claude Code、Codex 写文章，可以把资料分成两个目录：<br><br>current，存放当前有效的价格、产品功能、活动规则和文案<br><br>archive，存放历史版本，注明修改日期、旧价格和过期原因，只用于核对<br><br>举个例子，某个 AI 工具原来每月 20 美元，现在涨到了 30 美元。<br><br>直接删除旧资料，以后很难追溯改价过程。全部混在一起，AI 又可能把 20 美元当成现价写进文章。<br><br>可以在 CLAUDE.md 或 AGENTS.md 里加一条规则：<br><br>写作时以 current 目录中的资料为准。<br><br>archive 目录只用于历史核对，不得将旧价格、过期活动和失效功能当作当前信息。<br><br>交稿前检查正文中的价格、日期和产品卖点。<br>如需核对历史版本，主动读取 archive 目录。<br>发现冲突时明确标记，不要自行猜测。<br><br>注意，AI 不会因为你建了 archive 目录，就自动检查所有旧资料，需要在任务中明确要求它核对。<br><br>平时用 AI 写产品教程、工具推荐、活动优惠的，可以试试这套资料管理方式。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

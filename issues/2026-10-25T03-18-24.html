@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月25日 11:17">
+<title>AI技术雷达 · 10月25日 11:17 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;PostgreSQL插件替代商业产品</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;ffmpeg-skill让AI直接剪视频</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;LLM自改进Harness仅升2.8分</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;AI抢先发现PHP2Shell漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;vLLM匹配DeepSeek自研引擎</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Harness停止状态误导</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-10-25 09:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">关掉一个 AI 代理，和它真的停下来，是两件事。<br><br>这篇文章分享了一起事故：原以为和 AI 说一声停止下订单就行，然而，却发现意外发现，订单一直还在下。造成了资金方面 的损失。<br><br>原因是，这套 Agent Harness 有两套自相矛盾的日志记录。状态记录了「停止」，但服务却没有停止；检查运行日志记，才发现下订单服务一直没停止。<br><br>所以，这里的问题是，Agent Harness 在设计的时候，没能够区分任务执行成功与失败，而是直接把 Agent 工作已停止的状态展示给用户，但令用户完全误会了其中的意思。<br><br>原文链接在评论区<br><br>#Agent #交易系统 #可观测</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVcNaiPb0AE9ioY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Gary Marcus <span style="font-size:12px;color:#999999;font-weight:400;">@GaryMarcus</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这是一个很好的例子，说明了核心的 AI 信任问题与其说在于恶意，不如说在于不可靠性。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Good example of why the core AI trust issue isn’t about malice so much as unreliability.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PostgreSQL插件替代商业产品</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realchendahuang · 2026-10-25 08:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">PostgreSQL 本身已经很牛逼了，再加上插件会更牛逼。<br><br>常用的那些外挂商业产品，靠 PG 加插件基本全能干掉，这里给大家汇总一下：<br><br>RabbitMQ 任务队列：pgmq插件。<br>在表里做排队、延时和死信重试。最爽的是发任务和写业务数据在同一个数据库事务里，同生共死，根本不会发生数据写完了消息却丢了的鬼故事。<br><br>Elasticsearch 全文搜索：ParadeDB（pg_search）插件。<br>底层直接封装了 Rust 的 Tantivy 引擎，在 SQL 里就能跑正经的 BM25 相关性检索。常规搜关键词连这都不用，自带的 tsvector 就够用，省掉搭 Logstash 双写管道。<br><br>MongoDB 文档库：直接用原生的 jsonb。<br>二进制紧凑存储带 GIN 索引，支持深层字段检索和原地修改。既有文档数据库随心所欲改 Schema 的自由，又能随时跟旁边的关系表 JOIN，谁还乐意单独跑个 Mongo。<br><br>Redis 轻量缓存：直接建 UNLOGGED 表。<br>跳过 WAL 日志落盘换极致读写，配个触发器自动清理过期行。丢了也不心疼的会话和临时指标，完全没必要专门供一个 Redis 实例。<br><br>Pinecone 专用向量库：pgvector插件。<br>高维向量直接作为表里的一列，加个 HNSW 索引，余弦相似度和业务字段条件直接在一条 SQL 里过滤，省得在两个系统之间倒腾一堆 ID 映射。<br><br>ClickHouse  时序打点：TimescaleDB插件。<br>把大表自动按时间切块做 hypertable，后台冷数据直接无损压掉 90% 体积，监控和高频打点依然老老实实用标准 SQL 查。<br><br>Neo4j  图数据库：Apache AGE插件。<br>原生支持 openCypher 查询语言，直接用 MATCH 语句在关系表里查多度好友和层级路径，复杂网络关系不用再跨库跳。<br><br>Celery  定时调度：pg_cron插件。<br>用标准的 cron 表达式直接在数据库内部跑定时 SQL，定时算报表、刷物化视图或清理过期数据，随数据库备份走，宿主机干干净净。<br><br>通用 CRUD 微服务： PostgREST插件。<br>读你的表结构和权限策略，自动暴露开箱即用的 REST API，省掉写大把重复 controller 和 service 的体力活。<br><br>GIS 专业地理引擎：PostGIS插件<br>算经纬度、画电子围栏、几何拓扑计算全包揽，整个行业的事实标准，专用地理软件基本没它能打。<br><br>这套东西配齐，大多数中早期系统基本不用再看分布式全家桶的脸色。数据全在单库里，事务有兜底，备份拿 pg_dump 一锅端，排查问题再也不用去五个控制台翻日志。<br><br>爽的一批。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TextFold五档折叠论文阅读器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-24 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">论文太长，直接让 AI 总结，又怕它把关键的推导和条件省掉。想回到原文，还得重新找那一段。<br><br>TextFold 做了个挺有意思的阅读器，把同一篇文章折成 5 档详细程度，从章节概览一路展开到原文。<br><br>最细是全文，收一档就变成每段 1 到 3 句原句，再往上是论点和理由、每节一句话，最后只剩章节主题。<br><br>GitHub：<a href="https://github.com/chenxiachan/textfold" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/chenxiachan/textfold</a><br><br>可以贴网页和论文链接，也能拖入 PDF、Word、PPT、Excel 或电子书。读到不明白的地方选中提问，回答会引用对应段落。<br><br>读的时候能把 PDF 原页放在旁边对照，划线和批注也会跟着保留。这个设计比只给一页摘要更合我意。<br><br>已有的 Zotero 文库能直接接进来，读完还能导出单个 HTML 文件，把各档内容和自己的笔记一起带走。<br><br>Mac 和 Windows 都有安装包，接上自己的模型就能用，也支持本地 Ollama。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVZqTMdaUAAdLn9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ffmpeg-skill让AI直接剪视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-25 11:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎚️ 太省心了，ffmpeg-skill 让 Claude Code、Codex 直接替你剪视频，再也不用背 FFmpeg 那一长串参数。<br><br>ffmpeg-skill 在 GitHub 已经 2358 stars，上了 Trendshift 日榜，仓库 9 月初才建，最近几天就连发了 6 个版本。<br><br>剪过视频的都懂：切一段、去掉静音、压字幕、统一响度、转成竖屏发短视频，每一步都得去搜一遍 FFmpeg 命令，参数写错一个就得重来。<br><br>现在直接跟 agent 说要什么就行。它手里有 42 个现成工具，先探测素材，尽量无损地剪，剪完还会生成一张联系表图片核对画面，验证过输出才算完。TikTok、Reels、Shorts、YouTube、X 的交付规格都有模板，一条素材能一次渲染出全部版本。<br><br>全程用本地 FFmpeg 跑，不用云服务也不用 API key，还带一个 MCP server，其他 MCP 客户端也能接。作者的 GitHub 简介写的就是音视频和直播工程师。<br><br>剪辑这种体力活，交给 agent 正合适。<br><br>GitHub：<a href="https://github.com/kajisho5/ffmpeg-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/kajisho5/ffmpeg-skill</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>iPad一键安装Omarchy</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @henrikklee · 2026-10-25 10:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">此次发布将包含：<br><br>- 硬件仓库，含针对各设备的特定内核和引导加载程序补丁（从 j71b / iPad 6 开始）<br><br>- 一个 CLI 工具，供你和你的智能体进行设备启动、调试和引导<br><br>- 一个基于上述相同工具构建的统一安装器<br><br>- 设备清单文件，以便后续添加对更多 iPad 和 iPhone 的支持<br><br>- 一个可在 iPad 上安装的 Omarchy 预览版<br><br>- 一个 iPad / iPhone 应用，用于在设备上腾出空间以创建 Linux 分区<br><br>- 涵盖设备启动（bring-up）过程的文档<br><br>目标是让更多人能够更轻松地将 Linux 引入更多 Apple 设备，而无需从头重新发明一切</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The release will include:<br><br>- hardware repo with device-specific kernel and bootloader patches (starting with j71b / iPad 6)<br><br>- a CLI for you and your agents to bring up, debug and boot devices<br><br>- a unified installer built on those same tools<br><br>- device manifests so support for more iPads and iPhones can be added<br><br>- an installable Omarchy on iPad preview<br><br>- an iPad / iPhone app to make room for a Linux partition on the device<br><br>- documentation covering the bring-up process<br><br>The goal is to make it easier for others to bring Linux to more Apple devices without reinventing everything from scratch</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Henrik Klee <span style="font-size:12px;color:#999999;font-weight:400;">@henrikklee</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一条命令即可在你的 iPad 上安装 @omarchy<br><br>即将推出<br><br>视频经过加速，完整安装耗时 3.8 分钟<br><br>@OmarchyMac @OmarchyUpdates @dhh @OmarchyLinux @tcballard </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A single command to install @omarchy on your iPad<br><br>Coming soon<br><br>Video is sped up, total install took 3.8 minutes<br><br>@OmarchyMac @OmarchyUpdates @dhh @OmarchyLinux @tcballard </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114023819182768128/img/_hvhG2TqZ8JQC4Sl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LLM自改进Harness仅升2.8分</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-25 01:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">LLM 能否改进它们自己的 harness？<br><br>自我改进的 harness 是一个热门话题。<br><br>一个有趣的问题是 LLM 能否自行生成并改进它们。<br><br>他们发现，对 harness 进行两次完全重写只能将留出（held-out）分数提高 2.80 分，且 95% 置信区间跨越了零。<br><br>每个前沿模型都从一个固定的编码引导程序（bootstrap）开始，写出一个完整的 harness，通过它进行五局开发游戏，然后重写其全部代码库两次。每个版本都在 20 局从不影响重写的游戏中评分。<br><br>在 27 条谱系中，初始 harness 的得分从零到接近上限不等。修订版带来的提升非常有限。开发游戏上的增益夸大了留出增益，而那些降低了推理成本的修订版往往反而降低了分数。<br><br>在相同的游戏中，人类主导的系统仍然得分更高，因此更好的设计是存在的。只是模型目前还无法可靠地自行找到它们。<br><br><a href="https://arxiv.org/abs/2610.30499" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.30499</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/can-llms-improve-their-own-harness-a-controlled-study-on-arc-agi-3-2610.30499" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/can-llms-improve-their-own-harness-a-controlled-study-on-arc-agi-3-2610.30499</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Can LLMs improve their own harness?<br><br>Self-improving harnesses are a hot topic.<br><br>And one interesting question is whether LLMs can generate and improve them on their own.<br><br>They find that two full rewrites of the harness raise held-out scores by only 2.80 points, and the 95% interval crosses zero.<br><br>Each frontier model writes a complete harness from a fixed coding bootstrap, plays five development games through it, and then rewrites its whole codebase twice. Every version is scored on 20 games that never influence the rewrites.<br><br>Across 27 lineages, first harnesses range from zero to near-ceiling. The revisions add very little. Gains on the development games overstate the held-out gains, and revisions that cut inference cost often lower the score.<br><br>Human-steered systems still score higher on the same games, so better designs exist. The models just do not find them reliably on their own yet.<br><br><a href="https://arxiv.org/abs/2610.30499" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.30499</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/can-llms-improve-their-own-harness-a-controlled-study-on-arc-agi-3-2610.30499" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/can-llms-improve-their-own-harness-a-controlled-study-on-arc-agi-3-2610.30499</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVadT0cakAApVcm.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google发布Rust风格指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aki33524 · 2026-10-24 10:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Google Rust Style Guide 出来了啊。太开心了。<br><a href="https://google.github.io/styleguide/rustguide.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://google.github.io/styleguide/rustguide.html</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Google Rust Style Guilde出てるやん。嬉しすぎ。<br><a href="https://google.github.io/styleguide/rustguide.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://google.github.io/styleguide/rustguide.html</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI抢先发现PHP2Shell漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-10-25 10:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">马斯克刚转了一条 Grok 对话，标题是「AI 最近挖出的灾难级漏洞」，配了一句 Wild times。<br><br>里面最炸的是 PHP2Shell，牵涉大概 70% 的网站。OpenAI 的 Patch the Planet（跑 GPT-5.6 Sol）和 Wiz（跑 Gemini 4 Argon 和 GPT-5.6 Sol）在 8 月各自独立用 AI 把它挖出来，抢在黑客前头，拉着维护者和 Cloudflare 闷头修了两个月才在 10 月 21 日公开。披露后 Cloudflare 每分钟拦下几百万次攻击尝试。<br><br>现在安全圈管这波叫 Bugmageddon：AI 找漏洞的速度已经翻倍，卡脖子的是人打补丁的速度。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Elon Musk <span style="font-size:12px;color:#999999;font-weight:400;">@elonmusk</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">疯狂的时代<br><a href="https://grok.com/share/bGVnYWN5_caa3484a-df84-4cc3-a345-d630b91d3704" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://grok.com/share/bGVnYWN5_caa3484a-df84-4cc3-a345-d630b91d3704</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Wild times<br><a href="https://grok.com/share/bGVnYWN5_caa3484a-df84-4cc3-a345-d630b91d3704" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://grok.com/share/bGVnYWN5_caa3484a-df84-4cc3-a345-d630b91d3704</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>vLLM匹配DeepSeek自研引擎</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-25 10:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">vLLM 表示，在 DeepSeek 的解码配置下<br><br>针对 DeepSeek-V4.1-Flash，批大小从8到256时<br><br>vLLM 的表现与 DeepSeek 自有引擎 DeepInfer 相当<br><br>vLLM 使用的是 DEP32，而 DeepInfer 使用 EP64DP64</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">vLLM <span style="font-size:12px;color:#999999;font-weight:400;">@vllm_project</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 DeepSeek-V4.1-Flash 上，vLLM 在 DeepSeek 的解码配置下，在批量大小 8 到 256 的范围内与 DeepSeek 自己的引擎 DeepInfer 持平，而且是在 DEP32 的配置下做到了这一点，而 DeepInfer 用的是 EP64DP64。<br><br>DeepInfer 最初是基于 vLLM 构建的。通过集成 DeepSeek 的开源内核并大幅优化 prefill 和 decode，vLLM 现已追平了 DeepInfer 的性能曲线。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">vLLM matches DeepInfer, DeepSeek's own engine for DeepSeek-V4.1-Flash, on DeepSeek's decode configuration across batch sizes 8 to 256, and does it at DEP32 against DeepInfer’s EP64DP64.<br><br>DeepInfer was originally built on vLLM. By integrating DeepSeek's open-source kernels and extensively optimizing prefill and decode, vLLM now matches DeepInfer's performance curves.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVahKXZa4AINwCv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Nathan Lambert开源模型讲座</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-25 10:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Nathan Lambert 哈佛讲座的视频发布了<br><br>@natolambert 在哈佛大学 CS 2881R「AI 安全」的客座讲座视频，他整体展开了开源模型现状全景，认为中国开源全面领先，但美国有 10 倍以上的算力优势；蒸馏不是关键问题。<br><br><a href="https://youtu.be/0L-DGRn52Q0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/0L-DGRn52Q0</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Nathan Lambert 哈佛讲座：开源模型现状全景，中国开源全面领先，但美国有 10 倍以上的算力优势；蒸馏不是关键问题<br><br>@natolambert 在哈佛大学 CS 2881R「AI 安全」的客座讲座，他认为：开源模型落后闭源前沿大约 3 到 5 个月，差距还在缩小。性能、下载量、论文引用这三方面，中国开源模型全面领先，美国开源模型又比中国落后 3 到 4 个月。核心判断有三点：把&quot;蒸馏&quot;当成核心问题是高估了；美国真正持久的优势是算力；禁止开源只会损害经济活动，挡不住坏人。<br><a href="https://natolambert.com/slides/2026/harvard/lecture.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://natolambert.com/slides/2026/harvard/lecture.html</a><br><br>什么是开源模型，许可证是关键<br>· 开源是一个光谱：从只开放权重（Llama、Qwen、DeepSeek、Kimi、GLM），到连数据和代码都开放的完全开源（OLMo、Pythia、SmolLM、Marin），Nemotron 处在中间。<br>· 宽松许可证：MIT（DeepSeek、GLM-5.2、MiMo），Apache 2.0（Qwen、gpt-oss、Gemma 4）。<br>· 自定义许可证带附加条件，并不算开源：营收门槛（Kimi K3、Muse Spark Open、MiniMax M3 的年营收门槛是 2000 万美元，GLM-5.3 超过 100 亿美元要做安全审查）、品牌露出要求、使用限制。这些条款大多还没有在法庭上检验过。<br><br>为什么要开源<br>支持开源的力量来自几个方向：资本（把互补品变成廉价商品）、科研和教育、防止权力集中、自由。按 Bill Gurley 的说法，开源也是&quot;第二名的自然选择&quot;，用来抢市场和分发渠道、获得软实力。中国实验室集体走向开源，是为了在西方 AI 圈获得存在感；DeepSeek R1 之后，小米、美团、蚂蚁等也纷纷入场。企业用开源模型来&quot;拥有自己的模型&quot;，例如 Harvey 在 Kimi K3 上做法律方向的后训练，全部通过率接近翻倍，成本基本不变。<br><br>竞争力<br>· 2026 年，1T 参数以下就算&quot;小模型&quot;了。新近的强模型：小米 MiMo-V2.6-Pro（总参数 1T、激活 42B，Artificial Analysis 指数 46）、DeepSeek V4.1 Flash（763B，45）、MiniMax M3.1 Flash（42，第三方测评低于官方宣传）。<br>· 关于&quot;刷榜&quot;：中国模型确实更看重公开榜单，长尾能力也不如美国模型全面。但他花了半年时间，也没找到能证明头部开源模型（Kimi、GLM、DeepSeek）有明显缺陷的分析。<br>· 开源模型依然锚定着性价比的最优区间，不过闭源厂商现在也开始在这个区间竞争。<br><br>蒸馏之争（全篇最有观点的部分）<br>· 训练分三个阶段：预训练、中期训练和 SFT、强化学习。蒸馏主要发生在 SFT 阶段，而现在强化学习消耗的算力已经超过预训练。<br>· 现在说的&quot;蒸馏&quot;其实是对抗性蒸馏：想办法从 API 里套取被隐藏的推理过程。中国不少实验室有专门的团队做这件事。<br>· 他认为不值得把它当成焦点：公开研究并没有显示用推理过程做 SFT 能带来巨大提升；没有好的政策手段可以只针对中国而不伤害全球开源生态；中国实验室本身就很强，&quot;快速跟进&quot;本来就比开拓前沿省算力。小米公开直播了 MiMo-V2.6 的强化学习训练（约 150 万次 rollout，花费 347 万美元），就是不只依赖蒸馏的证据。<br>· 真正持久的优势是算力：美国前五家实验室的总算力平均是中国前五家的 16 倍；到 2026 年底，Anthropic 和 OpenAI 各有 5 GW 以上的算力，而中国头部实验室最多只有 100 到 200 MW。<br><br>使用情况<br>开源模型的推理量快速增长，本地模型下载在加速；Hugging Face 日均独立用户约 60 万。性能相近时，美国模型的采用量是中国模型的 2 到 5 倍，说明市场对美国开源模型有需求。他扫描了 37 万篇 arXiv 论文，Qwen 被提到的次数已经接近 OpenAI 的 GPT。总结是：性能、下载、科研三方面中国都领先，推理和后训练市场也主要是中国模型。<br><br>风险与治理<br>· AI 驱动的网络攻击已经真实发生，而目前公开的案例主要是闭源模型（Claude Code、Codex）被滥用。<br>· 想禁止开源模型，在现实中做不到（美国不可能建起有效的&quot;防火墙&quot;），而且十多家实验室都能在前沿一年左右的水平上训练模型，结果只会抑制经济活动。不少关于开源风险的说法被夸大了（比如虚假信息），但深度伪造这类风险确实被加速了。<br>· 建议：发布方按每个模型评估它带来的&quot;额外风险&quot;，并由国家统一风险标准，而不是让各家公司自己判断。开源模型对网络防御非常关键，因为公司的受信任访问项目没法覆盖整个经济。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVM2NJMbkAAMCm9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

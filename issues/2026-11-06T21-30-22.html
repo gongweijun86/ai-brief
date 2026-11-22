@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月7日 05:30">
+<title>AI技术雷达 · 11月7日 05:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent 记忆架构收敛为九个问题</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;GLM-5.5 用5亿仓库练可执行代码</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;AgentPilot 让小模型提出新策略</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;ComfyUI 换脸换姿换装分段独立跑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;MCP 全量挂载推高 token 成本</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 记忆架构收敛为九个问题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Suercha007 · 2026-11-06 13:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">之前做 Agent 的时候，重点研究过记忆架构，当时觉得很复杂，但其实把整个 agent 运行逻辑搞清楚之后，剩下的也就是工程和业务上的事情了。<br><br>你只需要弄明白以下的问题，你的记忆架构基本上就不会出问题，用什么框架都无所谓。<br><br>无非就是弄明白何时写、写什么、写到哪里、冲突如何解决、生命周期如何管理、召回时机、怎么召回、怎么注入、安全怎么保证、自学习。<br><br>其他的，没了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">陈大黄 <span style="font-size:12px;color:#999999;font-weight:400;">@realchendahuang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">目前 AI Agent 记忆的几个主流技术路线基本可以收敛为三类：<br><br>第一类是全自动向量与图谱记忆库，典型代表是 OpenViking、Mem0、Letta 这类项目。<br><br>实现机制是在客户端挂 Hook 拦截会话，后台用大模型异步抽取实体和事实，存入向量库和图数据库；在每次输入时，通过前置意图分析模型判断是否触发检索，再经重排注入上下文。<br><br>优势在于对上层无感，跨工具、跨会话被动积累历史事实，适合多客户端共用一个全局大脑。<br><br>软肋是工程链路极长，每次交互前多出至少一次模型推理和向量检索，天然增加一到两秒的物理延迟；自动抽取的碎片缺乏人工校验，容易堆积过期失效的信息；同时向量数据库强绑定特定的 Embedding 模型，一旦换代全库都要重建。<br><br>第二类是纯静态结构化文档流，也就是目前主流 IDE 和 Agent 广泛采用的规则文件与 Skills 架构。<br><br>实现机制是由人或工程脚本显式沉淀 Markdown 文件，如 AGENTS.md、CLAUDE.md、系统提示词或针对特定任务按需激活的上下文卡片。<br><br>优势在于百分之百确定，毫无黑盒幻觉，本地直接加载零延迟，改动走 Git 记录清晰可见。<br><br>软肋在于依赖人工维护与分层设计，如果项目过于庞大且规则没有做好按需拆分，容易单次塞入过多上下文导致注意力稀释；且无法自动捕捉跨会话零散出现的个人临时习惯。<br><br>第三类是混合投影模式，以本地 Markdown 为唯一真源，把向量检索降级为轻量辅助索引。<br><br>实现机制是所有业务事实、架构决策和硬性规则依然落在纯文本文件中，只有在文档量突破百万字、关键词检索难以准确定位时，才在本地挂载轻量向量索引辅助打捞。<br><br>优势在于兼顾了纯文本的可控性与语义联想的宽容度，即便索引损坏或换模型，从 Markdown 重新扫一遍就能原地重建。<br><br>对于绝大多数独立开发者和中小型项目，个人日常编码与任务执行，第二种纯静态 Markdown 配合 Git 管理是综合体验最好的选择，成本最低且没有意外。<br><br>只有当你面对海量跨月、跨工具的松散交互记录，且完全无法靠人工分类归档时，再考虑引入第一类独立的服务型记忆底座。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GLM-5.5 用5亿仓库练可执行代码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_funss · 2026-11-06 23:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看完智谱唐杰在清华曝光的 GLM-5.5（32B/122B/256B）训练底料，终于知道为什么有些模型一用就露馅了🤡<br>对比下来就三件事：<br><br>1. 搞数据的态度：<br>友商 -&gt; 偷摸蒸馏 Astra / Opus，连别人的坏习惯一起蒸过来🤣<br>GLM-5.5 -&gt; 每天硬爬 100 亿网页 + 20 亿科研 PDF + 5000 万本书，全靠自家内部引擎洗数据！<br><br>2. 练代码的路子：<br>友商 -&gt; 拿着公开题库刷榜，一上项目就降智🫠<br>GLM-5.5 -&gt; 直接拿 5 亿个 Repo 改造成带真实 Test 和 Issue 的可执行环境真刀真枪练！<br><br>3. 升基座的狠活：<br>友商 -&gt; 老基座反复微调挤牙膏，打补丁越打越降智🫠<br>GLM-5.5 -&gt; 内部先拿 32B / 122B / 256B 三个模型做后训练（Post-training），最后直接合体（Merge）融进下一代满血基座！<br><br>左手 5 亿可执行代码库，右手三模型合体满血基座，这波 期待拉满，兄弟们觉得 GLM-5.5 出来后有望超过 Opus 5.5 么？🤔</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWdByMLbgAAmZiC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">bebu <span style="font-size:12px;color:#999999;font-weight:400;">@bebuu_ai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://Z.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Z.ai</a> 首席科学家唐杰今天在清华大学的一次讲座中，揭示了即将推出的 GLM-5.5（32B、122B 和 256B）背后的训练流水线。<br><br>与其依赖公开数据集，他们的预训练流水线从六个独立的内部引擎中获取数据：<br><br>- 网页：爬取了 1 万亿个页面，速度约为每天 100 亿页，并进行 PB 级的模板聚类<br>- 文档：解析了 20 亿份科学 PDF，通过 GLM-OCR 处理（使用推测解码，速度提升 4 倍）<br>- 书籍：5000 万本书，进行版面重排和乱码文本过滤<br>- 代码：5 亿个代码仓库，转化为可执行任务，包含真实测试和问题描述<br>- 视频：100 亿个视频，用于长序列世界知识<br>- 音频：3 亿小时音频，通过 ASR 重写为数万亿个 token</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://Z.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Z.ai</a> chief scientist Jie Tang just revealed the training pipeline behind the upcoming GLM-5.5 (32B, 122B, and 256B) during a lecture at Tsinghua University today.<br><br>Instead of relying on public datasets, their pretraining pipeline pulls from six separate internal engines:<br><br>- Web: 1 trillion pages crawled at ~10B pages/day with PB-scale template clustering<br>- Documents: 2 billion scientific PDFs parsed through GLM-OCR (4x faster with speculative decoding)<br>- Books: 50 million books with layout reordering and garbled-text filtering<br>- Code: 500 million repositories turned into executable tasks with real tests and issue descriptions<br>- Video: 10 billion videos for long-sequence world knowledge<br>- Audio: 300 million hours rewritten via ASR into trillions of tokens</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWTVswoasAEEmPg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWTVwaSbgAAIo1u.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AgentPilot 让小模型提出新策略</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huang_chao4969 · 2026-11-06 21:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">为什么一个 9B 模型，居然能在 Terminal-Bench 上跑赢 DeepSeek V4？<br><br>做实验时我们发现，GPT、Claude、Kimi、DeepSeek、GLM 这些大模型，写代码时经常会“认准一条路走到黑”：出了问题就修 bug，修完不行接着修，耗掉大量 token，却很少停下来想想，是不是方法本身就该换了。<br><br>反倒是 9B 模型，有时能跳出现有思维定式，直接提出另一种新的算法，再让大模型去实现。这也解释了我们实验里看到的这个反直觉结果。<br><br>有时候，缺的真不是一个更会写代码的模型，而是一个能提出新方法、而不只是埋头修 bug 的模型...</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chao Huang <span style="font-size:12px;color:#999999;font-weight:400;">@huang_chao4969</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在探索递归自我改进（RSI）的过程中，我们发现了一个令人惊讶的反直觉现象：<br><br>一个 9B 模型可以引导一个大得多的前沿模型——DeepSeek V4——写出更好的代码，更有效地自我改进，并更快地达到更强的解决方案。<br><br>9B 模型提出策略，DeepSeek V4 编写代码。<br><br>GitHub: <a href="https://github.com/HKUDS/AgentPilot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/AgentPilot</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">While exploring recursive self-improvement (RSI), we found something surprisingly counterintuitive:<br><br>A 9B model can guide a much larger frontier model—DeepSeek V4—to code better, self-improve more effectively, and reach stronger solutions faster.<br><br>The 9B model proposes the strategy. DeepSeek V4 writes the code.<br><br>GitHub: <a href="https://github.com/HKUDS/AgentPilot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/AgentPilot</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ComfyUI 换脸换姿换装分段独立跑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-11-06 10:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发现一个 ComfyUI 宝藏项目！<br>自带 1499 个头像、1439 种姿势、1407 套服装，全做成了可视化图库！<br><br>不用到处找参考图，鼠标点哪张，当场给角色换脸、摆动作、换衣服！<br><br>最爽的是三个图库直接接进同一套工作流，选好图、拨一下开关，想单换哪样就换哪样，也能三项一口气全换。<br><br>项目里头有几个设计挺讲究：<br>1、换脸、换姿势、换装，分三段独立跑<br>三路参考图分开喂，按「换头 → 换姿势 → 换装」串起来，每段各配一个开关。<br>想保住现在的脸和衣服、只改个动作，单独打开姿势开关就行，再也不用把所有要求全挤进一段提示词里赌运气。<br>2、Qwen 图像编辑模型打底，精度和速度分开算<br>演示配置里，挑细节的换头用 Qwen Image 2.1 BF16 保精度，换装直接上 INT8 量化版提速（单段 20 多秒就能跑完），文本编码器搭的是 Qwen3-VL 8B。<br>姿势阶段还单独挂了 PoseStudio V1.1 LoRA。脸、动作、衣服各管各的，哪一步出问题直接单独调哪一步，不用整张图推倒重来。<br>3、图库直接连节点，省掉来回找图、上传<br>头像能按正脸、侧脸、发型筛，姿势和服装支持分类搜索。看中哪张点一下，参考图直接回传进对应节点。<br><br>仓库做好了单项替换和三段全流程的 JSON，拖进画布配齐模型就能跑。<br><br>我觉得它最顶的地方，是把做角色时最折磨人的重复活儿全收进了一套流程里。拿来做漫画分镜、短剧角色定妆，同一批脸、动作和衣服随时调出来反复组合。<br><br>不过也有两个实测边界得注意：<br>一是换装时偶尔还会有色差（把默认的 20 步往上调能改善），毕竟是局部重绘，别把独立开关当成其他细节绝对不动。<br>二是代码虽然 MIT 开源，但那四千多张图来自第三方图库，有单独的授权限制，自己用没事，别连图带包拿去商用或分发。<br><br>项目地址：<br><a href="https://github.com/JGRFw/comfyui-aicg3d-PoseSwap" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JGRFw/comfyui-aicg3d-PoseSwap</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWaCsn0bEAAFuUj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 饱和测试保障语义稳定性</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @unclebobmartin · 2026-11-06 21:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">饱和测试。我使用 crapper 和 mutator 来确保系统中的每个表达式都被测试覆盖。如果一个表达式被修改，一个或多个测试将会失败。<br><br>这过去是不切实际的。我们根本负担不起创建这么多测试。当需求变化时，我们也负担不起修改这么多测试。负担太重了。<br><br>现在这变得微不足道了。在 crapper 和 mutator 的鞭策下，agent 们会编写这些测试并让它们通过。当需求发生变化时，他们会编写新的测试并修改旧的测试。<br><br>这些都不能证明系统是能工作的。那要靠人类来判断。人类可以使用 gherkin 之类的工具来做这件事，或者使用手工测试。<br><br>饱和测试所提供的是语义稳定性。当需求发生变化，需要添加和修改代码时，这些测试确保这些变更不会无意中破坏系统中不相关的部分。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Saturation Testing.  I use crapper and mutator to ensure that every expression in the system is covered by tests.  If an expression is changed, one or more tests will fail.  <br><br>This used to be impractical.  We simply could not afford to create that many tests.  We also could not afford to change so many tests when requirements changed.  The burden was too high.<br><br>Now it’s trivial.  The agents, under the lash of crapper and mutator, will write those tests and make them pass.  And when requirement changed, they’ll write the new tests and change the old tests.<br><br>None of this proves that the system works.  That’s up to humans to judge.  Humans can do that with tools like gherkin, or they can use manual tests.  <br><br>What the saturation tests provide is Semantic Stability.  When the requirements change, and code has to be added and changed, those tests ensure that those changes do not inadvertently break unrelated parts of the system.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>gstack 开源 AI 开发团队流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @awe0_io · 2026-11-06 19:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">离谱！YC CEO 直接把自己的 AI 开发团队开源了！🤯<br><br>GitHub 14 万 Stars，23 套工具。<br><br>CEO 负责产品，设计师负责审美，工程师负责架构，QA 负责测试。<br><br>全部交给 Claude Code 等 AI Agent。<br><br>以前创业要招一支团队，现在连团队的工作流程都能直接下载了。<br><br>GitHub：<a href="https://github.com/garrytan/gstack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/garrytan/gstack</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MCP 全量挂载推高 token 成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-06 12:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在整个行业都在言必称 MCP（Model Context Protocol），好像它是某种颠覆性的前沿 AI 黑魔法。<br><br>把抓包工具挂在线路上看一眼原始报文，真相朴素得令人发笑：底子就是跑在 stdin 或者 HTTP 上的标准 JSON-RPC 2.0。<br><br>客户端发一个 initialize 握手，服务端回一个支持的 capabilities 列表；客户端发 tools/list 查工具，服务端把名字和 JSON Schema 吐回来。<br><br>这个协议最大的贡献根本不是技术突破，而是建立了一套工业界公认的接口合同。<br><br>但在企业落地时，真正要命的问题才刚浮出水面：每一个挂上来的 MCP 工具，它的参数说明和返回值定义都会原封不动塞进大模型的 Context Window 里。<br><br>你挂了 30 个企业内部微服务工具，哪怕这轮对话只问了一句“你好”，两万个 token 的 schema 已经先在后台烧掉了。<br><br>协议统一了调用标准，但没有帮你解决 token 账单。把整个系统无脑暴露给 MCP，是当下最昂贵的架构偷懒。<br><br>协议拆解参考：<a href="https://mcp-explained.com/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://mcp-explained.com/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CF Workers 免费邮箱无限别名</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vpsing_de · 2026-11-06 08:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">早起用闲置的com域名，在Cloudflare Workers上搭了个邮箱，以后注册各种账号就不愁邮箱不够了。<br>1、零成本：收件走 CF Email Routing，发件走 Resend API，全流程永久免费； <br>2、无限前缀：后台随意衍生无数个自定义别名邮箱，多账号完全物理隔离； <br>3、即时推送：可以绑定 Telegram Bot，邮件秒推提醒，不用每次去刷网页后台。<br><br>人生在于折腾，要不你也整一个？手把手教程：<a href="https://doc.skymail.ink/deployment/dashboard.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://doc.skymail.ink/deployment/dashboard.html</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWZn0WfaQAAYbqs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

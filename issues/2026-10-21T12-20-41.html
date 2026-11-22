@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月21日 20:18">
+<title>AI技术雷达 · 10月21日 20:18 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;BitKindle 演化出 C 编译器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;RAG 被长上下文和 Agent 吸收</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;BeatDesign 接入 MCP 剪辑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;华为昇腾优先供货 DeepSeek</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;只测用户可感知行为，少写单元测试</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;豆包 4.2 亿月活占 AI 应用七成</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BitKindle 演化出 C 编译器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @python_xxt · 2026-10-21 13:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">TK教主的推特账号要复活了</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Yang Yu <span style="font-size:12px;color:#999999;font-weight:400;">@tombkeeper</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">刚开始接触生物学的时候，我经常想象原始海洋里的有机分子构成核糖核酸，然后诞生了最早的单细胞生物，单细胞生物又聚在一起变成黏糊糊的原始多细胞生物，最终一步一步演化出各种生灵。我也经常想，如果能在实验室里加速重现这一过程，完整观察整个生物演化史就好了。<br><br>刚开始接触计算机的时候，我想过一个问题：程序是从哪里来的？后来我知道了编译器，程序从编译器来的。编译器自然也是从其它编译器来的。那么最早的编译器是从哪里来的？后来我逐渐搞清楚了这个问题的答案。但偶尔还是会想一些相关的问题，比如：如果现在全世界的编译器都忽然消失，人类要怎么重建整套体系呢？<br><br>最近几年研究 AI 安全问题的时候，我经常想：如果只给予 AI 完成特定工作所需的工具，那么 AI 的能力是不是就会被限制住？是不是就可以阻止 AI 获得强大的网络入侵能力？<br><br>2026 年 2 月，我看到马斯克预测到年底 AI 就可以绕过编译过程直接创建二进制文件。当时我做了一些实验，发现虽然 AI 还不能创建完整可运行的程序，但已经可以生成正确的机器码片段了。到了 9 月，我再次实验，发现此时 AI 已经可以用直接创建二进制文件的形式输出不太复杂的程序了。<br><br>但用直接输出二进制文件的方式去写大型程序显然不是好的选择，即使能写出来，也难以维护。那么，是不是可以让 AI 重演现代编译器的诞生过程？就像重演从核糖核酸到哺乳动物的生物演化史？<br><br>下面这个视频里超级马里奥游戏就是从核糖核酸开始构建的。<br><br>AI 先是通过直接输出二进制的方式构建了一个 3584 字节的机器码装配器 A0。然后用 A0 生产了一个更类似汇编器的工具 A1。又用 AI 生产了最基础的 C 编译器 C0。再一步一步迭代，最终演化出了一个完整支持 C89 标准并部分支持 C99 标准的编译器。有了这个编译器，就可以写出超级马里奥游戏，或者是任何网络攻击程序。<br><br>对 AI 说：“要有光”，然后整个世界就一步一步诞生了。所以我把这个项目命名为 BitKindle。感兴趣可以测试一下：<a href="https://github.com/tombkeeper/BitKindle" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tombkeeper/BitKindle</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112742652592500736/img/ZeRZ7bp5VaPSdKYq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>无头剪映接入 Step 2.5 ASR</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gengdaJ · 2026-10-21 18:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">？？？兄弟们，我也是好起来了，都收到律师函了。。。<br><br>AI时代和传统App入口的竞争，已经来到了火热化的阶段，剪映项目可能存活不了太久了，建议大家赶紧Fork最后一波吧。。。<br><br>我个人认为这个项目对剪映项目是利好，让很多不用剪映的人，用Agent降低了门槛，都用起来了，加大了开通剪映SVIP和使用各种付费功能的可能性。<br><br>但是鼠目寸光的团队方，非要认为那点软植广告更重要，说实话，没有Agent打通的剪映，在AI时代，迟早被干掉！<br><br>害！害！害！<br><br>兄弟们想要我怎么回复这封信，也可以留在评论区。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJbVRZaMAEFgJf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJbcy4akAA5tVb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">逸尘 <span style="font-size:12px;color:#999999;font-weight:400;">@gengdaJ</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">无头剪映和剪映Skill大升级！这次我把安装包分享给大家了，一定要保存！一定要保存！大家别再老是和我说版本不适配的问题了。。。😅<br><br>1、适配剪映 11.6.0：现在默认使用新版剪映，原来的 11.5、11.4.2 也继续兼容。<br>2、接入Openverse：超过520万个音频文件！免费使用！音效直接解放！每次使用联网获取即可（配置好的）<br>3、ASR模型成本降低五倍：从豆包ASR改为Step 2.5 ASR 首发，剪辑视频效果和各项指标更优，成本是0.15元/h（对比豆包0.8元/h)，同样支持毫秒级输出。<br><br>11.6.0永久安装包地址：<a href="https://pan.quark.cn/s/2595af66ee0b" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://pan.quark.cn/s/2595af66ee0b</a><br>无头剪映GitHub地址：<a href="https://github.com/mcncarl/jianying-headless" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mcncarl/jianying-headless</a><br>配套剪辑Skill地址：<a href="https://github.com/mcncarl/yichen-skills/tree/main/yichen-jianying-edit" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mcncarl/yichen-skills/tree/main/yichen-jianying-edit</a><br>Step 2.5 ASR中国站地址：<a href="https://platform.stepfun.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://platform.stepfun.com</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVIWtEBbAAE2AvY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAG 被长上下文和 Agent 吸收</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-20 22:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">去年人人都在搭的知识库，为什么今年不火了？<br><br>去年，“企业知识库”是 AI 落地阻力最小的一个项目，各家都在搭建自己的知识库，米哈游、银行、政企机构都在做。但到了今年，这个词突然没人喊了。<br><br>这是怎么回事？ RAG 凉了吗？<br><br>RAG 没死，但它被拆分并吸收进了现在模型的各个环节：<br><br>1. 长上下文的挤压：<br>上下文把很多中小型知识库整个吞掉了。去年 128k 上下文还是个奢侈品，但今年所有主流通用模型里，1M 上下文已经成了标配。几十万字的中型知识库，现在可以直接整本塞进上下文中，不用检索、不用调分、不用抗索引。<br><br>这样一来，RAG 的价值区间被压缩成了两类：一是大到装不下的知识库，二是需要极其精准命中的知识库。<br><br>2. Agent 架构的吸纳：<br>今年流行 Agent（Agent = Model + Harness）。在今年的 Agent 化趋势下，RAG 已经降级成了 Agent 的一个工具，或者说记忆检索插件。该不该搜，由 Agent 自己来决定。比如阿里的 Qoder，或者 DeepSeek 的 Harness，记忆检索与知识检索本来就是众多插件中的一个，在架构上被天然吸纳了。因此在独立叙事上，RAG 天然就熄火了。<br><br>今年还有一个新词：持续学习与 AI 的自我进化。<br><br>这就是所谓的新叙事，也是新的投资方向：知识到底应该存在哪里？以前我们的知识都是写在知识库里，而现在 know-how 类的知识，很可能会直接写进权重里。<br><br>这方面的代表就是 SSI 那一套 TTT（Test-Time Training）快速权重机制：每次使用时都会快速更新自我权重，不用检索，也不用塞上下文。这种自我进化的新叙事，比单纯的 RAG 吸引力大太多了。我自己也搭建过知识库，对此深有体会。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BeatDesign 接入 MCP 剪辑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-10-21 19:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用 Claude Code 剪视频，终于可以可视化操作了！<br><br>之前分享过用代码控制视频时间线的方案，但光靠代码调整画面、字幕和素材，还是不够直观。<br><br>GitHub 上有个开源项目 BeatDesign，把 AI Agent 和可视化视频剪辑结合到了一起。<br><br>1、无限画布，直接拖入图片、视频、音频，连接节点组织素材。<br><br>2、可视化时间线，裁剪片段、调整字幕、混合音频，实时预览并导出 MP4。<br><br>3、支持 MCP，可以让 Claude Code、Codex 直接操作项目。<br><br>4、Agent 修改的内容，会显示在浏览器里，哪里不满意就手动调整。<br><br>本地部署也简单，准备 Node.js 22+、pnpm 10+ 和新版 Chrome。<br><br>进入项目目录后运行：<br><br>```bash<br>pnpm install<br>pnpm db:push<br>pnpm dev<br>```<br><br>浏览器打开 <a href="http://127.0.0.1:3020" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://127.0.0.1:3020</a> 就能使用。<br><br>如果要同时启动 MCP 服务，把 `pnpm dev` 换成 `pnpm dev:agent`，再按文档接入 Claude Code 或 Codex。<br><br>本地导入素材、剪辑、预览、导出都不需要 API Key，调用远程 AI 模型生成素材则需要自己配置。<br><br>经常用 AI 制作短视频的朋友，这套方案可以把 AI 自动剪辑和人工调整结合起来。<br><br>GitHub：<a href="https://github.com/BeatAPI/BeatDesign" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/BeatAPI/BeatDesign</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>华为昇腾优先供货 DeepSeek</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-10-21 14:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">The Information更新了一组关于DeepSeek和华为在芯片上的合作进展：<br><br>- 两家公司之间已经超过了供应商和客户的关系，华为的工程师长期在DeepSeek公司驻点，并会把DeepSeek方面的意见纳入芯片的设计标准里；<br><br>- 双方合作的桥梁是TileLang，这是北大团队开源的编程语言，能在一定程度上平替英伟达的CUDA系统，在适配TileLang的工作上，华为向DeepSeek提供了「毫无保留的帮助」；<br><br>- 预计在今年年底，DeepSeek会开始用华为的昇腾950DT的万卡集群训练模型——应该是内蒙古那个——连续运行的挑战性很高，一颗芯片的延迟就能拖后整个集群的进度；<br><br>- 华为还将于明年向DeepSeek交付新一代昇腾960DT的大部分产能，其他中国AI大厂要么不买，要么就是想买但没货，只能选择950DT，也就是说，最先进的一代芯片，会始终优先满足DeepSeek；<br><br>- 华为轮值董事长徐直军也公开提到了，今年的旗舰芯片950DT会从明年开始大规模投放市场，以及预计产能无法覆盖国内需求，会限制海外销售；<br><br>- 如果按今年的旗舰AI芯片来对比，昇腾950系列的计算性能大概是B300系列的1/7，预计到了2030年，单片代差会缩小到3-4年左右；<br><br>- DeepSeek并不拒绝获得英伟达芯片的机会，但华为的稳定供应，让它多了一个「走得慢一点，但能走得更久」的选择。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PHP 8.1 以下不再获得安全补丁</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @nyxvoid92 · 2026-10-21 16:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今晚 10 点，全球 PHP 服务器准备迎来大逃杀。<br><br>​两个直通核心的 RCE 漏洞被提前外泄，传闻免验证一个请求直接拿 Shell（PHP2Shell 工具图都流出来了）。<br><br>​最惨的是 PHP 8.1 以下完全不给补丁，而全球有高达 59% 的对外主机还在跑旧版。今晚 22:00 官方一发 Patch 等于直接开战，15 分钟内全网开扫。<br><br>​还在跑 PHP 7、PHP 5 祖传代码的公司，现在除了拔网线跟锁 WAF 真的没别招了，好自为之。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Eka 用 VFA 力控模型做灵巧操作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-21 18:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前Google DeepMind研究员创办强化学习和机器人公司，专注于解决机器人领域最难的问题之一：灵巧操作（dexterous manipulation），刚刚融资1.5亿美元，估值达14.5亿美元。其中创始人Tuomas Haarnoja之一是著名的强化学习算法Soft Actor-Critic（SAC）的主要发明人。<br><br>相比其他世界模型，两位创始人强调其技术特点是“力（force）是操作的母语”，而不是单纯依赖视觉或模仿人类演示。<br><br>核心技术：Vision-Force-Action（VFA）模型<br>与当前主流的Vision-Language-Action（VLA）模型不同，Eka的VFA将视觉与力反馈（来自定制的力敏感夹爪）结合，作为控制回路的一部分。机器人能“感觉”到物体是否滑动、接触阻力如何，并实时调整抓取力度和动作。<br><br>训练方式是大规模仿真 + 强化学习（类似AlphaZero的路径），在仿真中快速生成成千上万小时的经验，再迁移到现实（sim-to-real）。<br><br>目标是打破“通用性 vs 性能”的传统权衡：既要能处理未见过的物体和任务，又要达到工业级速度与可靠性。创始人多次提到，力控是解决“最后一毫米”问题的关键（纯视觉往往不够）<br><br>团队：<br>Pulkit Agrawal（@pulkitology）：MIT电气工程与计算机科学副教授，Improbable AI Lab负责人。UC Berkeley博士（与Haarnoja在研究生时期相识），此前联合创办SafelyYou（跌倒预防技术）。<br><br>研究重点是机器人学习、仿真到现实（sim-to-real）、自我监督学习与力控操作。<br><br>Tuomas Haarnoja（@haarnoja）：前Google DeepMind研究员，Soft Actor-Critic（SAC）算法的主要发明者。SAC是过去十年最具影响力的强化学习算法之一，以最大熵框架著称，在连续控制和真实机器人任务中表现稳定高效。他也是UC Berkeley博士。<br><br><a href="https://ekarobotics.com/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ekarobotics.com/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>只测用户可感知行为，少写单元测试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @intentplex · 2026-10-21 05:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我们之前招的10年经验DevOps，也会自动化测试。花了2个月，给我们公司一个只有二十多万行的webapp产品，生成了5000多个单元测试。只查出来几不痛不痒的bug。<br>因为单元测试依赖于实现，每次开发们改代码，都要花几十分钟，删除老的单元测试，重新生成新的单元测试，怨声载道。<br>这个DevOps离职以后，我不让老板再招人，我自己接手这个自动化测试。我定了一个原则，测试用例只测用户能感知到的东西，绝对不基于任何内部实现写测试。我还写了一个通用测试技能，只让GPT生成150个测试用例，就抓到了15个bug。<br>我的结论是：一般的产品不要再写单元测试。多人长时间vibe coding出来的东西，可能核心功能能用，但是用户可见的边边角角的bug率非常高，如果没有专门的工作流去测试，很难发现。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>豆包 4.2 亿月活占 AI 应用七成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-10-21 19:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Quest Mobile的中国AI市场报告（Q3）数据：<br><br>- AI移动应用的大盘月活用户5.46亿，其中77%的人都在用豆包；<br><br>- 豆包的4.2亿月活，是第2名千问的2.5倍、第3名DeepSeek的3.5倍；<br><br>- 豆包和蚂蚁阿福是Q3唯二同比与环比都还在增长的AI移动应用，Q3因为叠加暑假，属于年轻用户的流失周期；<br><br>- 主流AI聊天产品的每次打开使用时长平均都在2分钟左右，只有千问明显偏低，不到1.3分钟；<br><br>- 在回答问题的引用信源数量上，Kimi一枝独秀，虽然不代表回答质量更高，但理论上会更消耗Token，责任心很重啊；<br><br>- AI办公赛道，WorkBuddy断崖式领先，月活用户超过3200万，比第2名到第10名加起来还多📷；<br><br>- 百度搭子的月活用户悄悄爬到了AI办公的第2名，就问意不意外吧；<br><br>- 简中PC网页的AI月活用户甚至已经又开始下降了，Web端真是烂完了⋯⋯</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJTIwMa8AAaZlo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJTKRraQAA5A3O.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJTLwWasAA4mmp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PINOC 用三视图生成 3D 骨骼角色</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Pluvio9yte · 2026-10-21 17:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前几天看了赛克（@Saccc_c）用 Opus 5.5 做《小王子》的教程，我尝试把陶渊明的《桃花源记》做成一个明亮的第三人称探险小游戏，Opus 5.5 加 3D 模型确实能够做出可玩的游戏了<br><br>用到的工具：Claude Code（Opus 5.5）、@ViggleAI 的 PINOC（JST-2），再加一个网页 3D 引擎。<br><br>大体是这么做的👇<br><br>① 先写策划<br>五幕直接对着原文：缘溪行 → 忽逢桃花林 → 山有小口，仿佛若有光 → 豁然开朗，桃源村 → 处处志之，不复得路。<br><br>② 再出概念图<br>用 AI 出全景设定、关键画面和角色三视图，这里我用的是 Codex 内置的生图功能。画面参考《小王子》的明亮感，人物参考《风之旅人》《光·遇》：渔郎戴竹斗笠、披稻草蓑衣，再加一条桃红色的长围巾。<br><br>③ 角色交给 PINOC<br>渔郎、老翁、小孩，把正、侧、背三视图丢进 PINOC，出来就是自带骨骼的 3D 高斯泼溅角色。<br>走、跑、挥手、点头直接从动作库里拿；坐下吃饭、作揖、小孩蹦跳这些用文字生成。<br>PINOC MCP 接进 Claude Code 之后，这些都是 Claude 自己去调。<br><br>④ 搭场景<br>远处的桃花山谷用 PINOC 的场景生成。近处的小溪、小路、桃树，还有几万簇随风摆动的草、雏菊、薰衣草、蕨类，都是 Claude 写程序搭出来的。<br><br>⑤ 对标迭代（最关键的一步）<br>学赛克的做法：固定几个机位，每改一轮就截图，和《小王子》并排对比，看差在哪，再改下一轮。光溪畔桃林这一个小场景就迭代了八轮，从一开始的&quot;塑料感&quot;改到现在这样。<br><br>最大的感受：一个人加上 Claude 和 PINOC，一天就能做出一个明亮、能玩的小世界</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112833385177731073/img/gamV4XR8hxl1Fnc-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ViggleAI <span style="font-size:12px;color:#999999;font-weight:400;">@ViggleAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天，我们发布了JST-2，这是全球首个全栈物理原生世界基础模型。<br><br>许多世界模型是在像素/视频空间中学习的。我们回归第一性原理，将整个模型栈构建在3D中。<br><br>在几秒钟内生成一个3D场景，并实时扩展它。创建内置动作的角色，全部通过一个通用架构实现。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today we are releasing JST-2, the world's first full-stack physics-native world foundation model.  <br><br>Many world models learn in pixel/video space. We went back to first principles and built the entire model stack in 3D.  <br><br>Generate a 3D scene in seconds and expand it in real time. Create characters with motion built in, all through one general architecture.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112198961754746881/img/O1y80k0m3y8uqpNS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

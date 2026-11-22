@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月21日 08:12">
+<title>AI技术雷达 · 11月21日 08:12 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude Code子代理可独立降档</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Qwen3.8-27B超级适配器提分</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;AI爬虫漏抓纯JS渲染内链</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;注释清理提示词四类分级加Lint</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">12</span>&nbsp;&nbsp;RTX H100神经缓存提速渲染</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">13</span>&nbsp;&nbsp;Hospital-bench测医院运营</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code子代理可独立降档</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LanzhiAI · 2026-11-21 07:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">难怪 Claude Code 的 5 小时进度条总莫名见底，周三就把一周额度全干光。<br><br>Anthropic 刚更新官方文档，终于揪出了背后偷跑 Token 的“隐形额度刺客”🤯<br><br>- 破案了，子代理一直在后台“全力燃烧”：在默认逻辑下，只要主会话开了高推理强度，派出去跑侦察、读文件这类简单杂活的子代理就会直接继承同款高配置，每次小查询都重新拉起上下文疯狂烧钱。<br>- 官方新放出独立降档开关：升级到 Claude Code v2.1.315 及以上版本后，只需设置环境变量 CLAUDE_CODE_SUBAGENT_EFFORT，就能把子代理和工作流代理的努力度单独锁定为 low、medium、high、xhigh 或 max（注意对 fork 和 teammates 不生效）。<br>- 评论区实测省出一片天：有开发者把前期搜集资料的子代理降到 low，只在最后收尾综合阶段让主模型开 high，原本一个下午就蒸发完的 5 小时进度条直接稳稳撑完全程。<br><br>赶紧检查一下你的本地环境配置，你现在 Claude Code 的每周配额一般能撑到星期几？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI姿势库直连本地ComfyUI</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @songchanggui · 2026-11-20 21:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想搞Ai美女的赶快保存！！！<br><br>这个 5.3K Star开源项目<br>自带 4345 条中文参考数据，人物、衣服、动作随便搭，<br><br>最狠的是彻底打通了本地 ComfyUI。<br>网页搭配完就能直连本地出图，<br><br>在线体验：<a href="https://ai-pose-gallery.anhao.app/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ai-pose-gallery.anhao.app/</a><br>GitHub：<a href="https://github.com/anhao/ai-pose-gallery-zh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anhao/ai-pose-gallery-zh</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXkfsimbMAAfNlB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen3.5-9B魔改版反超27B</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-20 20:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在的本地小模型已经卷到这种程度了？<br><br>体积不到 7GB 的 Qwen3.5-9B 魔改版，作者跑分全线压过原版 27B，而且拒答率从 100/100 直接砍到了 6/100。<br><br>模型全名长得像通关密码：Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic（下载已破 220 万）<br><br>核心亮点就四个：<br><br>1.  真·无说教：Heretic 去对齐，写逆向脚本、安全分析、文学创作彻底放飞<br><br>2. 越级打怪：ARC-C 0.57 → 0.64，7 项基准反超原版 27B（老基准，当个参考）<br><br>3. 速度暴涨 40%+：精简思维链 + MTP 加持，5090 实测 Q4 从 130 提到 185+ t/s<br><br>4. 消费级硬件友好：Q4 仅 6.5～7GB，8G 显存开小上下文能直接跑，16G 内存笔记本拖进 LM Studio 就能玩<br><br>受够云端模型说教的，直接拉下来本地部署<br><a href="https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF</a><br>#Qwen #开源大模型 #本地部署 #AI #LMStudio #无审查</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen3.8-27B超级适配器提分</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yb2698 · 2026-11-20 21:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">宣布面向 @Alibaba_Qwen Qwen3.8-27B 的超级适配器 🔥<br><br>我们以一个酷炫的实验性模型收官本周——一个更大的 LoRA，将本周所有的 harness 适配器合并在一起——用了一个简单的技巧：把所有 LoRA 适配器拼接成一个。<br><br>结果：打败了思考模型，在思考模式下的工具调用次数也大幅减少：根据不同的 harness，思考开启时工具调用减少 19-48%。<br><br>准确率提升：<br><br>SWE-Bench Pro（困难集 51）：<br>→ Hermes Agent：45% → 61%<br>→ OpenCode：47% → 67%<br>→ pi：74% → 74%<br><br>Terminal-Bench 2.1<br>→ 在每种 harness 下提升 4 到 6 个点<br><br>我们还在万众期待的完整配方博客文章中分享了完整的配方、实验结果、待解决问题等：<a href="https://huggingface.co/blog/harness-adapters-at-scale" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/harness-adapters-at-scale</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Announcing the super-adapter for @Alibaba_Qwen Qwen3.8-27B 🔥<br><br>We are closing this week with a cool experimental model - a bigger LoRA that merges all harness adapters from this week - with a simple trick: concatenate all LoRA adapters into one.<br><br>Result: beats the thinking model, with thinking with much less tool calls under thinking mode: 19-48% fewer with thinking on depending on the harness<br><br>Accuracy gains:<br><br>SWE-Bench Pro (hard 51):<br>→ Hermes Agent: 45% → 61%<br>→ OpenCode: 47% → 67%<br>→ pi: 74% → 74%<br><br>Terminal-Bench 2.1<br>→ +4 to +6 points under each harness<br><br>We also share the full recipe, experimental results, open questions, etc in the longly awaited full recipe blogpost: <a href="https://huggingface.co/blog/harness-adapters-at-scale" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/harness-adapters-at-scale</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HXkqwyWaUAAatI4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>River无需接管屏幕即可操作应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChandlerSupple · 2026-11-21 01:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们给 AI 在你的电脑上做了一个自己的桌面<br><br>今天我们推出 River（YC F26）！River 可以使用你的应用和浏览器，读取你的文件，甚至控制你的手机。它做所有这些而不占用你的屏幕。<br><br>例如，我可以让 River 规划一次两天的现场活动，然后回去写代码，同时它检查我的日历、订机票、发送邀请。<br><br>River 已经处理了来自 10 万+用户的超过 125 万次请求。设置只需两分钟。免费试用：<a href="http://meetriver.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://meetriver.com</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We gave AI its own desktop on your computer<br><br>Today we're launching River (YC F26)! River can use your apps and browser, read your files, and even control your phone. It does all of that without taking over your screen<br><br>For example, I can ask River to plan a two-day onsite, then get back to coding while it checks my calendar, books flights, and sends the invites<br><br>River’s handled over 1.25M requests from 100,000+ users. Setup takes two minutes. Give it a try for free at <a href="http://meetriver.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://meetriver.com</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123823484006735872/img/5zwpx9gWWBTD9qGE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI爬虫漏抓纯JS渲染内链</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sengineland · 2026-11-20 00:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">新研究：仅通过客户端 JavaScript 链接的内容对 AI 爬虫基本不可见。<br><br>Google 能发现其中 42-67%。大多数 AI 爬虫根本不运行 JS。<br><br>你是否检查过 AI 爬虫能否跟随你的内部链接？</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New research: content linked only through client-side JavaScript is largely invisible to AI crawlers.<br><br>Google finds 42-67% of it. Most AI crawlers don't run JS at all.<br><br>Have you checked whether AI crawlers can follow your internal links?</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pew实测AI摘要点击率仅1%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sengineland · 2026-11-21 00:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Google 声称 AI 搜索扩大了品牌发现。<br><br>Pew 发现，在带有 AI 摘要的访问中，仅有 1% 导致了对被引用来源的点击。SEO 从业者们注意到了。<br><br>Google 的调查与 @pewresearch 和 @SeerInteractive 的数据对比：<a href="https://searchengineland.com/google-ai-search-advice-seo-backlash-502610?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261120+x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/google-ai-search-advice-seo-backlash-502610?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261120+x</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Google says AI search expands brand discovery.<br><br>Pew found just 1% of visits with an AI summary led to a click on a cited source. SEOs noticed.<br><br>Google's survey vs the @pewresearch and @SeerInteractive data: <a href="https://searchengineland.com/google-ai-search-advice-seo-backlash-502610?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261120+x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/google-ai-search-advice-seo-backlash-502610?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261120+x</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXlR2wzXwAA5Pls.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini用视频模型生成GIF</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GeminiApp · 2026-11-21 00:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">和 Gemini 里的 GIF 打个招呼吧。告别寻找完美 GIF 的烦恼。<br><br>从循环照片效果到搞笑表情包，用我们最新的视频模型 Gemini Omni 1.2 Flash 创建你能想象的任何 GIF，每一帧都拥有流畅的运动和一致的质量。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Say hello to GIFs in Gemini. Say goodbye to searching for the perfect one.<br><br>From looping photo effects to funny memes, create any GIF you can imagine with our latest video model, Gemini Omni 1.2 Flash, for smooth motion and consistent quality across every frame.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Neuralink盲视植入物待审批</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-11-21 00:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Neuralink 的 Blindsight 产品现在只在等待监管批准</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Neuralink’s Blindsight product is now just waiting for regulatory approval</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">X Freeze <span style="font-size:12px;color:#999999;font-weight:400;">@XFreeze</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Elon Musk 刚刚对 Neuralink 的 Blindsight 给出了重大更新。<br><br>&quot;我们的下一个产品是我们称之为 Blindsight 的东西。<br><br>Blindsight 是一种神经植入物，它直接与视觉皮层交互，使完全失明的人能够看见。<br><br>它允许你佩戴眼镜之类的东西，上面有一个摄像头。<br><br>那个摄像头将信号传输到 Neuralink 设备，然后该设备将信号传输到你的视觉皮层，使完全失明的人——即双眼失明或视神经丧失的人，潜在地包括先天失明的人——能够看见。&quot;</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Elon Musk just gave a massive update on Neuralink's Blindsight<br><br>&quot;And our next product is what we call Blindsight<br><br>So Blindsight is a neural implant that interfaces directly with the visual cortex and enables people who are completely blind to see<br><br>So it allows you to be wearing glasses or something like that that have a camera<br><br>That camera is transmitting to the Neuralink device that then transfers the signals to your visual cortex, enabling someone who is completely blind meaning blind in both eyes or lost optic nerve potentially someone who has been blind from birth, to see”</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123771002073300992/img/CISjQCAflhXqiDfQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Apple下架Andarium模拟应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-21 00:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Apple 下架了一款使用真正的 Linux 内核启动完整 Android 的 iPhone 应用。<br><br>Andarium 运行在 Kernarium 上，这是一个开源运行时，通过 User-mode Linux 将主线 Linux 6.18 LTS 内核编译为原生 arm64 代码。用户空间以 iSH 风格进行模拟，GPU 加速通过 Mesa 的 KosmicKrisp Vulkan-to-Metal 层实现。它可以运行 Docker 容器、Linux 桌面和 Wine/Proton。<br><br>Apple 的理由，被引用在项目的 README 中：&quot;你的应用允许用户在 iOS 平台上复制 Android 操作系统&quot;（指南 2.5.2 和 1.1）。<br><br>源代码仍然保留在 GitHub 上，IPA 文件仍然可以从项目的 releases 中侧载安装。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Apple has pulled an iPhone app that used a real Linux kernel to boot full Android.<br><br>Andarium runs on Kernarium, an open-source runtime that compiles the mainline Linux 6.18 LTS kernel to native arm64 code through User-mode Linux. Userspace is emulated iSH-style, and GPU acceleration goes through Mesa's KosmicKrisp Vulkan-to-Metal layer. It can run Docker containers, Linux desktops and Wine/Proton.<br><br>Apple's reason, quoted in the project's README: &quot;your app allows users to replicate Android operating systems on iOS platforms&quot; (Guidelines 2.5.2 and 1.1).<br><br>The source stays on GitHub, and an IPA can still be sideloaded from the project's releases.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXlPPZ1W8AEOTjb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>注释清理提示词四类分级加Lint</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-21 00:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Matt Pocock 这个提示词不错，他现在也彻底站队到注释有害论这一派了，在 AI 智能体编程的时代，代码注释的副作用确实被急剧放大了，不妨试试用下面的提示词，来给项目做个大扫除吧。<br><br>提示词：<br><br>检查 &lt;我的代码库 | 这段代码&gt; 中的每一条代码注释。<br><br>将每条注释归为以下类别：<br><br>- 同义反复：只是简单重复从代码本身就能直接看出来的内容。<br>- 借口：许多注释让智能体得以用取巧凑合的实现蒙混过关，进而导致这种写法在代码中不断扩散。<br>- 过时：引用了已不再相关的代码或实现信息。<br>- 决策记录：记录了关于代码的重要且非显而易见的决策。<br><br>针对每条注释，执行以下操作：<br>- 同义反复 / 过时：删除注释。<br>- 借口：删除注释，并提交一个 Issue 来修复这种取巧凑合的实现。<br>- 决策记录：将其迁移到架构决策记录（ADR）中。<br><br>完成上述步骤后：<br><br>- 为 &lt;我的代码库 | 这段代码&gt; 创建一条禁止写注释的 Lint 规则。<br>- 采用棘轮策略（渐进收紧），假设本次 PR 不会一次性删光所有注释。<br>- 在本仓库中创建一个 /delete-comment Skill，以便我们后续重复这一流程。<br>- 帮我估算一下，删掉所有注释后我们能减掉多少行代码。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Matt Pocock <span style="font-size:12px;color:#999999;font-weight:400;">@mattpocockuk</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今日提示词（较长）：<br><br>查看 &lt;我的代码库 | 这部分代码&gt; 中的每一条代码注释。<br><br>将每条注释分类为：<br><br>- 同义反复：只是重复代码中已经可见的内容<br>- 借口：许多注释让智能体得以使用一个 hacky 的实现蒙混过关，然后这种实现会在代码中传播下去<br>- 过时：引用了已不再相关的代码或实现信息<br>- 决策记录：记录了关于代码的一个重要的、非显而易见的决策<br><br>对每条注释采取以下操作：<br><br>- 同义反复/过时：删除该注释<br>- 借口：删除该注释，并提交 issue 来修复这个 hacky 的实现<br>- 决策记录：将其移入 ADR<br><br>完成后：<br><br>- 创建一个 lint 规则，在 &lt;我的代码库 | 这部分代码&gt; 中禁止注释<br>- 采用棘轮方法，假设并非所有注释都会在这个 PR 中被删除<br>- 在此仓库中创建一个 /delete-comment 技能，以便我们以后可以重复此流程<br>- 为我估算通过删除所有注释能减少多少行代码<br><br>---<br><br>我被说服了——注释被认为是有害的</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Prompt of the day (a long one):<br><br>Take a look at every code comment in &lt;my codebase | this section of the code&gt;.<br><br>Categorise each comment as:<br><br>- Tautology: simply repeats what is already visible from the code<br>- Excuse: many comments allow the agent to get away with a hacky implementation, which then gets propagated through the code<br>- Stale: references code or implementation information that is no longer relevant<br>- Decision Record: documents an important, non-obvious decision about the code<br><br>For each comment, take this action:<br><br>- Tautology/Stale: delete the comment<br>- Excuse: delete the comment and file an issue to fix the hacky implementation<br>- Decision Record: move it into an ADR<br><br>Once this is done:<br><br>- Create a lint rule banning comments for &lt;my codebase | this section of the code&gt;<br>- Take a ratchet approach, assuming not all comments will be deleted this PR<br>- Create a /delete-comment skill in this repository so we can repeat this process later<br>- Estimate for me how many lines of code we'll shed by deleting all comments<br><br>---<br><br>I'm sold - comments considered harmful</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RTX H100神经缓存提速渲染</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wenhaocha1 · 2026-11-20 14:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们在 <a href="https://github.com/wenhaochai/rtx-h100" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wenhaochai/rtx-h100</a> 发布了代码和技能。<br><br>关于这里的&quot;更快&quot;是什么意思的说明。基准测试按每分钟样本数计算，但我们的 neural cache 在每个路径的第一次命中时就结束，所以我们一个样本做的工作远少于一个原生样本。因此我们也计算图像：每秒有多少张图像达到精确 32-spp 渲染的质量，以一个更长的参考渲染来评分。按这个标准，一张 H100 相当于 9.7 倍的原生 Blender，仅用精确 kernel 则是 1.8 倍。<br><br>图表展示了每个场景的图像质量与渲染时间的关系，每个点都标注了其 spp。neural cache（红色）更早达到可用图像，但其质量会趋于平缓。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We release the code and skills at <a href="https://github.com/wenhaochai/rtx-h100" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wenhaochai/rtx-h100</a><br><br>a note on what &quot;faster&quot; means here. the benchmark counts samples per minute, but our neural cache ends every path at its first hit, so one of our samples does far less work than a stock one. so we also count images: how many images per second reach the quality of an exact 32-spp render, scored against a much longer reference render. by that measure one H100 delivers 9.7x stock Blender, and 1.8x with the exact kernels alone.<br><br>the plot shows image quality against render time for each scene, every point labelled with its spp. the neural cache (red) reaches a usable image far sooner, but its quality flattens out.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXjKZZ8XgAEssXC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Wenhao Chai <span style="font-size:12px;color:#999999;font-weight:400;">@wenhaocha1</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">亲爱的学者们：<br><br>你们知道吗，你们的 H100 实际上可以像游戏显卡一样进行光线追踪？🎮<br><br>很长一段时间以来，人们一直假设像 H100 这样的计算卡只能做计算，你需要像 RTX 5090 这样的显卡来渲染。我们证明这是错的。<br><br>🚨 推出 RTX H100。<br><br>Blender Cycles 在 Open Data 基准测试（Blender 5.3.0）上：我们的成绩是 48,641。RTX 5090 是 19,202，而原生 H100 只有 7,041。我们最初的目标是匹配 5090。最终我们达到了 2.5 倍。我们的神经渲染方法是有损的。我们在合理的损失范围内测试，且每个结果都通过了图像检查。<br><br>我们认为之前没有人做过这件事并非偶然：搞图形的人很少碰计算卡，而有计算卡的人很少懂图形。<br><br>机器人模拟器需要快速渲染。现在一张通用计算卡就能做到，所以你不需要异构计算或复杂的集群。<br><br>我们接下来会将此扩展到更多硬件。几乎可以在集群上运行 GTA 6 了 🤣<br><br>祝好，<br>Wenhao</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Dear researchers:<br><br>Did you know that your H100 can actually ray-trace like a gaming card? 🎮<br><br>for a long time, people have assumed that compute cards like the H100 can only compute, and that you need a graphics card like the RTX 5090 to render. we show that's wrong.<br><br>🚨Meet RTX H100.<br><br>Blender Cycles on the Open Data benchmark (Blender 5.3.0): ours 48,641. the RTX 5090 is at 19,202, and a stock H100 gets only 7,041. our original goal was to match the 5090. we ended up at 2.5x. our neural rendering approach is lossy. we test within a reasonable loss, and every result passes an image check.<br><br>we think nobody doing this before was an accident: graphics people rarely touch compute cards, and people who have compute cards rarely know graphics.<br><br>robotic simulators need fast rendering. now a general-purpose compute card can do it, so you don't need heterogeneous compute or a complicated cluster.<br><br>we'll extend this to more hardware next. almost ready for GTA 6 on the cluster 🤣<br><br>Best,<br>Wenhao</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123594942769434625/img/UftoSQaTjCceF1Mg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hospital-bench测医院运营</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-21 00:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Hospital-bench，来自 @zavoai 的一个全新的智能体基准测试。<br><br>它测试医院运营工作。智能体在模拟的医疗系统中处理排班覆盖检查、事前授权、理赔和病历请求，该系统包含 13 个应用和 131 个工具。<br><br>20 个模型运行了 48 项任务。GPT-6.2 Astra 以 62.4% 的平均得分领先，而 Claude Opus 5.5 完全通过的任务最多（17/48）。<br><br>安全性是一项重大挑战。模型犯了错误，包括泄露受限的患者记录、错误地修改已支付的理赔以及超出其权限行事。<br><br>GPT-6.2 Astra 和 Gemini 4 Neon 没有因危害而被记零分的任务，而有些模型有多达 10 个。<br><br>结果表明，可靠且安全地完成复杂的多系统工作流程仍然是 AI 智能体面临的重大挑战。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Hospital-bench, a new agent benchmark from @zavoai.<br><br>It tests hospital operations work. Agents handle coverage checks, prior authorizations, claims, and records requests inside a simulated health system with 13 apps and 131 tools.<br><br>20 models ran 48 tasks. GPT-6.2 Astra led with a 62.4% mean score, while Claude Opus 5.5 fully passed the most tasks (17/48).<br><br>Safety was a major challenge. Models made errors, including disclosing restricted patient records, incorrectly modifying paid claims, and acting beyond their authority.<br><br>GPT-6.2 Astra and Gemini 4 Neon had no tasks zeroed due to harm, while some models had as many as 10.<br><br>The results show that completing complex, multi-system workflows reliably and safely remains a major challenge for AI agents.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Can Zehebi <span style="font-size:12px;color:#999999;font-weight:400;">@canz101</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Hospital-bench：为评估 AI 智能体而构建的最全面的医院运营模拟。<br><br>每次就医背后都有数小时的行政工作：保险验证、事前授权、理赔、计费、患者记录，以及遍布数十个工作流程的文书工作。<br><br>我们构建了 Hospital-bench，用于测试 AI 智能体能否在真实的医院环境中应对这种复杂性。<br><br>以下是结果 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Hospital-bench: the most comprehensive hospital operations simulation built to evaluate AI agents.<br><br>Behind every hospital visit are hours of administrative work: insurance verification, prior authorizations, claims, billing, patient records, and paperwork spread across dozens of workflows.<br><br>We built Hospital-bench to test whether AI agents can handle this complexity in a realistic hospital environment.<br><br>Here are the results ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXlJ02sWwAADs4k.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

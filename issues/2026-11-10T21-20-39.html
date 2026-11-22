@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月11日 05:20">
+<title>AI技术雷达 · 11月11日 05:20 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Magpie 反代订阅供多 Agent 共用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Baseten 发布 264 页推理工程教材</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude Code 接免费模型供应商池</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;BB Box 为每个线程分配独立机器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Agent Loop 需要 Harness 兜底</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 反代订阅供多 Agent 共用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chasen_liao · 2026-11-10 23:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Magpie 真的是个很伟大的东西，还不会用的真的可惜了<br><br>介绍一下我的玩法：<br><br>1. 小号订了 Jio 的 Gemini Pro，在我的 VPS 上用 Magpie 把它反代出来<br>2. Magpie 只监听 Tailscale 内网地址，不开任何公网端口，等于一条私人局域网 API <br>3. 通过 CCW 接入本地的 Pi <br>4. Grok Bot 也接上了：Bot 只负责拆任务和验收，具体执行全部丢给 Pi，跑完用 webhook 把 Bot 叫醒来检查<br><br>最后的效果：<br>Gemini Pro 订阅 → Magpie 反代（VPS）→ Tailscale 内网 → Pi → Grok Bot<br><br>一份订阅额度，本地 agent 和 Grok Bot 一起用<br><br>Grok Bot 的额度只花在「想」和「验收」上，「干活」全走 Gemini 的额度，省了一大截<br><br>这个后面出一期详细教学😁</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Baseten 发布 264 页推理工程教材</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @baseten · 2026-09-29 02:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推理工程还没有教科书。于是我们写了一本。264页，免费PDF和有声书。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Inference engineering doesn't have a textbook yet. So we wrote one. 264 pages, free PDF and audiobook.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fable 5.2 为 Silo 挑出五缺陷</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @RonVonng · 2026-11-10 17:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Fable 5.2 确实很强大。老冯维护着开源对象存储 MinIO 的 Fork：pgsty/silo 。这两周经历了狂风暴雨般的 BUG/CVE 洗礼，终于在 Astra 和 Opus 5.5 轮流打铁挑刺都找不出问题之后，发了个新版本。结果今天 Fable 5.2 发布，又给我找出五个来。每次前沿模型一发布，老冯都能感觉到软件质量会有明显提升。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWwLl3_bAAAz7oJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 接免费模型供应商池</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-10 11:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">牛逼，这玩意儿太猛了！！<br><br>GitHub 上有个仓库，能让 Claude Code 接到免费模型上用。<br><br>请求会转到 DeepSeek、Kimi 等约 49 家免费供应商，号称每月合计约 13 亿免费 token。<br><br>五分钟就能配好<br><br>星标已超 4.6 万，很多开发者多在用。<br><br>仓库：<br><a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Alishahryar1/free-claude-code</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BB Box 为每个线程分配独立机器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @victoraremu · 2026-11-11 04:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我想分享一个改变了我工作方式的项目。<br><br>我的工作涉及桌面应用、移动应用、Web以及它们背后的后端。很长一段时间里，我的 agent 只能在它们运行的地方工作。如果某个变更需要检查 Windows 构建、在 iPhone 上试用应用，或者让后端在真实的 Linux 服务器上运行，那部分就回到了我手里。我启动虚拟机、打开模拟器、在机器之间复制东西。<br><br>于是我构建了 BB Box，一个 BB 插件，为每个线程提供一台电脑，叫做 box。一个线程可以拥有任意数量、任意类型的 box。<br><br>现在，线程会根据工作需要来申请：一个 Windows 桌面、一个 iOS Simulator 中的 iPhone、一个模拟器中的 Android 手机、一个用于后端的 Linux 服务器，或者一个用于 Xcode 构建的 macOS box。agent 几秒钟内就能获得它，在其中工作，完成后释放它。<br><br>box 从哪里来并不重要。我大多数的 box 运行在我的 Threadripper 开发机上，由 Proxmox VM、LXC 和一个 Mac Studio 集群驱动。当需要更多时，我从 <a href="http://boat.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://boat.dev</a> 或 Namespace（macOS VM）拉取相同的 box：相同的工具、相同的面板。<br><br>Agentic QA 是改变游戏规则的关键。我的 agent 不只是写代码。它们在应用发布的目标平台上运行应用，像人一样使用它：点遍 Windows 应用，点遍 iOS 和 Android 构建，以及在真实浏览器中操作 Web 应用。它们会录制每次测试运行的短片，并为每一步加上字幕，这样我不用问就能看到它们检查了什么。只在某个特定平台上出现的 bug 在我看到之前就被捕获了。<br><br>其他我每天依赖的功能：<br>- 我可以打开任何 box 的桌面，观察 agent，并接管控制。在我操作时 agent 会等待。<br><br>- 在执行有风险的变更之前，agent 会创建快照，我可以用撤销操作恢复它。<br><br>Monitor 在 BB 的侧边栏中显示所有 box 和机器。<br><br>- 将一个 box 添加为 BB 机器，用于超出线程生命周期的长时间模型训练运行，或用于我常驻的 agent。<br><br>使用 Box 文件浏览器来检查 agent 的工作成果。<br><br>真正的改变：我不再是我 agent 与我发布的平台之间的桥梁。<br><br>文档和快速入门：<a href="https://bbbox.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bbbox.dev</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I’d like to share a project that transformed the way I work.<br><br>My work spans desktop apps, mobile apps, web, and the backends behind them. For a long time, my agents could only work where they ran. If a change needed a Windows build checked, an app tried on an iPhone, or a backend run against a real Linux server, that part came back to me. I started VMs, booted simulators, and copied things between machines.<br><br>So I built BB Box, a BB plugin that gives each thread a computer, called a box. A thread can have multiple boxes of any kind.<br><br>Now a thread asks for what the work needs: a Windows desktop, an iPhone in the iOS Simulator, an Android phone in the emulator, a Linux server for the backend, or a macOS box for the Xcode build. The agent gets it in seconds, works in it, and releases it when it’s done.<br><br>It doesn’t matter where the box comes from. Most of mine run on my Threadripper devbox powered by Proxmox VMs, LXCs and a Mac Studio Cluster. When I need more, I pull the same boxes from <a href="http://boat.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://boat.dev</a> or Namespace (macOS VMs): same tools, same panel.<br><br>Agentic QA has been the game changer. My agents don’t just write the code. They run the app on the platform it ships to and use it like a person would: click through the Windows app, tap through the iOS and Android builds, and drive the web app in a real browser. They record short clips of each test run, with every step captioned, so I can see what they checked without asking. Bugs that only show up on one platform get caught before I ever look.<br><br>Other things I rely on daily:<br>- I can open any box’s desktop, watch the agent, and take control. It waits while I have it.<br><br>- Before a risky change, the agent takes a snapshot, and I can restore it with an undo.<br><br>The Monitor shows every box and machine in BB’s sidebar.<br><br>- Add a box as a BB machine for long model training runs that outlive a thread’s lifetime or for my always-on agent.<br><br>Use the Box file explorer to inspect the agent’s work.<br><br>The real change: I stopped being the bridge between my agents and the platforms I ship to.<br><br>Docs and quick start: <a href="https://bbbox.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bbbox.dev</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120250069685260288/img/uLfDlDX66oGb5c1Z.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Loop 需要 Harness 兜底</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @it_works_123 · 2026-11-10 22:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写 Pi Bot的时候，发现很多人对 Agent Loop 有误解。<br><br>以为 Agent 就是一个 while(true)，不停调用大模型。<br><br>实际上，每轮模型会根据上下文决定：直接回答，还是调用工具。<br><br>如果调用工具，程序执行后把结果送回模型，再进入下一轮。<br><br>听起来很简单，直到你开始考虑：<br><br>工具失败怎么办？模型不返回怎么办？用户中途插话怎么办？任务什么时候结束？<br><br>普通 while 循环只需要判断条件。<br><br>Agent Loop 还得判断模型是不是在认真干活。<br><br>这下知道为什么 Agent 需要 Harness 了吧<br><br>模型负责决定下一步做什么，Harness 负责防止它把下一步变成下辈子</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月16日 11:25">
+<title>AI技术雷达 · 11月16日 11:25 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Grok Bot单月产出1.1万PR</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Pi Durable组装常驻Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Jane Street开源苏格拉底导师</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;test-value清理废测试提速单测</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Gemini-4拆碎Context破猜想</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot单月产出1.1万PR</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @JangXiin · 2026-11-15 13:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">土豆姐是一直在默默发干货的，这期主要在讲AI Coding工程化的核心，可以简单总结为4点:<br><br>1. 代码库即记忆：9 月留一个 setTimeout 补丁，10 月 AI 能给你复制出 183 处<br><br>2. 规则大于提示词：禁用易错 API，砍掉 98% 注释，人工纠错全沉淀为静态检查<br><br>3. 自产自验：配 CLI + DevTools 让 Agent 自己调试，复杂逻辑上 TLA+ / Lean / Fuzzing<br><br>4. 先内后外：内层质量闭环后，再让 Grok Bot 无人审查自动合并<br><br>这套打法的结果就是单月 1.1 万 PR，冷启动提速 38%</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我的 AIE 演讲上线了！来听听 grok @bot 团队如何在不妥协质量的情况下快速发布<br><br><a href="https://youtu.be/O_zcc6Xl12g" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/O_zcc6Xl12g</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">my AIE talk is up! come hear how the grok @bot team ships so quickly without compromise on quality<br><br><a href="https://youtu.be/O_zcc6Xl12g" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtu.be/O_zcc6Xl12g</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable组装常驻Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @verysmallwoods · 2026-11-16 00:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">结合这篇文章，整理了一套用 Pi Durable + Pi AI SDK 组装 always-on Agent 的架构。<br><br>Agent 平时等待，收到消息、Webhook 或定时事件后唤醒，推进任务、保存进度，再决定何时继续，以及是否通知用户。<br><br>各个组件可以这样组合：<br>- Conversation 保存讨论，Submission 接收输入，用稳定 requestId 关联重复请求。<br>- Harness 调度 GenerationTask 和 ToolTask，完成模型生成、工具调用与后续执行。<br>- Durable Storage 保存历史、检查点和结果，进程重启后重新打开存储并恢复。<br>- Pi AI SDK 统一接入模型服务。<br><br>应用层负责事件收件箱、长期任务、记忆、审批和通知；定时唤醒可结合持久任务实现，周期规则由应用管理。外部操作还需要幂等或结果核对。<br><br>配图分三层：全局架构、主动调度循环、可恢复执行核心。<br><br>或许我会尝试在 ChatOllama 中实现一下。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XQAABmiN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-0XAAAi3zB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLjC-9XAAACF_S.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">九原客 <span style="font-size:12px;color:#999999;font-weight:400;">@9hills</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Claude 这个 Building Always on Agents，实际是 Personal Agent的最基本的设计模式。<br><br>之前在 raft build 上就看到类似的设计。<br><br><a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-always-on-agents</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMHILbwAAi74g.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGMMgzbYAA_Pkn.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jane Street开源苏格拉底导师</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 10:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在几乎所有公司都在教员工怎么用 AI 一键生成现成答案的时候，华尔街最赚钱、技术品味也最硬核的量化交易巨头 Jane Street 反手在 GitHub 上开源了他们内部的 janestreet/agent_skills 仓库，其中冲上 HN 榜首（712 分）的技能叫 Socratic Tutor（苏格拉底式导师）。<br><br>点开这份只有几百行的 SKILL.md，你能看到顶级工程团队对“AI 让人脑退化”这件事有多警惕。它给大模型立下了几条极其严苛的铁律：<br><br>只要你对它说出 teach me、quiz me 或 drill me，它被绝对禁止直接给你讲课或甩出长篇解释。它必须先拆出 4 到 10 个子技能树，每次只问你一个问题，连摸底带追问，把你在每个子技能上的真实水平钉死在 0 到 5 级（0 级是闻所未闻，3 级是在提示下能做对，5 级是不靠任何提示且隔轮复习依然对答如流）。<br><br>在教学循环里，哪怕你答错了，它也不准直接告诉你正确答案，而是必须顺着你的错误推理反问一句：如果按你说的这样，那当边界条件变成 X 时会发生什么？ 逼你自己推导出矛盾点。直到连续两轮卡死，它才允许给一个最小化的脚手架提示，而且一旦给过提示，这道题就绝不算你掌握（最高只能记 3 级）。在随手一问就能拿到几千字总结的今天，这种故意给大脑制造阻力、逼人自己走完推导闭环的提示词设计，反而成了最稀缺的工程资产。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLmZjTaMAA_8cg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie反代调GLM触发风控封号</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zg0820 · 2026-11-15 23:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">反代智谱一封一个准！<br>Magpie反代调用GLM-5.3-Flash直接触发风控封号  <br><br>圈内已出现批量踩坑案例：通过Magpie反代调用智谱GLM-5.3-Flash时，接口直接返回405错误，错误码3012，官方判定原因为“异常行为导致请求被拦截”  该封禁为账号级风控，命中后ZCode官方App内同步失效，不会自动解除，唯一解封渠道只有联系官方客服申诉  <br><br>特别提醒：别拿自己的付费订阅账号赌风控，GLM风控下手极狠，反代调用基本一封一个准，号封了订阅直接打水漂</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>test-value清理废测试提速单测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @t20000622yy · 2026-11-15 17:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天被开发跑测试和 CI 的速度折磨得实在受不了了。改两行代码，本地跑个测试干等半天，推上去 CI 动不动跑全量，写代码五分钟、看进度条半小时……<br><br>忍无可忍顺着耗时扒了一遍，全是 AI 攒下来的无效测试：有拿 grep 源码充当测试的，有测几条参数规则在循环里串行冷启动几十次 node 和 git init 的。最离谱的是个工作区测试，起服务才 13ms、关库 2ms，结果 server.close() 在那傻等 3.47 秒，就因为挂载时顺手发了个查新版本的请求没关干净 😅<br><br>把废测试和闲杂请求一清，快慢测试拆池跑完，本机单测直接从 39s 干到 8.8s，Web 测试从 200s 降到 68s，CI 也不瞎跑全量了；效率一下子高太多了<br><br>我写了个叫 test-value 的开源 skill 来治这种慢测试和废断言，刚把这次踩的新坑也塞进去了：<br><a href="https://github.com/tt-a1i/test-value" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tt-a1i/test-value</a><br>最近也被测试和 CI 慢得想砸键盘的朋友可以试试</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>梁文峰：华为四卡对标英伟达GB300</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hhp121222 · 2026-11-15 22:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek创始人梁文峰在闭门会议上对华为与英伟达的直白对比令人印象深刻。<br><br>首先，梁表示DeepSeek在V3时期就停止依赖英伟达的软件栈，开发了自己的高级编译器（TileLang），并补充道：“只要我们在华为显卡上重复这个过程，任务就完成了，在这方面，我认为英伟达是在自掘坟墓。”<br><br>然后他给出了华为新款950 Supernode与英伟达GB200和GB300的硬件比例：“GB300能做的事，华为的超级节点也能做到，延迟是一样的，唯一的代价是四张华为显卡替换了一张英伟达显卡。”</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini-4拆碎Context破猜想</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-15 12:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">别再迷信什么“百万 Context Window”能解决一切长周期任务了。<br>Google 刚刚用 Gemini-4 搞出了 5000 万行 零人工干预的 Lean 4 代码，彻底证完了悬而未决 13 年的 Courtade–Kumar 猜想。<br>但最讽刺的是：它的核心秘诀不是把上下文塞满，而是彻底拆碎 Context 🧵👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXF4ssKbEAE_YEz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

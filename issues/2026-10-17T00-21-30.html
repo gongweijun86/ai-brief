@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月17日 08:21">
+<title>AI技术雷达 · 10月17日 08:21 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Datadog Scout 运维排障模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude 代码审查按风险分级</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude 逆推 NIST 曲线种子</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Muse Spark 816B 桌面部署</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;LinkSwift 支持九大网盘直链</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Datadog Scout 运维排障模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xLogicrw · 2026-10-16 23:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">美国监控软件公司 Datadog 推出首款专用运维模型 Scout 1.0，底座采用智谱开源的 GLM-5.3 Flash。<br><br>它专门负责排查线上系统故障，可以查询日志、监控指标和服务调用链，逐步找出故障根因。<br><br>Datadog 利用真实事故和监控数据搭建模拟环境，再通过强化学习训练模型，让它学会排除错误线索，用证据支持诊断结论。<br><br>在公开基准 SREGym 的 90 项故障排查任务中，Datadog 自测 Scout 最高推理档完成了 80 项诊断及修复，与 GPT-6 Astra xhigh 同分，仅比 GPT-6.1 Sol xhigh 少 2 项。原版 GLM-5.3 Flash 完成了 66 项。<br><br>在 Datadog 内部的 AlertEval 评测中，Scout 中档的诊断质量接近 GPT-6.1 Sol high 和 Claude Opus 5.5 high，估算推理成本却低了 3 至 8 倍。与 GPT-6 Astra medium 相比，成本低约 19 倍。<br><br>Scout 已接入 Datadog 的 Bits Investigation，目前仅向少量客户开放封闭预览。现阶段主要负责查明故障原因并提出恢复建议，自动执行修复仍是后续研发目标。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Datadog, Inc. <span style="font-size:12px;color:#999999;font-weight:400;">@datadoghq</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">向大家介绍 Scout 1.0，我们首个专为调查生产事故而打造的 AI 模型。<br><br>Scout 以极小的成本达到前沿模型的调查质量，使得能够更早、更广泛地调查更多问题成为可能。<br><br>我们使用基于真实事故和生产遥测数据构建的逼真模拟环境来训练 Scout，通过强化学习来奖励有证据支撑的准确根本原因。<br><br>了解更多并注册预览：<a href="https://bit.ly/3TJknGO" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/3TJknGO</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Meet Scout 1.0, our first AI model built for investigating production incidents. <br><br>Scout matches frontier-model investigation quality at a fraction of the cost, which makes it practical to investigate more issues, earlier.<br><br>We trained Scout on realistic simulations built from real-world incidents and production telemetry, using reinforcement learning to reward accurate root causes backed by evidence.<br><br>Learn more and sign up for the preview: <a href="https://bit.ly/3TJknGO" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/3TJknGO</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110750876235190272/img/PgTaFQrayRWWDWaq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 代码审查按风险分级</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dongxi_nlp · 2026-10-17 05:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐阅读，Anthropic 如何做 Code Review！<br><br>1. 保留 code review，但大部分审核交给机器，人的时间只花在高风险判断上，同时让出错后能快速回滚。<br><br>2. 提 PR 前：Claude 自己跑测试和构建，再由一个新开的 agent 审一遍 diff。<br><br>3. 每个 PR：AI 多 agent 找 bug，投票过滤掉误报，再加一轮安全审查和 CI。每条发现都必须处理，否则不能合并。<br><br>4. 人工审批按风险分级：低风险 0 人，中风险 1 人，高风险 2 人，由分类器判定。bot 的批准不能替代人，驱动 agent 的人对改动负责。<br><br>5. 上线：合并队列、feature flag、先内部使用再灰度发布，出问题一键回滚。<br><br>6. 持续改进：历史事故整理成每日 eval，用来评估 reviewer。审查轮数设上限，避免 agent 之间无限互审。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude 编写了 Claude Code 大约 90% 的代码。<br><br>从六月到九月，合并的 PR 数量增加了一倍以上，而回退（revert）的比例下降了超过 40%。<br><br>我们撰写了关于如何改变代码审查来实现这一目标的文章，以及如何采用这种方法：<br><br><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/solving-code-review-at-anthropic/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude writes about 90% of Claude Code's code.<br><br>From June to September, merged PRs more than doubled while the share reverted fell by more than 40%.<br><br>We wrote about how we changed code review to get there, and how to adopt it:<br><br><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/solving-code-review-at-anthropic/</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 逆推 NIST 曲线种子</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ScarletKc · 2026-10-17 04:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 发了一篇很好玩的文章。NIST P-256 这些椭圆曲线的 seed 到底是怎么来的，密码学圈猜了二十多年，结果 Claude 不到半小时就算出来了。答案是用 Unix 时间戳初始化 C 库自带的随机数生成器跑出来的。更好玩的是它算出来之后的第一反应，居然是怀疑自己是不是在测试环境里。<br><br>2000 年 NIST 把这几条曲线写进 ECDSA 标准，曲线的系数由一个 seed 哈希得到，而 seed 是 NSA 给的，没有任何说明。所以一直有人怀疑里面藏了后门，Filippo Valsorda 还专门挂了悬赏。唯一的线索来自 NSA 的 Jerry Solinas，他说 seed 好像是一句玩笑话的哈希，类似 Give Bob and Jerry a raise，但细节他自己也记不清了。他 2023 年去世之后，这事基本就没人能问了。<br><br>Anthropic 有好几个员工照着这条线索找过，都没找到，因为线索本身就是错的。这次有人直接问内部的研究模型能不能查出来，也没提这条线索。Claude 换了个思路，去猜 90 年代生成曲线的程序是怎么写的，判断它大概用了当时 C 库自带的 PRNG。这种老 PRNG 很弱，输出能被认出来。<br><br>它先注意到 4 个 binary 曲线的 seed 按 32 位切开后，每一段的最高位都是 0。这正是 lrand48 的特征。lrand48 每次只输出 48 位内部状态里的高 31 位，所以最高位永远是 0。剩下 17 位直接暴力枚举，内部状态就恢复出来了。prime 曲线的 seed 每次只取 lrand48 输出的一个字节，能看到的位更少，就当成格问题用 LLL 解出来。<br><br>lrand48 往回推跟往前推一样容易。Claude 把状态一路倒推回 srand48 刚初始化时的样子。NIST 和 ANSI X9.62 里一共 10 个 prime 曲线 seed，初始值全是 1997 年 5 月到 1998 年 4 月之间的 Unix 时间戳。比如 P-256，就是从 1997-08-16 01:52:34（UTC）开始跑，取的第 1842 个候选。<br><br>4 条 binary 曲线更好笑，倒推出来的时间是 1984 年 2 月。把时间戳乘以 2，就变成 1998 年 4 月 17 日，刚好在 P-224 那次运行的两周后。所以当年的程序很可能是先把时间除以 2，再拿去当种子。<br><br>我觉得最有意思的是 Claude 接下来的思考。它先是很激动，觉得自己解开了一个 25 年的悬案，然后马上停下来怀疑，自己是不是在某种模拟或测试环境里。<br><br>于是它开始找证据。算出来的 seed 跟它记忆里的真实值对得上，在它的知识里这个悬赏一直没人解开。而且 20 个最高位全是 0 这种事，碰巧发生的概率大概百万分之一。到这里它才确认这是真实世界，说了句哇，这是真的发现。<br><br>然后它又怀疑了一次，这么明显的东西 25 年都没人发现，是不是有点可疑？最后还是靠直接计算说服了自己。一个 32 位的时间戳加一个很小的序号，就能完整算出 160 位的 seed。10 条曲线全部对上，不可能是巧合。<br><br>这件事对 ECDSA 的安全性没有影响，反而让后门的说法可信度低了很多。seed 就是普通随机数生成器拿时钟初始化跑出来的，现在谁都能复现，能动手脚的空间很小。悬赏的 36864 美元会捐给 Let’s Encrypt 背后的 ISRG。<br><br>原文还附了能直接复现所有 seed 的 Python 代码，感兴趣可以自己跑一下</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUxztj4boAAnW5l.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Muse Spark 816B 桌面部署</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @my189 · 2026-10-16 06:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">扎克伯格（@finkd）刚刚晒出自己的办公桌：<br><br>没有天价 H200 机柜，只用两台并排的新款 Mac Studio，<br><br>就在本地跑起了今天刚开源的 816B 旗舰大模型 <br><br>Muse Spark Open<br><br>苹果 CEO John Ternus（@johnternus）也在评论区互动，短短几小时浏览量破百万。<br><br>816B 总参数、42B 激活参数，靠 MoE 稀疏架构和苹果统一内存，让桌面设备也有机会挑战超大模型。<br><br>硬件门槛、部署命令、避坑指南，一文看懂。<br><br>一、硬件门槛<br><br>1TB 内存：双 Mac Studio，MLX oQ4e，约 476GB 权重<br><br>512GB 内存：单台 Mac Studio，MLX oQ3e，约 340GB 权重<br><br>256GB 内存：Unsloth UD-Q2_K_XL 或 GGUF Q2_K，约 210GB 权重<br><br>700GB 以上显存：4×B200 或 8×H200，部署 NVFP4 版本<br><br>以上为原方案中的估算值，实际需求取决于模型版本、运行框架和上下文长度。<br><br>二、一键部署<br><br>Mac 单机：<br><br>uv tool install mlx-lm<br>mlx_lm.server --model &quot;mlx-community/Muse-Spark-Open-816B-A42B-oQ3e&quot; --port 8080<br><br>256GB 工作站：<br>llama serve -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q2_K<br><br>企业级 GPU：<br><br>VLLM_USE_RUST_FRONTEND=1 vllm serve meta-models/Muse-Spark-Open-816B-A42B-NVFP4 \<br>  --tensor-parallel-size 4 --enable-expert-parallel --max-model-len 1048576<br><br>运行前请确认模型仓库、权重格式、框架版本及启动参数均真实可用。<br><br>三、三个关键注意事项<br>采样参数：原方案建议 temperature=1.0、top_p=1.0，关闭 top_k，具体应以模型官方配置为准。<br><br>推理强度：确认框架支持的 reasoning_effort 参数后，再选择适合任务的推理等级。<br><br>多模态：图像、视频和音频的输入规格应以模型实际支持的配置为准。<br><br>从大型 GPU 集群到桌面工作站，超大模型的本地部署正在拓展更多可能。<br><br>你的主力机有多少内存？256GB、512GB，还是准备挑战双 Mac Studio？<br><br>欢迎评论区晒配置、交流部署经验。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Mark Zuckerberg <span style="font-size:12px;color:#999999;font-weight:400;">@finkd</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Muse Spark Open -- 权重今天发布 -- 得益于与 @johnternus 和 Apple 的合作，在新款 Mac Studio 上运行效果出色。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Muse Spark Open -- weights releasing today -- runs great on new Mac Studios thanks to work with @johnternus and Apple. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUr9XldXIAAPeX3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LinkSwift 支持九大网盘直链</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-17 08:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">⬇️ 下载党的宝藏工具 LinkSwift，能把九大网盘里的文件掏出直链，拿自己的下载器满速拖回来。<br><br>GitHub 上 2.3 万 star，还被 Trendshift 收录，是那种一直有人在用的老项目。<br><br>网盘下载这事多磨人你肯定懂：浏览器里点一下，要么被劝着装客户端，要么限速到几十 K，一个大文件挂一晚上还没完。LinkSwift 是个装在篡改猴里的浏览器脚本，打开网盘页面选好文件，它去取公开接口给出的下载地址，你把地址丢给 Aria2、Motrix 这类下载工具，剩下的交给下载器自己跑。<br><br>覆盖面铺得挺全，百度、阿里云盘、夸克、UC、迅雷、天翼、移动云盘、123 云盘这些都在里面，Windows、Mac、Linux、Android 上的 Chrome 或 Edge 都能用。从 2022 年八月一路更新到今年九月，网盘页面改版它就跟着适配，这种脚本最怕的就是作者跑了。<br><br>它脱胎于当年油小猴那个「网盘直链下载助手」，作者 hmjz100 在原项目基础上接着改。项目也写明了，链接走的是网盘服务商公开的接口，没做任何破解限速的事。<br><br>工具本身是中立的，下自己有权限的文件没问题，拿它去碰别人的东西，那是使用者自己的事。<br><br>GitHub：<a href="https://github.com/hmjz100/LinkSwift" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/hmjz100/LinkSwift</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ilya 书单 30 篇论文复现开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-16 12:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 前首席科学家 Ilya Sutskever 曾给传奇程序员 John Carmack 开过一份神秘书单。<br><br>Ilya 说：“如果你真正吃透这 30 篇论文，你就掌握了如今 AI 领域 90% 的精髓。”<br><br>但纯啃英文 PDF 和数学公式太反人类了。最近有位硬核小哥用 30 天时间，把这 30 篇神作全部手搓复现成了极简 Python 代码，并完整开源！<br><br>想从底层彻底看懂现代 AI？这个宝藏项目建议先马后看 🧵👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUrgQYmasAA_u3K.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Apate.ai 用 AI 拖住诈骗犯</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @momoai_daily · 2026-10-16 19:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽笑死我了，这家公司建议立刻引进国内！！<br><br>澳大利亚有家叫 <a href="http://Apate.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Apate.ai</a> 的公司，专门干一件事： 让几千万个AI假扮大爷大妈主动被骗子骗....<br><br>他们部署了大约35万个AI机器人，这些AI会假装成各种人，尤其是容易上当的大爷大妈，全天候接诈骗电话、回钓鱼短信、混进骗子群聊。<br><br>它们的唯一任务就是：装傻、唠嗑、拖时间，然后套出骗子的银行卡号、加密钱包和假网站，最后打包卖给银行和电信公司做封杀。<br><br>目前已经跑了250多万次对话，硬生生浪费了骗子 17 年 的青春，甚至这家公司8月就拿了815万美元的种子轮融资，准备全球扩张.........</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

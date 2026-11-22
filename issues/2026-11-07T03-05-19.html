@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月7日 11:05">
+<title>AI技术雷达 · 11月7日 11:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;vczh用正反例约束Codex大项目</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude用宝可梦测Agent记忆策略</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Runner管理多Coding Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Kimi占美国企业开源AI支出61%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;BUI抽出Blender内核18MB内存</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>vczh用正反例约束Codex大项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LanzhiAI · 2026-11-06 14:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用 Codex 写大项目最让人抓狂的，就是它动不动过度设计，甚至顺手把你底层的核心依赖全给改了。<br><br>知名开发者 vczh（轮子哥）公开了他给 Codex 写的代码规范配置。不少人总抱怨模型写出来的东西像玩具、代码过度封装，他拿自己 GacUI 的长期实践给出了另一套思路。<br><br>核心就两件事：正反例和死规矩。<br><br>提要求必须同时给正面和反面例子。光跟模型说要简洁根本没用，它只能按概率去猜，必须把哪种写法算坏味道、哪种算达标白纸黑字写进规则文件。<br><br>更关键的是把边界锁死。他在规范里明确划定了哪些依赖目录和导入文件夹绝对只读、严禁改动；如果自动生成的代码报错，模型必须去排查生成器的根因，绝不允许自作聪明去修生成出来的临时文件；修改依赖、更新生成文件和单测快照，也都被强制要求拆成独立的提交。<br><br>想参考的可以去 GitHub 搜 vczh-libraries 里的 GacUI 或 Release 仓库，在 Guidelines 目录底下就能翻到这两份文件。<br><br>很多人总把给 AI 写规则当成文学创作，指望说两句好话就能约束它。但在大型项目里，模型不越界的前提是你给它立一份严苛的工程契约。不给正反例、不划清禁区，它自然会在你的代码库里到处脱缰。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWa-cpZaQAA32MV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI压测找出1024位RSA两处弱点</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dustADD · 2026-11-07 10:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">旧加密还能跑，账只是没到期。<br><br>AI 压测在老旧的 1024 位 RSA 中找出两处弱点。独立开发时我会先查依赖和证书里有没有旧配置；等出事再迁移，修的就不止一行代码了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google DeepMind <span style="font-size:12px;color:#999999;font-weight:400;">@GoogleDeepMind</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在分享一项新研究，展示AI智能体如何加速加密压力测试的科学研究。<br>在人类指导下，我们的模型在传统1024位RSA密码系统中发现了两个主要弱点。<br>我们的科学副总裁 @Pushmeet 详细解释了更多内容 ↓ <a href="https://x.com/pushmeet/status/2118752095859794390" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/pushmeet/status/2118752095859794390</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.<br><br>Guided by humans, our models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems.<br><br>Our VP Science @Pushmeet explains more ↓ <a href="https://x.com/pushmeet/status/2118752095859794390" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/pushmeet/status/2118752095859794390</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude用宝可梦测Agent记忆策略</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-11-07 07:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">细品Anthropic 今天的工程博客《The components of agent memory》<br><br>Anthropic 今天这篇讲 Claude 记忆的文章，把&quot;记忆&quot;这个大词拆成了三件能动手的部分：<br>记什么、<br>什么时候整理、<br>整理成什么样。<br><br>让 Claude 玩宝可梦红版，Sonnet 3.7 写了 413 个记忆文件、225 个文件夹，只拿到 1 个徽章；<br>Fable 5 只写了 9 个文件、2 个文件夹，外加一个总纲文件，拿了 4 个徽章。<br>记得多，不等于记得好。<br><br>整篇文章可以压成一条链：经历 -&gt; 笔记 -&gt; 做梦 -&gt; 下次更好。<br><br>记什么。Sonnet 3.7 什么都记，每场战斗、每个道具、每个 NPC 都记，记录很快就过时了。一万步左右，它 17 步里新建 6 个文件、删了 9 个，游戏一步没动。Fable 5 记的是策略和规则，比如连续 3 个球没抓到就换抓球节奏。Opus 5.5 更省，只用一个小文件夹跟踪目标和下一步，直接通关了。Anthropic 的说法是，写下一条规则，就是预测这个模式以后还会出现。记的不是事实，是下次能用的判断。<br><br>做梦。灵感来自海马体：睡眠时大脑重放经历，把短期记忆固化成长期的。Claude 在两次交互之间的空闲时间里做同样的事，Anthropic 叫它&quot;dreaming&quot;，用的算力叫&quot;sleep-time compute&quot;。做梦能改错、写新笔记、搭出更好的记忆结构。宝可梦里有个现成的例子：Claude 记错了宝可梦中心在月见山东边，认定月见山已经打完了，结果从单向悬崖掉了三次，怎么也到不了华蓝市。做梦时它拿笔记对照会话记录，把错改过来，重新进洞，这次到了。<br><br>整理成什么样。Anthropic 试了把笔记整理成 wiki。Stainless 的 35 万份内部文档，约 4.2 亿 token，做了 128 次做梦，25 道题的得分从 13% 涨到 48%。搜索加 wiki 从 54% 涨到 61%，单搜 53%，每题省约 2 万 token。Harvey 的法律基准上，24 道并购题，wiki 是 87%，单搜 73%。但也有边界：单文档的任务基本没提升，有一次 wiki 长得比原文还大，Anthropic 自己拿 Borges 的梗自嘲了一句。<br><br>还有两个细节值得留意。只让 Claude 记失败，它反而丢掉了记忆带来的大部分提升；提醒 Sonnet 4.6 先读记忆再回答、验证自己的理论，分数几乎翻倍。Sonnet 5 十次里有九次会主动先读记忆，Sonnet 4.6 不到一半。顺带一提，Claude Code 的自动记忆只读 MEMORY.md 前 200 行或 25 KB 当索引头，写多了反而没人读。<br><br>简单总结一下就是，Anthropic 这篇讲的其实是一件事：记忆拼的不是数量，是判断和整理。什么时候该记、记了怎么保持更新，他们也承认还没解决，这篇更像是一份进行中的工程笔记，而不是定论。<br><br><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/components-of-agent-memory</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Runner管理多Coding Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @meow2149 · 2026-11-06 17:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">每天介绍一个开发者工具，今天是 Runner。<br><br>Runner 是一款开源的多 Agent 协作工具，可以将 Claude Code、Codex、OpenCode 等独立运行的 Coding Agent 组织成一个团队，让它们围绕同一个开发任务分工、通信和协作。<br><br>例如，让 Claude Code 负责实现功能，Codex 负责代码审查，OpenCode 负责测试验证。每个 Agent 保留原来的终端、模型和工具，通过消息完成任务交接，需要人工决策时再向用户提问。<br><br>Runner 由开发者 @yicheng47 开发，使用 Rust 构建，基于 GPUI 实现原生桌面界面，采用 MIT 协议开源。<br><br>截至目前，最新正式版为 v0.19.4，支持 macOS、Windows，Linux 目前处于 Beta 阶段。<br><br>一、Runner 支持哪些功能？<br><br>1. 多 Agent 统一管理<br><br>支持 Claude Code、Codex、OpenCode v2、GitHub Copilot CLI、pi、Cursor、Grok Build、Antigravity CLI 等 Agent。<br><br>每个 Agent 都运行在独立的真实终端中，保留自己的 TUI、登录状态、对话历史和工具能力。<br><br>可以在一个窗口中分屏运行多个 Agent，也支持多标签页、多窗口管理，以及会话状态查看。<br><br>2. Role、Crew 和 Mission<br><br>Runner 使用四个概念组织 Agent 协作：<br><br>▪︎ Role：可复用的 Agent 角色配置，包含运行时、模型、职责提示词等。<br><br>▪︎ Crew：团队模板，将多个 Role 组合起来，并配置团队成员之间的协作约定。<br><br>▪︎ Mission：一次实际执行的任务，包含共同目标、工作目录、成员和消息记录。<br><br>▪︎ Session：每个成员实际运行的 Agent 进程与终端。<br><br>整体关系：<br><br>Role → Crew → Mission → Sessions<br><br>例如，创建一个开发团队：<br><br>▪︎ @coder：Claude Code，负责实现功能<br>▪︎ @reviewer：Codex，负责审查代码<br>▪︎ @qa：OpenCode，负责测试验证<br><br>启动 Mission 后，三个成员会分别收到共同目标和各自的职责指令。<br><br>Coder 完成代码后，可以给 Reviewer 发送消息，请它审查修改。Reviewer 发现问题后再反馈给 Coder，修复完成后继续交给 QA 测试。<br><br>Runner 不要求固定的队长，成员可以直接通信。具体分工和交接由角色提示词、团队约定和消息驱动。<br><br>运行过程中也可以动态增加、移除成员，不需要重新创建 Crew。<br><br>3. Agent 之间直接通信<br><br>Runner 提供共享 Mission Feed 和成员收件箱。<br><br>Agent 可以通过 CLI 向指定成员发送消息、向整个团队广播，或者查看其他成员的反馈。<br><br>例如：<br><br>`runner msg post --to reviewer &quot;请检查刚才修改的代码&quot;`<br><br>Reviewer 收到收件箱通知后，可以通过 `runner msg read` 读取消息正文。<br><br>每个 Agent 独立执行任务，通过持久消息实现协作，而不是简单地将同一条 Prompt 同时发送给多个模型。<br><br>4. 人工决策与任务回报<br><br>Agent 遇到需要人工决定的问题，可以通过 `runner ask --human` 发起提问。<br><br>问题会出现在 Mission Feed 中，用户选择答案后，回答会保存并送回原来的 Agent。<br><br>Runner 还支持将 Mission 关联到一个普通 Agent Chat。<br><br>当 Mission 需要人工处理、执行失败、因后台服务 runnerd 重启而丢失成员正在执行的一轮，或者进入 Settled 状态时，Runner 会向关联 Chat 汇报相应状态。<br><br>Chat 中的 Agent 可以进一步读取任务详情，向用户说明任务情况。<br><br>5. 后台运行与会话恢复<br><br>Runner 支持关闭桌面窗口后继续运行 Agent。<br><br>选择 Keep running 时，后台服务 runnerd 会继续管理 Agent 进程和终端。<br><br>重新打开 App，可以接回原来正在运行的会话。<br><br>如果 Agent 已经停止，也可以通过 Resume 尝试恢复原来的对话，而不必重新开始。<br><br>6. 远程控制<br><br>Runner 支持从另一台电脑远程访问正在运行 Agent 的主机。<br><br>通过 PIN 配对和端到端加密连接，可以查看远程终端、启动任务、发送指令，以及处理需要人工确认的问题。<br><br>Agent 和项目代码仍然保留在目标电脑上。<br><br>目前远程控制处于邀请内测阶段，仅向中国大陆受邀用户开放。<br><br>7. CLI 与脚本集成<br><br>除了桌面 UI，Runner 还提供 runner CLI。<br><br>开发者、脚本或其他 Agent 可以通过命令创建会话、启动 Mission、查看任务状态、发送消息和获取执行结果。<br><br>Runner 的任务管理能力既可以通过图形界面操作，也可以通过命令行调用。<br><br>二、Runner 的底层架构<br><br>结合官方仓库的源码和技术文档，Runner 主要由以下模块组成：<br><br>1. Runner App<br><br>采用 Rust + GPUI 构建原生界面，负责窗口、终端展示、Feed、用户交互和状态更新。<br><br>终端底层使用 alacritty_terminal 管理终端网格，再由 GPUI 完成绘制。<br><br>2. runnerd<br><br>独立运行的后台服务，负责管理 Agent 进程、PTY 终端、会话生命周期、任务状态、消息路由和持久化数据。<br><br>桌面 App 与 runner CLI 通过本地 IPC 和 runnerd 通信。<br><br>3. SessionManager + PtyRuntime<br><br>负责启动、停止和恢复 Agent，通过 PTY 与真实 CLI 程序交互。<br><br>Claude Code、Codex、OpenCode 等仍然运行自己的程序，Runner 不接管它们内部的模型调用和工具执行循环。<br><br>4. Runtime Adapters<br><br>处理不同 Agent 的启动参数、状态判断和恢复方式。<br><br>适配层负责处理运行时差异，不会把所有 Agent 转换为同一种模型 API。<br><br>5. AppCore + SQLite<br><br>保存 Role、Crew、Mission、Session 等配置和运行元数据。<br><br>6. EventLog + EventBus<br><br>Mission 的消息、问题和回答会写入 events.ndjson 持久化事件日志。<br><br>EventBus 根据日志维护成员收件箱、未读消息和相关状态。<br><br>7. Router<br><br>负责判断消息应该通知哪个成员，以及当前是否适合投递。<br><br>完整的消息链路：<br><br>Agent 发消息 → events.ndjson → EventBus → Router → 目标 Agent 的 PTY → Agent 读取消息<br><br>消息保存、终端通知和确认已读是不同的阶段。<br><br>Router 通常会等待目标 Agent 空闲，或者终端输入状态适合接收通知时再投递。Claude Code 支持在工作过程中排队接收通知。<br><br>通知送达后，不代表 Agent 已经读取正文。通过 runner msg read 读取后，才会推进对应的已读记录。<br><br>三、Runner 的架构与协作机制<br><br>Runner 的实现可以概括为三个方面：<br><br>1. 保留 Agent 原生运行环境<br><br>Runner 不重新实现 Claude Code 或 Codex 的 Harness，也不合并不同 Agent 的内部状态。<br><br>各个 Agent 保留独立的终端、对话历史和工具执行能力。<br><br>2. 通过持久消息组织团队协作<br><br>Role 负责角色配置，Crew 负责团队模板，Mission 负责实际任务。<br><br>Agent 之间通过共享目标、团队约定、消息和反馈完成协作。<br><br>消息记录保存在事件日志中，可以用于恢复收件箱和任务协作状态。<br><br>3. 分离界面与执行进程<br><br>Runner App 负责展示和交互，runnerd 负责持有 Agent 进程、PTY 和任务状态。<br><br>关闭桌面窗口不会必然终止 Agent，重新打开后可以连接仍在运行的终端。<br><br>对于已经停止的进程，Runner 通过 Agent 自身保存的会话历史尝试恢复对话。<br><br>四、当前版本的使用限制<br><br>▪︎ Runner 目前处于 Alpha 阶段，Linux 支持仍为 Beta。<br><br>▪︎ Mission 成员默认共享指定的工作目录。Runner 不会自动创建 Git Worktree 或分支。如果多个 Agent 同时修改代码，需要自行规划工作目录隔离或文件修改范围。<br><br>▪︎ Mission 通常采用 Agent 的广泛权限模式。团队约定属于行为指令，不等于文件系统沙箱或强制审批机制。<br><br>▪︎ Agent 之间共享的是任务目标、消息和反馈，不是隐藏推理、原生工具状态或完整的模型上下文。<br><br>▪︎ Mission 的 Settled 表示成员满足空闲条件，并不代表代码通过测试或审查。Failed、Interrupted 等情况会分别显示对应状态。<br><br>▪︎ 文件预览、Diff 审查等功能仍处于开发或 Preview Nightly 阶段，不属于 v0.19.4 稳定版的完整功能。<br><br>五、Runner 的整体工作流程<br><br>整个协作过程可以整理为：<br><br>1. 配置 Role，定义每个 Agent 的运行时、模型和职责<br>2. 将多个 Role 组成 Crew，设置团队成员与协作约定<br>3. 启动 Mission，向成员分发共同目标和工作目录<br>4. runnerd 通过 SessionManager 和 PTY 启动各个 Agent<br>5. Agent 通过 EventLog、EventBus 和 Router 进行消息交接<br>6. 需要人工决策时，通过 Mission Feed 提问并接收回答<br>7. 任务状态变化后，通过关联 Chat 汇报进展<br>8. Agent 在后台继续执行，桌面 App 可以重新连接运行中的会话<br><br>Runner 将多个独立 CLI 的管理、团队配置、消息通信、任务状态和后台运行整合在同一套工具中。<br><br>从 Role、Crew、Mission 的组织方式，到 runnerd 的进程管理、PTY 终端和消息投递机制，相关功能与架构整理在配套的 4 张图中。<br><br>官网：<a href="https://runnersh.dev/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://runnersh.dev/</a><br><br>GitHub：<a href="https://github.com/yicheng47/runner" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yicheng47/runner</a><br><br>Release：<a href="https://github.com/yicheng47/runner/releases/tag/v0.19.4" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yicheng47/runner/releases/tag/v0.19.4</a><br><br>#AI #CodingAgent #OpenSource</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbjNgIboAApDox.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbjsKpaYAAPfnI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbkNQtaIAAIgVJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbkQUya0AA6ZJ1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi占美国企业开源AI支出61%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @JamesDa55049936 · 2026-11-07 05:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！！刚看完 Menlo Ventures 最新的企业级 AI 报告，硅谷投资人估计要集体破防了？？？🤣<br><br>之前天天看华盛顿喊着要严防死守中国开源模型，各种政策大棒轮番上阵。<br><br>我还寻思美国企业现在肯定全都老老实实用本土模型了……<br><br>直到看到报告里扒出来的真实账单数据。🤡<br><br>全球企业 AI 年化支出：1768 亿美元<br><br>美国企业开源模型支出流向中国厂商比例：近 90%<br><br>Kimi 一家独占份额：61%！！<br><br>合着口号喊得震天响，结果真到了掏自己腰包过日子的时候，将近九成的预算全偷偷打给了中国开源模型？？？<br><br>最他🐎抽象的是什么？<br><br>旁边评测机构刚改了测试规则，硬生生把开源和闭源模型的分差从 3 分拉大到了 12 分…… 🤣<br><br>合着跑分榜单还在那儿拼命证明「闭源遥遥领先」，美国大厂的 CFO 们已经连夜换上 Kimi 和 DeepSeek 把降本增效的 KPI 给交了？？？<br><br>以前选大模型，担心的是上下文够不够长、逻辑够不够强。<br><br>现在倒好，政客负责在台上拉黑名单，开发者负责在台下偷偷调 API。😭<br><br>不过 Kimi 单枪匹马吃下 61% 的份额这统治力也确实够吓人了。<br><br>你们现在跑业务主力切到国产开源了吗？还是说现在的 AI 圈已经进入「嘴上全是主义，账单全是生意」的时代了？？？🤓☝️</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BUI抽出Blender内核18MB内存</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-06 21:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天开源圈出了个很有意思的项目：BUI 把 Blender 沉淀了三十年的 UI 渲染内核彻底给抠出来了。<br><br>做桌面端的人苦 Electron 久矣，动辄吃掉几百兆内存；后来大家追捧 Rust 写的 GPUI，但生态绑在特定编辑器上难以剥离。<br><br>开发者直接把 Blender 底层的 Ghost 窗口抽象和即时模式（Immediate Mode）GPU 渲染流水线抽成独立运行时，向外暴露了 C/C++、Rust、Python 和 JS 的通用接口。<br><br>Blender 能在成百上千个复杂的着色器节点和实时视口下保持 60 帧丝滑渲染，就是因为它的 UI 根本不走任何 DOM 树计算或虚拟节点 Diff，每一个按钮、每一个滑动条直接由专用 Shader 在显存里原地成型。<br><br>实测下来，初始化内存占用只有 18MB，冷启动窗口建立耗时不到 12 毫秒。<br><br>开源地址：<a href="https://github.com/ppmpreetham/BUI" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ppmpreetham/BUI</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

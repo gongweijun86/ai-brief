@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月16日 17:09">
+<title>AI技术雷达 · 10月16日 17:09 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;动效术语库让AI选对动画效果</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;pstack把工程原则压缩成短指令</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Scope Recall 3.0让多Agent共用本地记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;OptMem用426 token提示词实现长期记忆</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>动效术语库让AI选对动画效果</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @slashui · 2026-10-16 06:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">对动画的理解，还得是日本人。<br><br>一位日本开发者把动画设计中常用的专业术语，整理成了一个可以直接喂给 AI 的资源库。<br><br>涵盖镜头语言、UI 组件、动态图形等 5 大领域，足足 120 个动态效果案例，而且每个都有直观的动画演示。<br><br>使用方法也特别简单：<br><br>直接把这个 GitHub 项目扔给 Claude Code 或 Codex，让 AI 浏览动效库，挑选你喜欢的效果，再告诉它用在哪里。<br><br>以前需要绞尽脑汁描述半天的动画，现在只需要给 AI 一个参考，它就知道你想要什么。<br><br>那些默默努力，把人类已有的知识整理好、再交给 AI 的人，值得我们永远尊敬。<br><br>地址，⬇️ ⬇️ ⬇️</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110860107785326592/img/4jjZ33qbfrPLuS6d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>pstack把工程原则压缩成短指令</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-16 14:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">pstack 作者公开她的 “工程原则” 设计思路<br><br>「Clean Code」作者 Uncle Bob 是传统软件工程方法论的宗师，他最近看到了 pstack，认为本质上是把经典工程智慧「最小改动、先删后加、验证根因、用类型系统让非法状态不可表示、幂等操作」重新编码给 AI Agent 使用。<br><br>pstack 作者 @poteto 回应并公开了这个 Cursor 官方内置插件的工程原则的设计思路，核心是：随着模型能力提升，写给智能体的指令正在从“冗长的操作步骤”压缩为“简短的命名原则”。<br><br># 几个关键信息点<br><br>1. 原则即极简 skill。pstack 的每条工程原则只有约 10–20 行，是一段被提炼、命名过的好实践，而不是一个流程脚本。她预期随着模型变强，pstack 里大部分 skill 最终都会被压缩成这样的短原则或工作流，从而可以删掉一批。<br><br>2. /poteto-mode 的运行机制。智能体在开始多步任务前先读一份简短的原则索引；执行过程中，必须“点名每一条影响了决策的原则，以及它具体改变了哪个选择”，并在回复末尾生成一个 &quot;Principles Named or Used&quot; 段落。这个设计很巧妙：如果原则被引用却没有对应的实际决策，就说明智能体只是在“报菜名”而没有真正应用；强制原则与决策挂钩，让推理过程可检验。<br><br>3. 原则来自真实纠错。这些原则大多来自她今年在会话中亲自纠正智能体的场景，属于“教训的结构化沉淀”。<br><br>4. 原则可被唤起。每条原则都能以 /principle-&lt;名称&gt; 的形式作为 skill 调用；更常用法是用名字来“掌舵”；因为名字背后指向智能体已经读过的完整规则，一个短语比一段指令更能精准地重定向工作。比如对着一堆旧适配器说 &quot;subtract before you add&quot;，智能体就知道先删过时的、再设计剩下的。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuyT1na8AEEUae.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">pstack 最持久的部分之一，或许就是它的工程原则：非常简洁的技能（大约 10-20 行代码），将良好的实践浓缩到其核心之中。<br><br>随着模型变得越来越智能，我预计 pstack 的大部分技能将被压缩为简短的原则或工作流程（一份通用的步骤列表），而我将能够删除其中的一些。<br><br>其工作原理是 /poteto-mode 包含一个可用原则的简短索引，并告诉智能体&quot;在你的回复中，指出每一个影响了决策的原则，以及它改变了哪个具体的选择。&quot;这就是为什么你经常会在智能体回复的末尾看到一个&quot;已命名或已使用的原则&quot;部分<br><br>这些原则中有许多是从今年年初开始我在纠正智能体的会话中提炼出来的。其中一些受到我看到人们讨论的问题的启发，比如&quot;攻击前提&quot;（Attack the Premise），灵感来源于 @VictorTaelin 的帖子 <a href="https://x.com/VictorTaelin/status/2096273196412498057" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/VictorTaelin/status/2096273196412498057</a><br><br>如果你想要更大的控制力，你也可以通过调用 /principle-&lt;name&gt; 来将原则用作技能。<br><br><a href="https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">perhaps one of the most durable parts of pstack are its engineering principles: very concise skills (~10-20 loc) that distill down good practices into its core. <br><br>as models get smarter, i expect most of pstack skills to compress into short principles or workflows (a generic list of steps) and that i will be able to delete a few of them. <br><br>how it works is that /poteto-mode contains a short index of available principles and tells agents &quot;In your reply, name each principle that shaped a decision and the specific choice it changed.&quot; this is why you'll often see a Principles Named or Used section at the end of the agent's response<br><br>many of these principles were extracted from my sessions correcting agents since the start of this year. some are inspired by problems i see people talk about, like Attack the Premise, inspired by @VictorTaelin's post <a href="https://x.com/VictorTaelin/status/2096273196412498057" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/VictorTaelin/status/2096273196412498057</a><br><br>you can also use the principles as skills if you want greater control, by invoking /principle-&lt;name&gt; <br><br><a href="https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Scope Recall 3.0让多Agent共用本地记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-10-16 16:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">之前 Claude Code、Codex、Hermes、WorkBuddy 各自装一个记忆插件，记的内容还互相隔离。<br><br>Scope Recall 3.0 让这些 Agent 可以共用一份本地记忆，SQLite 是唯一的真实数据来源。目前已经接入了 Hermes、Codex、Claude Code、WorkBuddy 和 DeepSeek Harness，作者说还能跨机器共享，后面会接入更多 Agent。<br><br>这一版升级了新架构，功能没有减少，代码量从 141,044 行降到了 48,272 行。<br><br>GitHub：<a href="https://github.com/410979729/scope-recall-hermes" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/410979729/scope-recall-hermes</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvMEXgaMAAcrZh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvMElJbEAAWMLs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OptMem用426 token提示词实现长期记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-16 16:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是我最近看到把 agent 记忆做得最省的一个方案：整套集成就是 426 个 token 的提示词，加一个无依赖的 Python 单文件。<br><br>OptMem 的定位很明确——让记忆活得比会话更久。原话是它能熬过每一次 compaction、每一次换模型和换厂商，而没有它，agent 不知道自己是谁，也不知道什么已经决定过、试过。<br><br>▸ 装：跑一行 curl 脚本，它会打印一个 Memory 段，粘到 AGENTS.md 或 CLAUDE.md 顶部就完事，再跑一次就是更新。<br><br>▸ 记：memo note 写一条，一行、上限 280 字节。memo wake 是每个 session 的第一个命令。<br><br>▸ 找：memo recall 对全部记忆做逐词搜索；记忆同时组成一棵二分树，#0-1、#2-3 这样的摘要节点可以用 memo zoom 展开到原始条目。<br><br>▸ 存：LOG.txt 只追加、永不改写，TREE 目录里的摘要只是缓存，随时能从日志重建；摘要坏了用 memo forget 丢掉，下次 nap 会重算。<br><br>▸ 快：记录定长，位置即身份，每次查找一次 seek。百万条记忆占 608MB，wake 仍是 0.03 秒。<br><br>▸ 挪：设 MEMORY_DIR 就能把 memory 目录放进同步盘或 git 仓库。<br><br>设计上有两点我觉得值得留意：没有任何后台进程，压缩合并是跟在 note 的输出里一条条送过来的，由 agent 顺手做掉；以及它明确要求 subagent 不要碰 memo，因为子代理判断不了什么已经记过，写进去就是重复。<br><br>适合已经在长期用一个 coding agent、受够了每次开窗重新交代背景的人。不适合想要开箱即用图形界面的——它全部交互都在命令行和提示词里，且依赖模型老实执行那几条 mandatory 指令。<br><br>今日 +85 star · Python · 总计 2,113<br>#AIAgents #ClaudeCode<br><br><a href="https://github.com/VictorTaelin/OptMem" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/VictorTaelin/OptMem</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChinaStudyFree免费开源小学全科学习平台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @denziideng · 2026-10-16 12:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">几千块的学习机先别急，GitHub 上有人把小学 1-6 年级全科给免费了，送给乡村孩子一个免费学习平台🔥<br><br>我经常翻 GitHub，什么火看什么，但这次看到的不是流量，是个挺戳人的项目。😂<br><br>它叫 ChinaStudyFree，一个纯公益的小学全科学习平台，从一年级到六年级，语文、数学、英语、科学全都有。📚<br><br>说个我自己的感受吧。一线城市的孩子，教辅一套几百块，补习班一节几百块。偏远地区的孩子呢，可能连一本配套练习册都难拿到。😭<br><br>这事有人动手了：<br><br>📌 44 册教材、2166 个课节、6545 道练习题，全免费<br>📌 每道题、每篇课文都有语音朗读，语文英语还能逐句跟读<br>📌 284 篇 AI 分级故事 + 阅读理解题 + 儿童插画<br>📌 电脑手机浏览器打开就能用，不用装，不用注册<br><br>我坚持一件事：好资源不该被地域和钱包拦着，开源也有好东西。<br><br>一个孩子多做对一道题，这事就值了。❤️<br><br>🔗 <a href="https://github.com/wuwangzhang1216/ChinaTextbookStudyFree" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wuwangzhang1216/ChinaTextbookStudyFree</a><br><br>⚠️ MIT 开源纯公益，无广告无付费，教材版权归各自权利人<br><br>#开源工具 #教育</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuWTkKaQAA_fGV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUuWUAxaAAAVnM_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

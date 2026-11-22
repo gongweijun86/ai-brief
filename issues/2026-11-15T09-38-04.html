@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月15日 17:38">
+<title>AI技术雷达 · 11月15日 17:38 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude Meetings进入公测</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;worktrunk隔离并行Agent目录</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Claude Code新版收紧默认权限</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Antigravity形式化韦伊猜想</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;DeepSeek V3架构190行复现</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;Antigravity支持本地离线模型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Meetings进入公测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-14 23:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">估计我们的会议很快就变成这样了……<br><br>现在 Claude Meetings 是类似 Siri 这样，Cue 到它，它才会出来。不过不 Cue 它的时候，它也会一直听会议。Claude 在全双工语音方面没有投入太多，做成这样已经非常不错了。<br><br>相比打字，跟 agent 语音沟通真的很省心：<br>- Typeless 这种语音输入法是第一步（出于信息安全考虑，我自己天天用我自己做的 DoNotType 开源版）<br>- 类似 Claude Meetings （Siri）这种半双工语音是第二步<br>- 类似 GPT-6 Astra demo 这种全双工语音是第三步</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGLwisaIAAKDrp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Claude <span style="font-size:12px;color:#999999;font-weight:400;">@claudeai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Claude Meetings：将 Claude 加入你的团队视频通话中，它会在你们还在通话时就为你构建文档、白板和其他产物。<br><br>正在 Team 和 Enterprise 计划上开始 Beta 灰度上线。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking.<br><br>Starting to roll out in beta on Team and Enterprise plans. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW82tOPWUAAsEFY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic归纳六种Agent模式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xTrackmind · 2026-11-15 00:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇 Anthropic 论文真是他*的金矿<br><br>Anthropic 展示了他们构建 AI agent 的完整方式。大多数还在构建 agent 的人至今还没读过它。<br><br>秘诀在于：几乎没有人需要一个&quot;真正的&quot; agent。他们需要的是最简单的可行模式。<br><br>里面包含的 6 种模式：<br><br>模式 1 → 增强型 LLM<br><br>一个模型 + 工具 + 记忆。<br>从这里开始。大多数&quot;agent&quot;应该到此为止。<br><br>模式 2 → 提示链<br><br>任务 → 步骤 1 → 检查 → 步骤 2 → 检查 → 完成。<br><br>模式 3 → 路由<br><br>输入 → 分类 → 发送到合适的提示（或更便宜的模型）。<br><br>模式 4 → 并行化<br><br>拆分 → 同时运行 → 合并。<br>或者运行 3 次 → 投票。<br><br>模式 5 → 编排器-工作者<br><br>一个模型规划 → 派生工作者 → 合并它们的返回结果。<br><br>模式 6 → 评估器-优化器<br><br>生成 → 批评 → 修复 → 循环直到通过。<br><br>只有当以上模式都不适用时 → 才是一个真正的 agent：一个带有工具、停止条件和人工检查点的循环。<br><br>他们甚至把整份指南打包成了一个提示。粘贴到 Claude Code 里，它会为你选择模式，然后构建出来。<br><br>6 种模式。1 个提示。0 过度工程。<br><br>收藏这篇。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">this Anthropic paper is f*cking gold<br><br>Anthropic showed exactly how they build AI agents. most people building agents still haven't read it.<br><br>the secret: almost nobody needs a &quot;real&quot; agent. they need the simplest pattern that works.<br><br>the 6 patterns inside:<br><br>pattern 1 → augmented LLM<br><br>one model + tools + memory.<br>start here. most &quot;agents&quot; should stop here.<br><br>pattern 2 → prompt chaining<br><br>task → step 1 → check → step 2 → check → done.<br><br>pattern 3 → routing<br><br>input → classify → send it to the right prompt (or the cheaper model).<br><br>pattern 4 → parallelization<br><br>split → run at once → merge.<br>or run it 3 times → vote.<br><br>pattern 5 → orchestrator-workers<br><br>one model plans → spawns workers → merges what they return.<br><br>pattern 6 → evaluator-optimizer<br><br>generate → critique → fix → loop until it passes.<br><br>only when none of these fit → a real agent: a loop with tools, a stop condition and a human checkpoint.<br><br>they even packed the whole guide into one prompt. paste it into Claude Code and it picks the pattern for you, then builds it.<br><br>6 patterns. 1 prompt. 0 overengineering.<br><br>bookmark this.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGawdxWgAAB7MF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Trackmind <span style="font-size:12px;color:#999999;font-weight:400;">@0xTrackmind</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2113375170392203264" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2113375170392203264</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2113375170392203264" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2113375170392203264</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Chord成为Pi分布式对象运行时</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fttt007 · 2026-11-15 11:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Chord 是 Pi 生态中的分布式对象运行时，负责对象的组织、访问、通信、状态和生命周期管理。<br><br>Pi Durable 则构建在 Chord 的部分基础能力之上，专注于持久化 Agent 执行，包括对话管理、模型调用、工具执行、任务恢复等。<br><br>简单来说：<br><br>Chord 解决对象如何运行和协作，Durable 解决 Agent 如何持久化执行和恢复。<br><br>两者配合，让 Pi 不仅能运行 Agent，还能构建能够长期运行、崩溃恢复和持续演进的 Agent 系统。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">kayce <span style="font-size:12px;color:#999999;font-weight:400;">@fttt007</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">今天深入学习了 Pi 生态中的 Chord v2，最大的收获是理解了它的核心定位：分布式对象运行时（Distributed Object Runtime）。<br><br>Chord 不只是一个插件系统，它负责让不同进程中的对象能够创建、运行、通信和管理自己的生命周期。<br><br>今天重点理解了几个概念：<br><br>Object：类似于 Python Class 创建出来的实例，是一个真正拥有数据、方法和生命周期的运行实体。<br>Host：Chord 系统中的运行节点，具有逻辑身份和运行实例。它通常对应一个进程，但不等于进程。<br>Runtime：负责管理 Host 中对象的创建、激活、引用和生命周期。<br>Host Kind：定义节点的类型。<br>Host Address：确定具体要访问哪个节点。<br>Link：连接不同 Host，让它们能够通信。<br><br>举个例子：<br><br>Server Host 想访问 Session S2 中的 Notes Object：<br><br>先通过 Host Kind 确定节点类型，再通过 Host Address 找到具体节点，最后通过 Link 建立通信，访问目标对象。<br><br>我越来越觉得 Chord 最有价值的地方在于：<br><br>它把原本需要开发者自己处理的对象创建、资源管理、跨进程通信和生命周期管理，统一交给 Runtime 协调。<br><br>这也是理解 Pi 如何构建复杂、可持续运行的 Agent 系统的重要基础。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>worktrunk隔离并行Agent目录</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xoyif63862452 · 2026-11-15 16:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">绝了，同时开五六个 Claude Code、Codex 干活，全挤在一个目录里，你改我的文件我覆盖你的，回头一看代码乱成一锅粥。<br><br>这个开源的命令行把 git worktree 弄得跟切分支一样顺手，wt switch -c -x claude 一条命令就新开一个工作区顺手把 Claude 拉起来，每个 Agent 各占一个目录互不踩脚，干完 wt remove 一键清掉，commit 信息还能让大模型帮你写。<br><br>并行跑 Agent 这事，缺的从来不是模型，是一个不打架的工位。<br><br><a href="https://github.com/max-sixty/worktrunk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/max-sixty/worktrunk</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness由4B模型自动进化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @damkina7 · 2026-11-14 21:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇论文简直令人震撼！<br><br>中国研究者发表了一篇 6 页的论文，其标题足以让每一个 AI agent 构建者停下来思考：<br><br>《Harness 工程的终结》<br><br>核心论点极其尖锐：<br>一个手写的 harness 只是一个人在某个下午的猜测，被发布到生产环境中后就无人问津数月。<br><br>论文提出了一个架构上的反转：<br>大模型保持 100% 冻结。harness 围绕它自主进化。<br><br>以下是精确的 4 步循环：<br><br>→ 步骤 1：运行时执行失败被捕获为结构化 trace<br>→ 步骤 2：一个轻量级 4B 编辑器读取出错内容并生成 8 个候选 harness diff<br>→ 步骤 3：所有 8 个候选都在一个保留的评估套件上执行<br>→ 步骤 4：得分最高的那个编辑存活到 v(n+1)；其余 7 个被删除<br><br>为什么这颠覆了软件工程：<br><br>1. 框架变成了一次性的<br>你不再维护脆弱的编排框架。harness 每一轮都由一个 4B 参数的编译器重写。<br><br>2. 人的工作缩减为一件产物<br>你不再编写 agent 逻辑或调整提示。你唯一的输出是评分集：那些标准答案基准问题。<br><br>3. 考试就是工作<br>如果你无法度量差异，你就无法构建 harness。竞争优势从你写 agent 代码写得好不好，转向你设计评估门槛有多严格。<br><br>一句话总结：<br>停止为 agent 写代码。先写考试，让循环来写 harness。<br><br>阅读下面的完整论文拆解 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This paper is absolutely mind-blowing!<br><br>Chinese researchers have published a 6-page paper with a title that should give every AI agent builder pause:<br><br>&quot;The End of Harness Engineering&quot;<br><br>the core thesis is brutal:<br>a hand-written harness is just one human guess on one afternoon, shipped to production and left unread for months.<br><br>the paper proposes an architectural inversion:<br>the big model stays 100% frozen. the harness evolves around it autonomously.<br><br>here is the exact 4-step loop:<br><br>→ step 1: runtime execution failures get captured into structured traces<br>→ step 2: a lightweight 4B editor reads what broke and generates 8 candidate harness diffs<br>→ step 3: all 8 candidates are executed against a held-out evaluation suite<br>→ step 4: the single highest-scoring edit survives into v(n+1); the other 7 are deleted<br><br>why this flips software engineering upside-down:<br><br>1. frameworks become disposable<br>you stop maintaining brittle orchestration frameworks. the harness is rewritten every round by a 4B parameter compiler.<br><br>2. the human job shrinks to one artifact<br>you no longer write agent logic or tweak prompts. your only output is the scoring set: the ground-truth benchmark questions.<br><br>3. the exam is the job<br>if you can't measure the delta, you can't build the harness. competitive advantage shifts from how well you write agent code to how rigorously you design evaluation gates.<br><br>the takeaway in one sentence:<br>stop writing code for the agent. write the exam first, let the loop write the harness.<br><br>read the full paper teardown below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121596629941723136/img/TL4roPqPIpUUvg0Y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">damkin <span style="font-size:12px;color:#999999;font-weight:400;">@damkina7</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2115779443717193728" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115779443717193728</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2115779443717193728" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115779443717193728</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi扩展生态新增五款Agent工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitTrend0x · 2026-11-15 15:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pi 扩展生态又燃爆了 🔥<br><br>fitchmultz 的原生浏览器工具、tintinweb 的定时心跳、arpagon 的时光倒流、Asigers 的远程敲门铃、alexshpunt 的 Windows 电脑操控……全网玩家把 Pi 玩成了下一代「网页测试员 + 自动闹钟 + 后悔药 + 随身传呼机 + 桌面画师」:<br><br>1️⃣ fitchmultz/pi-agent-browser-native（<a href="https://github.com/fitchmultz/pi-agent-browser-native" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/fitchmultz/pi-agent-browser-native</a>）<br><br>把 agent-browser 变成 Pi 的原生工具：读网页、测 Web 应用、点按钮、填表单、核对文字和网址、存截图，一句话描述任务就行；会话中断还能接着清理没关掉的浏览器；250 星。<br>“Pi 自己开浏览器，替你把网页点一遍”！<br><br>2️⃣ tintinweb/pi-schedule-prompt（<a href="https://github.com/tintinweb/pi-schedule-prompt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tintinweb/pi-schedule-prompt</a>）<br><br>Pi 的「心跳」：让 Agent 给自己排未来的提示词，支持 cron、间隔、具体时间和「+5m」这种相对时间，一次性或循环都行；比如「每小时分析一次日志」「30 分钟后提醒我看 PR」，还能给单个任务指定模型、在独立会话里跑；122 星。<br>“到点它自己醒，活儿一件不落”！<br><br>3️⃣ arpagon/pi-rewind（<a href="https://github.com/arpagon/pi-rewind" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/arpagon/pi-rewind</a>）<br><br>给 Pi 装上后悔药：每轮写文件后自动打 git 快照，/rewind 先看 diff 再恢复，可以只回滚文件、只回滚对话或两者一起，按两下 Esc 快速撤回，还有多级重做；不会删 node_modules，也拦住跨分支恢复；117 星。<br>“AI 改坏了？一键倒带回到出事前”！<br><br>4️⃣ Asigers/pi-knock（<a href="https://github.com/Asigers/pi-knock" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Asigers/pi-knock</a>）<br><br>任务完成、失败或需要你拍板时，通过 Pushover、ntfy 或 Webhook 推送到手机和手表；等 Pi 的自动重试和排队任务都跑完才通知，锁屏默认隐藏提示词内容，有中文文档；114 星。<br>“人走开，Pi 需要你时会来敲门”！<br><br>5️⃣ alexshpunt/pi-agent-computer-use（<a href="https://github.com/alexshpunt/pi-agent-computer-use" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/alexshpunt/pi-agent-computer-use</a>）<br><br>让 Pi 操作 Windows 应用和浏览器：先读窗口的控件树和截图，再点击、打字、拖拽，做完再读一遍确认结果；作者演示让不同模型在 GIMP 里临摹一幅画，耗时和花费都公开；75 星。<br>“编程 Agent 也能拿起画笔开 GIMP”！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Agent工程书开源获54k星</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ruyi3699 · 2026-11-15 08:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">天天用 AI 却总踩坑？这本《深入理解 AI Agent》值得翻一翻，开源且完全免费。<br><br>54k star，我自己读完又让 AI 过了一遍，写得确实有两把刷子。<br><br>平时那些让人窝火的事儿，它全给你摊开细讲：<br>1️⃣ 上下文一拉长就犯迷糊<br>2️⃣ 工具调用老是掉链子<br>3️⃣ 同样挂着 Agent 的名，有的挺能打，有的活像人工智障<br>最关键的是，它从工程落地这个角度切入，每章还配着能跑通的实验代码。<br>想省事的就这么干：Github 链接往 Hermes 那儿一丢，让 AI 牵着你走一遍，比自己硬啃强出一大截。<br>🔗<a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDD9C_boAAnPBl.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code新版收紧默认权限</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @YajunZhu36691 · 2026-11-15 16:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Code v2.1.325 的官方 changelog 几乎全在收紧权限：<br><br>安全修复：修复 zstd 压缩响应解码的安全问题（细节未披露）<br>堵住多处权限与隔离绕过：修复复合 Bash 命令绕过询问、allow rule 误放行未点名程序、artifact 对外发布跳过确认；修正 deny/ask 规则在 cd 后（如 Read(./.env)）、插件名大小写不一致或重启审批时失效的问题；补齐 Bash sandbox 对 worktree settings/hooks、linked worktree 共享 git 目录以及更新器下载目录的保护<br>升级后默认会更严：sandbox 里的 Bash 命令改回走正常权限确认（想恢复免询问需显式设 sandbox.autoAllowBashIfSandboxed: true），在非项目或未信任仓库跑只读 git 命令也会先问一遍<br>修掉一个暗扣费坑：用 <a href="http://claude.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://claude.ai</a> 账号登录后启动后台会话，不会再误抓当前 shell 里的 API key/token 走按量计费了<br><br>升完级要是觉得确认弹窗突然变多，不是错觉，是这版把默认权限线往回收了<br><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.325" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anthropics/claude-code/releases/tag/v2.1.325</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity形式化韦伊猜想</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-11-15 04:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">谷歌公布了 Antigravity最近在科学和软件领域的进展：<br><br>数学上，形式化了韦伊猜想（Deligne 1974 年的成果），写了约 180 万行 Lean 代码、调用了 2.88 万次子 agent；还复现了三维纳维-斯托克斯方程有限时间爆破证明的形式化，这是悬了约 90 年的千禧年难题相关问题；另外完整证明了 2013 年提出的 Courtade-Kumar 猜想并用 Lean 4 形式化。<br><br>化学上，30 个专业 agent 配合物理模拟器，从核磁共振数据里识别分子结构，复杂分子上首选准确率 95%、前三 100%。<br><br>软件上，把 libgav1 AV1 解码器从 C++ 重写成约 17 万行 Rust，输出完全一致，优化后比原版快 20-30%；还把 Zircon 微内核剩余 C++ 代码重写成约 80 万行内存安全的 Rust，通过了内核单元测试、能在 ARM64 上启动；TPU 调度也让部分硬件的任务抢占少了 24%。<br><br>内部团队归功于：Antigravity 的 Teamwork 框架，让多个专业 agent 并行干活、互相挑错验证，而不是一个模型从头想到尾。<br><a href="https://interestingengineering.com/ai-robotics/google-antigravity-multi-agent-research" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://interestingengineering.com/ai-robotics/google-antigravity-multi-agent-research</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek V3架构190行复现</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wlzh · 2026-11-15 07:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把 DeepSeek V3 整套架构塞进了 190 行纯 JAX 代码里<br><br>MLA、DeepSeekMoE、免辅助损失的专家均衡、多 token 预测，全都在这 190 行里，一个字不多<br><br>拿一台 MacBook Air M5 从零训了一遍，36.2M 参数，每 token 只激活 13.6M，207 本公版侦探小说、2170 万 token，1.2 万步、2.6 小时跑完，验证损失从 5.02 降到 3.51<br><br>最有意思的是专家均衡那组对照：开均衡后每个专家负载 5.7% 到 6.9%，关掉直接拉到 0.09% 到 18.6%，但验证损失几乎没变，3.921 对 3.923<br><br>想自己跑的话仓库里步骤都给全了，clone 下来、uv 装依赖、39 个测试先过一遍，v1.0 还放了 138MB 的现成 checkpoint<br><br>不过先说清楚，这就是个架构演示，不是能用的语言模型，作者自己也写了，36M 对 671B，6 层对 61 层，256 上下文对 128K</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXH6fZXbkAAQkbk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity支持本地离线模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @don_tech1 · 2026-11-15 07:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看到非常有用的一个功能更新，谷歌把编程 Agent 搬到本地了！<br><br>零 API 费 + 完全离线 + 代码不出电脑。云端只规划，本地 Gemma 干活，隐私成本双赢。<br><br>对于注重数据安全和 token 消耗成本的个人或企业非常有用！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google for Developers India <span style="font-size:12px;color:#999999;font-weight:400;">@GoogleDevsIN</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">使用 Google Antigravity SDK 在本地运行 agentic AI 工作流！<br>通过支持本地 AI 模型，开发者可以构建具有以下特性的工作流：<br>✅ 零 API 成本<br>✅ 100% 离线 &amp;amp; 私密<br>✅ 完全离线容错<br>✅ 本地 + 云端混合模式<br>了解更多：<a href="https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Run agentic AI workflows locally with Google Antigravity SDK!<br>With support for local AI models, developers can build workflows with: <br>✅ Zero API costs <br>✅ 100% offline &amp;amp; private<br>✅ Fully offline-resilient<br>✅ Local + Cloud hybrid mode<br>Read more: <a href="https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kanzo为编码Agent提供任务看板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liangzhu_AI · 2026-11-15 15:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">终于找到了一个皇帝批AI折子的开源项目了。<br><br>Dan Kornas 做了个叫 Kanzo 的开源工具（AGPL-3.0 协议），把本地看板和 MCP Server 揉进同一个程序里：<br><br>数据全存本地 SQLite 和 TOML 文件，不强制登录任何云账号，还能走私有 Git 仓库跨电脑同步；<br><br>你在浏览器里把卡片从 Backlog 拖进 Todo，Claude Code 或 Codex 通过 MCP 自己领任务、改状态、留执行备注，而停在 Backlog 里的点子 Agent 绝对碰不到。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Dan Kornas <span style="font-size:12px;color:#999999;font-weight:400;">@DanKornas</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">给你的编码 agent 一个你真正能跟上的任务看板。<br><br>Kanzo 是一个集本地看板和 MCP 服务器于一体的程序，专为与编码 agent 协作的构建者设计。<br><br>它帮助你跟踪 agent 的工作，无需在工具之间复制任务，让你和你的 agent 使用同一个看板：agent 在工作时将卡片移动到&quot;进行中&quot;并留下评论。<br><br>主要功能：<br><br>• 通过 MCP 共享看板 – 将 Claude Code、Codex 或其他 MCP 客户端连接到你在浏览器中看到的任务<br>• 本地数据文件夹 – 看板存储在 SQLite 中，设置存储在 TOML 文件中，无需账户<br>• 基于 Git 的同步 – 通过私有仓库在机器之间移动你的看板，切换时自动同步<br>• Agent 安全的待办池 – 将想法放在一个 agent 不会触碰的列中，直到你将任务移动到 todo<br>• Markdown 和 JSON 导出 – 保存整个看板或单个项目以供其他地方使用<br><br>它是开源的（AGPL-3.0 许可证）。<br><br>链接在回复中 👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Give your coding agents a task board you can actually follow.<br><br>Kanzo is a local kanban board and MCP server in one program for builders working with coding agents.<br><br>It helps you track agent work without copying tasks between tools by letting you and your agents use the same board: agents move cards to doing and leave comments as they work.<br><br>Key features:<br><br>• Shared board via MCP – connect Claude Code, Codex, or other MCP clients to the tasks you see in your browser<br>• Local data folder – keeps the board in SQLite and settings in a TOML file, with no account required<br>• Git-based sync – move your board between machines through a private repo, syncing when you switch<br>• Agent-safe backlog – park ideas in a column agents leave alone until you move tasks to todo<br>• Markdown and JSON export – save the whole board or a single project for use elsewhere<br><br>It’s open-source (AGPL-3.0 license).<br><br>Link in the reply 👇</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV_W55vWoAAeP6q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent项目TypeScript占七成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @meow2149 · 2026-11-15 01:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这段时间介绍和拆解过的agent相关项目，我重新翻了一遍，一共20个，其中TypeScript写的占了70%。<br><br>具体是：TypeScript 14个，Rust 3个，Go、Swift、Python各1个。<br><br>统计时按主要开发语言归类，每个项目只算一次，混合语言的项目也只算在主语言下。<br><br>一、TypeScript：14个，占70%<br><br>▪︎ T3 Code：把Claude Code、Codex等agent接进一个统一的工作台，管理任务、会话和代码改动。<br><br>▪︎ Orca：为agent开发做的IDE，集成了并行任务、Git Worktree、代码编辑和diff审查。<br><br>▪︎ Paradev（原名Superset）：给每个任务分配独立的工作区，可以同时跑多个coding agent。<br><br>▪︎ Emdash：多agent开发环境，可以自选工具和模型供应商，并行处理任务。<br><br>▪︎ Paseo：在桌面、手机和浏览器上都能访问电脑里的coding agent。<br><br>▪︎ Parallel Code：把多个coding agent放进同一个界面，每个任务用单独的Git Worktree。<br><br>▪︎ CodexHost：把Pi、Claude Code这些工具接进Codex Desktop。<br><br>▪︎ Conductor：在Mac上用独立工作区并行跑agent，改动和代码审查都集中在一处看；官方公开的桌面端技术栈包括TypeScript、React和Tauri。<br><br>▪︎ Pi Coding Agent：可扩展的终端编程agent，也提供模型调用、agent循环、终端界面等基础组件。<br><br>▪︎ Oh My Pi（OMP）：从Pi分出来的增强版，加了Hashline编辑、语言服务和调试等功能。它有一部分核心组件是Rust写的，但仓库主语言还是TypeScript。<br><br>▪︎ Cindy：把Claude Code、Codex和Pi放进同一套任务界面，换台设备也能接着干。<br><br>▪︎ Claude-Mem：记录agent的工作过程并整理成记忆，在后续会话里补上相关上下文。<br><br>▪︎ DeepSeek dsh-superagent：面向GitHub仓库的研究原型，接到任务后在独立会话里处理，最后通过回复或PR交付。<br><br>▪︎ Paperclip：管理agent团队的角色、目标、任务、权限、预算和运行记录。<br><br>二、Rust：3个，占15%<br><br>▪︎ Herdr：管理coding agent的终端、会话和运行状态，把多个agent放进同一个工作空间。<br><br>▪︎ Runner：让多个终端agent围绕同一个任务协作，各自的终端界面都保留着。<br><br>▪︎ agent-desktop：让agent能操作桌面应用，通过系统的无障碍接口读取界面、定位元素、执行操作。<br><br>三、Go：1个，占5%<br><br>Magpie：统一管理不同agent用的模型和账号，用本地网关做协议转换、模型路由和切换。<br><br>四、Swift：1个，占5%<br><br>cmux：macOS原生的终端工作区，基于Ghostty，带垂直标签、分屏和agent通知。<br><br>五、Python：1个，占5%<br><br>Hermes Agent：可以部署在电脑或服务器上的个人agent，支持工具调用、长期记忆、Skill和定时任务，还能接入消息平台。<br><br>为什么TypeScript这么多？看完这批项目，原因其实挺明显。<br><br>这份名单里，工作台、桌面客户端和开发环境占了一大半。这类应用要处理模型调用、子进程、流式输出、会话状态、文件、Git和审批，最后还得做成好用的界面。<br><br>这些环节用TypeScript基本都能串起来：界面用React，应用逻辑交给Node.js或Bun，桌面端有Electron和Tauri，要做移动端还有React Native，前后端之间共享类型和协议也方便。<br><br>Cindy就是个典型例子，桌面端用Electron，移动端用Expo和React Native，中间还有一层共享能力。<br><br>Rust这几个项目更贴近终端、桌面和系统接口，渲染、资源占用、进程生命周期和底层调用都得认真处理，用Rust很合理。<br><br>当然，这个比例跟我的选题有关。我介绍的多是开发者工具和工作台，不能拿它当整个agent生态的语言排名。<br><br>不过至少能看出来，做agent应用时，界面、状态管理、跨端开发和工程组织这些经验都能直接用上。<br><br>前端这几年学的东西，到了agent这里，还真没白学。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

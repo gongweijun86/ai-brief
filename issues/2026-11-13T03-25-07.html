@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月13日 11:25">
+<title>AI技术雷达 · 11月13日 11:25 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;AI软件工厂回滚率仅0.5%靠工程体系</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;LoopForge编排Agent研发流程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Acyclic开源万级Agent运行时</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Rust 1.100稳定never类型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;n8n个人Agent Nod敏感操作先确认</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>七个开源Skill打通游戏与3D制作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-13 11:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，这 7 个开源 Skill 太他妈牛了！！<br><br>想用 Claude Code、Codex 做游戏和3D 的建议直接收藏👇：<br><br>1. Claude-Code-Game-Studios（约 3.9 万 star）<br><br>→ 一个 Claude Code 秒变游戏开发团队，49 个 Agent 分别负责策划、程序、美术和测试<br>→ 能接 Godot、Unity、虚幻，不过作者也说引擎这块还没像浏览器游戏那样公开实测过<br>→ 作者称同一个需求做出了 4 款能跑的游戏，这点我在仓库里没核到<br><br><a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Donchitos/Claude-Code-Game-Studios</a><br><br>2. agent-sprite-forge（约 5500 star）<br><br>→ 先定好角色立绘，再逐帧生成待机、奔跑、跳跃、出招、挨打这些动作，还能无缝循环<br>→ 最后打包给 Godot 和网页小游戏拿来就用，文档带简中版<br><br><a href="https://github.com/0x0funky/agent-sprite-forge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/0x0funky/agent-sprite-forge</a><br><br>3. teardown（约 3200 star）<br><br>→ 随口问一句摩托引擎是怎么运转的，Claude 就给你搭出一个可拆解的 3D 模拟<br>→ 部件转着、读数跳着，还支持导出 60 帧视频<br><br><a href="https://github.com/elvarofficial/teardown" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/elvarofficial/teardown</a><br><br>4. blender-skills（约 1000 star）<br><br>→ 28 个 Blender 技能，建模、贴图、绑骨骼、动画、渲染一条龙<br>→ 作者说所有脚本都实际放进 Blender 跑过，要求 Blender 5.2<br><br><a href="https://github.com/EL4CTEO/blender-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/EL4CTEO/blender-skills</a><br><br>5. 3D OS（约 3700 star）<br><br>→ Scenario 开源的整套 3D 制作技能，现在已经 87 个了<br>→ 多数得连他们自家平台，控制 Blender、Unity、Godot、虚幻、Roblox 这块不需要<br><br><a href="https://github.com/scenario-labs/skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/scenario-labs/skills</a><br><br>6. prompt2rig（约 570 star）<br><br>→ 用文字描述一个动作，AI 视频先演示一遍，再迁移到 Mixamo 角色上，连手指都会动<br>→ 可以导出到 Blender 和 Unity，需要 fal 的 API 和一张 N 卡<br><br><a href="https://github.com/blendi-remade/prompt2rig" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/blendi-remade/prompt2rig</a><br><br>7. open-3d-skills（约 350 star）<br><br>→ 8 个做 3D 网站的技能：three.js 场景、滚动播放动画、机械爆炸拆解图<br>→ 做完它会自动在浏览器里验收，然后录屏出片<br><br><a href="https://github.com/Moh4696/open-3d-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Moh4696/open-3d-skills</a><br><br>想用 AI 折腾游戏和 3D 的，这一套基本够玩很久了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI软件工厂回滚率仅0.5%靠工程体系</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Stargridcompass · 2026-11-12 15:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">土豆姐 @poteto 又来分享干货了！<br><br>如果底层研发流程本身就有问题，盲目搞 AI 软件工厂，只会烧着更多 Token，以 10 倍的速度生产垃圾代码。<br><br>她的团队单月交付 11,000 个 PR，回滚率仅 0.5%，到底是怎么做到的？<br><br>核心就这几点：<br><br>1. 重构历史烂代码，避免 Agent 有样学样。<br>2. 少写 AGENTS.md，把人工纠错变成 Lint、类型约束和架构规则。<br>3. 给 Agent 足够的工具，让它能自己运行、检查和验证功能。<br>4. 修复必须提供截图、视频等证据，别光靠小作文证明自己干对了。<br>5. 把更多 Token 花在自动化测试和形式化验证上。<br><br>团队花了整整 6 个月打磨工程环境，让 Agent 写出好代码成为阻力最小的选择。<br><br>当工程体系足够成熟，自动发现 Bug、修复、测试、合并代码，自然就能形成闭环。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW6LLniWIAAOsYr.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>推理工程开放教程覆盖vLLM与SGLang</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-12 12:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐一份很适合收藏的开放教程《An Open Field Guide to Inference Engineering》，专门面向想系统学习大模型推理部署的开发者。<br><br>内容从模型如何在 GPU 上运行、KV Cache 显存怎么算、Prefill/Decode 的性能瓶颈，一直讲到 vLLM、SGLang、推理优化、线上监控和 Eval，最后还附有完整的上线检查清单。<br><br>从基础原理到实际生产部署都覆盖到了，可以当成一份系统的推理工程课程资料，挺适合跟着学习。<br><br><a href="https://docs.modelplane.ai/guides/inference-guide" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://docs.modelplane.ai/guides/inference-guide</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LoopForge编排Agent研发流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CY160909 · 2026-11-12 12:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">腾讯这次给 Agent 配了个开发团队！<br><br>刚开源的 LoopForge，可以把一个开发任务拆成完整的研发流程：<br><br>先确认需求、设计方案<br>AI Agent 负责写代码<br>独立 Agent 进行 Code Review<br>执行测试，发现问题还能退回修改<br>保存交付记录，中断后也能继续<br><br>而且整套流程能保存成 SOP，下次开发类似功能直接可以复用，不用每次都从头折腾<br><br>支持 Claude Code、Codex、CodeBuddy。个人使用可以直接安装 Local 版，不用部署整套平台。<br><br>完全开源，MIT 协议。<br><br>GitHub：<a href="https://github.com/Tencent/LoopForge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent/LoopForge</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Acyclic开源万级Agent运行时</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aaron_epstein · 2026-11-13 08:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Acyclic Labs 刚刚开源了在单次会话中高效运行 10,000 个 agent 群的基础设施。这将使每一个长时间运行的 agent 任务从数小时缩短到数分钟。<br><br>祝贺发布 @var1377 @RamV2003!</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Acyclic Labs just open-sourced the infra to run 10,000 agent swarms efficiently in a single session. This will take every long-running agent task from hours to minutes.<br><br>Congrats on the launch @var1377 @RamV2003!</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Ram Vinjamuri <span style="font-size:12px;color:#999999;font-weight:400;">@RamV2003</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">发布 acyclic labs (yc f26)<br><br>更多的 agent 并不意味着更快的工作。我们构建了开源基础设施，可以在一次会话中运行 10,000 个 agent，并立即遇到了真正的壁垒：今天的模型无法在不互相冲突的情况下拆分工作或共享状态<br><br>所以我们构建了 SwarmBench 来评估协作能力，构建了 RL 环境来训练它，以及运行时来真正同时运行数千个 agent<br><br>下一次飞跃不是更聪明的单个模型，而是让 10,000 个模型真正协同工作</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">launching acyclic labs (yc f26)<br><br>more agents doesn't mean faster work. we built open-source infra to run 10,000 agents in one session and immediately hit the real wall: models today can't split work or share state without stepping on each other<br><br>so we built SwarmBench to score coordination, RL envs to train it, and the runtime to actually run thousands at once<br><br>the next leap isn't smarter single models, it's getting 10,000 of them to actually work together</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121031000646189056/img/4fP1w54mhRUjtnDi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI解散机器人团队并入LLM</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AI_Whisper_X · 2026-11-13 10:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">震惊，OpenAI解散机器人团队，并入LLM！<br><br>昨晚g公众号 SourceMind 发了条独家，说从 CoRL 现场多方打听到，OpenAI 已经解散机器人团队，并入常规模型训练团队。理由是内部把 robotics 当成众多垂类任务里的一个，放到通用模型里去解决。<br><br>这个我们也确定，OpenAI 确实没去 corl，尽管他们交钱了🤣<br><br>但对做这行的人来说，我觉得倒也不用觉得机器人不存在了。各个模型厂肯定要招懂这方面的人，尤其是又懂机器人、又懂模型的。说不定过阵子就能看到，各家模型厂纷纷成立新的机器人 team，hh。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-S40LWwAAUtPN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Rust 1.100稳定never类型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lencx_ · 2026-11-13 10:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Rust 1.100.0 发布了，`!` 类型正式稳定。除了用 -&gt; ! 表示函数不会正常返回，现在还能写 Result&lt;T, !&gt;，明确表示不会返回 Err。`Infallible` 也成为 ! 的别名。<br><br>自定义分配器的核心 API 同时进入稳定版，可以通过 Vec::new_in、Box::new_in 为具体容器指定分配器。清理和回滚则有了 DropGuard，例如批量解析字符串写入 Vec，失败时通过闭包撤销新增内容，成功后用 DropGuard::dismiss 取消回滚。<br><br>Cargo 新增了未使用依赖检查，但需要覆盖所有可能使用该依赖的构建目标，目前不报告未使用的 dev-dependencies。<br><br>依赖更新也可以设置“冷静期”：在 .cargo/config.toml 的 [registry] 中配置 global-min-publish-age = &quot;3 days&quot;，解析时就会跳过发布不足三天的版本。这需要仓库提供发布时间；已锁定在 Cargo.lock 中的版本不会因此被排除，`cargo install` 也不执行这项检查。<br><br>升级时要留意类型推断。2015、2018、2021 edition 的 never type fallback 从 () 改为 !；部分 Box 的 trait 实现泛化后，也可能出现新的类型推断错误，少数代码需要调整。<br><br>Cargo 还调整了中间产物的目录布局，以减少不同构建配置之间的缓存冲突。依赖内部路径寻找产物的脚本可能需要修改，建议改用 Cargo 的 JSON 消息获取位置。更新命令：`rustup update stable`。<br><br>相关链接：<br>- Blog: <a href="https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</a><br>- Release Notes: <a href="https://doc.rust-lang.org/stable/releases.html#version-11000-2026-11-12" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://doc.rust-lang.org/stable/releases.html#version-11000-2026-11-12</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-SwTwakAAsH98.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>n8n个人Agent Nod敏感操作先确认</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bozhou_ai · 2026-11-13 10:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">n8n 也杀进 Personal Agent 的战场了<br><br>这家做工作流自动化的公司，刚开源了个人 Agent Nod，研究预览版，跑在你自己电脑上，模型你自己选，<br><br>杂活它自己开浏览器跑完，到了要发送、付款、删除那一步，先停下来等你点头。<br><br>官方博客里举的活，都很具体：<br>→ 退订阅，顺手拒掉挽留优惠，再替你申请退款<br>→ 每月登录供应商后台，下载发票，整理好交给会计<br>→ 盯一个价格，降了再告诉你<br>→ 从导不出数据的后台里把上周数字扒出来，填进周报<br><br>它有自己的电脑，本地一台私有虚拟机加一个独立浏览器，没有接口的网站也能直接进去点。<br><br>Gmail、Calendar、Drive、Slack 连上就能用，你在 App、Telegram 或 WhatsApp 里跟它说一句就行。<br><br>很多人以为，让 Agent 动手前问一句，就是在提示词里写个“先确认”，<br><br>但 Nod 把这道检查放进了服务器：要发送、付款、发帖、删除你没交代过的东西，先有一道单独的检查核对你到底说过没有。<br>网页和邮件里的内容只当数据，给它下不了命令。<br><br>等你点头，它才动。<br><br>密码和银行卡加密存在你自己电脑上，由 Vault 通过模型看不到的私密表单填进网站，<br>就好比请了个跑腿助理，能替你开门、刷卡结账，从头到尾没见过密码和卡号。<br><br>Nod 本身免费，Apache 2.0 开源，Mac 和 Windows 直接下载就能装，模型费用你自己付，接 API key 或者用 ChatGPT Plus/Pro 登录都行。<br><br>早期测试者嫌贵，官方说最新版已经降下来不少，单个任务花过 5 美元它会先来问你，这个数还能改。<br> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120422496218300416/img/tD30KAiDioic-HME.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Zero-Breach检测间谍软件痕迹</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KitPloit · 2026-11-13 10:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Zero-Breach-Toolkit v2.0.7 — 免费、开源的检查工具，用于检测电脑、Android 手机和 iPhone 备份中雇佣兵间谍软件（Pegasus、Predator、Graphite、Candiru 等）的痕迹。Windows、Mac 和 Linux 平台的双击即用应用，支持 27 种语言。<a href="https://ktp.sh/l81zeTWGks" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/l81zeTWGks</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Zero-Breach-Toolkit v2.0.7 — Free, open-source check for traces of mercenary spyware (Pegasus, Predator, Graphite, Candiru and more) on computers, Android phones and iPhone backups. Double-click apps for Windows, Mac and Linux, in 27 languages. <a href="https://ktp.sh/l81zeTWGks" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/l81zeTWGks</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-Ofs_WUAI6q70.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>X单帖可发20张图片与视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaohu · 2026-11-13 10:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">𝕏 取消了每个帖子最多 4 张照片的限制<br><br>现在一个帖子可以一次上传 20 个照片和视频<br><br>😅</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jonah Katz <span style="font-size:12px;color:#999999;font-weight:400;">@dinkin_flickaa</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">X 平台今日重大更新<br><br>在 Twitter/X 支持每篇帖子最多 4 张照片和视频长达 10 年之后，上限已提升至 20！<br><br>愉快地发帖吧 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Big update to the X platform today<br><br>After 10 years of Twitter/X supporting up to 4 Photos and Videos per post, the limit has been increased to 20!<br><br>Happy posting </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UTKLW4AEsitH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UVP5W8AA3mOM.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UWbQXgAAXPaw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UXbnXcAAQg3B.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UYlgWcAAD8Xf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UZlgXsAATbCI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UajZWQAAQPXn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8UbnOWkAA1mh8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8XP4iWwAAQBNO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8cMfKX0AAxwiz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8cftTXoAAvBsO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

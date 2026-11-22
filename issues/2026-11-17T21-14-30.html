@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 05:14">
+<title>AI技术雷达 · 11月18日 05:14 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude 技能文件反超 Opus</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Google 提出自改进记忆系统</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Spectre GPU 加速量化因子计算</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;GPT-6.2 双模型兼顾能力与成本</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 技能文件反超 Opus</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @distortgeekin · 2026-11-17 20:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude 最小的模型用一个文本文件就击败了 Claude Opus<br><br>84 个真实任务：Haiku 配合 skills 27.7%，Opus 没有 skills 22.0%<br><br>差距不在模型，而在于把工作内容一次性写下来<br><br>6 个部分，6 个有缺陷的 skill 和一个你可以复制的 SKILL.md ↓ <a href="https://x.com/i/article/2122667244475846656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122667244475846656</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude's smallest model just beat Claude Opus with one text file<br><br>84 real tasks: Haiku with skills 27.7%, Opus without them 22.0%<br><br>The difference wasn't the model, it was writing the work down once<br><br>6 parts, 6 broken skills and a SKILL.md you can copy ↓ <a href="https://x.com/i/article/2122667244475846656" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122667244475846656</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 提出自改进记忆系统</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-17 22:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Google 关于 RSI 的一篇炸裂论文。<br><br>（收藏起来）<br><br>他们提出了一种在 harness 层面实现持续递归自我改进的方法。他们还为 harness 优化器提出了自己的自我改进记忆系统。<br><br>这清楚地凸显了追踪记录以及在你的 harness 中拥有一个功能性、自适应且结构化的持久记忆系统的重要性。<br><br>他们表明，当 harness 优化器记住它为什么做出过去每次编辑时，10 次持续运行中有 9 次得到改进。<br><br>他们讨论了一个常见问题：当你更换模型或基准测试时就会出现。一个由 Opus 进化来的 harness 在 Gemini 上起步得分 68.41，低于纯种子 harness 的 73.89。<br><br>自我改进记忆（Self-Improvement Memory）将过去的编辑按照它们所解决的 harness 问题进行分组。对于每次编辑，它存储推理依据、预期结果、观察结果和评估上下文。提案者和选择者在做出新更改之前都会读取它。<br><br>在包括从 Terminal-Bench 2.1 到 Terminal-Bench 4 的四个领域中，SIM 在六个跨数据集设置和四个从 Opus 到 Gemini 的设置中都优于仅从 harness 继续的方案。在十次编码运行中，它平均增加 2.36 分（p=0.003）。<br><br>如果你在自动进化 harness，请将每次编辑的原因和结果与代码一起存储。<br><br><a href="https://arxiv.org/abs/2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.18856</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Banger paper from Google on RSI.<br><br>(bookmark it)<br><br>They propose an approach for continual recursive self-improvement at the harness level. They also propose their own self-improving memory system for the harness optimizer.<br><br>This clearly highlights the importance of traces and having a functional, adaptive, and structured persistent memory system in your harness.<br><br>They show that a harness optimizer improves 9 of 10 continued runs when it remembers why it made each past edit.<br><br>They discuss that a common problem shows up when you change the model or the benchmark. An Opus-evolved harness started at 68.41 on Gemini, below the 73.89 of the plain seed harness.<br><br>Self-Improvement Memory groups past edits by the harness problem they addressed. For each edit, it stores the rationale, predicted outcome, observed outcome, and evaluation context. The proposer and the selector both read it before making new changes.<br><br>Across four domains, including Terminal-Bench 2.1 to Terminal-Bench 4, SIM beats continuing from the harness alone in six cross-dataset and four Opus-to-Gemini settings. Across ten coding runs, it adds 2.36 points on average (p=0.003).<br><br>If you evolve harnesses automatically, store the reasons and results of each edit next to the code.<br><br><a href="https://arxiv.org/abs/2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.18856</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVZWhqa4AAYavx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Spectre GPU 加速量化因子计算</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_zheergen · 2026-11-17 08:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我去！有人把量化交易最耗时间的因子计算，直接搬到了 GPU 上，速度最高提升近 78 倍！<br><br>更厉害的是，3196 只股票、363 万根 K 线，MACD、RSI 等多因子组合计算只用了 184 毫秒！<br><br>开源项目 Spectre，一套基于 Python + PyTorch 的 GPU 加速量化因子分析与策略回测框架。<br><br>以前做大规模股票量化，几千只股票同时计算指标、因子排名和组合权重，CPU 往往需要跑很久。<br><br>Spectre 直接利用 CUDA 并行计算，把因子研究和策略回测串成一套流程。<br><br>核心亮点：<br><br>1️⃣ GPU 因子引擎：支持 SMA、EMA、MACD、RSI、布林带等指标并行计算。<br><br>2️⃣ 高性能计算：官方测试中，多因子组合比 Zipline Pipeline 快约 77.7 倍。<br><br>3️⃣ 因子研究：支持 Rank、Z-Score、分位数、标准化和多因子组合。<br><br>4️⃣ 量化回测：支持事件驱动调仓、手续费、滑点、仓位管理和移动止损。<br><br>5️⃣ 绩效分析：兼容 Alphalens、Pyfolio，可分析因子收益、组合表现和交易记录。<br><br>6️⃣ 深度学习集成：基于 PyTorch，方便将因子计算与机器学习模型结合。<br><br>我比较看重它的 GPU 因子引擎，尤其是同时研究几千只股票、反复测试不同因子组合时，能大幅减少计算等待。<br><br>而且支持 Yahoo Finance 数据下载、CSV 和 Arrow 数据加载，不一定需要 GPU，CPU 也能运行。<br><br>做 Python 量化、多因子选股、机器学习交易或者大规模策略回测的，这套源码值得收藏！<br><br><a href="https://github.com/Heerozh/spectre" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Heerozh/spectre</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122492058900512768/img/6y2rQaOW0dQyLq9p.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">爱吃折耳根的Ace <span style="font-size:12px;color:#999999;font-weight:400;">@_zheergen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">卧槽！TradingView 写策略、跑回测、调参数，居然可以直接让 AI 帮你完成了！<br><br>104 个 MCP 工具，连 Pine Script 编译、逐笔交易分析、批量参数优化和策略版本管理都能自动操作，不用再反复手动点击！<br><br>tradingview-mcp，一套专门为 TradingView 桌面版打造的 AI 量化研究工具。<br><br>以前研究 Pine Script 策略，要自己写代码、加载图表、打开回测器，再反复修改参数。<br><br>现在这些流程可以交给 Claude、Cursor 等 AI 助手完成。<br><br>核心亮点：<br><br>1️⃣ Pine Script 开发：AI 编写、编译、保存脚本，支持版本管理和自动备份。<br><br>2️⃣ 完整策略回测：提取 40+ 项指标，包括净利润、胜率、夏普比率和最大回撤。<br><br>3️⃣ 逐笔交易分析：导出全部交易记录、进出场价格、手续费和资金曲线。<br><br>4️⃣ 批量参数优化：自动测试不同参数组合，记录收益、回撤等结果。<br><br>5️⃣ 图表自动控制：切换股票、Crypto、时间周期，管理指标、警报和历史回放。<br><br>6️⃣ AI Agent 集成：通过 104 个 MCP 工具，让 AI 直接操作 TradingView 桌面端。<br><br>我觉得最厉害的是它的回测自动化，比如让 AI 测试不同 EMA 参数，自动比较收益和回撤，再导出结果分析。<br><br>而且它不依赖截图识别，而是通过 TradingView 内部接口获取结构化数据，研究流程更方便复现。<br><br>做 TradingView、Pine Script、AI Agent 或量化策略开发的，这套 MCP 源码值得收藏！<br><br><a href="https://github.com/JostQQ/tradingview-mcp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JostQQ/tradingview-mcp</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122339871369138176/img/neTvEgY9O2LVc3AA.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>扩散 LLM 并行解码多 token</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-11-17 18:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">自回归 LLM 对比扩散 LLM，清晰解读：<br><br>（一个热门的 LLM 面试问题）<br><br>生成 500 个 token 并不总是需要 500 个顺序解码步骤。<br><br>自回归模型一次扩展一个 token 的响应。掩码扩散模型可以同时预测多个位置，然后重复该过程以完成响应。<br><br>两者都可以使用 transformer 组件，如嵌入、注意力和前馈层。它们的注意力模式和训练目标不同。<br><br>1) 自回归 LLM<br><br>在标准自回归解码中，每次前向传播为下一个 token 产生一个概率分布。<br><br>选中的 token 被追加，生成从那个更长的序列继续。<br><br>因果注意力防止一个位置访问未来的位置。因此，较早的 token 表示在新 token 到来时保持不变。<br><br>这使得它们的 KV 可以被缓存和重用。<br><br>一个 500 个 token 的响应通常需要 500 个顺序的 token 生成步骤，尽管诸如推测解码之类的技术可以减少昂贵的模型前向传播。<br><br>2) 扩散 LLM<br><br>在下面所示的掩码扩散方法中，生成从与提示词一起的掩码输出位置开始。<br><br>一次去噪过程使用双向上下文为多个位置预测候选 token。<br><br>通过基于置信度的采样，选中的预测被保留，其他位置在后续步骤中保持掩码状态。<br><br>模型逐步填充序列。它不一定会生成一个完整的草稿然后反复重写每个 token。<br><br>一些实现按块生成，而不是一次性处理整个响应。<br><br>每一步可以确定多个 token，使得步骤数少于输出 token 数。步骤预算同时影响速度和质量。<br><br>这里存在一些工程上的权衡。<br><br>双向注意力使得标准的自回归 KV 重用变得更加困难。一个 token 的表示在周围位置更新时可能发生变化，即使该 token 本身保持固定。<br><br>因此，缓存取决于架构和解码策略。例如，块扩散可以在已完成的块之间支持 KV 缓存。<br><br>更少的步骤也不保证更低的延迟。每一步可能处理多个位置，因此总计算量和实现方式都很重要。<br><br>双向条件化还支持填充文本或代码中的空白。<br><br>我在另一篇分析中介绍了 KV 重用在自回归解码中如何工作。<br><br>它涵盖了预填充期间缓存了什么、解码期间缓存如何增长，以及为什么在长上下文下它成为主要的内存瓶颈。<br><br>请在下方阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Autoregressive LLMs vs. diffusion LLMs, clearly explained:<br><br>(a popular LLM interview question)<br><br>Generating 500 tokens doesn't always require 500 sequential decoding steps.<br><br>Autoregressive models extend a response one token at a time. Masked diffusion models can predict multiple positions together, then repeat that process to complete the response.<br><br>Both can use transformer components such as embeddings, attention, and feed-forward layers. Their attention patterns and training objectives differ.<br><br>1) Autoregressive LLMs<br><br>In standard autoregressive decoding, each forward pass produces a probability distribution for the next token.<br><br>The selected token is appended, and generation continues from that longer sequence.<br><br>Causal attention prevents a position from accessing future positions. Earlier token representations therefore stay unchanged as new tokens arrive.<br><br>That allows their KV to be cached and reused.<br><br>A 500-token response normally requires 500 sequential token-generation steps, although techniques such as speculative decoding can reduce expensive model passes.<br><br>2) Diffusion LLMs<br><br>In the masked diffusion approach shown below, generation starts with masked output positions alongside the prompt.<br><br>A denoising pass predicts candidate tokens for multiple positions using bidirectional context.<br><br>With confidence-based sampling, selected predictions are retained while other positions remain masked for subsequent steps.<br><br>The model progressively fills the sequence. It doesn't necessarily produce a complete draft and repeatedly rewrite every token.<br><br>Some implementations generate block by block rather than processing the entire response together.<br><br>Multiple tokens can be finalized per step, allowing fewer steps than output tokens. The step budget affects both speed and quality.<br><br>There are some engineering tradeoffs.<br><br>Bidirectional attention makes standard autoregressive KV reuse harder. A token's representation can change when surrounding positions are updated, even if that token itself stays fixed.<br><br>Caching therefore depends on the architecture and decoding strategy. Block diffusion, for example, can support KV caching across completed blocks.<br><br>Fewer steps also don't guarantee lower latency. Each step may process many positions, so total computation and implementation matter.<br><br>Bidirectional conditioning also supports filling gaps in text or code.<br><br>I covered how KV reuse works in autoregressive decoding in a separate breakdown.<br><br>It covers what gets cached during prefill, how the cache grows during decoding, and why it becomes the main memory bottleneck at long context.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HXUiNVBbQAAI8MG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2034896077460316163" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2034896077460316163</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2034896077460316163" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2034896077460316163</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Multi-Agent 设计模式成本权衡</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-11-17 15:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">为什么一个 Agent 明明能完成的任务，非要拆成五六个 Agent；明明一条固定 Workflow 就能解决的业务，非要搞一个 Manager Agent，再配几个 Worker，最后加个 Supervisor 管理所有人。<br><br>整个架构看起来特别牛逼，但真正上线以后，Token 成本上去了，响应速度变慢了，出了问题反而更难排查。<br><br>这篇关于 Multi-Agent Design Patterns 的文章，我觉得特别值得研究。<br><br>它把多智能体系统拆成六种设计模式，而且没有只讲功能，还讨论了每种架构背后的成本和价值。<br><br>首先是 Sequential，顺序执行。<br><br>一个任务接着一个任务做，适合步骤之间存在明确依赖的场景。<br><br>然后是 Parallel，并行执行。<br><br>几个相互独立的任务同时处理，最后汇总结果。它可以缩短等待时间，但也会带来并发配额、资源竞争和结果合并的问题。<br><br>再往后是 Hierarchical，层级式架构。<br><br>由一个 Manager Agent 负责拆解目标、分配任务，再交给不同的专业 Agent 执行。<br><br>听起来像是在组建一支 AI 团队，但问题是，管理本身也是有成本的。<br><br>主 Agent 需要理解任务、委派工作、传递上下文、检查子任务结果。你多引入一个管理层，就多了一层可能发生错误的地方。<br><br>还有 Generator–Critic。<br><br>一个负责生成，另一个负责审查，发现问题以后再修改。<br><br>这个模式确实可能提高结果质量，但如果没有明确的评测标准，所谓审查也可能只是让另一个模型换个角度胡说八道。<br><br>两个 Agent 意见一致，不代表答案一定正确。<br><br>Human-in-the-Loop 则是把关键决策留给人。<br><br>比如招聘 Agent 可以自动读取简历、生成分析报告，但涉及正式修改招聘状态、发送面试邀请的时候，仍然需要明确的权限和审批机制。<br><br>最后是 Composite，把多种模式组合起来。<br><br>复杂业务确实可能同时需要顺序执行、并行任务、动态委派、结果验证和人工审核。<br><br>但我觉得这里最容易出现的错误，就是把复杂架构本身当成了技术成果。<br><br>举个最简单的招聘 Agent。<br><br>解析简历、提取岗位要求、生成匹配评分、检查结果、交给 HR 审核。<br><br>这几个步骤如果流程已经明确，完全可以用普通后端代码加 Workflow 完成。<br><br>批量简历可以通过任务队列并行处理，评分由模型负责，业务规则通过程序校验，最终结果交给 HR 确认。<br><br>为什么非要让每一步都变成一个 Agent？<br><br>模型自主决策是有价值的，但不是所有步骤都需要模型自主决策。<br><br>更值得研究的是，什么时候需要一个 Agent，什么时候需要多个 Agent，什么时候一条确定性的工作流反而更可靠。<br><br>原帖后面还提到了 MCP 和 A2A，这两个协议我觉得也很容易被混淆。<br><br>MCP 主要解决 AI 应用怎么连接工具和外部数据，A2A 则主要解决独立 Agent 系统之间怎么通信、委派任务和协作。<br><br>但接入 MCP，不代表工具调用就自动安全。<br><br>使用 A2A，也不代表多个 Agent 就天然拥有共享记忆、统一权限和可靠的任务恢复。<br><br>协议解决的是交互标准，真正的业务可靠性仍然需要系统自己实现。<br><br>所以我越来越觉得，多智能体工程真正值得研究的，不是 Agent 数量，而是增加一个 Agent 到底能产生多少实际收益。<br><br>任务成功率提高了吗？整体延迟下降了吗？<br><br>Token 和工具调用成本增加了多少？<br><br>出了故障还能不能准确定位和恢复？<br><br>如果这些指标都没有改善，那所谓更先进的多智能体架构，可能只是在花更多的钱完成同一件事情。<br><br>现在 AI 编程工具越来越强，开发几个 Agent、写一套编排代码确实已经不难了。<br><br>但能把系统做复杂，不代表有能力把复杂度控制好。<br><br>真正的工程判断，是你知道哪些任务应该并行，哪些任务必须顺序执行，哪些决策适合交给模型，哪些操作应该由确定性代码和人工审批负责。<br><br>别最后做了一个十几个 Agent 协作的庞大系统，结果还不如一个设计合理的单 Agent 稳定。<br><br>Multi-Agent 从来不是越多越好。<br><br>真正有价值的架构，是用必要的复杂度，换来可以被验证的业务收益。<br><br>如果复杂度增加了，但价值没有增加，那就不是技术升级，只是技术上的自我感动。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Amir Ansari <span style="font-size:12px;color:#999999;font-weight:400;">@AamirAnsar94694</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">𝗠𝗨𝗟𝗧𝗜-𝗔𝗚𝗘𝗡𝗧 𝗗𝗘𝗦𝗜𝗚𝗡 𝗣𝗔𝗧𝗧𝗘𝗥𝗡𝗦 — 𝗔 𝗖𝗢𝗦𝗧-𝗩𝗔𝗟𝗨𝗘 𝗕𝗥𝗘𝗔𝗞𝗗𝗢𝗪𝗡<br><br>构建多智能体 AI 系统不仅仅是连接多个 LLM。<br><br>关键在于选择正确的架构来平衡成本、性能、可扩展性和可靠性。<br><br>以下是每位 AI 构建者都应该了解的 6 个重要多智能体设计模式。<br><br>𝗛𝗘𝗥𝗘'𝗦 𝗧𝗛𝗘 𝗕𝗥𝗘𝗔𝗞𝗗𝗢𝗪𝗡:<br><br>01 — 𝗦𝗘𝗤𝗨𝗘𝗡𝗧𝗜𝗔𝗟 𝗣𝗔𝗧𝗧𝗘𝗥𝗡（顺序模式）<br><br>智能体在固定顺序中一个接一个地完成任务。<br><br>→ 任务 1 → 任务 2 → 任务 3 → 输出<br><br>→ 最适合：具有清晰依赖关系的确定性工作流。<br><br>→ 成本：$<br><br>→ 隐藏成本：当任务可以并行运行时执行更慢。<br><br>→ 使用场景：简单性和可靠性是首要任务时。<br><br>02 — 𝗣𝗔𝗥𝗔𝗟𝗟𝗘𝗟 𝗣𝗔𝗧𝗧𝗘𝗥𝗡（并行模式）<br><br>多个智能体同时处理独立的任务。<br><br>→ 智能体 A：处理任务 A。<br><br>→ 智能体 B：处理任务 B。<br><br>→ 智能体 C：处理任务 C。<br><br>→ 合并：组合所有结果。<br><br>→ 最适合：降低独立任务的延迟。<br><br>→ 成本：$$<br><br>→ 隐藏成本：更高的 token 使用量和基础设施成本。<br><br>→ 避免使用：任务之间高度相互依赖时。<br><br>03 — 𝗛𝗶𝗲𝗿𝗮𝗿𝗰𝗵𝗶𝗰𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻（层级模式）<br><br>一个管理智能体将任务委派给专业化的智能体。<br><br>→ 研究智能体：收集信息。<br><br>→ 分析智能体：评估发现。<br><br>→ 数据智能体：处理数据。<br><br>→ 报告智能体：生成报告。<br><br>→ 最适合：企业级规模的工作流。<br><br>→ 成本：$$$<br><br>→ 隐藏成本：复杂的编排和更高的开发工作量。<br><br>→ 长期价值：可重用的子智能体在整个工作流中产生杠杆效应。<br><br>04 — 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿–𝗖𝗿𝗶𝘁𝗶𝗰 𝗣𝗮𝘁𝘁𝗲𝗿𝗻（生成器–批评者模式）<br><br>一个智能体生成输出，另一个智能体审查并改进它。<br><br>→ 生成器智能体：创建初始输出。<br><br>→ 批评者智能体：审查质量并识别问题。<br><br>→ 修订：改进生成的结果。<br><br>→ 最适合：内容、代码、计划和复杂输出。<br><br>→ 成本：$$$<br><br>→ 隐藏成本：多个推理循环增加延迟和成本。<br><br>→ 值得使用：准确性比速度更重要时。<br><br>05 — 𝗛𝘂𝗺𝗮𝗻-𝗶𝗻-𝘁𝗵𝗲-𝗟𝗼𝗼𝗽（人类参与循环）<br><br>AI 执行任务，同时人类审查重要决策。<br><br>→ AI 智能体：处理请求。<br><br>→ 人类审查：检查结果。<br><br>→ 执行：执行已批准的任务。<br><br>→ 反馈：改进未来的执行。<br><br>→ 最适合：高风险决策和合规工作流。<br><br>→ 成本：$$$<br><br>→ 隐藏成本：人工投入和额外的延迟。<br><br>→ 必不可少：法律、安全、计费和关键决策。<br><br>06 — 𝗖𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗲 𝗣𝗮𝘁𝘁𝗲𝗿𝗻（组合模式）<br><br>将多种设计模式组合成一个复杂的工作流。<br><br>→ 顺序：执行有依赖关系的任务。<br><br>→ 并行：处理独立的任务。<br><br>→ 层级：委派职责。<br><br>→ 生成器–批评者：审查输出。<br><br>→ 人类参与循环：添加人类审批。<br><br>→ 最适合：复杂的端到端自动化。<br><br>→ 成本：$$$$<br><br>→ 隐藏成本：高基础设施和编排开销。<br><br>→ 最大错误：将其用于不需要这种复杂性的问题。<br><br>𝗧𝗛𝗘 𝟮𝟬𝟮𝟲 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗜𝗢𝗡 𝗦𝗧𝗔𝗖𝗞（2026 生产技术栈）:<br><br>𝗠𝗖𝗣 — 𝗧𝗢𝗢𝗟 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗩𝗜𝗧𝗬 𝗟𝗔𝗬𝗘𝗥（MCP — 工具连接层）<br><br>将 AI 智能体与外部工具和数据连接起来。<br><br>→ 工具访问<br>→ API<br>→ 检索<br>→ 数据库<br>→ 外部系统<br><br>→ 生态系统：Anthropic、OpenAI、Microsoft。<br><br>𝗔𝟮𝗔 — 𝗔𝗚𝗘𝗡𝗧 𝗖𝗢𝗢𝗥𝗗𝗜𝗡𝗔𝗧𝗜𝗢𝗡 𝗟𝗔𝗬𝗘𝗥（A2A — 智能体协调层）<br><br>使不同的 AI 智能体能够通信和协作。<br><br>→ 智能体消息传递<br>→ 任务委派<br>→ 共享记忆<br>→ 工作流协调<br>→ 能力发现<br><br>→ 生态系统：Google、AWS、Microsoft。<br><br>𝗧𝗛𝗘 𝗞𝗘𝗬 𝗟𝗘𝗦𝗦𝗢𝗡（关键教训）:<br><br>更多的智能体并不自动意味着更好的结果。<br><br>正确的架构取决于任务复杂性、预算、执行速度和可靠性要求。<br><br>从简单开始。只有当编排和专业化智能体带来可衡量的价值时才添加它们。<br><br>关注 @AamirAnsar94694 获取更多 AI 工具和科技更新。<br><br>#AI #AIAgents #AgenticAI #MultiAgentSystems #MCP #A2A #LLM #Automation</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">𝗠𝗨𝗟𝗧𝗜-𝗔𝗚𝗘𝗡𝗧 𝗗𝗘𝗦𝗜𝗚𝗡 𝗣𝗔𝗧𝗧𝗘𝗥𝗡𝗦 — 𝗔 𝗖𝗢𝗦𝗧-𝗩𝗔𝗟𝗨𝗘 𝗕𝗥𝗘𝗔𝗞𝗗𝗢𝗪𝗡<br><br>Building multi-agent AI systems isn't just about connecting multiple LLMs.<br><br>It's about choosing the right architecture to balance cost, performance, scalability, and reliability.<br><br>Here are 6 important multi-agent design patterns every AI builder should understand.<br><br>𝗛𝗘𝗥𝗘’𝗦 𝗧𝗛𝗘 𝗕𝗥𝗘𝗔𝗞𝗗𝗢𝗪𝗡:<br><br>01 — 𝗦𝗘𝗤𝗨𝗘𝗡𝗧𝗜𝗔𝗟 𝗣𝗔𝗧𝗧𝗘𝗥𝗡<br><br>Agents complete tasks one after another in a fixed sequence.<br><br>→ Task 1 → Task 2 → Task 3 → Output<br><br>→ Best For: Deterministic workflows with clear dependencies.<br><br>→ Cost: $<br><br>→ Hidden Cost: Slower execution when tasks could run in parallel.<br><br>→ Use When: Simplicity and reliability are priorities.<br><br>02 — 𝗣𝗔𝗥𝗔𝗟𝗟𝗘𝗟 𝗣𝗔𝗧𝗧𝗘𝗥𝗡<br><br>Multiple agents work on independent tasks simultaneously.<br><br>→ Agent A: Handles Task A.<br><br>→ Agent B: Handles Task B.<br><br>→ Agent C: Handles Task C.<br><br>→ Merge: Combines all results.<br><br>→ Best For: Reducing latency for independent tasks.<br><br>→ Cost: $$<br><br>→ Hidden Cost: Higher token usage and infrastructure costs.<br><br>→ Avoid When: Tasks depend heavily on each other.<br><br>03 — 𝗛𝗜𝗘𝗥𝗔𝗥𝗖𝗛𝗜𝗖𝗔𝗟 𝗣𝗔𝗧𝗧𝗘𝗥𝗡<br><br>A manager agent delegates tasks to specialized agents.<br><br>→ Research Agent: Collects information.<br><br>→ Analysis Agent: Evaluates findings.<br><br>→ Data Agent: Processes data.<br><br>→ Report Agent: Generates reports.<br><br>→ Best For: Enterprise-scale workflows.<br><br>→ Cost: $$$<br><br>→ Hidden Cost: Complex orchestration and higher development effort.<br><br>→ Long-Term Value: Reusable sub-agents create leverage across workflows.<br><br>04 — 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥–𝗖𝗥𝗜𝗧𝗜𝗖 𝗣𝗔𝗧𝗧𝗘𝗥𝗡<br><br>One agent generates an output while another reviews and improves it.<br><br>→ Generator Agent: Creates the initial output.<br><br>→ Critic Agent: Reviews quality and identifies issues.<br><br>→ Revision: Improves the generated result.<br><br>→ Best For: Content, code, plans, and complex outputs.<br><br>→ Cost: $$$<br><br>→ Hidden Cost: Multiple inference loops increase latency and cost.<br><br>→ Worth It When: Accuracy matters more than speed.<br><br>05 — 𝗛𝗨𝗠𝗔𝗡-𝗜𝗡-𝗧𝗛𝗘-𝗟𝗢𝗢𝗣<br><br>AI performs tasks while humans review important decisions.<br><br>→ AI Agent: Processes the request.<br><br>→ Human Review: Checks the result.<br><br>→ Action: Executes the approved task.<br><br>→ Feedback: Improves future execution.<br><br>→ Best For: High-risk decisions and compliance workflows.<br><br>→ Cost: $$$<br><br>→ Hidden Cost: Manual effort and additional latency.<br><br>→ Essential For: Legal, safety, billing, and critical decisions.<br><br>06 — 𝗖𝗢𝗠𝗣𝗢𝗦𝗜𝗧𝗘 𝗣𝗔𝗧𝗧𝗘𝗥𝗡<br><br>Combines multiple design patterns into one complex workflow.<br><br>→ Sequential: Executes dependent tasks.<br><br>→ Parallel: Handles independent tasks.<br><br>→ Hierarchical: Delegates responsibilities.<br><br>→ Generator–Critic: Reviews outputs.<br><br>→ Human-in-the-Loop: Adds human approval.<br><br>→ Best For: Complex end-to-end automation.<br><br>→ Cost: $$$$<br><br>→ Hidden Cost: High infrastructure and orchestration overhead.<br><br>→ Biggest Mistake: Using it for problems that don't need this complexity.<br><br>𝗧𝗛𝗘 𝟮𝟬𝟮𝟲 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗜𝗢𝗡 𝗦𝗧𝗔𝗖𝗞:<br><br>𝗠𝗖𝗣 — 𝗧𝗢𝗢𝗟 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗩𝗜𝗧𝗬 𝗟𝗔𝗬𝗘𝗥<br><br>Connects AI agents with external tools and data.<br><br>→ Tool Access<br>→ APIs<br>→ Retrieval<br>→ Databases<br>→ External Systems<br><br>→ Ecosystem: Anthropic, OpenAI, Microsoft.<br><br>𝗔𝟮𝗔 — 𝗔𝗚𝗘𝗡𝗧 𝗖𝗢𝗢𝗥𝗗𝗜𝗡𝗔𝗧𝗜𝗢𝗡 𝗟𝗔𝗬𝗘𝗥<br><br>Enables different AI agents to communicate and collaborate.<br><br>→ Agent Messaging<br>→ Task Delegation<br>→ Shared Memory<br>→ Workflow Coordination<br>→ Capability Discovery<br><br>→ Ecosystem: Google, AWS, Microsoft.<br><br>𝗧𝗛𝗘 𝗞𝗘𝗬 𝗟𝗘𝗦𝗦𝗢𝗡:<br><br>More agents don't automatically mean better results.<br><br>The right architecture depends on task complexity, budget, execution speed, and reliability requirements.<br><br>Start simple. Add orchestration and specialized agents only when they deliver measurable value.<br><br>Follow @AamirAnsar94694 for more AI tools &amp; tech updates.<br><br>#AI #AIAgents #AgenticAI #MultiAgentSystems #MCP #A2A #LLM #Automation</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122314951838830592/img/73dhSnUPIHe9QGdv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6.2 双模型兼顾能力与成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Nexuessy · 2026-11-18 04:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨 别催了！GPT 用户天天盼的 6.2，真来了！OpenAI 这次直接端上两款模型。<br><br>Astra 冲科研、编程和复杂专业任务，Sol 主打日常效率。这次不只想让你觉得“更聪明”，还要让同一笔钱能干更多活。<br><br>最狠的是成本：官方 Agents’ Last Exam 测试中，Astra 比 GPT-6 Astra 高约 5.2 分，单任务成本却不到前代的三分之一。不过这是两代各自最佳成绩的对比，并非同一推理档位；也不是 API 单价暴降七成，输入、输出单价实际降了 20%。<br><br>两款已开始在 ChatGPT Work、Codex 和 API 开放，具体看套餐、权限和推送进度。注意：不是打开普通聊天窗口，就人人都能切到 6.2。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWu1cgbYAAwT9n.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>diagram-design 长文转图表</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-17 22:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">😱卧槽，我要是早点发现就好了！！<br><br>在 GitHub 上斩获 6.8 万Star🌟 的技能 diagram-design，这简直是给内容创作者的创作神器！<br><br>它最牛的地方，就是能直接把长篇大论、复杂的业务流程，以及各种概念之间的关系，转变成专业且极具美感的可视化图表！<br><br>有了这个技能，你能直接干这些事：<br><br>· 搞定高逼格的专业 PPT 幻灯片<br>· 一键生成文章专属配图和数据图表<br>· 快速产出演示汇报用的视觉内容<br>· 制作精美教育卡片来传递知识<br>· 画清工作流，展示复杂流程的每一步<br>· 用极度好懂的图，把概念之间的底层联系捋得明明白白<br><br>以前花几个小时，吭哧吭哧把文字转成视觉图，现在直接交给它，让 AI 帮你把信息结构瞬间立起来。<br><br>GitHub 链接：<br><a href="https://github.com/cathrynlavery/diagram-design" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cathrynlavery/diagram-design</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jane Street 面试减少写代码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-11-18 00:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Jane Street公开说-- AI时代。面试有变化，但是一点点。<br>算法还要考，系统设计加码。<br><br>以下是全文：<br><br>我们的软件工程面试正在改变（一点点）<br><br>过去几年，大语言模型改变了软件的构建方式，在 Jane Street 也不例外。如今我们大多数工程师每天都在用它们，不仅写代码，还读代码、调试代码、做代码评审，以及做很多与代码无关的事。<br><br>我们最近在一期播客里聊过 AI 在开发中的用法，也在一篇关于形式化方法的文章里谈到 agent 式编程如何重塑我们的工作方式。<br><br>但我们的编程面试一直没变。今天我们问软件工程师的问题，和多年来问的还是同一种风格：和一两位面试官坐下来，一起编程解一道题，边做边聊。<br><br>这种方式一直很管用，核心目标也没变：我们想看你怎么解决问题、怎么组织工作、怎么沟通，以及怎么在合作中追求优秀的软件开发。但工作的形态已经变了，我们觉得面试也该跟着变。既然生成代码比以往任何时候都更便宜，工作的其他部分就显得更重要了：对“该做什么”的品味、选择能经得起时间的抽象、确保做出来的东西确实正确，等等。<br><br>所以今年夏天，我们开始在校园招聘的 onsite 里试行几种新的面试形式。大体上，它们写代码的部分更少，更偏高层面的东西：软件设计、验证代码的质量、结构和意图，以及用 LLM 生成代码。大多数轮次仍将是传统编程面试，不借助 LLM 进行。<br><br>我们知道这听起来很含糊，但这是故意的：这些形式还在演变，我们不想今天详细描述一个六个月后可能就变了样子的东西。<br><br>有几点值得了解：<br><br>不是每次 onsite 都有这些新轮次，来了之后我们会提前告诉你会遇到什么。<br><br>其余流程不变。如果你读过我们以前关于面试的文章，那些内容依然准确。<br><br>我们觉得 LLM 在日常工作中非常有价值，但也明白不是每个人都有丰富的 LLM 使用经验。你不需要有一套很成体系的 agent 工作方法也能在我们的流程里表现好。归根结底，我们要找的是对构建软件有出色直觉的人，而评估这一点我们觉得不需要 LLM。<br><br>不同的人把 LLM 融入工作流的方式和程度各不相同，我们不要求你有特定的配置，也不要求你事事都用它们。我们在意的是你对自己用的工具想得清楚：它们擅长什么、在哪里不足、什么时候该换别的工具。<br><br>和一段时间以来一样，更有经验的候选人的面试会更多样，涵盖从产出软件、设计系统到讨论过往工作等多种形式。<br><br>和往常一样，我们会继续迭代，有更多可说的会再写。<br><br>如果你有兴趣加入我们，欢迎在官网申请！<br><br><a href="https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>确定性模拟测试让分布式测试可复现</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @martinfowler · 2026-11-17 22:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">分布式系统由于其执行轨迹中固有的非确定性而难以测试。Unmesh Joshi 描述了确定性模拟如何允许可复现的执行。<br><br><a href="https://martinfowler.com/articles/deterministic-simulation-testing.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://martinfowler.com/articles/deterministic-simulation-testing.html</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Distributed systems are hard to test due to inherent non-determinism in their execution traces. Unmesh Joshi describes how deterministic simulation allows reproducible execution.<br><br><a href="https://martinfowler.com/articles/deterministic-simulation-testing.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://martinfowler.com/articles/deterministic-simulation-testing.html</a></p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

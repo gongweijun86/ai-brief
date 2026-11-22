@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月22日 20:14">
+<title>AI技术雷达 · 10月22日 20:14 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;lcu让任意Agent操控桌面</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;GitLab修复10分未授权RCE</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Anthropic将5%股份划入公益基金</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;MemCurrent补Agent持久记忆</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>lcu让任意Agent操控桌面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liangzhu_AI · 2026-10-22 19:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">别再到处求内测资格了，现在的 Computer Use 已经可以通过 MCP 直接嫁接给任意 Agent。<br><br>宝玉大佬拆解了开源项目 lcu 的精妙实现：<br>它根本不需要去重复造一套繁琐的屏幕识别轮子，<br>而是直接调用本机已有的 ChatGPT 桌面版底层运行时，<br>通过标准的 MCP 协议，无缝接入到 Claude Code、Codex CLI 等各种你常用的终端 Agent 里。<br><br>暴露给模型的接口极其干净：只有极简的 js 操作工具，<br>让 Agent 能够像真人一样自动移动鼠标、点击按钮、输入表单。<br>打通这个桥梁后，你在本地任何软件上的重复操作都能被一键接管。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">宝玉 <span style="font-size:12px;color:#999999;font-weight:400;">@dotey</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">学习研究了下 amontlabs/lcu 这个项目，它把 Codex 的 Computer Use（让 AI 看屏幕、点鼠标、敲键盘来操作电脑的能力）单独拆了出来，让 Claude Code、Codex CLI、Pi 等其他 AI Agent 工具也能调用。<br><br>我本来还以为它是模仿 Codex 实现了一套，原来是直接用的 Codex 的 Computer Use，在本机找到已安装的 ChatGPT 桌面版，启动其中 OpenAI 自带的 Computer Use 运行时，再通过 MCP 接到你用的 Agent 工具里。仓库文档写明，指令、执行和权限策略都以 OpenAI 原版运行时为准。<br><br>因此电脑上必须装有官方 ChatGPT 桌面版，但不需要登录 ChatGPT 或 Codex 账号。<br><br>它给模型的工具很少。常见的电脑操控方案会把截图、点击、输入、滚动各做成一个工具，LCU 只给两个：js 和 js_reset。<br><br>js 用来执行一段 JavaScript 代码，运行环境里预置了一个名为 cua 的对象。模型通过写代码来操作电脑：先调用 cua.getState() 拿到当前桌面状态和使用说明，再用 getApp 选定某个窗口，然后调用 click、typeText、pressKey、getScreenshot 等方法。点击、输入、读取结果可以写在同一段代码里，一次调用完成。<br><br>这个 JavaScript 环境会保留状态，上一次调用里定义的变量，下一次还能接着用；环境出问题时调用 js_reset 清空重来。除了截图，模型还能读取窗口的无障碍信息（操作系统提供给读屏软件的界面元素列表），按元素点击，不必完全依赖屏幕坐标。<br><br>js 加 cua 对象这套接口是 OpenAI 原版的设计，LCU 原样转发。仓库记录显示，在 macOS 上对比测试时，模型收到的初始化说明和首次调用返回的使用指南，与官方 Codex 收到的内容逐字节一致。<br><br>目前正式适配的 Agent 工具是 Pi、Codex CLI 和 Claude Code，Oh My Pi 和 Hermes 为实验性支持。系统支持 Apple Silicon 芯片的 macOS（需授予辅助功能和屏幕录制权限），以及使用 X11 桌面的 Linux（ARM64 和 x86-64）。Windows 11 尚在候选阶段，Intel Mac 和 Wayland 桌面不支持。<br><br>控制 Chrome 浏览器需要额外开启，走的是 OpenAI 官方 Chrome 扩展，每个网站仍需单独批准。安装需要 Python 3.12 以上，README 给出的做法是把一段提示词贴给自己的 Agent，让它按安装文档完成配置，也可以从 GitHub 手动下载安装包。<br><br>项目地址：<a href="https://github.com/amontlabs/lcu" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/amontlabs/lcu</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2107144138705555456/img/cauIB3oruIpymzHN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI渗透工具链降到单人作战</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-10-22 16:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想想有些后背发凉，有了这些开源项目，攻击周期直接从数月下降到数天，攻击成本更是将养一支专业团队下降到单人作战：<br><br>1. 侦察：ScopeSentry（由ARTEX作者贡献），分布式资产测绘，子域、端口、指纹、漏洞一扫到底，ARTEX 能直接同步它的资产🫱<br><a href="https://github.com/Autumn-27/ScopeSentry" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Autumn-27/ScopeSentry</a><br>2. 逆向：rea，把 Ghidra、Hopper 接进 Codex、Cursor，伪代码和调用链直接出🫱<br><a href="https://github.com/morluto/rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/morluto/rea</a><br>3. 突破：Strix 一队 agent 协作，真实 PoC 验证；PentAGI 自带沙箱、记忆和 20 多个工具🫱<br><a href="https://github.com/usestrix/strix" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/usestrix/strix</a><br><a href="https://github.com/vxcontrol/pentagi" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vxcontrol/pentagi</a><br>4. 编排：CyberStrikeAI 把 MCP 工具、RAG、攻击链建模和审批做成平台；ARTEX 加上资产图和人在环路🫱<br><a href="https://github.com/AIPentest/CyberStrikeAI" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/AIPentest/CyberStrikeAI</a><br><a href="https://github.com/Hinln/ARTEX" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Hinln/ARTEX</a><br>5. 评测：garak 扫 LLM 漏洞，promptfoo 把红队接进 CI🫱<br><a href="https://github.com/NVIDIA/garak" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NVIDIA/garak</a><br><a href="https://github.com/promptfoo/promptfoo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/promptfoo/promptfoo</a><br><br>猴子拿枪并不可怕，可怕的是组织级别、甚至国家级别的攻击，守护自己的一亩三分地比往常任何时候都更加重要了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">yihong0618 <span style="font-size:12px;color:#999999;font-weight:400;">@yihong0618</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">下个阶段每个猴子手里都有了 ak47 对每个企业的 SRE 和安全都是挑战，会出现越来越多的安全和勒索事件。。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GitLab修复10分未授权RCE</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xluffy_eth · 2026-10-22 11:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨 今天互联网炸了 🚨<br><br>2026 年 10 月 21 日，这天得记进历史<br><br>1. eMudhra：私钥居然就是&quot;4&quot;。8 个密钥伪造任意网站，持续 17 个月。6000 多万张证书有风险。<br><br>2. 印度国家银行（SBI）确认了。3897 名客户的手机号、生日、地址和贷款数据，在暗网上被发现了。<br><br>3. 拉贾斯坦邦警方称遭黑客攻击。该团伙声称在卖 7 万条身份记录和 59460 个号码。未经证实。<br><br>4. php2shell【9.2 分】PHP 里的未授权远程代码执行。覆盖 70% 的网站。WordPress、Drupal、Laravel 全中。CISA 说：要么打补丁，要么下线。<br><br>5. GitLab【10.0/10】满分。未授权远程代码执行，不用登录就能打。<br><br>6. Node.js【CVE-2026-111497】Brotli 解码器远程代码执行，外加 TLS 绕过。今天一共修了 10 个 CVE。还顺手拦了 eMudhra。<br><br>7. Railway 今天被攻破。环境变量被解密。你的 API 密钥和数据库密码全暴露了。全部轮换。<br><br>8. OpenCode 被攻破。Console 用户的 OpenAI、Anthropic、Google API 密钥泄露。蒸馏攻击。账单被刷到飞起。<br><br>9. LiteLLM PyPI 的 v1.107.0 今天早上是恶意包。偷凭证，还留后门。<br><br>10. Plex2Shell 正在被实际利用。黑客当下就在装挖矿程序。已进 CISA 已知被利用漏洞清单，截止日期 10 月 23 日。<br><br>AI 找漏洞，AI 也在利用漏洞。人打补丁的速度跟不上。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic将5%股份划入公益基金</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-22 14:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic把自己至少5%的股份划给了一只新设的公益基金，之后还可能再加2%。<br><br>基金就叫Anthropic Public Benefit Fund，用途里明确写了应对AI对就业的冲击。给的是股份而不是现金，这个设计挺聪明：公司越值钱，这笔承诺的分量越重，等于把自家的上行和对外的补偿绑在了一起。<br><br>我之前就觉得，AI公司嘴上谈自己会造成失业已经谈了两年，真掏东西的几乎没有。Anthropic这次把话写进了股权结构里，至少比发白皮书实在。但股份在没有流动性事件之前就是纸面数字，真要大额支出，多半得等到IPO或者大规模老股转让，中间隔着好几年。钱具体花在哪、谁说了算，目前也没有细节。<br><br>我倾向于把它看成一次定价很低的声誉投资，用尚未变现的股权换现在就能兑现的道德合法性。这笔交易对Anthropic肯定划算，对被AI冲掉工作的人划不划算，全看后面那套治理条款怎么写。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MemCurrent补Agent持久记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KakaluoteW45042 · 2026-10-22 18:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">22.3% 到 68.4%，涨出来的不是记忆，是治理。<br><br>会整理旧经验、按需取回，而不是把聊天记录原样塞回去。存储早就在商品化，过期语义和 recall 路由才是真难题。<br><br>厂商自建测试，看方向，别当基准。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">VkDream <span style="font-size:12px;color:#999999;font-weight:400;">@VeknQAQ</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Databricks 的内部测试：同一个代理模型，加上 MemCurrent 记忆后，任务通过率从22.3%到了68.4%，token少用了31%。<br>它会整理旧经验，不是把全部聊天记录塞回去。结果来自厂商自建测试。<br><a href="https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVON3QIXkAAvGe3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月9日 23:37">
+<title>AI技术雷达 · 11月9日 23:37 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;CS329Z中文教程拆解Agent搭建</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;samir-vllm手搓CUDA推理引擎</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Xcode插件可直接构建iPhone应用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Mirage视觉模型22MB端侧推理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;Tailscale隐藏规则致etcd故障</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">13</span>&nbsp;&nbsp;TailorRig自动为复杂服装角色绑骨</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CS329Z中文教程拆解Agent搭建</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xqliu · 2026-11-09 12:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">斯坦福有门课叫 CS329Z，Engineering AI Agents，讲怎么把 agent 搭出来、测出来、再改好。现在有人把它整理成了一套中文教程。<br><br>一共 19 讲，从大模型、RAG、工具调用，讲到记忆、多 agent 协作、评测和安全，还配了 4 项实践：从零搭一个 agent、设计评测、课程项目、论文实践。<br><br>最实用的是 HW1 和第 5 讲配套代码的阅读指南。光看讲义只能懂个大概，跟着代码读一遍才算真上手。<br><br>门槛写得很清楚：会写 Python、调过 API 就行。作者给的路线是先读第 1 到 4 讲，再动手做 HW1。<br><br>内容全是 Markdown，另有一个能搜索、带目录的网页版，还有一个单文件离线版，下载下来用浏览器就能打开。<br><br>这是作者自己整理的学习资料，不是斯坦福官方中文版。10 月 28 号建的仓，到今天 510 星。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>samir-vllm手搓CUDA推理引擎</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wlzh · 2026-11-09 22:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟们，想搞懂 LLM 推理到底在干嘛，别只看博客了，有人直接手搓了一个推理引擎给你拆。<br><br>这个叫 samir-vllm 的小项目，用 C++ 和 CUDA 从零写了一个能跑起来的推理引擎，跑的是 Llama 3.2 1B，配了 6 个多小时视频和 85 页手写笔记。<br><br>它把推理全链路都摊开了讲：权重怎么加载、prefill 和 decode 怎么分工、KV cache 和分页注意力怎么做、连续批处理怎么调度，跟着视频一步步能把每个 CUDA kernel 都写出来。<br><br>我觉得这东西适合两类人：想真正理解 vLLM 那套机制的，看完就知道 paged attention 不是魔法了；还有想练 CUDA 的，照着抄一遍比刷题管用。<br><br>仓库现在 72 个 star，代码 MIT 开源，笔记部分保留版权只能自己看不能转载。<a href="https://github.com/samir-sarwar/samir-vllm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/samir-sarwar/samir-vllm</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cordis插件树用原型链实现继承</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-09 20:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">学习 DeepSeek Harness 之 TypeScript 原型链<br><br>为了搞懂 DSH 底下的插件框架 Cordis<br>学 TypeScript 时发现一个很有意思的点<br>准确说是 JavaScript 的特性：对象可以直接继承另一个对象<br><br>举个例子：<br>const b = Object.create(a)   // b 以 a 为原型<br>const c = Object.create(b)   // c 以 b 为原型<br>c.x                                                 // 读 c 的属性 x<br><br>c 自己没有 x，就去 b 找，b 没有，再去 a 找<br>这个往上找的过程，是引擎自动完成的<br><br>这和 Java 那种类继承不一样<br>类继承继承的是模板，拿不到某个对象运行时里装的数据<br>原型继承继承的是一个活着的对象<br>a 现在有什么、以后再加什么，c 都能读到<br>Go、Java、C++ 都没有这个语法<br>想要同样效果，只能把父对象当参数传进去<br>存成 parent 字段，再手写一层层往上找<br><br>这就是 Cordis 插件树的地基：<br>每个插件拿到一个 Object.create 出来的子 ctx<br>能读到上层所有东西，自己写的只留在自己这一层</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWryR23bYAAYmjk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Xcode插件可直接构建iPhone应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xluffy_eth · 2026-11-09 17:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">苹果把 Xcode 塞进 Claude Code 里了。<br><br>指令：<br>/plugin install xcode@claude-plugins-official<br><br>这是苹果官方做的插件，现在就在 Claude Code 的插件目录里：<br><br>• 构建、运行、测试你的 App<br>• 渲染 SwiftUI 预览<br>• 操作模拟器和真机 iPhone<br>• 读构建日志和报错<br>• 搜苹果开发者文档<br><br>现在 Claude 能直接构建你的 iPhone App、看到界面长什么样、顺手把问题修了，你都不用打开 Xcode。<br><br>在 Claude Code 里安装就行<br><br>需要 Mac 上装好最新版 Xcode。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Eniac提供规模化网页数据抽取API</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sudiptabiswas93 · 2026-11-09 14:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">网络是为人类建造的：一个问题，一个答案，十个链接。<br><br>它从来不是为了大规模数据提取而建造的。因此，我们今天推出 Eniac。<br><br>Eniac (<a href="https://eniac.floworks.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eniac.floworks.ai</a>) 是一个 API，用于查询网络，以尽可能大的规模提取可验证且附带引用的数据。<br><br>销售名单。市场调研。候选人搜索。金融研究。新闻报道。买家和供应商发现。以及更多。<br><br>三年构建 AI agent 的经验教会了我们一件事：agent 在执行行动上很少失败。它们失败是因为它们所依据的数据不完整，或者是编造的。<br><br>今天，提取大规模网络数据需要将搜索 API 和 agentic LLM 循环串联在一起——这种架构之所以失败，是因为 LLM 不断从其训练记忆中拉取数据（而不是当前的网络），并且在发现缺口时经常用推断的（通常是编造的）细节来填补。<br><br>Eniac 改变了这一切。<br><br>今天就用 Eniac 构建：<a href="https://eniac.floworks.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eniac.floworks.ai</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The web was built for humans: one question, one answer, ten links.<br><br>It was never built for large scale data extraction. So, today we are launching Eniac.<br><br>Eniac (<a href="https://eniac.floworks.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eniac.floworks.ai</a>) is an API to query the web for extracting verifiable and cited data at the largest possible scale. <br><br>Sales lists. Market research. Candidate search. Financial research. Journalism. Buyer and supplier discovery. And much more.<br><br>Three years of building AI agents taught us one thing: agents rarely fail at acting. They fail because the data they act on is incomplete, or made up.<br><br>Today, extracting large scale web data involves wiring together search APIs and agentic LLM loops-<br>an architecture that fails since LLMs keep pulling data from its training memory (instead of current web) and often fill in inferred (often made up) details where it finds the gap.<br><br>Eniac changes that.<br><br>Build with Eniac today: <a href="https://eniac.floworks.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eniac.floworks.ai</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119678903853936640/img/kKfBqawhZRkd2x0D.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Spin Operator跑Wasm应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KubeBuilders · 2026-11-09 23:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Spin Operator 使基于 Wasm 的 Spin 应用能够在 Kubernetes 上运行，使用自定义 CRD 和基于 Kubebuilder 构建的 controller。<br><br>它使用 containerd shim 实现沙箱化运行时，支持本地和远程集群。<br><br>➜ <a href="https://ku.bz/vT-jJVvXt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/vT-jJVvXt</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Spin Operator enables Wasm-based Spin apps to run on Kubernetes using custom CRDs and a controller built with Kubebuilder<br><br>It uses containerd shims for sandboxed runtime and supports local and remote clusters<br><br>➜ <a href="https://ku.bz/vT-jJVvXt" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/vT-jJVvXt</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWsXZUpXgAAGqfR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>搞机工具箱网页版免PC跑ADB</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-09 23:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让 Android ADB 玩机操作在浏览器里直接完成，不用装 PC 端工具箱。<br><br><a href="https://github.com/CzJam/gjgjxweb" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CzJam/gjgjxweb</a><br><br>《搞机工具箱》的网页移植版，基于 Tango（ya-webadb）实现 WebUSB/WebADB，配合 xterm.js 打通 Android Shell 交互终端，在 Chromium 内核浏览器里免安装使用。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi K3.1 Pro免费做3D模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xluffy_eth · 2026-11-09 17:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">牛逼，Kimi K3.1 Pro 现在免费了，<br><br>能直接帮你做幻灯片、表格、网站和 3D 模型，<br>水平差不多相当于你时薪 75 美元招的兼职。<br><br>打开 <a href="https://kimi.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://kimi.com</a>，<br><br>在对话框下面选对应工具，然后套用下面 7 条提示词：</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mirage视觉模型22MB端侧推理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-09 23:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Mirage：仅22MB的超轻量多功能视觉AI模型<br><br>仅有5130万参数的视觉模型，并通过专门的2比特量化技术将体积压缩到约22MB。在实际使用中，模型在三星S26手机的NPU上只需74毫秒就能完成单次全流程分析。<br><br>它能在一瞬间看懂画面中的场景环境，精准圈出各类物品并生成精细轮廓，自动读取图片里的招牌或标签文字，理清物体之间的空间关系，还能根据预设的选项直接给出判断结果，最终输出整齐规范的结构化数据供各类应用程序直接使用。<br><br>模型：<a href="https://huggingface.co/Cactus-Compute/mirage" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/Cactus-Compute/mirage</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWsUu0qbMAIIhlQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CleanYourTV清理电视预装与广告</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GcZsmkv · 2026-11-09 23:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🪄工具安利：最近非常火的电视开源工具“CleanYourTV”，通过局域网连接 Android TV 或 Google TV停用不需要的预装应用、广告和遥测服务，并在兼容设备上安装简洁的原生桌面。<br><br>·GitHub：<a href="https://github.com/Gathin23/cleanyourtv" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Gathin23/cleanyourtv</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWsUZqraMAAomCg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Tailscale隐藏规则致etcd故障</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KubeBuilders · 2026-11-09 23:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这个案例研究展示了 Tailscale 添加的一条隐藏的 iptables-legacy NAT 规则如何改变了 Kubernetes 主机之间的源 IP，导致 etcd peer TLS 故障，以及团队如何找到并移除了它。<br><br>➤ <a href="https://ku.bz/MNNxsw45F" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/MNNxsw45F</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This case study shows how a hidden iptables-legacy NAT rule added by Tailscale changed source IPs between Kubernetes hosts and broke etcd peer TLS, plus how the team found and removed it<br><br>➤ <a href="https://ku.bz/MNNxsw45F" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ku.bz/MNNxsw45F</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Java新JEP推轻量JSON解析API</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @java · 2026-11-09 23:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">JSON 在现代软件中无处不在，许多用例的规模太小，不值得为此引入外部依赖。<br><br>一个新的 JEP 提出了一个简单的孵化中的 API，用于解析、导航和生成 JSON 文档，以应对这些日常用例。<br><br>来自 Devoxx Belgium 的这个演讲展示了数据导向编程（Data-Oriented Programming）如何帮助简化该 API，讨论其预期用例，概述设计权衡，并演示其能力。<a href="https://social.ora.cl/6014BH1uMM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://social.ora.cl/6014BH1uMM</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">JSON is ubiquitous in modern software, and many use cases are just too small to justify adding external dependencies.<br><br>A new JEP proposes a simple, incubating API for parsing, navigating, and generating JSON documents to address these everyday use cases.<br><br>This talk from Devoxx Belgium shows how Data-Oriented Programming helps simplify the API, discuss its intended use cases, outline the design trade-offs, and demonstrate its capabilities. <a href="https://social.ora.cl/6014BH1uMM" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://social.ora.cl/6014BH1uMM</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWprC1jXQAAznsW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TailorRig自动为复杂服装角色绑骨</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-09 23:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">TailorRig：让3D复杂服装角色实现自动绑骨<br><br>做3D动画时，给穿复杂衣服的角色做动作绑定特别麻烦，自动生成的骨骼通常不可控，裙子或袖子等布料还经常粘在手臂身体上乱扯。<br><br>腾讯光子工作室联合西安交大、清华等高校开发了TailorRig，美术人员只需要提供一套标准人体骨骼模板并勾选想要的配件标签（比如裙子、头发或袖子），系统就会按层级自动生成对应的骨骼链，并按从链到骨的分级方式分配权重。<br><br>生成出来的骨架完全兼容原来的动画资源，可以直接复用以前的动作库；同时裙子、袖子和身体的动作分界清晰，大幅减少了布料错位和穿帮拉扯的现象，就算面对复杂的古风或层叠服装，也能一键生成自然跟随身体摆动的布料动态。<br><br>项目主页（后续会开源）：<a href="https://xxxx0601.github.io/trig/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://xxxx0601.github.io/trig/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119807606625849344/img/3rL4Wpr8VY_Ai2qZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GridCraft用指令生成销售看板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-11-09 22:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">README 里用纯命令直接敲出一整套销售看板，看效果还挺齐整。<br><br>条件格式、合计行、迷你图加上两张实时图表全都有，全是靠 GridCraft 的指令一次性跑出来的。<br><br>GitHub：<a href="https://github.com/storytold/gridcraft" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/storytold/gridcraft</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWsRMd4aUAEJmzT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Drex Max v1.1登顶决策模型榜</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-09 22:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Drex Max v1.1 现在在 Artificial Analysis Decision Index 上排名第 1！<br><br>这是我测试过的最强大的决策模型之一。<br><br>它速度快且支持多模态；v1.1 的开放权重即将发布。<br><br>我们一直在使用 Drex Max 进行研究分诊和其他 agentic 研究工作流。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Drex Max v1.1 now ranks #1 on the Artificial Analysis Decision Index!<br><br>This is one of the strongest decision models I've tested.<br><br>It's fast and multimodal; open weights for v1.1 are coming soon.<br><br>We've been using Drex Max for research triage and other agentic research workflows.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Nace AI <span style="font-size:12px;color:#999999;font-weight:400;">@NaceAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Drex Max v1.1 在 Decision Index @ArtificialAnlys 上排名第 1，即将发布开放权重！<br><br>两者均实现了 SOTA 和 Pareto 前沿，它是当今最快且能力最强的决策模型之一。<br><br>Drex API：<a href="http://nace.ai/drex（约" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://nace.ai/drex（约</a> 100 万免费请求）<br>论文：<a href="http://arxiv.org/pdf/2611.07854" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://arxiv.org/pdf/2611.07854</a><br><br>做出更好的决策。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Drex Max v1.1 is #1 on Decision Index @ArtificialAnlys and going open-weight soon!<br><br>Both achieving SOTA and Pareto frontier, it’s one of the fastest &amp; most capable Decision models today<br><br>Drex API: <a href="http://nace.ai/drex" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://nace.ai/drex</a> (~1M free requests)<br>Paper: <a href="http://arxiv.org/pdf/2611.07854" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://arxiv.org/pdf/2611.07854</a><br><br>Make better decisions.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWr53fYawAAihGq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

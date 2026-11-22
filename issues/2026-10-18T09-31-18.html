@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月18日 17:30">
+<title>AI技术雷达 · 10月18日 17:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;TrenTorch 从零实现 ML 算法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;VoiceStudio 本地语音克隆合成</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Codex Worktree 隔离并行任务</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;1873铁路崩盘类比AI投资潮</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Sweeney 70%编码工作被AI接管</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TrenTorch 从零实现 ML 算法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Michaelzsguo · 2026-10-18 10:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刷算法题有 LeetCode，刷 AI / ML 题有 TrenTorch！<br><br>学了那么多机器学习理论，真让你从零写一个 Softmax、反向传播，甚至 Transformer，你能写出来吗？<br><br><a href="http://TrenTorch.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://TrenTorch.com</a> 免费提供 1600 多道题，从线性回归、神经网络，到强化学习、模型推理和底层 Kernel。<br><br>玩法和 LeetCode 一样：看题、写代码、提交，用隐藏测试验证结果。区别在于，LeetCode 考算法和数据结构，TrenTorch 考你能不能亲手实现机器学习算法。<br><br>比如平时一行代码就能调用的 Softmax、交叉熵损失，在这里都得从零实现，还要处理数值溢出、张量形状等细节。<br><br>准备 AI / ML 岗位面试可以拿它刷题，自学也能检验一下：那些看懂了的理论，自己到底能不能写出来。<br><br>网站展示的注册用户里，也有来自 OpenAI、Anthropic 等头部公司，以及哈佛、斯坦福等高校的学习者。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU4VN1NX0AAWoy8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VoiceStudio 本地语音克隆合成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lxfater · 2026-10-18 09:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">配音、克隆声音，不一定要花钱了。<br><br>GitHub 上有个开源项目 VoiceStudio，能把一套语音工作台装进你自己的电脑。<br><br>它可以做什么？<br><br>→ 给一段参考录音，克隆已获授权的声音<br>→ 把文字生成旁白、口播和有声书<br>→ 给视频配上其他语言的语音<br>→ 把录音转成文字<br>→ 在不同语音模型之间切换<br><br>这些功能，一个应用搞定🤝。<br><br>选用兼容的本地模型后，语音生成就在自己的机器上完成，不用每生成一段音频都调用外部付费接口，数据也在本地😁，防止你做奇怪的事情。<br><br>做教程、短视频，文案改了就能重新生成旁白；想做有声书，也可以先拿一小段试试。<br><br><a href="https://github.com/debpalash/VoiceStudio" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/debpalash/VoiceStudio</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 原生编排多模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @corndogjpn2 · 2026-10-17 18:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">测试了一下 @guansi 大佬的经验，<a href="https://x.com/guansi/status/2110304178153394352" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/guansi/status/2110304178153394352</a> 效果很好。<br><br>前两天我折腾Raft，Orca这类多Agent编排工具意义为0，像我这种没有能力编排和管控Agent的菜鸡，出发点仅仅是为了省Opus额度。Claude Code自身编排，自己用非交互命令驱动Codex 和 agy 为自己干杂活完全可行。<br><br>搞复杂了，大道至简，除原生之外的Harness全部删掉，没意义。<br><br>因为测试项目太小了，Token没能节约，但协作是实实在在驱动起来了。而且我完全没动脑子。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU08TQNaYAAnJOV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">管四 <span style="font-size:12px;color:#999999;font-weight:400;">@guansi</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">最近用 Claude Opus 5.5，有点上瘾。这玩意实在太强了，但有个问题，额度不太经用。<br><br>于是我突发奇想，让 Opus 去指挥 Codex 干活，自己少动手。没想到效果出奇地好。<br><br>后来我干脆把 Codex、DeepSeek、本地模型，以及各种 Harness 全交给了 Opus，让它统一调度。<br><br>这下有意思了。<br><br>Opus 会根据任务调用不同的 Harness，安排它们并行执行，设置回调。等待任务完成的空隙，还能继续跟我聊天，讨论方案，随时调整工作。<br><br>整个过程有条不紊，颇有点运筹帷幄的意思。<br><br>我又试着让 Codex 干同样的事情，结果完全不是一个水平。Codex 自己干活挺厉害，但指挥一群 Agent，明显不如 Opus。<br><br>现在我基本不用亲自调度那几个 Agent 了，只需要跟 Opus 沟通，它就能把事情安排下去。<br><br>以前我觉得我是大海航行操控的舵手，现在感觉Opus 5.5 至少能当个大副了。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex Worktree 隔离并行任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sitinme · 2026-10-18 15:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Codex同时开3个任务，代码越改越乱？Worktree这步别漏<br><br>给 Codex 同时派三个活，是一件很爽的事。<br><br>修登录、改后台页面、升级依赖，三个窗口一字排开，各干各的。<br><br>过一会儿，三个任务都说“完成了”。<br><br>然后你打开项目一看：修改全混在一起。改页面的任务跑测试时，读到了登录任务改到一半的文件；升级依赖的任务，又顺手动了大家都在用的配置。<br><br>问题出在哪？<br><br>聊天窗口分开了，代码没分开。<br><br>如果三个任务都选了 Local，它们其实在改同一份项目文件。<br><br>解决办法就是 Codex 里的 Worktree。但它也不是“开了就万事大吉”，有两件事它管不了。<br><br>这篇就拿这三个任务，把三件事讲清楚：<br><br>1.Worktree 到底把什么分开了；<br>2.哪些任务能并行，哪些必须排队；<br>3.任务说“完成”以后，结果怎么收回来。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">sitin <span style="font-size:12px;color:#999999;font-weight:400;">@sitinme</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">很多人会把“分支”和“Worktree”混在一起。<br><br>简单理解：分支解决的是代码历史怎么分叉，Worktree 解决的是多个任务怎么同时拥有独立的工作目录。<br><br>分支是提交历史上的一条指针。<br><br>它回答的是“这组提交属于哪条开发线”，但不会自动创建第二份文件目录。你仍然只能在当前目录中切换分支。<br><br>Worktree 是同一个 Git 仓库关联的另一份工作目录。<br><br>它可以绑定到不同分支，让两个任务同时拥有各自的文件、依赖和终端窗口；提交对象和 Git 历史仍然共享，不需要复制一整份仓库。<br><br>一个实用的判断句是：只需要另一条提交线，用分支；需要同时打开另一份文件，用 Worktree。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HRRpzSgakAAfz57.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HRRpzSlbcAAgnwW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>1873铁路崩盘类比AI投资潮</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MrPingChecks · 2026-10-18 12:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，拿过普利策奖的金融史学家对当前AI 热潮下了判断：“我们肯定已经进入狂热阶段。”他还打了个比方：当年引爆 1873 年铁路大崩盘的那一幕，放到今天，就好比 OpenAI 突然宣布，承诺要筹的一万亿美元筹不齐了。<br><br>他叫艾哈迈德，当过二十多年投资经理，新书《1873》写的就是那次铁路崩盘和第一次大萧条。这周他上了 Prof G Markets，把 1873 年和今天逐条对了一遍。<br><br>1873 年是这么崩的。当时全球靠铁路这项新技术繁荣了 20 年，每年约 30 亿美元投进铁路，大约四分之三是借的。那年 9 月，美国最有名的金融家 Jay Cooke，总统的朋友，南北战争时靠卖国债筹了 20 亿美元，突然宣布：他给北太平洋铁路承诺的约 1 亿美元，相当于今天约 1000 亿，筹不齐了。其他铁路公司一看，连他都借不到钱，我还借什么。3 个月内全美铁路停工，1 年内四分之一的铁路公司违约。<br><br>他说今天和历史有三点相似。一是越建越多、越来越靠借债，而且债不透明，英伟达“本质上是在借钱给自己的客户”。二是利润被侵蚀，1872 年底只有四分之一的铁路公司还付得出股息，今天对应的是 token 价格一直在跌。三是借钱变贵，当年铁路发债利率从五六厘涨到 9%。<br><br>纳德拉说读了这本书，“我们会很小心”。艾哈迈德说他理解反了：每家公司单独看都很小心，合起来就是会建过头。这是囚徒困境，谁放慢谁丢市场份额，“大概没有解决办法”。<br><br>美国历史上四五次大的私人投资热潮，从 1870 年代、1920 年代、互联网泡沫到 2000 年代的房地产，都是投资多出 GDP 的 2% 到 4%，持续两到四年，最后产能过剩、利率飙升、崩盘。他说数据中心这一轮大概走了两年，“可能走到一半”，规模还没到历史极端。时点没法预测，可能还能再走一两年：“这种事拖得比你想的久，来的时候比你想的快。”<br><br>他真正担心的是另一件事。1873 年把一次普通的下行变成四年大萧条的，是货币政策的大错：德国和美国先后放弃白银，银价跌三四成，全球信用一下收紧。今天他担心两点：美股市值已是 GDP 的 250%，一跌就打消费；过去一年外国人买了约一万亿美元美股，这笔钱一撤、美元一跌，美联储降息救市就两头为难。<br><br>接下来会怎么崩？他列了三种：某个大玩家突然融不到钱，地缘政治出意外，中国开源模型让利润大面积缩水。问他谁会是今天的 Jay Cooke，他说不知道是 Anthropic 还是 OpenAI。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Sweeney 70%编码工作被AI接管</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TimSweeneyEpic · 2026-10-18 09:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我在编写 Unreal Engine 1 的时候，时间大致是这样分配的：<br><br>- 大约 30% 用于对难题进行深度编码：汇编语言纹理映射器、C++ BSP 树、数据持久化、面向对象的系统设计以及网络。<br><br>- 大约 70% 只是打字和重构大量代码，这些代码是完成一个引擎的完整功能集所必需的。这并不难，在做这些的时候，我的心思大部分在更深层的编码问题上，思考和规划下一步要做什么。这跟今天的 vibe coding 感觉没什么不同，只不过是我自己坐在 IBM Model M 键盘前敲代码，而不是通过提示词让它来写然后审核结果。<br><br>所以，一旦 AI 能以跟我们差不多的质量标准（从来不是完美）来完成那 70%，我们依赖 AI 来做这部分工作就一直是顺理成章的事。经过几年 AI 模型的进化，它能够接管那 70% 的工作并把程序员的时间解放出来去做更有价值的任务，这并不令人意外。<br><br>更令人惊讶的是，AI 作为一种即时版 Carmack 的崛起——它能够相当巧妙、且往往是干净利落地解决困难的技术问题，而且它既可以通过操作工具，也可以通过直接理解原始数据文件来推理和处理复杂的 3D 场景。<br><br>我在 1998 年放弃了汇编语言，因为乱序执行 CPU 让更简单的 C/C++ 代码运行得更快，我从来没有怀念过它。如果通过架构文档、概念美术和设计方案来进行提示能够超越手敲代码和手动调整顶点，那将使开发者能够把时间花在更高层次、更高价值的技术和创造性任务上。<br><br>真正重要的是最终产品，无论它是一个游戏还是一个引擎。开发者能做的任何事情——尝试更多想法、更快地做出更好的软件和游戏——对所有人来说都是一种胜利。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">When I was writing Unreal Engine 1, my time was divided as follows:<br><br>- Around 30% went to seriously deep coding on hard problems: assembly language texture mappers, C++ BSP trees, data persistence, object oriented systems design, and networking.<br><br>- Around 70% was just typing and refactoring large bodies of code needed for a complete engine feature set. This was not hard, and while I was doing it my mind was mostly on the deeper coding topics, thinking and planning for what's next. It didn't feel much different from vibe coding today, except that it was just me typing code on an IBM Model M keyboard rather than prompting it and reviewing the results.<br><br>So, it has always seemed perfectly logical that we would rely on AI for that 70%, once the AI could do it with a similar quality standard as we could, which has never been perfection. It came as no surprise that, after a few years of AI model evolution, it was able to take the reigns on that 70% and free up programmers' time for more valuable tasks.<br><br>What's more of a surprise is the emergence of AI as a sort of insta-Carmack able to solve hard technical problems quite cleverly and often cleanly, and that it's able to reason about and work in complex 3D scenes both by operating the tools and by directly understanding the raw data files.<br><br>I abandoned assembly language in 1998 when out-of-order CPUs made much simpler C/C++ code faster, and never I missed it. If prompting through architectural documents, concept art, and design plans can transcend typing code and tweaking vertices, that will enable developers to spend their time on higher-level, higher value technical and creative tasks.<br><br>What matters is the end product, whether it's a game or an engine. Anything developers can do to try out more ideas and make better software and games faster is a win for everyone.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OPPO心力球24小时AI录音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @JeffreyCalm · 2026-10-17 17:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OPPO 心力球，在体验薄纱过去两年所有录音类产品。<br>无论是 AI 创业公司，还是传统互联网大厂，在做硬件产品这件事上，都完全没法和中国手机厂商比……<br>这个名字甚至不是个噱头，24 小时 续航+持续录音+无感同步。<br>后台的 Harness 会自动按话题和事件聚合整理。<br>真的就是“你带着它自然的度过一整天，根本不用记住聊了什么”。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU0rW5NboAAY23_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

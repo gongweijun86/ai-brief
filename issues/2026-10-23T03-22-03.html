@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月23日 11:21">
+<title>AI技术雷达 · 10月23日 11:21 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Hinoki 开源攻防LLM零拒绝</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Boris 分享AI研发五条原则</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;斯坦福编程课砍85%改教Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Agent Skills捐给AI基金会</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hinoki 开源攻防LLM零拒绝</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wang_johnny · 2026-10-21 15:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 CyberGym 上达到 86% 的成绩。与 OAI Daybreak 模型（GPT-5.6-Sol）持平，但拒绝率为 0%。<br><br>隆重介绍 Hinoki Offensive One——唯一一款专为攻防安全设计的开源大语言模型。<br><br>做渗透测试却总被拒绝？别再等 PHP2Shell 和 PwnEscape 了。我们可以帮你 ⬇️</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">86% on CyberGym. On par with OAI Daybreak model (GPT-5.6-Sol), but with 0% cyber refusals. <br><br>Introducing Hinoki Offensive One, the only open-access LLM designed for offensive security. <br><br>Pentesting but getting refusals? Don't wait on PHP2Shell and PwnEscape. We can help ⬇️</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>earshot 代码合成252个音效</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @slashui · 2026-10-23 08:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我们进入了「大满足时代」。<br><br>刚刷到一个开源项目 earshot，一个人用代码合成了 252 个音效。不是录音，是一行一行代码「写」出来的声音。快门、水滴、风铃、UI 弹出音、转场的「咔」，全都有。<br><br>它是让你一个一个听，来决定加在视频的什么地方。给 Agent 用的。AI 连「耳朵」都有了，能听、能评估、还能自己做声音。<br><br>以前做个产品发布视频，找音效能找一下午，还得担心版权。现在呢？一个独立开发者顺手就把这事做了，开源，免费，CPU 就能跑。<br><br>你想要的，几乎都有人做出来了。你缺的，AI 当场给你造。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113428687055904768/img/LsaVGqDwvwHc5vwh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Leon Lin <span style="font-size:12px;color:#999999;font-weight:400;">@LexnLin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">earshot v0.4 发布了！<br><br>新增内容：<br>- 51 个新音效，全部由代码生成（现在共有 252 个）<br>- 剪辑中的撞击声、敲击声、滴水声、快门声、铃声、UI 弹出声、反向涌动声等<br>- 一个全新的启动套件：让音效精准对齐剪辑点，并置于音乐之上<br><br>+ 一个可以试听每一个音效的网站<br>&gt;&gt; <a href="http://leonxlnx.github.io/earshot-site" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://leonxlnx.github.io/earshot-site</a><br><br>这个视频里的所有音效都是用 earshot 制作的 :)</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">earshot v0.4 is out!<br><br>added:<br>- 51 new sounds, all made with code (252 now)<br>- cut hits, knocks, drips, shutters, chimes, UI pops and reverse swells and more<br>- a new launch kit: so the sounds will be right on the cut and above the music<br><br>+ a website where you can play every single sound <br>&gt;&gt; <a href="http://leonxlnx.github.io/earshot-site" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://leonxlnx.github.io/earshot-site</a><br><br>all the sfx in this video are made with earshot :)</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113392364806918145/img/K8O4Flda6B72N5QB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Boris 分享AI研发五条原则</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mihail_eric · 2026-10-22 22:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我问坐在我旁边的 @bcherny 现在同时跑着多少个 Claude agent。<br><br>&quot;几千个。&quot;<br><br>Boris（Claude Code 的创建者）上周四回到了我在斯坦福的课程 𝗧𝗵𝗲 𝗠𝗼𝗱𝗲𝗿𝗻 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿。他的主要收获是：<br><br>- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁𝘁𝗹𝗲𝗻𝗲𝗰𝗸（自动化你的瓶颈）：自去年 11 月起，Claude 编写了团队 100% 的代码，每位工程师的产出提高了约 10 倍。代码发布量如此之大，以至于人们不再仔细阅读，而是开始快速浏览，所以他们自动化了代码审查。接下来是审批流程。团队识别了阻碍开发速度的主要因素，并构建了系统来解决自身瓶颈。<br><br>- 𝗕𝘂𝗶𝗹𝗱 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗺𝗼𝗱𝗲𝗹 𝟲 𝗺𝗼𝗻𝘁𝗵𝘀 𝗼𝘂𝘁（为 6 个月后的模型做构建）：Claude Code 早期的收入连续数月持平，因为模型还不够智能。后来 Opus 4 发布，增长变得极为惊人。他的方法是阅读 agent 的运行日志，找出模型失败的地方。那就是下一个模型版本将改进的方向。<br><br>- 𝗦𝗺𝗮𝗹𝗹 𝘁𝗲𝗮𝗺𝘀 𝗴𝗼 𝗳𝗮𝘀𝘁𝗲𝗿（小团队跑得更快）：有好几个月 Claude Code 基本上只有他一个人在做。借助 AI，一两个人可以胜过规模大其 100 倍的团队。约束催生创造力。<br><br>- 𝗧𝗵𝗶𝗻𝗸 𝗶𝗻 𝗹𝗼𝗼𝗽𝘀（用循环来思考）：他的祖父在苏联时代用穿孔卡片编程。而 Boris 编写的是可以运行数天甚至数周、同时生成大量 agent 的循环。他预计手动敲代码将走向穿孔卡片同样的命运。<br><br>- 𝗗𝗼𝗺𝗮𝗶𝗻-𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗯𝘂𝗶𝗹𝗱𝗲𝗿𝘀 𝗮𝗿𝗲 𝘁𝗵𝗲 𝗳𝘂𝘁𝘂𝗿𝗲（领域专家构建者是未来）：他预计 2027 年最好的会计软件将由一位会计师来构建。当代码变得廉价时，深刻理解问题本身是唯一的优势。<br><br>在印刷术发明后的 50 年里，欧洲产生的文学作品比此前 1000 年的总和还要多。他认为编程即将迎来类似的创作大爆发。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I asked @bcherny how many Claude agents he's running right now as he sat next to me.<br><br>&quot;A few thousand.&quot;<br><br>Boris (creator of Claude Code) came back to my Stanford course 𝗧𝗵𝗲 𝗠𝗼𝗱𝗲𝗿𝗻 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 last Thursday. His main takeaways:<br><br>- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁𝘁𝗹𝗲𝗻𝗲𝗰𝗸: Claude has written 100% of his team's code since November and output is up ~10x per engineer. So much code shipped that people stopped reading it carefully and started skimming, so they automated code review. Approvals are next. The team identified the main things impeding their development velocity and built systems to unblock themselves.<br><br>- 𝗕𝘂𝗶𝗹𝗱 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗺𝗼𝗱𝗲𝗹 𝟲 𝗺𝗼𝗻𝘁𝗵𝘀 𝗼𝘂𝘁: early Claude Code revenue was flat for months because the model wasn't smart enough yet. Then Opus 4 came out and growth became astronomic. His method is to read your agent transcripts and see where the model fails. That's where it will improve in the next model release.<br><br>- 𝗦𝗺𝗮𝗹𝗹 𝘁𝗲𝗮𝗺𝘀 𝗴𝗼 𝗳𝗮𝘀𝘁𝗲𝗿: for months Claude Code was basically just him. With AI, one or two people can outship a team 100 times their size. Constraints breed creativity. <br><br>- 𝗧𝗵𝗶𝗻𝗸 𝗶𝗻 𝗹𝗼𝗼𝗽𝘀: his grandpa programmed punch cards in the Soviet Union. Boris writes loops that run for days or weeks and spawn many agents. He expects that typing code by hand is heading where punch cards went.<br><br>- 𝗗𝗼𝗺𝗮𝗶𝗻-𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗯𝘂𝗶𝗹𝗱𝗲𝗿𝘀 𝗮𝗿𝗲 𝘁𝗵𝗲 𝗳𝘂𝘁𝘂𝗿𝗲: he expects the best accounting software of 2027 to be built by an accountant. When code is cheap, knowing the problem deeply is the only alpha<br><br>In the 50 years after the printing press, Europe produced more literature than in the previous 1,000. He thinks coding is about to undergo a similar explosion of creation.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPeewSbQAAnuvD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPeewRbQAAL3vd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福编程课砍85%改教Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-10-23 09:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">全世界包括清北的编程课程都应该向斯坦福的CS146S Fall 2026看齐！这门课相比一年前的Fall 2025已经砍掉了85%的内容，可以知道编程领域进展有多恐怖了，如果还停留在教科书十年不需更新的幻觉中，可想而知会多落后了！<br><br>两版课纲我逐周对了一遍：<br><br>第 1 周：教你怎么写 prompt → 200 行代码手搓一个 Claude Code<br>期末项目占分：80% → 50%<br>给真实开源项目提 PR：0 → 30%<br><br>去年还单独讲一周的 AI IDE、Warp 终端、一句 prompt 生成整个应用，今年全部都拿掉。<br><br>取而代之的是 Agent Skills、CLAUDE.md / AGENTS.md / hooks、agent-ready 代码库、后台并行 agent、MCP portal 和模型路由，最后一周单独讲软件工厂。<br><br>刚入门的话，我建议从第 1 周跟起：<br>9/22 那节 200 行手写 coding agent，slides 和完整代码都公开了，最核心的是 agent 原型—— read / write / edit / bash 四个工具加一个循环<br>9/24 拆主流 coding agent 的 system prompt，原始 prompt 文件也已放出来<br><br>如果已经天天跟 coding agent 打交道，前几周大概率扫一眼就行，我会重点盯这几块：<br>- 嘉宾：SpaceX SI负责人 @leerob、Claude Code之父 @bcherny  已经分享完，10/22 轮到 Factory 的 CTO @EnoReyes，后面还有 Cognition、Semgrep、Cloudflare、Replit 等的 @amasad 和 @eladgil<br>- 第 9–10 周：大团队怎么落地，MCP portal、LLM gateway、模型路由、成本优化<br>- 前五周的阅读清单，凑起来就是一份 2026 版 agent 工程书单<br><br>30% 的开源分也很有意思：Vercel、Semgrep、OpenHands、Unsloth 等 15 个开源项目给学生做指导，PR 直接往生产级代码库里提，这在大学课程里还是头一回。<br><br>课程材料陆续公开，不是斯坦福学生也能跟：<a href="http://themodernsoftware.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://themodernsoftware.dev</a><br><br>后面几周的嘉宾分享我会边看边拆，关注我，第一时间同步最佳实践🫡</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVRwj8VbkAAnAOH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Mihail Eric <span style="font-size:12px;color:#999999;font-weight:400;">@mihail_eric</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我很兴奋终于能宣布我的斯坦福课程 𝗧𝗵𝗲 𝗠𝗼𝗱𝗲𝗿𝗻 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 的最新版本。这门课花了 9 个月的时间筹备。<br><br>去年 11 月，随着 Claude Opus 4.5 的发布，编码 agent 的能力实现了阶跃式提升。我们都感受到了。大语言模型变得更加强大，能进行更长时间的推理，能解决更难的任务。<br><br>今年课程的迭代反映了 2026 年软件工程的蜕变。<br><br>我的核心信念很简单：LLM 时代的 AI 原生开发者将成为任何软件组织中最重要的成员。我设计这门课程就是为了培养这一代新工程师。<br><br>𝗛𝗮𝘁'𝘀 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘁𝗵𝗶𝘀 𝘁𝗶𝗺𝗲 𝗮𝗿𝗼𝘂𝗻𝗱（这次有什么不同）<br><br>第一，我 2025 年秋季课程 85% 的教材将被替换。2026 年秋季的教学大纲反映了 AI 原生工程师必须具备的核心能力：agent 技能、高级上下文工程、MCP 门户、agent 就绪代码库原则、agentic 代码审查、安全、并行化后台 agent、软件工厂，以及更多内容。<br><br>第二，我将教学生如何培养软件品味。每位学生都必须向生产级的真实代码库提交 pull request。本课程正在与顶尖的开源 AI 项目合作，他们将为学生提供支持和指导，教学生如何有意义地为他们的项目做出贡献。<br><br>这在任何大学课程中都是前所未有的，所以我非常感谢我们的 OSS 合作伙伴：@browserbase、@HeyGen、@CopilotKit、@semgrep、@OpenHandsDev、@milvusio、@marimo_io、Pi、@crewAIInc、@warpdotdev、@vercel、@cmux、@arizeai、@UnslothAI 和 @anyscalecompute。<br><br>𝗪𝗵𝗮𝘁'𝘀 𝘀𝘁𝗮𝘆𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲（保持不变的部分）<br><br>我很幸运再次邀请到 AI 软件工程领域的领导者和创始人作为客座讲师，分享他们构建顶尖编码 agent 产品的经验。感谢来自 @cursor_ai 的 @leerob、@claudeai code 的 @bcherny、@FactoryAI 的 @EnoReyes、@cognition 的 @silasalberti、@semgrep 的 @0xine、@Cloudflare 的 Rajesh Bhatia、@Replit 的 @amasad 以及 @eladgil。<br><br>所有资源将在网上提供。所有课程将向公众开放。<br><br>9/22 在斯坦福校园。课堂上见。<br><br><a href="https://themodernsoftware.dev/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://themodernsoftware.dev/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I’m excited to finally announce the newest edition my Stanford course 𝗧𝗵𝗲 𝗠𝗼𝗱𝗲𝗿𝗻 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿. It has been 9 months in the making.<br><br>Last November, with the release of Claude Opus 4.5, coding agents experienced a step function improvement in capability. We all felt it. The LLMs were more powerful, could reason for longer, solve harder tasks.<br><br>This year’s iteration of my course reflects the 2026 metamorphosis of software engineering.<br><br>My core belief is simple: AI-native developers of the LLM era are going to become the most important members of any software organization. I have designed my course to train this next generation of engineers.<br><br>𝗪𝗵𝗮𝘁’𝘀 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘁𝗵𝗶𝘀 𝘁𝗶𝗺𝗲 𝗮𝗿𝗼𝘂𝗻𝗱<br><br>First, 85% of my Fall 2025 class material is being thrown out. The Fall 2026 syllabus reflects the core capabilities AI-native engineers must have: agent skills, advanced context engineering, MCP portals, agent-ready codebase principles, agentic code review, security, parallelizing background agents, software factories, and more.<br><br>Second, I am going to teach my students how to have software taste. Every student will be required to ship pull requests to production-grade, real-world codebases. The course is collaborating with the top open-source AI repos who will offer support and mentorship to students on how to meaningfully contribute to their projects.<br><br>This has never been done before in any university course so I am incredibly grateful to our OSS Partners: @browserbase, @HeyGen, @CopilotKit, @semgrep, @OpenHandsDev, @milvusio, @marimo_io, Pi, @crewAIInc, @warpdotdev, @vercel, @cmux, @arizeai, @UnslothAI, and @anyscalecompute.<br><br>𝗪𝗵𝗮𝘁’𝘀 𝘀𝘁𝗮𝘆𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲<br><br>I’m fortunate to again have AI software engineering leaders and founders as guest speakers to share their learnings from building top coding agent products. Thank you to @leerob from @cursor_ai, @bcherny of @claudeai code, @EnoReyes of @FactoryAI, @silasalberti of @cognition, @0xine of @semgrep, Rajesh Bhatia of @Cloudflare , @amasad of @Replit, and @eladgil.<br><br>All resources will be available online. All classes will be available to the public.<br><br>9/22 on Stanford campus. See you in class. <br><br><a href="https://themodernsoftware.dev/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://themodernsoftware.dev/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HRNBGrHaQAEgb2Y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Skills捐给AI基金会</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ClaudeDevs · 2026-10-23 01:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们将 Agent Skills 捐赠给 Agentic AI Foundation（@AgenticAIFdn），与当初我们捐赠 MCP 的是同一个基金会。<br><br>自 2025 年 12 月以来，已有 70 多个 agent 平台集成了该标准，包括 ChatGPT、Cursor、GitHub Copilot 和 VS Code。<br><br>以下是你需要注意的内容：</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We're donating Agent Skills to the Agentic AI Foundation (@AgenticAIFdn), the same foundation we donated MCP to.<br><br>Since December 2025, 70+ agent platforms have integrated the standard, including ChatGPT, Cursor, GitHub Copilot, and VS Code. <br><br>Here's what that means for you:</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>开源K12物理知识图谱上线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hassanyehiaa · 2026-10-22 20:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">初中物理它来了！按教材的节建了 92 个知识点，每个配 4 道题，共 368 道。<br><br>并且34 处物理知识点列出相关的数学知识点，比如「速度」对应「正比例函数」，点一下就能跳到数学图谱<br><br>有朋友反馈数学英语教材不是最新版，今天也已经重新修订成已公开的最新版，今天工作量搞得头大<br><br>另外今天公开我的另一个仓库，免费、本地合成的视频 BGM，Remotion、HTML/Canvas、Python 逐帧或其他任何渲染器均可使用。也可以从工程里自动提取时间轴。不需要付费服务。<br><br>我抖音小红书背景音乐都是它完成的，并且新起的抖音号一条视频已经浏览超30万<br><br>感觉不错的可以上个星🌟<br><br>知识图谱仓库：<a href="https://github.com/xiaoyang111222/cn-math-taxonomy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xiaoyang111222/cn-math-taxonomy</a><br>bgm仓库：<a href="https://github.com/xiaoyang111222/timeline-bgm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xiaoyang111222/timeline-bgm</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPCx-NbUAACoKo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPC3oAawAE1iaR.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPC3uRbMAANs9t.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">风清扬 <span style="font-size:12px;color:#999999;font-weight:400;">@hassanyehiaa</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">免费！免费！还是免费！看到评论区有让我收一点钱的，但是这不是我的风格<br><br>今天更新了小学到高中的全部英语图谱，目前数学，英语都已经齐全<br><br>并且数学 119 道几何题加了图，立体图形、展开图、三视图都有<br><br>接下来就是全年级物理的开源，我不知道能坚持多久，但是大家的认可就是我的动力<br><br>网站新增儿童智商测试，情商测试，成人情商测试，人生四象限测试<br><br>测完直接给报告，这些测试题目结合心理学，统计学，部分医学报告，可以说比市面99%收费测试都要准确，可以从数学站直接测<br><br>GitHub开源star1900，有用可以支持一下点颗星星：<a href="https://github.com/xiaoyang111222/cn-math-taxonomy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xiaoyang111222/cn-math-taxonomy</a><br><br>网站直达：<a href="https://math.pansgo.com/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://math.pansgo.com/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJ110SbUAAoB6k.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJ2bjFbwAEy4AI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJ2bjTaEAAXUIT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVJ2bjUbgAE2gKb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

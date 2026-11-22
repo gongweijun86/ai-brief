@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月12日 14:36">
+<title>AI技术雷达 · 11月12日 14:36 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;ChatCut接Grok Bot剪视频</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Magpie修复effort被顶为max</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Antigravity提示词拖慢模型思考</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Superlogical免PR直推主干</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;张一鸣定2029年追上OpenAI</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChatCut接Grok Bot剪视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bozhou_ai · 2026-11-12 14:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">原来 Grok Bot 加 ChatCut，才是自媒体视频流水线的最佳组合。<br><br>我之前一直让 Grok Bot 自己写代码生成视频，说实话效果都不太行。画面糙，改一版就得重新跑一遍，token 还烧得特别快。<br><br>前两天突然想起之前用过的 ChatCut。它现在官方支持直接接进 Grok Bot，相当于给小助理配了一套现成的剪辑工具，不用它自己从零写代码了。<br><br>我拿两条视频试了一下。视频在评论区<br><br>第一条，口播剪辑。<br>我用手机录了一段 5 分 46 秒的口播，传上去之后只提了三个要求：剪掉口误、精简视频、配上对应的动画和特效。<br>它先把视频转成文字稿，再按 ChatCut 的口播剪辑流程处理，最后交回来 3 分 40 秒的成片。<br><br>口误和啰嗦的地方全剪掉了，这只是粗剪的部分。字幕、动画和特效它也一起配好了，我自己一刀没动。<br><br>第二条，从一篇博客到一条教学视频。<br>我看到一篇不错的博客，先用 Skill 把文字稿扒下来，丢给 Grok Bot，让它直接用 ChatCut 做一条教学视频。<br>出来刚好 1 分钟，看完我的感受是：这个可以直接发抖音了。<br><br>除了这两个，ChatCut 里还能加字幕、加 MG 动画、调色，这几个都是免费的。克隆音色、AI 配乐、生成视频和图片也有，属于 Pro 功能。克隆音色对我这种口播经常说错的人很有用，说错一句不用整段重录<br><br>安装也非常简单，手机和电脑都能用，三步：<br><br>1. 在 Grok 里新建一个 Bot，或者打开现成的 Bot<br><br>2.给它发这句话：<br>Read <a href="http://ChatCut.io/grok" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://ChatCut.io/grok</a> to connect the ChatCut app<br><br>3.它会自己读安装指南，弹出一张连接卡片，点授权、登录你的 ChatCut 账号<br><br>连好之后它会告诉你技能已保存。我这边它直接读到了我账号里原有的 14 个项目，可以接着改，也可以开新项目。<br><br>有一个坑提前说：视频不要直接丢进聊天框。<br><br>我那条口播有 700 多兆，Bot 自己说在聊天里传容易失败，给我建了一个 ChatCut 上传页。在页面里传完，回来跟它说一句“上传好了”，它就开始剪了。所以正确顺序是先说需求，等它给上传链接。<br><br>之前做视频的话，基本都是用本地电脑用Claude来做，弄到ChatCut里面的好处是，它是一个完全在线的云端环境。<br><br>你在手机上做，或者在本地电脑上做都没有问题，都会在同一个项目里进行迭代更新 可以跨多个Agent。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW52IxGbUAAuEBj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW52MqSaAAA7Wpa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW52O99aQAEDGTB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW52Q2LbAAAJz66.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>微信小程序低成本开发全流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @JustLikeBit · 2026-11-12 12:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">花 30 块做个微信小程序<br><br>▪️ 用 WorkBuddy 生成代码，在微信开发者工具里打开服务端口，把 MCP token 交给它，让它自己测<br><br>▪️ 个人主体认证 30 元一年，企业是 300<br><br>▪️ 做工信部备案，接两通电话，前后大概 6 天<br><br>▪️ 只给自己和朋友用，上传体验版就行，不用过审核，给朋友开体验权限<br><br>▪️ 做纯本地的小工具，比如记东西放哪了，数据不上传，连服务器都不用买😁</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie修复effort被顶为max</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @DIYgod · 2026-11-12 13:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在会把所有请求都按最高 effort max 跑的问题还没修好 @magpie_router，使用本机转发时仍会从预算推算出一个顶层 effort: max，第二层优先读取它，盖过了原请求每轮写的 high。转发代码：<a href="https://github.com/yetone/magpie/blob/v0.1.3844/internal/gateway/anthropic.go#L571" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yetone/magpie/blob/v0.1.3844/internal/gateway/anthropic.go#L571</a><br>请仔细完整 review 仓库，确保没有类似遗漏</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity提示词拖慢模型思考</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Michael65229 · 2026-11-12 10:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Magpie antigravity 插件反馈：DSH 桌面端系统提示里逐字带 &quot;Tokens prefixed with @ are paths the user explicitly referenced…&quot; 这段时，gemini-4-argon 大多变成首字~3s、~300tok/s、几乎不思考、一步写完就结束。改写这段后恢复正常（重放 20/20，任务从 2.5KB 变 73KB）。疑似 Antigravity 后端问题，插件可内置改写规避。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AdaL v2做视频生成编辑Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @panda_liyin · 2026-11-12 00:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">通用智能体已经掌握了代码。下一个突破的是视频。<br><br>我辞去了 Meta AI 的计算机视觉研究工作，花了两年时间构建一个以视频为核心的智能体工具框架。编码智能体让构建变得容易，所以现在的发布竞争激烈了10倍。<br><br>介绍 AdaL v2，面向 GTM 的视频智能体。<br>• 完全通过聊天生成和编辑视频、图像和音频<br>• 版本控制，可以探索创意并回退到你喜欢的版本<br>• 一个项目中支持多条视频，从你的主发布影片到每个社交媒体平台的格式<br><br>HyperFrames 和 Higgsfield MCP 是 Claude Code 内的附加组件。AdaL v2 是我们完整的编码智能体工具框架，原生针对视频进行优化，拥有自己的桌面应用。与它们相比：<br>• 控制力提升10倍：你可以看到并指导整个制作过程，而不是难以理解的 bash 命令<br>• 迭代速度提升10倍：你可以从过去的版本中复用和重现任何素材<br>• 易用性提升10倍：视频、图像和音频模型统一在一个计划下，零配置，内置浏览器使用和深度研究功能<br><br>发布影片、产品演示、讲解视频、UGC 广告，每个平台的剪辑版本。发布终于再次变得简单了。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">General agents have mastered code. Video is next.  <br><br>I quit my computer vision research job at Meta AI to spend two years building a video-first agent harness. Coding agents made building easy, so launching is now 10× more competitive. <br><br>Meet AdaL v2, the video agent for GTM. <br>• Generate and edit video, images and audio entirely through chat <br>• Version control to explore ideas and go back to the one you like <br>• Multiple videos in one project, from your main launch film to formats for each social platform  <br><br>HyperFrames and Higgsfield MCPs are add-ons inside Claude Code. AdaL v2 is our full coding agent harness, optimized natively for video, with its own desktop app. Compared with them:  <br>• 10× more control: you see and direct the whole production, not unreadable bash commands <br>• 10× faster iteration: you reuse and reproduce any asset from past versions <br>• 10× easier to use: one plan for video, image and audio models, zero setup, with browser use and deep research built in  <br><br>Launch films, product demos, explainers, UGC ads, every platform cut. Launching just got easy again.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120553628289449988/img/DH3LzFAOAblq2ZK-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Superlogical免PR直推主干</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-11-11 16:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这就是大神在 Superlogical 的开发方式，团队不大，但是非常符合现代 Agent 的开发方式：<br><br>1 直接 push main，采用 agent pre-push review + 人工 + agent post-push  审查的方式，几乎不开 PR<br><br>2 谁都可以发新的 release，启动发布 release 会触发 Slack 通知并开始 15 分钟倒计时，任何人都可以在这 15 分钟内暂停。（让大家都有机会去最后 review 一次这个版本的修改，主动权交给所有人）<br><br>3 服务器和各平台做到快速上线，事后用人工加假期 review的方式来识别不同平台的差异度，并且做到快速补齐，不通过浪费时间的会议来完成功能对齐。（应该说的就是说各干各的，完成就上线，别的平台来对齐最新的功能就好）</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Mitchell Hashimoto <span style="font-size:12px;color:#999999;font-weight:400;">@mitchellh</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们依然很小，但我很喜欢 Superlogical 的团队。他们才华横溢、友善，并且热爱自己的手艺。这是一个不同以往的软件开发时代，我们的期望和实践也反映了这一点。我想分享一点关于我们如何工作的方式。<br><br>首先，每个人都可以被信任直接推送到 main 分支。我们在推送前进行机器辅助的代码审查，推送后进行人工加更多机器辅助的代码审查。几乎不需要 PR。<br><br>在文化上，我们一致同意：如果我们雇佣了一个我们不信任直接推送到 main 分支的人，那他们可能不适合这个团队（到目前为止，还没有出现过这种情况）。<br><br>这里有一些常识性的做法：如果有人超出了自己的职责范围或舒适区，我们会开 PR。例如，我在 macOS/iOS UI 方面很不擅长，所以我会为影响 UI 的功能开 PR，并请求别人帮忙查看。但对于业务逻辑和内部实现，我会直接推送到 main 分支。<br><br>其次，每个人都可以发起发布。我们的发布流程完全自动化，当你开始一次发布（任何平台）时，它会触发一条 Slack 通知和一个15分钟的倒计时。<br><br>15分钟的警告是一个最终关卡，允许人们审查并协作编写变更日志。在这15分钟内，公司里的任何人都可以暂停发布。15分钟后，火车就会离站。你无法跳过这15分钟（除了暂停）。这给了每个人介入的机会。<br><br>第三，我们通过快速修复而不是规划来避免同步。服务器和各个平台的客户端尽可能快地发布功能。我们通过事后的人工审查和 AI 辅助来识别产品之间的功能不匹配（比如&quot;Windows 支持 X 而 Mac 不支持&quot;，或者&quot;Mac 和 Windows 在 Y 方面的行为有以下差异&quot;）。<br><br>这避免了昂贵的&quot;同步&quot;会议和协调工作。我们相信功能的生产者会意识到自己在生产什么，也相信相邻的产品线会快速自我同步。在实践中，我们看到各平台之间的功能对齐在24到48小时内就能完成。<br><br>所有这些都建立在相互信任的基础上。它只在相互信任的情况下才有效。<br><br>每个人在任何时候都必须信任彼此是互相支持的：<br><br>1. 推送到 main 只在你清理自己的烂摊子时才有效，如果你不清理，别人会迅速帮你清理，但你也会同样做（而且通常是等量的）。<br><br>2. 任何人都可以部署只在你信任每个人都能在正确的时间、用正确的变更日志发起发布，并且人们会尊重15分钟计时器时才有效。<br><br>3. 通过快速修复实现同步只在你相信其他团队会快速拾取并集成你的工作时才有效，而这也只有在你自己也会这样做时才有效。它还只在你不经常制造不匹配时才有效。<br><br>我们有一个很棒的团队。我知道我们还很小，随着规模扩大，这些实践会以多种方式发生变化。但这已经与我15年前会采用的做法截然不同了。<br><br>总的来说，我们从第一天起就在相互尊重、卓越和信任的基础上构建。这非常棒。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We're still so small but I'm loving the team we've got at Superlogical. They're so talented and kind and love their craft. It's a different era of software development and our expectations and practices reflect that. I want to share a bit about how we work.<br><br>First, everyone is trusted to push to main. We do machine-aided code review pre-push and human plus more machine-aided code review post-push. Limited to no PRs.<br><br>Culturally, we've all agreed that if we ever hire someone who we DON'T trust to push directly to main, then they probably aren't the right fit for the team (so far, not an issue).<br><br>Some common sense here: if someone is stepping outside their lane or comfort zone, we'll open PRs. For example, I'm pretty trash at macOS/iOS UI, so I'll open PRs for UI-affecting functionality and ask for eyeballs/help. But for business logic and internals, I push to main.<br><br>Second, everyone can cut a release. Our release process is fully automated and when you start a release (for any platform) it triggers a Slack notification and a 15 minute countdown.<br><br>The 15 minute warning is a final gate that allows people to review plus collaborate on a changelog. During that 15 minutes, anyone in the company can pause the release rollout. After 15 minutes, the train leaves the station. You can't override the 15 minutes (except to pause). It gives everyone a chance to step in.<br><br>Third, we avoid synchronization through fast remediation rather than through planning. The server and clients on various platforms ship features as fast as they can. We use post-hoc human review and AI-assistance to identify feature mismatches across products (&quot;Windows has support for X and Mac doesn't.&quot; or &quot;Mac and Windows differ in their behaviors for Y in this way.&quot;).<br><br>This avoids expensive &quot;sync&quot; meetings and coordination. We trust that producers of features are mindful of what they're producing and we trust that adjacent product lines will self-synchronize quickly. In practice, we see feature parity across platforms within 24 to 48 hours.<br><br>All of this works on mutual trust. It ONLY works with mutual trust. <br><br>Everyone at all times has to trust that they've got each others back:<br><br>1. Push to main only works if you fix your mess, or if you don't, that someone else will quickly but that you'd do the same (and generally in equal amounts). <br><br>2. Anyone can deploy only works if you trust everyone to cut at the right time, with the right changelog, and that people will respect the 15 minute timer.<br><br>3. Sync through fast remediation only works if you trust other teams will pick up and integrate your work quickly, which only works if you would too. It also only works if you are fairly producing mismatches (e.g. not constantly).<br><br>We've got a great team. I know we're still small and that these practices will change in many ways as we scale. But this is already a markedly different practice than what I would've done 15 years ago. <br><br>In general, we are building from day 1 on a foundation of mutual respect, excellence, and trust. And it's been awesome.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>张一鸣定2029年追上OpenAI</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xLogicrw · 2026-11-12 11:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">张一鸣近日在 Seed 团队全员会上给出了一个时间表：字节跳动最快也要到 2029 至 2030 年，才有望在前沿 AI 领域与 OpenAI、Anthropic 竞争。<br><br>张一鸣特别指出，Seed 大语言模型使用的预训练数据集，比顶尖对手小了几个数量级。<br><br>字节在 AI 领域其实已经拿到了不少好牌。豆包是国内用户规模最大的 AI 聊天应用，Seedance 也跻身全球顶尖视频生成模型行列。偏偏通用语言模型没有跟上。今年 6 月发布 Seed2.1 时，团队自己也承认，模型在高难度开放任务和前沿科研问题上还有明显短板。<br><br>字节为此准备投入天量资金。今年 5 月，公司曾讨论将全年资本开支提高至最高 700 亿美元，主要用于建设 AI 数据中心等基础设施。8 月又传出，Seed 正在预训练一款最高达 10 万亿参数的大模型，规模超过国内所有公开的大模型。<br><br>张一鸣也不愿靠蒸馏走捷径。所谓蒸馏，就是拿 Claude 等领先模型生成的答案，反过来训练自己的模型。今年 8 月，他就明确表示，这种办法短期内确实能改善表现，但学来的终究是别人已有的能力，最多只能不断逼近，很难真正超越。Seed 内部还通过 API 检测和训练数据过滤，限制第三方模型的输出进入训练集。<br><br>为了追赶，字节也在不断招人、留人。Seed 目前约有 1000 名研发人员，由张一鸣去年从 Google DeepMind 挖来的吴永辉带队。字节还专门推出了与豆包业务挂钩的虚拟股「豆包股」，符合条件的员工还可以选择把年终奖领成豆包股，分享业务增长带来的收益。<br><br>字节计划未来几周推出一款类似 Meta Muse 的个人 AI 助手，让用户通过语音和虚拟形象与 AI 交互，并让它代为完成任务。豆包内部代号为「Spell」的个人助理项目早在 4 月便开始内测，后来因豆包手机发布等原因，一直没有正式推出。Meta Muse 爆火后，字节加快了进度，国庆假期前就在赶研发，计划将 Spell 与豆包进一步整合。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">思维怪怪 <span style="font-size:12px;color:#999999;font-weight:400;">@0xLogicrw</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">字节跳动创始人张一鸣上月在 Seed 团队全员会上明确表示，公司不会把蒸馏当作追赶大模型的捷径，即使因此暂时落后于国内对手。他要求团队愿意牺牲短期收益，换取长期目标。<br><br>蒸馏是让新模型学习更强模型的输出，可以节省训练时间和算力。字节内部认为，不走这条路，会让 Seed 的语言模型短期内更难追上 DeepSeek、Kimi 和千问等国内同行。<br><br>但字节更担心的是政治风险。公司此前长期因 TikTok 遭到美国政府审查。虽然 TikTok 美国数据安全业务已经引入美国资本，字节仍保留股份，并继续经营 TikTok 的全球商业业务。一旦被指控大规模提取美国前沿模型的能力，华盛顿可能重新向 TikTok 施压。<br><br>Anthropic 此前曾指控 DeepSeek、月之暗面、MiniMax、智谱和阿里巴巴大规模提取 Claude 的能力，但没有点名字节。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>零基础4天做出开放世界RPG</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-11-11 17:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个完全不会编程的人，辞职两个月后，用Fable 5.2、Opus 5.5、Tesana、Three.js、Tripo和Blender，在4天内做出了一款开放世界RPG。<br><br>地图约为《上古卷轴5：天际》的2倍，包含34个任务、56种敌人和20个Boss。<br><br>他投入了最后的1400美元，调用超过210亿Token。整个制作过程👇 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120447587631218688/img/v0qSZY0nYAG7dNOS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>librime用户词典写入需加空格</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cloudwu · 2026-11-12 12:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天在排查我写的方案用系统默认 translator query 不到用户词典里的词的问题。我问 chatgpt ，它说写入用户词典的时候 key 后面要加个空格。我说那太奇怪了，你从哪看来的。它说我看了代码 <a href="https://github.com/rime/librime/blob/master/src/rime/dict/user_dictionary.cc#L751" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/rime/librime/blob/master/src/rime/dict/user_dictionary.cc#L751</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

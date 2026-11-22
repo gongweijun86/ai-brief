@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月7日 11:33">
+<title>AI技术雷达 · 11月7日 11:33 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Hermes+Paseo自托管AI工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Magpie脱敏致Agent查询失真</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;小智AI固件v2.5.2发布188变体</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude用dreaming整理记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Claude Code全流程驱动视频制作</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hermes+Paseo自托管AI工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-11-07 10:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好吧，最后发现开源自托管才是王道。<br><br>今年我被折腾了两次：一次是用了三年半的Claude订阅套餐被封号；一次是Grok Bot降智和砍套餐额度。导致被迫迁移工作流。<br><br>所以还是要自托管+开源软件，哪怕自己DIY麻烦一点，总好过被厂商折腾。<br><br>如今我的AI基础设施：<br><br>1. Hermes(接入GPT) + Telegram: 移动端AI助手，各种定时任务，随时应答<br>2. Paseo + Pi Agent(接入GPT，DeepSeek，Opus)：办公工作台，多Agent编排<br><br>统一部署在我的Mac Studio M4上，数据本地，运行本地。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie脱敏致Agent查询失真</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0x0_air · 2026-11-07 08:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Magpie 开了脱敏后，有些查询任务会失真。因为 AI 实际看到的是脱敏后的信息，它会拿着这份信息去执行后续查询，自然就可能查出错误结果<br><br>AI 内部看到脱敏信息、输出显示用户输入的真实信息，这也是脱敏的特点<br><br>和 DeepSeek 吵了半天，最后才发现是 Magpie 的脱敏导致的<br><br>我当时发了一个公网 IP，让 AI 帮我查线路，结果 AI 说这不是公网 IP......<br><br>在我质问它之后，它又把这个公网 IP 原样返回给我，然后再次指明：这个不是公网 IP....<br><br>不过脱敏还是挺好用的，目前我单独把 公网IP地址 脱敏关闭了，感觉优化到目前已经很难有更好的优化了<br>@yetone</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWeSwm0agAANrjB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Air-学习再学习 <span style="font-size:12px;color:#999999;font-weight:400;">@0x0_air</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Magpie 开启脱敏后，Agent 好像读不到完整信息，需要二次询问<br><br>期待叶天帝下一次的脱敏优化 @yetone </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVtrWq5bMAE9ORM.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>小智AI固件v2.5.2发布188变体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xx_Tge · 2026-11-07 10:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">小智 AI（xiaozhi-esp32）最新预编译固件 v2.5.2（2026-10-11）：发布矩阵大概 188 个变体。新手别先装 ESP-IDF——下对板型的 zip，解压出 `merged-binary.bin`，esptool 写到 `0x0` 就行。配网后接官方控制台。<br><br>选错变体可能直接起不来，官也写了「可能无法启动」。自己从源码编的话，ESP-IDF 要 ≥6.0.1，推荐 `release/v6.1`。<br><br>板型对上再烧。烧之前多看一眼变体名。<br><br>#小智AI #ESP32 #物联网<br><a href="https://xiaozhi.dev/docs/usage/firmware-download/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://xiaozhi.dev/docs/usage/firmware-download/</a><br><a href="https://github.com/78/xiaozhi-esp32" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/78/xiaozhi-esp32</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude用dreaming整理记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-07 10:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很推荐 Anthropic 刚发布的《The components of agent memory》，尤其是最近在研究 Agent Memory 的朋友。<br><br>之前看过不少 Memory 相关论文，这次可以从 Claude 的工程视角，看看它到底怎么管理、压缩和维护长期记忆。<br><br>文章有个很重要的设计，就是分层存储。<br><br>原始会话记录保留作证据，关键经验写入 Memory Notes，再通过 Dreaming 整理成相互关联的 Wiki。新会话只加载少量索引，需要时再查找详细内容。<br><br>比如 Claude Code 的 Auto Memory，每次只预加载 &quot;MEMORY.md&quot; 前 200 行或 25 KB，避免把大量历史信息塞进 Context。<br><br>文章中提到的 Dreaming 机制非常有意思。<br><br>Claude 可以在会话之外回查原始记录，合并重复经验、纠正错误记忆，甚至重新组织 Wiki，让过去积累的信息更容易被后续任务使用。<br><br>不过，维护这些记忆也需要额外计算。文章还发现，有些 Wiki 最后甚至比原始文档更大。<br><br>感觉 Agent Memory 还有很多值得探索的地方。如何让 Agent 留下真正有价值的经验，并在下一次任务中准确用上，可能比单纯追求记忆容量更重要。<br><br>原文：<a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/components-of-agent-memory</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenMausBot侧栏挂多Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @leom_ai · 2026-11-07 10:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人做了个开源版 Grok Bot，一周涨了 6000 多星<br><br>OpenMausBot 像个聊天软件，侧边栏每个联系人都是 AI Agent，底层调用 Claude、Codex、Grok 命令行<br><br>每个 Bot 可以单独选模型、连应用，用云端桌面或本地虚拟机干活，也能在你主动开启后操作你的电脑<br><br>危险操作先弹卡片问你，同意了才执行<br><br>一个人管一整个 AI 团队，就差发工资了吧？🤣<br><a href="https://github.com/milind-soni/OpenMausBot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/milind-soni/OpenMausBot</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code全流程驱动视频制作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaohu · 2026-11-06 17:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">本视频解决了之前说的配音问题<br>使用了Gemini 3.8 Flash TTS<br><br>同时将形象替换为真人形象，口型采用了 OmniHuman 1.5，性价比比较高<br><br>全程由Claude Code驱动完成，包括素材收集、文稿撰写、动效创建、配音配乐、剪辑、渲染和封面设计，我只负责提意见和修改<br><br>消耗Claude Code 100美金周额度 1%左右<br>口型花费大概2-3元<br>配音薅的Google AI Studio里送的...</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">小互 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaohu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">美股暴跌，AI 股全线崩盘 📉<br><br>纳指跌 5.5%，标普一天蒸发 2.8 万亿美元<br><br>费城半导体指数跌 12.3%，英伟达一天蒸发近 4500 亿美元<br><br>今早韩国股市开盘跌 8%，全市场暂停交易<br><br>这一跌是怎么来的？<br>今天的小互 AI 日报从头讲清楚，另外还有 8 条 AI 大事 👇 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118529276475785216/img/jQVAEvpeDwCxygIJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

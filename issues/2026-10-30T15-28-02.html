@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月30日 23:26">
+<title>AI技术雷达 · 10月30日 23:26 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;NamiAgent 从零手写 Agent 教程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;CC Switch 新增多款 Agent 支持</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Cursor 对照真物复刻 Slack 界面</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;群晖 NAS 遭勒索病毒批量攻击</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;DeepSeek 二轮千亿融资机构名单</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NamiAgent 从零手写 Agent 教程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-10-30 21:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把之前写的「从零手写 Agent」教程<br>整理成了一个 GitHub 开源项目：NamiAgent<br><br>这不只是一个教程，也是一个能在你电脑上跑起来的 Agent： <br>在指定的工作区里读写文件、执行命令、接入 MCP、记住你是谁<br>写文件、跑命令前都会先问你，你点头才执行<br><br>  还带一个本地网页端：<br> 左边看它每一步怎么想、调了什么工具<br> 右边看每次发给模型的完整上下文，一圈圈怎么变长<br><br>18 篇图文的原稿和 11 课代码都放进去了，每课一个目录，直接能跑<br><br>教程部分，从 100 行的最小循环开始，一课加一个能力：<br>工具、权限、上下文管理、Skills、MCP、子 Agent、计划、记忆<br>后 7 篇拿这些零件当尺子，拆解 Claude Code、Codex、Pi、Grok、DeepSeek Harness、OpenClaw<br><br>只依赖 openai 一个包，没用任何 Agent 框架<br>上一个项目 NamiGPT 讲模型本身，这个讲给模型加上手脚<br><br><a href="https://github.com/aa1143/NamiAgent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/aa1143/NamiAgent</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>lemo-opuscar 代码批量生成视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-30 10:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近 Vibe 知识大赏这类科普视频爆火，跟大家推荐一个神级 Skill：lemo-opuscar，已狂揽 9800+ Star。<br><br>用它可以直接批量产出视频，而且主要是以写代码方式来做视频，成本可以说极低。<br><br>画面用代码逐帧渲染，配乐用免费采样库写，配音走语音合成，全程不用视频生成模型。<br><br>内置 66 种现成的影片风格，油画厚涂、浮世绘、黑板粉笔、地铁线路图都有，每种都配了一支用代码做的示范短片。<br><br>GitHub：<a href="https://github.com/lemomo-ai/lemo-opuscar" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/lemomo-ai/lemo-opuscar</a><br><br>装成 Skill 之后直接说「用油画厚涂风格做一支 30 秒的片子，讲我家每天在窗台等我下班的橘猫」，它先问几个定不了的细节就开工。<br><br>也能把库里的风格改成自己的，品牌色、字体、Logo 换进去，先出风格图和 15 到 30 秒的样片，满意了再存下来。<br><br>一支片子大概做 30 到 60 分钟，风格都是按 Claude Opus 5.5 调出来的，感兴趣的朋友可以试试。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2115994617762254848/pu/img/ACWeA-RBWIz-D7WL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CC Switch 新增多款 Agent 支持</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jason_Young1231 · 2026-10-30 17:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">CC Switch 最近增加了对 Pi, OMP, Kimi Code, Antigravity, MiniMax Code, DeepSeek Harness 等应用的支持，包括应用、供应商、MCP、Skills、会话管理，用量统计等，这些比较新的 agent 应用基本都支持累加式添加，直连即可使用多家供应商，非常便捷 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV3ZF-bboAAbItj.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cursor 对照真物复刻 Slack 界面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-30 10:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用 Cursor 云端电脑「看着真正的 Slack」把界面做成代码视频<br><br>来自 @mattyp 的实战演示，整体覆盖：Why → Cursor agents &amp; computer use → Video as code → Slack → 聊天·Agent·电脑 → 内环/外环 → The ladder → Skills → Feedback loops → Recap。<br><br>演示看起来是「Agent 复刻 Slack 动效」，真正要讲的是一套可被复制参考的创造方法：给 Agent 一台可操控的电脑，把参考界面打开，让它用代码做视频资产，并在「做 → 对照真物检查 → 修」的内环里自己迭代；人只在外环给参考、偏好与权限，再把一次成功收成 Skill、推广成抽象，最后外环自动化。<br><br>演示具体在干什么<br>Matt 在 Cursor 云 Agent 的 Linux 远程桌面上开 Chrome，跑着 Slack；同时用 Agent 做 motion video（把 UI 动效当代码产物）。强调：没有反编译 Slack，只是告诉 Agent 要什么、给视频参考，并在 Agent 电脑上打开真 Slack，让它对照提取视觉与 easing / motion 模式。画面里能看到复刻出的频道、线程（如 # ci-oncall 里 Agent 查 payments-svc 测试）、以及 # launch-copy 里 @ Marketer 起草 Team Bots 文案等资产；左侧 Agent 还在合并 PR、导出 asset pack、把「刚做完的事」收成 bootstrap motion skill。他说这类事一年前几乎做不到。<br><br>Video as code<br>视频资产用代码生成时，「对不对」变成：能不能渲染 / 编译、看起来是否符合预期。以前视觉验收 Agent 很弱；现在可以做进反馈环，渲染后由模型对照真实参考检查，再改代码。<br><br>形状：一个聊天 + 一个 Agent + 一台电脑<br>多数演示同构：你在聊天里指挥；Agent 有完整桌面控制（截图、点击），云上或本地都行。他偏爱云端（可长时间跑、不怕笔记本休眠），也在试 Mac mini。<br><br>内环与外环<br>· 内环：Agent 做事 → 对照真实物检查 → 有明确失败/评估标准就修 → 继续，直到自认完成再交给人验收。<br>· 外环：人提供 inputs（references / preferences / access）并 judge 产出（artifacts / screenshots / analytics）。Slack 例：要建 sandbox、给凭证、在电脑上登录，他半开玩笑说可能踩 ToS，「别告诉 Slack HQ」。目标是尽量把可自动化的部分塞进内环。<br><br>The ladder（阶梯）<br>口播路径：先 做一次（自己 vibe coding 聊出来）→ 收成 Skill → 泛化（不止 Slack，也可对 X 等产品出可视化 / B-roll）→ 最后在外环 自动化，像软件一样往内环倒上下文、收高质量输出。画面阶梯标注为 Do（workflow）→ Codify（skill）→ Generalize（abstraction）。<br><br>失败怎么办、Skills 为什么重要<br>用「台灯」类比：已插电、已开开关、灯泡也查过，问题就在插座到灯之间，工程师要找出断点。Agent 失败时同样：问为什么、调试，再把原因 编进 Skill，让后续 Agent 继承，消掉这一类问题。他也把反馈环类比到养植物、健身、学吉他；并说细心与习惯在带 Agent 时会被放大。末尾自称还在打磨这些说法。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2DJQnbUAA01tt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">matt palmer <span style="font-size:12px;color:#999999;font-weight:400;">@mattyp</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Agent们通过观察真实的东西，用代码把Slack重建成视频<br><br>0:00 为什么<br>0:25 @cursor_ai agent与计算机使用<br>1:03 视频即代码<br>1:56 Slack<br>2:54 一次聊天，一个agent，一台计算机<br>3:53 内循环与外循环<br>5:04 阶梯<br>7:47 技能<br>8:14 反馈循环<br>10:02 总结 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Agents rebuilt Slack as video (using code) by looking at the real thing<br><br>0:00 Why<br>0:25 @cursor_ai agents &amp;amp; computer use<br>1:03 Video as code<br>1:56 Slack<br>2:54 A chat, an agent, a computer<br>3:53 Inner loop and outer loop<br>5:04 The ladder<br>7:47 Skills<br>8:14 Feedback loops<br>10:02 Recap </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUm4s_bagAAqm_R.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 展开折叠粘贴文本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chenchengpro · 2026-10-30 16:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">分析一个之前不知道的 Claude Code 小技巧：粘贴一大段文字后，输入框会把内容折叠成 [Pasted text #1 +16 lines]；这时再按一次 Cmd+V，就能展开刚才粘贴的内容，方便查看和编辑。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>群晖 NAS 遭勒索病毒批量攻击</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Blind___Gamer · 2026-10-30 15:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">事态严重了，之前只发广告的群晖官号都发安全提醒了。<br>文末还说如果已经中招了，可以联系群晖官方的技术支持团队，我把联系方式放到评论区，希望你们都用不到。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV3MUjmaEAAsTnf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">瞎玩菌 <span style="font-size:12px;color:#999999;font-weight:400;">@Blind___Gamer</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">一觉醒来，成千上万的群晖NAS已经被0 day勒索病毒攻击，所有的文件数据遭受损失。<br><br>家里有群晖 NAS 的，今天抽几分钟检查一下：文件还能不能打开，有没有陌生后缀，管理后台是不是还直接暴露在公网上。已经有人遇到了文件被加密、留下勒索信的情况。<br><br>据 360 发布的分析，今年 10 月以来，他们连续收到多起群晖 NAS 勒索求助，样本被识别为 Cerber 的变种 C3RB3R。文件遭加密后被追加 .L0CK3D 后缀，目录里留下 read-me3.txt 勒索信。网络截图中也出现了 .LOCK3D 的写法。<br><br>这已经足够严重。对把家庭照片、工作资料和备份集中存放的人来说，一台 NAS 失陷，可能意味着几类重要数据同时无法使用。<br><br>群晖 10 月 29 日的官方回应称，攻击利用了 2024 年 12 月已经修补的旧漏洞，目标是运行旧版 DSM 的设备；360 的分析则指向今年 9 月披露并修复的两个高危漏洞。<br><br>网上流传的 Solar 截图还提到，有受害设备运行着 DSM 7.4.1-90080 Update 1。不过截图正文也明确说了，入口尚未确认，不能认定 DSM 本体存在 0day，也不能排除套件、插件、账号凭据或其他服务被利用。<br><br>这些材料是否对应同一条攻击链，目前还不清楚。“受害时显示最新版”，不能单独证明“最新版存在新漏洞”。 但入口没查清之前，用户也不能只凭版本号就放心。<br><br>🔒 还没发现异常，先做几件能落地的事。<br><br>先查路由器和 NAS，把不必要的公网端口映射、自动映射和外网服务关掉。确实需要远程管理，优先通过妥善配置、持续更新的 VPN 访问。改个端口号，替代不了补漏洞。<br><br>然后更新 DSM 和套件，停用不用的服务；停用默认 admin，使用独立强密码，开启两步验证、自动封锁和防火墙。<br><br>还有一件容易拖着不做的事：检查备份到底能不能恢复。 支持的机型和配置可以启用不可变快照，重要资料再留一份平时断开连接的离线备份。实际恢复几个文件看看，比看到“备份成功”四个字更让人踏实。<br><br>🔎 怎么判断自己有没有受到影响？<br><br>先看照片、文档能不能正常打开，有没有批量出现 .L0CK3D、.LOCK3D 后缀，以及陌生的 read-me3.txt。再看日志里有没有不认识的成功登录、异常时间访问和批量文件修改。<br><br>反过来，没找到这些后缀，也不能宣布绝对安全。这些检查只能帮你初步发现异常。<br><br>🆘 已经出现加密文件，先隔离，再处理。<br><br>断开受害 NAS 与公网、局域网的连接，暂停相关同步，保护尚未受影响的备份。只关掉公网映射，还不算完成内网隔离。<br><br>也要注意，断网不保证停止已经在 NAS 本地运行的加密程序。隔离后，应尽快联系群晖支持或可信的应急团队，判断如何停止加密、保留证据。<br><br>网上的“马上拔电”和“绝对别关机”，都别直接当成适用于所有现场的答案。CISA 的建议是优先断网，无法隔离时才考虑关机，同时提醒关机会丢失内存中的取证信息。<br><br>保留勒索信、日志、设备版本和异常时间。先别急着初始化、重装或删除加密文件，必要时让专业人员制作镜像。之后再排查入口、重建可信环境，从干净设备更换相关密码，使用确认正常的备份恢复。<br><br>不建议支付赎金，付款没有恢复保证。没有备份，也先留住加密数据，可以查询 No More Ransom 是否有适用工具；目前我没有核实到适用于本次具体变种的免费解密方案，不能承诺能救回来。<br><br>我觉得，这次最值得重新想一遍的，是我们把多少安全感寄托在了一台设备上。<br><br>“我有 NAS”“我开了备份”“我更新过系统”，每句话后面其实都还差一次检查：备份会不会一起被改写？恢复有没有试过？不需要的外网入口有没有关？<br><br>群晖也应该继续解释官方旧漏洞结论与最新版受害报告之间的关系，让用户有足够的信息判断风险。<br><br>如果今天整台 NAS 的数据都打不开，你手里的备份能恢复到哪一天？</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2dHsHaUAAnJLc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2dLAka0AAdCiJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2dMppbIAA0uRn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HV2dOioaoAAk6Mh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek 二轮千亿融资机构名单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LJL06019 · 2026-10-30 16:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek 第二轮的完整股东名单出来了（据报道）：1000 亿出头，近 30 家机构，腾讯和宁德时代各 100 亿领投——但最值得看的不是金额，是国家队占比从首轮的 2% 跳到这轮的 27%。<br><br>新进的多是产业资本：兆易创新系的石溪、中芯聚源、吉利、美团、美的、vivo、立讯、小红书、携程，各投 10–30 亿；国家队那边，移动、电信、中金、中信证券、中国人寿各 20–80 亿，国家 AI 产业基金再投 10 亿。两轮累计，国家队约 19%，科技公司约 42%。<br><br>半年两轮累计 1500 亿，目标从 500 亿一路超募到 1000 亿；据 The Information，年化营收已过 10 亿美元（API 提价 2.3–4.5 倍还没掉客户）。钱是一回事，DeepSeek 还要求投资方说清楚能给什么数据和业务协同——这轮融资，到底是钱重要，还是背后的数据和算力重要？<br>#DeepSeek</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

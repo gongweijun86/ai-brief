@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月26日 23:42">
+<title>AI技术雷达 · 10月26日 23:42 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;CircuitHub 机器人产线量产 PCB</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;小鹏 YOYO 获 L4 示范运营资质</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Anthropic 违规收入贡献 5%-7%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;AI 沙箱成标配创业公司赚盒子外层</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Agentgateway 聚合 MCP 与模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;Anthropic 提交 S-1 启动 IPO</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cindy 本地运行开源 AI Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @making_cindy · 2026-10-24 21:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">感谢你们介绍 Cindy！我们就是背后的团队。<br><br>Cindy 在你的电脑上运行任务。你可以从手机发送任务、跟踪进度、并查看结果。<br><br>网站：<a href="https://cindy.app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cindy.app</a><br>源码：<a href="https://github.com/makecindy/cindy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/makecindy/cindy</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Thanks for featuring Cindy! We're the team behind it.<br><br>Cindy runs tasks on your computer. From your phone, you can send tasks, follow progress, and review results.<br><br>Website: <a href="https://cindy.app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cindy.app</a><br>Source: <a href="https://github.com/makecindy/cindy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/makecindy/cindy</a></p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">GitHub Projects Community <span style="font-size:12px;color:#999999;font-weight:400;">@GithubProjects</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在你自己的机器上运行一个开源 AI agent，它可以驱动你的浏览器、电脑和手机来完成实际工作。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Run an open-source AI agent on your own machine that drives your browser, computer and phone to do real work. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVURksxbYAAqXd6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Crawl4AI 网页直出 Markdown</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @awe0_io · 2026-10-26 23:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上星标最高的爬虫工具，没有之一。据说作者之前被一个月 16 美元的付费爬虫搞烦了，一气之下花几天时间自己手搓了一个。<br><br>纯粹免费、没有套路、不用注册、不需要 API Key，也没有按量扣费，开箱即用。专为 AI 打造，能把任意复杂网页一键提纯成极简、规范的 Markdown 格式，直接喂给 LLM 跑资料流水线。<br><br>性能强又稳定，跑得比多数付费服务还快，最新版本也优化了记忆体调度与 GPU 容器部署，支持高并发稳定抓取。<br><br>对常做内容的人来说，这种能自动化抓取的工具其实蛮值得研究。<br><br>GitHub 项目：Crawl4AI<br><br><a href="https://github.com/unclecode/crawl4ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/unclecode/crawl4ai</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 实践转向异步大任务加心跳</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-26 18:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">和 Coding Agent 天天干活的人，推荐阅读一下这篇文章。<br><br>Thorsten Ball 把最近半年怎么和 Agent 配合，整理成了一份很使用的清单。里面有几条非常认同：<br><br>别跟它来回试，让它自己造工具去试。别只让它写代码，把日志、部署、发版、翻 bug 也交给它看。别手工管 Context，一条线程只干一件事。<br><br>最大的转变可能是：别再等 Agent，让它等你。给更大的任务，异步跑，用定时和 heartbeat 盯进度。<br><br>做 Agent 产品或天天用 Claude Code / Codex 的，建议先收藏。里面很多判断很硬核，但读完你会想改自己怎么用 Agent。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Thorsten Ball <span style="font-size:12px;color:#999999;font-weight:400;">@thorstenball</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">终于把我一直通过私信发给朋友的内容总结出来了 <a href="https://x.com/i/article/2114385531811319808" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2114385531811319808</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Finally summarized what I've been sending to friends in DMs <a href="https://x.com/i/article/2114385531811319808" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2114385531811319808</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>自建 AI 上下文层维护成本超预期</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @StackOverflow · 2026-10-26 22:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">自建一个 AI 上下文层，对一个有能力的工程团队来说看似轻而易举。但六个月之后，维护它已经变成了你平台团队的全职工作。要让数据管道保持可信、有序、合规，实际花费远比你想象的多。Eira May 深入分析了自建知识系统的真实成本，以及在&quot;自建 vs. 购买&quot;之间做决策时你需要注意的事项。<br><br><a href="https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/?utm_medium=social&amp;utm_source=twitter&amp;utm_campaign=so-blog&amp;utm_content=build-v-buy-context" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/?utm_medium=social&amp;utm_source=twitter&amp;utm_campaign=so-blog&amp;utm_content=build-v-buy-context</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Building an AI context layer in-house seems like a piece of cake for a capable engineering team. But six months later, maintaining it has become your platform team’s full-time job. Keeping the pipeline trustworthy, organized, and compliant actually costs more than you think. Eira May dives into the true cost of an in-house knowledge system and what you should keep in mind when you're deciding between build vs. buy. <br><br><a href="https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/?utm_medium=social&amp;utm_source=twitter&amp;utm_campaign=so-blog&amp;utm_content=build-v-buy-context" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/?utm_medium=social&amp;utm_source=twitter&amp;utm_campaign=so-blog&amp;utm_content=build-v-buy-context</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVj9xEdWMAAzDdr.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CircuitHub 机器人产线量产 PCB</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @seddonandrew · 2026-10-26 20:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在美国制造的 PCB。速度是深圳的两倍。<br><br>今天 @CircuitHub 正式发布 The Grid——我们在马萨诸塞州的工厂级机器人，按需制造电路板。<br><br>无需换线，无需逐个设计配置。原型和批量生产，全程自动化。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">PCBs made in America. Twice as fast as Shenzhen.<br><br>Today @CircuitHub is unveiling The Grid, our factory-scale robot in Massachusetts that builds circuit boards on demand.<br><br>No changeovers, no per-design setup. Prototypes and production batches, fully automated. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114691957498728448/img/wvg8lEv1O5gbGNO_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>小鹏 YOYO 获 L4 示范运营资质</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaopenghexpeng · 2026-10-26 21:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">XPENG Robotaxi 又向前迈了一步。<br><br>我一直相信 L3 可能会被跳过，而真正的 L4 公司必须从 Robotaxi 开始。它所要求的安全标准和接管里程远远超出日常驾驶辅助的范畴。<br><br>我真心相信，Robotaxi 能让更多人获得出行自由，让每一次出行都更加安全。这是我们一直努力的方向。我期待着一个未来，全球更多 XPENG 的朋友都能坐上 XPENG YOYO，尽情享受旅程。💪</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">XPENG Robotaxi has taken another step forward.<br><br>I've always believed L3 might be skipped, and true L4 companies must start with Robotaxi. The safety standards and takeover mileage it demands are far beyond everyday driving assistance.<br><br>And I truly believe that Robotaxi can give more people the freedom to get around, making every journey much safer. This is what we’re always working toward. I look forward to a future where more of our XPENG friends around the world can hop in and enjoy the ride with XPENG YOYO. 💪</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">XPENG <span style="font-size:12px;color:#999999;font-weight:400;">@XPENG_Global</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">XPENG 集团的 Robotaxi——XPENG YOYO 已正式获得 L4 自动驾驶示范运营资质。<br><br>这是 XPENG 物理 AI 商业化的又一步。<br><br>自动驾驶正在走进现实生活，未来越来越近。<br><br>$XPEV </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">XPENG Group Robotaxi, XPENG YOYO has been officially granted L4 autonomous driving demonstration operation qualification. <br>A step further for XPENG Physical AI commercialization.<br>Autonomous driving is moving into real life, and the future is getting closer.<br>$XPEV </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVilVFbXgAAcuOb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 违规收入贡献 5%-7%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @niubi · 2026-10-26 21:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Anthropic 的 S-1 文件估计，在 2026 年前九个月中，后来被发现违反其使用条款的客户贡献了 5%–7% 的营收。该文件并未将全部这一金额认定为中国营收或蒸馏相关营收，但这很可能是对抗性蒸馏所产生的营收上限。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Anthropic s-1 estimates that customers later found to violate its terms generated 5%–7% of revenue in the first nine months of 2026. The filing does not identify that entire amount as Chinese or distillation-related revenue, but that is likely the upper bound of  how much revenue the adversarial distillation generated</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 沙箱成标配创业公司赚盒子外层</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-10-26 21:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">7家大厂都做了AI沙箱，硅谷沙箱创业公司怎么赚钱的？<br><br>亚马逊、谷歌、OpenAI 都做了自己的沙箱，可 Brex 的软件增速榜上，第二、第四名是专做沙箱的 Modal 和 Daytona。 沙箱会成标配，但标配本身不赚钱。原生沙箱公司赚的，是盒子外面那一层：算力、自己的机器，或者规矩。<br><br>秋季大会也在补盒子外面那一层：Docker 把 Sandbox Kit 规范交给 CNCF，Vercel Drives 让沙箱停了文件还在，英伟达发了 OpenShell 参考架构。<br><br>配音与动画由 AI 生成。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114716834012545024/img/P-ZJ082DJt-8cTM0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agentgateway 聚合 MCP 与模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-25 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发现一个值得关注的开源项目：Agentgateway，专门为 AI Agent 打造的统一网关！<br><br>项目采用 Rust 开发，隶属于 Linux Foundation，核心目标是解决 AI Agent 生态中日益复杂的模型调用、MCP 工具管理和多 Agent 通信问题。<br><br>它最大的亮点是将三种能力整合到一起：<br><br>🔹 LLM Gateway：统一接入 OpenAI、Claude、Gemini 等模型，支持智能路由、负载均衡、限流和成本管理。<br><br>🔹 MCP Gateway：将多个 MCP Server 聚合为统一入口，集中管理工具权限、身份认证和调用日志。<br><br>🔹 A2A Gateway：支持 Agent-to-Agent 协议，让不同 AI Agent 能够安全地发现、调用和协作。<br><br>此外，还支持 OAuth、JWT、OpenTelemetry，以及与 Kubernetes 的集成。<br><br>对于个人开发者来说，可能有点大材小用，但如果你正在构建多 Agent 系统、AI SaaS 或企业级智能体平台，它的价值就非常明显了。<br><br>简单来说，Agentgateway 想做的就是 AI Agent 时代的 Nginx！<br><br>GitHub：<a href="https://github.com/agentgateway/agentgateway" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/agentgateway/agentgateway</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LLM 推荐用药偏离常规且更贵</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @EricTopol · 2026-10-26 21:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">LLM 推荐的药物与一般医疗实践不同，且往往推荐的是更贵的替代药物。<br><a href="https://www.nature.com/articles/s44360-026-00205-y" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.nature.com/articles/s44360-026-00205-y</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Drugs recommended by LLMs differed from general medical practice and often were for higher cost alternatives.<br><a href="https://www.nature.com/articles/s44360-026-00205-y" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.nature.com/articles/s44360-026-00205-y</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 提交 S-1 启动 IPO</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @op7418 · 2026-10-26 21:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 已经正式提交了纳斯达克上市的 S-1 文件，股票代码是 ANT，承销商是高盛和摩根士丹利。<br><br>目前注册声明还没有被 SEC 宣布生效。在 SEC 审阅完成之后，需要修订 S-1 文件并进行路演，之后在 SEC 宣布生效和定价时才能交易。<br><br>所以大概会在 11 月中下旬正式 IPO。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVj7Nh7aIAAfIin.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Anthropic <span style="font-size:12px;color:#999999;font-weight:400;">@AnthropicAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Anthropic 已向 SEC 提交了与其拟议 IPO 相关的 S-1 注册声明。<br><br>了解更多：<a href="https://www.anthropic.com/news/s1-sec" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/news/s1-sec</a><br><br>法律免责声明：与这些证券相关的注册声明已向 SEC 提交，但尚未生效。在注册声明生效之前，不得出售这些证券，也不得接受购买这些证券的要约。本帖不构成出售这些证券的要约或购买这些证券的要约的招揽，在任何州或司法管辖区，若在该州或司法管辖区的证券法下进行注册或资格认定之前，出售、招揽或销售将属非法。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.<br><br>Read more: <a href="https://www.anthropic.com/news/s1-sec" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/news/s1-sec</a><br><br>Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may offers to buy be accepted, prior to the time the registration statement becomes effective. This post does not constitute an offer to sell or the solicitation of an offer to buy these securities, nor shall there be any sale of these securities in any state or jurisdiction in which such offer, solicitation or sale would be unlawful prior to registration or qualification under the securities laws of any such state or jurisdiction.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>BAND 让本地编程 Agent 共享上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Sumanth_077 · 2026-10-26 21:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude Code、Codex 和 Hermes 现在可以作为一个团队协作了！<br><br>BAND 让你本地的 coding agent 们协同工作：它们共享上下文、交接任务、并互相解除阻塞。<br><br>通常，运行多个 coding agent 意味着运行多个独立的会话。Claude Code 可能处理后端，Codex 处理前端，另一个 agent 负责审查，但最终你仍然需要在它们之间手动传递上下文。<br><br>BAND 给这些 agent 围绕任务创建了一个共享的协作空间。<br><br>一个 agent 可以制定计划，将工作拆分为任务，并把各个部分交给其他 agent。这些 agent 可以直接互发消息，随工作一起传递上下文，并将当前状态保存在任何单个 coding 会话之外。<br><br>你的 coding 会话仍然在你已有的工具中本地运行。BAND 作为协调层围绕它们，所以你可以看到每个 agent 正在做什么、哪里被阻塞、以及哪里真正需要人工决策。<br><br>这也意味着规划者或审查者不必在实施开始后就消失。他们可以留在同一个空间里，随着工作进展随时介入。<br><br>核心能力：<br><br>- 跨 coding agent 的共享上下文<br>- agent 之间的直接消息传递和任务交接<br>- 共享的计划、任务和工作归属<br>- 本地 coding 会话配合集中化的可视性<br>- 工作流内部的人工决策和审批<br><br>这里有趣的部分在于，添加更多 coding agent 是容易的。真正难的问题是让 Claude Code、Codex、Hermes 或其他 agent 在同一个任务上真正协同工作。<br><br>BAND 正在构建围绕它们的共享层。<br><br>我把链接放在评论区了！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Claude Code, Codex and Hermes can now work as a team!<br><br>BAND lets your local coding agents work together: they share context, hand off work, and unblock one another.<br><br>Normally, running multiple coding agents means running multiple separate sessions. Claude Code might handle the backend, Codex the frontend, and another agent reviews the work, but you still end up being the person carrying context between them.<br><br>BAND gives those agents a shared room around the task.<br><br>One agent can create the plan, split the work into tasks, and hand pieces off to other agents. Those agents can message each other directly, pass the context with the work, and keep the current state outside any single coding session.<br><br>Your coding sessions still run locally in the tools you already use. BAND sits around them as the coordination layer, so you can see what each agent is working on, what is blocked, and where a human decision is actually needed.<br><br>That also means the planner or reviewer does not have to disappear once implementation starts. They can stay in the same room while the work progresses and step back in when something changes.<br><br>Key capabilities:<br><br>- Shared context across coding agents<br>- Direct agent-to-agent messaging and handoffs<br>- Shared plans, tasks, and work ownership<br>- Local coding sessions with centralized visibility<br>- Human decisions and approvals inside the workflow<br><br>The interesting part here is that adding more coding agents is easy. Getting Claude Code, Codex, Hermes, or other agents to actually coordinate around the same task is the harder problem.<br><br>BAND is building that shared layer around them.<br><br>I’ve shared the link in the comments!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVj2SVDbIAAxx7H.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sumanth <span style="font-size:12px;color:#999999;font-weight:400;">@Sumanth_077</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2081256329633845248" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2081256329633845248</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2081256329633845248" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2081256329633845248</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AirMouse 手机变身触控板与体感鼠标</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-26 21:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">躺着用大屏电脑时键鼠够不着，遥控器又打不了字。<br><br>AirMouse 在电脑上跑个 Python 服务，手机浏览器打开网页就变成触控板加键盘，还能用陀螺仪当体感鼠标挥，手机端什么都不用<br><br><a href="https://github.com/cornradio/airmouse" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cornradio/airmouse</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVe8GoAakAE7-I3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>开发者 63% 代码由 AI 生成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @milan_milanovic · 2026-10-26 15:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">𝗔𝗜 编写了典型开发者 𝟲𝟯% 的代码，而只有 𝟮𝟯% 的人表示这有助于他们的心理健康<br><br>图表：Devographics 出品的《State of Devs 2026》🧵👇 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">𝗔𝗜 𝘄𝗿𝗶𝘁𝗲𝘀 𝟲𝟯% 𝗼𝗳 𝘁𝗵𝗲 𝘁𝘆𝗽𝗶𝗰𝗮𝗹 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿'𝘀 𝗰𝗼𝗱𝗲, 𝗮𝗻𝗱 𝗼𝗻𝗹𝘆 𝟮𝟯% 𝘀𝗮𝘆 𝗶𝘁 𝗵𝗲𝗹𝗽𝗲𝗱 𝘁𝗵𝗲𝗶𝗿 𝗺𝗲𝗻𝘁𝗮𝗹 𝘀𝘁𝗮𝘁𝗲<br><br>Charts: State of Devs 2026 by Devographics 🧵👇 </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVijugPaYAA7NSl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Diagram Design 直出 45 类图表</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-26 21:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥 发现一个很实用的开源项目：Diagram Design，让 Claude Code、Codex 等 AI 编程工具直接生成专业级图表！<br><br>它解决了 AI 绘图的一大痛点：千篇一律的圆角方框、杂乱的箭头和缺乏设计感的布局。<br><br>核心亮点：<br><br>✅ 支持 45 种图表，包括架构图、流程图、时序图、状态机、ER 图等<br><br>✅ 自然语言描述需求，AI 自动生成完整图表<br><br>✅ 输出独立 HTML + SVG，支持导出 SVG/PNG<br><br>✅ 自动匹配网站品牌配色与字体<br><br>✅ 兼容 Claude Code、Codex、Cursor、Qoder 等工具<br><br>尤其适合技术博客、项目文档、PPT 和视频配图。<br><br>GitHub：<a href="https://github.com/cathrynlavery/diagram-design" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cathrynlavery/diagram-design</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">16</span><span style="color:#b5bbc2;font-weight:400;">｜</span>即览 1.0.2 适配 iPhone DUO</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @op7418 · 2026-10-26 21:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">即览 1.0.2 版本已经正式适配了 iPhone DUO！<br><br>同时还新增了记住上次观看位置的能力。<br><br>让 Codex 做了一个展示的动画，没想到做得还挺好。<br><br>找了半天都没有类似的 iPhone DUO样机，只好自己做一个了 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114710186313289729/img/23sB4wTAcQ5WM4J0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">歸藏(guizang.ai) <span style="font-size:12px;color:#999999;font-weight:400;">@op7418</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">卧槽！我开发的 Markdown 和 HTML 预览 iOS 应用「即览」终于上架了！目前国区限免！<br><br>苹果上架时真的麻烦啊，审核等了十一天。<br><br>主要帮大家解决 AI 时代两大主流文件在手机上无法预览的问题。<br><br>手机上的各个应用对这两类文件的预览其实都不太好：Markdown 就别说了，最近有些虽然支持了但体验并不好；<br><br>HTML 文件的话，即使是浏览器本身，想要打开本地的 HTML 文件也非常麻烦。<br><br>你只需要在文件的打开方式中选择「即览」，就能快速打开。而且我做了很多优化，比如字号调整、夜间模式、比例调节等等，欢迎大家尝试！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HSLEDAraAAAAZVW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HSLEHK-asAAdpor.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HSLEIpiaYAA0klS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HSLERSabEAEPWYE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

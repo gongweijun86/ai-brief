@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月19日 17:30">
+<title>AI技术雷达 · 10月19日 17:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;RAG面试详解覆盖82场真实追问</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;混元Hy Memory 2.0开源发布</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Qwen RAG将千万文档幻觉率压到2%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;腾讯Octop开源多用户AI工作空间</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;PaperBanana自动生成学术插图</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAG面试详解覆盖82场真实追问</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cxjwin · 2026-10-19 00:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">上次这份 Agent 面试题单说要一题一篇写详解，第 1 题 RAG 链路写好了。82 场问到它的面试里，55 场问了三个以上和 RAG 相关的问题，「讲讲 RAG 的流程」只是开场。<br><br>这篇按 RAG 系统本身来讲：<br><br>先给一张整体图：离线解析、切分、向量化、建索引，在线改写、召回、融合、重排、生成<br>每一环讲它解决什么问题、原理和取舍，后面附面试里的真实追问：块大小怎么定，有了向量检索为什么还要 BM25，为什么不能全部 rerank，召回率 85% 是怎么算出来的<br>评测、更新和权限各有一节，最后是两分钟答法和常见失分点<br><br>67 位作者里，近一半被问到的是自己项目里的 RAG：块切多大，top-k 取几，召回率多少，怎么测出来的。准备这题，先把自己项目的数字备好。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">码良 <span style="font-size:12px;color:#999999;font-weight:400;">@cxjwin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2111640497941024768" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2111640497941024768</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2111640497941024768" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2111640497941024768</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元Hy Memory 2.0开源发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ElliotChen · 2026-10-19 14:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">恭喜混元发布 Hy Memory 2.0 <br><br>论文里有个细节挺有意思：他们特意选了 EverOS（EverMemOS）作为训练中完全没见过的「留出框架」来检验泛化能力，并称它是「本次评测中最强的开源社区记忆基线」。<br><br>在 EverOS 上，他们测的每一个模型分数都比在 Mem0、MemOS 上更高。<br><br>要知道，EverOS 是 @EverMind 去年就开源的工作，快一年过去了，依然是别人拿来对标的标尺，我们表示很荣幸，同时也表示行业对我们的认可。🤝<br><br>不过这些都不重要了。这一年我们也没闲着，下个月有重磅更新要发布，这次也非常能打。<br><br>敬请期待。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tencent Hy <span style="font-size:12px;color:#999999;font-weight:400;">@TencentHunyuan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚀 Hy Memory 2.0 发布——开源模型、框架和 MemHub。<br>你私密的记忆管家。<br>框架处理对话、工作和代码记忆。<br>在4项基准测试中排名第一。<br>Hy-Memory-30B-A3B 在各大框架中表现超越 Opus 5。<br>MemHub（CLI + Mac）可在10多个AI工具间同步。<br><br>💻➡️<br><br>🔗 SDK &amp; MemHub: <a href="https://github.com/Tencent-Hunyuan/Hy-Memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent-Hunyuan/Hy-Memory</a><br>🔗 模型: <a href="https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan</a> #HyMemory #AgentMemory</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚀 Hy Memory 2.0 is out — open-source model, framework, and MemHub. <br>Your private memory steward.<br>Framework handles chat, work &amp; code memories. <br>#1 open-source on 4 benchmarks. <br>Hy-Memory-30B-A3B beats Opus 5 across major frameworks.<br>MemHub (CLI + Mac) syncs across 10+ AI tools.<br><br>💻➡️<br><br>🔗 SDK &amp; MemHub: <a href="https://github.com/Tencent-Hunyuan/Hy-Memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent-Hunyuan/Hy-Memory</a><br>🔗 Model: <a href="https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan</a> #HyMemory #AgentMemory</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvgCjIa0AAMVm6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen RAG将千万文档幻觉率压到2%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_super_niko · 2026-10-19 12:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Qwen 千万级文档 RAG 流水线：四层防线把不可回答问题的幻觉率压到 2%，p95 延迟 18ms。<br><br>▸ 混合检索（稠密 + BM25）<br>▸ 引用约束生成 + 原子声明验证<br>▸ 校准弃权：拿不准就拒答<br>▸ 千万级向量仍保 18ms p95<br><br>四层防幻觉的姿势很标准，没什么花活，但拼在一起就是生产级。多数团队卡在&quot;加个向量库就完事&quot;，没人愿意做&quot;声明级验证&quot;和&quot;弃权&quot;那两步——前者工程量大，后者要说服产品方接受&quot;模型会说不知道&quot;。2% 不是天花板，是工程纪律的回报。这套架构值得照抄。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU9xFH9XAAASO_H.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>腾讯Octop开源多用户AI工作空间</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-10-19 14:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Octop：Grok Bot 的开源实现方案<br><br>腾讯开源 Octop，自托管、支持多用户与多智能体的AI助手平台，基建完备，功能强大。接上模型，部署到VPS或者NAS上就是你自己的 Grok Bot。<br><br>功能包括：<br>· 专属云电脑与沙箱：Octop 部署在 Linux VPS 上，自带 远程桌面 + Browser AI + Terminal AI + 独立工作区，拥有 GUI 桌面，持久化的浏览器和命令行；<br>· 人工接管：Octop 的Web 控制台，直接内嵌实时的远程桌面，支持键鼠控制；<br>· 多角色与团队协作：支持创建多个专家Agent，由协调者自动调度多位专家；<br>· 常驻任务与主动任务：服务端守护进程 7×24 小时在线，支持自然语言配置 Cron 定时任务，实现主动推送；<br>· 多端支持：不仅有 Web 端和桌面端，还支持接入微信、飞书、Telegram、Discord；<br><br>Github：<a href="https://github.com/TencentCloud/Octop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/TencentCloud/Octop</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-RRMZaMAAH2Ee.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tencent AI <span style="font-size:12px;color:#999999;font-weight:400;">@TencentAI_News</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们开源了 Octop，一个面向你自己、你的家人和你的团队的多用户AI工作空间。<br><br>每个人都有自己的登录账号，可以创建多个 agent，每个 agent 拥有独立的工作空间。你在任何一个账号中所说或保存的内容都不会出现在其他账号中。几乎所有东西都可以替换：模型、存储、记忆、插件。每个 agent 都自带浏览器、终端和远程桌面。<br><br>你可以将工作转交给 Claude Code、Codex、Cursor、OpenCode、CodeBuddy 以及你已经在使用的其他编码 agent。它还可以出现在你的 Telegram 和 Discord 群聊中。<br><br>它运行在你自己的机器上，只需一条命令即可启动：octop run。<br><br>完整详情见仓库：<a href="http://github.com/TencentCloud/Octop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://github.com/TencentCloud/Octop</a>。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We open sourced Octop, a multi-user AI workspace for yourself, your family and your team.<br><br>Everyone gets their own login and can create multiple agents, each with its own workspace. Nothing you say or save shows up in another account. Almost everything can be swapped: models, storage, memory, plugins. Each agent comes with a browser, a terminal and a remote desktop.<br><br>You can hand off work to Claude Code, Codex, Cursor, OpenCode, CodeBuddy and other coding agents you already use. It also lives in your group chats on Telegram and Discord.<br><br>It runs on your own machine, and one command is all it takes: octop run.<br><br>The full picture is in the repo: <a href="https://github.com/TencentCloud/Octop." target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/TencentCloud/Octop.</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PaperBanana自动生成学术插图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-19 14:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">google新出的神器，写论文时帮你自动化制作插图<br><br>PaperBanana（后来也叫 PaperVizAgent）是一个用 AI 自动生成学术论文插图的工具Agent<br><br>它主要做的事是：<br>-把你论文里的方法描述文本（methodology），自动转成出版级别的学术示意图（流程图、架构图、方法图等）。<br><br>-也能生成统计图表（plots）。<br><br>-用多 Agent 协作完成：检索参考图 → 规划内容 → 调整学术风格 → 生成图片 → 自我批评迭代优化。<br><br>简单说，就是帮科研人员少画图、少调格式，把“用文字讲清楚的方法”自动变成好看、规范的学术插图。<br><br>论文作者来自北京大学和 Google Cloud AI Research，目标是降低画论文图的门槛。目前开源，需要自己配置 Gemini 或其他模型的 API Key 使用。<br><br>论文：<a href="https://arxiv.org/abs/2601.23265v1" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2601.23265v1</a><br><br>实现github仓库：<br><br>作者维护的仓库：<br><a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/dwzhu-pku/PaperBanana</a><br>这是第一作者 Dawei Zhu 维护的版本，从 Google Research 的官方仓库 fork 而来，并持续更新（支持 Gradio/Streamlit、Hugging Face Spaces 演示、OpenRouter 等）。README 明确说明原版已开源在 Google Research。<br><br>官方原始仓库（Google Research）：<br><a href="https://github.com/google-research/papervizagent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google-research/papervizagent</a><br>论文最初开源的版本，后来改名为 PaperVizAgent（formerly PaperBanana）。<br><br>项目主页：<a href="https://dwzhu-pku.github.io/PaperBanana/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dwzhu-pku.github.io/PaperBanana/</a><br>在线演示：<a href="https://huggingface.co/spaces/dwzhu/PaperBanana" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/spaces/dwzhu/PaperBanana</a><br><br>另外还有一些社区复现<br>（如 <a href="https://github.com/llmsresearch/paperbanana" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/llmsresearch/paperbanana</a>）</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Open-Science AI研究工作台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Saccc_c · 2026-10-19 14:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">读论文其实也是学习AI技巧、获取前沿AI信息的最直接方式之一，但很多人可能都会被难以理解的概念和技术方法所劝退<br><br>我找到了一个帮你打通论文这条AI信息渠道的方法，就是利用@aipoch_ai 开源的Open-Science工具辅助进行前沿AI研究（GitHub🔗：<a href="https://github.com/aipoch/open-science" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/aipoch/open-science</a>）<br><br>它是一个把读论文、分析数据、运行代码和生成图表放在一起的 AI 研究工作台，支持接入多种不同的模型，也可以利用Codex、Claude的订阅直接接入使用<br><br>我实际体验下来发现，这个工具是真的能通过可视化图表，帮助你轻松理解论文里的概念与核心发现，也能让你亲自动手测试，验证自己的想法<br><br>视频中，我以Google DeepMind 参与的一篇探讨写作「AI 味」的论文为例，演示了从理解论文到实际应用测试的过程。我按论文中的方法，对比了孙哥的爱情小作文和 ChatGPT 写的同题故事，发现前者的叙事更复杂，后者则更偏向线性叙事，完美符合「AI味」特征<br><br>如果你想深入学习 AI，我真心建议定期学习一些高质量的论文研究，而Open-Science绝对是你必备的学习工具</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2112076045985984512/img/TCFpBWnDkWS7B0Dw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex逆向Kindle实现书库同步</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @turingou · 2026-10-19 11:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我让 Codex 用逆向工具，逆向了 Kindle 现在使用的 ZenOS 操作系统和 Kindle 本身的操作系统。<br><br>然后它给我设计了一个界面，可以展示我所有 Apple Books 和微信读书里的书。如果我想在 Kindle 上同步这些 EPUB，只要点击一下，电脑就会自动帮我把它 drop 过去！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">郭宇 guoyu.eth <span style="font-size:12px;color:#999999;font-weight:400;">@turingou</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">今天我的快速扫描仪快做完了，随之衍生出一个新需求：我现在正在把纸质书录入并做成 EPUB 版本，翻出了两台我不常使用的 Kindle。传统的 Kindle 必须从官方市场购买下载，或者直接刷第三方固件，比较麻烦。<br><br>现在我希望把 Kindle 改成配合 Agent 使用的版本：可以直接在 Kindle 上找书，它会向电脑或服务器上的 Agent 发起请求，自动生成 EPUB 电子书；或者我通过快速扫描系统录入的书籍，也能直接同步到 Kindle 上。<br><br>再往远做一点，它甚至还可以同步我苹果系统里的书库，乃至联动微信读书</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>tv-vibehack一键去电视广告</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-10-19 11:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">tv-vibehack：屏蔽电视的各种广告<br><br>作者在给父母使用小米电视时发现，电视里充斥着开机广告、推广内容和各种冗余预装软件。父母在打开像 Netflix 这样的常用软件之前，必须先看一遍广告，非常闹心。<br><br>于是作者利用Claude Code做了tv-vibehack，无需root，只需要电脑与电视连接同一个 Wi-Fi，在电视设置中开启调试模式。整个过程不需要插数据线，也不会改动电视底层的固件系统。<br><br>改造完成后，电视的主界面直接变成了类似苹果电视盒子的极简风格。屏幕背景干净纯黑，没有任何推送和弹窗，底部整齐排列常用软件，顶部只显示时间、日期和输入源切换按钮。启动器只有 1.6 兆，纯 Java 写的，1G 内存的老电视也跑得动。<br><br>项目地址：<a href="https://github.com/Gathin23/tv-vibehack" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Gathin23/tv-vibehack</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU9nWdNbcAAEtj3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

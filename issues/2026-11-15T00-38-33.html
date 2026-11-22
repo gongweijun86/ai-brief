@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月15日 08:38">
+<title>AI技术雷达 · 11月15日 08:38 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;LoopForge 切分任务为研发流水线</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;NVIDIA Dory 复用层比肩9B模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Grok 文本水印仅按法律要求开启</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">14</span>&nbsp;&nbsp;Quantum Source 容错量子架构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">15</span>&nbsp;&nbsp;Grok Bot 效率优化多出15%用量</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LoopForge 切分任务为研发流水线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chenfacai0 · 2026-11-14 11:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">腾讯这波操作，等于直接给 Agent 组建了一支完整的研发班子！<br><br>才刚开源的 LoopForge，能把一项开发任务切分成一整套端到端的研发流水线：<br><br>头一步先把需求定下来，再把技术方案敲定<br>写代码这件事交由 AI Agent 来完成<br>再单独派一个 Agent 去做 Code Review<br>测试跑一轮，要是查出毛病就退回前序环节返工<br>交付过程全程留痕，哪怕中途断了也能续上接着干<br><br>更狠的是，这整条流程能沉淀成一份 SOP，往后遇到相似的功能开发，拿出来套用即可，省得每次都从零折腾一遍<br><br>Claude Code、Codex、CodeBuddy 三样都支持。个人自用的话，装个 Local 版就够，用不着把整套平台部署起来。<br><br>项目完全开源，走的 MIT 协议。<br><br>GitHub：<a href="https://github.com/Tencent/LoopForge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent/LoopForge</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXAMaEJagAAPLnl.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NVIDIA Dory 复用层比肩9B模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-11-14 18:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">NVIDIA 发布了一款新的循环 Transformer：<br><br>不是堆叠更多层，而是将相同的层运行多次，使一个 4B 模型能像 9B 模型一样思考。<br><br>以下是它的工作原理：<br><br>在标准 Transformer 中，每个 token 都会通过一个解码器块堆栈一次，每个块都有自己独立的权重。<br><br>所以如果你想要一个更深的模型，你就需要添加更多的块，参数量随深度增长。<br><br>NVIDIA 的 Dory1.0-4B 通过复用其一部分层来解耦这两者。<br><br>模型被分为三个部分：<br><br>&gt; 输入块由 8 个块组成，运行一次，将 token 转换为隐藏状态 x。<br><br>&gt; 循环块由 20 个共享块组成，运行 k 次，k 的范围可以从 1 到 4。<br><br>&gt; 输出块由 8 个块组成，在最终状态上运行一次，随后是 LM head。<br><br>在每次通过循环块之前，x 会被加回当前状态，然后对总和进行 L2 归一化。<br><br>这使得每次通过时都能看到原始的 token 表示，而不是每次只看到上一次通过产生的结果。<br><br>下图中的两个模型都存储了 36 个块的权重。<br><br>标准 Transformer 对每个块应用一次，而 Dory 在 k=1 时应用 36 个块，k=2 时应用 56 个块，k=4 时应用 96 个块，即来自同一 checkpoint 的 72、112 和 192 个物理层。<br><br>额外的深度在推理和 agentic 任务上确实有帮助：<br><br>&gt; SWE-bench Verified：<br><br>- 1 次循环 → 50.3<br>- 2 次循环 → 59.5<br>- 4 次循环 → 61.8<br><br>&gt; 12 项基准测试平均分：<br><br>- 1 次循环 → 35.17<br>- 2 次循环 → 39.67<br>- 4 次循环 → 40.60<br>- 且在 2 次或更多循环时，超越了 Qwen3.5-9B、Gemma 4 12B 和 Gemma 4 26B-A4B。<br><br>更多循环意味着每个 token 需要更多计算量，但 4 循环模型在 agentic 任务上输出的 token 数量也少了 1.3x 到 2.5x。<br><br>因此 2 次循环端到端的总计算量实际上只是 1 次循环的 1.03x 到 1.25x，这就是 NVIDIA 推荐将 2 作为默认值的原因。<br><br>默认情况下，Dory 为每次循环保留独立的 KV cache，所以在 4 次循环时，循环层会存储 4 倍的 cache。<br><br>为了避免这种情况，它可以只保留最后一次循环的 cache，这使用的 KV 内存与普通模型相同，只有微小的精度变化。<br><br>有一点需要注意：循环帮助模型基于它已有的知识进行推理，但不会添加新知识。<br><br>例如，在 AA-Omniscience 等任务上，无论运行 1 次还是 4 次循环，准确率都保持在 10.0，而在 GPQA 等知识密集型任务上，Dory 仍然落后于 Qwen3.5-4B。<br><br>论文在这里：<a href="https://arxiv.org/abs/2611.03998" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.03998</a><br><br>话虽如此，循环消耗多少内存取决于 KV cache 的处理方式，所以我写了一篇关于 KV cache 工作原理的完整详解。<br><br>它涵盖了 prefill 期间缓存了什么内容、cache 在解码过程中如何增长，以及为什么它在长上下文时成为主要的内存瓶颈。<br><br>在下方阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">NVIDIA released a new looped transformer:<br><br>Instead of stacking more layers, it runs the same layers multiple times so a 4B model can think like a 9B one.<br><br>Here's how it works:<br><br>In a standard transformer, every token passes through a stack of decoder blocks once, and each block has its own weights.<br><br>So if you want a deeper model, you add more blocks, and the parameter count grows with the depth.<br><br>NVIDIA's Dory1.0-4B decouples the two by reusing a chunk of its layers.<br><br>The model is split into three parts:<br><br>&gt; An input block of 8 blocks runs once and turns the tokens into a hidden state x.<br><br>&gt; A recurrent block of 20 shared blocks runs k times, where k can be anywhere from 1 to 4.<br><br>&gt; An output block of 8 blocks runs once on the final state, followed by the LM head.<br><br>Before every pass through the recurrent block, x is added back to the current state and the sum is L2-normalized.<br><br>This keeps the original token representation in view on every pass, instead of each pass only seeing what the previous one produced.<br><br>Both models in the diagram below store 36 blocks of weights.<br><br>The standard transformer applies each block once, while Dory applies 36 blocks at k=1, 56 at k=2, and 96 at k=4, i.e., 72, 112, and 192 physical layers from the same checkpoint.<br><br>The extra depth is actually helpful on reasoning and agentic tasks:<br><br>&gt; SWE-bench Verified:<br><br>- at 1 loop → 50.3<br>- at 2 loops → 59.5<br>- at 4 loops → 61.8<br><br>&gt; 12-benchmark average:<br><br>- at 1 loop → 35.17<br>- at 2 loops → 39.67<br>- at 4 loops → 40.60<br>- and with 2 or more loops, it beats Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B.<br><br>More loops implies more compute per token, but the 4-loop model also writes 1.3x to 2.5x fewer output tokens on agentic tasks.<br><br>So 2 loops end up costing only 1.03x to 1.25x the compute of 1 loop end to end, which is why NVIDIA recommends 2 as the default.<br><br>By default, Dory keeps a separate KV cache for every loop, so at 4 loops the recurrent layers store 4x the cache.<br><br>To avoid this, it can keep only the cache from the last loop, which uses the same KV memory as a normal model with only a small change in accuracy.<br><br>One thing to note here is that looping helps the model reason over what it already knows, but it does not add knowledge.<br><br>For instance, on tasks like AA-Omniscience, accuracy stays at 10.0 whether you run 1 loop or 4, and on knowledge-heavy tasks like GPQA, Dory still trails Qwen3.5-4B.<br><br>Here's the paper: <a href="https://arxiv.org/abs/2611.03998" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.03998</a><br><br>That said, how much memory looping costs comes down to how the KV cache is handled, so I wrote a full breakdown of how KV caching works.<br><br>It covers what gets cached during prefill, how the cache grows during decoding, and why it becomes the main memory bottleneck at long context.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HXFCuBeaEAADLVe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2034896077460316163" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2034896077460316163</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2034896077460316163" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2034896077460316163</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok 文本水印仅按法律要求开启</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-11-15 00:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Grok 的文本水印仅在法律要求或用户请求时开启</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Text watermarking with Grok is only on where required by law or requested by the user</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tech Dev Notes <span style="font-size:12px;color:#999999;font-weight:400;">@techdevnotes</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">文本水印现在在 SpaceXSI API 中默认关闭 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Text watermarking is now off by default in the SpaceXSI API </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXCfc5MXAAAQCEQ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 进入 RSI 递归改进循环</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cxjwin · 2026-11-15 00:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">10 月 14 日，Sergey Brin：开始进入 RSI 循环<br><br>在 Gemini 4 Argon 的访谈中，他表示：<br>We're starting to get onto that RSI treadmill.<br><br>意思是 Google 已经开始进入递归自我改进的迭代过程，研究人员和模型共同开发下一代模型。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jack <span style="font-size:12px;color:#999999;font-weight:400;">@JacksAISites</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Google 难道已经 RSI 了？<br><br>Carbon 等这几个才出来啊，新的 krypton 模型又开始外泄测试了</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NEJM 案例AI诊断十年腹痛病因</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @EricTopol · 2026-11-15 00:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一位 37 岁的女性，腹痛 10 年。<br>——AI 做出了诊断并推荐了成功的治疗方案。<br>——医生&quot;诊断了一位我从未诊断过的疾病的患者，治疗在很大程度上基于聊天机器人的输出。&quot;<br>在今天的 @NEJM<br><a href="https://www.nejm.org/doi/full/10.1056/NEJMp2606894" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.nejm.org/doi/full/10.1056/NEJMp2606894</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A 37-year-old woman with 10 years of abdominal pain.<br>—The AI makes the diagnosis and recommends a successful treatment.<br>—The physician &quot;diagnosed a patient with a condition I had never diagnosed before and started treatment largely on the basis of the output of a chatbot.&quot;<br>In today's  @NEJM <br><a href="https://www.nejm.org/doi/full/10.1056/NEJMp2606894" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.nejm.org/doi/full/10.1056/NEJMp2606894</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQvSva8AESKyS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQxUNaUAAP-Zf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGQzZmbYAAHhFo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 支持自定义主题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @berryxia · 2026-11-15 00:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude  Code 也支持换皮了，QQ皮肤赶紧上吧！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">现在你可以使用 mods 在桌面端为 Claude Code 构建自定义主题了！更改颜色、添加动画背景，打造属于你自己的样式。<br><br>只需告诉 Claude 你想要的样子，或者使用 theme-examples 插件快速上手。我们很期待看到你的作品！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">You can now build custom themes for Claude Code on desktop with mods! Change the colors, add an animated background, and make it your own.<br><br>Just tell Claude how you want it to look, or get started quickly with the theme-examples plugin. We'd love to see what you make! </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121392351218397185/img/14nrq2DI01cKbZqM.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Synology NAS 勒索配置审计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KitPloit · 2026-11-15 00:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">synology-nas-cli — 适用于 Synology DSM 7 的零依赖 Python CLI 和 MCP server，可针对 C3RB3R/.L0CK3D 勒索软件活动审计 NAS 配置、规划修复方案并执行修复。<a href="https://ktp.sh/Tnx2FuvYEh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/Tnx2FuvYEh</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">synology-nas-cli — Zero-dependency Python CLI and MCP server for Synology DSM 7 that audits NAS configuration against the C3RB3R/.L0CK3D ransomware campaign, plans fixes, and applies them. <a href="https://ktp.sh/Tnx2FuvYEh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/Tnx2FuvYEh</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXGPhkfXQAAtJQh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Adobe 交互式照片风格化本地开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dekelgalor · 2026-11-13 03:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">来自 Adobe + Berkeley（CVPR 2026）的交互式照片风格化。开源、本地运行，随时可以在你自己的图片上尝试！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Interactive photo stylization from Adobe + Berkeley (CVPR 2026). Open source, runs locally, and ready to try on your own images!</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ScanDot 手机扫描3D点云本地查看</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-14 23:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">拿一部支持 ARCore Depth 的手机绕物体走一圈，把 3D 点云存下来，事后在手机上转着看。<br><br><a href="https://github.com/faizfahmi77/ScanDot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/faizfahmi77/ScanDot</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 连接器读取 WhatsApp</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ITentser · 2026-11-13 23:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">将 WhatsApp 添加为 Claude 的自定义连接器。<br><br>一个 URL，OAuth 登录，无需 API key。之后 Claude 可以读取你团队的真实 WhatsApp 聊天记录、总结讨论串并起草回复供你批准。<br><br>5 分钟完成设置。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Add WhatsApp to Claude as a custom connector.<br><br>One URL, OAuth sign-in, no API keys. Then Claude can read your team's real WhatsApp chats, summarise threads and draft replies you approve.<br><br>5-minute setup.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Capgemini 按验证结果算AI成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antgrasso · 2026-11-14 22:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你选择了一个更便宜的 AI 模型。很好。但你确定省了钱吗？Capgemini 警告说，错误和人工审查可能会改变最终的账单。<br><br>Token 价格很容易比较。更难的部分是弄清楚组织为获得结果实际花费了什么。<br><br>微型博客 by @antgrasso<br><br>考虑一个为产品目录准备描述的营销团队。一个 AI 模型每次请求花费更低。另一个花费更高，但它的草稿可能在发布前需要更少的修改。<br><br>团队需要比较每条获批描述的总花费，包括核查产品信息所需的工作。<br><br>每次请求价格更高的模型最终可能反而是更经济的选择。<br><br>Capgemini 称这种衡量方式为 Cost Per Verified Outcome（每经验证结果成本）。它将比较从 token 消耗转移到经过验证的业务结果的成本上。<br><br>但即使是一个经过验证的结果，也需要产生足够的价值来证明公司为获得它所花费的成本是合理的。<br><br>#AIEconomics #AIManagement</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">You chose a cheaper AI model. Good. But are you sure you saved money? Capgemini warns that errors and human review can change the final bill.<br><br>Token prices are easy to compare. The harder part is working out what the organization spends to get a result.<br><br>Microblog by @antgrasso<br><br>Consider a marketing team preparing descriptions for a product catalog. One AI model costs less per request. Another costs more, but its drafts may need fewer revisions before publication.<br><br>The team needs to compare what it spends for each approved description, including the work required to check the product information.<br><br>The model with the higher price per request could turn out to be the less expensive choice.<br><br>Capgemini calls this measure Cost Per Verified Outcome. It shifts the comparison from token consumption to the cost of a verified business result.<br><br>But even a verified result needs to produce enough value to justify what the company spends to obtain it.<br><br>#AIEconomics #AIManagement</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXF0S79XQAAbG07.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TiDB AgentSpace 持久上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @siddontang · 2026-11-14 23:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我正在构建一个名为 TiDB AgentSpace 的演示项目，为我的 agents 提供一个持久化的工作空间。它们的文件和数据库在下次会话中仍然存在，这样它们就可以从中断的地方继续。<br><br>目前，它只使用 TiDB Cloud 的免费层。我还没有将其连接到生产环境。<br><br>试用 → <a href="https://drive9.ai/studio/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://drive9.ai/studio/</a><br>GitHub → <a href="https://github.com/mem9-ai/tidb-agentspace" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mem9-ai/tidb-agentspace</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I’m building a demo named, TiDB AgentSpace, to give my agents a persistent workspace. Their files and databases are still there next session, so they can pick up where they left off.<br><br>For now, it only uses TiDB Cloud’s free tier. I haven’t connected it to production yet.<br><br>Try it → <a href="https://drive9.ai/studio/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://drive9.ai/studio/</a><br>GitHub → <a href="https://github.com/mem9-ai/tidb-agentspace" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mem9-ai/tidb-agentspace</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXERQrFbIAEOXgj.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Instagram 运营技能包全流程覆盖</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-14 23:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">📸 又发现一个 Instagram 运营神器 instagram-agent-skill，13 个 Claude 技能把找爆款、写 Reel 脚本、配文案到回评论私信全包了。<br><br>instagram-agent-skill 两个月前才建仓，已经 6400 多 star、1200 多个 fork，刚上 GitHub 热榜。<br><br>以前做一条 Reel，得自己刷同行找灵感、憋开头、写文案、数话题标签，发完还要一条条回评论。<br><br>装上之后，/ig-reel 会按 26 种开头公式给你出三个开头并打分，再把脚本、屏幕文字和带时间的节拍表一起排好；写文案时还会预览信息流里能露出的前 125 个字符，顺手检查话题标签有没有超过每帖 5 个的上限。<br><br>它只生成文字，不碰你的账号：不用注册、不要 API 密钥，也不会替你自动发帖，复制粘贴由你自己来。配套的 5 个 Python 小工具全在本地跑，不联网。<br><br>难得的是作者 Jake Schincariol 很实在：他拿 74 条真实短视频开头测打分器，承认它挑得出故意写烂的开头，但分辨同一个人的爆款和扑街款时，效果只比瞎猜好一点。<br><br>工具帮你少踩坑，爆不爆还得看内容本身。<br><br>GitHub：<a href="https://github.com/Jakeschincariol/instagram-agent-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Jakeschincariol/instagram-agent-skill</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Quantum Source 容错量子架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QS_Labs · 2026-07-06 13:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">介绍 Quantum Source 的容错复合光子-原子架构。通过将光子用于可扩展的连接性与原子用于确定性纠缠和量子存储相结合，我们为构建可扩展的、容错的量子计算机引入了一种新蓝图。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Quantum Source's fault-tolerant compound photon-atom architecture. By combining photons for scalable connectivity with atoms for deterministic entanglement and quantum memory, we're introducing a new blueprint for building scalable, fault-tolerant quantum computers.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot 效率优化多出15%用量</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-11-14 23:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Grok @Bot 效率的改进</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Improvements to Grok @Bot efficiency</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sam Sokolin <span style="font-size:12px;color:#999999;font-weight:400;">@SamSokolin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">本周发布了一些 Grok Bot 框架优化。你应该能从套餐中获得约 7% 更多的使用量，在常规运行中最高可获得约 15% 的额外使用量！<br><br>享受吧！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Shipped a few Grok Bot harness optimizations this week. You should get ~7% more usage out of your plan, and up to ~15% more on routine runs!<br><br>Enjoy!</p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

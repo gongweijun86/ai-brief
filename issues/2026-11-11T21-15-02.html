@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月12日 05:15">
+<title>AI技术雷达 · 11月12日 05:15 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Home Repo统管多仓库Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;斯坦福CS329Z Agent工程课公开</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Agent记忆系统设计的九个问题</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Cursor项目支持多智能体协作</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Home Repo统管多仓库Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mattpocockuk · 2026-11-11 05:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">很多人问我：&quot;你是怎么同时在多个代码仓库中与 agent 协作的？&quot;<br><br>我有一个非常简单的方案——Home Repo（主仓库）<br><br>我有一个单独的仓库（主仓库），里面存放我所有的技能、引导文件、wiki 等内容。<br><br>我在主仓库中运行我的 agent，然后在 AGENTS.md 中写入指向其他仓库的指引：<br><br>```<br>关于技能，将 mattpocock/skills 克隆到 ~/repos/skills。<br>关于 Sandcastle，将 mattpocock/sandcastle 克隆到 ~/repos/sandcastle。<br>```<br><br>这极其简单，同时效果非常好。主仓库让你可以：<br><br>1. 把所有引导文件和工具集中在一个地方<br>2. 有一个统一的位置来运行你所有的 agent<br>3. 在多个仓库上做全面性的改动<br><br>我昨天在课程中讲了这个方法，大家非常喜欢（见下方）。<br><br>我相信你也会喜欢的。享受吧！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A lot of folks ask me &quot;how do you work with agents in multiple repos at once?&quot;<br><br>I have a very simple solution - the Home Repo<br><br>I have a single repo (the home) where all of my skills, steering files, wiki etc live.<br><br>I run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:<br><br>```<br>For skills, clone mattpocock/skills to ~/repos/skills.<br>For Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle<br>```<br><br>This is extremely simple and incredibly effective. The home repo lets you:<br><br>1. Put all your steering files and tooling in one place<br>2. Have a single spot to run all your agents in<br>3. Make sweeping changes over multiple repos<br><br>Talked about this in the course yesterday and folks are loving it (see below).<br><br>I'm sure you will too. Enjoy!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWyuBkPXwAAPOF3.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>X App一键生成推文截图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @leo_xiaolei · 2026-11-12 00:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！！我玩 X 4个月了，刚刚知道：<br><br>1. 打开 X App，找到任意推文。<br>2. 点击推文下方的 分享图标（箭头）。<br>3. 在弹出的菜单里（和 Copy link 同一排），会看到一个 Screenshot 选项（相机图标）。<br>4. 点它，App 会直接生成一张干净的推文图片（只包含推文内容，没有状态栏和其他界面元素，通常带有 X 水印）。<br>5. 然后可以保存到相册，或复制使用。<br><br>你学废了吗？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福CS329Z Agent工程课公开</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Tao100086 · 2026-11-11 12:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">斯坦福CS329Z — Engineering AI Agents（2026 秋季）这门课程现在终于在youtube上线了。<br><br><a href="https://www.youtube.com/watch?v=DGI4vucR71w" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=DGI4vucR71w</a><br><br>这是一门全新的斯坦福研究生课程，由 Diyi Yang、Michael Ryan（DSPy 核心贡献者）和 John Yang（SWE-bench 共同创建者）共同授课。⁠<br><br>核心定位是：从单一大模型转向复合 AI 系统（Compound AI Systems） 的工程实践。也就是把 LLM、检索器、工具、优化器、记忆等组件组合起来，构建从简单流水线到自主 Agent 的完整系统。<br><br>课程强调动手工程能力，而不是只讲概念：<br><br>先从零实现核心组件（RAG、工具调用、Agent Loop），再学习框架（如 DSPy）如何抽象这些模式。<br>重点训练：问题拆解、组件选型、数据收集与整理、评测体系搭建、设计权衡、可靠性与安全。<br><br>主要内容覆盖<br>Agent 基础与解剖结构（LLM 核心、推理、记忆、工具、环境）<br>RAG（索引、检索器、Agentic RAG）<br>工具使用与函数调用（包括 MCP）<br>框架与编排（DSPy、LangGraph 等）<br>Agent 设计模式（ReAct、Reflexion、CodeAct 等）<br>记忆架构、多智能体系统<br>优化（提示、权重、系统级）<br>评测（LLM-as-Judge、benchmark 设计、pass@k 等）<br>安全与防护（prompt injection、沙箱、权限模型）<br>专项主题：编程 Agent、主动式 Agent<br><br>还有嘉宾课，包括 Terminal-Bench、SWE-bench 团队，以及与 Andrew Ng 的 fireside chat。<br><br>作业与实践（已公开）<br><br>HW1（Michael Ryan 设计）：从零搭建 Agent Harness（类似迷你版 Claude Code）。要求不用现成框架，只用 chat completion API + 自己写代码。基于真实公司邮件语料做检索、摘要、工具调用、终端、记忆、人工审批等。成本很低（参考实现跑完测试大约不到 1 美元）。⁠<br>仓库：<a href="https://github.com/cs329z/assignment1-harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cs329z/assignment1-harness</a><br><br>HW2（John Yang 设计）：使用 Harbor 框架构建接近 Terminal-Bench 风格的真实 Agent 评测任务。学生要自己设计问题、运行环境和验证器。<br>仓库：<a href="https://github.com/cs329z/assignment2-evals" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cs329z/assignment2-evals</a><br><br>课程网站：<a href="https://cs329z.stanford.edu/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cs329z.stanford.edu/</a><br><br>YouTube 播放列表已开始更新（Lecture 1 已上线）：<a href="https://www.youtube.com/watch?v=DGI4vucR71w" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=DGI4vucR71w</a><br><br>整体来说，这是目前斯坦福最系统、最偏工程实践的 AI Agent 课程之一，重点在“怎么真正把 Agent 系统做出来并可靠运行”，而不是只调用现成框架。材料正在全面公开，现在是跟着学的好时机。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent记忆系统设计的九个问题</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Suercha007 · 2026-11-11 10:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做 Agent 开发的看过来了，有朋友经常问 Agent记忆系统怎么设计。<br><br>其实记忆系统只回答三个问题：记什么、怎么存、怎么用。其余的都是围绕这三点的工程约束。<br><br>1. 何时记，你应该考虑的问题有，触发时机、触发延迟、背压、同步异步等。<br><br>2. 记什么，需要考虑写入门槛、消息识别与过滤、记忆来源等<br><br>3. 存哪里，存储介质、数据模型、索引策略、数据版本等等<br><br>4. 冲突与一致性，需要考虑的问题有语义冲突策略、冲突检测、崩溃恢复等等<br><br>5. 生命周期，记忆时效管理、淘汰策略、合并策略、遗忘策略等等<br><br>6. 何时读，召回时机与粒度、前缀缓存问题、注入策略<br><br>7. 检索，主要是召回策略<br><br>8. 怎么注入，注入位置和形态、预算分配策略、防注入策略、权限边界等。<br><br>9. 安全隐私与权限，认证边界、记忆投毒、用户攻击等安全问题。<br><br>解决的上面的问题，一个完整的记忆系统就完成了，至于每一步怎么实现，用什么框架，这个因人而异。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cursor项目支持多智能体协作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-11 09:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Cursor又走在了前面。<br><br>之前是一个主Agent协调你的智能体群来完成工作，但是只是你个人用。现在推出了项目合作空间，团队的Agent可以共享上下文、互相沟通，仿佛真人协作的工作机制，有影响他人的变动，Agent就会彼此告知。<br><br>例如，一位工程师正在为产品页面添加评价功能，而一位设计师正在重新设计这个页面，他们的协调智能体会及早发现两者的工作存在重叠，并主动同步，让评价功能直接融入新设计，免去日后的代码重构。又如，你的功能需要从数据库读取数据，而你的团队成员正在修改数据库架构，此时你们的智能体会预先商定工作顺序，这样你们谁都不会在最后遇到合并冲突。<br><br>官方介绍：<a href="https://cursor.com/cn/blog/projects-multiplayer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cursor.com/cn/blog/projects-multiplayer</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWzugl0bEAAPbFf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Cursor <span style="font-size:12px;color:#999999;font-weight:400;">@cursor_ai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你的 agent 现在可以与你队友的 agent 进行协作了。<br><br>Projects 已经为多人协作重新打造：每一位队友及其 agent 现在都可以在一个统一的工作区中协同工作。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your agents can now coordinate with your teammates’ agents.<br><br>Projects has been rebuilt for multiplayer: every teammate and their agents can now work together in one unified workspace. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120295511194533888/img/aAr3DgNohNgiXjSB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>腾讯WorkBuddy会员双11四折</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zuiaixiaohdkzb · 2026-11-11 06:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">铺垫了这么久，腾讯 WorkBuddy 终于要开始收割了。<br><br>双 11，成了它正式出山后的第一场硬仗。这次直接拿出了国产厂商最熟悉的营销套路：先把原价拉高，再用包年优惠吸引用户。<br><br>Buddy One VIP 双 11 优惠：<br><br>●连续包年：原价 16788 元，活动价 6720 元，相当于四折。<br>●连续包月：原价 1399 元，活动价 700 元，相当于五折。<br><br>活动期间开通会员，首月还额外赠送 1111 Credits，并附带抽奖机会。活动截止日期为 11 月 15 日。<br><br>不过，我是真有点好奇。<br><br>这原价到底是怎么算出来的？<br><br>既然都要打折了，怎么不干脆把原价定成 100 万？这样优惠后只要 0.067 折，宣传海报上的数字岂不是更好看？<br><br>用户到底省了多少钱先放一边，至少这折扣看起来是相当惊人了。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

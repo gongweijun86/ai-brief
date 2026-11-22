@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月25日 17:34">
+<title>AI技术雷达 · 10月25日 17:34 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent入门教程可视化执行与上下文</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Raschka从零构建推理模型免费教程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Starlink订阅量超越AT&amp;T光纤</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;AI智能体加速156个函数附机器证明</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent入门教程可视化执行与上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-10-25 13:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用claude做了一个新栏目：Agent入门实践<br><a href="https://nano-ai.tech/agent/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nano-ai.tech/agent/</a><br><br>很多人觉得 Agent 很复杂<br>其实拆开看，它就是一个 while 循环：<br>调模型，执行工具，把结果写回上下文，再调模型<br>难懂的地方在于<br>你看不到上下文在循环里是怎么变的<br>这个栏目就是把它画出来，一格一格播给你看<br>怎么用：<br><br>左边栏选章节，一共 10 章<br>从一次 LLM 调用讲到一个完整的 coding agent<br>每章中间有一个播放器<br>点「播放」自动走，点「下一格」手动走<br><br>播放器左边是代码，黄色高亮的是当前执行到的那一行<br>右边是此刻的上下文<br>每种角色一个颜色：system、user、assistant、工具结果<br>刚加进来的那一块会亮黄<br>外框变成黄色，表示这一刻整个上下文正在发给模型<br><br>播放器下面是 token 计量条，每调用一次模型就多一条。<br>浅色是重发的历史，深色是这一圈新加的<br>看完你就明白，为什么 Agent 跑久了又贵又慢<br><br>10 章分别是：<br>一次调用、工具调用、Agent Loop、上下文窗口<br>规划、记忆、MCP 与 Skills、子 Agent、失败模式、实战拆解<br>建议先看第 3 章 Agent Loop<br>看懂这十几行代码，后面每一章都是在它上面加东西</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114221551491158016/img/pkm4LVoSh5CkyHXD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Raschka从零构建推理模型免费教程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-25 09:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Sebastian Raschka  @rasbt 又整了套硬核教程，这次直接教你从代码层面搞懂「推理模型是怎么训练出来的」。<br><br>他给新书《Build a Reasoning Model (From Scratch)》配了 8 节免费视频课，总计 11 个多小时。<br><br>从一个预训练的 Qwen3 0.6B 出发，用 PyTorch 一步步实现答案验证器、推理时计算扩展、GRPO 强化学习和知识蒸馏，最后还能自己评估模型效果。<br><br>这套课程的设计很巧妙，尤其是先写 Verifier 评估模型，再把它变成强化学习的奖励信号，整个训练逻辑一下就串起来了。<br><br>作者还专门解释了推理模型和 Agent 的关系。如果你平时主要做 Agent 和 Harness，想进一步理解底层模型的推理能力是怎么来的，这套书 + 视频 + 代码真的值得收藏，跟着敲一遍应该很有收获。<br><br>文章及免费视频：<a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://magazine.sebastianraschka.com/p/building-reasoning-models</a><br><br>新书：<a href="https://www.manning.com/books/build-a-reasoning-model-from-scratch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.manning.com/books/build-a-reasoning-model-from-scratch</a><br><br>GitHub：<a href="https://github.com/rasbt/reasoning-from-scratch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/rasbt/reasoning-from-scratch</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>iOS快捷指令配置Hey Grok唤醒词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-10-25 14:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">酷</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Cool</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Texas Twins Dad <span style="font-size:12px;color:#999999;font-weight:400;">@Texas_Twins_Dad</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">所有人都说在 iPhone 上实现&quot;Hey Grok&quot;是不可能的。连 Grok 自己都说 Apple 把唤醒词功能只留给 Siri。所以我继续深挖，最终找到了一个方法。现在我只需要说&quot;Hey Grok&quot;，Grok Bot 语音聊天就会自动打开。不需要额外的应用，不收费，全部内置于 iOS 中。<br><br>如何设置：<br><br>1. 确保你的 Grok Bot 应用是最新的<br><br>2. 快捷指令 App → + → 添加操作 → 搜索&quot;Grok Bot&quot; → 选择&quot;Start Voice Chat with Bot&quot;<br><br>3. 设置 → 辅助功能 → 语音快捷指令 → 设置 → 选择那个快捷指令 → 输入&quot;Hey Grok&quot;并说出3遍<br><br>4. 在快捷指令的详细信息中，开启&quot;Allow Running When Locked&quot;（允许在锁定时运行）<br><br>如果你的手机是锁屏状态，iOS 会先要求你点一下。如果 Face ID 已经解锁了手机，那就可以完全免提操作。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Everyone said &quot;Hey Grok&quot; was impossible on iPhone. Even Grok said Apple keeps wake words for Siri only. So I kept digging, and I found a way. Now I just say &quot;Hey Grok&quot; and Grok Bot voice chat opens. No extra apps, no cost, all built into iOS.<br><br>How to set it up:<br><br>1. Make sure your Grok Bot app is up to date<br><br>2. Shortcuts app → + → Add Action → search &quot;Grok Bot&quot; → pick &quot;Start Voice Chat with Bot&quot;<br><br>3. Settings → Accessibility → Vocal Shortcuts → Set Up → pick that shortcut → type &quot;Hey Grok&quot; and say it 3 times<br><br>4. In the shortcut's details, turn on &quot;Allow Running When Locked&quot;<br><br>If your phone is locked, iOS asks for one tap first. If Face ID already unlocked it, it's fully hands-free.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114217001547620352/img/-MHtuUnqdyqi72S_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Starlink订阅量超越AT&amp;T光纤</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SPCX100T · 2026-10-24 21:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">SpaceX 的 $SPCX Starlink 刚刚在仅仅七个季度内就将客户基数翻了三倍，从而超越了 AT&amp;T $T Fiber 的订阅用户数。更令人印象深刻的是，Starlink 每个季度大约新增 160 万订阅用户，而 AT&amp;T Fiber 只有约 40 万——这显示出卫星网络的扩展速度比一条街一条街铺设光纤快得多。<br><br>Starlink 的连接业务复合年增长率超过 90%，而 AT&amp;T Fiber 仅约为 17%。在这个争相奔向 AI / SI 和轨道基础设施的世界里，这种差距不仅仅是一个数字，而是一种结构性优势。<br><br>图片来源：<a href="http://Fiscal.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Fiscal.ai</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">SpaceX’s $SPCX Starlink just surpassed AT&amp;T $T Fiber in subscribers after tripling its customer base in just seven quarters. What’s even more impressive is that Starlink is adding roughly 1.6 million subscribers per quarter versus about 400,000 for AT&amp;T Fiber — showing how much faster satellite networks can scale compared to laying fiber street by street.<br><br>Starlink’s connectivity CAGR sits at over 90% while AT&amp;T Fiber manages around 17%. In a world racing toward AI / SI and orbital infrastructure, that gap isn’t just a statistic. It’s a structural advantage.<br><br>Image data courtesy of <a href="http://Fiscal.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Fiscal.ai</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVZpUm5bQAEHmoK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI智能体加速156个函数附机器证明</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zotpaper · 2026-10-25 09:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AI 现在可以加速代码并证明它没有破坏任何东西：智能体在 189 个函数中让 156 个变得更快，每个都附有机器验证的证明。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AI can now speed up code and prove it didn't break anything: agents made 156 of 189 functions faster, each with a machine-checked proof.</p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

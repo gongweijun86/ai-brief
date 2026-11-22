@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月23日 17:23">
+<title>AI技术雷达 · 10月23日 17:23 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude形式化验证上百开源库</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;用寓言故事让AI讲透复杂概念</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;上海物理AI攻关最高补2000万</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;70个实战项目入门网络安全</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude形式化验证上百开源库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @r3tr0spect2019 · 2026-10-23 14:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这条不喷A➗单纯聊一下技术。<br>感觉在AI时代Fuzzing和Formal Verification的地位可能要颠倒了。之前Fuzzing之所以更被青睐是因为大量的代码库难以被审计，所以才用动态执行的方法在不理解原程序语义的情况下“暴力”试出bug；而Formal Verification则因为需要比审计还要更大的工作量，所以完全impractical。但这个前提在能自动化理解大量代码的AI时代正在被慢慢瓦解，因为AI可以不断的尝试形式化验证不断的迭代试错，并在发现一部分代码不可能被验证的时候尝试找到导致其发生的漏洞。而这大概率比直接让AI审计找bug会更有效果，因为导致其不能被验证的原因可以作为找bug的hint，而这信息本质来源于作为外部的checker的形式化验证工具。随着针对形式化验证能力的RL和更好的验证方法，其能力应该还会提升。而当Linux或者Chromium这种级别的项目能被验证的时候，传统Fuzzing的历史使命也会彻底完成，不知道这一天何时到来。（又或者因为哥德尔不完备定理永远不会到来？）这就好比当黎曼猜想能被数学证明时，用计算机暴力求解非平凡零点的位置也将变得无意义。我作为一个曾经的Formal Verification黑，也不得不承认这一趋势。虽然我现在还在做Fuzzing相关的工作，但也在开始研究Formal Verification了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Anthropic <span style="font-size:12px;color:#999999;font-weight:400;">@AnthropicAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们 Frontier Red Team 博客的新内容：使用 Claude 进行大规模软件形式化验证。<br><br>形式化验证可以证明代码不存在某些类型的 bug，但历史上它只适用于小型代码库（或需要大量专家时间）。<br><br>然而，借助 AI 模型，这种情况正在开始改变。在与 @theoremlabs 的合作中，我们在几周内使用 Claude 证明了一百多个真实世界开源库的安全属性。<br><br>完整阅读我们的研究：<a href="https://www.anthropic.com/research/formal-verification" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/formal-verification</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New on our Frontier Red Team blog: using Claude to formally verify software at large scale.<br><br>Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time).<br><br>With AI models, however, this is beginning to change. In collaboration with @theoremlabs, we used Claude to prove security properties in over one hundred real-world open-source libraries over the span of a few weeks.<br><br>Read our research in full here: <a href="https://www.anthropic.com/research/formal-verification" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/formal-verification</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>用寓言故事让AI讲透复杂概念</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NIxinhai0 · 2026-10-23 13:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刷到一个采访，其中有个含金量非常高的提示词，简直夯爆了<br><br>如果你无聊的时候，不想只刷手机，可以让 ai 做一件事：<br>&quot; 请你从某个领域里，选择一个研究生水平的概念。然后写一个寓言故事，用间接的方式把这个概念讲清楚。不要一开始就说答案，尽量到故事快结束的时候，才让人意识到原来讲的是这个概念。故事结束后，再解释这个概念”<br><br>并不是直接要一个答案，要的是一个理解过程，这个提示词的核心是给你过程！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>上海物理AI攻关最高补2000万</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaoanlab · 2026-10-23 15:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">上海出手了：搞物理 AI，最高给 2000 万。<br><br>上海市经信委今天印发《上海市加快推动人工智能赋能工业服务业高质量发展行动方案（2027—2028年）》，点名支持工业智能体攻关——任务规划、工具使用、长期记忆、群体协同这些关键组件，还要企业前瞻布局物理 AI，重点突破世界模型构建、多模态物理感知、虚实交互与自主决策。技术攻关项目最高补 2000 万元。说白了，地方政府开始真金白银押注&quot;AI 进工厂&quot;：做具身智能、工业智能体的人，上海多了个能申报的钱袋子；世界模型被写进市级政策的核心技术清单，这个方向信号给得挺实在。<br><br>做具身智能、工业 AI 的人：这是真机会（钱袋子开了，赶紧看申报），还是看看就好（地方补贴门槛向来不低）？<br><br>#具身智能 #工业智能体 #人工智能</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fly秒级部署Node应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @flydotio · 2026-10-22 15:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 Fly 上几秒钟即可启动 Node 应用。`fly launch` 检测你的 Node 配置并为其生成 Dockerfile——然后 `fly deploy` 将其部署上线。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Launch Node apps on Fly in seconds. `fly launch` detects your Node configuration and writes a Dockerfile for it - and `fly deploy` ships it.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>70个实战项目入门网络安全</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wangxiaoxin88 · 2026-10-23 15:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">网络安全想入门，可方向一多，人反而懵——到底该从哪儿下手？这个仓库给的路子挺直接：70 个实战项目摆在那儿，从零基础到进阶全管。<br><br>我看了下难度是分层的——Foundations / Beginner 那一档，端口扫描、凯撒密码、Keylogger、DNS 查询、漏洞扫描器这些打底；Intermediate 上到 API 安全扫描、SIEM 仪表盘、Docker 安全审计；Advanced 更狠，AI 威胁检测、加密 P2P 聊天、Bug Bounty 平台、蜜罐网络都塞进去了。<br><br>每个项目都配完整源码加详细文档，概念、架构、实现、挑战一样不落，拿来当参考或者二次开发都行。<br><br>另外还附了 10 条认证职业路线图，SOC、渗透、安全工程师这些方向都有，外加一份资源清单。<br><br>开源免费，动手学安全的话，这仓库算得上实用宝库。<br><br><a href="https://github.com/CarterPerez-dev/Cybersecurity-Projects" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CarterPerez-dev/Cybersecurity-Projects</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVPDt1uaYAAGGyF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

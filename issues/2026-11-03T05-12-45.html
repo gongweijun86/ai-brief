@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月3日 13:12">
+<title>AI技术雷达 · 11月3日 13:12 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;斯坦福CS329Z中文Agent教程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Agent代码审查转向实测与形式化验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;datetime兼容老版本解析Z时间串</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Apex-35B以递归自我改进训练</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;RAGFlow论文称检索先于索引</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent工程七成后端三成不确定性</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-02 21:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 工程，我的感觉是七成后端，三成在处理不确定性<br><br>七成后端很好理解<br>主循环是状态机，工具调用是 RPC<br>记忆是存储和缓存，长任务是队列和工作流<br>再加上沙箱、权限、可观测性<br>这也是为什么大厂的 Agent 工程师很多是后端转过去的<br><br>三成的不确定性<br>Agent 的核心组件是概率性的<br>同一个请求跑十次，结果可能都不一样<br>处理这种不确定性，主要靠两样东西<br>1. Harness，运行时约束，让agent跑的稳<br>2. Eval，用数据集打分，判断改动是变好了还是变坏了</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福CS329Z中文Agent教程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-02 18:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎓 兄弟们，斯坦福 CS329Z「Engineering AI Agents」有中文自学教程了：cs329z-chinese。<br><br>19 讲中文教程加 4 个实战练习，Markdown 源文件和离线网页版都有。<br><br>想系统学 Agent，最难的往往不是没资料，而是英文课件、论文、配套代码散在各处，看两讲就断了。<br><br>cs329z-chinese 围着这门课的公开材料，把大模型、RAG、工具调用、记忆、多 Agent 协作和安全防护按顺序串成一条线；练习从零搭一个 Agent 开始，再到设计评测、做课程项目和读论文，还专门写了 HW1 和第 5 讲配套代码的阅读指南。<br><br>网页版能搜索、有目录、分深浅主题，还有一个单文件 offline.html，下载下来路上也能看。<br><br>要说明的是，这是独立整理的学习资料，不是斯坦福官方中文版，原课程和论文的权利归各自作者。<br><br>会写 Python、调过 API，又想转 Agent 的，这份可以直接开读。<br><br>GitHub：<a href="https://github.com/wanghao-SunSky/cs329z-chinese" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wanghao-SunSky/cs329z-chinese</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent代码审查转向实测与形式化验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chasen_liao · 2026-11-03 12:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有的时候你让多个 Agent 互相对抗式审查代码，很多时候就是在浪费 token！！🤯<br><br>土豆姐发现 Agent 审查代码时很容易陷进细枝末节，花了大量 token，最后产出的可能只是一堆看起来很严谨的意见<br><br>更何况，有时候拿来审查的模型能力还比较弱，也没有写代码时的完整上下文，让它硬找问题，很容易给你一些似是而非的建议，最后还得你自己判断<br><br>这种感觉有点像以前做 Test-driven development，有时候测试写了一大堆，看着全绿就安心了，但测到的东西未必是用户真正会遇到的问题<br><br>说白了，就是在拿 token 买安心<br><br>土豆姐现在更倾向于把这些 token 用在实际运行验证和形式化验证上，这个思路我觉得很值得学<br><br>比如让 Agent 真的把应用启动起来，走一遍用户操作，检查界面、日志和实际产生的数据，而不是看完代码就说「应该没问题」<br><br>遇到并发、重试这种边界难测的场景，再挑出一条关键规则，用形式化方法检查它在明确的模型和范围内是否成立<br><br>当然，测试通过不代表没有 bug，形式化验证也只能保证它覆盖到的性质<br><br>Agent 生成的东西越来越多，怎么验证它做的东西能不能用，本身就是一门很深的学问，值得我们多花时间研究<br><br><a href="https://x.com/poteto/status/2117437607940681849" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/poteto/status/2117437607940681849</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">lauren <span style="font-size:12px;color:#999999;font-weight:400;">@poteto</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">也许这是一个有争议的观点，但我现在认为对抗性评审基本上是浪费 token。把这些 token 用来做基于经验的验证并结合形式化验证要好得多。我已经更新了 pstack，减少了 interrogate skill 的使用，最终我认为我可能会彻底移除它。<br><br>我发现抽象的代码评审几乎没有价值，agent 倾向于迷失在吹毛求疵和 YAGNI 上。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">maybe a hot take but i now consider adversarial reviews mostly a waste of tokens. far better to use those tokens on empirical combined with formal verification. i have updated pstack to use the interrogate skill less, and eventually i think i may remove it altogether<br><br>i have found very little value with code review in the abstract, agents tend to just get lost in the nitpicks and yagnis</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>datetime兼容老版本解析Z时间串</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Mr_Wvwei · 2026-11-03 11:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">本地 3.12 跑得好好的，部署到一台 3.10 的老机器上，解析工具返回的时间直接 ValueError: Invalid isoformat string😶<br>时间串长这样：2026-11-03T02:00:00Z<br>datetime.fromisoformat 到 3.11 才认末尾的 Z，之前只吃 isoformat() 自己吐出来的格式。<br>要兼容老版本，先 .replace(&quot;Z&quot;, &quot;+00:00&quot;) 再解析。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWK-rPcWoAAcjNi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Apex-35B以递归自我改进训练</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @canghe · 2026-11-02 16:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟们，最近看了一个很有意思的开源小模型，让 AI 做科研越来越具体了。<br><br>这是一个基于 Qwen 3.6-35 B-A3 B 继续训练的模型，Coding、Agent、问答、深度搜索都能做。是超衍智能@apexin_ai的 Apex-35B-V1.0 模型。<br><br>超衍让自动化研究系统 Apex Research 参与寻找模型短板、补充训练数据、开展实验，以及优化训练方案和 GPU 内核。<br><br>系统会把实验中验证有效的改进用于后续研发，形成递归自我改进 RSI 的循环。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWG5ItUaYAACO11.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAGFlow论文称检索先于索引</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QuantumTransf · 2026-11-03 12:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">又一篇论文开始挑战我们对 Agent Memory 和 RAG 的传统认知了，最近这方面的工作真的不少<br><br>前几天分享了 RAW-RAG 这篇论文，相信让不少人印象深刻：仅仅保留原始历史，在需要时检索并交给 LLM 推理，就能击败不少精心设计的 Agentic Memory 系统<br><br>而现在，RAGFlow 团队又发表了一篇新论文《Context as Infrastructure》，从另一个角度讨论了同一个问题：<br><br>我们真的需要那么复杂的检索架构吗？<br><br>给不了解 RAGFlow 的朋友介绍一下：这是一个在 RAG 领域颇有影响力、工程背景非常扎实的团队，核心成员有深厚的数据库和搜索引擎研发经验，其联合创始人金海也曾主导 Milvus 的早期研发<br><br>所以，当这样一支团队开始重新审视 Embedding、索引结构与 Agent Harness 的关系时，我觉得尤其值得关注<br><br>论文提出了一个很有意思的观点：<br><br>Retrieval is a harness problem before it is an index problem.<br><br>检索首先是 Agent Harness 的问题，其次才是索引的问题<br><br>在实验中，仅使用 BM25 / grep，配合能够自主查询、阅读、调整检索策略的 Agent Harness，就在 BrowseComp-Plus 和 FRAMES 上分别取得了 85% 和 91% 的准确率<br><br>是的，不需要 Embedding，也不需要预先构建知识图谱<br><br>更有意思的是，在 FRAMES 的实验中，额外引入复杂的知识结构，并没有带来可检测的准确率提升<br><br>这让我再次想到了我们开发的开源项目 Obelisk，它的做法是为 Coding Agent 提供历史 Session 检索能力，基于 SQLite FTS5 保留并索引原始对话和工具调用记录，而不是预先将历史转换成一套复杂的 Memory<br><br>更重要的是，我们同样认为，检索应该是 Agent 自己能够控制的过程，而不只是由一个 Retrieval Pipeline 决定哪些信息应该进入上下文<br><br>因此，Obelisk 通过 Code Mode 为 Agent 提供可编程的检索接口，让它能够自主决定查询条件、组合检索操作，并根据结果继续探索历史<br><br>我们提供检索能力，而不替 Agent 预先决定它应该记住什么<br><br>但这里就引出了另一个问题：<br><br>既然简单的检索方案已经能够达到很高的准确率，我们是否真的不再需要那些复杂的数据结构了？<br><br>我觉得恰恰不是这样，而这也是这篇论文最有启发性的地方<br><br>论文发现，精心组织的证据结构虽然未必能够进一步提高准确率，却能够显著减少检索时消耗的 Token<br><br>换句话说，复杂结构的价值，未必在于让模型回答得更正确，而可能在于让系统以更低的成本找到正确的信息<br><br>这本质上是一个 Scale 和 Workload 的问题<br>当数据规模增长几个数量级，检索延迟、索引维护成本、查询复杂度和上下文开销，都可能改变最优的系统设计<br><br>一套在个人 Session 历史上表现优异的检索方案，未必适合拥有数十亿条记录、复杂权限边界和高并发查询需求的企业系统。<br><br>我们不应该为了追求简单而否定复杂性，也不应该在尚未证明必要性时就引入复杂性。<br><br>而这又回到了我一直以来对 Agent Memory 的一个基本判断：<br><br>Raw History should be the Source of Truth.<br><br>我们可以在原始历史之上构建索引、维护派生视图，或者引入更复杂的结构来优化检索<br><br>但这些结构应该是服务于查询的，而不应该通过有损的信息转换，取代那些真正发生过的历史<br><br>因为无论检索系统如何演进，Agent 最终都应该能够回到原始证据，重新理解过去发生了什么，而不是只能相信某个 Memory System 预先替它总结好的结论<br><br>所以我觉得，RAW-RAG 和这篇新论文，实际上正在从不同角度指向同一个值得探索的方向：<br><br>我们需要的可能不是一套越来越复杂的「记忆系统」，而是一套能够扩展、能够追溯、能够让 Agent 自主查询的 Retrieval Infrastructure<br><br>这也是我们希望通过 Obelisk 探索的方向<br><br>GitHub：<a href="https://github.com/tommy0103/obelisk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tommy0103/obelisk</a><br>论文：<a href="https://arxiv.org/abs/2610.41172" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.41172</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Yuu💖 <span style="font-size:12px;color:#999999;font-weight:400;">@QuantumTransf</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我们可能从一开始，就把 Agent Memory 想得太复杂了<br><br>最近一篇论文《Is Complex Agentic Memory Always Needed?》做了一个很有意思的实验：<br><br>不做 Memory Extraction，不做复杂的知识图谱，也不让 LLM 在写入时反复总结、更新记忆<br><br>只保留原始对话历史，在需要的时候检索出来，交给 LLM 自己推理<br><br>结果呢？<br><br>在 LoCoMo、LongMemEval 等四个 benchmark 的 7 组测试设置中，这套简单的 RAW-RAG 方案拿下了 6 组第一，最多领先对比的最强 Agentic Memory 系统 5.53 分<br><br>这恰好也是我们开发 Obelisk 时一直坚持的思路<br><br>我们认为，Agent 不应该只能看到别人替它总结好的「记忆」<br><br>因为一次代码修改背后的原因、一次失败的尝试、几个决策之间的依赖关系，都可能在总结和信息提取的过程中丢失<br><br>与其猜测未来什么信息值得记住，不如保留完整历史，让 Agent 在真正需要的时候自己去找<br><br>所以我们做了 Obelisk：<br><br>一个开源的 Coding Agent Session 检索系统<br><br>它可以直接查询 Claude Code、Codex、Hermes、Pi、Opencode 等 Agent 的历史 Session，包括对话、工具调用、Subagent 和工作流。<br><br>不依赖 Embedding，也不需要预先从历史中提取 Memory<br>基于 SQLite FTS5 和 Agent 主动查询，让 Agent 能够重新找到过去的原始证据<br><br>比如：<br><br>- 为什么当初要这样设计这段代码？<br>- 上一个 Agent 的任务进行到哪里了？<br>- 我们之前尝试过哪些方案，为什么失败？<br>- 这个项目的架构是如何一步步演变的？<br><br>Memory 不应该是一份不断被改写的摘要，而应该是一段随时可以追溯的历史<br><br>也许下一代 Agent Memory 的关键，不是让 Agent 更努力地记住，而是让它拥有找回过去的能力<br><br>Obelisk 完全开源：<br><a href="https://github.com/tommy0103/obelisk" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tommy0103/obelisk</a><br><br>论文：<a href="https://arxiv.org/abs/2610.30755" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.30755</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI短片先做首尾帧再生成视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MinLiBuilds · 2026-11-02 17:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多短剧也是这么做的。<br><br>复刻了一条大话西游 x Tibo × Poteto 的 CP 视频💗 <br><br>不少人问怎么做的，分享一下这次的MV工作流。<br><br>我这次主要分了 7 步：<br><br>1. 先剪辑，再拆镜头<br><br>先把视频节奏剪好，再拆成适合 AI 生成的短片段。<br><br>镜头拆得合理，后面更容易生成，也方便单独返工。<br><br>2. 人物定妆<br><br>先固定人物的脸型、发型、服装和体态，生成多角度参考图。<br><br>人物一致性是第一关。脸都没固定好，后面换什么视频模型都没用。<br><br>3. 逐镜头生成首尾帧<br><br>按照镜头构图、人物站位、表情和动作，制作每个片段的首尾帧。<br><br>这一步值得多花时间。<br><br>4.  生成完首尾帧，一定要他妈的检查！<br><br>这一步特别重要。<br><br>你喂进去的图片有问题，结果肯定不好。<br><br>5. AI 写提示词<br><br>GPT、Gemini、Claude 都可以。<br><br>重点描述动作、表情和运镜，别只会堆 8K、电影级画质这种关键词。H3很吃提示词，让AI写即可，告诉他是H3.<br><br>6. 最后才是视频生成<br><br>人物、首尾帧、提示词都准备好了，再选择合适的视频模型。<br><br>有问题就针对单个镜头返工，不要整段推倒重来。<br><br>7. 后期统一电影质感<br><br>统一调色、曝光、锐度、颗粒感，再处理声音、音乐和剪辑节奏。<br><br>否则单个镜头都很好看，拼起来却像七部不同的电影。<br><br>🚀 这次最大的收获：<br><br>先把图片做好，再用提示词控制动作，最后才交给视频模型。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117183457487187968/img/VzOVfgDsf15lk1cB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">实践哥 Li <span style="font-size:12px;color:#999999;font-weight:400;">@MinLiBuilds</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">献给 tibo 💓 poteto<br><br>我会怀念这个活动，28天的嗑CP </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116742345605742592/img/UGcicUBfvExtTFCv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>用布局专有名词精准控制AI排版</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @awe0_io · 2026-11-02 15:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跟 AI 说「布局好看一点」<br>结果整页每个区块都换了个排法？<br>因为你没讲清楚要换哪一种布局。<br><br>其实这些布局都有名字，直接告诉 AI 就好：<br><br>1. Hero Section：首屏大横幅，一打开就是一张大图加一句话，像商店门口的大招牌，先告诉你这是干嘛的。<br>2. Bento Grid：便当格，大格子小格子拼在一起，像便当盒，一格装一个东西，看着满但不乱。<br>3. Masonry：瀑布流，卡片像水一样一列列往下流，每列长短不一样，越刷越多。<br>4. Split Screen：左右分屏，屏幕从中间切开，左边放图，右边放字，两边对照着看。<br>5. Sidebar Layout：侧边栏布局，左边一条竖菜单，右边是正文，像书旁边一直贴着目录。<br>6. Full-width Section：通栏，一整条颜色从左铺到右铺满屏幕，像横幅拉满，专门放最重要的一句话。<br><br>下次直接说：「首页用 Hero Section，功能区用 Bento Grid，文章列表用 Masonry。」<br><br>一句话，AI 就知道每一块该怎么排。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117158355923828737/img/8FIajwvnbY6cCEEw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

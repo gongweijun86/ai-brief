@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月6日 11:27">
+<title>AI技术雷达 · 11月6日 11:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Skill改造指南实现自迭代与验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;MinAgent开源Agent原理观察台</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Kimi-k3.1-pro开源现破甲版</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;DSH插件导航聚合全量扩展清单</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>小米AI产品经理面经拆解MVP定义</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MaxMa_27 · 2026-11-06 10:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI产品经理真实面试题   焚决第二卷<br>(项目经验与技术理解)<br><br>小米 AI 产品经理校招面经<br>这一期主要考察项目经验和技术理解<br><br>1. 挑一个你做过的 AI 项目，讲讲 MVP 是怎么定义的，第一版没有做哪些功能？<br><br>以客服 Agent 项目为例。<br><br>项目希望利用 AI 提升客服效率，解决传统客服在大量重复性问题上投入人力较多、响应效率不够高的问题。<br><br>在 MVP 阶段，我认为最重要的不是做一个功能复杂的 Agent 平台，而是验证 AI 能不能真正解决一线客服的实际问题。<br><br>因此，第一版只保留三个核心功能：<br><br>① 知识库检索：从企业已有的业务文档和 FAQ 中找到相关答案。<br><br>② 智能问答：结合大模型生成相对准确、自然的回复。<br><br>③ 人工转接：当 AI 无法准确回答，或者涉及复杂业务问题时，及时转交人工客服。<br><br>第一版没有做复杂的多 Agent 协作、自动退款和订单修改等功能。<br><br>原因是这些功能涉及多个业务系统，开发和验证成本较高，而且客服场景对准确性要求很高。<br><br>我认为 MVP 最重要的是用最小的投入验证最重要的业务假设。<br><br>先验证问题解决率、人工转接率和平均响应时间，再逐步扩展 Agent 的任务执行能力。<br><br>2. 手机 AI 中哪些能力适合端侧模型，哪些更适合云端？<br><br>我认为主要从任务复杂度、隐私要求、响应速度和算力成本几个维度判断。<br><br>端侧更适合高频、轻量、对实时性和隐私要求较高的场景，比如语音唤醒、实时翻译、本地相册分类和简单文本处理。<br><br>云端更适合复杂推理、长文本分析、多步骤任务规划等场景。<br><br>我更倾向于端云协同：<br><br>简单任务优先在端侧完成，复杂任务再交给云端。<br><br>这样既能保证响应速度，也能兼顾隐私和成本。<br><br>3. 如果做一个系统级 AI 助手，可以读取日历、相册、短信并调用 App 完成任务，你会怎么设计？<br><br>我认为最重要的是让用户放心地把任务交给 AI。<br><br>主要考虑三个方面：<br><br>① 权限管理：遵循最小权限原则，根据具体任务申请权限，不默认读取所有数据。<br><br>② 操作确认：搜索相册、查询日历等低风险操作可以直接执行；发送短信、删除照片、支付等高风险操作必须经过用户确认。<br><br>③ 失败兜底：记录每一步的执行状态，出现异常时判断哪些步骤已经完成，避免重复操作。<br><br>对于无法自动恢复的情况，及时告知用户，并提供人工接管入口。AI 的能力边界可以逐步扩大，但用户对数据和操作的控制权必须始终保留。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Skill改造指南实现自迭代与验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaohuiyuan · 2026-11-06 08:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Skill 自迭代能力改造指南<br><br>【使用方式】<br>将本指南完整复制给能够访问、编辑你的 Skill 文件的 Agent（如 Claude Code、Codex），并告诉它需要改造的 Skill 路径。<br>Agent 应先阅读现有文件并提供简要诊断，再与用户确认标准，最后实施改造。<br><br>【改造目标】<br>请帮我检查并改造现有 Skill，让它从一份依赖 AI 理解和执行的操作说明，逐渐变成一套：<br><br>• 结构清晰<br>• 工具可靠<br>• 结果可验证<br>• 能够根据反馈持续改进的工作系统。<br><br>请遵循以下步骤。<br><br>【第一步：理解现有 Skill】<br><br>先阅读 Skill 及其关联文件、脚本和参考样例，梳理：<br><br>1. 工作地图（参考 Feature Map）<br>   任务目标、执行步骤、输入输出、依赖关系、关键分支。<br><br>2. 工具能力（参考 CLI）<br>   哪些操作已经有工具支持？哪些重复、确定性的步骤值得封装成工具？<br><br>3. 验证机制<br>   目前如何判断任务完成、结果正确？哪些要求只有文字说明，没有实际检查？<br><br>4. 反馈机制<br>   用户指出错误后，如何修正？能否避免同类问题再次发生？<br><br>尽量保留已有的有效设计，不要为了重构而重构。<br><br>【第二步：与用户确认验收标准】<br><br>先根据现有 Skill 提出你理解的标准，再向用户确认。重点询问：<br><br>1. 好结果是什么样的？<br>   哪些要求必须满足，哪些只是偏好？<br><br>2. 最不能接受什么错误？<br>   过去有哪些反复出现的问题？<br><br>3. 哪些环节必须人工确认？<br>   哪些可以放心交给 Agent 自动执行？<br><br>交互要求：<br>• 优先从现有文档、历史反馈和样例中寻找答案。<br>• 只问缺失或模糊的关键问题，每轮最多 3 个。<br>• 不要让用户重新解释已有的信息。<br><br>【第三步：实施改造】<br><br>根据诊断结果，按需实施：<br><br>1. 结构化<br>   建立简洁的工作地图，让 Agent 理解任务、步骤、依赖和验收条件。<br><br>2. 工具化<br>   把重复、确定性的操作封装成可复用工具。需要时提供统一 CLI 入口，不强制所有 Skill 都开发 CLI。<br><br>3. 可验证<br>   把明确要求转化成自动检查，记录检查对象、结果和证据。内容变化后，相关验证应重新执行；语义、审美等主观判断保留人工复核。<br><br>4. 可改进<br>   建立反馈记录，优先把错误转化为认可样例、程序检查或工具修复，必要时再更新 Skill 说明。区分单次要求与长期规则，避免规则无限膨胀。<br><br>【第四步：测试与交付】<br><br>• 使用已有样例进行回归测试，条件允许时再增加真实任务测试。<br>• 对比改造前后的结果，确保原有重要功能没有退化。<br>• 未经用户确认，不覆盖重要原始文件或正式交付结果。<br>• 明确区分四类状态：<br>   1. 自动验证通过<br>   2. AI 评估通过<br>   3. 人工确认通过<br>   4. 尚未验证<br><br>最后简要说明：<br><br>1. 改造了什么，为什么？<br>2. 哪些问题现在可以自动检查？<br>3. 哪些问题仍然需要人工判断？<br>4. 以后用户提出反馈时，如何进入下一轮改进？<br><br>【核心原则】<br><br>• 优先解决真实问题，不追求复杂架构。<br>• 优先修改工具、检查和好样例，而不是不断增加提示词。<br>• 没有证据，不宣称验证通过。<br><br>【开始执行】<br>请先阅读现有 Skill，给出简要诊断；不要立即大规模重构。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">晓辉博士 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaohuiyuan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。<br><br>真正重要的是把标准写清楚，把可重复的操作做成工具，把确定的要求变成检查，让每次反馈都能留下来。<br><br>内容导航<br>00:00 想让Agent自己迭代<br>00:40 为什么先做验证<br>01:31 三组实践给我的启发<br>02:14 验证技能怎么搭建<br>02:49 产品地图与操作工具<br>03:59 改造录音转写工作流<br>04:58 纠错改进的五个层次<br>06:46 把自己的标准说清楚<br>08:19 循环之前先写验证<br>08:46 改造自己的Skill</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118494586784108544/img/DORNwbtaR-XAcsHm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex接手招聘跟进2小时排3场初面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-06 11:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">WC , 现在招人也可以用 Codex 来招了  <br><br>找工作要催HR，招人了还得催候选人。<br><br>BOSS 花近2000元，挂十来天没什么进展。<br><br>让 Codex 接手跟进，2小时安排了3场初面。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">西堂AI创业笔记 <span style="font-size:12px;color:#999999;font-weight:400;">@xitang_ai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118372920129212416" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118372920129212416</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118372920129212416" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118372920129212416</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MinAgent开源Agent原理观察台</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @runmaotui · 2026-11-06 08:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent，它到底怎么工作的？<br><br>为了搞懂，我从零做了一个 Min Agent，已经开源<br><br>它是一个专门用于学习 Agent 工作原理的可视化观察台<br><br>你可以给它一个任务，然后逐轮观察：<br><br>1、上下文： 模型当前知道什么？<br>2、模型决策： 为什么选择这个动作？<br>3、工具调用： 实际执行了什么？<br>4、观察反馈： 执行结果如何影响下一轮？<br>5、权限控制： 操作被拒绝后会发生什么？<br>6、完成验证： 凭什么判断任务已经完成？<br><br>每一步都有真实运行记录，可以查看和回放。<br><br>支持本地运行，提供 Fake 模拟模式和 DeepSeek 真实模型模式。<br><br>不需要先读懂源码，也能直观理解 Agent Loop 的工作机制。<br><br>GitHub 开源地址：<br><a href="https://github.com/JinweiX/min-agent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JinweiX/min-agent</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWXAGu7bIAA1SxE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">奔跑的大毛腿 <span style="font-size:12px;color:#999999;font-weight:400;">@runmaotui</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">想用好 Agent，又怕它乱来？<br>我拆解了 Claude Code 的工作原理，亲手做了一个开源的 Min Agent 观察台，把每一步都摊开。一次讲清工作原理、使用技巧到安全边界。<br>不需要懂编程，只要你正在使用 Agent，就值得看看。👇 <a href="https://x.com/i/article/2118293432401846272" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118293432401846272</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi-k3.1-pro开源现破甲版</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @arikuschnir · 2026-11-05 20:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">开源真的令人毛骨悚然，在 @Kimi_Moonshot 发布权重后不到24小时内，kimi-k3.1-pro 的无审查版本就已经出现了</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Opensource is genuinely scary, within 24 hours of @Kimi_Moonshot releasing weights there's already uncensored versions of kimi-k3.1-pro</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Router Hub <span style="font-size:12px;color:#999999;font-weight:400;">@RouterHubSI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">新增模型：<br><br>[+] kimi-k3.1-pro-uncensored | 每百万输入 $0.3<br>[+] kimi-k3.1-pro | 每百万输入 $0.2<br><br><a href="https://routerhub.si/models" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://routerhub.si/models</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New model(s) added:<br><br>[+] kimi-k3.1-pro-uncensored | $0.3 per M input<br>[+] kimi-k3.1-pro | $0.2 per M input<br><br><a href="https://routerhub.si/models" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://routerhub.si/models</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH插件导航聚合全量扩展清单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mingzi206 · 2026-11-05 22:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek 圈的地下军火库今天彻底公开了。 GitHub 杀出一个核弹级导航：awesome-dsh-plugin，直接扒光 DSH 所有神仙插件与民间破甲源。<br><br>原生 DeepSeek Harness 只是个毛坯房，这套清单把它爆改成满配工作站： <br>· 工具链与生产力：免 Key 免费全网搜索、沙箱代码执行、本地终端与底层特权调用 <br>· 界面与工作台改造：VS Code 级超级侧边栏、超长对话折叠净化、护眼暗黑调色盘 <br>· 破甲与底层黑客：全模型自由破甲补丁、单会话无限上下文压缩、多模型无感热切 <br>· 插件市场直连源：收录各类一键安装源，直接在界面里像逛应用商店一样挑扩展<br><br>相当于给你的 Coding Agent 配齐了全套外挂，搞本地开发和折腾 Agent 的兄弟建议直接马住。<br><br>你在本地跑 DeepSeek 时，最想给它装个什么新外挂？<br>👉 开源地址：<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/awesome-dsh-plugin/awesome-dsh-plugin</a> #DeepSeek #AI #开源工具</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118347296345894912/img/csCObDwjaDMekp1y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

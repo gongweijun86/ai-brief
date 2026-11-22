@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月14日 11:05">
+<title>AI技术雷达 · 10月14日 11:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;REA逆向实测与能力边界</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Holon打包REA为逆向Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;memU将Agent记忆存为Wiki</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Pi Durable恢复的是任务进度</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Gemini 4 Argon多模态最强</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>REA逆向实测与能力边界</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xuanyuanzhifeng · 2026-10-13 18:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">老话说得好，没有调查就没有发言权。<br>这个视频从最简单的程序开始，逐步加密、加壳、加VMP保护、软件复刻，全面测试REA的能力。<br>深度使用了两天REA，确实非常厉害，普通的加密加壳根本拿到没办法。<br>即便上了VMP，除了虚拟化最后的关卡没有攻破，常规的VMP加壳也被它破掉了。<br>但是，重点是但是！<br>这一切的能力主要还是来自于AI大模型和IDA，这个REA其实并没有发挥太多的作用。<br>REA主要提供了基础的逆向分析SKILL指导+多个不同逆向分析工具的统一封装，再加上逆向分析过程的记录整理。<br>这些东西不能说没有价值，但我个人觉得光靠这个项目就说把软件行业的天捅塌了，还是有点太吹牛逼了。<br>即便我把REA完全的卸载掉，直接让Agent使用MCP对接上IDA，前面这几轮测试也能全部分析出来。<br>只因为它喊了一句Reverse Anything的口号，就让一大票完全不懂逆向的人觉得这都是REA这个项目的能力，开始到处狂吹这个项目。<br>那抛开这个项目的吹捧嫌疑不谈的话，确实需要承认的是，如今AI做逆向的确进步非常大。<br>软件行业的天没完全塌，但也塌了一半了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109940324726722560/img/G2N1ePTxKAkkfCqJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">轩辕之风 <span style="font-size:12px;color:#999999;font-weight:400;">@xuanyuanzhifeng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">连WinDbg、X64Dbg、GDB动态调试能力都不具备，一堆人就在那吹REA了。<br>在AI的加持下，没有加壳加密混淆的，想要逆向分析确实易如反掌。<br>轻度加壳加密混淆的，也只需要花点时间能够拿下。<br>但像VMP、LLVM等高强度虚拟化强壳，目前AI还难以攻克。<br>另外一些变种强壳，私有化虚拟化协议，AI没有训练数据，相当长时间里更无法拿下。<br>对于一些商业化软件，基本上不可能直接裸着等你来逆。<br>未来商业软件形态，核心功能逻辑要么在端侧被高强度保护，要么后移到云端让用户无法触碰。<br>其实AI到来之前已经是这个趋势了，AI只是加速了这个趋势。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Holon打包REA为逆向Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jolestar · 2026-10-14 10:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">试了一下 REA，神器呀，把它打包成了一个 Agent Tempalte reverse-engineer，可以在 holon 中一键创建 Agent。<br><br>Agent Template 其实就是 AGENTS.md + skills 集合，AGENTS.md 中定义角色权限，工作方式，再配合 skills 就可以定义一个独立的 Agent，和其他 Agent 的 skill 隔离，不互相影响。<br><br>reverse-engineer 的 AGENTS.md 主要定义了：<br><br>1. 初始化环境，和用户确认后进行必要的环境初始化并记住。<br>2. 给每个分析的项目创建一个目录，每次用户的提问和分析结果都落地成文档，方便后面检索。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjlJGWbMAA7uT3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Holon <span style="font-size:12px;color:#999999;font-weight:400;">@holonrun</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AI 逆向工程正随着 REA（Reverse Engineer Anything）而激增。<br><br>然而，让 LLM 盲目检查未知二进制文件存在主机安全风险、反编译幻觉以及上下文崩溃的风险。<br><br>Holon 内置的 `reverse-engineer` 模板可以安全地解决这个问题。🧵👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AI reverse engineering is surging with REA (Reverse Engineer Anything).<br><br>Yet letting an LLM blindly inspect unknown binaries risks host security, hallucinated decompilation, and context collapse.<br><br>Holon's built-in `reverse-engineer` template solves this safely. 🧵👇</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>memU将Agent记忆存为Wiki</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-10-14 09:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">memU 是一个轻量级的 Agent 记忆系统，能把个人记忆存成 Wiki 的形式。<br><br>它支持跨会话、跨 Agent、跨设备共享一份 LLM wiki，还能从 Agent 的历史记录里提炼出可复用的 skills。核心记忆逻辑大概只有 500 行代码，非常容易理解和修改。<br><br>目前支持接入 Codex、Claude Code、Cursor 等。安装方法是让 Agent 去读取 <a href="https://memu.pro/SKILL.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://memu.pro/SKILL.md</a> 的说明进行配置。<br><br>GitHub：<a href="https://github.com/NevaMind-AI/memU" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NevaMind-AI/memU</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjlHifakAALB3Y.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjlHwwbgAApzZj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUjlIAEa0AA_cL6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable恢复的是任务进度</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fttt007 · 2026-10-14 09:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">终于搞懂 Pi Durable 的“自动恢复”是什么意思了。<br><br>它不是游戏存档：程序崩溃后，JavaScript 的调用栈、局部变量、Promise 都没了。它不会让程序回到崩溃前的那一行。<br><br>它真正保存的是任务的 checkpoint，比如：<br><br>「当前阶段：process」<br>「下一条：第 5 条」<br><br>重启后，系统读取这些记录，重新进入对应阶段，再由任务代码根据 checkpoint 继续处理。<br><br>所以，恢复的不是“刚才执行到哪一行”，而是“最后可靠保存到了哪一步”。<br><br>另一个容易误解的地方：保存 checkpoint，不代表每次都要回到调度器。一次运行可以连续推进多个阶段，边做边保存；需要等待、结束或无法继续时，才停下来。<br><br>但这里有个重要边界：<br><br>**进度可恢复 ≠ 外部操作只执行一次。**<br><br>如果支付接口调用成功，程序却在保存成功记录前崩溃，恢复后就可能再次支付。因此，支付、发邮件、调用外部 API，仍然需要幂等和去重。<br><br>我现在的理解是：<br><br>**Agent Loop 管模型与工具如何逐轮交互；Durable Harness 管任务如何记进度、被调度，以及崩溃后继续推进。**<br><br>它不是“不会中断的程序”，而是“中断后知道从哪里重新开始的任务系统”。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Gemini 4 Argon多模态最强</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yanhua1010 · 2026-10-14 08:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Gemini 4 Argon 今天刷屏了，我把核心要点总结好了。<br><br>还在犹豫要不要升级 Pro 或 Ultra 的，可以先看完再决定，不着急下单。<br><br>一句话总结：<br><br>在第三方评测机构 Artificial Analysis 的智能指数上和 GPT-6 Astra 打平，单任务成本便宜约 40%，幻觉率 15% 是同级最低；视频理解、3D、仿真这些多模态能力最突出，适合做研究、整理资料、做演示的知识工作者；但在大模型竞技场 Arena 总榜只排第 5，有开发者实测它分析代码库时一半以上的结论是错的，暂时别拿它当主力编程模型。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Google <span style="font-size:12px;color:#999999;font-weight:400;">@Google</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天，Gemini 4 Argon 正式推出。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today, Gemini 4 Argon is officially rolling out. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110036333825527808/img/UcIvq63z4crfY8yX.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

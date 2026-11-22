@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月24日 23:20">
+<title>AI技术雷达 · 10月24日 23:20 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;AGENTS.md禁止Agent过度设计</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;XSS审计技能开源发现数十个赏金漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Code核心开发者离职</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude Code五层开发工程体系</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AGENTS.md禁止Agent过度设计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-24 21:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenCode 的 AGENTS.md 值得拥有，专治 Codex 的过度设计，茫茫多的防御性代码，一坨坨几乎根本不会发生的极端边界。<br><br>不仅仅是这一点，整个文件的内容都值得一看 ，style guide 一节写的很好，我已经用于我大部分 agent 的默认提示词了<br><br><a href="https://github.com/anomalyco/opencode/blob/dev/AGENTS.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anomalyco/opencode/blob/dev/AGENTS.md</a><br><br>“Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness.”<br><br>让 AI 翻译一下：<br><br>“在为推测性的、或者几乎不可能发生的竞态条件/安全边界情况增加复杂度之前，先向用户讲清楚：具体会出什么问题、发生的概率有多大、以及增加这些复杂度的成本，并得到用户的明确同意。不要为了理论上的健壮性，就悄悄把范围扩大。”<br><br>非常贴切</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Dave Kiss <span style="font-size:12px;color:#999999;font-weight:400;">@davekiss</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这在 @opencode 的 AGENTS.md 里真是一条绝妙的规则<br><br>&quot;在为一个投机性的或可能性极低的竞态或安全边缘情况增加复杂度之前，先向用户解释具体的故障模式、可能性以及复杂度代价，并获得他们的认同。不要为了理论上的健壮性而悄悄扩大范围。&quot;</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This is such a banger rule in @opencode's AGENTS.md<br><br>&quot;Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness.&quot;</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVQsdjnXUAAmjMf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>XSS审计技能开源发现数十个赏金漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SecBoxer · 2026-10-24 19:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源了我的 XSS 审计技能 ，过去一年我用它发现了几十个获得赏金的 XSS 漏洞，连续四个季度进入微软 MSRC Top 10<br><br><a href="https://github.com/songjianyang/xss-audit" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/songjianyang/xss-audit</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code核心开发者离职</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AYi_AInotes · 2026-10-24 13:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Damn，一整个震惊！！<br>把无数程序员从加班里捞出来的 Claude Code，今天背后最核心的操盘手Thariq宣布离职了😭<br>Thariq 在 Anthropic 干了一年多，亲手把这个跑在终端里的超级智能体拉扯大；他在告别信里说的这几句话，直接道出了下一代工具爆发的底层秘密。<br>铁汁们，如果你最近用过 Claude 官方的命令行终端工具，大概率被它的自主重构能力震碎过三观。<br>而把这个核弹级工具从一行行代码亲手拉扯大的核心成员，今天正式宣布离开 Anthropic 了🤯<br><br>关于，Thariq（@trq212），可能很多非开发者对这个名字还不熟悉。<br><br>但在整个 AI 编码和终端智能体圈子里，他绝对是过去这一年最硬核的幕后推手之一。<br><br>他在 Anthropic 待了一年多，核心战绩就是作为核心开发者，主导并参与开发了刚刚席卷全网的 Claude Code。  <br><br>很多人以为大模型写代码的终局是网页端对话框，或者是 Cursor 那种编辑框补全。<br><br>但 Thariq 和他的团队直接把 Claude 塞进了无数程序员最底层的黑漆漆终端里。<br><br>它不需要你在网页和编辑器之间来回复制粘贴，而是直接作为一个长驻在 CLI 里的全自主工程师：<br>给它一个需求，它自己去拉分支、读你整个几十万行的代码库、定位 bug、跑测试用例、甚至自己修完直接提交 git commit。  <br><br>Thariq 在告别信里写了一句特别耐人寻味的话，我很触动：<br>见证了它规模化到远超出我想象的地步。<br><br>一个原本可能只是工程师内部为了偷懒写出来的小玩具，在极短时间里迅速变成了重塑全球千万开发者日常习惯的标准工作流。  <br><br>这正是这一代顶尖 AI 产品最可怕的生长逻辑：<br>它不再需要庞大的销售团队去敲门推销，只要工具在终端里帮工程师解决了一次痛到骨髓的繁琐调试，口碑就会以光速在开发者社区里完成裂变。<br><br>我觉得他带走的不仅是这一年的战绩，更关键的是他留下的这个产品理念：<br>向上的竞赛（Race to the top）。<br><br>用真正负责任的硬核工程把行业标准拉到极高，逼着全世界的同行必须拿出更伟大的东西来对抗。  <br><br>大模型时代真正有穿透力的工具，从来不是把旧世界的表格重新画一遍，<br>而是像 Claude Code 这样，直接钻进最硬核的生产力场景，把传统工具链连根拔起。  <br><br>向打造过神级生产力底座的幕后英雄致敬。<br>接下来最值得关注的，是这样顶级的全栈工程大脑离开之后，下一次会从哪里重新开火。   </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2052842360896163842/img/v-ijeXjEzugZjNBi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Thariq <span style="font-size:12px;color:#999999;font-weight:400;">@trq212</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我在 Anthropic 工作了一年多，参与了 Claude Code 的开发，看着它扩展到了我从未想象过的规模，如今我已离开。<br><br>我真的很热爱在 Ant 的工作，深信其使命，而最重要的是，深信&quot;向上竞争&quot;的理念。<br><br>这个理念是：如果我们努力工作、负责任地行事，我们就能提高标准，激励他人取得卓越成果。如果我们都能推动彼此变得更好，事情可以变得非常好。我会永远带着这种精神前行。<br><br>我在 Anthropic 的同事是我见过的最有才华、最有思想、最有能力、最真诚的人。我很高兴有他们在掌舵，我深深信任他们。<br><br>致 X 平台上的社区，感谢你们的一切。你们让这成为我有史以来最有趣（有时也最让人压力大的）工作。<br><br>对我来说，现在是时候休息一段时间，然后再投入新的事情中。<br><br>如果你想获得更多优秀的 Claude Code 内容，你应该关注 @addyosmani、@lydiahallie、_catwu、@ClaudeDevs，当然还有开启这一切的 @bcherny。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined.<br><br>I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top.<br><br>The idea that if we work hard and responsibly, we can raise the bar and inspire others to great outcomes. And if we all push each other to be better, things can be radically good. I will carry the spirit of this with me forever.<br><br>My colleagues at Anthropic are the most talented, thoughtful, competent, and earnest people I have ever met. I am glad they are at the wheel and trust them deeply.<br><br>To the community on X, thank you for everything. You’ve made this the most fun (and sometimes stressful) job I’ve ever had.<br><br>For me, it is time for a bit of a break before diving into something new.<br><br>If you want more excellent Claude Code content, you should follow @addyosmani , @lydiahallie, @_catwu, @ClaudeDevs  and of course @bcherny who started it all.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>8个中文播客自动转写精读网站上线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @oran_ge · 2026-10-24 22:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有价值的播客太多了，没那么多时间听怎么办呢？<br>那就看 AI 转写的文章吧，差不多花十分钟，就能看到一小时的播客里的主要信息了<br>加上是精细的转写而非总结，所以信息也不会丢很多，碰到非常感兴趣的就去听原音频，相得益彰。<br><br>以下是我常听的 8 个播客，全部做了自动转写，每期自动更新文章，一目了然。<br>感谢向阳 @vista8 开发这几个网站，向阳是我的许愿式编程 Agent？<br><br><a href="https://zhangxiaojun.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://zhangxiaojun.qiaomu.ai</a> 张小珺商业访谈录精读：张小珺数小时长访谈的精读，记录 AI、科技公司与投资人的一手思考。<br><br><a href="https://42zhangjing.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://42zhangjing.qiaomu.ai</a> 42章经精读：曲凯对谈创业者与投资人，围绕一个具体问题追问到底。<br><br><a href="https://latetalk.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://latetalk.qiaomu.ai</a> 晚点聊精读：《晚点 LatePost》出品的一手科技访谈，覆盖大模型、具身智能与互联网公司。<br><br><a href="https://crossing.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://crossing.qiaomu.ai</a> 十字路口精读：寻找并访谈 AI 时代的积极行动者，关注 AI 给各行各业带来的变革。<br><br><a href="https://aialchemy.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aialchemy.qiaomu.ai</a> AI炼金术精读：徐文浩与任鑫聊 AI 带来的本质变化和商业机会。<br><br><a href="https://35huan.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://35huan.qiaomu.ai</a> 三五环精读：刘飞邀请城市里的局内人聊天，发现不同的认知视角与生活态度。<br><br><a href="https://zhixing.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://zhixing.qiaomu.ai</a> 知行小酒馆精读：有知有行出品，聊投资理财，也聊怎样更好地生活。<br><br><a href="https://mianji.qiaomu.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://mianji.qiaomu.ai</a> 面基精读：每期请一位一线经验者，把一个行业或一种职业讲清楚</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVZrUzHbgAAdyqc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code五层开发工程体系</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-10-24 21:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看完这篇文章，我越来越觉得，现在很多人对 Claude Code、Codex 这些 AI Coding 工具的理解，可能还停留在一个比较初级的阶段。<br><br>打开工具，输入需求，让 AI 写代码，遇到报错就继续把问题丢给 AI，直到项目能够运行，我自己之前也是这样用的。<br><br>但这几个月一直在做 AI 项目，我慢慢发现，真正值得研究的，不只是怎么让 Agent 写出更多代码，而是怎么建立一套让 Agent 按照规则工作、复用经验、自动验证结果的工程体系。<br><br>这篇文章把 Claude Code 的 Agent 开发体系分成了五个部分，我觉得很值得参考。<br><br>第一层是 CLAUDE.md，用来定义整个项目的规则。比如项目架构、代码规范、文件目录、测试要求，以及哪些操作不能随便执行。否则你每次开启新会话，都要重新告诉 Agent 应该怎么做。<br><br>第二层是 Skills，把一些重复性的工作方法沉淀下来。比如做 RAG 系统时，文档应该怎么解析、检索效果怎么评估、哪些情况必须拒答。与其每次重新写一堆提示词，不如把经过验证的流程整理成可复用的 Skill。<br><br>第三层是 Hooks，在一些关键操作前后自动执行检查。比如修改代码后触发测试，提交前检查格式，执行高风险命令前增加限制。但 Hooks 也不是万能的，真正涉及敏感数据和生产环境的操作，依然需要权限控制和人工审批。<br><br>第四层是 Subagents，把不同任务分配给专门的 Agent。一个负责研究方案，一个负责实现功能，一个负责测试或者 Code Review，而不是让一个 Agent 从头到尾包办所有事情。<br><br>第五层是 Plugins，把这些可复用的能力打包，方便在不同项目之间使用。再配合 MCP 连接外部系统，整个 Agent 的能力边界就能够进一步扩展。<br><br>这五层不一定是每个项目都必须使用的标准架构，但它提供了一个非常值得参考的思路。<br><br>不要只把 Claude Code 当成一个写代码的工具，而应该思考，怎么围绕它建立一套真正适合自己的开发工作流。<br><br>我自己现在主要使用 Codex，虽然不同工具的具体实现不完全一样，但很多工程思想是相通的。<br><br>比如以前做一个项目，遇到问题就让 AI 修改，解决之后也没有把过程完整记录下来。下次碰到类似问题，可能又要重新研究一遍。<br><br>现在我越来越想把项目规则、技术决策、错误案例、测试方法和交付标准沉淀下来，让 Agent 在后续任务里能够复用，而不是每次都从零开始。<br><br>尤其是企业 AI 项目，真正困难的地方往往不是让 AI 把功能写出来，而是需求发生变化怎么办、修改代码会不会影响原有功能、测试有没有覆盖关键场景、交付之后出了问题能不能追溯。<br><br>这些事情靠不断输入 Prompt，很难长期解决。<br><br>当然，也没必要一上来就给所有项目配置几十个 Skills、多个 Subagents，甚至搭建一套复杂的多智能体系统。项目本身很简单的时候，过度设计只会增加成本。<br><br>但如果一个项目需要长期维护、持续迭代，或者涉及真实客户和生产环境，我觉得这套思路就很有价值了。<br><br>AI Coding 的下一步，不应该只是比较哪个模型写代码更快，而是研究怎么让 Agent 的工作过程变得可控、可复用、可验证。<br><br>以前我们关心的是，怎么让 AI 帮自己完成一个任务。<br><br>现在更值得思考的是，怎么把每一次完成任务的经验，逐渐积累成一套可以持续使用的工程体系。<br><br>这也是我接下来想在自己项目里不断实践的方向。<br><br>毕竟真正有价值的，不是今天让 Codex 帮我写了多少行代码，而是半年以后，我能不能拥有一套越来越成熟、越来越可靠的 AI 开发工作流。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Amir Ansari <span style="font-size:12px;color:#999999;font-weight:400;">@AamirAnsar94694</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">𝗔𝗚𝗘𝗡𝗧𝗜𝗖 𝗔𝗜 用一个简单框架讲清楚<br><br>如果你对 AI 与机器学习、生成式 AI、AI Agents 和 Agentic AI 之间的区别感到困惑，可以把它们看作层级。<br><br>每一层都增加了更多的能力。<br><br>第𝟭层 — 𝗔𝗜 &amp; 𝗠𝗟<br><br>这是基础。<br><br>包括：<br><br>→ 机器学习<br>→ 自然语言处理<br>→ 推理与问题解决<br>→ 神经网络<br>→ 从数据中学习<br><br>现代 AI 系统就是从这里开始的。<br><br>第𝟮层 — 𝗚𝗘𝗡 𝗔𝗜<br><br>生成式 AI 在这些基础之上构建，用于创造新的内容。<br><br>→ 文本<br>→ 图像<br>→ 音频<br>→ 视频<br>→ 代码<br><br>LLMs 和 Transformers 是这里的主要构建模块。<br><br>第𝟯层 — 𝗔𝗜 𝗔𝗚𝗘𝗡𝗧𝗦<br><br>现在 AI 超越了单纯生成内容。<br><br>Agents 可以：<br><br>→ 理解目标<br>→ 将任务分解为步骤<br>→ 使用工具<br>→ 管理上下文<br>→ 调度任务<br>→ 执行动作<br>→ 验证结果<br><br>这就是 AI 开始变得以行动为导向的层次。<br><br>第𝟰层 — 𝗔𝗚𝗘𝗡𝗧𝗜𝗖 𝗔𝗜<br><br>Agentic AI 描述的是围绕自主 Agents 的更广泛系统。<br><br>它可以涉及：<br><br>→ 多 Agent 协作<br>→ 记忆系统<br>→ 反馈循环<br>→ 动态工具使用<br>→ Agent 协调<br>→ 故障恢复<br>→ 可观测性<br>→ 治理与护栏<br>→ 人在回路中的监督<br><br>目标不只是让 AI 更聪明。<br><br>而是让 AI 系统能够可靠地朝着目标工作。<br><br>简单记忆方式：<br><br>𝗔𝗜 &amp; 𝗠𝗟<br>→ 从数据中学习<br><br>𝗚𝗲𝗻 𝗔𝗜<br>→ 生成内容<br><br>𝗔𝗜 𝗔𝗴𝗲𝗻𝘁𝘀<br>→ 执行任务<br><br>𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗔𝗜<br>→ 协调能够推理、规划、行动、观察和自适应的系统<br><br>最大的转变：<br><br>从：<br><br>&quot;如何让 AI 给出更好的回答？&quot;<br><br>到：<br><br>&quot;如何让 AI 系统完成现实世界中的任务？&quot;<br><br>这个转变正是 Agentic AI 如此有趣的原因。<br><br>保存这个框架以备后用。<br><br>关注 @AamirAnsar94694 获取更多 AI、工具、自动化和技术洞见。<br><br>#AI #AgenticAI #AIAgents #GenerativeAI #ArtificialIntelligence #MachineLearning #AITools #Automation</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">𝗔𝗚𝗘𝗡𝗧𝗜𝗖 𝗔𝗜 𝗘𝗫𝗣𝗟𝗔𝗜𝗡𝗘𝗗 𝗜𝗡 𝗢𝗡𝗘 𝗦𝗜𝗠𝗣𝗟𝗘 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞<br><br>If you're confused about the difference between AI &amp; ML, Gen AI, AI Agents, and Agentic AI, think of them as layers.<br><br>Each layer adds more capability.<br><br>𝗟𝗔𝗬𝗘𝗥 𝟭 — 𝗔𝗜 &amp; 𝗠𝗟<br><br>This is the foundation.<br><br>It includes:<br><br>→ Machine learning<br>→ Natural language processing<br>→ Reasoning &amp; problem solving<br>→ Neural networks<br>→ Learning from data<br><br>This is where modern AI systems begin.<br><br>𝗟𝗔𝗬𝗘𝗥 𝟮 — 𝗚𝗘𝗡 𝗔𝗜<br><br>Generative AI builds on these foundations to create new content.<br><br>→ Text<br>→ Images<br>→ Audio<br>→ Video<br>→ Code<br><br>LLMs and Transformers are major building blocks here.<br><br>𝗟𝗔𝗬𝗘𝗥 𝟯 — 𝗔𝗜 𝗔𝗚𝗘𝗡𝗧𝗦<br><br>Now AI moves beyond simply generating content.<br><br>Agents can:<br><br>→ Understand goals<br>→ Break tasks into steps<br>→ Use tools<br>→ Manage context<br>→ Schedule tasks<br>→ Execute actions<br>→ Validate results<br><br>This is where AI starts becoming action-oriented.<br><br>𝗟𝗔𝗬𝗘𝗥 𝟰 — 𝗔𝗚𝗘𝗡𝗧𝗜𝗖 𝗔𝗜<br><br>Agentic AI describes the broader system around autonomous agents.<br><br>It can involve:<br><br>→ Multi-agent collaboration<br>→ Memory systems<br>→ Feedback loops<br>→ Dynamic tool use<br>→ Agent coordination<br>→ Failure recovery<br>→ Observability<br>→ Governance &amp; guardrails<br>→ Human-in-the-loop oversight<br><br>The goal isn't just to make AI smarter.<br><br>It's to make AI systems capable of working toward goals reliably.<br><br>𝗧𝗛𝗘 𝗦𝗜𝗠𝗣𝗟𝗘 𝗪𝗔𝗬 𝗧𝗢 𝗥𝗘𝗠𝗘𝗠𝗕𝗘𝗥:<br><br>𝗔𝗜 &amp; 𝗠𝗟<br>→ Learn from data<br><br>𝗚𝗲𝗻 𝗔𝗜<br>→ Generate content<br><br>𝗔𝗜 𝗔𝗴𝗲𝗻𝘁𝘀<br>→ Execute tasks<br><br>𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗔𝗜<br>→ Coordinate systems that can reason, plan, act, observe, and adapt<br><br>𝗧𝗛𝗘 𝗕𝗜𝗚 𝗦𝗛𝗜𝗙𝗧:<br><br>From:<br><br>“𝗛𝗼𝘄 𝗱𝗼 𝘄𝗲 𝗺𝗮𝗸𝗲 𝗔𝗜 𝗴𝗶𝘃𝗲 𝗯𝗲𝘁𝘁𝗲𝗿 𝗮𝗻𝘀𝘄𝗲𝗿𝘀?”<br><br>To:<br><br>“𝗛𝗼𝘄 𝗱𝗼 𝘄𝗲 𝗺𝗮𝗸𝗲 𝗔𝗜 𝘀𝘆𝘀𝘁𝗲𝗺𝘀 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗿𝗲𝗮𝗹 𝘄𝗼𝗿𝗹𝗱 𝘁𝗮𝘀𝗸𝘀?”<br><br>That shift is what makes agentic AI so interesting.<br><br>𝗦𝗮𝘃𝗲 𝘁𝗵𝗶𝘀 𝗳𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 𝗳𝗼𝗿 𝗹𝗮𝘁𝗲𝗿.<br><br>Follow @AamirAnsar94694 for more AI, tools, automation and tech insights.<br><br>#AI #AgenticAI #AIAgents #GenerativeAI #ArtificialIntelligence #MachineLearning #AITools #Automation</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYTyLuacAALFjd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

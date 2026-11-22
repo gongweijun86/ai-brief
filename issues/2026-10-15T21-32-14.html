@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月16日 05:31">
+<title>AI技术雷达 · 10月16日 05:31 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Codex串起3D游戏资产自动化流水线</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;d2r-mobile开源多款游戏跨端移植</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Desktop逆向手册开源</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;FLA开源线性注意力Triton实现</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex串起3D游戏资产自动化流水线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GeekCatX · 2026-10-15 20:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟们，想低成本搞 3D 游戏的，这条果断先收藏，全篇纯干货、无任何恰饭广告！<br><br>多少独立开发者的游戏死在半路上，不是玩法不行，而是被 美术资产 给生生耗死的——做一套装备、捏几个怪，外包费贵得肉疼，一个人手搓能搓到关节炎。<br><br>但今天必须要给兄弟们推荐 @icebakbum 的这篇封神长文： 一个人，仅用了 1 天时间，把【Codex + Tripo + Blender】的 3D 游戏资产自动化流水线完全给跑通了！<br><br>从主角角色、装备换装，到小怪与大型 Boss，全部实现标准化自动吞吐。<br><br>扒完他的整套管线逻辑，简直是独立开发者的工业级救命药：<br><br>1、Codex 负责调度与自动化编排：用自然语言写脚本，把从模型下载、重命名、格式转换到资产落库的全流程自动化串联，杜绝人肉重复搬砖。<br><br>2、Tripo3D 解决核心三维生产力：输入原画或提示词，秒级输出带原生四边面（Smart Mesh）的高质量网格与 PBR 贴图，模型干净规整，直接省掉 90% 的低模烘焙时间。<br><br>3、Blender 承接自动批处理与材质绑定：无缝打通骨骼预设、自动合批、材质分配，批量输出 Game-Ready 资产，一键拖进引擎就能直接跑。<br><br>这不再是玩玩玩具，这是真正的个人工业化。<br><br>这波3D热赶紧抓住上车👇</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">NoMagic <span style="font-size:12px;color:#999999;font-weight:400;">@icebakbum</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">独立开发一款游戏, <br>我与AI的高效生产力. <a href="https://x.com/i/article/2109555865409794048" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2109555865409794048</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>d2r-mobile开源多款游戏跨端移植</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @happyjoejiang · 2026-10-15 18:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">目前根据仓库方案，我已经看到了暗黑2、动森、塞尔达旷野之息、 节奏天国、逆转裁判等项目的成功移植。<br>覆盖平台包括 iPhone、iPad、macOS 全系列、Apple TV、安卓、鸿蒙，还有个3DS？<br>只能说大家都太强了....<br>欢迎取用，开源方案中已支持 macOS 和 Apple TV。<br>通用解决方案还在艰难探索中，敬请期待。<br>没想到 d2r-mobile 这名字两天就过时了。<br><a href="https://github.com/jhaizhou-ops/d2r-mobile" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jhaizhou-ops/d2r-mobile</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Desktop逆向手册开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @BystAnd3rs · 2026-10-15 09:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，昨晚刚把 Claude 桌面端的 UI 逆向完，开源出来<br>今天它直接大改，差不多是个 2.0 了😂<br><br>并行会话、新的侧边栏、用量直接显示在模型选择器旁边，单个聊天还能弹成独立窗口……<br><br>改动多到更新日志都快翻不完<br><br>昨晚那套弹簧参数、字重补偿、渐隐遮罩，新版里还在不在、有没有改<br><br>我这两天就把 2.0 重新拆一遍<br><br>新旧版本放在一起对比，变了什么、为什么这么改，都给大家扒出来<br><br>新仓库一觉醒来已经有将近 200 个 stars 了，<br>看来大家对这个是很感兴趣的，2.0 版本分析完第一时间发🫡<br><br>这下逆向的速度真快追不上它改版的速度了🤣</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUop8-gWMAAlrac.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUoqa1nXUAA5zro.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">飞翔的企鹅x <span style="font-size:12px;color:#999999;font-weight:400;">@BystAnd3rs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">卧槽！Claude 的手感为什么这么舒服，这下终于被我扒明白了😁😁😁<br><br>Claude 的丝滑并不只是调色好看<br>有非常多埋在底层的一套工程交互物理学和手感调优细节<br>对我们 vibecoding 也很有参考价值<br><br>前两条帖子好多人在评论区蹲，这次直接交作业<br>用 REA @morluto  把 Claude Desktop 逆了一遍<br>整理成一份 3000 多行的逆向手册，附带具体的算法实现，全部开源，欢迎体验，也欢迎提出意见👇<br><br>👉 <a href="https://github.com/Caho1/open-claude-ui" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Caho1/open-claude-ui</a><br><br>建议把仓库发给你的 Agent，让他根据你的项目给出优化方案👍<br><br>手册拆成了 7 章，具体的算法拆解和还原细节可以看仓库里的文档<br>还有 30 个能直接复制的 React 组件<br><br>大逆向时代彻底到来，这下真的人人都是 Claude 设计总监了🤣😭😭<br><br>1️⃣ 滚动边缘不是一刀切掉<br>普通线性 Gradient 在高分屏上有明显的切断感。Claude 手写了七档精调的非线性透明阶梯，搭配触顶触底动态归零传感器，呈现出一种水雾般的平滑渐隐效果。<br><br>2️⃣ 语音波形加入了 8% 的噪声降噪，语音波形只跟着人声跳，低于 8% 的环境声底噪直接切掉，再做一次 0.7 次方压缩，小声说话被放大，大声也不会炸<br><br>3️⃣ 拒绝千篇一律的 ease-out 动效，官方在给按钮、消息卡片、勾选、吸附等分别实现了特调的弹簧参数与手感调优<br>按钮轻弹一下，0.22 秒归位，卡片展开 0.35 秒停住，勾选成功会跳两下，拖侧边栏零回弹，松手就像被磁铁吸住<br><br>4️⃣ AI 吐字时屏幕自动跟着滚<br>但你只要往上一滑，150 毫秒内立刻松手，绝不把你拽回底部<br><br>5️⃣ 看图放大以鼠标为中心，不是傻傻地从屏幕中间放大<br>移动不到 4px 不算拖，手抖也不怕<br><br>6️⃣ 拖分栏划过网页预览也不会卡死，双击一下直接五五对半<br><br>接下来是不是可以继续分析一下 Claude 的 Web 端 🤣🤣🤣</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmppz1XwAEHTVB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmpqfXXIAEiEU5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUmprSOW4AEZ6eU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>FLA开源线性注意力Triton实现</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-10-15 20:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Kimi 那个17岁高中生 @nathancgy4<br>真正入门机器学习是从读一个开源项目开始的<br><br>项目叫 Flash Linear Attention（FLA）<br>专门做线性复杂度注意力的高效实现<br><br>这个项目解决了什么问题？<br>普通 Transformer 的注意力是 O(n²)  复杂度，序列一长就很贵<br>线性复杂度注意力想把它降到 O(n)<br>但之前很多实现实际又慢又不好用<br>FLA 用 Triton 把各种线性复杂度注意力<br>做成真正能在 GPU 上跑得快的版本<br><br>但是这个项目不太适合作为新人入门项目<br>适合什么人？<br>已经能比较熟练地读 PyTorch 代码<br>对标准 Transformer 有基本理解的人<br>对高效注意力 / 线性注意力 / kernel 优化感兴趣，想看真实实现的人<br>想在现有基础上做小实验、改架构的人<br><br>对新人更稳妥的路径：<br>先把普通 Transformer 的结构和训练流程跑通<br>比如 nanoGPT 这类最小实现<br>再去看 FLA 这类专门做高效变体的项目<br><a href="https://github.com/fla-org/flash-linear-attention" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/fla-org/flash-linear-attention</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude倒计时用等宽数字防抖动</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @voidJan · 2026-10-15 21:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人使用REA逆向 Claude Desktop 后<br>扒出了一个前端细节 <br>为了让倒计时数字不“跳动”<br>Claude 强制使用了 CSS 属性：<br>font-variant-numeric: tabular-nums<br>这能确保数字 0-9 宽度恒定<br>彻底避免布局抖动Layout Shift<br>大厂做产品的细节，确实到位<br>前端同学可以直接抄作业了！📝</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110727573772877824/img/ePbbnUc2eKqdmJpb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI指令越具体产出质量越高</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangxiaoyu0825 · 2026-10-15 22:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天又涨知识了。亦仁给团队做了两小时 AI 辅导，分享 10 点速记：<br><br>1. 人做不到的事，AI 也做不到。它放大判断，不生产判断。<br><br>2. 给人列 5 条标准就能干活，给 AI 要列几十条加正反例。但标准越多它越不稳，解法是拆开，一个模块一套。<br><br>3. 把 AI 从 80 分调到 95 分，花的时间比从 0 到 80 还多。有的事项用 AI 做的差不多就收手。<br><br>4. “帮我做个手册”这种指令，出来的结果一定平庸。指令越具体，产出越吓人。<br><br>5. 做好一个 Agent，数据是食材（你的聊天记录、帖子、订单），skill 是做法（具体怎么干），harness 是厨房调度（决定先干哪个、怎么搭配）。缺哪个都不行。<br><br>6. 花钱买的套壳工具用起来笨，多半不是模型的问题，是厨房里没有主厨。没人临场决定先用哪个方法、卡住了换哪个。<br><br> 7. 好的 AI 工作台不是让你在各种功能页面上点点点，而是像 Claude Code，聊着天就能把事情办完。<br><br>8. 打通数据权限很关键，当 AI 能随时访问数据时，就不需要“采集”这个动作了，告诉它去哪拿就行。<br><br>9. 上下文（喂给它的资料）不用拼命省，模型变长的速度，比你的文档变长的速度快。<br><br>10. 个人助理 Agent 最好的状态是不需要脱离对话框：无论是查商标、审代码、发帖、换头像，都是一句话的事。<br><br>嗯，继续升阶 AI 能力，迈向最后一公里。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUrcvtUa0AAHK7f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

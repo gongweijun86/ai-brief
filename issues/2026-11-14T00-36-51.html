@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月14日 08:36">
+<title>AI技术雷达 · 11月14日 08:36 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;大厂Agent工具扎堆GitHub日榜</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;A2UI 1.0两行代码接入生成式UI</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;MLLM保留视觉参数跳过预训练</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;RIME强化学习训练Agent写记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;GSC展示量下跌系Google记录错误</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大厂Agent工具扎堆GitHub日榜</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitTrend0x · 2026-11-14 08:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天 GitHub 被「浏览器三巨头 + 安全扫描 + 代码审查」大厂联军屠榜了！<br><br>5 个星标暴增最狠的项目，专业拆解下！<br><br>1. GoogleChrome/modern-web-guidance-src<br><br>Modern Web Guidance 的源码仓：把 Web 平台最佳实践和浏览器兼容数据做成技能，直接塞进你的编程 Agent，让它别再写过时套路；一行 npx 就能安装、搜索指南、扫描旧代码。由 Chrome、Edge、Firefox 和 MDN 团队共同维护。<br><br>🔗 直达：<a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/GoogleChrome/modern-web-guidance-src</a><br><br>AI 写前端最大的毛病就是「十年前的 Stack Overflow 味」，这回浏览器厂商亲自下场补课。1,875 星一天，含金量拉满！<br><br>🟢<br><br>2. openai/codex-security<br><br>OpenAI 官方的 Codex Security 命令行和 TypeScript SDK：扫描仓库或 Git 改动、验证漏洞、生成补丁并复核修复，还能导出 SARIF/JSON/CSV，接 Linear、Jira、GitHub 和 CI。<br><br>🔗 直达：<a href="https://github.com/openai/codex-security" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/openai/codex-security</a><br><br>找漏洞、验漏洞、修漏洞一条龙，安全工程师多了个不下班的搭档。754 星一天，总星 1.3 万+，AppSec 正式进入 Agent 时代！<br><br>🟢🟢<br><br>3. tailscale/tailcat<br><br>Tailscale 官方的「不用 Tailscale 的 Tailscale」：像 netcat 一样在两台机器间开 WireGuard 端到端加密隧道，自动打洞直连，不需要账号、不需要 root，纯用户态命令行和 Go 库。<br><br>🔗 直达：<a href="https://github.com/tailscale/tailcat" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/tailscale/tailcat</a><br><br>一个短地址就能把两台机器连起来，穿透 NAT 像喝水一样简单。324 星一天，网络老炮狂喜！<br><br>🟢🟢🟢<br><br>4. alibaba/open-code-review<br><br>阿里内部用了两年的 AI 代码审查工具开源：读 Git diff，交给带工具调用的 Agent 去翻全文件、搜代码库，输出精确到行的结构化评审意见；README 称同模型下精确率和 F1 明显高于通用 Agent，token 只用约九分之一。<br><br>🔗 直达：<a href="https://github.com/alibaba/open-code-review" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/alibaba/open-code-review</a><br><br>数万开发者、数百万缺陷练出来的审查官，现在人人能请。206 星一天，总星 5 万+，大厂内功直接外放！<br><br>🟢🟢🟢🟢<br><br>5. ChromeDevTools/chrome-devtools-mcp<br><br>Chrome DevTools 官方给 Agent 的接口：MCP 服务 + 命令行，让 Claude、Cursor、Copilot 等编程 Agent 直接操控、检查一个真实 Chrome，录性能 trace、看网络请求、截图、读控制台。<br><br>🔗 直达：<a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ChromeDevTools/chrome-devtools-mcp</a><br><br>Agent 终于不再「盲写前端」，能自己打开 F12 找 bug 了。145 星一天，总星 5.5 万+，浏览器调试彻底交给 AI！<br><br>🟢🟢🟢🟢🟢<br><br>⚠️⚠️<br>总结：<br>今天的榜单写满了一个信号：大厂开始把自家内功直接喂给 Agent（Chrome 的 Web 指南和 DevTools、OpenAI 的安全扫描、阿里的代码审查）。工具越来越像「给 AI 用的」，谁先把 Agent 武装到牙齿，谁就站在下一波生产力的 C 位。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>A2UI 1.0两行代码接入生成式UI</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ataiiam · 2026-11-13 02:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🎉 今天，我们很高兴加入 Google 发布的 A2UI 1.0<br><br>我们自首个版本起就与 Google 的 A2UI 团队合作，帮助将 A2UI 打造成为声明式 Generative UI 的最佳规范。<br><br>Generative UI 现已真正成熟，可用于真实产品。其背后的构建组件现在更快、更强大、也更容易使用。<br><br>所以，别再让你的 agent 用大段大段的文字来回答了。<br><br>有了 A2UI 1.0 和 CopilotKit，你只需两行代码，就能在 YOUR agentic app 中实现与 OpenAI 智能 UI 相当的效果。<br><br>✨ 你自己的组件，或我们预建的组件目录<br>📲 任何面向用户的界面：React、Angular、Flutter、Slack<br>🔌 任何 agent 技术栈：LangChain、ADK、Mastra、Claude Agents 等<br><br>特别感谢我们团队中帮助促成这一成果的所有人，包括 @sofiiiiiasz、@GetContextable、@JerelVelarde 和 @AlemTuzlak<br><br>同时感谢 Google 团队的 @zeroasterisk、Vishal 和 Jay 的持续合作。<br><br>阅读更多：<a href="https://go.copilotkit.ai/a2ui1.0-blog" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://go.copilotkit.ai/a2ui1.0-blog</a><br>查看 A2UI playground： <a href="http://a2ui-playground.copilotkit.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://a2ui-playground.copilotkit.ai</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🎉 Today, we're excited to be joining Google's release of A2UI 1.0<br><br>We’ve worked with Google’s A2UI team since the first release, helping shape A2UI into the best spec for declarative Generative UI.<br><br>Generative UI is now truly mature for real products. The building blocks behind it are now faster, more capable and easier to use.<br><br>So stop letting your agents answer with giant walls of text.<br><br>With A2UI 1.0 and CopilotKit, you can bring the equivalent of OpenAI's intelligent UI in YOUR agentic app with two lines of code.<br><br>✨ Your own components, or our pre-built catalog<br>📲 Any user-facing surface: React, Angular, Flutter, Slack<br>🔌 Any agent stack: LangChain, ADK, Mastra, Claude Agents and more<br><br>Big shoutout to everyone on our team who helped bring this together including @sofiiiiiasz, @GetContextable, @JerelVelarde and @AlemTuzlak<br><br>And thank you to @zeroasterisk, Vishal and Jay from the Google team for the continued collaboration.<br><br>Read more: <a href="https://go.copilotkit.ai/a2ui1.0-blog" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://go.copilotkit.ai/a2ui1.0-blog</a><br>Check out the A2UI playground:  <a href="http://a2ui-playground.copilotkit.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://a2ui-playground.copilotkit.ai</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120951306697441280/img/Zdny_aAXc3pjsv5N.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MLLM保留视觉参数跳过预训练</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @choang333 · 2026-11-14 04:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">各实验室对 MLLM 的视觉编码器意见不一！⚔️<br><br>Gemma 4 12B 抛弃了编码器。<br>Kimi K3 放弃了编码器预训练。<br>Inkling 2 Small 让 Inkling 弃用的编码器复活了。<br><br>我们在一项受控研究中训练了 200+ 个模型来一锤定音：<br>✅ 保留视觉参数，跳过预训练。而且它们不一定要是一个编码器！🤔<br><br>论文：<a href="https://arxiv.org/abs/2611.17334" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.17334</a> 🧵</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Labs disagree on vision encoders for MLLMs! ⚔️<br><br>Gemma 4 12B scrapped the encoder.<br>Kimi K3 dropped encoder pretraining.<br>Inkling 2 Small revived the encoder Inkling killed.<br><br>We trained 200+ models in a controlled study to settle it:<br>✅ Keep vision parameters, skip the pretraining. And they don't have to be an encoder! 🤔<br><br>Paper: <a href="https://arxiv.org/abs/2611.17334" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.17334</a> 🧵</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXB9Q6vW4AAKdQv.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot可加入会议分配任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elonmusk · 2026-11-14 04:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天就来试试 Grok @Bot 吧！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Try Grok @Bot today!</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Grok Bot <span style="font-size:12px;color:#999999;font-weight:400;">@bot</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Grok Bot 现在可以加入会议了。<br><br>向它提问、给它分配任务，或者让它记录你们团队的决定。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Grok Bot can now join meetings.<br><br>Ask it questions, assign it work, or have it keep track of what your team decides. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121319909422669824/img/3OQBsP-P67hEEtS_.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RIME强化学习训练Agent写记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-14 04:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">强烈推荐一读。<br><br>我的笔记：<br><br>我最近开始了关于共同进化模型（co-evolved models）的独立研究。我的重点在于模型与 harness 的共同进化。<br><br>这项工作专注于为持续学习（continual learning）进行记忆写入。<br><br>为什么这很重要？<br><br>当你与一个 agent 协作时，它应该在你的任务上变得更好，但这显然不会轻易发生，而且现有的外部记忆系统往往不够用。<br><br>这与记忆系统关系不大（外面有很多优秀的记忆系统），更多与模型的判断力和感知力有关——即它知道何时应该行动。<br><br>举个例子，想象一个 AI agent 花了一周时间在同一个项目中修复 bug。我们期望它能学会项目的工作原理并避免重复犯错。给它一个保存笔记的地方可以让它将这些知识带入后续任务。但选择哪些内容写入笔记需要判断力。<br><br>这项研究探讨了如何用 RL 来训练这种判断力。<br><br>他们本质上是在训练 agent 在工作过程中发现有用的信息，并写出能帮助它在后续任务中成功的记忆。<br><br>一个训练好的 4B 参数模型达到了与 GPT-5.4 和 Claude Opus 4.7 相当的分数。<br><br>RIME 让一个模型扮演两种角色。<br><br>作为 actor，它使用现有的记忆来完成任务。作为 writer，它回顾发生的事情并更新笔记，供下一个任务使用。<br><br>训练对两种角色给予不同的奖励。<br><br>writer 在接下来几个任务中表现相对近期任务有所提升时会获得奖励。这给了它保留有助于后续信息的理由。这种比较是一种近似的训练信号，因为其他动作和记忆更新也会影响这些结果。<br><br>actor 完成任务会获得奖励，发现进入记忆的信息还会获得额外奖励。一个 AI 判官会比较新旧笔记，寻找有用的补充、修正的信念和具体的线索。<br><br>这鼓励 agent 进行足够的调查以学到可复用的东西。用不同的措辞重写同样的笔记几乎得不到奖励。<br><br>研究人员发现，这些能力需要共同发展。writer 依赖于 actor 发现的信息，而 actor 依赖于 writer 保留的知识。<br><br>我在这里的一个大疑问是效率，以及它如何整合到 harness 和工作流中。我认为这种方法可以节省大量 token 和对话轮次。<br><br>虽然这只是小规模的，但看到它已经能工作是非常棒的。这感觉是持续学习的一种更可行的方法。<br><br>前沿模型在保留知识方面越来越好，但我认为高效的持续学习仍然需要触及权重，而这正是开源权重模型将发挥巨大作用的地方。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Highly recommended read.<br><br>My notes:<br><br>I have recently started independent research on co-evolved models. My focus has been on co-evolving models and harnesses. <br><br>This work focuses on memory writing specifically for continual learning.<br><br>Why is this a big deal?<br><br>As you work with an agent, it should get better at your tasks, but that obviously doesn't happen easily, and current external memory systems often aren't enough. <br><br>This has less to do with memory systems (there are many great ones out there) and more to do with the model's awareness and judgment about when to act. <br><br>To illustrate, imagine an AI agent spends a week fixing bugs in the same project. We would expect it to learn how the project works and avoid repeating mistakes. Giving it a place to save notes lets it carry that knowledge into later tasks. But choosing what belongs in those notes requires judgment.<br><br>This work looks at how to train that judgment with RL. <br><br>They essentially teach an agent to discover useful information while working and write memories that help it succeed on later tasks.<br><br>A trained 4B parameter model reached a score similar to GPT-5.4 and Claude Opus 4.7.<br><br>RIME uses one model in two roles.<br><br>As the actor, it works on a task using its existing memory. As the writer, it reviews what happened and updates the notes available for the next task.<br><br>The training rewards each role differently.<br><br>The writer receives credit when performance on the next few tasks improves relative to performance on the recent tasks. This gives it a reason to preserve information that will help later. The comparison is an approximate training signal, since other actions and memory updates also affect those results.<br><br>The actor earns a reward for completing its task and an additional reward for discoveries that reach memory. An AI judge compares the old and new notes, looking for useful additions, corrected beliefs, and concrete leads.<br><br>This encourages the agent to investigate enough to learn something reusable. Rewriting the same notes in different words earns little credit.<br><br>The researchers found that these abilities need to develop together. A writer depends on the information the actor discovers, and an actor depends on the knowledge the writer preserves.<br><br>One big question I have here is efficiency and, obviously, how it all integrates into harnesses and workflows. I think approaches like this can save a lot of tokens and turns. <br><br>While this is on a small scale, it's great to see it working already. It feels like a more feasible approach for continual learning. <br><br>Frontier models are getting better at retaining knowledge, but I think efficient continual learning will still require touching the weights, which is where open-weight models will play a huge role.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Aviral Kumar <span style="font-size:12px;color:#999999;font-weight:400;">@aviral_kumar2</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们如何训练 LLM 从即时收集的经验中写入记忆，以尽可能好地解决下一个任务，即同时优化能力和&quot;持续学习&quot;能力？<br><br>在我们的新文章中，我们在持续学习一系列任务的设定下研究了这个问题，并开发了一种简单的方法来训练模型写出有效的记忆<br><br><a href="https://cmu-aire.github.io/RIME/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cmu-aire.github.io/RIME/</a><br><br>*剧透*：情况比你想的更复杂 🧵 ⬇️</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">How can we train LLMs to write memories from experience collected on the fly to as best as possible solve the next task, i.e., optimize for both capability and &quot;continual learning&quot; ability?<br><br>In our new post, we study this question in the setting continual learning over a sequence of tasks, and develop a simple approach to train models to write effective memories<br><br><a href="https://cmu-aire.github.io/RIME/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cmu-aire.github.io/RIME/</a><br><br>*Spoiler*: the picture is more nuanced than you think 🧵 ⬇️</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXA5rnWa8AAenLP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Drogue用海洋热能为数据中心供电</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TechCrunch · 2026-11-14 04:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Drogue 正在从海洋中收集热量，为漂浮在海上的数据中心供电。第一个原型应该在不到两年的时间内就会漂浮在海面上，处理数据。<br><a href="https://spr.ly/6013Byz63x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://spr.ly/6013Byz63x</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Drogue is harvesting heat from the ocean to power data centers on floating vessels. The first prototype should be bobbing around the ocean, crunching bits, in less than two years.<br><a href="https://spr.ly/6013Byz63x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://spr.ly/6013Byz63x</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Stitch五秒生成多屏产品流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @stitchbygoogle · 2026-11-12 02:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如果你能在短短五秒内生成整个产品流程会怎样？<br><br>早期设计是快速且迭代的。为了放大你的创造力，你需要一个能跟上你思路的同步设计伙伴。<br><br>因此我们在 Stitch 中构建了一个快速设计实验。它由 Gemini Decisions API 驱动，帮助探索当早期设计迭代从几分钟变成几秒时会发生什么 ⚡️：<br><br>5️⃣ 从粗略提示到多屏流程只需 5 秒<br>2️⃣ 从点击到新变体只需 2 秒<br>1️⃣ 一键跳转到 Stitch 进行更深入的 UI 打磨<br><br>⚠️这是一个早期 MVP，用于测试早期构思可以有多快，我们将很快把你最喜欢的部分融入完整的 Stitch 体验中。<br><br>在 Stitch 中寻找横幅亲自尝试，或在下面查看它如何工作 🧵👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">What if you could generate an entire product flow in just five seconds?<br><br>Early design is rapid and iterative. To amplify your creativity, you need a synchronous design partner that keeps up with your train of thought.<br><br>So we built a rapid design experiment in Stitch. It’s powered by the Gemini Decisions API to help explore what happens when early design iteration takes seconds instead of minutes ⚡️:<br><br>5️⃣ seconds from rough prompt to a multi-screen flow<br>2️⃣ seconds from tap to new variations<br>1️⃣ click to dive into Stitch for deeper UI polish<br><br>⚠️This is an early MVP to test how fast early ideation can feel, and we’ll be folding your favorite parts into the full Stitch experience soon.<br><br>Look for the banner in Stitch to try it yourself or see how it works below 🧵👇</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2120584255692845056/img/a86LNZj4Z-sDiHQe.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GSC展示量下跌系Google记录错误</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sengineland · 2026-11-14 04:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在你怪罪核心更新之前：#GSC 中 11 月 9–11 日的 AI 展示量下降是 Google 在生成式 AI 报告中的记录错误。<br><br>Google 确认的内容：<a href="https://searchengineland.com/google-search-console-performance-report-data-bug-nov-9-11-501899?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261113+x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/google-search-console-performance-report-data-bug-nov-9-11-501899?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261113+x</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Before you blame the core update: the Nov 9–11 AI impressions dip in #GSC is a Google logging error in the Generative AI report.<br><br>What Google confirmed: <a href="https://searchengineland.com/google-search-console-performance-report-data-bug-nov-9-11-501899?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261113+x" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://searchengineland.com/google-search-console-performance-report-data-bug-nov-9-11-501899?utm_source=searchengineland.com&amp;utm_medium=social&amp;utm_campaign=sel-social-x&amp;utm_content=20261113+x</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXB8lsuWsAAhJC5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Bland发布Tofu-1语音对语音模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zaygranet · 2026-11-14 02:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天我们推出 Tofu-1，Bland 的语音到语音模型。<br><br>最重要的通话很少发生在良好条件下：在行驶的汽车里、医院病房中，信号微弱，还有多个人同时说话。<br><br>Tofu-1 就是为这些通话而生。它边听边说，边说边推理，还能将通话者从线路中的其他声音（如电视或哭闹的婴儿）中区分出来。<br><br>加入预览：<a href="https://www.bland.ai/speech-to-speech?utm_source=x&amp;utm_medium=social&amp;utm_campaign=tofu-1-launch&amp;utm_content=isaiah" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.bland.ai/speech-to-speech?utm_source=x&amp;utm_medium=social&amp;utm_campaign=tofu-1-launch&amp;utm_content=isaiah</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today we’re introducing Tofu-1, Bland’s speech-to-speech model.<br><br>The highest-stakes calls rarely happen in good conditions: from moving cars and hospital rooms, over weak signal, with several people talking at once.<br><br>Tofu-1 is built for those calls. It listens while it speaks, reasons while it talks, and can tell a caller apart from everything else on a line, like a TV or a crying baby.<br><br>Join the preview: <a href="https://www.bland.ai/speech-to-speech?utm_source=x&amp;utm_medium=social&amp;utm_campaign=tofu-1-launch&amp;utm_content=isaiah" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.bland.ai/speech-to-speech?utm_source=x&amp;utm_medium=social&amp;utm_campaign=tofu-1-launch&amp;utm_content=isaiah</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121304179247583232/img/NGh94iwP7A3GGNIR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Buzz 1.0.2新增本地时区与右键菜单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wesbillman · 2026-11-14 03:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">来认识新的 Buzz 1.0！🐝<br><br>我们走上了 1.0 路线，1.0.2 已发布，支持个人资料上的本地时间、右键消息操作和更可靠的 @ 提醒。<br><br>从 Buzz 0.x 升级？请在下面安装新应用；旧应用不会提示更新。<a href="https://github.com/block/buzz-app/releases/tag/v1.0.2" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/block/buzz-app/releases/tag/v1.0.2</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Meet the new Buzz 1.0! 🐝<br><br>We're on the 1.0 track, and 1.0.2 is out with local time on profiles, right-click message actions, and more reliable mention alerts.<br><br>Coming from Buzz 0.x? Install the new app below; the old app won't offer it as an update.<a href="https://github.com/block/buzz-app/releases/tag/v1.0.2" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/block/buzz-app/releases/tag/v1.0.2</a></p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

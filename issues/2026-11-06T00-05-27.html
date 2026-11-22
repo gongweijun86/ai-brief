@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月6日 08:05">
+<title>AI技术雷达 · 11月6日 08:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude Code 三模型分工架构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;GPT-6 Cyber 发布漏洞挖掘模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Code 识破充电宝窃密</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;TikTok 逆向揭示推荐算法机制</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;kimi-k3-in-c 无显卡跑大模型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 三模型分工架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-05 09:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这真的是一座金矿！<br><br>Anthropic 刚分享了一个 Claude Code 的超好用技巧。<br><br>思路很简单：同时跑 Sonnet、Haiku 5.5 和 Opus 5.5，每个模型只干自己最擅长的活。<br><br>效果更好，token 也省很多，因为每个任务都交给了最合适的模型。<br><br>启动 Claude Code 时这样写就行：<br><br>claude --model sonnet --advisor opus<br><br>分工是这样的：<br><br>→ Sonnet 5.5 负责主会话，写代码、改 bug<br><br>→ Haiku 5.5 并行扫整个代码库，负责搜索、grep 和检查改动<br><br>→ Opus 5.5 当顾问，只在关键决策时出手，最后审核改动<br><br>→ 不需要 Opus 的活，就不再浪费它的上下文<br><br>Opus 只在三个时候介入：<br><br>- 计划敲定之前<br><br>- 同一个错误出现第二次的时候<br><br>- 宣布完成之前<br><br>Sonnet 负责写，Haiku 负责查，Opus 负责审。<br><br>JEV 工程也是同样的思路，只是再往下一层：不需要动脑的小选择，比如用哪个文件、哪个工具、重试还是停止，交给 JEV 毫秒级处理，大模型只处理真正需要判断的问题。<br><br>完整结构：<br><br>&gt; Sonnet 5.5 跑主会话，统筹整个任务<br><br>&gt; search 用 Haiku 5.5 梳理代码库，只读不改<br><br>&gt; grep 用 Haiku 5.5 查找调用位置，单独占一个上下文<br><br>&gt; audit 用 Haiku 5.5 在临时工作区检查改动<br><br>&gt; Opus 5.5 当顾问，在最终确认前审核汇总后的改动<br><br>&gt; JEV 毫秒级处理小分支选择<br><br>把这个结构和下面这段提示词一起贴进 Claude Code：<br><br>&quot;按这个结构重新配置我的 Claude Code：<br>1. 主会话用 Sonnet 5.5，Opus 5.5 当顾问。<br>2. 在 .claude/agents 里建三个 Haiku 5.5 子代理：search（梳理代码库）、grep（查找调用位置）、audit（检查改动）。<br>3. 给 audit 设置 worktree 隔离，让它的检查不碰我的工作分支。<br>4. 在 CLAUDE.md 里加一条规则：所有代码库搜索和测试都交给 Haiku 5.5 子代理，让主上下文保持精简。<br>5. 快速、确定性的小选择（选工具、选路径、重试）交给 JEV 处理。<br>所有改动先用 diff 给我看，我说开始之前不要动任何文件。&quot;<br><br>官方文档：<a href="http://code.claude.com/docs/en/sub-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://code.claude.com/docs/en/sub-agents</a><br><br>建议先收藏，迟早用得上。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118151134535921664/img/bIQcneFH1mJD2iTf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6 Cyber 发布漏洞挖掘模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-06 07:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 发布了网络安全专用模型 GPT‑6 Cyber（安全准备度评级升至“危急”），在大幅提升漏洞挖掘与利用能力的同时，实现了极高精度的任务边界控制，来看下核心内容：<br><br>1、ExploitGym 漏洞利用得分达 48.5%（较上代相对提升 51%），受控环境远程漏洞利用完成率达 95%，无源码 Web 渗透漏洞召回率达 40.3%。<br><br>2、在蜜罐越界测试中，无安全提示词时合规率达 99.93%（上代为 94.49%），启用部署提示词后实现 100% 零越界攻击。<br><br>3、取得了不错的实战效果，自主挖出 Firefox 81 个全新高危漏洞并协助修复，成功开发 948 个 Linux 内核提权利用程序（超上代 5 倍），在模拟电厂靶场中自主发现 2 个工控软件零日漏洞。<br><br>4、将会通过 Daybreak 体系向受信任防御者分级开放（Blue 级支持低拒答率漏洞验证，Red 级开放 GPT‑6 Cyber 深度利用开发及关键基础设施专属权限），并配套强制 IP 白名单，隐私安全处理及工控高危拦截机制以防滥用。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenAI <span style="font-size:12px;color:#999999;font-weight:400;">@OpenAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出GPT-6 Cyber：安全研究领域的一项重大进展，将更强大的能力与更好的模型对齐相结合。<br><br>该模型为我们昨天宣布的Linux内核研究提供了动力，Mozilla、Palo Alto Networks、Calif和Cisco等公司的安全团队——以及OpenAI自己的团队——已经在将其投入使用。<br><br>GPT-6 Cyber可供部分Daybreak Red客户使用，我们将随着时间推移逐步扩大使用权限。<br><br><a href="https://openai.com/index/introducing-gpt-6-cyber/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/introducing-gpt-6-cyber/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.<br><br>The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.<br><br>GPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.<br><br><a href="https://openai.com/index/introducing-gpt-6-cyber/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/introducing-gpt-6-cyber/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118387217588465664/img/N2grMUmP0O_EMvS2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 识破充电宝窃密</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChrisSlacker · 2026-11-05 12:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用户通过 Claude Code 在一个广州买的杂牌充电宝里发现了隐藏芯片。<br><br>每次给 iPhone 充电，它都在偷偷复制整部手机的数据。还会读取 Wi-Fi 密码，连接家庭网络，把所有信息发送到远程服务器。<br><br>这个充电宝 3 周前在机场花 19 美元买的，30000 mAh 标注，沉甸甸的没牌子。<br><br>首次插入时屏幕问'信任此计算机'，用户没想就点了信任，结果一键给了它读取所有数据的权限。<br><br>今早设置 Claude Code 监测文件读取，充电 10 秒后屏幕就闪黄红警告——数据在传输。<br><br>充电宝被识别为自带 64 GB 存储和网络连接的小电脑。<br><br>普通充电线只用电源线，这个同时用电源线和数据线，已复制：<br><br>→ 设备信息、1206 个通讯录号码<br>→ 全部应用含 2 个银行 app<br>→ 3912 张照片含护照<br>→ Wi-Fi 名称和密钥<br>→ 妻子 iPhone 照片<br><br>每次充电就用密钥上网发送新数据，3 周上传 19 次，最后一次昨晚 2:14 发送。<br><br>用户立即拔线，通过 Claude Code 阻止那个 IP，改了 Wi-Fi 密码和银行 app 登录信息。<br><br>维修店拆开看了，详见下文。建议今天检查家里每个充电宝。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2118203408574476288/pu/img/tDLFIJlf04nmHtfO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TikTok 逆向揭示推荐算法机制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vista8 · 2026-11-05 23:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我去，这个 TikTok逆向有点意思，对推荐算法有了新认知！<br><br>1. TikTok 手机端有 25+ 个 AI 模型。<br><br>用来判断什么内容能让用户持续刷下去。<br><br>2. 视频播放前已打好“推荐分”<br><br>服务器预先给每个视频计算“推荐分”，即预测用户“跳过、看完、点赞、打开评论、关注创作者” 的概率。<br><br>3. 实时采集用户状态（50+ 变量）<br><br>每次请求新一批视频时，App 会带：<br>① 陀螺仪/运动传感器，判断用户状态（走路、躺下、在车里）<br>② 电量、是否在充电、屏幕亮度、是否静音等 50+变量<br><br>甚至输入但没发送的消息也会被收集，因此吃中午饭和睡前躺床上刷的内容会不一样。<br><br>4. 用户可能流失时，模型会介入<br><br>① 有一个模型如果预测到你会跳过其他已加载视频，手机就会请求“紧急批次” 视频来重新吸引你。<br><br>② 如果扔持续跳过，TikTok 会标记为“失去专注”，最后手段是给你的信息流里推一条直播。<br><br>③ 会根据你多久没摸屏幕、是否躺着判断你是否打瞌睡。<br><br>④ 有模型预测你“下次打开 App 的时间”，以便提前后台启动、缓存视频做准备<br><br>内容来源于视频作者说法，未实测。<br><br>想想还挺追求极致的，比如预测下次打开提前缓存，牛逼！<br><br>但也不是那么黑盒，一些方法是能想到。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Ayo O <span style="font-size:12px;color:#999999;font-weight:400;">@ayoships</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我逆向工程了tiktok </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I reverse engineered tiktok </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWNoDTMbcAA-jGj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Box 检索接入 Nemotron 模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Box · 2026-11-06 06:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">将模型与业务知识连接起来，使AI更有用。<br><br>在BoxWorks上，@nvidia的@JensenHuang解释了为什么上下文很重要。Box Context Retrieval将使用Nemotron开放模型来检索相关信息，同时尊重用户的权限。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Connecting models to business knowledge makes AI more useful.<br><br>At BoxWorks, @nvidia's @JensenHuang explains why context matters. Box Context Retrieval will use Nemotron open models to retrieve relevant information while respecting users’ permissions. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2118472043876503553/img/-UFqam6oHT2AHJlH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Aaron Levie <span style="font-size:12px;color:#999999;font-weight:400;">@levie</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2118419080592146432" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118419080592146432</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2118419080592146432" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118419080592146432</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>kimi-k3-in-c 无显卡跑大模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-05 23:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🤯 震惊，kimi-k3-in-c 居然能让一台没显卡的普通电脑，跑起 2.78 万亿参数的 Kimi K3 大模型。<br><br>kimi-k3-in-c 在 GitHub 三个月狂揽 1 万多 star，已经有人把它移植到 Mac、改写成 Rust、补上 Metal 后端，围着它长出一片周边。<br><br>以前想在本地碰一个顶配大模型，门槛是几块专业显卡加一柜子显存，个人根本玩不起。它用纯 C99 把整套推理重写了一遍，不依赖 BLAS、不依赖任何深度学习框架，编译出来的引擎才 176KB。<br><br>办法是把权重边读边算：稠密主干和专家分开流式加载，笔记本档位实测峰值内存压到 8.24GB，一台 16G 内存的机器就能慢慢跑，内存越大只是越快，不同档位输出逐字节都一样。<br><br>一个人用一门最朴素的语言，把「万亿参数必须上集群」这条常识给掀了。<br><br>GitHub：<a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/FareedKhan-dev/kimi-k3-in-c</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

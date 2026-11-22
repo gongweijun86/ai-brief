@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月13日 20:14">
+<title>AI技术雷达 · 10月13日 20:14 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;REA 逆向读取微信聊天记录</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;SGLang Omni 按改动裁剪CI</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;RustGIS 将GIS搬进浏览器</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>REA 逆向读取微信聊天记录</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @manateelazycat · 2026-10-13 14:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我靠，微信和 WorkBuddy 已经被 REA 攻破了<br><br>大家都知道做生意的时候，微信的聊天记录是非常有价值的数据，但是我们一般对微信开刀的话，就容易封号，我最近发现 WorkBuddy 居然可以直接读微信的聊天记录<br><br>所以我就用 REA 配合算力舱来研究 WorkBuddy 怎么读取的，一个小时就搞定了，太牛逼了<br><br>我的实际测试效果是，如果一台算力舱的话，REA 配合 Qwen 3.8 27B 稍微慢一点，如果要快一点的话，就是两台算力舱配 GLM 5.3 Flash<br><br>我今天早上试了一下，真的太牛逼了！不会像线上的模型直接拒绝，就是 REA 这个逆向工具加上本地的大模型，真的是指哪打哪，开源全世界啊<br><br>感兴趣逆向的这套方案的老板，可以评论区打 1，免费给资料</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109898086214774784/img/DeXzfLzA-4K4PiaW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Andy Stewart <span style="font-size:12px;color:#999999;font-weight:400;">@manateelazycat</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">GLM 5.3 Flash 本地写代码太爽了，她写代码的时候，我就看着算力舱的GPU利用率发呆，哈哈哈哈<br><br>新时代监工 ；） </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUQjOwxaAAA0ega.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 软件工厂学习路径</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LotusDecoder · 2026-10-13 09:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">2026-10<br>浅谈 agent软件工厂 的新手学习路径。<br><br>这是一个全新、高速发展又充满争议的领域。其观点、方法、教程浩如烟海，就算啥都看，对个体来说看都看不完。<br>新人会很容易会觉得无从下手。agent要怎么用？软件工程又是啥？哪些地方可以信任agent？哪些地方又要检查agent？<br><br>所以我规划出来的学习路径是先有个基础。<br>第一部分是 claude 和 claude code的博客和实践教程。其次是 openai cursor manus google等公司的官方博客和教程、论文。<br>第二部分是，第一部分里面涉及到的传统意义上的教材、经典、行业共识的基础理论和通行做法。<br>要看的资料集一下子就缩小了，让codex 开个 /goal 去调研整理，一天之内可以出一份系统化的教材。初步浏览一遍，自己缺哪补哪也提出来让AI针对性细讲。<br><br>第三部分，才是推特上的帖子，这里面，优选在第一线AI公司明确工作的人，尤其是 AK 说的 5000 人，自身拥有海量token的人。<br>其次是，优质的开源开发者， 拥有实际的热门的开源agent 开发项目。大量高速迭代的，软件口碑又好的。从实际案例中学，如果有写博客讲方法论，那更加可以抓紧把重要性放到第一部分claude层级。<br>当然还有更多优秀的开发者和擅长agent的专家，只是说，对于起步来说，自身难以鉴别，然后看得太多太碎，摊子铺得太大，学习压力会太大了。<br><br>最后是在实践上，是需要更多的实验评估来确认， 上面看到的 资料 ， <br>第一块是 用 benchmark radar 查 和 测，把里面的关键点，插入到题库中重新跑一遍。<br>第二块是用 自己已有的工作数据 转换的私有题库来测。<br>这个过程，也是交给 AGENT 了，<br><br>评测这里面最好三个梯度的model，<br><br>- sota 比较贵，一般少做一点意思一下<br>- deepseek-V4.1-flash 、glm-5.3-flash<br>- stepfun flash 3.5<br><br>题目数量最好特征分布广的30道题起。<br><br>评测指标，通过率、时间、tokens 消耗、model请求数、tool调用数。<br><br>行不行实际跑一遍。效果好的，吸收进来。迭代自己的agent软件工厂。<br><br>总之是需要 放手和信任 全链路让 agent 来做，然后 再让 opus-5.5 画 html， 3B1B 格式。 人再向其中学习。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SGLang Omni 按改动裁剪CI</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GenAI_is_real · 2026-10-13 15:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这周 SGLang Omni 的周会其实讨论了很多非常具体的工程问题，会后整理了下。最近 Omni 更新得非常快，每天都有大量 PR 同时推进 ASR、TTS、full duplex、benchmark、MLX 和各种 infrastructure，所以我们这次会议一个很重要的主题，是如何让一个越来越大的开源项目仍然能够被人和 Agent 理解、验证和维护。<br><br>首先是 MLX。现在 SGLang Omni 的 MLX 实现已经放在相对独立的 sglang_omni_mlx/native 路径里，它和 CUDA 主路径基本解耦。这件事情看起来只是代码组织，但对社区贡献非常重要：如果你在 MLX 上优化一个 ASR 或 TTS workload，不需要担心自己的实验会轻易影响 CUDA 路径，review 和 merge 的阻力也会小很多。我们非常欢迎大家直接在这个新的 MLX 路径上做模型支持和性能优化。Qwen3 ASR 尤其适合作为一个完整的练习项目，因为模型本身相对稳定，一个人可以从跑通模型开始，逐步做到 streaming、benchmark、CI、性能优化，完整经历一次真实 inference workload 的工程生命周期。<br><br>围绕 CI，我们讨论了一个越来越重要的问题：不能让每个 PR 都去跑整个 Omni 的所有模型。随着模型数量越来越多，这种方式无论对算力还是开发效率都会非常痛苦。如果一个 PR 的所有改动都严格限制在某个 Qwen3 ASR 的 model directory 下面，那么理论上我们应该能够证明这个 PR 是 self-contained 的，并且只运行与这个模型相关的 CI。难点在于，我们不能仅仅“相信作者说它是 self-contained”，而需要让 CI 根据实际 code change 去判断它到底影响了什么。接下来我们希望研究一套更可靠的 selective CI 机制，让测试范围能够由代码改动本身决定，而不是每次都把整个模型集合重新验证一遍。<br><br>另一个很有意思的话题是 stage offload。CUDA 上已经有不少 offload 类需求，但我觉得它在 MLX 上可能更有产品意义，因为 Apple Silicon 使用 unified memory。一个 27B 模型本身就可能占掉几十 GB 内存，你显然不希望一个偶尔才调用的本地模型永远常驻在那里。理想的产品体验应该更接近 call it when you need it, release it when you don't。这里真正需要比较的不是“offload 听起来更高级”，而是很实际地测：kill and relaunch 到底更快，还是 offload and upload 更快。如果重新启动 MLX engine 已经足够便宜，也许最简单的实现反而最好；如果 offload 明显更快，那就值得认真做。但 offload 还会引入 KV cache 一致性之类的问题，例如模型被释放期间 unified memory 被其他程序使用以后，之前的 cache 是否仍然有效，这些都需要明确的 invalidation 机制。我最近测试 lithos-metal 时特别喜欢它在 M5 上的推理性能，但也正因为模型很大，idle memory management 会直接影响它能不能成为一个真正舒服的本地 serving framework。这个问题我觉得非常值得在 SGLang Omni MLX 上继续探索。<br><br>Full duplex 这边目前最大的现实问题反而不是 idea 不够，而是 review bandwidth 不够。社区里已经有不少相关工作，但真正熟悉 full-duplex interaction 的 reviewer 数量还不多，因此一些 PR 很可能会被 review capacity 卡住。我们很欢迎有经验的人不只是来提交新的 full-duplex PR，也来帮助 review 已有实现。与此同时，Full-Duplex-Bench 本身也正在从“测 model behavior”继续往“测 serving system”走。一个模型在 concurrency=1 时知道什么时候 interrupt、什么时候 respond，并不意味着 concurrency=100 时还是同一个产品，因为 TTFT、TPT、latency 和 throughput 会直接改变交互行为。比如一个动作本来有时间窗口，如果 response 因为排队晚了几秒才出来，从 model behavior 的角度可能完全正确，但从真实系统角度已经失败了。所以接下来 benchmark 要同时回答两个问题：模型做出的决定对不对，以及 serving system 有没有在仍然有意义的时间里把这个决定送出来。<br><br>TTS 方向也有不少具体工作。我们之前在 CosyVoice 上花了很多精力，现在希望把这部分 optimization experience 更好地整理、review 和发布。最近越来越多 TTS workload 会包含 HiFT、DiT 这一类组件，因为最终用户关心的不只是 WER，而是音质本身，而这类差异经常不会直接体现在传统 ASR metric 上。Speech Spec optimization 也是一个很适合社区 contributor 独立完成的任务，它的范围相对 self-contained，问题定义清楚，但需要真正懂 speculative decoding 的人认真完成和 review。这其实也是我们很希望寻找的一类 contribution：不是随便找一个 TODO，而是找到一个边界清晰、可以由一个人真正 own 到底的 subsystem。<br><br>会议还讨论了 release automation 和 coding style。SGLang Omni 现在基本保持每周发布一次版本，但一些 update-version 工作过去比较依赖具体的人手工完成。随着 contributor 流动，我们希望这些事情逐渐 formalize 和自动化，而不是每次都靠某个熟悉流程的人记得怎么做。Coding style 也是同样的逻辑。我们已经越来越依赖统一的 coding style、lint 和相关检查，因为当人和 Agent 都开始高频提交代码以后，“大家凭感觉写得差不多”是不够的。风格、验证流程和 acceptance criteria 越明确，Agent 才越能够可靠工作，人类 reviewer 也越能够把精力留给真正需要 judgment 的部分。<br><br>这也解释了为什么我们最近非常强调 Developer Reference。目前 Full-Duplex Benchmark、TTS、ASR 和 Omni Offline 都已经有对应的文档，我们希望这些文档不是“描述一下大概怎么跑”，而是做到人把命令复制粘贴下来就应该能够直接验证 workload。这个标准看起来很朴素，但我越来越觉得它非常重要。好的文档不只是 education material，它其实正在成为 Agent 的 execution environment。一个流程如果输入、命令、expected output 和 benchmark 都足够明确，那么不仅新人更容易参与，coding agent 也更不容易因为缺少 context 而乱猜。<br><br>最后我也想再说一次 newcomer 的问题，因为这是这次周会里一个很真实的反馈。SGLang Omni 每天可能有大量 PR，一个人不可能全部跟上，我们自己也经常需要借助 Agent 才能高效理解陌生方向的改动。所以如果你刚加入社区，看见 full duplex、ASR、TTS、MLX、CUDA 每天同时变化，不需要因此觉得自己落后。找一个 topic，连续看两三个月，等你把这个方向真正做熟以后再换。今天社区里很多已经能够非常 professional 地独立完成工作的人，也经历过这样的阶段。<br><br>而且我非常不认同“SGLang 是 scientist 才能做、普通 SDE 做不了”这种说法。我自己也不是 systems 科班出身，本科阶段的 systems 基础也谈不上多强。我以前看 infra engineer，也会觉得 kernel、compiler、distributed systems 好像是另一种人才做得了的事情。后来越来越觉得，好的 AI infra 最重要的底色仍然是 engineering：把代码读懂，做 benchmark，验证 correctness，对 regression 负责，不知道的时候承认不知道，然后把它学会。<br><br>AI 让这件事情变得更有意思。一个负责任的 engineer 可以让 Agent 帮自己读陌生代码、追调用链、理解 PR、搭实验环境和写第一版实现，学习速度确实可以被放大很多倍；但一个不负责任的人也可以用同样的工具更快地产生自己完全不理解的代码。所以我一直很认同一个判断：AI 首先放大的是 engineering habits，然后才是 engineering ability。<br><br>这周会下来，我觉得 SGLang Omni 现在最需要的并不是更多“什么都想碰一点”的 contributor，而是更多愿意真正 own 一个问题的人。你可以做 MLX ASR，可以做 TTS，可以做 Speech Spec，可以研究 stage offload，可以帮助 full-duplex review，可以把 benchmark 做得更接近 production，也可以把 CI、release 和 documentation 做得更可靠。开源社区并不要求每个人理解整个系统，而是需要很多人各自把一件事情理解透、验证好、维护住。<br><br>这类 contributor，我们非常欢迎。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 支持多账号路由与反代</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @qizong007 · 2026-10-13 13:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给大家推荐一个 ccswitch 最严厉的父亲 —— Magpie<br><br>1. ccswitch 有的，它也有<br>2. 可以多个账号路由，比如绑定多个 Codex Plus 账号做路由，解决 gpt 没有甜点位套餐的问题<br>3. 自带 CPA<br>4. 甚至可以直接 auth 登录 workbuddy 再反代出来，到 cc 里面去用<br>5. 工具也轻便，目前就15MB<br>6. 更新积极，7*24在线，真正的利用agent开发<br><br>链接：<a href="https://github.com/yetone/magpie" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yetone/magpie</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RustGIS 将GIS搬进浏览器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huihoo · 2026-10-13 10:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GIS 世界的 Rust 重构也来了，Web 堪称 ArcGIS Pro 浏览器版<br><a href="https://web.rustgis.app/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://web.rustgis.app/</a><br>也支持在 Windows、macOS 和 Linux 上桌面运行<br><a href="https://github.com/opengeos/RustGIS" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/opengeos/RustGIS</a><br><br>图为：RustGIS 运行在 MacBook Neo<br>每个操作对应一条命令，也可以在命令行中运行<br>316 个功能区功能就相应有 316 条 RustGIS 命令<br>示例数据  Natural Earth 公有领域，RustGIS 采用 Apache v2 许可证</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUedOFKboAEt76l.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ESP32 生态五大代表开源项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Passenger0522 · 2026-10-13 11:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上带 esp32 标签的开源仓库已经超过 2.6 万个，如果刚买来开发板想找最惊艳的成品固件或开发神器，直接盯准这 5 个最具代表性的镇山之宝就够了！<br><br>xiaozhi-esp32（★ 30.8k） 目前整个 ESP32 生态里最火的开源 AI 语音硬件项目，直接把大模型装进几十块钱的开发板里，支持语音唤醒、声纹识别与多语言对话，还能通过 MCP 协议让大模型直接接管控制家里的硬件外设，现在全网爆火的 AI 语音桌宠和聊天小盒子几乎全拿它当底座 <a href="https://github.com/78/xiaozhi-esp32" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/78/xiaozhi-esp32</a><br><br>LVGL（★ 24.9k） 做嵌入式屏幕 UI 绕不开的行业事实标准，在极其有限的单片机内存里也能跑出丝滑的动画、图表与触控交互，自带丰富的组件库和可视化界面设计工具，你在市面上见到的高颜值 ESP32 彩屏旋钮、桌面副屏和智能中控面板，背后九成以上都是用它画出来的 <a href="https://github.com/lvgl/lvgl" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/lvgl/lvgl</a><br><br>Tasmota（★ 24.8k） 把廉价智能插座和通断器变成完全私有可控设备的刷机神器，很多几块钱的白牌智能硬件原厂 App 难用还强制连云端，直接刷入 Tasmota 就能彻底断掉厂商服务器，在本地网页端完成配网和 OTA 升级，还能配置电量监控与定时自动化规则，极客改造老旧家电人手必备 <a href="https://github.com/arendst/Tasmota" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/arendst/Tasmota</a><br><br>WLED（★ 18.8k） 桌搭玩家与全屋氛围灯效的终极神器，只需要一块几块钱的 ESP32 接上 WS2812B 等可编程 RGB 灯带，刷入固件就能通过手机 App 或网页无线控制上百种动态灯效，原生支持音乐律动拾音、分区像素控制与电脑屏幕流光溢彩同步，比买几百块的成品氛围灯香太多 <a href="https://github.com/wled/WLED" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wled/WLED</a><br><br>ESPHome（★ 11.8k） 自建传感器接入 Home Assistant 全屋智能的首选方案，全程根本不用写一行 C++ 或复杂的联网代码，只需要写几行简单的 YAML 配置文件，就能把温湿度和毫米波雷达以及红外遥控等几十种模块一键编译刷入 ESP32，开机自动被家庭中枢发现并加密接管 <a href="https://github.com/esphome/esphome" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/esphome/esphome</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Passenger0522 <span style="font-size:12px;color:#999999;font-weight:400;">@Passenger0522</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">紧跟时事热点<br><br>已下单<br><br>虽然暂时还想不到什么使用场景 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUaM3GNaUAA9MJz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Uiverse 提供即用开源UI组件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jolyne_AI · 2026-10-13 20:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Uiverse 是一个社区搭建的开源 UI 元素库。<br><br>里面有按钮、卡片、加载动画这些小组件，可以直接搜索到，然后复制成 HTML/CSS、Tailwind、React 代码，还能导入 Figma。<br><br>官网：<a href="https://uiverse.io/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://uiverse.io/</a> <a href="https://t.co/9kD13qmhts" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://t.co/9kD13qmhts</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUgmOzLa0AEyJLd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUgmPCSa4AAg4WC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUgmPPdbQAADvuw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

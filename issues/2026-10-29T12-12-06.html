@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 20:10">
+<title>AI技术雷达 · 10月29日 20:10 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code接omp分流编码</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Code系统提示词砍八成</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Arch-diagram生成动态架构图</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;RSIHub统一评测Agent自进化方法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Beacon用Jev沉淀Agent记忆库</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Qwen4系列四款模型即将发布</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen跨尺寸层对应指向参数共享</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @roifex · 2026-10-29 17:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">犬戎是我的好友，目前在做 LLM architectures with infra affinity &amp;amp; efficient LLM Inference，对模型和 Infra 都有了解，感兴趣的话可以关注一下他</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">犬戎 <span style="font-size:12px;color:#999999;font-weight:400;">@inuEbisu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">对现有模型进行增长和收缩可能比我们想象的更为常见。<br><br>上个月在研究 K/V 迁移时，我们独立观察到了相同的层模式。一些额外发现：<br>- Qwen3.5：除了原帖中的 MLP 模式外，我们还在 4B ↔ 9B 中发现了同层对应关系，在 4B/9B ↔ 27B 中发现了重复块对应关系，这些在 GDN Q/K 和全注意力 K/V 投影几何中均可见。<br>- Qwen3：我们通过直接的 K/V 权重比较，在 14B ↔ 32B 中发现了类似的重复块结构。<br><br>我们参考了 SOLAR (<a href="https://arxiv.org/abs/2312.15166" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2312.15166</a>)：其记录的 Depth Up-Scaling 方法是复制一个模型、裁剪相对的两端、拼接保留的层，然后继续预训练。<br><br>此外，Ministral 3 在不同模型规模之间也显示出明显的层对应关系，与其技术报告中描述的剪枝和蒸馏方法一致。<br><br>这些模式暗示了参数共享、类似 YOCO 的 KV 共享以及循环执行的候选方案。这是我们希望探索的方向。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Growing and shrinking existing models may be more common than we think.<br><br>We independently observed the same layer pattern while studying K/V transfer last month. Some additional findings:<br>- Qwen3.5: Beyond the MLP patterns in the original post, we found same-layer correspondence in 4B ↔ 9B and repeated-block correspondence in 4B/9B ↔ 27B, visible in both GDN Q/K and full-attention K/V projection geometry.<br>- Qwen3: We found a similar repeated-block structure in 14B ↔ 32B through direct K/V weight comparisons.<br><br>We included SOLAR (<a href="https://arxiv.org/abs/2312.15166" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2312.15166</a>) as a reference: its documented Depth Up-Scaling recipe copies a model, trims opposite ends, concatenates the retained layers, and continues pretraining.<br><br>Besides, Ministral 3 also shows clear layer correspondences across model sizes, consistent with the pruning and distillation described in its technical report.<br><br>The patterns suggest candidates for parameter sharing, KV sharing as in YOCO, and looped execution. That's the direction we're excited to explore.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyA91KbwAAmAEK.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyA_nhbMAEUjxT.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyBEolbIAAiAP6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyBGFsasAA5Mw8.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code接omp分流编码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @DracowynX · 2026-10-29 14:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我用 AI 搞软件开发已经一年多了，分享一套目前实测下来比较稳的 Claude Code + omp 多模型配合流：<br><br>1. Claude Opus 5.5 只写任务书和 review，不亲自写实现<br>2. 后端丢给 omp，接 GPT 6.1 Sol（High 思考强度），实测在后端逻辑上比 Opus 5.5 更好<br>3. 前端则是给 Sonnet 5.5（Medium/High 思考强度），审美上感觉和 Opus 5.5 差不多，还更便宜<br>4. 调研和只读任务交给 DeepSeek v4.1 flash 1017（Max思考强度），不让它改代码<br>4. omp 在独立 git worktree 跑，不许 commit，必须先交补丁验收后才能合入<br>5. 结果不满意除非小问题，否则直接升级思考强度或更换模型重新派发任务<br><br>整体思路：我在 Claude Code 里和 Opus 对话，由它拆解任务、产出任务书，再通过 omp 调度不同厂家的模型去干活。干完后 Opus 亲自验收和 Review，不合格打回重做。<br>除 Claude 系模型外，其余模型统一通过 Magpie 网关管理（别问为什么不接 Claude）</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVxy3u9bMAAPlcn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code系统提示词砍八成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KobinFlow · 2026-10-29 16:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现任 Anthropic Claude Code 核心成员、前 Google Chrome 工程总监 Addy Osmani刚发了篇长文，直接点破了很多人现在的 AI 编程误区：你大概率一直在“过度提示”（Overprompting）Claude。<br><br>最扎心的一个事实是：Anthropic 官方把 Claude Code 的系统提示词直接砍掉了 80%，结果模型代码跑分一点都没掉！<br><br>很多人还在用一两年前伺候老模型的那套“保姆式习惯”写 Prompt，字数越堆越多。面对 Opus 5.5 这代新模型，真正高手都在做减法：<br><br>1. 别教它怎么走，只给两件事： 一句话说清「终极目标是什么」+「怎么验证做对了」。只要你给它一个能跑出 Pass/Fail 的单测或判定脚本，它自己就能死磕闭环到底，根本不用你寸步不离地盯着。<br><br>2. 别迷信复杂的多 Agent 架构： 很多人喜欢无脑堆 Subagents，但 Addy 直言：子智能体不仅不会让事情变聪明，还会让延迟和账单成倍暴涨。从实测来看，「单个带 Skills 的 Agent」在代码质量和性价比上往往完胜多 Agent 编排。<br><br>3. 不知道怎么做，就让它反向面试你： 需求不明确时，别硬憋 Prompt。让 Claude 提问面试你，直到它能整理出一份完整的需求 Spec；然后开个新会话，拿着这份 Spec 丢给它直接开工。<br><br>4. 别当人肉代码扫描机： 代码写完，先调一个没看过聊天记录的独立 Agent 去把 Diff 审一遍、改一轮。把低级问题全甩给机器，人类只留着精力给核心业务风险做最终裁判。<br><br>一句话总结： 模型每升级一代，你最该做的第一件事不是拼命加规则，而是赶紧去提示词里“删代码”。每隔几个月给你的 Prompt 瘦一次身，别用伺候老模型的旧习惯，束缚了新模型的发挥。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Addy Osmani <span style="font-size:12px;color:#999999;font-weight:400;">@addyosmani</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2115682550723313664" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115682550723313664</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2115682550723313664" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115682550723313664</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex免费版可用GPT-6-Luna</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mranti · 2026-10-29 11:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我今天在更新Codex月订阅之前，才发现，免费版的Codex是可以用GPT-6-Luna的。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Arch-diagram生成动态架构图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @slashui · 2026-10-28 19:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">上次转的那个架构图火了，好多朋友问能不能做成 Skill。<br><br>做出来了！🎉<br><br>不只是需求文档：丢给它一个 GitHub 仓库或一篇文章，它也能把里面的内在关系理清楚，画成这种会动的架构图：<br><br>🧭 不套模板：先判断是分层系统、流水线还是带循环的流程，再决定怎么画<br><br>🎨 颜色有含义：模块按种类上色，连线按数据流向区分<br>⚡ 光点沿连线流动，底部 log 实时滚动&quot;A → B&quot;<br><br>🎬 一句话导出 HTML / 图片 / MP4 / GIF / Mermaid，说&quot;30 秒视频&quot;就给你 30 秒<br><br>🌏 用中文问出中文图，用英文问出英文图，日文也一样<br><br>Claude Code 和 Codex 都能用，一行装好：<br>npx @rokoai/arch-diagram install</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115397958208507904/img/7909cNIj7otoBZPO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">洛克船长 <span style="font-size:12px;color:#999999;font-weight:400;">@slashui</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">太酷啦！以后的系统架构图都以这个标准来做！！ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2105850012211310592/img/RI9K88Y6fpb5g_qP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RSIHub统一评测Agent自进化方法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-29 11:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在 Agent 自进化的方法越来越多：<br><br>有的改 Prompt，有的改 Skill，有的改 Tool，也有的直接改 Harness。<br><br>问题是，它们到底谁更有效，其实一直很难公平比较。<br><br>因为很多论文都会自己搭一套执行环境、评测方式和搜索流程。分数都在涨，但底层条件不同，很难知道提升到底来自方法本身，还是实验环境。<br><br>这篇 RSIHub 做的，就是给 Agent 自进化搭一套统一的「实验台」。<br><br>它把执行环境、Evaluator、数据切分、版本管理和恢复机制都统一起来，不同 evolution 方法只负责决定：选哪个候选、怎么看轨迹、改什么、留下什么。<br><br>作者把 AHE、Hyperagents、A-Evolve、GEPA 这几类自进化方法全部搬进同一套框架，在 Terminal Bench 2 和 τ³ Banking 上统一比较。<br><br>结果在 Terminal Bench 2 上，MiniSWE 最高从 56.2% 提升到 69.7%，涨了 13.5 个百分点。<br><br>但换成更强的 Codex，最大提升只有 2.2 个百分点；到了 τ³ Banking，方法排名又重新变化。<br><br>甚至有些方法整体分数提高了，held-out split 反而退步。<br><br>这也说明，Agent 自进化现在可能很需要这种公共实验台。<br><br>大家已经很会让 Agent「改自己」了。<br><br>接下来需要判断它到底真的学会了，还是只是把当前环境调得更顺。<br><br>📎 arxiv: <a href="https://arxiv.org/abs/2610.32253" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.32253</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVxKtrrX0AA8N_w.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Agent刷爆GitHub流水线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ohayou792 · 2026-10-29 14:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">笑死了，AI 造的屎，快把 GitHub 拉满了。<br><br>GitHub 刚宣布要紧急扩容 400 万个 CPU 核心和 160 PB 存储。<br>9 月单月 Commit 飙到了 74 亿次，整整是去年的 5 倍。<br><br>今年 GitHub 动不动就挂，90 天可用性一度掉到 84%，之前还以为是微软运维拉胯，<br>现在破案了：全是这帮无脑 Agent 害的。<br><br>人写代码好歹在本地测通了才推，现在的 Agent 是改个空格推一次，报错了换个变量推一次，疯狂跑 Actions 流水线试错。一晚上正经功能没憋出来几个，git log 刷出几十页。<br><br>最恶心的是，真人要提个正经 PR，流水线排队还要排在几万个死循环重试的 Agent 屁股后面。<br><br>天天吹 AI 提高生产力，代码质量没见提升多少，先把平台给拖垮了，倒逼微软买 400 万核服务器去擦屁股。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Beacon用Jev沉淀Agent记忆库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bkdgiffug · 2026-10-29 08:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">JEV 这段时间风头正劲，可真要说把它用在刀刃上的，还得数 Beacon——总算有人愿意踏实做事，不是围着概念打转。<br><br>@asymptotelabs 把 Beacon 开源了，这是个能自我进化的 agent 记忆层。<br><br>它解决的事很具体：你在 Cursor、Claude Code、Codex、OpenCode 等 20 多个工具里留下的会话，它全给你连起来，再用 Jev 以低成本挑出真正有价值的运行，变成能反复用的技能。<br><br>agent 跑起来往往又乱又费，Beacon 先把这些都收着，由 Jev 判断哪些该留、哪些该丢，现在已经从跨 5 个框架里翻出 579 个会话。<br><br>每跑成一次，后面的 agent 就更聪明一些。顺手给个 star：<br>🔗 <a href="https://github.com/Asymptote-Labs/agent-beacon" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Asymptote-Labs/agent-beacon</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVtIgkfbsAAkvC8.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Diagram-design生成知识图表</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wanerfu · 2026-10-28 12:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近发现一个特别适合做「知识可视化」的 Skill：diagram-design。<br><br>已经有近 6 万 Stars。<br><br>它干的事很简单：<br><br>把长文、流程和关系，做成一张专业好看的图表。<br><br>对我这种内容创作者来说，主要用在 6 个地方：<br><br>01｜给文章配专业插图<br>02｜做 PPT 和分享演示的素材<br>03｜把长内容压成一张适合传播的图<br>04｜学一门复杂的新知识<br>05 ｜梳理项目和工作流程<br>06 ｜做工作汇报<br><br>diagram-design Skill 开源库：<a href="https://github.com/cathrynlavery/diagram-design" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cathrynlavery/diagram-design</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsQrnnbkAAyVWJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen4系列四款模型即将发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiangkoumo_ · 2026-10-29 18:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Qwen4 系列要来了。10 月 29 日，John T Davies（@jtdavies）从阿姆斯特丹现场发了张演讲照片，大屏幕标题显示「Qwen4 Series Coming Soon」<br><br>幻灯片列出了四款模型：Qwen4-Max、Qwen4-Flash、Qwen4-Plus 和 Qwen4-27B。原帖引用 CTO 的原话「下周」（next week），没有给出具体日期<br><br>不过除型号名称外，这张图和原帖并没交代架构与参数细节，也没说明 27B 是否开放权重、四款是否同时上线</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVyuKwRaMAANKpw.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

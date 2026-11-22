@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月17日 05:31">
+<title>AI技术雷达 · 10月17日 05:31 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude Code 三模型分工降本</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Glimpse 视觉推理查游戏bug</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;magpie 精简系统提示词省token</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;MAI-Base-2 预训练2.8T参数</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 三模型分工降本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @laobaishare · 2026-10-16 17:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这可是真干货<br><br>Anthropic 刚分享了 Claude Code 的一个超好用技巧。<br><br>思路是：同时用 Sonnet、Haiku 和 Opus 5.5，各干各最擅长的事。<br><br>效果更好，token 还省很多，因为每个任务都交给了合适的模型。<br><br>只要这样启动 Claude Code：<br><br>claude --advisor opus --subagents haiku<br><br>逻辑是这样的：<br><br>→ Sonnet 5.5 负责主持会话、写代码<br>→ Haiku 5.5 并行去翻文件和文档<br>→ Opus 5.5 当顾问，只管重要决策<br>→ 不需要 Opus 的任务就不占用它的上下文<br><br>只有要审计划、卡在反复报错上，或者收尾前想确认没漏东西时，才叫 Opus 出场。<br><br>Sonnet 干活，Haiku 探路，Opus 把关。<br><br>🔖 存一下，会用得上。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2111022588202016768/pu/img/y5QweWyvLDQaaSGJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Glimpse 视觉推理查游戏bug</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Saccc_c · 2026-10-17 01:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Jev过后，强烈建议大家狠狠关注这个刚发布的大模型Glimpse，成功帮助我在小王子游戏开发和维护阶段大幅提高bug排查效率，绝对的vibe coding开发验收神器！！<br><br>该模型由Elorian AI（@ElorianAI）打造，主打视觉理解与推理，这意味着其能最原生、最直接的理解图片和视频中各元素的位置、结构与空间关系，并以此来分析问题<br><br>这次我有幸提前拿到了 Glimpse 的内测机会。结合当下的场景，我第一时间就想到用它来检查小王子游戏中的各种潜在 bug：只要提供实际游玩的录屏，Glimpse 就能根据画面判断游戏设计是否合理，并为我梳理出各类潜在bug<br><br>这极大程度地解决了我在开发维护阶段「验收容易遗漏」的痛点<br><br>因为一直是我一个人测试游戏，难免会漏掉一些 bug；而且我在实践中发现，就算用 Astra、Opus 做验收审查，也总有部分细节问题难以发现<br><br>而 Glimpse 凭借超强的视觉推理能力，基本能一次捕获录屏中绝大部分细节问题，并按视频时间戳清晰罗列出来，方便我逐一核验<br><br>下面视频中，我也用酒馆章节的实机画面做了实测，效果真的惊艳！<br><br>在没有任何游戏上下文的情况下，Glimpse 梳理出的bug问题是 Astra 的 3 倍。更实用的是，点击时间戳就能在右侧直接跳到对应画面查看<br><br>Glimpse现在也开放了API，我们完全可以将其接入Codex、CC来完善开发后的验收审查流程<br><br>当然，除了 vibe coding 验收，我认为 Glimpse 还非常适合视频生成、图片生成等视觉相关的场景：借助强大的多模态理解能力，帮助规范和约束提示词，降低 AIGC 视频和图片生成的抽卡概率！从商业角度看，完全值得大家关注起来！！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111145864135847936/img/NWeZFryCQ9NNP03r.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUxMAC7bwAA2c_c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Andrew M. Dai <span style="font-size:12px;color:#999999;font-weight:400;">@AndrewDai</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">多年来一直看着模型在单张图片上表现优异，却在任何移动或改变角度的内容上完全失手。今天我们要解决这个问题。<br><br>立即体验 Glimpse，这是我们的第一个视觉思考模型，在关键的公开视觉推理基准测试上，与 Astra 相比具有竞争力的前沿性能。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.<br><br>Try Glimpse now, our first visual thinking model with competitive frontier performance compared to Astra on key public visual reasoning benchmarks.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111141984752779264/img/LLunb7OFLSU4Q606.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>magpie 精简系统提示词省token</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yetone · 2026-10-17 03:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">magpie 的 Claude 订阅为什么更费 token？这次改了什么、省了多少：<br><br>以前：magpie 用真的 Claude Code 跑你的请求。每个请求都带着 Claude Code 自己的系统提示词，你 agent 的指令只能塞进第一条用户消息里。等于每次请求都多付一份 Claude Code 的提示词，约 1K token。<br><br>现在：设置里新增「精简 Claude 系统提示词」开关（默认关）。打开后，Claude Code 启动时用 --system-prompt-file 把你 agent 自己的指令作为系统提示词，替换掉 Claude Code 那一份，第一条消息只剩对话本身。<br><br>真实订阅实测（Sonnet 5.5）：<br>· 每个请求固定省约 0.9–1.2K token<br>· 轻量聊天客户端，3 轮：输入 10,048 → 6,580 token（−35%）<br>· claude -p 这种自带大提示词的客户端，4 个请求：85.4K → 81.9K（−4%）<br><br>客户端自己的提示词越小，省得越多。注意：发请求的仍是真的 Claude Code，但不再带它自己的提示词，看起来没那么像 Claude Code 本身，账号风险请自己权衡。下个版本发布。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MAI-Base-2 预训练2.8T参数</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Kay2289123 · 2026-10-17 01:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">微软这篇讲 3T 级模型预训练的技术博客，真的值得认真看，很少有人愿意把这么大的模型到底怎么训，讲得这么细、这么清楚。链接我放在后面<br><br>这次的模型叫 MAI-Base-2，由微软 MAI 团队自主训练，总参数 2.8T，每个 token 激活 80B。目前完成了预训练，后训练还在进行<br><br>几个我觉得值得分享的点<br>&gt; 参数很多，每次只用一小部分。 总共 2.8 万亿参数，处理每个 token 时激活约 800 亿。这就是 MoE，按需要调用不同的“专家”，控制计算量。<br><br>&gt; 先用小模型探路，再放大。 他们先训练一系列小模型，推算大模型的结果。连数据重复学几遍，都要和正式训练对齐。最后实际的训练误差和提前预测的非常接近，这个我觉得很厉害。<br><br>&gt; 怎么调参，也摸出了规律。 比如学习率，可以理解成模型每次更新参数时迈多大一步。他们根据训练量、训练步数去推算，再到更大的模型上验证，减少正式训练时的试错<br><br>&gt; 模型越大，训练稳定性越重要。 这次用了 Muon 优化器，还加了激活梯度裁剪，减少异常更新的干扰。后面这项改动很有意思，模型越大，带来的效率收益反而越明显。<br><br>&gt; 从预训练就开始学图像。 总训练量是 50T token，其中约 9T 来自多模态数据，是原生多模态模型。<br><br>原链接：<a href="https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUxLcakbIAAaDAu.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Mustafa Suleyman <span style="font-size:12px;color:#999999;font-weight:400;">@mustafasuleyman</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们现在在 3T 参数权重级别上拥有最先进的预训练基础模型，完全在 MAI 内部构建。<br><br>后训练结果即将发布——敬请期待！<br><br>技术博客文章中有大量细节。<br><br><a href="https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We now have state-of-the-art pre-trained base models in the 3T-parameter weight class, built entirely in-house at MAI.<br><br>Post-training results coming soon -- stay tuned!<br><br>Lots of details in our technical blog post.<br><br><a href="https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek 免费进OpenCode</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-17 05:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Deepseek v4.1  Flash和 GLM-5.3-Flash 已经可以在 OpenCode 免费使用了<br><br>赶紧上车，享受一下原本需要上万美金本地部署才能获得的配置吧</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenCode <span style="font-size:12px;color:#999999;font-weight:400;">@opencode</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">DeepSeek V4.1 Flash 现已在 OpenCode 中免费提供。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">DeepSeek V4.1 Flash is now free in OpenCode</p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

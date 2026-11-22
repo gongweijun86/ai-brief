@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月27日 20:12">
+<title>AI技术雷达 · 10月27日 20:12 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;墨问Bots公测支持多Bot长期记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Higgsfield年化收入达10亿</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;百度OCR 2让长文档解析开销恒定</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;skill-diet为Skill减重</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Repo2RLEnv生成RL环境</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;uzu让本地LLM推理提速4倍</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>墨问Bots公测支持多Bot长期记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chijianqiang · 2026-10-27 20:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><a href="https://note.mowen.cn/detail/VRcGn9nWbEWKX1bt-4jmA" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://note.mowen.cn/detail/VRcGn9nWbEWKX1bt-4jmA</a><br><br>墨问 Bots 公测版本上线：<br><a href="https://pub-sdn-001.mowen.cn/mo/release/mo-agent/Mowen-0.6.0.dmg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://pub-sdn-001.mowen.cn/mo/release/mo-agent/Mowen-0.6.0.dmg</a><br><br>墨问 Bots 可以做的事情：<br><br>1、创建你的 Bot，为每个 Bot 设置不同的模型和思考等级，Bot 会根据对话自动选择思考等级回复问题和做任务，最高思考等级是用户设定的那个。<br><br>2、你可以和 Bot 一直对话，完成任务，不需要像 Agent 那样切换会话，Bot 会智能地管理你的长期上下文和记忆。<br><br>3、多个 Bots 之间可以通讯，用户可以让 A 通知 B、C 做自己擅长的任务。甚至，你可以为你的 Bots 们设置一个 CEO。<br><br>4、可以拉群，设定群负责人，你和你的 Bots 们就可以在群里做各种各样的协作了。我有日常交流群，咖啡群，Vibe Coding 群和产品群。我可以让 Bot 通过 Herdr 驱动 Codex 和 Cursor 做编程任务，可以让不同模型的 Bot 为我做产品调研，也可以讨论如何制作一杯美味的瑰夏咖啡。<br><br>你会发现这和使用单一模型是很不一样的，不同的视角会在讨论中自然呈现，非常有意思。<br><br>5、可以用自然语言为 Bots 设定自动任务，比如监控 tibo 的重置消息，每隔三小时看一下墨问动态，工作日定时看盘等等。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVorb2-bEAArgjf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVoriulaAAAXi_c.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVorlLwb0AALSCg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Higgsfield年化收入达10亿</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-27 19:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 视频现在卷得这么厉害，没想到已经有人把它做成了年化收入运行率超 10 亿美元的生意。<br><br>这家公司就是 Higgsfield，上线才 18 个月，最近又宣布获得 NVIDIA、TCV 等投资方的支持。<br><br>我觉得它的商业化思路挺值得研究。<br><br>Higgsfield 把不同的 AI 图片、视频模型和创作工具整合到一起，让品牌和广告公司能够批量生产商业素材。<br><br>比如一个品牌只需要提供一套广告创意，就能快速生成适配不同语言、市场和渠道的广告内容，官方称最多可以扩展到 100 个版本。<br><br>而广告素材需要不断测试、修改和更新，这就带来了持续使用 AI 生成工具的需求。<br><br>这可能是 AI 视频商业化很有潜力的一条路。<br><br>现在大家都在关注哪个视频模型生成得更好，但 Higgsfield 让我们关注另一件事：谁能率先把 AI 视频真正融入企业的日常工作流，让客户愿意持续付费。<br><br>当然，10 亿美元是近期收入推算的年化运行率，并非过去一年的实际收入。<br><br>原文：<a href="https://higgsfield.ai/blog/higgsfield-series-b-extension-tcv-nvidia" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://higgsfield.ai/blog/higgsfield-series-b-extension-tcv-nvidia</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot日均3亿token</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-10-27 19:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Grok Bot 经过我的实测， 100 美元的 X 订阅平均每天上限消耗 3 亿 token。<br><br>我的 100 美元的 X 订阅套餐第一周跑完了，周限额用掉了 43% 左右，我每天大概跑 1.2 亿 token，所以差不多平均一天上限 3 亿。<br><br>这周我是收着用的，看来我每周的余量还很多，可以撒开跑了。<br><br>按照我的计算，200 美元订阅套餐平均每天上限是 12 亿 token，对个人使用完全够了。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>百度OCR 2让长文档解析开销恒定</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-27 19:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">百度开源 Unlimited OCR 2：超长文档解析，注意力开销尽量不随页数涨<br><br>Unlimited OCR 2 是面向「几十到几百页」文档的开源 OCR / 版面解析模型，3B/A0.5B 的 MoE 模型架构：用 SR-SWA 把文本–视觉注意力压到固定大小的工作参考集，再配合按页分块解码，让超长文档能在有限上下文里跑完，并声称逐步解码的延迟和显存几乎不随文档变长而涨。<br><br>开源模型：<a href="https://huggingface.co/baidu/Unlimited-OCR-2" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/baidu/Unlimited-OCR-2</a><br><br>相对 v1 改了什么<br>v1（R-SWA）已能做多页端到端解析，但论文写明输入大约卡在 40 页，也因此没上 MarathonDocBench。v2 把解码器注意力升到 SR-SWA（Sparse Reference Sliding Window Attention），并加上 Unlimited-Horizon Decoding；骨干仍是 DeepEncoder + MoE 解码器一路，从 v1 权重再训。口号从「长程」推到「不限程」。<br><br>SR-SWA 在做什么（技术报告口径）<br>长文档会让文本–视觉注意力很贵。R-SWA 管住了局部交互，但远端视觉 token 仍会随页数涨。SR-SWA 的做法是：把交互压进固定容量的工作参考（README 举例 512 tokens）。大致两步：Page Gate 先按页收窄候选；Token Sieve 再对块做摘要打分，用 α-entmax 稀疏路由，只保留 top-k 远端块加局部窗口。解码侧按页切块，页边界重叠 1 页并复用 KV 尾部，避免超长时显存爆掉。作者称百页量级上，逐步速度相对 Full Attention 约 7.0×、相对 R-SWA 约 5.6×。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVog5WtaQAAa5of.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Baidu Inc. <span style="font-size:12px;color:#999999;font-weight:400;">@Baidu_Inc</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Unlimited OCR 2 来了，而且它是开源的。📖 ✨<br><br>更长的文档可能意味着大量的注意力计算。我们的新 SR-SWA 机制通过将文本-视觉注意力交互浓缩为一组固定大小的工作参考来控制这种情况。<br><br>以下是它提供的能力：<br>- 几乎任意长度的文档解析，且在有限的上下文窗口内<br>- 随着文档变长，每步解码延迟和内存占用几乎保持不变<br>- 在 MPDocBench 和 MarathonDocBench 上达到最先进的性能，涵盖从几十页到几百页的文档<br><br>在此查看模型 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Unlimited OCR 2 is here, and it's open source. 📖 ✨<br><br>Longer documents can mean a lot more attention computation. Our new SR-SWA mechanism keeps that in check by condensing text-visual attention interactions into a fixed-size set of working references.<br><br>Here's what it delivers:<br>- Document parsing at virtually any length, within a finite context window<br>- Nearly constant per-step decoding latency and memory footprint as documents grow longer<br>- State-of-the-art performance on MPDocBench and MarathonDocBench, covering documents from dozens to hundreds of pages<br><br>Check out the model here ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVmbZoiakAAtEgn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVmbZptagAAcnGm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>skill-diet为Skill减重</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-27 17:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">[开源 Skills 推荐] skill-diet 给 Skill 减重：用评测保证「更瘦但不更差」<br><br>skill-diet 是一个管其他 skill 的 meta-skill：一边把臃肿 SKILL.md 压薄并校对工具是否过时，一边给后续每次改 skill 立规矩；瘦身版只有在「旧 skill / 新 skill / 无 skill」同任务评测里至少不输才会留下。作者 @nicopreme 测试在真实 skill 上可砍 70–80% token，且测出文档里已失效的命令。<br><a href="https://github.com/nicobailon/skill-diet" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nicobailon/skill-diet</a><br><br>Agent 每次用 skill 都会读完整 SKILL.md。常见冗余是：多数任务用不到的细节、模型本就会的常识、写给人看的说明、可用一条原则代替的长列表；教 CLI/API/SDK/MCP 的 skill 还会抄一份工具手册，工具一变就过期。让 agent「更新一下 skill」通常只会越写越长。<br><br>它做了两件事<br>· Put on a diet：重写、修与工具不符之处；只有评测过关才保留瘦版。<br>· Keep lean：之后每次增补都先过一套门槛，避免教训和代码变更把体积又养回来；相对上次 diet 大约涨 10% 就要再做一轮。<br><br>可以直接说：put the deploy skill on a diet / is this skill still accurate for the current CLI? / add this lesson to …。<br><br>分层：事实放在「刚好够用」的最低层<br>· skill description：每个场景一条触发，几乎每个会话<br>· SKILL.md：几乎每任务都要的规则，启用该 skill 时<br>· references/：少数任务才要的细节，点到该场景时<br>· 工具自带 help：flag、合法值、示例，选到那条命令时<br>· 工具回复 / 报错 / checker：正确名、修法、下一步，调用出错或猜错时<br><br>教工具的 skill 还多两步：精确字段名留在工具侧；机械错误优先靠更清晰报错、测试或 linter，而不是再写一段 prose。只用人工触发的 skill 可标 user-only，避免 description 每会话白占配额。<br><br>一次 diet 在做什么<br>测体积与典型任务加载量 →（若教工具）用运行或源码行证明 skill↔工具不一致；从 session log 找高频调用、只把高频写全；看 agent 是否真打开 skill，少打开则把规则下沉到工具报错；必要时裁自家工具 schema（schema 每请求都带）→ 砍模型已知与仅人类需要的文字 → 同任务跑旧 / 新 / 无 skill，瘦版不优于「随机波动可解释」就失败。命令优先写成 agent 会敲的 usage lines（作者给的相对代价：表 1.5×、TS 类型 1.6×、JSON Schema 2.8×、OpenAPI 4.7×）。<br><br>之后每次改 skill：停在第一个能处理的步骤<br>· 先修工具（报错 / check），别堆文。<br>· 新会话不写也会对，就别加。<br>· 改已有那一行，别另起一段。<br>· 放到仍「来得及」的最低层。<br>· 写规则不写故事（故事进 commit）。代码改了 skill 依赖的名字或行为，同一次变更里改 skill；commit 记前后体积。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVoP2a3awAAl6u0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Nico Bailon <span style="font-size:12px;color:#999999;font-weight:400;">@nicopreme</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我一直在使用 &quot;skill-diet&quot;，一个用于精简 agent 技能并保持其正确性的技能。<br><br>大多数技能加载的文本远超任务所需，而且有些部分常常过时。随着 AI 更新技能，这个问题会随时间变得更加严重。<br><br>skill-diet 会裁剪模型在无需被告知时已经执行的内容，将很少需要的细节移到仅在需要时才读取的文件中，并修复与工具不再匹配的部分。然后它会用旧技能、新技能和无技能分别运行相同的任务，只有当 agent 表现至少一样好时才保留新技能。<br><br>在我自己的技能上：token 减少了 70-80%，结果相同。<br><br><a href="https://github.com/nicobailon/skill-diet" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nicobailon/skill-diet</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I've been dogfooding &quot;skill-diet&quot;, a skill for slimming down agent skills and keeping them correct.<br><br>most skills load far more text than a task needs, and some parts often go stale. it also gets worse over time as AI updates skills.<br><br>skill-diet cuts what the model already does without being told, moves rarely needed detail into files it only reads when needed, and fixes what no longer matches the tool. then it runs the same tasks with the old skill, the new one and no skill, and keeps the new one only if agents do at least as well.<br><br>on my own skills: 70–80% fewer tokens, same results.<br><br><a href="https://github.com/nicobailon/skill-diet" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nicobailon/skill-diet</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114975644673265664/img/gWAlgFipd5ORpEbV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Repo2RLEnv生成RL环境</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-10-27 17:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Repo2RLEnv（Hugging Face 开源）和AgentEnv Framework（Scale AI 开源）从不同角度来实现RL环境。<br><br>Repo2RLEnv是输入一个 GitHub 仓库，它自动从已合并的 PR、commit 历史中提取任务，生成完整的 Harbor 格式环境（包括沙盒、指令、私有验证器）。验证器直接跑仓库自己的测试用例打分。<br><br>AgentEnv Framework（Scale AI 开源）：提供标准化接口定义环境（MCP 工具、沙盒状态）、任务（步骤 DAG）和评分逻辑。可以用插件扩展，把真实应用或模拟工作场景打包成可重复训练的环境。<br><br>一些垂直领域可以用AgentEnv Framework这类框架定制RL环境，也会有领域（或是公司）的Repo2RLEnv，根据领域一些特性，工程师做出类似Repo2RLEnv类工具，自动编译出领域的RL环境。这都对传统的数据标注类业务来讲大大的提升了效率，所以硅谷最近出了很多非常小的RL环境团队，大部分都是非常小，但收入很好的。他们就在往这种方向上靠拢。<br><br><a href="https://github.com/scaleapi/agentenv-framework" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/scaleapi/agentenv-framework</a><br><a href="https://github.com/huggingface/Repo2RLEnv" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/huggingface/Repo2RLEnv</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Soulgent做Agent办公室</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-27 17:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发现一个很有创意的开源项目：Soulgent，让你的 AI Agent 真正拥有自己的办公室！ 🏝️<br><br>如果你同时运行几十个 Claude Code、Codex 或 WorkBuddy 会话，如何快速知道谁在工作、谁已完成任务、谁正在等待你的指令？<br><br>Soulgent 直接把这些 Agent 变成可视化的虚拟角色！<br><br>它最有趣的功能是：<br><br>🏝️ 海景办公室：不同 Agent 团队分布在不同岛屿，各自在工位上工作<br><br>🚶 动态交互：Agent 完成任务会走向沙发，遇到需要人工决策的问题就走到你的桌前排队敲门<br><br>🤖 子 Agent 可视化：主 Agent 派出的子代理也会出现在工位旁，展示执行状态<br><br>📱 手机远程交互：支持通过 iPhone 网页应用查看状态，并配合 Orca 回复 Claude Code 会话<br><br>🖥️ 多视图管理：提供海景办公室、普通办公室和任务状态面板<br><br>项目基于 macOS，原生应用开源，支持本地部署。<br><br>它的价值不只是好看，而是让多 Agent 协作从一堆终端窗口变成直观、可管理的虚拟团队！<br><br>GitHub：<a href="https://github.com/Ericcc0321/soulgent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Ericcc0321/soulgent</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>最终一致性先为每屏定读旧规则</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @milan_milanovic · 2026-10-20 14:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">最终一致性 bug 在&quot;最终&quot;之前就开始了<br><br>当你读到&quot;最终一致&quot;时，通常听起来它只会有一个小延迟。这意味着当写入停止时，副本将会追上数据。<br><br>但问题是，在此之前会发生什么呢？<br><br>以下就是发生的情况：<br><br>𝟭. 𝗥𝗲𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗹𝗮𝗴（复制延迟）<br><br>主节点在每个副本拿到数据之前就确认了写入。从慢副本的读取会返回旧值。<br><br>𝟮. 𝗥𝗲𝗮𝗱 𝘆𝗼𝘂𝗿 𝘄𝗿𝗶𝘁𝗲𝘀（读己所写）<br><br>写入之后，读取携带该版本。落后的副本需要等到追上为止。<br><br>𝟯. 𝗖𝗼𝗻𝗳𝗹𝗶𝗰𝘁 𝗿𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻（冲突解决）<br><br>当多个节点接受写入时，两个节点可能在同步之前接受不同的写入。最后写入胜出（Last write wins）会保留一个并 𝗱𝗿𝗼𝗽𝘀 𝘁𝗵𝗲 𝗼𝘁𝗵𝗲𝗿 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿（在没有报错的情况下丢弃另一个）。合并（merge）则会保留两者。<br><br>𝟰. 𝗤𝘂𝗼𝗿𝘂𝗺（法定人数）<br><br>有 3 个副本时，每次写入等待 2 个，每次读取询问 2 个。因为 2 + 2 &gt; 3，每次读取至少能到达一个拥有已确认写入的副本。<br><br>𝟱. 𝗛𝗶𝗻𝘁𝗲𝗱 𝗵𝗮𝗻𝗱𝗼𝗳𝗳（暗示移交）<br><br>当一个副本宕机时，另一个节点暂存其写入，等副本恢复后将其投递过去。<br><br>𝟲. 𝗥𝗲𝗮𝗱 𝗹𝗲𝗽𝗮𝗶𝗿（读取修复）<br><br>读取发现某个副本已过时，便将最新值写回给它。<br><br>在我们添加读副本之前，应该逐个功能地决定该读取是否允许是旧的。产品列表可以稍有延迟。用户刚保存的个人资料则不行。<br><br>在第一个副本上线之前，把每个屏幕的这个决定写下来。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Eventual consistency bugs start before &quot;eventually&quot;<br><br>When you read &quot;Eventually consistent&quot;, it usually sounds like it will happen with a small delay. And this means that when writes stop, replicas will catch up with the data.<br><br>But the question is what happens before this?<br><br>Here is what happens:<br><br>𝟭. 𝗥𝗲𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗹𝗮𝗴<br><br>The primary confirms a write before every replica has it. A read from the slow replica returns the old value.<br><br>𝟮. 𝗥𝗲𝗮𝗱 𝘆𝗼𝘂𝗿 𝘄𝗿𝗶𝘁𝗲𝘀<br><br>After a write, the read carries that version. A replica that is behind waits until it catches up.<br><br>𝟯. 𝗖𝗼𝗻𝗳𝗹𝗶𝗰𝘁 𝗿𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻<br><br>When more than one node takes writes, two of them can accept different writes before they sync. Last write wins keeps one and 𝗱𝗿𝗼𝗽𝘀 𝘁𝗵𝗲 𝗼𝘁𝗵𝗲𝗿 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿. A merge keeps both.<br><br>𝟰. 𝗤𝘂𝗼𝗿𝘂𝗺<br><br>With 3 replicas, we wait for 2 on every write and ask 2 on every read. Because 2 + 2 &gt; 3, every read reaches at least one replica that has the confirmed write.<br><br>𝟱. 𝗛𝗶𝗻𝘁𝗲𝗱 𝗵𝗮𝗻𝗱𝗼𝗳𝗳<br><br>When a replica is down, another node keeps its write and delivers it when the replica is back.<br><br>𝟲. 𝗥𝗲𝗮𝗱 𝗿𝗲𝗽𝗮𝗶𝗿<br><br>A read notices that one replica is stale and writes the newest value back to it.<br><br>Before we add a read replica, we should go feature by feature and decide if that read is allowed to be old. A product list can be a little behind. The profile a user just saved cannot.<br><br>Write that decision down for every screen before the first replica goes live.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVDcryIbEAA3aSx.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Limite-1B数学超27倍大模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @laobaishare · 2026-10-27 17:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">10 亿参数的模型，现在在数学上打赢了比自己大 27 倍的模型。<br><br>Limite-1B-Violetto 在 AIME 2026 上拿了 94.01 分，超过榜单上所有模型，包括 270 亿参数的 Qwen3.5。<br><br>HMMT 2025 年 2 月场拿了 91.35 分，仅次于 GLM 5.2。<br><br>在 ArXivMath 上也有 25.08 分，和 7530 亿参数的 GLM 5.2 的 56.67 分比还能打一打。<br><br><a href="http://x.com/paradigmainc/status/2102101878305698058" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/paradigmainc/status/2102101878305698058</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Paradigma <span style="font-size:12px;color:#999999;font-weight:400;">@paradigmainc</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Limite 1B - Violetto。<br><br>一个用于高频数学智能的模型。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Limite 1B - Violetto.<br><br>A model for high-frequency mathematical intelligence. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HSwVMBpWoAA3Nus.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>uzu让本地LLM推理提速4倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-10-27 17:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">本地 LLM 推理的重大突破！<br><br>这个新的推理引擎运行 LLM 的速度是 llama.cpp 的 4 倍：<br><br>我在一台基础款 M5 MacBook Pro 上用三个引擎运行了 Qwen3.5 9B：<br><br>- llama.cpp：22.0 tokens/s<br>- MLX：25.1 tokens/s<br>- uzu：92.1 tokens/s<br><br>下面的视频展示了三次运行的并排对比。<br><br>前两个数字并不意味着 llama.cpp 或 MLX 写得差。但它们都恰好卡在本地解码的一个硬性上限之下。<br><br>当 LLM 生成文本时，每个新 token 都需要完整地遍历一遍模型，而这一次遍历要从内存中读取模型的全部权重。<br><br>基础款 M5 的内存读取速度约为 153 GB/s。一个 4-bit 的 9B 模型大约重 5.2 GB。<br><br>所以每次遍历产生一个 token 的话，上限大约是 153 ÷ 5.2 ≈ 29 tokens/s，无论 GPU 算得多快。<br><br>uzu 突破了这个上限，它每次遍历产生多个 token 而非一个：<br><br>↳ 一个小的起草器（DFlash）一次性为接下来的 16 个位置提出候选。<br><br>↳ 一个微型适配器（Weaver，56.7M 参数）从左到右在候选中挑选，使猜测组成连贯的文本，并保留几个备选分支形成一棵树。<br><br>↳ 9B 模型在单次遍历中检查整棵树，并保留它同意的最长路径。主模型仍然决定最终输出中的每个 token。<br><br>GitHub 仓库：<a href="https://github.com/trymirai/uzu" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/trymirai/uzu</a><br><br>（别忘了给它点星 🌟）<br><br>在我的运行中，9B 模型每次遍历平均产生 7.5 个 token。普通解码恰好产生 1 个。<br><br>权重和内核也是围绕这一点设计的。uzu 提供自己的 4-bit 检查点，在 M5 芯片上它在 GPU 的 int8 矩阵路径上运行验证步骤。<br><br>uzu 是 Mirai Labs 的开源推理引擎，用 Rust 编写并带有 Metal 内核。它有 Swift、Python、TypeScript 和 Rust 绑定，因此同一个引擎可以在 Mac 或 iOS 应用内运行。<br><br>我在上面分享了 GitHub 仓库。<br><br>如果你想深入了解，我的联合创始人写了一篇详细分析，解释了为什么本地推理受内存限制以及 uzu 的投机解码如何突破这一限制。<br><br>请在下方阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Big win for local LLM inference!<br><br>This new inference engine runs LLMs 4x faster than llama.cpp:<br><br>I ran Qwen3.5 9B on a base M5 MacBook Pro with three engines:<br><br>- llama.cpp: 22.0 tokens/s<br>- MLX: 25.1 tokens/s<br>- uzu: 92.1 tokens/s<br><br>The video below shows all three runs side by side.<br><br>The first two numbers don't mean llama.cpp or MLX are badly built. But both are sitting right under a hard limit of local decoding.<br><br>When an LLM generates text, every new token needs one full pass through the model, and that pass reads all of the model's weights from memory.<br><br>A base M5 reads memory at about 153 GB/s. A 4-bit 9B model weighs about 5.2 GB.<br><br>So at one token per pass, the ceiling is roughly 153 ÷ 5.2 ≈ 29 tokens/s, however fast the GPU computes.<br><br>uzu gets past that ceiling by producing several tokens per pass instead of one:<br><br>↳ A small drafter (DFlash) proposes candidates for the next 16 positions at once.<br><br>↳ A tiny adapter (Weaver, 56.7M params) picks among them left to right, so the guesses form coherent text, and keeps a few alternative branches as a tree.<br><br>↳ The 9B model checks the whole tree in a single pass and keeps the longest path it agrees with. The main model still decides every token that ends up in the output.<br><br>GitHub repo: <a href="https://github.com/trymirai/uzu" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/trymirai/uzu</a><br><br>(don't forget to star it 🌟)<br><br>In my run, each pass of the 9B model produced 7.5 tokens on average. Ordinary decoding produces exactly 1.<br><br>The weights and kernels are designed around this too. uzu ships its own 4-bit checkpoints, and on M5 chips it runs the verification step on the GPU's int8 matrix path.<br><br>uzu is an open-source inference engine by Mirai Labs, written in Rust with Metal kernels. It has Swift, Python, TypeScript and Rust bindings, so the same engine runs inside a Mac or iOS app.<br><br>I shared the GitHub repo above.<br><br>If you want to dive deeper, my co-founder wrote a detailed breakdown of why local inference is memory-bound and how uzu's speculative decoding gets past it.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115010474458992641/img/iSTa6jrMF_uvAUrc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Akshay 🚀 <span style="font-size:12px;color:#999999;font-weight:400;">@akshay_pachaar</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2108246386538094592" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108246386538094592</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2108246386538094592" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108246386538094592</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

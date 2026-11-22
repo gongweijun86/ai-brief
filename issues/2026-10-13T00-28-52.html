@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月13日 08:27">
+<title>AI技术雷达 · 10月13日 08:27 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Muse Wonder 聚焦个人智能体</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Qwen3.5-9B 微调反超前沿模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;多智能体持久记忆增益微弱</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Drex 2.0 长上下文决策提速38%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Grok Bot 用单工具协议省上下文</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">16</span>&nbsp;&nbsp;GPT-6.1 默认上下文升至 50 万</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>温度0不保证贪心解码可复现</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chonghan_Liu · 2026-10-13 05:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">你说的 Temperature 设置成 0，那是最最最最基础的回答，三年前的回答，但这并不能保证你是用贪心算法的方式去把问题回答出来的。<br><br>首先你要看它是官方的 API 接口还是本地部署：<br><br>1. 官方的 API 接口：就算设置了 Temperature 为 0，你就算走了 Greedy 的贪心算法，但在不同的 Batch 里面，它的 Logprobs 还是会有不同的影响。<br>2. 本地部署：这会牵扯到更多的问题。你要保持相同的 Kernel，Batch Size 要为 1，Seed 数要相同，关掉 prefix caching，还有 GPU 的型号，以及各种所有的 Setting 都要完全一致</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Dr.R <span style="font-size:12px;color:#999999;font-weight:400;">@MichaelRan15</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">@Zen_with_AI 设置温度0就好了。这个有啥考的</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Muse Wonder 聚焦个人智能体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-13 08:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Meta 刚发了 Muse Wonder 系列模型，Muse Wonder 和 Muse Wonder Full。<br><br>Muse Wonder Full 的跑分比 Fable 5.1 和 GPT-6 还猛，模型在吉瓦级的 Prometheus 数据中心训练，预训练和强化学习两端都做了扩展。<br><br>继续押注个人超级智能，有四个主打能力，包括领域专业度，主动记忆，主动专注和前沿编程。<br><br>因为个人智能体要接触消息，日历和私人文档，Meta 重点训练了抵抗对抗性指令，以及谨慎处理隐私信息，对 CBRN 和网络攻击类滥用的防护也是加了码。<br><br>不过目前看社区的实测，3D 方面的表现很一般，应该是没有训练这部分能力。<br><br>价格上，Muse Wonder 每百万输入 token 为 4 美元，每百万缓存输入 token 为 0.20 美元，每百万输出 token 为 20 美元。<br><br>支持 100 万 token 上下文，可接收文本、图像、视频和音频输入，输出形式为文本。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUeCSjOa4AAs_-0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUeCUAkb0AA2Mpa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen3.5-9B 微调反超前沿模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @brian_armstrong · 2026-10-12 06:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们能够在 @coinbase 使用专有内部数据对一个开放权重模型（Qwen3.5-9B）进行微调，并且在一项专业任务（本例中是欺诈预防）上，它的表现超越了前沿模型，同时成本和速度都更优。<br><br>我认为我们会在公司内部看到更多这种模式。前沿模型是出色的通才。但你会越来越多地看到专才模型在更狭窄的任务上表现更优，无论是作为团队的一员，还是独立工作。<br><br>我们正在让内部员工轻松地微调模型。我们的内部工具链中甚至有一个技能，可以轻松地启动这些模型并开始训练：<br><br>&quot;/fine-tune-and-serve-llm I want to fine-tune Qwen for payments risk review. help me get started&quot;<br><br>我想象我们会有某些后端服务完全被这种新架构所取代。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We were able to fine tune an open weight model (Qwen3.5-9B) on proprietary internal data at @coinbase, and it out performed frontier models, at much lower cost and speed, for a specialized task (fraud prevention in this case).<br><br>I think we'll see more of this pattern inside companies. The frontier models are amazing generalists. But increasingly you'll see specialist models out perform on more narrow tasks, either working on teams, or by themselves.<br><br>We're making it easy to fine tune models internally for our employees. We even have a skill for it in our internal harness that makes it easy to spin these up and start training them:<br><br>&quot;/fine-tune-and-serve-llm I want to fine-tune Qwen for payments risk review. help me get started&quot;<br><br>I imagine we'll have some backend services that could be replaced entirely by this new architecture.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUYhjMnW8AAM-ty.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUYhnxrXoAA8WCz.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ESP32 五款型号选型指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Lonely__MH · 2026-10-13 08:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎉 斥巨资拿下新玩具 - ESP32！<br><br>AI + 硬件，大有可为😁<br><br>顺便科普下，ESP32 型号怎么选🤔<br><br>1. ESP32 经典版：生态最成熟，支持 Wi-Fi 与双模蓝牙，适合学习传感器和电机控制。<br><br>2. ESP32-C3：性价比之王。单核低功耗，完美替代 ESP8266，适合智能开关、LED 等基础物联网项目。<br><br>3. 🔥ESP32-S3：性能怪兽。双核带 AI 向量加速，玩转 AI 语音助理、摄像头识别和机器人的首选<br><br>4. ESP32-C6：智能家居未来。支持 Wi-Fi 6、Zigbee 和 Thread，专为 Matter 生态设计。<br><br>5. ESP32-P4：边缘计算旗舰。主打复杂屏幕交互与高性能视觉，不自带 Wi-Fi，需搭配其他芯片使用。<br><br>🔥挑选指南<br><br>- 新手入门直接闭眼入 C3<br>- 折腾 AI 语音和机器人必选 S3<br>- 搞全屋智能家居优先研究 C6</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUcjVBDbEAAvdi7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Lonely <span style="font-size:12px;color:#999999;font-weight:400;">@Lonely__MH</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">🔥不出意外，接下来 ESP32 这类产品要卖爆了<br><br>以前玩硬件的上手成本高、底层坑太多，把无数软件开发者挡在门外。<br><br>现在有了 AI 加持，门槛直接炸飞<br><br>AI + 硬件，其乐无穷<br><br>🙂<br><br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109149567531036672/img/l_wkb7hfanbgJ4JW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109149794015092736/img/0ivJ0eBe8EZL_h-t.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>多智能体持久记忆增益微弱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-10-12 21:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">必读论文，关于多智能体系统与持久记忆的有效性。<br><br>我们最近看到了许多通过持久记忆扩展多智能体系统的爆火案例。<br><br>这项工作对此进行了更深入的研究。<br><br>他们测试了一个三层链式智能体系统。<br><br>将长上下文工作分配到多个智能体上，可将每个查询的峰值 KV 缓存削减至 14.3 MiB，而单遍和 RAG 基线大约需要 35 MiB。<br><br>持久化的轨迹召回层增加了 0.368 MiB 的峰值缓存，准确率变化为 +0.015，其置信区间跨越零。<br><br>作者解释了原因。<br><br>单问题基准测试为每个条目提供各自的证据并独立评分，因此存储的轨迹没有什么有用的内容可供召回。<br><br>论文：<a href="https://arxiv.org/abs/2610.07782" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.07782</a><br><br>与论文对话：<a href="https://academy.dair.ai/papers/persistent-memory-in-multi-agent-llm-inference-what-it-costs-what-it-buys-and-wh-2610.07782" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/persistent-memory-in-multi-agent-llm-inference-what-it-costs-what-it-buys-and-wh-2610.07782</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Must-read paper on the effectiveness of multi-agent systems and persistent memory.<br><br>We have recently seen many viral examples of multi-agent systems scaled via persistent memory.<br><br>This work takes a closer look.<br><br>They test one three-tier chain-of-agents system.<br><br>Splitting long-context work across agents cuts peak KV cache to 14.3 MiB per query, against about 35 MiB for single-pass and RAG baselines.<br><br>The persistent trace-recall tier adds 0.368 MiB of peak cache and changes accuracy by +0.015, with a confidence interval that crosses zero.<br><br>The authors explain why.<br><br>Single-question benchmarks give each item its own evidence and score it independently, so stored traces have nothing useful to recall.<br><br>Paper: <a href="https://arxiv.org/abs/2610.07782" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.07782</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/persistent-memory-in-multi-agent-llm-inference-what-it-costs-what-it-buys-and-wh-2610.07782" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/persistent-memory-in-multi-agent-llm-inference-what-it-costs-what-it-buys-and-wh-2610.07782</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUb10UXbQAAXY-s.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Drex 2.0 长上下文决策提速38%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Sumanth_077 · 2026-10-13 02:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">决策模型在长上下文方面开始认真发力了！<br><br>Nace 刚刚发布了 Drex 2.0，一个 35B-A3B 的 MoE，推理时激活约 3B 参数。<br><br>与 Jev 一样，Drex 是为有界决策而非自由形式生成而构建的。你给它一个状态和一组可能的结果，它就返回这些选项上的概率。<br><br>这次发布中特别突出的是，他们将这一设置推到了更长的输入上。<br><br>Drex 2.0 在 Nace 的 Decision Index 上得分为 61.0，而 Jev 为 58.0，并且 Nace 报告在 32K–128K 输入上，推理速度比 Drex 1.5 快了最高 38%。<br><br>即使背后的上下文非常庞大，决策本身仍然可以很小。<br><br>一个智能体可能只需要决定是否继续、停止、调用工具或升级处理。但正确做出这个决策可能依赖于一段很长的执行轨迹、一份大型文档或大量的工作流历史。<br><br>这就是长上下文决策模型变得更有用的地方。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Decision models are starting to get serious at long context!<br><br>Nace just released Drex 2.0, a 35B-A3B MoE, with around 3B parameters active during inference.<br><br>Like Jev, Drex is built for bounded decisions instead of free-form generation. You give it some state and a set of possible outcomes, and it returns probabilities over those options.<br><br>What stands out in this release is how far they’re pushing that setup into longer inputs.<br><br>Drex 2.0 scores 61.0 on Nace’s Decision Index vs. 58.0 for Jev, and Nace reports up to 38% faster inference than Drex 1.5 on 32K–128K inputs.<br><br>The decision can still be small even when the context behind it is huge.<br><br>An agent might only need to decide whether to continue, stop, call a tool, or escalate. But making that decision correctly can depend on a long execution trace, a large document, or a lot of workflow history.<br><br>That is where long-context decision models become much more useful.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109715974777884673/img/Vu9S9CVn75N8-VVk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Nace AI <span style="font-size:12px;color:#999999;font-weight:400;">@NaceAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重推出 Drex 2.0——我们最快、最智能的决策模型！<br><br>3B 激活参数，超快推理。<br><br>试用 Drex 2.0：<a href="https://nace.ai/developers" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nace.ai/developers</a><br>• 在 32K–128K 输入上比 Drex 1.5 快最多 38%<br>• $0.06 / 1M 输入 tokens<br>• 运行在 @sgl_project 上<br>• $25 注册奖金<br><br>@FireworksAI_HQ 的 FireAttention 首日支持<br>专用部署。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Drex 2.0 - our Fastest and Smartest Decision Model! <br><br>3B active parameters, super fast inference.<br><br>Try Drex 2.0: <a href="https://nace.ai/developers" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nace.ai/developers</a><br>• Up to 38% faster on 32K–128K inputs vs. Drex 1.5 <br>• $0.06 per 1M input tokens<br>• Runs on @sgl_project <br>• $25 Sign Up Bonus <br><br>Day 0 support from @FireworksAI_HQ’s FireAttention<br>dedicated deployment.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUcq9WaaoAAX-36.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI Evals 评估方法口袋指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 08:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pocket Guide to AI Evals<br><br>@HamelHusain 把自己「Applied AI Evals」课程重要概念浓缩成了 13 张信息卡，做成了口袋指南，这个好，方便随时查看！<br><br>信息卡：<a href="https://hamel.dev/notes/llm/evals/flashcards/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hamel.dev/notes/llm/evals/flashcards/</a><br><br>1. 误差分析：流程为收集 100+ 条多样 trace → 开放式编码写非结构化笔记 → 聚类归类 → 按频次排优先级，循环直到&quot;理论饱和&quot;（新数据不再带来新失败模式）。与邮件版相比，这张卡补充了一个实操细节：trace 需标注 pass/fail 和 失败模式。<br><br>2. 何时写评估：这是最容易被跳过的决策卡。先问&quot;误差分析中是否观察到该失败&quot;，没观察到就别写。观察到后看修复需要多少迭代：需要大量迭代的才值得投入昂贵评估（如 LLM 裁判）；小问题考虑用代码断言，或者干脆修掉就继续前进。评估是有成本的，ROI 为正才写。<br><br>3. 拒绝通用指标：ROUGE、BLEU、&quot;有用性/忠实度/语气&quot;分数这类通用指标应替换为应用专属指标，如&quot;日历排期失败&quot;&quot;邮件收件人错误&quot;&quot;未升级转人工&quot;。好指标的五条标准：对应观察到的错误、涉及值得迭代的非平凡问题、范围聚焦于具体失败、结果是二元的（pass/fail 而非 1-5 分）、可验证（LLM 裁判需有人类标签对照）。<br><br>4. 常见错误：三条，迷信&quot;自动评估魔法&quot;而不先看数据（off-the-shelf 指标因此失效）；用 LLM 裁判却不对照人类标签测量裁判本身，得到不可信的错位指标；全绿（100% 通过）不是好消息，往往说明评估已饱和或太简单，应持续补充困难用例。<br><br>5. 自动化评估的三种类型：代码断言（关键词匹配、确认工具执行等，快、便宜、确定性、可解释，能用则用）；LLM 裁判（处理代码无法覆盖的主观/细微标准，慢、贵、需验证校准，留给重要失败）；护栏 Guardrails（运行在请求/响应通路上，在失败触达用户前拦截，要求低误报率以免拦截正常响应，通常是小分类器或代码检查）。<br><br>6. 拒绝 Likert 量表：LLM 裁判用二元 pass/fail 优于 1-5 打分。理由：量表与领域专家对齐的成本高；标注者倾向选中间值逃避艰难判断；还容易诱发&quot;总体质量&quot;这种大而不当的范围。二元评分强迫做出明确决定，这恰好对应现实中的发布决策（够好/不够好），且在误差分析中更易应用。示例中把&quot;is_polite / scheduling / human_handoff&quot;拆成三个独立的 pass/fail 判定。<br><br>7. 如何信任 LLM 裁判：唯一办法是对照人类标签测量裁判。人类标注数据切三份：Train（~20%，从中挑选 few-shot 示例进提示词）、Dev（~40%，优化裁判）、Test（~40%，防过拟合的最终检查）。切分比例与 ML 不同，因为&quot;训练&quot;的只是提示词。报告指标时不要用 accuracy，在不均衡数据上有误导性，应分别报告 TPR 和 TNR，目标都在 90% 以上。<br><br>8. trace 采样策略：两个维度。探索方向，随机采样（永远与其他策略并行，用于发现未知问题）、聚类（按语义相似度分组，看是否暴露新错误）、数据分析（对延迟、轮次、工具调用数、token 数等做统计找离群点）、分类筛选（用现有评估或 LLM 预测性筛选问题 trace，需谨慎）。利用信号方向，用用户的显式反馈过滤 trace。<br><br>9. 合成数据：关键是结构化生成而非零样本生成。&quot;生成 50 个测试用例&quot;这种提示词只会产出雷同、泛化的输入。正确做法：定义关键维度（功能、用户画像、场景）作为提示词变量保证多样性；尽量用真实日志做种子，让模型显式注入变化（新约束、修改变量）制造贴近现实的边界情况；定义输出 schema 并大量生成后过滤；从简单查询起步，迭代增加约束和格式复杂度。<br><br>10. 用 trace 构造测试用例：阅读 trace 时在第一个（最上游的）错误处停下，上游失败通常更重要，这样才可控。针对主要失败收集 trace，做最小化复现（尽量少的轮次和复杂度）。核心技巧是 N-1 切分：收集最小化复现的错误 trace 数据集，用错误发生前 N-1 轮作为测试用例（前提是系统没有剧烈变动）。进阶：用 LLM 对用例做有效变形（改写用户提问）扩大覆盖；或用另一个 LLM 模拟用户（做好很难）。<br><br>11. 转移矩阵定位 agent 失败：多步 agent（Plan → Search → Code → Finalize）难以判断哪一步最常出错。做法：列出所有状态；以&quot;From 状态&quot;为行、&quot;To 状态&quot;为列建网格；每次失败归因于错误前最后一次成功转移，计入对应格子。网格会直观呈现失败热点（示例中 GenSQL→ExecSQL 转移积了 12 次失败，一眼可见）。源自 Bryan Bischof 的演讲。<br><br>12. 部署评估：按目标分三档。CI/CD（pre-merge，用精选测试用例 + 单元测试/LLM 裁判，失败则阻止合并）防止回归；在线监控（post-response 异步，对采样生产流量跑评估，失败触发告警）发现新失败、跟踪表现；护栏（pre-response 同步，覆盖 100% 实时流量，用单元测试/小分类器，失败则拦截响应、重试或降级）保障安全、拦截高影响错误。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109445699536584704/img/0OlznxqJw2zdMVAR.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Karpathy 拆解 AI 认知四层</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 09:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Andrej Karpathy 认为：人们对 AI 能力的认知，正在分裂成四个层级；越往里的人，看到的越不可思议<br><br>第一层：~60 亿人（约 75%），几乎没有接触过 LLM<br>第二层：~10–20 亿人（约 20%），偶尔用免费版 ChatGPT，视之为“更好的谷歌搜索”或写作助手「许多非技术背景的高管也停在这一层」<br>第三层：~2000 万人（0.2%），在数学与代码领域专业使用前沿模型，亲眼见到原本需数周甚至数月的大项目，现在一次提示就能由 agent 完成<br>第四层：~5000 人（约 0.00006%），能在内部接触最前沿系统：数千个 agent 协作数周，执行软件巨型项目、零日漏洞挖掘、网络攻防、发现新科学、推进数学前沿「人类的审阅速度已经跟不上产出」<br><br>漏斗为何形成？三个结构性原因<br>1. 影响力随问题规模扩展：你让 AI 做的事情越大、越有野心，感受到的能力差距就越大。用 AI 查菜谱和用 AI 建造复杂系统，看到的是两个完全不同的东西。<br>2. 能力的“锯齿状”：LLM 的能力分布极不均匀：在数字化、可验证、有明确经济价值的领域（代码、数学）最强，在模糊、主观、缺乏反馈信号的领域则弱得多。处于不同工作场景的人，摸到的是这把锯子的不同锯齿。<br>3. 访问权限分层：免费版 / 付费版 / 内部前沿系统，物理上就是不同的产品。绝大多数人终其接触到的，只是能力光谱的最底端。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZN4Y9bkAA1FHk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Andrej Karpathy <span style="font-size:12px;color:#999999;font-weight:400;">@karpathy</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">翻出这条四月份的推文，因为这种对 LLM 能力共识的差距正在*扩大*。它现在不再是&quot;两群人各说各话&quot;，而更像是一个尖锐的漏斗。<br><br>- 粗略估算大约有 60 亿人（约占人口的 75%）几乎完全没有接触过 LLM。<br>- 大约 10-20 亿人（约 20%）是免费版类 ChatGPT 产品的偶尔、非频繁使用者。这群人看到的是笨笨的聊天机器人，把它当作更好的 Google 搜索、写作辅助工具之类的。也许某个智能体会尝试帮你订机票。我有一些非技术朋友（我认为很合理地）说他们根本不太需要它。甚至许多数学与编程之外的专业人士也处于这个层次。例如，高管和许多其他职能的人大部分时间都在和别人交谈，所以虽然他们在理智上理解发生了什么，但仍然是二手的、有些抽象的。<br><br>- 现在我们进入数学与编程领域对前沿级 LLM 的专业使用。大约有 2000 万人（0.2%）亲眼看到，曾经需要他们花数周/数月完成的大型复杂项目，现在可以通过一个提示词由智能体完成。构建应用、复制应用、翻译应用、从二进制文件反编译应用……这一切都发生得非常快，就在最近——不到一年前，我还在手动写代码，把记住的计算机代码命令一个字符一个字符地敲进代码编辑器，偶尔按 Tab 来自动补全一小段代码。<br><br>- 最后我们来到大约 5,000 人（约 0.00006%），他们在内部可以接触到前沿级系统。外部世界已经看到了预览。看起来就像是成千上万个智能体在数周内协作进行软件超大型项目：铸造零日漏洞、以机器速度进行网络攻防、发现新的科学成果、推进数学的前沿。这些是行业中顶尖专业人士需要数年工作才能完成的事情。与此同时，人工审查和理解开始跟不上。例如，人们仍在对几个月前的 OpenAI-HF 事件进行&quot;考古&quot;。数学家们可能会花一段时间来仔细研究前沿数学领域的 722 篇手稿。<br><br>这个漏斗是由多种因素共同驱动的：<br>1. 影响力随野心、问题规模和时间跨度而扩大。一个只需要一段话回答的问题几乎不会给系统带来压力。你需要有一个你真正关心的大型、困难问题的储备库。这个方面驱动了漏斗的消费者/专业维度。<br>2. 系统的参差不齐（这一点我在别处写过很多）。能力在数字化、可验证且具有经济价值的领域达到峰值。这是因为 LLM 的能力源自于在精选的环境混合上，针对可验证奖励进行的强化学习，而这种混合是由收入潜力驱动的。这个方面主要驱动了漏斗的领域（例如数学与编程）维度。<br>3. 获取渠道。免费版、付费版、内部使用。<br><br>所以这就是当下的怪诞之处。普通大众大部分还没有与这些系统交互过。当他们接触时，看起来就是一个笨笨的聊天机器人。大多数专业人士仍然只看到适度的提升。而一小部分专业人士正在经历曲线趋近垂直时的眩晕。而这一切都在同时发生。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less &quot;two groups of people speaking past each other&quot; and more a sharp funnel.<br><br>- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.<br>- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&amp;code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.<br>- Now we get to professional use of frontier-grade LLMs in math&amp;code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.<br>- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the &quot;archeology&quot; of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.<br><br>The funnel is driven by a combination of factors:<br>1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.<br>2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&amp;code) dimension of the funnel.<br>3. Access. Free-tier, paid-tier, internal.<br><br>So this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 代码质量来自验证闭环</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 09:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">99% 的开发者写不出好代码 -- Addy Osmani 与 lauren 分享：代码质量从来不是写出来的，是验证出来的<br><br>两位分别来自 Anthropic 和 SpaceXSI 的知名开发者，一致认为：当 AI 让验证变得廉价，工程师的核心工作就从逐行写好代码、逐行审查代码，转变为设计验证闭环、并把个人品味沉淀为可复用的规则。<br><br># lauren 认为：「所有代码都是 slop」<br><br>Lauren 拆解了工程师对 AI 代码的普遍焦虑（&quot;slop 会污染我们漂亮的代码库&quot;），论证链条大致是：<br><br>1. Slop（劣质代码）从来都存在。人类写了几十年的代码库同样充满瑕疵，我们一直接受它；因为在嵌入式等任务关键领域之外，代码很少需要完美。<br>2. 大部分人对 slop 的真实定义其实是「不是我写的代码」。她坦承，包括她自己在内 99% 的开发者其实写不出、也说不清什么是「好代码」。<br>3. 她给好代码下了定义：正确、无 bug、运行快速且成本高效。好代码贵，是因为这三条性质过去无法被廉价地、形式化地保证。<br>4. 软件工程本来就一直在做交易：用 bug 换速度，靠测试和可观测性兜底，增量演进；她认为这是好事，因为软件天生是持续演化的有机体。<br>5. 结论：AI agent 无法写出「好代码」（那依然昂贵），但在规模上「平均而言好得多」，她用 &quot;much better on average at scale&quot; 精确地避开了「完美」的陷阱。最后补刀一句妙语：&quot;tldr 所有代码都是 slop；当然，我写的除外。&quot;<br><br># Addy 的回应：为什么「规模上的平均更好」成立<br><br>Addy 接过这句话并给出了解释机制——&quot;at scale&quot; 的规模来自验证，而 agent 让验证变得廉价：<br><br>· 过去让好代码昂贵的那些东西（测试、基准、规格说明、端到端运行）现在让 agent 顺手生成即可，边际成本趋近于零。<br>· 因此工程师的工作从「审查每一行 diff」转为「构建 agent 能自己跑的验证闭环」。他的原话：&quot;That loop is where quality comes from.&quot;（质量来自那个闭环。）<br>· 让品味复利：当 agent 犯错，就把这个错误写下来（落成配置、hook 或测试）让它不再重犯。这是把隐性经验固化为制度性护栏。<br>· 人仍然对发布负责，但审查的对象变了：看证据（测试结果、基准数据），而不只是看 diff。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZRJVKa8AAOGsm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Addy Osmani <span style="font-size:12px;color:#999999;font-weight:400;">@addyosmani</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">智能体写代码&quot;在规模上平均表现更好&quot;这句话是对的。&quot;在规模上&quot;这部分来自验证。智能体让检查变得廉价。<br><br>那些使&quot;好代码&quot;昂贵的东西（测试、基准、规格、真实的端到端运行）现在是你可以让智能体来做的廉价事情。你可以改进检查。<br><br>所以我们的工作更像是&quot;构建智能体可以自己运行的循环&quot;，而不是&quot;审查每一行代码&quot;。给智能体一种验证工作的方式。质量就来自那个循环。<br><br>还要让品味形成复利。当智能体犯错时，把它记下来（共享配置、一个钩子、一个测试），这样同样的错误就不会发生两次。人类仍然负责发布的内容，但现在他们审查的是证据，而不仅仅是 diff。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Agents write code &quot;much better on average at scale&quot; is right. The &quot;at scale&quot; part comes from verification. Agents make checking cheap.<br><br>The stuff that made &quot;Good Code&quot; expensive (tests, benchmarks, specs, real e2e runs) is now a cheap thing you can ask an agent for. You can improve the checks.<br><br>So our work is less &quot;review every line&quot; and more &quot;build loops the agent can run itself&quot;. Give the agent a way to verify the work. That loop is where quality comes from.<br><br>And make taste compound. When the agent gets something wrong, write it down (shared config, a hook, a test) so it doesn't happen twice. A human still owns what ships but now they're reviewing evidence and not just diffs.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot 用单工具协议省上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 11:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">反复学习 Lee Robinson 斯坦福 CS146S 讲座<br><br>这回主要看 Grok Bot 的 Harness 和上下文工程是怎么构建的。前段时间 Claude Code 源码泄露、CodeX 开源等等，让我们了解到了 Coding Agent 的架构和工作模式，那 Grok Bot 和 Muse 这种 Personal Agent 有什么不同呢？<br><br># The Harness<br><br>① 单工具协议：客户端与服务器之间只有 &quot;send to user&quot;<br>这是 GrokBot harness 与同类产品最大的架构差异。所有重工具「shell 命令、文件读写、云端 agent、录屏、demo 制作」全部驻留服务器；客户端唯一的通信原语就是“发给用户”。收益是双重的：服务端上，无论客户端是手机 App、桌面端、邮件还是 Slack，都复用同一套工具层；客户端上，收到这个工具的返回后可自行决定渲染方式，登录表单（接 1Password）、支付（Stripe Link / XMoney）、不可逆操作（发邮件）前的草稿审批、甚至只用一个 emoji 回应。“逻辑在服务端、表现力在客户端”，一个工具同时换来了架构简洁与交互丰富。<br><br>② 动态工具发现（&quot;tool search tool&quot;）<br>把 Gmail、Drive、YouTube 等所有 MCP 连接器的完整工具 schema 塞进上下文，工作记忆就所剩无几。解法是上下文里只放工具名，模型决定使用时再从文件读取完整定义；又是“一切皆文件”的延伸。省下的上下文直接转化为更低成本与更大工作空间。<br><br>③ 逐级升高的求助阶梯<br>原则：永远先试最便宜、最可靠的选项。会话历史 → 插件/MCP/API（如 Plaid 查银行）→ 网页搜索 → 浏览器操作 → 整台 Linux 桌面跑脚本 → 全部失败才去打扰用户。电脑端读取信息同样分层：截图 → HTML → 无障碍树（大幅省 token，且直接定位可点击元素）→ 像素级点击（对付弹窗）→ 退回用户（验证码、双重认证）。这套阶梯的设计目标很明确：让 agent 像一个不烦人的同事。<br><br>④ 编排者 + 子智能体<br>主 agent 只做 orchestrator，上下文保持稀疏；重活交给拥有全新工作记忆的 helper（子 agent），只回收最终结果；这就是“无限上下文”体验的来源。每个 helper 是独立的持久化工作流（Temporal），崩溃重启不丢进度。主 agent 像管理待办清单的同事：可查看、可留言、可叫停。整体照着“理想工程团队如何扩张”来建模。<br><br>⑤ 四条实战经验与安全底线<br>· 不要在 turn 中途增删工具（保缓存）；工具 schema 冗长是成本，要修剪；<br>· “单工具”理论上可建模一切，但若模型 90% 时间在跑 shell，就值得做专用工具；更高效，也对审查系统的人更可读；<br>· 写给人类看的描述性错误信息，对 agent 同样有效；错误信息即提示词；<br>· 安全上：模型逐条审查 shell 命令；不可信输入（钓鱼邮件、webhook）绝不能当作用户指令进入模型（提示注入防线）；不可逆操作须用户审批；密码经产品层工作流保持在会话之外。<br><br># Context engineering<br><br>① Prompt caching 是成本关键<br>agent 每轮都要重发全部对话历史，理想状态下大部分 token 应是缓存命中（折扣巨大），只有最新消息是未缓存增量。推论严格：工具定义与系统提示必须跨调用保持静态；prompt 分段固定顺序、近乎做哈希，做 A/B 测试插入新段落时不能打乱其他所有用户的缓存。缓存未命中按 bug 对待。他给出史实佐证：今年 1 月 OpenClaw 在订阅套餐中爆火，这种常驻运行的新用法导致大量缓存未命中，各模型厂商被迫紧急加固。最精巧的一招：用户刚打开聊天框开始打字时，服务器就提前构建 prompt 预热缓存，如同网页在 hover 链接时预取下一页。<br><br>② 压缩的时机选择<br>长程运行的必然终点是压缩，而所有压缩都有损（“这一个问题够写好几个博士论文”）。实操技巧极具体：对话超 10 万 token、用户离开后，要在缓存温热窗口（约 10–60 分钟）内立刻完成压缩；用户半小时后回来时从摘要续聊，成本远低于从全量历史续聊。压缩不是等来了再做，而是抢在缓存过期前做。<br><br>③ 记忆的四层结构<br>· 核心事实：每条消息必带（如“该用户永远小写”），并做“垃圾回收”；大脑此刻不会想着足球赛，事实层也只保留当下相关的；<br>· 带日期的日志：过往会话的存档；<br>· 便签（scratchpad）：设计上就短暂，只为接下来半小时到一小时服务；<br>· 其余一切靠文件：模型随时 grep 检索，“这就是文件的魔法”。<br><br>配合三条纪律：长输出写文件而非塞进上下文、昂贵操作（截图等）一律交给子 agent、持续“园艺式”修剪对话；既为成本，也为召回质量。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZswmVa4AAbdva.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2108757732417572864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108757732417572864</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2108757732417572864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2108757732417572864</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福 CS329A 讲自进化智能体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 13:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">斯坦福大学课程 CS329A: Self-Improving AI Agents<br><br>学习笔记之「Course Overview」@achowdhery  @Azaliamirh 两位老师主讲的自进化智能体课程第一讲，把大模型演进的逻辑链：「规模扩展 → 后训练对齐 → 推理时计算 → 智能体与自我改进闭环」讲述的非常清晰，这也是整个课程的骨架脉络。<br><br>第一讲「Course Overview」视频：<br><a href="https://www.youtube.com/watch?v=6YnLB0XbTnI&amp;list=PLangBM27OtEA&amp;index=1&amp;t=3584s" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=6YnLB0XbTnI&amp;list=PLangBM27OtEA&amp;index=1&amp;t=3584s</a><br><br>1. 预训练扩展定律（2018–2024）<br>自 GPT-3 以来，最令人震撼的经验事实是：计算量、数据量、参数量三个轴上，测试损失都可预测地下降。模型规模从 BERT（3.4 亿）→ GPT-2（15 亿）→ GPT-3（1750 亿）→ PaLM（5400 亿）→ GPT-4（估计万亿级）指数级增长。这带来三件事：基准性能持续提升、少样本/零样本上下文学习（无需微调即可通过示例引导模型）、以及涌现能力。其中最重要的涌现是思维链（CoT）：Azalia 强调，小模型（如 8B 的 LaMDA、7B 级 GPT）给了推理链也无济于事，而 PaLM 级别的大模型能真正利用它，这个性质“直到今天仍然成立”，是后来所有思考模型的根基。<br><br>2. ChatGPT 的配方 = Scaling + 指令微调 + RLHF<br>ChatGPT（2022 年 11 月，5 天破百万用户）超越 GPT-3 的关键不是更大，而是后训练流水线：预训练（下一词预测）→ 高质量数据微调（公司花数亿美元购买的书籍、精作文本）→ 指令微调（指令-问答对，含 CoT 微调，人工+合成数据）→ RLHF（人类对模型输出做偏好排序，训练奖励模型，再用 RL 将模型参数导向高奖励生成；奖励可按正确性、有用性、无害性等加权）。<br><br>3. 推理时扩展：约一年半前开启的新前沿<br>这是全课技术上最重的部分。Azalia 介绍了她实验室的工作 Large Language Monkeys（名字取自“无限猴子定理”）：让模型对同一问题并行采样最多 1 万次，再用验证器（如单元测试）挑出正确答案。核心发现：<br>· 覆盖率（至少一个样本解出问题的比例）随样本数呈对数线性增长；<br>· Llama 3 8B/70B 单样本不如 GPT-4o，但采样足够多次后反超；模型“知道”的远多于一次提问所暴露的；<br>· 有些难题 1 万个解里只有三四个正确，说明扩展推理计算是触及模型真实能力上限的必要手段。<br><br>随后的问答质量很高：重复采样提升的是 pass@k（覆盖），而 o1 这类推理模型提升的是 pass@1；本质是模型通过 RL 学会了“判断哪条推理链是对的”；两者是同一枚硬币的两面。o1 在 AIME 上展示了 pass@1 随测试时计算的对数线性提升，DeepSeek（2024 年 12 月）则把两件事合流：用测试时扩展批量生成可验证的合成数据，回流到训练集再微调模型。这个“生成—验证—回灌”的闭环正是课程标题“自我改进”的技术含义。<br><br>4. 从 LLM 到 Agent<br>Aakanksha 的判断很明确：聊天模型和推理模型本质仍是单轮对话，而 2025 年真正意外发生的是 Claude Code、Codex、Deep Research 这类智能体开始端到端完成真实工作流。她给出的 Agent 定义是教科书式的：给定目标 → 规划步骤 → 与环境交互（含工具调用）→ 依据反馈修正 → 判断何时停止或承认失败，并可能需要记忆维持任务状态。<br><br>但她同样诚实地指出现状：多数落地系统仍是人工编排的静态工作流图，LLM 调用、LLM-as-judge、工具调用（搜索等），组织成提示链、按复杂度路由、并行扇出再聚合（Deep Research 的做法）、或“LLM 管理者”式规划-执行（Claude Code 的做法）。真正开放式自主循环目前只在编码和深度研究两个领域“出现生命迹象”。编码智能体可靠化的原因被归纳为：更强的模型 + 可验证奖励的 RL（RLVR）+ 训练时扩展，外加自我改进闭环启动，可以自动生成单元测试来验证生成的代码（即 Code Monkeys 一线的思路）。<br><br>贯穿全课的一个关键瓶颈：验证<br>两位老师反复回到 generator-verifier gap：模型生成大量貌似合理的内容很容易，但判断对错需要反馈回路。在数学、代码这类可验证领域，单元测试/标准答案提供了廉价可靠的信号，改进可以持续滚动；而在创意写作等领域，人类反馈成为瓶颈。这个瓶颈直接对应课程第 3 讲「Robust Verification」，也是 Azalia 实验室有论文（如何组合多个验证器）的方向。这是理解当前智能体能力边界的最重要单一变量。<br><br>几个值得注意的问答观点<br>· 推理能力是“训练出来的广义思考者”：数据让模型把分解、回溯、分析等技能泛化成通用能力，而非硬编码的流程模板；模型学到的东西已远超训练数据本身。<br>· 模型偏爱自己生成的推理轨迹，即使轨迹来自更强的模型，它们也更喜欢自己的。这关系到 STaR 式自我蒸馏为何有效（对应第 5 讲多步推理）。<br>· 思维链是被“发现”的涌现，不是被设计的：从 GSM8K 首现迹象，到 PaLM 能解释笑话，再到专门训练的推理模型；先是涌现，后是强化。<br>· 未来值得期待的“涌现”：规划、多步推理、自我纠错，恰好是课程要逐讲展开的能力清单。<br><br>应用部分给出四个层次<br>编码智能体（最适合的是重复性任务：代码迁移、版本升级、重构、数据工程）；客服（实时转写、知识辅助、智能回复、通话摘要）；深度研究/报告（检索→大纲→逐源摘要→综合，课程作业会动手实现）；以及前瞻性的 AI Scientist（创意生成、实验迭代、论文撰写；尽管有幻觉，其头脑风暴常能跳出领域老兵的思维定式）。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZ9wjiaUAEW8Rf.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">斯坦福大学课程 CS329A: Self-Improving AI Agents<br><br>课程 9 讲视频都已发布在 Youtube，第 1 讲 52 万观看，第 9 讲 1.5 万。趁假期坚持看完 9 讲视频，你就超过了中间的 50 多万人，和连第 1 讲都没看过的无数人 😂<br><br>开玩笑，虽然 AI Agent 已经强大到很多人觉得不需要再学习，什么问题都可以直接问，到顶级大学的基础课程，系统学习下来，还是会很有收获，全局认知的提升。<br><br>课程主页：<br><a href="https://cs329a.stanford.edu/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cs329a.stanford.edu/</a><br>视频列表：<br><a href="https://youtube.com/playlist?list=PLangBM27OtEA&amp;si=khxaTCYv_ARHBgBl" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://youtube.com/playlist?list=PLangBM27OtEA&amp;si=khxaTCYv_ARHBgBl</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HTNmzNYbkAA_6CG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 白皮书：Agent 双验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 17:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 官方「5天 AI Agents 课程」<br><br>5份白皮书 (1/5)：The New SDLC With Vibe Coding<br><a href="https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding</a><br><br>5天 AI Agents 课程的第一份白皮书，带我们思考：当“写代码”被 AI 自动化之后，软件开发的组织方式要怎么变？白皮书给出了一套可以长期使用的思维模型，其中两个关键概念先记住：Tests &amp; Evals<br><br>核心论点：范式已变，但要区分两种用法<br>软件工程正经历自高级语言以来最大的转变，开发者与机器的接口从语法变成意图。2026 年 85% 的职业开发者日常使用 AI Coding Agents，41% 的新代码由 AI 生成。<br><br>&quot;Vibe coding&quot; 源自 Karpathy 2025 年 2 月的帖子，因被滥用而失去意义。到 2026 年，Karpathy 本人修正了表述，引入 Agentic Engineering。<br><br>区分二者的关键区别是「Tests + Evals 双验证」，测试管确定性部分（输入产出），评估（evals）管非确定性部分。&quot;没有这两样，无论 prompt 多精巧，你做的都是 vibe coding。&quot;<br><br># 四个关键思维模型<br><br>1. Context Engineering（上下文工程）“真正的技能”。 论文断言：AI 生成代码的质量取决于上下文质量，而非 prompt 巧妙程度。六类上下文（指令、知识、记忆、示例、工具定义、护栏）要区分静态（常驻加载，如 AGENTS.md，每个 token 每次交互都要付费）与动态（按需加载，如 Skills、RAG 检索）。核心洞察是一个类比：“模型需要的不是被话术忽悠，而是和一个新团队成员做好工作所需要的同等信息。”静态/动态的边界应作为一等架构决策来评审和版本化。<br><br>2. 工厂模型（The Factory Model）。 开发者的主要产出不再是代码，而是生产代码的系统：规格与上下文（定义要造什么）、agents（把规格翻译成实现）、测试与质量门禁、失败回传的反馈回路、约束行为的护栏。“工厂经理不亲手组装每个零件，他设计流水线并把控质检。”<br><br>3. Harness 工程  核心公式：Agent = Model + Harness。裸模型不是 agent；行为表现由包裹模型的脚手架主导，指令与规则文件、工具、沙箱、编排逻辑、hooks 护栏、可观测性。这些是团队的地盘，不是模型厂商的。 论文给出可量化的证据：Terminal Bench 2.0 上有团队不换模型、只改 harness，就从 30 名外冲进前 5；LangChain 仅调 prompt/工具/中间件就提升 13.7 分。由此得出一条实用诊断法则：“agent 出错时，直觉怪模型；但诚实地查，大多数失败是配置失败，缺工具、规则含糊、没护栏、上下文塞满噪音。” 这也重新定义了光谱的本质：vibe coding 和 agentic engineering 可以用同一个 agent，差别只在于你多刻意地配置 harness。<br><br>4. Conductor 与 Orchestrator  开发者的两种工作模式。 Conductor 在 IDE 里实时盯代码生成、逐段纠偏，适合复杂逻辑和陌生代码库，但人本身会成为吞吐量瓶颈；编排者（orchestrator）异步给多个 agent 派目标、验收结果，需要四种新技能：精确规格化、任务分解、快速评估、约束系统设计。配套的是编码 agent 的三栖格局：编辑器内（Copilot/Cursor）、终端里（Claude Code/Antigravity CLI）、后台云端（Jules/后台 agent），同一个开发者一天三类混用。<br><br># 需要面对的两个问题<br><br>80% 问题：AI 能快速生成一个功能 80% 的代码，剩下 20%（边界情况、错误处理、集成点）恰恰需要最深的上下文知识。而且 AI 的错误已从语法错误进化为概念性失败，代码“看起来对”、甚至能过基础测试，这才是最危险的。高手的姿态不是照单全收，而是把注意力押在 AI 搞不定的那 20% 上。<br><br>METR 研究的反直觉数据：有测量显示资深开发者用 AI 助手在某些任务上反而慢了 19%，时间耗在验证和纠正 AI 输出上。AI 没有消灭实现工作，而是把它从“写”变成了“评审、引导、验证”。<br><br># 经济学视角：不止步于“开发速度”，引入 CapEx/OpEx 框架<br><br>Vibe coding = 低 CapEx、高 OpEx：前期零投入，但隐藏三笔复利债务，token 烧钱率（反复让模型修自己未经核实的错误）、维护税（半年后逆向工程 AI 意大利面代码）、安全修复成本（生产期修漏洞比设计期贵指数倍）；<br><br>Agentic engineering = 高 CapEx、低 OpEx：前期投资规格、测试套件、上下文结构，换来边际成本骤降。<br><br>在 token 经济下，context engineering 是财务杠杆：与其每次塞进十万 token 的整个仓库，不如给一份高信号密度的 AGENTS.md 提高首过成功率；智能模型路由则是另一杠杆：架构设计用大模型，生成测试、CI 监控路由给小而便宜的模型。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUa83dfbMAAp3pP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2109541953155313664" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2109541953155313664</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2109541953155313664" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2109541953155313664</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>gliff 零端口 SSH 投屏会话</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-10-13 07:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用一条 ssh 连接把另一台机器的 Hyprland 会话投到自己窗口里，两端只靠 ssh 通信，不需要开端口、注册账号或中转服务器。<br><br><a href="https://github.com/omacom/gliff" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/omacom/gliff</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZQfmCbMAAB9WD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google 梳理 Agent 协议栈</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-10-12 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 官方「5天 AI Agents 课程」 <br><br>5份白皮书 (2/5)：Agent Tools &amp; Interoperability<br><br>这份白皮书紧接 Day1，继续分享 Agent 系统里的零件靠什么标准连接 ？它系统性梳理了 Agent 生态的完整协议栈：MCP、A2A、A2UI、AP2/UCP 等等<br><br>Agent 连工具（MCP）→ Agent 连 Agent（A2A）→ Agent 连用户界面（A2UI）→ Agent 连商业交易（AP2/UCP）。<br><br>白皮书地址：<br><a href="https://www.kaggle.com/whitepaper-agent-tools-and-interoperability" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/whitepaper-agent-tools-and-interoperability</a><br><br>MCP：Agent 连工具（USB-C）<br>· 核心价值：把 N 个模型 × M 个工具的集成复杂度从 O(N×M) 降到 O(N+M)，各自只需对接一次协议。<br>· 正确姿势：重消费、轻建造。从公共注册表、官方托管服务（已审核）、企业内部注册表三类来源取现成 server，三步接入：发现 → 配置（凭证走环境变量、限定读写权限）→ 连接。<br>· 实践铁律：公共未审核 MCP 绝不上生产；凭证不硬编码；调试时用 MCP Inspector 查原始数据包，别瞎改 prompt；幻觉参数多半是管道问题；能用只读就连只读；工具用完即卸载，防注意力稀释。<br><br>A2A：Agent 连 Agent（HTTP）<br>· 演进逻辑：复刻“单体 → 微服务”，单 Agent 巨石撞上三堵墙：工具越多决策越差、上下文过载、单点故障。出路是专业化分工。<br>· 关键辨析：专家 agent 不能当工具调。工具是 fire-and-forget 的被动仪器；专家是协作伙伴，需要暂停、协商、续作。硬塞进工具包装等于引入 GOTO 语句。判断口诀：“你要的是结果，还是分担责任的参与者？”<br>· 市场机制：Agent Card 是机器可读的“简历”，注册表是“劳动力市场”；agent 可被发现、被雇佣、被计费（含 x402 微支付：HTTP 402 + 加密支付证明，无账户按次付费）。<br><br>A2UI：Agent 连界面<br>· 问题：人类传递洞察靠图表交互，agent 只会吐 JSON。<br>· 解法：agent 输出的是“乐谱”（声明式组件描述），不是“录音”（可执行代码）或“唱片”（预渲染像素）。任何渲染器用自己的组件库原生演绎。<br>· 安全模型：只从可信目录请求组件，杜绝代码注入。<br>· 两种生成模式，按布局决策权划分：意图驱动归 LLM（界面随问题变化）；结构固定归工具模板（零 token 花在 UI 上）。<br><br>AP2 / UCP：Agent 连交易<br>· UCP = 大脑：统一商品目录语言，agent 标准化地查、选、下单。<br>· AP2 = 钱包：事先授权额度（“最多花 $25”）→ 交易时出示签名“本票”而非卡号 → 超规自动拦截。<br>· 保障四件事：授权可审计、意图真实、容错幻觉、问责有主。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbfbfAbwAAL6YG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><a href="https://x.com/i/article/2109541953155313664" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2109541953155313664</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Handy 离线语音输入直落光标</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-13 07:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">语音输入在桌面上一直没真正普及，卡点不在识别率，而在流程：先开个网页或 App，录完等结果，再把文字复制回你原本要写的地方。Handy 把这段路砍掉了，33k star，全程离线。<br><br>① 装。macOS 有 Homebrew cask，Windows 有 winget，Debian/Ubuntu 用 sudo apt install ./Handy_*.deb 装下载下来的包——README 特意提醒别用 dpkg -i，依赖装不全。两个包管理器的条目都不是官方维护的，这点它自己写明了。<br><br>② 配。首次启动要给麦克风和辅助功能权限，然后在设置里挑快捷键。按住录、松开停，或者点一下开始、再点一下结束，也可以锁定成只用其中一种模式。<br><br>③ 选模型。Whisper 有 Small/Medium/Turbo/Large，有显卡就走 GPU 加速；没有的话选 Parakeet V3，针对 CPU 优化，还能自动判断语种。录音先过一遍 Silero VAD 把静音段滤掉，再送去转写。<br><br>④ 用。按住快捷键说完松开，文字直接落进当前光标所在的输入框，不管那是编辑器、浏览器还是聊天窗口。它还带一组 CLI flag，比如 handy --toggle-transcription 可以远程控制已运行的实例，handy --start-hidden --no-tray 适合开机自启，社区也做了 Raycast 扩展。<br><br>几个要先知道的限制：macOS 上用蓝牙耳机的麦克风，录音时音频会切成双向模式，播放质量会降，官方建议输出留耳机、输入选内置麦；带 fn/Globe 键的快捷键只在苹果键盘上有效，第三方键盘的 Fn 根本不发事件给系统，这是硬件层面的事，换成 ctrl/option 这类修饰键就行。<br><br>今日 +114 star · Rust · 总计 33,086<br>#speechtotext #opensource<br><br><a href="https://github.com/cjpais/Handy" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cjpais/Handy</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">16</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6.1 默认上下文升至 50 万</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-13 07:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GPT-6.1 Sol 默认上下文扩至 50 万 tokens。<br><br>用 Codex 或 Work 跑长任务，这次更新值得关注：默认窗口从 27.2 万提高到 50 万，增幅约 80%。Tibo 表示，这有助于减少上下文压缩，让长任务保留更多细节。<br><br>他在跟帖中还补充：通过订阅额度使用 GPT-6.1 Sol，不收取长上下文附加费。<br><br>50 万是新的默认值，模型最大上下文仍为 100 万 tokens；用户也可以自行调高或调低。<br><br><a href="https://x.com/thsottiaux/status/2109430343346581527" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/thsottiaux/status/2109430343346581527</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tibo <span style="font-size:12px;color:#999999;font-weight:400;">@thsottiaux</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">第 7 天/<br><br>我们将 GPT-6.1 Sol 通过 Codex &amp; Work 使用时的默认上下文长度提升至 500k，从之前的 272k 提升，约增加了 80%。<br><br>未来我们会继续提高，但这有助于减少压缩的发生频率，并适用于需要在一段时间内保持大量上下文和细微差别的任务。它经过了精心测试，是大多数用户的新最佳设置。如果你想要更高或更低的值，仍然可以覆盖它，GPT-6.1 Sol 的最大上下文长度为 1M。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Day 7/<br><br>We have increased default context length for GPT-6.1 Sol to 500k when used through Codex &amp; Work, up from 272k or an ~ 80% increase.<br><br>We will go higher in the future, but it helps reduce occurrence of compactions and with tasks that require keeping a lot of context and nuance over periods of time. It was carefully tested and is the new sweet spot for most of our users. You can still override it if you want to be higher our lower, with maximum context length of GPT-6.1 Sol of 1M.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">17</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Vela 把金融图表拆成内核与应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kafkaup · 2026-10-13 07:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是我最近看到把 Web 金融图表这件事拆得比较清楚的一个库：图表内核和看盘应用是两层，你想要哪层就取哪层。<br><br>@luxalgo/vela 是 headless 的核心，只管数据模型、引擎、画线工具和渲染。渲染器是自己写的 WebGL2，不支持的环境退回 canvas2d。初始化三行代码：new Vela 指定容器、symbol 和 timeframe，注册一个 provider，await ready 就开始跑。不想联网也行，自己把 bars 塞进 data 选项。<br><br>如果你要的是成品，换成 @luxalgo/vela/workspace，一次 new 出来的是完整应用：单图或者 2h、4、8 这样的多图网格，共享顶栏切 symbol 和周期，状态行、底栏时钟时区、对象树都在里面。交互是键盘优先的，敲任意字母或者 0 调出代码搜索，按 1 到 9 输入周期，问号看快捷键面板。persist 打开后，行情、样式、画线、指标全写进 localStorage。<br><br>内置 70 多个指标，均线、通道、震荡类、VWAP、SuperTrend、枢轴点，还有可视区间的成交量分布。这些都是直接从 bar 算的，不经过脚本引擎，每个带图例行、设置弹窗和持久化。<br><br>要讲清楚的一点：自定义脚本的引擎它一个都不带。Pine Script 要另装 @luxalgo/vela-pinets，而那个包因为底层 PineTS 运行时的原因是 AGPL-3.0，Vela 本体保持 Apache-2.0。这个许可边界如果你是商业项目，值得先看一眼再动手。<br><br>扩展走公开 SDK，registerChartType 加新价格样式，registerRendererLayer 加自绘图层，注册完会自动出现在 workspace 的样式下拉里，不用 fork。<br><br>今日 +103 star · TypeScript · 总计 1,040<br>#TypeScript #Trading<br><br><a href="https://github.com/LuxAlgo/Vela" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/LuxAlgo/Vela</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

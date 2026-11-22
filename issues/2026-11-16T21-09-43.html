@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 05:09">
+<title>AI技术雷达 · 11月17日 05:09 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Grok Build全平台可用实时建应用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Grok Bot靠确定性约束量产PR</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude开源11个知识工作插件</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Home Repo统一管理Agent指令</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Jane Street苏格拉底式教学技能</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;DeepSeek称华为4卡抵英伟达1卡</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Build全平台可用实时建应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grok · 2026-09-25 20:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">把想法告诉 Grok，它会在你的聊天中实时构建一个可运行的版本。<br><br>Grok Build 现已面向所有方案开放——支持网页端、iOS 和 Android。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Tell Grok an idea, and it builds a working version live in your chat. <br><br>Grok Build is now available on every plan - on web, iOS, and Android.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent开发十条高频Prompt技巧</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Khazix0918 · 2026-11-16 17:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">翻了一下最近两个月，我用Agent干活最爱说的几句Prompt：<br><br>1. 从第一性原理出发，找到最本质原因，修复一下。<br><br>2. 先问一些不清晰的问题，对齐我的喜好，然后再出3版方案。<br><br>3.不要默认我提出的问题定义就是正确的。你先分析我真正想解决的底层需求，判断我有没有把症状误认为原因、把手段误认为目标。如果存在更值得解决的问题，直接指出来<br><br>4. 不要只考虑这个改动产生的直接效果。继续推演它的二阶、三阶影响，尤其关注对其他模块、用户行为、系统复杂度和长期维护成本的潜在影响。<br><br>5. 其他领域里有没有类似的方案，用跨领域的方式全面思考，找到最优解。<br><br>6. 先假设你当前认为最合理的方案是错误的。站在最强反对者的角度，寻找能够推翻它的证据、反例和边界情况。然后重新评估方案，看看有没有更好的解法。<br><br>7. 深入分析整个代码库的 Git 历史、关键 PR 和架构演变过程。找出哪些设计是有意为之，哪些是历史遗留，哪些是为了解决已经不存在的问题而引入的。识别可以安全移除的历史包袱。<br><br>8. 假设明天有一个完全不了解项目、但是能力很强的工程师来接手。请评估他理解整个项目需要付出的认知成本，找出那些命名混乱、抽象过度、职责不清晰、需要大量上下文才能理解的代码，并提出简化方案。<br><br>9. 全面分析最近XX天里的所有的PR，找出最慢的那几个，看看有没有导致卡顿、可以优化的地方。<br><br>10.  全面复盘最近XX时间的 Bug、返工、回滚和重复修改。不要只统计发生了什么，要分析这些问题背后有没有共同的根因。把能够预防的共性问题沉淀成项目规则、自动化或者Skill，避免我们反复支付同样的成本。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>软件工程手册开源AI时代开发指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jexchan · 2026-11-16 13:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐一本最近读到的免费书，《The Software Engineering Handbook》（James C. Davis, 2026），AI 时代的软件工程开发手册。当 AI 接管了以前花时间最多的常规编码工作，重心转向为：如何定义需求、划定规约与架构边界、判断测试证据是否靠谱、从失败中修正模型。<br><br><a href="https://davisjam.github.io/model-based-agentic-software-engineering/book/se-handbook/software-engineering-handbook.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://davisjam.github.io/model-based-agentic-software-engineering/book/se-handbook/software-engineering-handbook.pdf</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot靠确定性约束量产PR</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-16 22:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Lauren Tan 也叫 Potato，在 SpaceXSI 做 Grok Bot。她这场演讲一开场就问，你有没有看过别人写的代码，心里想这不都是 slop。她想说服的是，这些 slop 是可以炼成金的。<br><br>软件工程师现在的工作，就是想清楚怎样在大幅提高产量的同时，把代码质量稳住，最好还能再提高一点。<br><br>她花了六个月，才走到一个月能往生产环境合进去几千个 PR，而且很多是睡着时合上的。上个月她一个人合进了 3000 个。Grok Bot 团队上个月合进了 11000 个。十月大约有 227 人至少贡献过一个 PR，客户端大概每天都会切出一个新的稳定版。被回滚的比例反而更低了，稳定在大约 0.5%。启动、打字、打开新对话、切换对话，都比刚上线时更快。<br><br>核心不是盲目信任，而是去建设 agent 的环境，让你能够相信它们会把事情做对。<br><br>她用一张倒金字塔来排该把时间花在哪。最下面两层是确定性的，直接用代码本身：好的 API 设计、架构、重构，以及 lint、类型系统、编译器和测试。再往上才是运行时验证和形式化验证。最上面才叠一点点规则、skills、agents.md。每次纠正 agent，先想能不能做成一条确定性检查，而不是再往 agents.md 里加一行。写进代码里更可复现，也更能信。<br><br>因为代码库就是 agent 最大的输入之一。以前一天也许只审三个同事的 PR，现在这个数字更像是 300。每个工程师背后，都可能是一支几百、甚至几千个 agent 的队伍。权宜之计、反模式、过时代码，下一个 agent 很容易直接抄走。<br><br>他们为 Grok Bot 做的客户端框架叫 Dune，可以把它想成 Electron 应用里的 Next.js。真正起作用的是约束。凡是要用好就得特别讲究分寸的东西，最后往往都会变成 slop。最典型的是 React 里的 useEffect，他们直接禁止在产品代码里用。<br><br>目录结构也在传上下文。Grok Bot 和 Dune 有两个顶层目录，electron-renderer 和 electron-main，它们之间的 import 会被依赖图分析和 lint 直接禁止。这是从 Cursor 这个 Electron 应用里学来的教训：agent 经常把主进程代码 import 进渲染进程，结果就是长任务和卡顿。<br><br>agent 还喜欢用快速补丁，再用注释给自己找理由。到了 Grok Bot，他们禁止了 99% 的注释，因为注释太容易过时，也无法被强制执行。lint 会直接让 agent 去修根因。这样做得足够多次，审查要盯的东西就会越来越少，甚至可以让 agent 自己合并它们的大多数 PR。<br><br>验证也在改审查方式。他们现在的 code review，已经大幅收成主要看视频、截图、图示和形式化验证。运行时验证说白了，就是让 agent 自己把代码跑起来。他们还在用 TLA+ 对主要用户流程做模型检测，用 Lean 去证明某些算法，已经找到了不少 bug。片子里也说了，这当然不是银弹，还在试验。<br><br>有个叫 Cindy 的人，六个月前还没法信任自己的 agent，因为一些很细的 bug 被合进了代码。六个月后，她说每天 70% 的 token 都花在验证上。Lauren 自己也是这样。她觉得测试和验证正在进入黄金时代，不是因为方法变新了，而是过去贵到用不起的深度，现在用得起了。<br><br>如果你内层的编码循环本身就在产 slop，那把这条循环自动化，只会产出更多 slop，然后还得不断往这个问题上砸更多 token。所以先改代码库，先加 lint，先把旧的反模式清掉，先把验证做扎实。有了这些地基，再去搭工厂，很多事情才会突然变得可能。<br><br>等准备好了，她把 Grok Bot 当成搭外循环的方法。连接器、例程、Cursor Cloud Agents、projects，可以编排上百、甚至上千个 agent。一个例子是，每切出一个新版本，Grok Bot 就会自动拉起一个新的 Cursor project，像真实用户一样去跑整个应用，找到 bug，开出修复 PR，再自动合并。敢这样，是因为代码库已经足够好，大多数产品代码已经不再需要很深的人工审查。<br><br>我给这场补了中文字幕，原声保留。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122321306846928897/img/YaSAdUb6oM-ZaMvt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude开源11个知识工作插件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-16 08:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">😱炸裂，由 Anthropic 官方开源的11个Plugin，在 GitHub 上已经超35000 星了！！<br><br>用来让 Claude 能在不同的工作领域里上手干活。<br><br>这些 Plugin 覆盖了不少方向，比如：<br><br>- Sales：帮忙走销售流程、管理客户，以及跟进销售机会<br><br>- Marketing：规划营销活动、做内容，以及分析营销动作<br><br>- Legal：帮忙审文件、看合同，以及处理法律流程<br><br>- Finance：分析财务信息，并处理跟财务相关的工作<br><br>- Data Analysis：查看数据、做分析，并从里面找出有用的信息<br><br>- Product Management：做产品管理、梳理需求，以及规划后续开发<br><br>每个 Plugin 具体会给 Claude 准备好什么？<br><br>这些 Plugin 各自都带了三样东西：<br><br>1. Skills：用来完成该领域工作的操作说明和专业知识。<br><br>2. Commands：可以快速执行特定任务的现成指令。<br><br>3. Connectors：接到相关工具和服务上，好让 Claude 能进入真实的工作流程里干活。<br><br>也就是说，不用每次都从零开始跟 Claude 解释，销售、营销或数据分析该怎么做，把对应的 Plugin 交给它，它就能按这个领域的 Workflow 来工作。<br><br>关键在于：这样一来，Claude Code 就不再只是写代码的工具，而会变成做专业工作的助手。<br><br>如果你在用 Claude Code，建议看看这套合集。<br><br><a href="https://github.com/anthropics/knowledge-work-plugins" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anthropics/knowledge-work-plugins</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Home Repo统一管理Agent指令</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-11-16 20:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">个人多仓库 Agent 工作流：Home Repo 方案。<br><br>这个思路来自 Matt Pocock 分享的 Home Repo 模式：用一个独立仓库集中管理 Agent 指令、Skills、工具和项目知识，让 Agent 能够理解多个代码仓库并完成跨项目任务。<br><br>一个统一入口，多个独立仓库，两种工作模式。<br><br>1. 日常单仓库开发：直接进入业务仓库运行 Agent。<br><br>2. 跨仓库需求：从 Home Repo 启动 Agent，统一分析和协调修改。<br><br>3. 个人规范和通用 Skills：集中管理。<br><br>4. 项目架构、构建命令和技术约束：仍然保留在业务仓库。<br><br>5. Git、依赖和发布流程：各仓库独立维护。<br><br>这样既能实现跨仓库协作，也能避免所有 Agent 都获得过大的修改范围。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPxgS5asAA_9fc.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Matt Pocock <span style="font-size:12px;color:#999999;font-weight:400;">@mattpocockuk</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">很多人问我：&quot;你是怎么让 agent 同时处理多个仓库的？&quot;<br><br>我有一个非常简单的解决方案——Home Repo（主仓库）<br><br>我有一个单独的仓库（主仓库），里面存放了我所有的 skills、steering 文件、wiki 等等。<br><br>我在主仓库中运行我的 agent，然后在 AGENTS.md 中添加指向其他仓库的说明：<br><br>```<br>For skills, clone mattpocock/skills to ~/repos/skills.<br>For Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle<br>```<br><br>这极其简单，但效果出奇地好。主仓库让你可以：<br><br>1. 把所有 steering 文件和工具集中在一处<br>2. 有一个统一的地方运行所有 agent<br>3. 对多个仓库进行全局性的修改<br><br>昨天我在课程里讲了这个，大家非常喜欢（见下方）。<br><br>我相信你也会喜欢的。尽情享用吧！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A lot of folks ask me &quot;how do you work with agents in multiple repos at once?&quot;<br><br>I have a very simple solution - the Home Repo<br><br>I have a single repo (the home) where all of my skills, steering files, wiki etc live.<br><br>I run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:<br><br>```<br>For skills, clone mattpocock/skills to ~/repos/skills.<br>For Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle<br>```<br><br>This is extremely simple and incredibly effective. The home repo lets you:<br><br>1. Put all your steering files and tooling in one place<br>2. Have a single spot to run all your agents in<br>3. Make sweeping changes over multiple repos<br><br>Talked about this in the course yesterday and folks are loving it (see below).<br><br>I'm sure you will too. Enjoy!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWyuBkPXwAAPOF3.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jane Street苏格拉底式教学技能</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 10:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在几乎所有公司都在教员工怎么用 AI 一键生成现成答案的时候，华尔街最赚钱、技术品味也最硬核的量化交易巨头 Jane Street 反手在 GitHub 上开源了他们内部的 janestreet/agent_skills 仓库，其中冲上 HN 榜首（712 分）的技能叫 Socratic Tutor（苏格拉底式导师）。<br><br>点开这份只有几百行的 SKILL.md，你能看到顶级工程团队对“AI 让人脑退化”这件事有多警惕。它给大模型立下了几条极其严苛的铁律：<br><br>只要你对它说出 teach me、quiz me 或 drill me，它被绝对禁止直接给你讲课或甩出长篇解释。它必须先拆出 4 到 10 个子技能树，每次只问你一个问题，连摸底带追问，把你在每个子技能上的真实水平钉死在 0 到 5 级（0 级是闻所未闻，3 级是在提示下能做对，5 级是不靠任何提示且隔轮复习依然对答如流）。<br><br>在教学循环里，哪怕你答错了，它也不准直接告诉你正确答案，而是必须顺着你的错误推理反问一句：如果按你说的这样，那当边界条件变成 X 时会发生什么？ 逼你自己推导出矛盾点。直到连续两轮卡死，它才允许给一个最小化的脚手架提示，而且一旦给过提示，这道题就绝不算你掌握（最高只能记 3 级）。在随手一问就能拿到几千字总结的今天，这种故意给大脑制造阻力、逼人自己走完推导闭环的提示词设计，反而成了最稀缺的工程资产。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLmZjTaMAA_8cg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Git单事提交规范优化Agent上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bozhou_ai · 2026-11-16 11:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐大家在自己的全局记忆里面，都加上下面这一段提示词，让AI把每一件事情都做一个Git版本，我实测下来，效果非常好，Commit记录就是给到Agent最好的一个上下文。<br><br># Git 提交<br><br>- 一个提交只做一件事（一句话说得清），按事切分，不按文件数；做完且测试通过就自己提交，不用问。标题要用&quot;和&quot;连起不相干的事，就拆开。<br>- 不提交半成品和没过测试的改动；格式化、改名不和逻辑改动混在一起。<br>- 标题用中文一句话写具体变化；正文只写代码里看不出来的：为什么改、依据、放弃的方案、已知没做的。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Maka基准测试排名第七</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AstroHanRay · 2026-11-16 12:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Frontier Harness v1.1 全部题目跑完了，领先的还是 Codex 和 Pi，Maka 排名第七，和 ZCode、KimiCode、OpenCode 在同一水平。<br><br>作为开源大家共创的项目，TS 版的 Maka 这个成绩还算满意～<br><br>我们会在下一个版本的 Rust 版继续努力和改进！欢迎大家来围观 Rust 版本，欢迎点个星星呀～ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXOHdmRaMAAkklG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>《深入理解AI Infra》全书开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xqliu · 2026-11-16 17:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写《深入理解 AI Agent》的李博杰，把姊妹篇《深入理解 AI Infra》整本开源了。前一本在 GitHub 上已经 50k+ Star。这本 8 月建的仓，最近又火了，今天一天涨了 127 星，总共 7800 出头。<br><br>这本书不教哪个框架怎么配。它从硬件约束和模型架构出发，一步步用数字推出大模型的推理系统和训练系统该怎么设计。<br><br>账都摊开算，结论是推出来的，不用死记。<br><br>仓库里能直接拿走的：<br>1全书正文，PDF、EPUB、在线阅读三种都有<br>2配套的计算工具和实验，跟着推导一起用<br>3英文、繁体、俄文的社区译本，许可是 Apache-2.0<br><br>天天调模型，却说不清背后那套系统为什么这么搭，这本可以排进这个月的书单。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek称华为4卡抵英伟达1卡</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hhp121222 · 2026-11-15 22:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek创始人梁文峰在闭门会议上对华为与英伟达的直白对比令人印象深刻。<br><br>首先，梁表示DeepSeek在V3时期就停止依赖英伟达的软件栈，开发了自己的高级编译器（TileLang），并补充道：“只要我们在华为显卡上重复这个过程，任务就完成了，在这方面，我认为英伟达是在自掘坟墓。”<br><br>然后他给出了华为新款950 Supernode与英伟达GB200和GB300的硬件比例：“GB300能做的事，华为的超级节点也能做到，延迟是一样的，唯一的代价是四张华为显卡替换了一张英伟达显卡。”</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

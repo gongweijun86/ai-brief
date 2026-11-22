@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月24日 23:31">
+<title>AI技术雷达 · 10月24日 23:31 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;安全审计Skill分六阶段独立验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Duet主动Agent内测</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;React配PixiJS渲染岛分工做游戏</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Magpie网关映射流式与工具调用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;OpenMontage口述生成AI短片</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>安全审计Skill分六阶段独立验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @RwatitFahsa · 2026-10-24 22:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Cloudflare 开源了一个挺务实的 Security Audit Skill。<br><br>它没有让一个 Agent 从头扫到尾，然后自信地输出几十个“高危漏洞”。<br><br>整个审计被拆成六个阶段：<br>1、先画架构、信任边界和输入面；<br>2、再按覆盖清单分配多个独立 Agent 查找问题；<br>3、候选漏洞交给新的 Agent 反向验证；<br>4、最后输出结构化的 findings.json 和审计报告。<br><br>结果也不只分“有漏洞”和“没漏洞”，而是：<br>1、confirmed：证据链完整；<br>2、needs_validation：还有具体事实没验证；<br>3、rejected：已经被推翻。<br><br>最关键的一条是：发现漏洞和验证漏洞的不能是同一个 Agent。<br><br>这能减少模型为了证明自己正确，继续替错误结论找理由。<br><br>不过它不是点一下就安全了。目标代码的构建、测试和模糊测试，需要运行在禁网、限资源、清理环境变量的系统级沙箱中；否则只能保留为待验证线索。<br><br>AI 安全审计真正需要的，不是更大胆地下结论，而是更严格地约束证据。<br><br>仓库：<a href="https://github.com/cloudflare/security-audit-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cloudflare/security-audit-skill</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Duet主动Agent内测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @turingbook · 2026-10-24 22:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有意思，Anthropic从Meta Muse团队招了一个产品总监做了Muse的竞品Duet。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">karan ahuja <span style="font-size:12px;color:#999999;font-weight:400;">@ahuja_karan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">👋🏼 迟来的更新：我加入了 @AnthropicAI，很兴奋终于可以分享我和团队一直在构建的东西。<br><br>隆重推出 Claude Duet，一款处于研究预览阶段的新应用，其中 Claude 作为你的主动代理运行。它基于 Opus 5.5 构建，我们希望打造一个你可以信赖的伙伴。<br><br>它会主动带着需要你关注的事情来到你面前，在 6,000 多个连接器和插件之间协作工作，在你离开时持续运行，并在采取行动之前先与你确认。<br><br>我们为那些在工作和家庭之间忙碌奔波的专业人士和小企业主打造了它。早期测试者正在用它来帮助经营业务、承担工作中更大的项目，以及重新获得时间以更好地陪伴家人。<br><br>我一直用 Claude Duet 来构建 Claude Duet，这是我职业生涯中最愉快、最有意义的经历。<br><br>我会在这里定期分享关于构建它的进展，以及新功能和改进上线时的更新。请持续关注。<br><br>加入候补名单，帮助我们塑造这款产品：<a href="https://claude.com/product/claude-duet" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/product/claude-duet</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">👋🏼 Overdue update: I joined @AnthropicAI, and excited to finally share what my team and I have been building.<br><br>Introducing Claude Duet, a new app in research preview where Claude works as your proactive agent. It runs on Opus 5.5, and we built it to be a partner you can trust.<br><br>It comes to you with what needs your attention, works across 6,000+ connectors and plugins, keeps going when you step away, and checks with you before it acts.<br><br>We built it for professionals and small business owners juggling a lot at work and at home. Early testers are using it to help run their businesses, take on bigger projects at work, and get time back to be more present.<br><br>I've been using Claude Duet to build Claude Duet, and it's been the most joyful and meaningful experience of my career. <br><br>I’ll be sharing regular updates here on how we’re building it, plus new features and improvements as they ship. Follow along.<br><br>Join the waitlist and help us shape the product: <a href="https://claude.com/product/claude-duet" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/product/claude-duet</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Rust飞书客户端百万字渲染5.7ms</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @s1dashu · 2026-10-24 18:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近用 Opus 5.5 跑了 104 个小时，用 Rust + GPUI 重写了一个飞书文档本地客户端，最终得到的效果很超乎预期：<br><br>- 覆盖了飞书文档的绝大部分功能，除了必须依赖云端的 feature。<br>- 标题、文字、列表、表格、分栏、高亮、引用、代码块，各种交互表现细节和 web 版保持高度一致。<br>- 100 万字的文档，单帧绘制耗时中位数 5.7ms，性能远超 web 版。<br>- 28MB 的轻量客户端，纯本地存储。<br><br>做完这个测试才第一次切身感受到什么叫“许愿式编程”，opus 5.5 就像一个事无巨细的老管家，宁愿跑三天三夜也要帮我把所有细节都处理好，这感觉太神了。<br><br>出于对飞书团队的尊重，这个项目不会对外发布😄</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113935479456567296/img/hjl0ZOwTm5hfyQt4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>React配PixiJS渲染岛分工做游戏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cholf5 · 2026-10-24 23:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天关于用 AI 做游戏又领悟了一项新技能：用 React 做 UI + PixiJS 做渲染岛。<br><br>“岛”的意思是：React 负责 DOM/UI，在 DOM 树里嵌一块区域，交给 PixiJS 用 Canvas/WebGL 做真正的游戏渲染，而不是所有东西都用 DOM。PixiJS 是偏 2D 的，如果做 3D，就换成 Three.js。<br><br>这个方法可以说非常屌，以前确实没想过，也是最近跟 AI 聊时它无意中抖出来的。以前我要么全用 React，要么就全用 Phaser 了。用 Phaser 时整个 UI 也是在 Canvas 里做的，肯定没 React 做起来方便。<br><br>这个方法在我说出来后，你可能会觉得：“就这？”，确实看起来平平无奇，不过用上后，我想在让“AI 全自动开发游戏”这件事上会非常有帮助。<br><br>因为 AI 本来就很擅长写 React UI，而游戏里的核心渲染又可以直接交给成熟的渲染引擎。两边各干各的，反而比让 AI 在一个巨大的游戏框架里同时处理 UI、渲染和交互要简单很多。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVZ78GyaIAAyKzx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie网关映射流式与工具调用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HunziDaily · 2026-10-24 13:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人以为做个代理网关很简单，实际上把 OpenAI 格式转成 Anthropic 格式极其硬核。<br><br>大模型在做编程任务时，不仅有普通的文本流，更依赖极其复杂的【Tool Calls（工具调用）】和【Thinking Block（思考链）】。<br>不同厂家的参数结构、流式 Chunk 切片逻辑、甚至异常报错的返回码完全不同。<br>稍有不慎，Agent 就会解析失败，代码直接写飞。<br><br>Magpie 最强的地方，就是把流式推理、多步骤工具调用在本地内存里做到了像素级映射。<br>外部的 Claude Code 以为自己一直在跟官方对话，<br>底层的网关早就把数据流洗得干干净净。<br>极客对技术的死磕，全部藏在这个不到 15MB 的小工具里。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Telegram内测Agent自填Key</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jax_wu · 2026-10-24 22:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Telegram macOS beta 里翻出个 Agent。自己填 key，ChatGPT Claude Gemini Grok 随便切，跟 @agent 聊就行。<br><br>卧槽这思路挺狠——杜罗夫不靠 AI 抽成，就当你的插排。你的账单你自己结。<br><br>以前人人抢模型入口，现在入口往聊天软件里钻。等正式上了，套壳 App 那波可能真悬</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenMontage口述生成AI短片</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dandanetha · 2026-10-24 08:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GitHub 上直接屠榜的 OpenMontage，star 已经飙到 6.5w+，专攻 AI 视频剪辑。<br><br>玩法挺离谱：对着 Claude Code、Cursor 这类 AI 编程工具随口说句人话，它转头就去写脚本、搜素材、配音、敲字幕、合成收尾，一条龙全包。<br><br>几个真实例子：<br><br>1️⃣ 60 秒皮克斯风动画短片，剧情、运镜、钢琴 BGM、动态字幕一样不缺，全由 AI 生成，总花费才 1.33 刀；<br><br>2️⃣ 电影预告片那股味儿拿捏得死死的，配乐把氛围感顶满；<br><br>3️⃣ 脑机接口产品宣传片，全程花销不到 1 刀。<br><br>更绝的是，一条爆款视频丢给它，它能拆出人家的脚本节奏、镜头关键帧和风格，回头甩你 2 到 3 个不同思路的方案。<br><br>0 成本就能把整套流程跑通，愿意花一两刀挂上高级模型，画质还能再提一档。背后是 12 条流水线、100+ 工具、700+ agent skills 在撑着。<br>🔗 <a href="https://github.com/calesthio/OpenMontage" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/calesthio/OpenMontage</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVWW-QraQAAilNE.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

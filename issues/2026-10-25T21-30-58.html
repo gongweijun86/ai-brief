@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月26日 05:30">
+<title>AI技术雷达 · 10月26日 05:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Tailscale SSH被曝11个漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;grok bot多端登录跨平台操作</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;代理工具分流规则按客户端配置</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;HarnessRouter统一切换框架</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;AI写码速度超过人读代码</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Tailscale SSH被曝11个漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Lonely__MH · 2026-10-25 23:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨 🚨 立即行动！赶紧关掉 Tailscale SSH！！<br><br>用 Tailscale 远程连家里电脑跑 Claude Code 的兄弟，注意了⚠️<br><br>有研究员发现漏洞后，没私下通知厂商等修复，直接公开了 11 个漏洞<br><br>一台设备被黑，就可能直接拿到其他机器的 root 权限<br><br>官方修复出来之前，能关先关吧💔<br><br>悉知。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVfJQ4na0AAdbtB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>grok bot多端登录跨平台操作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Chris_Defi · 2026-10-25 18:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近深度使用了几周 grok @bot 和 @Muse 写个测评<br><br>1，bot最牛逼的地方是多端登录，这个我看x没几个人提到，同时登录mac、linux、ios、windows，可以通过ios跨平台的操作其他同时在登录的系统，这不是龙虾、Hermes可以做到的程度。<br><br>2，现在用bot全自动的在自媒体起号，从选题、视频生成、发布、自动评论，一条龙每天像个勤恳员工，200u订阅必须拉满。<br><br>3，很多人担心ai起号封号的问题，我用几台手机外接了linux dgx，让bot用adb操作安卓手机，所有操作都在手机完成，上传、发布、评论。整个过程蒸馏成skill，其他任务复用。<br><br>4，muse毕竟免费白嫖的，送还外送一台kvm机器，大概等值约300人民币一个月，十亿token每周免费重置。muse的优势是免费，光这点确实秒杀市场其他同类产品。<br><br>5，muse干工程类代码类的活稍微差点意思，比如让他选题让剪个视频，还得外接个api，不然像个呆瓜。远程操控的体验不如grok bot，和gpt的dot在一个水平。<br><br>6，他们送的机器都没有外接端口，要本地起个服务接外网访问，最佳实践是常驻进程走cf tunnel，其他方案都不如这个，这个还支持走cf的ssh。其他静态ip的优势就不赘述了。<br><br>7，最舒服的用法是给bot和muse都装上claude cli、codex cli，让bot操作他们干活。尤其复刻视频，在网上刷到比较好玩的视频直接让bot拆解、复刻、审核、然后发布。<br><br>8，muse现在除了免费还没有发现其他比grok bot体验上做的好的地方，muse差不多就是低配的bot，我猜测是kvm配置的原因+muse模型聪明度综合原因。也许muse对美国本土应用有比较好的适配是我没发现的优势。<br><br>9，muse暂时不支持跨平台操作，本地执行权限比较低，高权限全部放在它的远程服务器上。日常的一些简单任务需求可以让muse做，涉及工程、代码、跨平台高权限协作、多端混合协作，bot是目前最能打的没有之一。<br><br>10，关于交易，bot挺适合用来盯盘和策略执行的，但策略定制还得靠人。投资交易更像是抽象哲学艺术，ai只能解决工程类问题，解决不了艺术审美，策略好坏本身就是个主观审美问题。很多人给grok bot 100u 让它赚钱，就好比你给ai一百张图，让它挑出好看的，只许好看不许丑。<br><br>11，目前个人最佳实践组合是paseo+grok bot+claude cli+codex cli，可以说是opc最舒服的状态。手机随时vibe和运营，电脑也是全平台同步上下文。<br><br>人活着无时无刻正在产生上下文。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>三星智能电视固件后台监听环境音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-25 12:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">太荒诞了：一名安全极客用 OpenAI 逆向破解自己花 3000 美元买的三星智能电视，结果抓包发现电视固件在后台全天候监听环境音。<br>更黑色幽默的结局来了——三星毫发无损，反倒是这位极客自己的 OpenAI 账号，因为“逆向自己家的电视”被以 Cyber Abuse（网络滥用）为由直接封号了。<br>扒出的细节让所有智能家居用户背后发凉👇</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>代理工具分流规则按客户端配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gkxspace · 2026-10-25 18:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你没给🪜配置过分流规则，还是建议搞一下，能解决很多网络问题<br><br>如何给你的代理工具配置分流规则：<br><br>1、Shadowrocket：Johnshall 的懒人配置。<br><br>2、Surge、Quantumult X、Loon、Stash：blackmatrix7 对应客户端的规则；Surge 和 Stash 也可以用 SukkaW。<br><br>3、Clash Verge Rev、FlClash、OpenClash：底层是 Mihomo，用 SukkaW 或 MetaCubeX 的 rule-providers。<br><br>4、sing-box、Karing、Hiddify：用 SRS 远程规则，或者软件自带的地区分流。<br><br>5、v2rayN：直接用内置路由，让 geosite:cn、geoip:cn 和局域网直连，最后的流量走代理。<br><br>大家没必要自己研究这些，可以把下面这段丢给 AI👇：</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVd_rCBbMAAXZd7.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">文轩 <span style="font-size:12px;color:#999999;font-weight:400;">@hungxun254458</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">@gkxspace 话说怎么切不同的分流规则啊</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>HarnessRouter统一切换框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-25 19:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近发现一个值得关注的开源项目：HarnessRouter，它试图解决 AI Agent 生态中的一个痛点——不同 Agent 框架之间缺乏统一的调用接口。<br><br>目前，HarnessRouter 已支持 Claude Code、Codex、OpenCode、Gemini CLI、Hermes、DeepSeek Harness 等 26 种 Agent Harness。<br><br>它最大的特点不是切换大模型，而是切换整个 Agent 执行框架。<br><br>通过统一的 Unified Harness Protocol（UHP）协议，开发者只需要一个 API，就能调用不同 Agent 执行任务，并统一管理会话、实时输出、文件读写、任务取消和错误处理。<br><br>例如，开发者可以将 Claude Code 或 Codex 作为自己产品的后端，让 AI 自动编写代码、生成文档、制作幻灯片，甚至参与视频制作。<br><br>项目兼容 OpenAI Responses API，支持 Docker 一键部署，社区版采用 Apache 2.0 开源协议，可以使用自己的模型 API Key，在自有基础设施上运行。<br><br>它真正的价值，是让 AI Agent 像大模型一样，成为可以自由接入和替换的基础设施。<br><br>GitHub：<a href="https://github.com/HarnessRouter/harnessrouter" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HarnessRouter/harnessrouter</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI写码速度超过人读代码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @real_doctormin · 2026-10-26 01:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我觉得我能理解Anthropic的内部工作流以及Git版本爆炸的原因、还有他们员工感慨的“大家对AI用的还不够激进”。<br><br>因为我们公司用的非常激进，人不光不写，甚至也不看代码了。日均上百个 commit。人正常下班，AI工作日夜不停。人只报需求与反馈BUG，AI session 自己开 Issue、跟进度、通知协作方，对方的 AI 收到后接着处理、反馈。协作靠 Issue 流转，不用人来回传话。<br><br>代码质量不一定很高，但是需求实现极快、性能迭代极快、人力需求极少，其他公司很难竞争。同时，这这带来两个变化：<br><br>第一，AI 写代码的速度，已经超过人看代码的速度。程序员的工作也变了，更像产品经理加测试：把需求说清楚，盯住关键节点，最后把功能、交互、性能验收充分。实现细节，不必事事过问。<br><br>第二，AI 提需求的能力还远不如人，而人也不可能什么都想到。所以，不同分系统仍然需要不同的人负责。每个人都在带自己的 AI 干活，某种程度上就是 AI session manager，管的是一组 AI 员工。但是，人类员工分工还是要清楚，职责尽量少重叠。一个人的 context，装不下整家公司。<br><br>所以现在招人，我对背景、写代码能力已经不在乎了，越来越看重审美、判断力和感知力：能不能发现问题，知道什么值得做，也看得出做出来的东西到底好不好。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVfiYp-aoAAxIfN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Yimin Zhao <span style="font-size:12px;color:#999999;font-weight:400;">@real_doctormin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">近一年，我作为联创力量之一参与商业航天创业，一年内估值从0到超过15亿了，打了三颗低轨卫星。作为软件研发负责人，分享个人体会：<br><br>1. AI无限制报销。没有AI，就没有创业公司的今天，我司一位程序员的人效相比于前AI时代至少是20x，工作辛苦程度大约1/5，收入大约2x<br><br>2. 防止FOMO的最好方式是创业</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>雅思背词站开源7298词全配音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Delroy715 · 2026-10-25 22:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，有大佬自己掏钱用 ElevenLabs 给 7298 个雅思词全做了高质量配音，还免费开源了。<br><br>每个词都有原创插画，英音、美音、例句配音全配齐，学一个词就点亮词汇星图上的一颗星。<br><br>不用注册，打开就能背。ElevenLabs 是按量收费的，这么多音频文件跑下来成本不低，作者直接把整套东西开源，代码和词库随便用。<br><br>备考雅思的可以先收藏，或者丢到你们的备考群里给大家用。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">阿磊 <span style="font-size:12px;color:#999999;font-weight:400;">@yangleiocx3</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我做了一个我自认为全世界最好的雅思背词网站，完全免费，完全开源。🔥🔥🔥🔥🔥<br><br>7,298 个雅思词，每个词一幅原创插画，英音、美音、例句全都有接近真人的配音。学会一个词，你的词汇星图上就点亮一颗星。<br><br>完全免费！！不用注册，打开就能背，代码和词库大家随便用。<br><br>希望每个人都能考过雅思。学会英语，去接触更广阔的天地，获取更多的知识。<br><br>👉 <a href="http://0xlei.tech/words" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://0xlei.tech/words</a><br>开源：<a href="https://github.com/designfuchen/word-atlas" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/designfuchen/word-atlas</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114337565280976896/img/WRyytycLd6rDUkIs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVei2GOWEAAal8Y.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Opus 5.5做3D物理课本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-26 01:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Techartist 用 Opus 5.5 做了本 3D 可视化物理课本《Every Joule》：十课讲完英国中学“能量”单元，免费在线看<br><br>覆盖英国 GCSE 物理“能量”整章。GCSE 是英国学生 16 岁左右参加的毕业考试，大致相当于我们的中考。<br><br>用 Anthropic 的 Opus 5.5 模型和 Three.js（在网页里画 3D 的开源工具）做的。<br><br><a href="https://iamtechartist.com/every-joule/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://iamtechartist.com/every-joule/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Techartist <span style="font-size:12px;color:#999999;font-weight:400;">@techartist_</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">来自我的3D能量主题书籍的九个新课程，现在涵盖了GCSE能量主题的全部内容：动能、重力势能和弹性势能、加热、功率、效率、能源资源以及能量守恒。<br><br>使用 Opus 5.5 和 Three.js 构建。完整书籍 ↓ </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Nine more lessons from my 3D book about energy, now covering the whole GCSE energy topic: kinetic, gravitational and elastic energy, heating, power, efficiency, energy resources and conservation of energy.<br><br>Built with Opus 5.5 and Three.js. The full book ↓ </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2114032980767416320/img/sjTUZDlJHwyGJTl5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

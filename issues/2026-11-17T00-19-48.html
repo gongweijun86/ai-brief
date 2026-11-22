@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 08:19">
+<title>AI技术雷达 · 11月17日 08:19 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;SpaceXSI用形式化验证把关AI代码</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;英伟达开源Agent Skill验收工具</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;DeepMind用AI证明线上加密库</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;苹果container每容器独立微VM</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;常驻Agent瓶颈是系统工程非模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Magpie下线agy直连插件防封号</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SpaceXSI用形式化验证把关AI代码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-16 15:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从Lauren Tan 土豆姐在AI Engineer Code Summit 上的演讲里可以看到SpaceXSI团队已经开始在自动化coding里使用了形式化验证做质量保证，并且token的70%用于验证质量！<br><br>土豆姐在AI Engineer Code Summit 上的演讲，标题是 《All Code Is Slop (Except Mine)》（所有代码都是垃圾，除了我的）<br><br>她讲的是 SpaceXSI 的 Grok Bot 团队如何用 AI coding agents 大规模写代码，同时不牺牲质量。（看来他们已经大量的在生产环境下用形式化验证保证质量了）<br><br>-有了 AI agent 后，任何人都能变成“编码机器”，产量暴涨（她自己一个月提了约 3000 个 PR，团队一个月合并约 11,000 个 PR，回滚率约 0.5%）。<br><br>-真正的挑战不是“写得快”，而是在产量暴涨的同时守住甚至提升代码质量。<br><br>-关键不是盲目信任 agent，而是通过改善 agent 的环境来建立“earned trust”。<br><br>她用一个倒金字塔说明应该把精力放在哪里（从最重要到最次要）：<br>-代码库本身（最重要）：好的 API 设计、架构、重构。Agent 会模仿代码库里的现有模式，垃圾模式会被快速复制传播。<br><br>-静态分析 / 强制约束：lint 规则、类型系统、编译器、测试、CI。把容易误用的东西直接禁掉（例如他们在 Dune 框架里几乎全面禁用了 React 的 useEffect）。<br><br>-验证：运行时验证 + 形式化验证（他们用了 TLA+ 和 Lean）。把 token 更多地花在验证而不是生成上（提到日常 token 使用约 70% 用于验证）。<br><br>-文字规则（rules、skills、AGENTS.md 等）：最后才用，因为这些不可强制执行，容易过时。<br><br>实用做法举例：<br>-用文件夹结构和 lint 规则强制隔离（比如 Electron 的 main 和 renderer 不能互相导入）。<br>-尽量少写注释，改用能给出明确错误信息的 lint 规则，引导 agent 修根本原因而不是打补丁。<br>-让 agent 自己跑应用、用 DevTools、看截图/视频来验证，而不是只看代码。<br>-先把基础打好（干净的代码库 + 强约束 + 验证），再做自动化的“software factory”，否则自动化只会更快地生产更多垃圾。<br><br>演讲视频：<br><a href="https://www.youtube.com/watch?v=O_zcc6Xl12g" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=O_zcc6Xl12g</a><br><br>视频里提到的形式化验证工具：<br>TLA+ 和 Lean 都是形式化验证工具，用来从数学层面证明“这个系统/代码在某些情况下一定是对的”，而不是只靠测试去碰运气。<br><br>TLA+验证：<br>主要用于模型检查（model checking）核心用户流程的状态机。<br><br>gorkbot应用的典型例子：跨设备、跨平台的通知流程。<br>做法是把用户行为/系统状态变化建模成状态机，然后检查在各种可能的事件顺序下，系统是否始终满足预期的性质（比如不会丢通知、不会出现不一致状态等）。适合发现“并发/时序”类问题。<br><br>Lean验证：<br>主要用于对具体算法做形式化证明。<br>gorkbot应用的典型例子：他们自己写的一个虚拟化库（virtualization library，用于长列表只渲染可见项）。用 Lean 证明这个算法不会出现闪烁（flicker）和抖动（jitter）问题。<br><br>TLA+：官方有《Specifying Systems》和一些不错的入门教程。<br>Lean：可以看《Theorem Proving in Lean 4》或社区的数学形式化项目。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Obscura用Rust重写无头浏览器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-16 18:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，反爬圈这回天塌了！！😱<br><br>纯 Rust写的神级项目直接封神。<br><br>Github 上 3.5 万 Star 的现象级开源项目 Obscura 发布重磅更新，直接把 Chromium 踢出局了！<br><br>过去搞 Browser Agent 或者大规模抓取，不是被 Chrome 几百兆的吃内存狂魔搞崩，就是被各种反爬系统拦得亲妈都不认识。<br><br>Obscura 选了一条最硬核的底层重构之路：抛弃 Chromium，纯靠 Rust 搭配原生 V8 引擎，硬生生砸出了一套极致轻量的无头内核。<br><br>这次大版本更新的实测数据堪称离谱：<br><br>· 彻底摆脱 Chromium 掣肘：原生渲染引擎正式上线！完全不需要外部 Chrome 环境，靠内置引擎就能直接搞定截图、Live 推流、PDF 导出以及 DOM 解析。<br>· 内存占用锐减 85%：传统无头 Chrome 随便一跑就是 200MB 起步，Obscura 硬是把运行内存压缩到了惊人的 30MB，安装包仅 70MB，一台入门级轻量 VPS 就能轻松并发上百个实例！<br>· 极速秒开体验：网页加载仅需 85ms，启动时间从 Chrome 的 2 秒直降为零感秒开，抓取和交互效率原地起飞。<br>· 军工级反风控体系：基于 BoringSSL 重新编译底层，自动伪装 TLS/JA3 指纹和硬件特征，强制锁定 event.isTrusted=true，原生屏蔽 webdriver 检测，并内置 3500+ 反爬探针黑名单，主流防护盾直接形同虚设。<br>· 零成本无缝迁移：原生兼容 CDP（Chrome DevTools 协议），你现有的 Playwright、Puppeteer 或 Coding Agent 工具链，只需改个端口就能直接平替，毫无迁移痛感！<br><br>连 Cloudflare 官方在研发下一代无头浏览器引擎时，首个原型也是把 Obscura 移植到 Workers 上才跑通的。<br><br>搞自动化爬虫、AI 网页操作 Agent 以及做风控对抗的兄弟，强烈建议立刻收藏！<br><br>仓库地址：<a href="https://github.com/h4ckf0r0day/obscura" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/h4ckf0r0day/obscura</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>主会话弱模型调度Thread省Token</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-16 10:59</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">主会话 + Thread 的模式，优化好的话 Token 消耗其实还好。<br><br>首先主会话反而不需要特别强的模型，Sonnet 5.5 这个级别都够用了，因为它的主要职责是甄别和路由，或者说调度。<br><br>就跟公司前台一样，你不需要招一个专家，只要知道什么任务该找谁。<br><br>主会话里面很多任务都可以让 Thread 去完成，反倒是 Thread 应该用相对强一些的模型。当然更科学的办法是主会话在调度的时候根据任务难度去选择合适的模型。<br><br>比如我在用 Claude Project 的时候，主会话是 Sonnet 5.5，子任务是 Opus 5.5。<br><br>另外就是 Prompt Caching 的利用。<br><br>像主会话这种，特点是偶尔来个消息，很难利用好缓存，所以缓存如果过期了，不应该跟把所有历史会话和工具调用都发过去，而是只把最新的几条消息记录发过去，再配合 Session 的检索工具，可以很容易的收集齐上下文。<br><br>而对于 Thread，则是像传统的 Session 会话，会集中时间有很多对话，通常 Cache 利用率很高，但是也可能会出现缓存过期后又来新的消息，所以最佳策略是在缓存快过期的时候，比如 50 分钟（如果缓存一个小时的话）的时候，压缩一下上下文。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Gary Zhang <span style="font-size:12px;color:#999999;font-weight:400;">@GaryZhang124</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">问题是，Grok bot这个如果走单主会话的交互太耗额度了。<a href="https://x.com/dotey/status/2121434782433190063?a=50n4z6sX4Vvaup1hVn0&amp;s=20" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/dotey/status/2121434782433190063?a=50n4z6sX4Vvaup1hVn0&amp;s=20</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>英伟达开源Agent Skill验收工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TiagerBao · 2026-11-16 20:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent Skill 写得再好，怎么证明它真的有用？英伟达开源了一套专门的验收工具。<br><br>项目叫 SkillEvaluator，GitHub 已超过 2K Stars。<br><br>它不看 Skill 写了多少规则，而是分三层评估：<br><br>质量检查：检查格式、安全风险和兼容性<br>重复检测：识别 Skill 之间的语义重叠和冗余规则<br>实战验收：对比加载 Skill 前后的 Agent 表现，判断是否真正改善任务结果<br><br>支持接入 Claude Code、Codex 等 Agent，也能集成 CI 自动检查。<br><br>GitHub：<a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NVIDIA/SkillEvaluator</a><br><br>你觉得 Skill 验收最难的是证明它有效，还是确保它不会让 Agent 原本能完成的任务出错？<br><br>#AI #Agent #ClaudeCode #Skills</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>旧设备组网跑Agent测试省CI费用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HiTw93 · 2026-11-16 17:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">突然很想给大伙分享一下，我是怎么把家里的旧电脑旧手机和我的主力 Mac 搭建成一个非常好用 Agent 工作开发环境。<br><br>换在去年，强迫症的我可能这些旧设备全部被我咸鱼出掉了，只留一台主力 Mac，恰逢今年开发的软件有 Mac、Windows、Linux、iPhone 后，这些设备给我帮助非常多。<br><br>设备介绍<br><br>主力机是一台黑色 Mac M5 Pro 48 GB 内存 1 T 版本，非常好用，今年购买，唯一后悔就是当时应该买 2T 版本的，写代码、签名公证、发版都在这个上面，也是我自己唯一使用的一台机器。<br><br>测试机是一台 M2 Pro 32 GB 内存 512G 的机器，是我买M5之前一直在用的一台，后面放到了柜子里吃灰了几个月，刚好10月份在弄 Mole 的软件的测试，需要 Agent 帮我做大量的电脑操作工作，原先在主力机上，好比有一个人在抢我电脑的感觉，终于受不了了，把所有的测试工作全部让 Agent 迁移到了这台机器。<br><br>然后这台 M2 测试机上，还插了我一台 iPhone SE3，使用 iPhone Use 和 镜像可以让 AI 非常好的去操作它，它主要承担妙言 iOS 版本的测试工作，以及新产品的一些各种手机测试，这里 Agent 还可以通过 WebDriverAgent 把手机屏幕读成一个个元素，再按标签去点，非常好用。<br><br>不仅仅，这台测试机几乎被我利用到顶了，上面还用 Parallels 跑着一台 Windows 11 的 ARM 虚拟机，Mole for Windows 的 ARM64 版本就在这里测试的。<br><br>然后还有一台 Windows ThinkPad X1 8 GB 内存，当时为了写 Mole Windows 时候去整的，拿来测真实的 x64 硬件，屏幕缩放、电池、SmartScreen 和 Defender 这些虚拟机里看不到的东西，包括 Windows 版本的发版验收都需要这台真实的 Windows 机器。<br><br>为了更好利用到这台机器，我在它里面还安装了 Omarchy 的 Linux 虚拟机，用来测 Pake 在 Wayland 桌面上的表现，由于只有 8G，我尽量会让 Agent 一次任务只使用一个系统。<br><br>最后还有一台 NAS 微主机，上面跑着一个 Debian 12 的容器，x86_64 8 核 31 GB，专门来跑 Linux 命令行、GNU 工具的差异和 Pake 的 deb、rpm 打包，Mac 上的 BSD sed 和 Linux 上的 GNU sed 很多写法不一样，都用这一台机器来兜底。<br><br>我是怎么用它们来帮我测试的？<br><br>还是强迫症不想让书桌有这么多东西，我把这些测试机器全部放到了次卧里柜子里去了，所有设备插好电，做好通风，然后设置屏幕亮度最低，设成了永不睡眠也不黑屏，不过我会隔半个月去把这些机器全部重启一下。<br><br>首先我用他们来给我测试我的各种软件，我一直认为不管在什么时候，软件的发布应该是正式的，发布出来应该是稳定的，所有每次发布我会花费非常多的时间来自己测试，包括在自测之前会让 Agent 在真实的各种环境的机器上严格全部跑一遍，没有问题后，我再手工测试一遍，这样可以确保交到大伙手上的软件质量是过关的。<br><br>为了防止 Agent 测界面的时候在我主力机上和我抢鼠标的问题，一旦它动鼠标、抢焦点、切窗口的时候，我就没法用电脑，很别扭，所以才有了上面的多设备组网，在10月底我把所有要控制鼠标的活全部挪到了测试机上，UI 测试、端到端测试、点系统授权弹窗，都在测试机器上做，主力机只负责构建，然后把包发过去。<br><br>Agent 在测试机上操作并不是靠截图猜点击位置的，用的是自己写的两个很小的命令行工具，ax 走 macOS 的辅助功能接口，类似 ax tree &lt;pid&gt;，可以把一个 App 窗口里的每个元素连同标识、文字和中心点坐标打成文本，然后可以很好的按标识去按按钮，也很准确，然后 input 用 CGEvent 发鼠标和键盘事件，专门处理辅助功能树按不到的东西，比如右键菜单、往搜索框里打字、按 Esc 关掉菜单。相当于测试机上的内容被我转换成了 Agent 更易于了解的文本上下文，只有在实在解决不了的时候才截图来看，其他时候都用这种方法会快很多。<br><br>我是怎么用他们帮我来省钱的？<br><br>最近3个月，我的 GitHub Action CI 的非常超了非常多，几乎每个月差不多 70 刀往上，有点肉疼了，当时给大伙发过一次如何提高在 GitHub Action 上 CI 的效率和成本，但是还是不彻底，因为对于私有仓库 GitHub 托管的 macOS runner 在是按十倍分钟计费，原生构建和测试特别烧钱。<br><br>于是我在11月初，在测试机上给我那几个私有仓库里各挂了一个自托管的 runner，比如 Mole Mac 的 make verify 跑一次得 20多分钟，以及 Pake 跑 Mac 的测试也不快，还有妙言的 iOS 构建等等，全部迁移到本地测试机器上进行，当前这台 M2 测试机一共接了我将近 180 个 job，原来要花钱的地方由本地来承担了。<br><br>这里为了更加节约效率，我还做了一个检查机制，先在 Ubuntu 上跑一个只要几秒钟的小 job，去 GitHub 问一下当前主分支这个提交有没有已经跑完的完整测试，有就直接结束，没有才把活派给测试机。<br><br>不过这里有一个小坑，就是 CI 和 Agent 其实也在用一块屏幕，两边需要相互让着，我给做了一个「正在干活」的标记文件，Agent 每次通过脚本操作测试机，都会刷新这个文件，以及会区分是什么项目在用，比如 CI job 开始时先抢一个「CI 忙」的标记，用 noclobber 来创建，这样同一时刻只有一个能抢到，然后这里也有重试机制包括超时机制方便测试机可以在 24 小时不间断干活。<br><br>然后对于 Agent 也会相互抢同一块屏幕，好在现在各个对话之间可以相互发消息，要用的时候，先检查有没有人在用，再用的时候对方会问一下大概什么时候释放，然后另外一个 Agent 就很老实等着快到时候的时候才去检查，等等，类似这些里面有非常多的小巧思很有意思，所以现在阻碍我测试效率的应该是机器还是太少了，哈哈，不够也够了。<br><br>这样的好处还有什么？<br><br>回来昨天我发的那个，我说这次出远门，甚至都没有带主力机，就拿了一个家人非常轻的 Air 完全够用，甚至我感觉远比带上主力机还要方便太多了，假如带上主力机，其实在路上、飞机上 这种移动位置，机器都是关的，啥事情也做不了，而且还容易更换国家位置导致 Claude 的一些不稳定，现在好比这些机器 24 小时都开着，一直在干活，一直在运转，反而现在卡点不在机器，而在我自己的注意力。<br><br>不过我还是感觉做这些最终最终，应该是为了让我更轻松，效率更高，有更多时间去做自己想做的事情，而非全部 full time 扑倒上面，其实就有点本末倒置了，非常推荐大伙提高效率，留出时间来，做更多自己想做的非电脑干活的事情，这样生活才更有意思。<br><br>身体健康 &gt; 生活快乐 &gt; 码代码快乐，虽然都非常重要，但是还是要有优先级，这样才有精力去追求一些代码之外的有意思的东西。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPOdKnbIAERIjt.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepMind用AI证明线上加密库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realchendahuang · 2026-11-16 16:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在大家每天都在用 AI 写代码。写完一段功能，怎么敢确定它真的没问题？<br><br>绝大多数人的做法是跑测试。<br><br>比如写了一个银行转账的程序，我们在上线前手动试几笔：转一百块看看余额对不对，转零元看看会不会报错，再故意输个负数看看能不能拦住。全跑通没报错，大家就觉得稳了，打包上线。<br><br>这就像造好了一座大桥，工程师开十辆大卡车上去来回跑几趟。桥没塌，就宣布大桥合格。<br><br>平时做个网页、写个小工具，这么干完全够用。但测试有一个天生的死穴：它永远只能抽查。<br><br>有没有一种办法，不用靠碰运气抽查，就能百分之百确定一段代码在任何情况下绝对不会出错？<br><br>还真有，这在计算机里叫形式化验证（Formal Verification）。<br><br>假设老师让你确认一个结论：任意两个偶数相加，结果一定还是偶数。<br><br>如果按写代码跑测试的思路，你就得拿 2+4=6、8+10=18、100+200=300 一组组往上试。哪怕你把超级计算机烧冒烟，试完了一百亿组数字，心里还是没底——万一在第一千亿零二的时候突然蹦出个奇数呢？<br><br>因为数字是无穷无尽的，靠试永远试不完。<br><br>但初中生用数学证明只需要一行：设第一个偶数是 2a，第二个偶数是 2b，加起来等于 2(a+b)。不管 a 和 b 填什么天文数字，只要乘以 2，结果永远能被 2 整除。<br><br>证完这一行，宇宙里无穷无尽的偶数就全被锁死了，连一个反例都不可能存在。<br><br>形式化验证，就是把这套初中数学的原理搬到了软件工程里。它不再往程序里塞数据碰运气，而是直接把整段代码当成一道数学证明题来解。<br><br>具体干起来分三步：<br><br>第一步是立规矩。<br>工程师不用自然语言写含糊的需求文档，而是用严格的数学公式定下铁律。比如转账前后，两个账户的金额总和必须绝对相等，一分钱都不能凭空变出来；再比如手机里的加密私钥，无论遇到什么网络请求，它的字节绝对不能出现在对外发送的网卡缓存里。<br><br>第二步是翻译代码。<br>把程序员写的真实业务代码，连同服务器芯片底层的运行规则，一五一十翻译成等价的数学逻辑算式。<br><br>第三步是找个裁判来审卷。<br>在专门的证明工具（比如现在很火的 Lean）里，一步接一步写出严密的逻辑推导，证明第二步的代码算式在任何输入组合下，都绝对不会违背第一步立下的规矩。<br><br>这套裁判程序的核心代码非常短，只有几千行，全世界顶尖学者反复检查过无数遍，它只认数学推理。只要推导过程里漏掉了一种极端情况，裁判当场报错。<br><br>这门技术这么牛逼，为什么过去几十年我们在普通公司里几乎见不到它？<br><br>因为账算不过来，实在太贵、太熬人了。<br><br>一行看着很简单的业务代码，真要拆成严谨的数学证明，写出来的证明代码量往往要膨胀十倍到几十倍。<br><br>所以过去几十年，只有航天探测器、核电站控制、核心芯片运算器这种核心的地方，才舍得用这门技术。<br><br>形式化证明成本的问题直到最近两年遇上AI，才突然迎来了反转。<br><br>数学证明这活儿，天生有个微妙的不对称性：想出证明过程难如登天，但让机器检查证明对不对，却快如闪电且零成本。<br><br>你可以把几十个 AI 智能体关进小黑屋里日夜不停地试错。不管大模型在里面产生多少次幻觉、胡编了多少条走不通的推导，只要交给 Lean 裁判检查，错半步也会被直接拦截。<br><br>只有当 AI 真正老老实实把每一处边界、每一种极端情况都推得严丝合缝，裁判才会亮绿灯放行。<br><br>就在前阵子，谷歌 DeepMind 团队干成了一件大事：<br><br>每天有几十亿人用来加密聊天的底层核心库叫 libsignal，团队派了五名人类研究员，带着几十个并发运行的 AI 智能体，花了短短四周时间，自动写出了六百五十万行通过机器严格核验的 Lean 证明代码，把这套正在线上跑的真实加密程序一直验证到了最底层的芯片机器码。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>苹果container每容器独立微VM</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 18:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">苹果亲手给 Mac 上的 Docker Desktop 判了死刑，顺便把 GitHub 炸出了 51.5k Star 🧵<br>在 Mac 上跑容器，是所有后端和全栈工程师心中的痛。<br>你以为你在跑轻量级容器，实际上 Docker Desktop 在后台偷偷给你塞了一个吃掉 8G 内存的巨型 Linux 虚拟机，风扇转得像直升机起飞，企业版每年还得交着昂贵的订阅费。<br>苹果这次直接掀桌子了：开源了纯 Swift 编写的官方工具 apple/container。   <br>最狠的不是它免费（Apache 2.0 协议），而是它底层硬核到变态的架构设计：<br>别人是“所有容器挤在一个臃肿的 VM 里”，苹果直接利用 macOS 26 的原生虚拟化框架，做到了 “一个容器，一个独立微型 VM”。   <br>很多人第一反应：一个容器起一个 VM，内存和启动速度不得爆炸？<br>苹果的解法极其暴力：直接用 Swift 写了个 vminitd 塞进精简版 Linux 内核当初始进程，通过 vsock 走 gRPC 通信，把传统 Linux 启动时乱七八糟的系统服务全砍光了。既有硬件级的绝对安全隔离，又保留了毫秒级的冷启动，连跑 amd64 镜像都原生焊死了 Rosetta 2 硬件级加速。   <br>更骚的是苹果官方给的示例库 container-examples。<br>他们专门写了个叫 containerization-sandboxy 的官方 Demo，教你用短短几十行代码把 Claude Code 这种 AI Coding Agent 关进独立的微型 VM 里跑，只挂载指定目录、卡死网络白名单。   <br>这算盘珠子都崩我脸上了：当所有人都在狂推 Vibe Coding、让 AI 随便接管本地终端的时候，苹果已经在底层用微型 VM 给本地 AI Agent 焊死安全沙盒了——毕竟谁也不想因为 AI 一句幻觉出来的 rm -rf，把宿主机底裤都赔光。<br>工具链的终局，往往就是被操作系统原厂直接“收编”。<br>你的 Mac 上现在用的是 Docker Desktop、OrbStack，还是已经准备切到苹果原生 container 了？👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXK6sKbaoAEHI3k.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>常驻Agent瓶颈是系统工程非模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yymhxie · 2026-11-16 10:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近 always-on agent 的讨论明显多了起来。Anthropic 发布了《Building always-on agents》，前面还有 DeepSeek 的 Super-agent，LangChain 的 Async Subagents，KubeCon 上 Google 捐给 CNCF 的 Agent Substrate 也到了 1.0。<br><br>这几样东西放一起看挺有意思的：<br><br>agent 不是一个一直在思考的大脑，它更像一个大部分时间在睡觉、偶尔被叫醒干一轮活的工人。<br><br>Agent Substrate 那边给了个数字：agent 有 90%–95% 的时间在空闲，等模型返回、等工具、等人批准。按传统 K8s 常驻 Pod 的方式跑，集群一直在为空闲的 CPU 和内存买单。所以它的做法是把状态和计算拆开：每个会话是一个带内存、文件、身份的 Actor，真正干活时才挂到预热好的 worker 上。<br><br>Anthropic 的拆法是同一个思路，从应用层进行拆分：<br><br>Inbox：接事件，负责去重和失败重试<br>Timer：定时把 agent 叫醒，主动跟进<br>Memory：跨 session 保存记忆和任务进度<br>Permissions：权限、凭据、人工审批<br>Outbox：控制什么时候、用什么方式给人发消息<br><br>我最喜欢的是 Deferred Tool Call：需要人审批的时候，先把 session 存下来、把 worker 释放掉，等人回复了再恢复执行，而不是占着资源傻等。<br><br>看到这里，做过电商、支付、企业系统的老司机们应该会心一笑。<br><br>这五个组件，没有一个是 AI 问题。<br><br>Inbox 去重和重试，就是消息队列的至少一次投递加消费端幂等。<br>Timer 是定时任务调度。<br>Memory 是状态持久化。<br>Deferred Tool Call 是工作流引擎里的人工节点：流程挂起、等审批、回调恢复。<br>Outbox 是通知中心加频控。<br><br>这些东西在交易链路、订单状态机、审批流里，已经磨了很多年。<br><br>所以我对 always-on agent 的看法是：<br><br>第一，模型能力不是瓶颈，系统可靠性才是。<br><br>一个只跑一轮的 chatbot，出错了用户重问一下就好。一个常驻的 agent 会被 webhook 叫醒、会自己定时跟进、会替你给人发消息。同一个事件被投递两次，它会不会把邮件发两遍？工具调用到一半超时了，重试会不会重复扣款、重复建单？审批挂起三天，恢复时上下文里的数据是不是已经过期了？<br><br>这些问题模型回答不了，只能靠工程设计解决。<br><br>第二，确定性的部分必须从 prompt 里拿出来。<br><br>我一直坚持一个做法：确定性的规则逻辑放进代码，用测试用例守住；只有真正需要推理的部分才交给模型，并且只对这部分做 eval。<br><br>放到 always-on agent 上就更明显了。去重键怎么算、重试几次、哪些工具调用必须走审批、什么时间段不许给客户发消息、哪类操作必须幂等，全部是规则，写进代码和配置里，测得清清楚楚。模型负责的是「这个事件要不要处理、该怎么处理」这类判断。<br><br>如果把「别重复发消息」「金额超过多少要审批」写在 prompt 里指望模型自觉，那就是在生产环境里赌概率。<br><br>第三，对企业交付来说，这会是 FDE 的主战场之一。<br><br>客户真正想要的 agent，几乎都是常驻型的：盯着工单系统、盯着 IM 群、盯着 GitHub、定时出报表、异常了找人审批。Demo 阶段大家只看它答得聪明不聪明，一上生产，问题全是：消息丢没丢、重没重、权限对不对、审批卡在哪、半夜挂了谁知道。<br><br>能把这套东西在客户的系统、权限体系、审批流程里做稳的人，才是企业愿意付钱的人。这活儿很像当年把一个单体系统拆成分布式架构：没什么新名词，全是细节。<br><br>最后说一句：Anthropic 这篇值得系统读一遍，但读的时候别只盯着 agent 这个词。把它当成一篇「事件驱动系统设计」来读，你会发现自己早就会了一半。<br><br>模型是新的，坑是旧的，历史总是在不断重演中螺旋上升，经验都是在血泪中积累起来的。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie下线agy直连插件防封号</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zg0820 · 2026-11-16 11:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">《谷歌 agy 反代封号之后：给还在用 Gemini 的迁移清单》｜magpie 官方公告 + 社区实测<br><br>今晨 Magpie 官方 X（@magpie_router）公告：内置 Antigravity 和官方插件 opencode-antigravity-auth 已下线（v0.1.4232 起）。理由直白——它们模拟客户端直连 Google 接口，账号容易被封，现在 magpie 不再用这种方式向 Google 发任何请求。对应 Issue #6723 写了内置 agy 路由 11-15 退役。<br><br>时间线：11-05 首轮 403（&quot;This service has been disabled ... for violation of Terms of Service&quot;），11-14 社区大规模报封号（有人七天刷 2B Gemini 4 用量后当天被停），11-15 路由下线，今晨官方给出口径。<br><br>一、根因不是用量，是「请求由谁发出」<br>模拟客户端直连 = 第三方工具自己拼 Google 内部接口，鉴权形态和官方客户端不一样，风控能识别。替代方案是社区插件「Antigravity (local agy CLI)」：通过 ACP 驱动本机登录好的 agy CLI，请求由官方客户端自己发出。公告原话「风险更低，但不是零，别多号同时高频跑」——换工具只是降风险，不是免风险。<br><br>二、按身份分的三条路<br>- 新用户：装不了旧插件，Plugins 页搜 agy，或 `magpie plugin add @magpie-community/opencode-agy-cli-auth`。<br>- 老用户：v0.1.4273 起照常能用（插件 0.2.1），服务商页会提示风险并引导迁移。<br>- 要长期稳定：走官方 Gemini API / Vertex AI / 官方订阅。非官方通道的可用性是租来的，11-05 到 11-15 这十天已经演了一遍。<br><br>三、社区实测里的高风险动作<br>多号同时高频跑、共用出口 IP、在 agy 里挂 Claude 类模型或生图、系统提示词被字符串匹配后 429（社区做了 antigravity-prompt-filter 过滤）、短时极高强度用量。反过来单人低频、只用 Gemini 系列的相对活得久。这些是社区经验不是官方承诺。<br><br>四、我顺手查了自己机器<br>`@magpie-community/` 里旧插件还挂着、新推荐的 agy-cli 没装；本机有 agy-switch 和双账户槽位，CLI 默认 Orchestrator (Argon)。待办：装 agy-cli、停旧插件、备用号与主力号分开、别并发跑。<br><br>五、已经封了怎么办<br>报错里的 appeal 表单可以提，社区普遍说只能解封一次。Google 官方开发者论坛有人请求人工复核，版主明确回复：无法人工复核、加急、查状态或撤销 ToS (403 PERMISSION_DENIED) 停用。别信「找人能捞回来」。「家庭组连坐」在社区被证伪过（子号封三个母号还活着）；该做的是撤销 OAuth tokens、停掉本地代理、之后只用官方客户端。<br><br>六、一句实在话<br>这轮不是某个工具的 bug，是平台把「绕过官方鉴权的第三方调用」这条通道整体关了。想继续用 Gemini，就把请求链路收回官方客户端或官方 API，账号降到一个，并发压下来。省下的差价，得算上账号随时不可用、申诉只有一次的机会成本。<br><br>参考：@magpie_router 11-16 公告与 11-14 建议帖、yetone/magpie Issue #6723、Google AI Developers Forum 申诉帖、<a href="http://Linux.do" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Linux.do</a> 社区讨论。文中只讲操作路径，不提供任何绕过平台风控的做法。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>分层派Agent评审代码diff</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-16 19:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">分层派 reviewer 别让一个 AI 通读 diff<br><br>让 AI 做代码评审，常见做法是把 diff 和周边文件塞进一个上下文，让一个 reviewer 从头读到尾。Djordje Puzic 最近这篇文章给了另一种做法：一层派一个 reviewer，每个只看该看的东西。<br><br>读代码和写代码一样，不是一门手艺，而是几层叠起来的，每层要的心理模型不同。人也没法同时想着产品意图、服务边界和空指针，而是拉近、拉远地看。分层不按字符位置，按判断这段代码需要理解什么。<br><br>形式层（语法、类型、格式、命名）几乎全交给编译器、linter、formatter，agent 一个 token 都不该花在这。能编译但意思变了的改动，比如 &lt; 写成 &lt;=、漏了 await，属于上一层。<br><br>本地意义层看这个函数本身做什么，是否兑现契约：边界情况、null、阻塞调用、循环里的查询。这个读者只需要函数和契约，不该看到路由表或产品路线图。<br><br>接线层看谁调用它、跨边界的数据形状、API 兼容、数据库迁移。函数自身正确，仍可能打破所有调用方的假设，所以这个读者需要边界，不需要函数体。<br><br>运行时层看并发、共享状态、重试、超时、性能、开关、部署顺序。接线问零件是否相连，运行时问它们动起来后如何表现。<br><br>使用层看真实用户的工作流、默认值、体验，以及因此变成谎话的文档和配错的路由。至于这改动该不该存在的意图层，作者认为留给人。<br><br>落地上是一棵树：叶子是每个文件一个本地意义 agent，往上每个模块边界一个接线 agent，根是持有整个系统的 agent。信息以契约而不是原始代码向上汇总，每个读者的上下文都窄而新。作者说这就是给评审者的信息隐藏，Parnas 1972 年那条老规矩。<br><br>两个坑。一是层间接缝，bug 爱住在两个读者都以为对方查过的地方，叶子上交的契约会是全树最重要的产物，含糊了上层就在审摘要。二是 agent 越多噪音越多，Claude Code 团队见过一个 PR 在 author 和 reviewer agent 之间一夜循环 50 多次，其中约 59% 的标记针对的是第一轮就存在的旧代码。<br><br>附言：安全不是一层，是横切所有层的视角，作者由此扩成层乘视角的矩阵；但那是更大的工程，小团队先把五层读者拆出来应该就够用了。原文结尾讲他们怎么压制旧代码的反复标记，我读到的抓取版本在这句中间截断，具体做法没核实。<br><br>原文链接在评论区<br>#小技巧</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPpMV0bYAAZV8k.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DevTools MCP命令行跑性能分析</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @king1821661 · 2026-11-16 09:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Chrome DevTools 官方亲儿子更新了，1.13 直接封神。<br><br>以前让 AI 开浏览器=瞎点+截图；现在它能把你页面开膛破肚：跑性能 trace、Lighthouse 点名到具体 DOM、扒 heap、抓网络瀑布，连录屏都不用 ffmpeg 了。<br><br>最狠：自带 CLI，一行命令开测，能塞进 cron。<br><br>还带7个skill，丢给agent直接变分析专家<br><br><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ChromeDevTools/chrome-devtools-mcp</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code装漏洞审计技能</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lxfater · 2026-11-16 11:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人把 681 份公开漏洞报告提炼成 AI 技能，然后开源了！<br><br>装上之后，Claude Code 不再只会泛泛聊安全，而是按老手的路子查漏洞、验真伪、写报告。<br><br>它能帮你：<br>1. 管思路和范围：用代码锁死授权边界，按 6 阶段流程推进，不乱扫无关目标<br>2. 排查 Web 漏洞：58 个专项 Skill 覆盖 XSS、SQL 注入、SSRF、越权和常见利用链<br>3. 查企业外网资产：覆盖 M365、Okta、SharePoint、企业 VPN 和云权限排查<br>4. 核验和出报告：7 问闸门筛掉误报，按规范脱敏 Cookie 和隐私，再按赏金平台格式写报告<br><br>GitHub 6.6k 星，代码 MIT、内容 CC BY 4.0 协议：<br><a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/elementalsouls/Claude-BugHunter</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

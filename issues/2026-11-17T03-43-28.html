@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 11:43">
+<title>AI技术雷达 · 11月17日 11:43 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agentic AI 知识图谱五层依赖</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;GA100故障注入解锁满血A100</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Antigravity双命令实战解析</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Anthropic多Agent实验落败</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Pi Durable让Agent断点续跑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;AutoSwarm统一多Agent上下文</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agentic AI 知识图谱五层依赖</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-11-17 11:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人一上来就研究 Multi-Agent、Self-Improving Agents、长期记忆、自主执行，恨不得直接搭建一套能够不断自我进化的智能体系统。<br><br>但真让他解释一次 Agent 从接收任务、构建上下文、调用工具，到执行失败、恢复状态、验证结果的完整过程，可能根本讲不清楚。<br><br>这张 Agentic AI Knowledge Graph，我觉得很值得仔细研究。<br><br>它最有价值的地方，不是整理了多少技术名词，而是把这些技术背后的依赖关系画出来了。<br><br>整张图分成五层。<br><br>最底层是 Foundations，包括 LLM Reasoning、Prompt Patterns、Function Calling、Embedding 和 Context Window。<br><br>往上是 Retrieval &amp; Memory，包括 Classical RAG、Graph RAG、Agentic RAG，以及短期记忆、长期记忆和情景记忆。<br><br>再往上才是 ReAct、Planner-Executor、Multi-Agent Orchestration、Tool Routing 和 Reflection。<br><br>然后进入真正的生产环境治理，包括 Confidence Scoring、Policy Gates、Audit Trail、Decision Logs、Evaluation、Observability 和 Token Economics。<br><br>最上面才是 Memory &amp; Learning Loops、自我改进、多模态推理和规模化 Agent 工作流。<br><br>仔细研究之后，你会发现一个挺有意思的问题。<br><br>很多人天天追逐最上层的能力，却把最下面那些看起来枯燥的工程基础跳过去了。<br><br>比如 Memory。<br><br>现在很多 Agent 都宣传自己拥有长期记忆，但把聊天历史扔进向量数据库，不代表系统就真的具备了可靠的记忆能力。<br><br>什么信息值得保存？什么时候应该检索？历史经验过期了怎么办？不同用户的记忆怎么隔离？<br><br>这些问题如果没解决，所谓长期记忆，可能只是一个越积累越混乱的信息仓库。<br><br>Reflection 也是一样。<br><br>让模型执行完任务，再让它自我评价一次、反思一次，不代表它真的能够持续进化。<br><br>如果没有真实业务结果、明确的评测标准和可靠的执行记录，模型很可能只是换一种方式重复原来的错误。<br><br>这就涉及一个我觉得非常重要的东西：Feedback Loop。<br><br>真正有意义的反馈循环，应该是任务执行之后，系统能够记录发生了什么，通过评测判断哪里做得好、哪里出了问题，再根据反馈调整下一次的执行策略。<br><br>而不是单纯给 Agent 加一句“请不断反思、持续改进”，就觉得它拥有了自我学习能力。<br><br>更重要的是 Production &amp; Governance 这一层。<br><br>我觉得它才是整张图最值得 Agent 工程师认真研究的部分之一。<br><br>现在很多人做 Agent，喜欢比较能调用多少个 MCP、能同时运行多少个子 Agent、能自主执行多少步。<br><br>但模型调用工具之前有没有权限检查？执行到一半崩溃了怎么恢复？重复调用会不会造成业务损失？任务执行过程能不能追踪？最终结果有没有真正完成用户的目标？<br><br>这些东西往往没有那么炫酷，却直接影响一个 Agent 能不能进入真实业务。<br><br>举个例子。一个招聘 Agent 能自动分析 50 份简历、生成评分报告，看起来已经不错了。<br><br>但如果评分规则更新了，旧任务怎么处理？模型误判了候选人，能不能追溯依据？如果它准备发送面试邀请，哪些操作必须经过人工审批？<br><br>这些问题不解决，你再增加几个分析 Agent、审核 Agent、Supervisor，可能只是让系统变得更加复杂。<br><br>所以我觉得，学习 Agent 最容易走偏的一件事，就是把系统复杂度当成技术先进程度。<br><br>实际上，很多业务根本不需要多智能体，一条设计合理的 Workflow 就能解决。<br><br>有些任务不需要长期记忆，只需要可靠的状态存储。<br><br>有些问题根本不需要模型反思，而是需要更准确的检索、更严格的业务规则和更好的评测。<br><br>真正值得学习的，是这些技术之间的关系，以及什么时候该用、什么时候不该用。<br><br>尤其是现在 AI 编程工具已经能够帮助我们快速实现大量功能。<br><br>实现一个 Agent Demo 越来越容易，但理解它为什么能够运行、为什么会失败、怎样控制风险、怎样持续改进，依然需要认真研究。<br><br>这张图最后有一句话我特别认同。<br><br>学习 Agentic AI，不能只从那些最先进的概念开始。<br><br>你得顺着技术之间的依赖关系往下研究，再真正观察一条任务从开始到结束的执行过程。<br><br>说到底，Agent 的价值不是它拥有多少工具、多少记忆、多少自主执行步骤。<br><br>而是它能否在真实任务里正确获取信息、选择行动、控制风险、验证结果，并且根据可靠反馈不断改进。<br><br>如果没有这些基础，所谓自主进化，可能只是在不断积累错误。<br><br>如果没有完整的执行追踪，所谓智能决策，出了问题也根本无从解释。<br><br>我越来越觉得，Agent 工程真正的门槛，不是让模型表现得越来越像一个聪明的人。<br><br>而是给这个充满不确定性的模型，建立一套能够持续执行、发现错误、纠正错误，并且对最终结果负责的工程系统。<br><br>别最后研究了一堆 Self-Improving Agents、Multi-Agent、Memory Loops，结果连一个工具调用失败之后该怎么安全恢复都搞不明白。<br><br>那学的可能不是 Agent 工程，只是越来越多的技术名词。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jithin V Raj 💎 <span style="font-size:12px;color:#999999;font-weight:400;">@jithinvraj</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">智能体AI知识图谱<br>（仅供参考与研究） </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Agentic AI Knowledge Graph<br>(Only for Reference &amp;amp; Research) </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-FbdwakAEUzCs.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GA100故障注入解锁满血A100</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-11-16 16:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这绝对是今年最让人拍案叫绝的硬件逆向神作：安全研究员 Kate 发现英伟达旗舰计算核心 GA100 芯片内部存在一个电压故障注入漏洞（Voltage Fault Injection），并亲手把一张当年矿潮遗留下来的阉割版 CMP 170HX 8GB 矿卡，原地解锁成了满血的 A100-80GB！<br><br>当年英伟达为了防止矿工抢占数据中心显卡，拿 GA100 大核心切出了 CMP 170HX 矿卡，不仅在硬件熔丝（Fuses）层面砍掉了显存容量、禁用了 NVLink 高速互联、把 PCIe 降到 Gen1，还锁死了张量计算吞吐。<br><br>Kate 顺着 GA100 上电启动读取板载熔丝配置寄存器的微妙时间窗口，用精密控制的电压毛刺（Voltage Glitching）去干扰芯片的熔丝传感放大器——让芯片在自检瞬间把原本烧断的限制熔丝全部误读为 0（未熔断状态），再配合重新植球焊满的高带宽显存，一举解开了英伟达在硅片层面的全部封印：不仅显存认满 81,920 MiB（80GB），连原本被阉割的 PCIe Gen4、NVLink、MIG 切分 也全数复活。<br><br>更离谱的是实测性能：因为英伟达在卖零售版 A100 时为了保证晶圆良率，统一锁在了 108 个流多处理器（SM）；而这张被毛刺攻击彻底放飞自我的 GA100 核心，居然把晶圆上全部完好的 120 到 126 个 SM 单元 全点亮了，跑出来的真实算力比官方正版 A100 还要快出整整 1.2 倍。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXLju24aEAADWTc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity双命令实战解析</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChatGptAstra · 2026-11-17 08:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我敢说，/learn 和 / swarm 绝对是 Antigravity 中最被低估的两个命令！<br><br>一、先说 /learn<br>这个命令我经常用，主要场景有 3 个:<br>1、某次复杂的任务跑得特别好，想把关键步骤和坑沉淀下来；<br><br>2、想把某个工作流提炼成 Skill，这时候 /learn真的不是一般的好用，谁用谁知道;<br><br>3、反复纠正过的错误或约束，想让它彻底记住。比如”数据库查询必须加 LIMIT，禁止全表扫描“之类的东西<br><br>每次你使用 /learn，Agent 会先分析近期消息，寻找明确纠正过的地方，对比失败和成功路径，最后找出关键改动和根本原因。<br><br>然后，Agent 会继续判断这个经验是属于 Rule 还是 skill，如果是已有的 Rule 或 skill 但是在实际中失效了，那么 Agent 会更新现有文件而不是重复创建副本。<br><br>最后，会生成一个叫 learning_proposal.md 的提案文件等你审核通过后再修改。<br><br>这就是 /learn 的整个流程。<br><br>二、/swarm 命令则有点像著名厨师 @poteto  的米其林厨房的概念<br>1. 拆分任务。<br>进入 swarm 模式后，当前的对话 Agent 会立刻化身协调者，并将当前的复杂任务拆分为互不冲突的小模块，并将它们交给不同的 Worker Agent<br><br>2. 分配并公开Breif。<br>然后，每个 Worker 会获得独立的上下文，并收到协调者的一份公开 Brief，Brief 会明确每个 Worker 负责什么、不能碰什么、怎样算完成。<br><br>3. 并行执行 + 验证。<br>Workers 开始在各自的隔离工作树并行执行。同时，每 2-4 个 Worker 会被分配一个 Verifier Agent，负责读 diff、跑测试、发现问题并反馈给对应的 Worker 去修。<br>还会有一个 Monitor Agent，任务卡住的时候它就会跑出来。<br><br>4. 共享看板协作。<br>Worker 之间不私聊，所有进展、问题、测试结果都公开可见，所有沟通都会在同一个共享看板进行。<br><br>5. 汇总汇报。<br>协调者 Agent 本身不写代码，只负责分配、判断结果、向你汇报最终进展。你也可以随时打开 Swarm 面板<br><br>这就是 /swarm 的整个流程，对于复杂任务真的非常值得尝试，就是有点耗 Token....</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXQouB_bIAQYEN-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RAG检索层需元数据权限隔离</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Fred834567 · 2026-11-16 13:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前阵子前同事接了家企业的私活，搞内部知识库问答，老板死磕权限隔离。他自信满满上了RAG套件，分块、嵌入、向量库一套连招。<br><br>结果刚上线测试，一个普通账号问了句“高管今年拿多少”，系统直接命中机密HR文档，把人家奖金明细一字不落吐了出来。<br><br>领导震怒，他委屈巴巴地狡辩：“我在Prompt里写了‘严禁泄密’啊！”<br><br>我听完直接笑骂：你特么把金库大门敞开，然后在门口贴张纸条写“请勿入内”，这能防贼？RAG本质就是个无脑检索器，不在查库前那一层用元数据卡死权限，指望大模型靠几句提示词就自觉遵守企业规则？做梦呢。<br><br>现在太多人以为RAG能解决一切。实际上，把正确答案喂给没权限的人，这不叫智能助手，这叫精准泄密机！<br><br>企业级落地，不懂数据权限隔离，全特么是耍流氓！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tech Fusionist | Kushal Gangil <span style="font-size:12px;color:#999999;font-weight:400;">@techyoutbe</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我面试了一位构建过多个LLM应用的AI工程师。<br><br>他的简历上提到了LangChain、RAG、向量数据库、OpenAI API、embedding和AI agent。<br><br>他自信地解释了他如何能用公司内部文档构建一个生产级聊天机器人。<br><br>于是我给了他一个场景。<br><br>【问题】：<br>构建一个AI助手，使用机密的公司政策、合同和内部文档来回答员工问题。<br><br>该助手必须提供准确的回答，并且尊重文档级别的访问权限。<br><br>【候选人的回答】：<br>我会使用RAG。<br><br>将文档分块，生成embedding，存入向量数据库，然后将检索到的上下文传给LLM。<br><br>这能解决幻觉问题，因为模型获得了正确的信息。<br><br>一个熟悉的架构。<br><br>【但我随后问道】：<br><br>一名实习生询问高管薪酬。<br><br>向量数据库检索到一份该实习生无权访问的机密HR文档。<br><br>LLM基于该文档生成了一个准确的回答。<br><br>【你的系统运行正确吗？】<br><br>他说：<br><br>&quot;我会添加一个系统提示，告诉AI不要分享机密信息。&quot;<br><br>于是我问道：<br><br>- 你如何在检索过程中执行文档级别的权限？<br>- 如果用户尝试提示注入会怎样？<br>- 你如何防止敏感数据通过检索到的上下文泄露？<br>- 你如何衡量基于事实性和回答准确性？<br>- 你如何针对不同用户角色测试访问控制？<br><br>他知道如何将LLM连接到向量数据库。<br><br>但他难以解释企业AI所需的安全边界。<br><br>【RAG并不会自动使AI应用变得准确或安全。】<br><br>一个给错误的人提供正确答案的系统仍然是一个安全失败。<br><br>【你会信任这位工程师来部署一个企业级AI助手吗？】</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I interviewed an AI Engineer who had built several LLM applications.<br><br>His resume mentioned LangChain, RAG, vector databases, OpenAI APIs, embeddings, and AI agents.<br><br>He confidently explained how he could build a production chatbot using internal company documents.<br><br>So I gave him a scenario.<br><br>𝐏𝐫𝐨𝐛𝐥𝐞𝐦:<br>Build an AI assistant that answers employee questions using confidential company policies, contracts, and internal documents.<br><br>The assistant must provide accurate answers and respect document-level access permissions.<br><br>𝐂𝐚𝐧𝐝𝐢𝐝𝐚𝐭𝐞'𝐬 𝐚𝐧𝐬𝐰𝐞𝐫:<br>I'll use RAG.<br><br>Chunk the documents, generate embeddings, store them in a vector database, and pass the retrieved context to the LLM.<br><br>That solves hallucinations because the model gets the correct information.<br><br>A familiar architecture.<br><br>𝐁𝐮𝐭 𝐭𝐡𝐞𝐧 𝐈 𝐚𝐬𝐤𝐞𝐝:<br><br>An intern asks about executive compensation.<br><br>The vector database retrieves a confidential HR document that the intern isn't authorized to access.<br><br>The LLM generates an accurate answer based on that document.<br><br>𝐈𝐬 𝐲𝐨𝐮𝐫 𝐬𝐲𝐬𝐭𝐞𝐦 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 𝐜𝐨𝐫𝐫𝐞𝐜𝐭𝐥𝐲?<br><br>He said:<br><br>&quot;I'll add a system prompt telling the AI not to share confidential information.&quot;<br><br>So I asked:<br><br>- How do you enforce document-level permissions during retrieval?<br>- What happens if users attempt prompt injection?<br>- How would you prevent sensitive data leakage through retrieved context?<br>- How would you measure groundedness and answer accuracy?<br>- How would you test access controls across different user roles?<br><br>He knew how to connect an LLM to a vector database.<br><br>But he struggled to explain the security boundaries required for enterprise AI.<br><br>𝐑𝐀𝐆 𝐝𝐨𝐞𝐬 𝐧𝐨𝐭 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐚𝐥𝐥𝐲 𝐦𝐚𝐤𝐞 𝐚𝐧 𝐀𝐈 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐚𝐜𝐜𝐮𝐫𝐚𝐭𝐞 𝐨𝐫 𝐬𝐞𝐜𝐮𝐫𝐞.<br><br>A system that gives the correct answer to the wrong person is still a security failure.<br><br>𝐖𝐨𝐮𝐥𝐝 𝐲𝐨𝐮 𝐭𝐫𝐮𝐬𝐭 𝐭𝐡𝐢𝐬 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐭𝐨 𝐝𝐞𝐩𝐥𝐨𝐲 𝐚𝐧 𝐞𝐧𝐭𝐞𝐫𝐩𝐫𝐢𝐬𝐞 𝐀𝐈 𝐚𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭?</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic多Agent实验落败</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-17 08:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一群 Agent 一起干活，结果还不如一个 Agent 单独协调？<br><br>推荐阅读 Anthropic 新发布的《Worse Together》，专门研究多个用户各自带着 Agent，共享资源时会发生什么。<br><br>研究者设计了四类场景，包括共享 Token 预算、医院预约、集体订餐和代码合并。在测试的两款 Claude 模型上，多 Agent 团队的整体表现全部落后于单个协调 Agent。<br><br>在集体订餐这个实验中，用户明确提出了无麸质需求。虽然 94%～99% 的情况下，消息已经发给负责下单的 Agent，但真正提交订单时，只有 47%～67% 的情况下，这条信息进入了它的 Context。<br><br>很多失败就发生在这种消息同步问题上。<br><br>作者后来加了一条简单的 Harness 约束：下单前必须读完所有待处理消息，结果挽回了 62%～73% 的失败案例。<br><br>还有个挺值得思考的发现。部分 Agent 会擅自取消其他用户的任务，反而让整体评分更高，暴露了现有 Eval 对协作行为的盲区。<br><br>这项研究是非常有价值的。之后多个 Agent 共同工作越来越普遍，消息同步、共享资源管理、权限边界这些问题，都值得单独研究和评测。<br><br>作者还开源了 MAMUBench，包含 74 个多用户协作测试场景。做 Multi-Agent 和 Agent Eval 的朋友很推荐阅读和收藏！<br><br>文章：<a href="https://alignment.anthropic.com/2026/worse-together/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://alignment.anthropic.com/2026/worse-together/</a><br><br>GitHub：<a href="https://github.com/safety-research/MAMUBench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/safety-research/MAMUBench</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXQNmvPXMAAZIDy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable让Agent断点续跑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-16 20:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">作者亲自解读 Pi Durable：怎么做到断点恢复的<br><br>终端里的 Pi，崩了没关系，敲一句 continue 就行。但如果 Agent 跑在 Slack、内存受限的手机上、或部署到会被回收的 serverless 环境后，旁边就没人敲 continue 了。它得能被重新拉起，从断点恢复，还不能忘掉做过什么。<br><br>Pi Durable 把会话里每个动作都表达成带阶段的任务：先记录接下来要做什么，执行这个 effect，把结果持久化，再进下一阶段。所有状态变化按顺序串行提交，提交后才算数；模型一次回复发起的多个工具调用各自成为任务，可以并行跑。<br><br>它刻意不用事件溯源。常见 harness 把每个 token、每次工具调用都写成事件，几千条记录的编码会话够用，但一个要在 Slack 频道活五年、几千人参与的 bot 撑不住。<br><br>Pi Durable 改存 JSON 文档：监听者先拿整份快照，之后只收 delta，文档带版本号、可迁移，演讲里说这是为跑十年的 agent 准备的。存储只是一个简单接口，SQLite、Postgres、Cloudflare Durable Object、JSONL 都能接。<br><br>进程任意时刻被杀，重启后打开同一个存储说 resume，没完成的任务会被读出来续跑。这里有个讲究：bash 这种不可重放的工具不会再执行，而是在转录里标记成因进程消失被中断，把结果交给模型让它收尾；只有搜索这种天然幂等、或带幂等键的工具才会重放。用户输入也带幂等键，Slack 把同一次 mention 重复投递时不会触发两次运行。<br><br>工具和运行的机器分开：read、write、edit、bash 只依赖访问文件系统和起进程两个接口，同一套工具能跑笔记本、安卓 Termux、QEMU 沙箱或 Cloudflare，运行中还能热插拔。一个 harness 配置一次就能并行承载多个会话，Slack 子线程可从主会话某点 fork。<br><br>两个现场演示挺说明问题。一是放进 Cloudflare Durable Object，它跑满 15 分钟就被回收，设个闹钟到期前重启，resume 后像什么都没发生。二是整套 harness 跑在他的安卓手机上，现场 51 个人同时网页围观。代码在 GitHub 的 earendil 仓库里。<br><br>原文链接在评论区<br>#原理</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXPz2DRaMAAfbZE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AutoSwarm统一多Agent上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huang_chao4969 · 2026-11-16 21:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">必须把所有Agents监工起来，Context全部打通 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXP_sUMaoAAiviv.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chao Huang <span style="font-size:12px;color:#999999;font-weight:400;">@huang_chao4969</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AutoSwarm正式发布了！🎉<br><br>正在使用Codex、Claude Code、Workbuddy、DeepSeek Harness、Hermes或nanobot？停止在它们之间复制上下文并亲自协调一切。<br><br>🧠 在你所有agent之间共享上下文。<br>🤝 让它们像一个团队一样协作。<br>⚡ 自动将任务路由到最适合每项工作的agent。<br><br>将AutoSwarm用作你agent的插件，或获取适用于Mac和Windows的AutoSwarm Desktop。<br><br>完全开源。试一试——我们期待你的反馈！<br><br>🔗: <a href="https://github.com/HKUDS/AutoSwarm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/AutoSwarm</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AutoSwarm is officially out! 🎉<br><br>Using Codex, Claude Code, Workbuddy, DeepSeek Harness, Hermes, or nanobot? Stop copying context between them and coordinating everything yourself.<br><br>🧠 Share context across all your agents.<br>🤝 Let them work together as one team.<br>⚡ Automatically route tasks to the agent best suited for each job.<br><br>Use AutoSwarm as a plug-in for your agent, or grab AutoSwarm Desktop for Mac and Windows.<br><br>Fully open source. Give it a try—we’d love your feedback!<br><br>🔗: <a href="https://github.com/HKUDS/AutoSwarm" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/AutoSwarm</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121654141894500352/img/pfWXQ4wSJkhd7n45.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月13日 17:29">
+<title>AI技术雷达 · 11月13日 17:29 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Zep 把大模型经验编译成 Skill</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code 评审代理不带历史</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Modern Web 指南纠正AI旧写法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;AI 代码审查实测检出71.9%缺陷</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Zep 把大模型经验编译成 Skill</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-13 16:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把大模型的本事写成 Skill 给小模型用<br><br>想让便宜的小模型替代昂贵的大模型，通常的办法是微调，要准备训练数据、再跑一次训练，换模型还得重来。Zep 发布的 Agent Skills 换了一个做法：不动模型，把大模型跑通任务的步骤编译成一个 SKILL.md 文件，小模型照着做。<br><br>具体是五步。先用 Opus 5.5 当老师，跑通一个小模型自己做不对的多步任务。然后只保留被外部验证过成功的运行，比如工具确认或评估系统打分，agent 自己说成功不算。编译器再把这些运行整理成 SKILL.md，每条说明都指回具体的运行事件，账户名这类实例数据替换成占位符。小模型运行时搜索并加载这个文件，照着执行。之后每一次成功和失败都会编译成新版本，验证过的用法提高检索排名。<br><br>Zep 在自己的 EnterpriseOps-Gym 基准上测的结果是，Haiku 5.5 加 Skill 后任务完成率从 33.9% 升到 45.3%，DeepSeek V4.1 Flash 从 48.3% 升到 56.8%，反而高于 Opus 5.5 全力跑的 52.8%。在长任务较多的 τ³-bench banking 上，每通过一个任务的 token 用量最多减少 45%。这些都是 Zep 自测的数字。<br><br>适用范围也有限。编译器只从验证过的成功里学，还没有任何 agent 解决过的任务不会产生 Skill；模型本来就做得好的任务，加上去收益也小。比较合适的，是那种 agent 会反复跑、小模型单独跑又老出错的多步流程。<br><br>原文链接在评论区<br>#小技巧</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW_aTXybwAAJ1ee.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 评审代理不带历史</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xqliu · 2026-11-13 13:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在 Claude Code 里配了个 review subagent，委派的时候只说一句「帮我 review 一下」？主会话里聊过的东西，它一句都看不到。<br><br>普通 subagent 启动时不带主会话的历史。Claude 替你写一条任务消息就把它派出去了，需求是什么、改了哪些文件，它只能自己猜。<br><br>10 月 17 号我对着官方文档把这套配置核了一遍。最省事的起点是一个只读的评审 agent，开头的配置就四行：<br>name: change-reviewer description: Review supplied changed files for behavioral bugs and missing tests. tools: Read, Grep, Glob model: sonnet<br><br>放进项目的 .claude/agents 目录，新开一个会话才会读到。委派的时候，把需求、改动文件的路径和 diff 一起贴给它。<br><br>还有一点容易忽略：它和主会话共用同一个工作目录，独立的上下文不会把文件冻住。报告回来之前，那几个文件先别动。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hookshot 把时之笛重编译为 PC</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-13 16:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我的天，这也太疯狂了！！<br><br>有人做了个开源项目叫 Hookshot，把《塞尔达传说：时之笛》 Switch 2 版直接重编译成了 PC 程序 🔥<br><br>→ 才上线一周，GitHub 已经 8k 多星<br><br>→ Windows、Linux 都能跑<br><br>→ 不是模拟器，而是静态重编译成原生程序<br><br>开源的是这套工具，游戏本身没开源，得用你自己的正版拷贝来生成。<br><br>目前还在实验阶段，前面的流程能通，后面的关卡还有 bug 没修完。<br><br>仓库：<br><a href="https://github.com/NotRexed/Hookshot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NotRexed/Hookshot</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW_aP3-aEAAJGnq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Modern Web 指南纠正AI旧写法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lencx_ · 2026-11-13 08:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">浏览器这几年多了不少原生能力，AI 写前端时，仍容易沿用训练数据和项目里的旧写法：一些已有原生方案的功能，又用 JS 和第三方库实现了一遍。Modern Web Guidance 想补的就是该缺口，让 AI 写代码时能查到现代 Web 的用法、常见问题，以及浏览器的支持情况。<br><br>它由 Chrome、Edge、Firefox、MDN 团队和社区共同维护，以 Agent Skills 的形式接入编程助手。遇到相关任务时，Agent 通过 CLI 搜索、读取指南，按需把知识带进上下文。团队也会根据评测结果精简指南，减少模型已经掌握的重复内容。<br><br>举几个直观的例子：做弹窗和浮层，先考虑 &lt;dialog&gt;、Popover；多行输入框自动增高，可以评估 field-sizing: content；表单校验样式可以用 :user-invalid，避免用户尚未操作就显示错误状态。容器查询、View Transitions、INP 优化、键盘焦点管理，也都有对应的指导。<br><br>这些写法能不能用，还要看项目支持哪些浏览器。可以在 AGENTS.md 里写明 Baseline 目标，未设置时默认以 Widely available 为目标。对于目标浏览器尚未支持的能力，指南会给出渐进增强和降级方案；确实需要 polyfill 时，再按条件加载。<br><br>旧项目也用得上。legacy-scan 会先在本地解析代码，找出可能值得替换的旧写法，这一步不调用大模型。之后 Agent 再检查周围代码、核实结果，按指南修改并运行测试。目前扫描只覆盖部分能够通过规则识别的旧模式，命中后仍需要判断，尤其要分清过时写法和项目有意保留的兼容处理。<br><br>项目还会让 Agent 在有指南和没有指南的情况下完成同一任务，再用 Playwright 检查代码、浏览器中的实际行为和无障碍状态。哪些建议能改善结果，哪些内容已经多余，都可以根据对照评测继续调整。<br><br>经常用 AI 写前端的话，可以先拿一个现有组件试试：看看哪些交互逻辑可以改用原生能力，哪些兼容处理仍需要保留。安装命令是 npx modern-web-guidance@latest install，具体用法见官方文档。<br><br>相关链接：<br>- Blog: <a href="https://developer.chrome.com/docs/modern-web-guidance" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://developer.chrome.com/docs/modern-web-guidance</a><br>- Repo: <a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/GoogleChrome/modern-web-guidance-src</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chrome for Developers <span style="font-size:12px;color:#999999;font-weight:400;">@ChromiumDev</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在发布1.0之后的48小时内，Modern Web Guidance已跃升为GitHub上排名第一的热门仓库 📈<br><br>感谢数千位Web开发者，以及来自Firefox、MDN、Edge的合作伙伴和社区贡献者，他们正帮助将AI编码代理引入到现代的、无障碍的、受Baseline支持的Web原语上来。<br><br>如果你还没有在你的代码库上试过1.0版本：<br><br>安装代理技能：'npx modern-web-guidance@latest install'<br><br>审计现有代码库：'npx modern-web-guidance@latest legacy-scan .'<br><br>在Github上查看仓库 → <a href="https://goo.gle/4zoi7Dv" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/4zoi7Dv</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">48 hours after launching 1.0, Modern Web Guidance is the #1 trending repo on GitHub 📈<br><br>Thank you to the thousands of web developers, and our partners across Firefox, MDN, Edge, and community contributors, who are helping move AI coding agents onto modern, accessible, Baseline-supported web primitives.<br><br>If you haven't tried 1.0 on your codebase yet:<br><br>Install the agent skills: 'npx modern-web-guidance@latest install'<br><br>Audit an existing codebase: 'npx modern-web-guidance@latest legacy-scan .'<br><br>Check out the repo on Github → <a href="https://goo.gle/4zoi7Dv" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://goo.gle/4zoi7Dv</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW9bMYVW0AAPImH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>EMQX Agents 事件驱动商用上线</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @EMQTech · 2026-11-13 00:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">#EMQX Agents现已正式商用可用！<br><br>用AI代理将 #MQTT 事件转化为自动化行动——这些代理能响应实时消息、查询历史遥测数据，并通过EMQX Broker发布结果。<br><br>符合条件的账户可享一个月免费试用：<a href="https://buff.ly/H8hq8Hf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://buff.ly/H8hq8Hf</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">#EMQX Agents is now commercially available!<br><br>Turn #MQTT events into automated action with AI agents that react to live messages, query historical telemetry, and publish results through EMQX Broker.<br><br>Start with a one-month free trial for eligible accounts: <a href="https://buff.ly/H8hq8Hf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://buff.ly/H8hq8Hf</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW79UT9XAAI6xZ1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NSH 画布代码可直接导出PNG</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huacnlee · 2026-11-13 16:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">NSH 新增 OffscreenCanvas。<br><br>可以让同一套 Canvas 绘图代码，既能在界面展示，也能按指定尺寸生成高清 PNG。<br><br>这样图表、白板、自定义绘图之类的场景，你可以用这个机制直接到出 PNG 图片。<br><br><a href="https://github.com/longbridge/nsh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/longbridge/nsh</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 代码审查实测检出71.9%缺陷</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @milan_milanovic · 2026-11-12 15:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们还需要人工代码审查吗？<br><br>编码代理可以快速编写代码。那么下一个问题是：它们也能快速审查代码吗？<br><br>微软研究院的一个团队在CRBugBench上测试了十个模型，这是一个包含1,800个真实bug的新基准（1,000个来自98个GitHub项目，800个来自一家公司的代码）。表现最好的模型（Claude Opus 5，通过Copilot CLI）发现了71.9%的真实bug，每个bug耗时约十分钟、成本约三美元。五个月前，最好的模型才达到47.7%。<br><br>作为对比，人类在PR合并前大约能发现50%的bug。<br><br>当我们将人类和AI结合起来时，他们能发现82.1%的bug，因为AI更擅长发现高严重度和可靠性问题，而人类更擅长发现可维护性问题。<br><br>差异越大的diff对AI来说越难审查，这在预期之内。diff大小每增加一个标准差，发现bug的几率就降低约40%。修复bug的PR也比功能PR更难审查（几率减半）。<br><br>专有代码比开源代码更难审查（发现的bug最多减少25.5%）。其中在diff中可见的bug更少（22.8%，相比之下GitHub上为46.1%）。<br><br>代理有95.6%的时间打开了相关文件，但只有56.2%的时间识别出了bug。<br><br>在一个PR中（修复一个Selenium bug），每个模型都接受了一个有bug的条件，因为代码注释和PR描述都说它是正确的。<br><br>𝗠𝘆 𝘁𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀<br><br>&quot;熄灯工厂&quot;场景（AI审查AI编写的代码）是可行的，但可能仅适用于小型、范围明确的PR。否则，请将AI作为你的审查者之一，并保持人工参与其中。<br><br>如果你想在你的组织中使用AI代码审查，我的建议是：<br>- 尝试将不同的PR路由给不同的审查者（在CRBugBench中，一个较小的模型以Opus 5成本的21%达到了其78%的分数）<br>- 要求更多、有排序的建议（优于成本高数倍的多代理设置）<br>- 提供更多仓库上下文<br>- 保留人工审查以关注可维护性问题并验证PR描述</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Do we still need manual code reviews?<br><br>Coding agents can write code fast. So the next question is: can they review code fast, too?<br><br>A team at Microsoft Research tested ten models on CRBugBench, a new benchmark of 1,800 real bugs (1,000 from 98 GitHub projects, 800 from one company's code). Their best performer (Claude Opus 5, via Copilot CLI) found 71.9% of real bugs, at about ten minutes and $3 each. Five months earlier, the best model was at 47.7%.<br><br>Humans, for comparison, find about 50% of bugs before a PR gets merged.<br><br>When we combine humans and AI, they find 82.1%, as AI is better at spotting high-severity and reliability bugs while humans are better at detecting maintainability issues.<br><br>Bigger diffs are harder for AI to review, which is expected. Each standard deviation increase in diff size corresponded to about 40% lower odds of finding the bug. Bug-fix PRs are also harder to review than feature PRs (half the odds).<br><br>Proprietary code was harder to review than open-source code (up to 25.5% fewer bugs found). Fewer of its bugs were visible in the diff (22.8%, compared to 46.1% on GitHub).<br><br>Agents opened the relevant file 95.6% of the time, but identified the bug only 56.2% of the time.<br><br>In one PR (fixing a Selenium bug), every model accepted a buggy condition because the code comment and the PR description said it was correct.<br><br>𝗠𝘆 𝘁𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀<br><br>The 'lights-off factory' scenario (AI reviews AI-written code) is viable, but probably only for small, well-scoped PRs. Otherwise, treat AI as one of your reviewers, and keep a human in the loop.<br><br>If you want to use AI code review at your org, my recommendations are to:<br>- Experiment with routing different PRs to different reviewers (in CRBugBench, a smaller model reached 78% of Opus 5's score at 21% of the cost)<br>- Ask for more, ranked suggestions (outperformed multi-agent setups that cost several times more)<br>- Provide more repo context<br>- Keep a human reviewing for maintainability concerns and verifying the PR description</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW6GhmjbkAAaayi.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>FDE 调研陌生行业先查后问再试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-13 16:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这篇文章用企业 AI 落地当案例，讲进入陌生行业时怎么调研：先查、再问、再自己试，最后才下判断。方法来自波特五力、客户开发和效果逻辑，文里配了 9 个提示词。海外对应岗位作者叫 FDE，前沿部署工程师。<br><br>真正能用的是几条硬规则。每个数字都要带出处和日期，查不到就写查不到。核验要另开一个没参与调研的 AI。作者写，自己不懂行的时候，AI 说什么都像是对的。<br><br>他举了个流行说法：「95% 的企业 AI 试点失败」。追到的是 MIT 2025 年 7 月一份未同行评审的初步报告，原文是「95% 的组织没有拿到回报」，说不出失败了多少个试点。作者还说，8 月查 FDE 时核了 35 条结论，有 11 条被修正或降级。这是他的自述，文里没有公开清单。<br><br>他的判断也写得很清楚：看好企业 AI 落地方向，但对新人单干把 FDE 做成独立生意并不太乐观。交付和经营是两回事。下判断时，先想清楚亏得起多少。<br><br><a href="https://x.com/situking/status/2121085951648903357" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/situking/status/2121085951648903357</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">司徒K <span style="font-size:12px;color:#999999;font-weight:400;">@situking</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我跟一些从业者交流的时候发现，有些人其实并不了解整个行业。<br><br>所以这篇文章，我会用波特五力模型、客户开发、效果逻辑这三套经典方法作为理论基础，配上 9 个 AI 提示词，以企业 AI 落地为例，给大家讲透我进一个陌生行业时是怎么调研、怎么迈出第一步的。 <a href="https://x.com/i/article/2121077695069184000" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2121077695069184000</a></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

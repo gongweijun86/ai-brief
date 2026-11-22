@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月24日 17:35">
+<title>AI技术雷达 · 10月24日 17:35 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;DeepSeek V4.1 Flash 2bit量化12G可跑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Qwen3-TTS开源3秒克隆声音</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Runware集装箱数据中心专注推理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;科研Agent Épi产出120项纪录结果</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;12个月8家Agent身份公司被收购</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek V4.1 Flash 2bit量化12G可跑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Rakel076 · 2026-10-24 16:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">763B 的 DeepSeek V4.1 Flash，12G 显卡能跑了。<br><br>奥地利 IST 的 DASLab 刚放的量化版，压到平均每个参数 2 bit，AIME25、GPQA、LiveCodeBench 三项分数跟原版一样。<br><br>就是别高兴太早：整套文件 249G，显卡里只放一小部分，剩下全靠内存和 SSD 撑。显卡是够了，先去买块硬盘吧😅 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYaQaYWkAAIGzU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYaQaXW4AAjj_X.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVYaQZzWUAI50Ig.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen3-TTS开源3秒克隆声音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-24 17:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎼 狠，3 秒录音就能克隆出你的声音，Qwen 团队开源的 Qwen3-TTS 还能用一句话描述直接设计一个新音色。<br><br>Qwen3-TTS 今年 1 月才发布，GitHub 已经 1.39 万 star，一千八百多个 fork。<br><br>以前想给视频配一个固定人设的声音，要么从现成音色库里挑一个凑合，要么录一大堆素材去训练。<br><br>Qwen3-TTS 的 Base 模型拿 3 秒音频就能克隆；VoiceDesign 模型更直接，用自然语言描述你想要的声音，它照着生成。中、英、日、韩、德、法、俄、葡、西、意 10 种语言都能说，还带方言音色。<br><br>做实时对话也够用：同一个模型同时支持流式和非流式，端到端合成延迟最低 97 毫秒。有 0.6B 和 1.7B 两档，显卡一般就先上小的。<br><br>做 AI 主播、有声书、游戏角色配音的，Qwen3-TTS 值得先跑一遍。<br><br>GitHub：<a href="https://github.com/QwenLM/Qwen3-TTS" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/QwenLM/Qwen3-TTS</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DA Registry上线Canton转账验证API</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @digitalasset · 2026-09-30 00:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">DA Registry 已推出 Proof of Transfer API，为 @CantonNetwork 上的钱包和交易所用户提供了一种独立验证转账状态的方式，无需暴露敏感交易数据。<br><br>钱包和交易所可以为 DA Registry 支持的资产公开 Transfer Object。<br></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">DA Registry has launched a Proof of Transfer API, giving wallet and exchange users on @CantonNetwork an independent way to verify transfer status without exposing sensitive transaction data.<br><br>Wallets and exchanges can expose the Transfer Object for DA Registry-enabled assets. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2104965355412070400/img/jekWBWbi59LJPXOm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Runware集装箱数据中心专注推理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @runware · 2026-08-06 17:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个装在集装箱里的完整数据中心。部署到任何你需要的地方，只需几天，而非数年。专为推理而构建，别无他用，可将你的成本削减高达 90%。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A full data center in a shipping container. Deployed wherever you need it, in days, not years. Built for inference and nothing else, cutting your costs by up to 90%.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Agent跑DeepSeek成本优于DSH</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-10-24 12:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Pi Agent 跑 DeepSeek 我觉得比 DeepSeek 自己的 Harness 强。<br><br>DSH 懂不懂就大思考，拼命输出思考过程不知道在干啥。<br><br>我详细对比过这两个跑 DeepSeek，结论就是差不多：简单问题 Pi 略占优，极度复杂问题 DSH 略占优。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">小墨同学 <span style="font-size:12px;color:#999999;font-weight:400;">@xiaomovps</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">DeepSeek 不行 可能真的和你用的 harness 有关系🔥<br><br>DeepSeek harness 默认的标准模式可能真的会影响 DeepSeek 模型的能力，让模型变得又笨又啰嗦，只是我个人的感受<br><br>因为 DeepSeek 我不是第一次用了，我已经用了很长一段时间了，而且都是在 PI agent 上使用的<br><br>在上面使用，我感觉干活又快又准，而且整体的 API 消耗都是在可控范围以内<br><br>后面我换上了 DeepSeek harness，我想着自家的 harness 肯定会对自家的模型有特殊的加成，因为都流传着在 DSH 上跑出来的分都会更高<br><br>所以这段时间我都是在高强度使用，我又发现一个很怪的点<br><br>我发现是同一个模型和同一个思考等级<br><br>DeepSeek 在 PI agent 上干活的时候基本上不怎么啰嗦，可能是运行两到三轮就已经结束了，而且整体的成果都还是比较满意的<br><br>虽然达不到 Claude 的程度，但至少也有 80 分<br><br>针对一些不是重度 coding 的用户，或者是一些复杂任务的用户，完全是可以胜任的，而且成本消耗也是可控的<br><br>但是把它放到 DeepSeek 上，开启的是标准模式，有的时候会莫名其妙跑个十几二十轮<br><br>而且干活时间会拉得比较长，感觉都不像在用 DeepSeek，感觉都在使用 GPT-6 的感觉，整体会变得非常啰嗦，而且会变得非常慢<br><br>效果的话，可能会在整体程度上加个 4~5 分<br><br>但是从消耗的 token 和时间来说的话，完全是不值得的<br><br>后面我又多测试了几轮，发现还是一样的结果，所以我怀疑是不是 DSH 的系统提示词有问题<br><br>有没有跟我遇到一样情况的朋友，可以来回答一下我这个问题，到底是我一个人还是大家都遇到了？</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113852803026386944/img/0dseMCpBbWGLOtLU.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PancakeXR E6数据采集设备公布规格</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @PancakeXR · 2026-10-14 15:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">全新 E6 视频已上线——一体化数据采集设备。<br>4× 全局快门 + 2× RGB 摄像头<br>XR2 Gen1 + 4 TOPS NPU<br>190° 超广视场角<br>5500mAh 电池<br>8GB + 128GB 存储<br>你的 ego 数据，以前所未有的方式被采集。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New E6 video is live — all-in-one data collection device.<br>4× global shutter + 2× RGB cameras <br>XR2 Gen1 + 4 TOPS NPU<br>190° ultra-wide FOV<br>5500mAh battery <br>8GB + 128GB storage<br>Your ego data, captured like never before</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>科研Agent Épi产出120项纪录结果</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-10-24 12:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">科研 Agent 最尴尬的场景，可能是第二天重新开工时：<br><br>它已经不记得昨天为什么放弃那条路线了。<br><br>Épi 想解决的，就是这种长期科研里的「断片」。<br><br>它把研究状态放到模型上下文之外长期保存，包括正在跑的实验、代码、失败路线、关键结论和之前为什么做出某个决定。<br><br>同时，Agent 可以开多个 Branch 探索不同方法，效果不好就回退到旧版本，再从另一个岔路继续走。<br><br>所有结果最后都交给固定 Verifier 检查，避免研究过程中不断变化的方法把评估标准也一起带偏。<br><br>这套机制最终产生了 120 个 record-setting results，包括 20 个数值边界纪录和 100 个构造纪录。<br><br>其中 n-queens constant 的区间缩小约 84 倍，quartic Feigenbaum attractor dimension 的严格区间缩小超过 360 万倍。<br><br>轻量版 Épi-turbo 在 30 个 FrontierOR 任务上，总分比 Codex 高 5.4%，模型成本只有 64%。<br><br>Épi值得称赞的地方是它没有把「长期科研」理解成让 Agent 一次跑得更久。<br><br>因为下一次回来时，它还知道自己做过什么、为什么失败，以及有哪些旧路线值得重新捡起来。<br><br>科研很多时候，就是这样一点点从岔路和失败里长出来的。<br><br>📎 arxiv: <a href="https://arxiv.org/abs/2610.24944" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.24944</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXlC5wWgAAhokZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Strata让DeepSeek-V4.1-Flash 64G可跑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-10-24 12:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">牛！<br><br>Strata，现在只需 64GB 内存就能运行 DeepSeek-V4.1-Flash。<br><br>使用的是由 @mhelcig 制作的 GSQ-RCO 量化版本。<br><br>赶紧去试试吧：<a href="https://github.com/Niko1221/Strata" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Niko1221/Strata</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113800054716682240/img/2j9hDU1PnbN2eeMK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hermes插件生态覆盖语音防火墙混音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitTrend0x · 2026-10-24 12:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Hermes 插件又燃爆了 🔥<br><br>Fish Audio 的官方声优插件、Nous Research 的 Labs 实验室、jooray 的提示注入防火墙、somewheresy 的 Ableton 混音助理、styles01 的手表遥控器……全网玩家把 Hermes 玩成了下一代「80 种语言的声优 + 官方黑科技试验田 + 注入防火墙 + AI 录音师 + 戴在手上的 Agent」:<br><br>1️⃣ 100yenadmin/fish-audio-hermes（<a href="https://github.com/100yenadmin/fish-audio-hermes" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/100yenadmin/fish-audio-hermes</a>）<br><br>Fish Audio 官方 Hermes 插件：80+ 语言的情绪化语音、社区音色库、克隆或描述生成你自己的声音，外加语音转文字，CLI、聊天软件、桌面端全通。<br>&quot;你的 Agent 终于有了自己的嗓子&quot;！<br><br>2️⃣ NousResearch/hermes-labs-plugins（<a href="https://github.com/NousResearch/hermes-labs-plugins" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NousResearch/hermes-labs-plugins</a>）<br><br>Nous 官方的&quot;实验室&quot;仓库：没放进核心的功能都在这，Telegram 商务秘书（你批准才发）、一屏看全在跑任务的 Inbox、演示一次就能录下浏览器流程的 Workflow Record。<br>&quot;官方不保修，但黑科技管够&quot;！<br><br>3️⃣ jooray/hermes-firewall（<a href="https://github.com/jooray/hermes-firewall" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jooray/hermes-firewall</a>）<br><br>提示注入闸门：网页、MCP 和工具结果、邮件、文件、图片进模型之前先过一遍，要么原样放行，要么直接扣下，还能切到本地模型离线跑。<br>&quot;毒网页进不了 Agent 的脑子&quot;！<br><br>4️⃣ somewheresy/assistant-engineer（<a href="https://github.com/somewheresy/assistant-engineer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/somewheresy/assistant-engineer</a>）<br><br>让 Hermes 直接操作 Ableton Live：建工程、写 MIDI、做编曲和自动化、侧链混音、调 VST3，一句&quot;做个 future beat&quot;，它还会自己 QA 到整首完工。<br>&quot;一个人就是一间录音棚&quot;！<br><br>5️⃣ styles01/hermes-watch（<a href="https://github.com/styles01/hermes-watch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/styles01/hermes-watch</a>）<br><br>把 Hermes 装进 M5Stack 圆形 AMOLED 手表：按住说话、五个 Agent 一键切换、程序化动态头像实时显示它在听、在想、在说，固件还能 WiFi 自己升级。<br>&quot;抬手就能召唤你的 Agent&quot;！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>短剧Skill清单收录83个并带对照实测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-10-24 12:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 短剧很火，一直想试试，在 GitHub 上搜短剧 Skill 能翻出几十个，很难判断哪个真能写出好剧本。<br><br>Awesome Short Drama Skills 把这些整理成了一份清单，收了 83 个短剧 Skill 和 16 个相关开源平台，每个都人工核对过。<br><br>从小说改编、分集大纲、钩子设计、剧本审稿，到分镜和 Seedance、可灵、MiniMax 的视频提示词，按创作阶段都能查到。<br><br>GitHub：<a href="https://github.com/UnderleveledBuilder/awesome-short-drama-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/UnderleveledBuilder/awesome-short-drama-skills</a><br><br>难得的是作者自己跑了两轮实测，10 个剧本 Skill 和一个不装 Skill 的对照组，各写 3 次同一道题，由 AI 评审盲比。<br><br>三次都赢过对照组的有 5 个，每个都写了适合什么、要注意什么。<br><br>局限也列得很老实，比如每集结尾的钩子，反而常是对照组写得更好。<br><br>这种带对照组的测评我挺认，比只列名字的清单有参考价值。<br><br>千问、豆包、Claude Code、Codex 这些支持 Skill 的智能体都能装。手上有本小说想改成短剧，可以直接照着里面的推荐组合来。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXg85qbIAAAQp9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXg85ra0AA5XGT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXg85rbAAAR7h-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXg85nbUAESlLE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>12个月8家Agent身份公司被收购</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-10-24 11:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">硅谷大厂为什么一年收购8家Agent登录公司？创业还有机会吗？<br><br>In 12 months, 8 agent-identity startups were bought: CyberArk (Palo Alto, ~$25B), SGNL (CrowdStrike), Astrix (Cisco), Natoma (Snowflake), Veza (ServiceNow), Oasis (Cyera), Permiso (Okta), Entro (SailPoint).<br><br>My take: whoever runs the agent owns its keys, so platforms absorb them. The startup opening is identity built into developer products — WorkOS, Persona, Keycard. (in Chinese)<br><br>配音与动画由 AI 生成。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113839387821961216/img/mbPcr5pnXICe0cv1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

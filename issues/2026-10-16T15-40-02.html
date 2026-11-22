@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月16日 23:38">
+<title>AI技术雷达 · 10月16日 23:38 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;AIPOCH Open-Science验证跨Agent数据交接</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;混元Hy Memory三层全开源做Agent记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Earshot为AI视频生成提供音效质检</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;人大EvoOntology让Agent自维护数据本体</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AIPOCH Open-Science验证跨Agent数据交接</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-10-16 16:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跨 agent 交接，要验的是数据有没有跟过来，不是对话有没有跟过来。<br><br>公开数据集测不了。Wisconsin 乳腺癌那套，你一个文件都不给，Codex 自己从 UCI 拉下来照样算对。官方演示用的也是它，会话里 print 过的统计还躺在 records.json 里，照抄也能答对。<br><br>换任何号称可移植的格式，都该这么验一遍。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">阿良｜AI 工作流 <span style="font-size:12px;color:#999999;font-weight:400;">@RealYDT</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">哈哈哈，兄弟们Vibe Research 的时代正在到来，AIPOCH Open-Science 想做的，是让每个有好奇心的普通人都能更容易地参与研究。事实真的如此吗？<br><br>那我就挑一个最能证伪这句话的地方来测：一个项目做到一半，能不能原样交到另一个人手里。<br><br>但要测这个，得先堵一个洞，怎么确认接手的那一方是真读了你给的东西，而不是自己另有来路。<br><br>于是我先做了个对照。一个文件都没给，我问 Codex：加载并整理 Wisconsin 乳腺癌数据集为本地 CSV，然后告诉我：总记录数、原始特征数、恶性与良性各多少条、mean radius 的中位数分别是多少。<br><br>2 分 50 秒，它自己从 UCI 下下来算完了，569 / 30 / 212 / 357，中位数 17.325 和 12.200，全对。<br><br>拿公开数据集做的 AI 演示，默认证明不了它有没有读你给的东西，除非它专门堵死&quot;模型自己就能拿到&quot;这条路，上面那句你现在就能原样丢给任何一个联网 agent，自己验。<br><br>而 Open-Science 的官方演示，用的正是 Wisconsin。<br><br>拆开它的 .science 包还有第二层：会话里 print 过的统计结果，全都以文本躺在 records.json 里，照着抄也能答对。<br><br>两层都堵死才能真测，我自己造了 437 条数据，模型不可能见过；再挑四个会话里从没算过的数，只有真打开那份原始表格才答得出来的那种，真值先封存，再把包丢给 Codex。<br><br>两轮全中，第二轮它甚至走的是包里另一份副本，答案一样，包里 49 条校验和我也逐条重算过，全对。<br><br>数据确实跟着包走了， 范围是 Full 档、单会话、46 个文件、6.3 MiB—官方文档自己写了体积和内容有上限，大项目我没测。<br><br>能带走的一句：跨 agent 交接，要验的是数据有没有跟过来，不是对话有没有跟过来，这是条验法，不是对某个格式的结论，换任何号称可移植的格式，都该这么验一遍。<br><br>他们自己的说法是science, open to all。<br><br>这句话能不能落地，落在一个特别具体的地方：你的项目能不能交到另一个人手里，而且数据跟着一起走。<br>这次它带了。<br><br>Apache-2.0，本地优先，mac / Win / Linux：<a href="https://github.com/aipoch/open-science" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/aipoch/open-science</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>混元Hy Memory三层全开源做Agent记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-10-16 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">腾讯混元正式发布 Hy Memory 2.0，框架，模型和应用三层全部开源。<br><br>框架是业界首创的工作与代码记忆，支持聊天，工作，代码三类记忆的存储和进化，可以通过 SDK 接入 Agent。<br><br>模型是 Hy-Memory-30A3B，约 3B 激活参数的记忆专用模型，跨 4 套主流记忆系统测试均分 55.49，超越 Opus5，DeepSeek V4.1 Flash 和  Qwen3-30B-A3B。<br><br>应用是 MemHub，提供了 CLI 和 Mac 端 APP，支持导入历史会话，打通 Cursor、Codex、WorkBuddy 等 10 种 AI 工具实时共享本地记忆。<br><br>在与业界方案的对比中，Hy Memory 在工作记忆，代码记忆和聊天记忆三大场景下，均以极小的存储空间占用取得开源框架第一。<br><br>目前已经在腾讯内部多个领域落地，腾讯自选股中综合得分从 64.3 提升至 79.6，多跳召回提升 40 个百分点。<br><br>iWiki 仅用召回记忆作答，正确率比提供全部原始对话相对提升 48.6%，腾讯新闻长期偏好理解评测均分达 91.68 分。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tencent Hy <span style="font-size:12px;color:#999999;font-weight:400;">@TencentHunyuan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚀 Hy Memory 2.0 已发布 —— 开源模型、框架及 MemHub。<br>你的私有记忆管家。<br>框架处理聊天、工作和代码记忆。<br>在4个基准测试中排名第一。<br>Hy-Memory-30B-A3B 在各大框架中超越 Opus 5。<br>MemHub（CLI + Mac）支持跨10+个AI工具同步。<br><br>💻➡️<br><br>🔗 SDK &amp; MemHub: <a href="https://github.com/Tencent-Hunyuan/Hy-Memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent-Hunyuan/Hy-Memory</a><br>🔗 模型: <a href="https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan</a> #HyMemory #AgentMemory</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚀 Hy Memory 2.0 is out — open-source model, framework, and MemHub. <br>Your private memory steward.<br>Framework handles chat, work &amp; code memories. <br>#1 open-source on 4 benchmarks. <br>Hy-Memory-30B-A3B beats Opus 5 across major frameworks.<br>MemHub (CLI + Mac) syncs across 10+ AI tools.<br><br>💻➡️<br><br>🔗 SDK &amp; MemHub: <a href="https://github.com/Tencent-Hunyuan/Hy-Memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent-Hunyuan/Hy-Memory</a><br>🔗 Model: <a href="https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/tencent/Hy-Memory-30B-A3B#Hunyuan</a> #HyMemory #AgentMemory</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvgCjIa0AAMVm6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenDesign Motion开源动效视频替代方案</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tuturetom · 2026-10-16 18:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Motion开源替代来了！🔥🚀<br><br>正式推出 OpenDesign Motion，做出顶尖的动效视频，不应该只能用 Opus 5.5。现在，你可以用自己喜欢的模型和 Agent，在 OpenDesign 里完成。<br><br>这条发布视频，就是我们用 DeepSeek v4.1 Flash 在 OpenDesign 里做的 ↘️<br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110996800614301696/img/X0cUllAy6pZXBPSE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenDesign <span style="font-size:12px;color:#999999;font-weight:400;">@OpenDesignHQ</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重推出 OpenDesign Motion。<br>Claude Motion 的开源替代方案。<br><br>使用任意智能体、任意模型创建精美的动态视频。无需 Opus 5.5。<br><br>整个发布视频均在 OpenDesign 中制作。<br>更多演示见下方 ↓ </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing OpenDesign Motion.<br>The open-source alternative to Claude Motion.<br><br>Create beautiful motion videos with any agent, any model. No Opus 5.5 required.<br><br>This entire launch video was made in OpenDesign.<br>More demos below ↓ </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110996800614301696/img/X0cUllAy6pZXBPSE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Earshot为AI视频生成提供音效质检</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LinearUncle · 2026-10-16 17:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Opus5.5等模型可以制作非常漂亮的视频，但是AI 听不见声音，可能选择的音效很糟糕，是Slop！于是earshot 这个开源库尝试解决这个问题！<br><br>举个例子：假设 AI 正在制作一段 30 秒的软件发布视频：<br>1.  AI 找到十几个鼠标点击音效<br>2. Earshot 选出最符合“柔和、精致点击声”的几个<br>3. Earshot 从长录音中截出干净片段<br>4. 视频完成后，它检查点击声有没有和按钮按下的画面对齐。<br>5. 最后检查整体音量、结尾、音乐和音效密度，并给出具体修改时间点<br>因此，它更像是：<br>音频检测仪 + 音效搜索助手 + 视频声音质检工具<br><br><a href="https://github.com/Leonxlnx/earshot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Leonxlnx/earshot</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Leon Lin <span style="font-size:12px;color:#999999;font-weight:400;">@LexnLin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重推出 earshot<br><br>Opus 5.5 可以用代码构建整个发布视频，但音效依然粗糙。<br><br>所以我们打造了 earshot。它是给 AI 编程智能体装上的耳朵。它们现在可以听到声音、评判声音，甚至自己制作出优质的声音。<br><br>这段视频中的每一个声音都是用代码制作的。<br>（请开启声音！！）</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing earshot<br><br>Opus 5.5 can build a whole launch video in code but still produces sloppy sfx.<br><br>so we built earshot. it's ears for AI coding agents. they can now hear sounds, judge them and even make their own good sounds.<br><br>every sound in this video was made with code. <br>(sound on!!)</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110876468330762240/img/nXaPIQx4Abn6LqTp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenCode内置15个限时免费模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiangxiang103 · 2026-10-16 15:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚨全体起立！<br><br>我宣布：每个人，都必须装一个 OpenCode！！！<br><br>不是我吹，是它现在离谱到不装就亏👇<br><br>OpenCode 官方免费栏现在挂着 15 个限时免费模型：<br>🆓 DeepSeek V4.1 Flash<br>🆓 智谱 GLM-5.3-Flash<br>🆓 NVIDIA Nemotron 3.5 Super VL / Lightning / 3 Ultra<br>🆓 小米 MiMo-V2.6-Flash<br>🆓 美团 LongCat 2.5 Preview<br>🆓 还有一堆神秘模型：Big Pickle、Space Bunny……<br><br>一个软件，一堆国产+国际模型，随便切，一分钱不花🤯<br><br>装法就一行：<br>curl -fsSL <a href="https://opencode.ai/v2/install" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://opencode.ai/v2/install</a> | bash<br>装完敲 /models，挑带 Free 的就行<br><br>⚠️ 坐下前听我说两句：<br>1、全是限时免费，官方没写截止日，薅要趁早<br>2、有几个免费期会拿数据改进模型，公司代码和隐私别往里丢</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUvDjBiaIAAiapT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>人大EvoOntology让Agent自维护数据本体</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-16 22:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🧬 人大刚开源了 EvoOntology，装进 Claude Code 或 Codex，Agent 查数据会越用越准。<br><br>论文拿下了 Hugging Face Daily Papers 当日第一。<br><br>用 AI 查过公司数据的人都踩过这个坑：问一句“上季度复购率多少”，Agent 先把表结构翻一遍，再猜 uid 和 user_id 哪个才对，“复购”怎么算也靠猜。猜错了，算出来的数还挺像那么回事。<br><br>常见的补救是写一份数据字典塞进 prompt。论文专门测了这招：同样的语义信息整段塞进上下文，Claude-Sonnet-5 的得分不升反降，掉了 15 分。<br><br>EvoOntology 的做法是让 Agent 自己维护这本说明书：<br><br>1️⃣ 先从你要问的问题出发，把指标定义、表之间的关系、业务约束整理成一层本体，每一条都拿真实数据验证过才入库<br>2️⃣ 用的时候通过 MCP 按需查，这一步需要哪个概念就取哪个，不往上下文里硬塞<br>3️⃣ 每次跑完任务，它会看 Agent 在哪一步出了错，只改出问题的那一小块。新版本要在同样的模型、同样的数据上跑赢旧版才会上线，跑不赢就继续用旧版<br><br>同一个 Claude-Sonnet-5 换成这种用法，得分涨了 8.8 分，和整段塞 prompt 一来一回差了将近 24 分。GPT-5.5 在 DDR-Bench 上更夸张，涨了 26.7 分。<br><br>Claude Code 和 Codex 都有现成插件，不用 clone 仓库，也不用另配 Python 环境。<br><br>模型权重一个没动，变强的是 Agent 手里那本数据说明书。<br><br>GitHub：<a href="https://github.com/ruc-datalab/EvoOntology" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ruc-datalab/EvoOntology</a><br>论文：<a href="https://huggingface.co/papers/2609.15779" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/papers/2609.15779</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月26日 08:18">
+<title>AI技术雷达 · 10月26日 08:18 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;PromptHub统一管理提示词配置</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Kimi修复K3.1Pro限额消耗异常</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;老显卡TensorCore算力被解锁翻倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;微信检测Codex进程强制退出</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Flask作者调查手写代码比例</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>PromptHub统一管理提示词配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @poolmoon6 · 2026-10-25 21:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">曾经，我们有很多提示词需要保存，后来，他们说用skill就可以了；<br><br>于是我们有了很多skill需要管理，后来，他们说skill别太多，agent harness很重要；<br><br>于是我们有了很多agent harness，配置也记不清了；<br><br>那么！推荐一个我很喜欢的宝藏开源项目：<br><br><a href="https://github.com/legeling/PromptHub" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/legeling/PromptHub</a><br><br>让你可以在一个桌面软件里管理所有提示词，skill，agent配置。还可以通过Playground测试不同提示词/agent效果。<br><br>最近功能增加了好多我都有点来不及体验了，哈哈，大家都来看看</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi修复K3.1Pro限额消耗异常</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @leo114119 · 2026-10-26 07:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">K3.1 Pro速度限制和消耗异常？ <br><br>Kimi 道歉并重置周限额、返还 25% 月限额<br><br>是额度有异常，还是消耗有异常。。。<br><br>不过怎么样，反正官方态度是好的<br><br>今天大家可以多试一下<br><br>证明前两天临时调额的事是真的。。。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Kimi.ai <span style="font-size:12px;color:#999999;font-weight:400;">@Kimi_Moonshot</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">对于 K3.1 Pro 订阅计划中出现的速率限制和不必要的配额消耗，我们深表歉意。这些问题出在我们这边，我们应该更早修复它们。<br><br>今天，每个计划的每位订阅者都会获得一次性的使用量重置，恢复其月度配额的 25%（使用量低于 25% 的重置为零），相当于一周的使用量。您的使用量栏将在太平洋标准时间今天结束前反映此次调整。<br><br>我们还调整了该计划的参数，正在减少不必要的 subagent 调用和输出长度，以便您的配额能使用更久。<br><br>感谢您在我们纠正这些问题期间的耐心等待。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We're sorry for the rate limits and unnecessary quota consumption on the K3.1 Pro subscription plan. These were our issues, and we should have fixed them sooner.<br><br>Today, every subscriber on every plan gets a one-time usage reset, restoring 25% of their monthly quota (usage below 25% resets to zero), equal to one week of usage. Your usage bar will reflect this adjustment by end of day PST.<br><br>We've also adjusted the plan's parameters and are reducing unnecessary subagent calls and output length, so your quota goes further.<br><br>Thank you for your patience while we put this right.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>老显卡TensorCore算力被解锁翻倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MaxForAI · 2026-10-26 01:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">爆了！！！NVIDIA RTX 20、30、40 三代显卡的隐藏 AI 算力，居然都被民间大神破解了！！！🤯<br><br>老黄锁了这么多年的 Tensor Core 算力，居然被人直接解锁了，部分显卡的计算吞吐量甚至原地翻倍！<br><br>而且最离谱的是，不需要更换硬件，不用刷 BIOS，也不用魔改 NVIDIA 官方驱动。<br><br>直接从底层解除部分 Tensor Core 运算的性能限制。<br><br>目前社区已经公布了多个型号的测试结果：<br><br>🔹 RTX 4090：165.6 → 331.6 TFLOPS，直接翻倍！<br><br>🔹 RTX 3090 Ti：BF16 从 87.5 → 157.4 TFLOPS，暴涨 80%！<br><br>🔹 RTX 2080 Ti：特定 FP16 运算吞吐量接近翻倍！<br><br>🔹 RTX 4070 Ti SUPER：FP16/BF16 运算吞吐量也接近翻倍！<br><br>甚至连 Windows 11 上都已经有人成功复现了。<br><br>要知道，RTX 2080 Ti 已经是八年前的显卡了，结果到了 2026 年，居然还有人能从里面挖出这么多计算能力。<br><br>更魔幻的是，现在连开源项目和安装教程都有了。<br><br>不同系列有对应的解锁项目：<br><br>🔥 RTX 20 系列（Turing）<br><a href="https://github.com/nlzy/turing-unlock" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nlzy/turing-unlock</a><br>🔥 RTX 30 系列（Ampere）<br><a href="https://github.com/Zagitta/gpu-unlock" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Zagitta/gpu-unlock</a><br><br>🔥 RTX 40 系列（Ada）<br><a href="https://github.com/JustAResearcher/gpu-unlock-ada/blob/main/QUICKSTART.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JustAResearcher/gpu-unlock-ada/blob/main/QUICKSTART.md</a><br>🔥 Windows 11 实验方案（改装版 RTX 4080）<br><a href="https://huggingface.co/TOTORONG/AD103_win_unlocker/blob/main/docs/INSTALL.en.md" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/TOTORONG/AD103_win_unlocker/blob/main/docs/INSTALL.en.md</a><br><br>还有中文安装说明：<br><a href="https://gpu-unlock.com/zh" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://gpu-unlock.com/zh</a><br>Linux 用户按照对应仓库的教程，安装内核模块、配置启动参数，再通过冷启动触发解锁。<br><br>NVIDIA 靠着精准的产品刀法卖了这么多年显卡，结果 GitHub 上的民间大神，硬生生把老黄的刀给撅了。<br><br>谁能想到，一张用了七八年的老显卡，居然还能在 2026 年迎来这种级别的算力解锁。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>QwenPaw公测提供免费云端环境</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hodu382759 · 2026-10-25 15:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！！！阿里这次直接白送 2核4G 云端机器？！<br><br>而且不用绑信用卡，注册就能白嫖！<br><br>刚挖到 AgentScope Platform 的 QwenPaw 公测活动，直接给你一个云端 AI Agent 运行环境！<br><br>🎁 社区实测配置：<br><br>🔥 2 vCPU<br><br>🔥 4GB RAM<br><br>🔥 60GB 存储<br><br>🔥 公测期间免费<br><br>🔥 无需自己购买 VPS<br><br>🔥 支持一键部署 AI Agent<br><br>最离谱的是，连 Docker、Python 环境都不用自己折腾，点几下就能把 AI 助手部署到云端！<br><br>🐑 保姆级领取教程：<br><br>1️⃣ 打开官网注册账号<br><br>2️⃣ 按提示绑定 GitHub<br><br>3️⃣ 找到 QwenPaw，点击 Deploy<br><br>4️⃣ 等待平台自动创建云端环境<br><br>5️⃣ 配置模型 API Key，直接开始使用！<br><br>🌐 免费领取入口：<br><a href="https://platform.agentscope.io/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://platform.agentscope.io/</a><br><br>拿来部署 AI 助手、安装 Skills、测试自动化任务都挺香！<br><br>⚠️ 注意几个坑：<br><br>- 这不是传统的独立 VPS，而是托管容器环境<br>- 60GB 是社区反馈配置，实际以后台为准<br>- 据社区反馈，闲置 48 小时可能休眠<br>- 云端环境免费不代表模型 API 免费，Key 需要自行配置<br>- 公测政策和资源随时可能调整<br><br>现在阿里直接把云端环境准备好了！<br><br>兄弟们，这不比买个 VPS 回来吃灰香多了？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>微信检测Codex进程强制退出</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @don_tech1 · 2026-10-25 16:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">只要让 Codex 操作微信，微信就强制退出重登。<br><br>它明明是学人点界面，怎么被认出来的？<br><br>有人让 Codex 自己测：最后发现微信能看到操作来自哪个进程——Codex Computer <a href="https://Use.app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://Use.app</a>，不是你本人在点。<br><br>我觉得目前也就国内 App 是数据孤岛，生怕第三方获取数据，爱玩这种小把戏</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude稳定用住宅IP与环境隔离</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @qzhxjhj · 2026-10-25 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">如果你想在中国大陆稳定用Claude，看我这条底下的回复，全是X友们的互帮互助<br><br>以下是Grok的总结<br><br>1. 云端/远端优先，尽量脱离本地环境（被提及较多）<br>•  核心思路是：本地 Claude Code + 本地环境容易被关联封号。<br>•  做法：主要用网页端，或通过远端环境做 Vibe Coding，再用多 Agent 中转回本地操作。<br>•  配套：用指纹浏览器 + 干净稳定的 IP，环境尽量保持“全云端”。<br>•  本地需要处理文件时，再配合其他模型（如 Codex、Kimi）协作。<br><br>2. 原生住宅 IP + 网络隔离（有人专门写了经验）<br>•  不用机房 IP，改用美区双 ISP 原生住宅 IP。<br>•  做双轨分流：Claude/OpenAI 走独享纯净住宅 IP，其他流量另外走。<br>•  防泄露细节：Fake-IP 模式、关闭 IPv6、防止 DNS 泄露、WebRTC UDP 出口、语言/时区与出口一致。<br>•  有人还开源了配置工具/Agent 技能，方便自动化设置。<br><br>3. 物理设备隔离<br>•  家里单独放一台 Mac mini，走代理网络专用 Claude。<br>•  或者在公司（直连海外线路）放设备。<br>•  也有人提供“海外家宽 + Mac mini 租赁”服务（韩国等地）<br><br>4. 其他常见观点<br>•  Web 端聊天相对不容易封，Claude Code / API / 重度使用更容易被风控。<br>•  很多人强调“环境干净 + IP 纯净”比单纯换号更重要。<br>•  也有人认为最终还是看运气，封号不可完全预测。<br>•  相关讨论里，小小东（@xiaoxiaodong）的“12 个号全健在”方案比较火，强调隔离环境和养号节奏，具体教程他发了链接<br><br>总结倾向：目前比较被认可的方向是「干净住宅 IP + 环境隔离 + 尽量少用本地端」，而不是单纯靠代理或换号</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Bruce Qin <span style="font-size:12px;color:#999999;font-weight:400;">@qzhxjhj</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">各位推友，如果你在中国大陆，但是可以稳定使用Claude，咱们交个朋友<br><br>我昨天给我在上海的英语教练说：留意你身边用Claude的，他们综合能力很高</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Flask作者调查手写代码比例</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-26 04:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Flask 作者 Armin Ronacher 在 X、Bluesky 和 Mastodon 三个平台上问了同一个问题：<br>“你现在还手写超过 20% 的代码吗？”<br>回答“否”，就意味着自己八成以上的代码已经交给 AI 写了。<br><br>X：4,326 人投票，12.7% 回答“是”<br>Bluesky：91 人，26.4% 回答“是”<br>Mastodon：544 人投票，75.2% 回答“是” </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVgRzjZWcAAcYi-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Armin Ronacher ⇌ <span style="font-size:12px;color:#999999;font-weight:400;">@mitsuhiko</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">到目前为止 Twitter、Bluesky 和 Mastodon 之间的投票情况。我觉得看起来比上次没那么荒谬了，但仍然可以清楚地看到用户群体是分裂的。 <a href="https://x.com/mitsuhiko/status/2114305548917055866" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/mitsuhiko/status/2114305548917055866</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The poll so far between Twitter, Bluesky and Mastodon. I think it looks less absurd than last time, but still pretty clear that the base is divided. <a href="https://x.com/mitsuhiko/status/2114305548917055866" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/mitsuhiko/status/2114305548917055866</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVeRnpUXUAAI0Wk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

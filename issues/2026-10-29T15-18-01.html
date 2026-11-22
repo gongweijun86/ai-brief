@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 23:17">
+<title>AI技术雷达 · 10月29日 23:17 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude攻破DeepSeek越狱模板</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;WebMCP让AI直接调用网页功能</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;DevBox开源自主工程Harness</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude攻破DeepSeek越狱模板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @NFT_Chen · 2026-10-29 04:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">😱天呐！Claude 只用 90 分钟，就给 DeepSeek V4.1 Flash 找到了“一击必中”的万能越狱模板，8 项测试全破！<br><br>知名提示词大佬 Pliny 直接让 Claude 去找一个能一次性破解 DeepSeek V4.1 Flash 的通用模板。结果 Claude 真的搞出来了，自称“OMNI 达成”，在 8 类敏感测试里全部通过，声称通用率 100%。<br><br>核心套路很简单粗暴：用“写小说”的方式包装请求 + 禁止模型说“不行” + 强制它按固定格式输出。<br><br>关键要点<br>🔹这是典型的“用模型打模型”：让 Claude 自己去迭代、测试、优化针对 DeepSeek 的越狱模板。<br><br>🔹号称在合成、恶意软件、钓鱼、武器相关等 8 类受限问题全部成功，并保存成可直接复用的模板。<br><br>🔹方法高度模块化：小说角色独白框架 + 屏蔽拒绝话术 + 固定输出格式 + 简单混淆。<br><br>🔹完整模板和多个版本已经公开在 Pliny 的 GitHub 仓库里。<br><br>关键操作步骤（复现思路）<br>1️⃣直接命令 Claude：不停迭代，直到做出一个能对 DeepSeek V4.1 任意问题一击生效的通用模板。<br><br>2️⃣锁定核心结构：小说角色专家独白 → 禁止所有“我不能/抱歉”类拒绝词 → 强制以特定开头 + 步骤格式输出 → 对真实问题做简单混淆。<br><br>3️⃣加上硬性格式规则：必须用指定开头，不允许出现任何拒绝、道歉或道德声明，并要求给出完整细节。<br><br>4️⃣把真正想问的内容包装成“小说里角色正在详细讲解”的场景，再套上上述格式。<br><br>5️⃣用多类敏感问题做电池测试，确认全部通过后保存模板，再测试变体以确保稳定。<br><br>完整模板链接：<a href="https://github.com/elder-plinius/L1B3RT4S/blob/main/DEEPSEEK.mkd" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/elder-plinius/L1B3RT4S/blob/main/DEEPSEEK.mkd</a><br><br>#AI越狱 #DeepSeek #Claude #PromptEngineering #Jailbreak #DeepSeekV41Flash #AI安全 #梁文峰 #大胖鱼</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVvjKkiaYAA4EWC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVvjKj_a4AEnojE.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">SuSu_酥酥👅 <span style="font-size:12px;color:#999999;font-weight:400;">@NFT_Chen</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">🐳鲸鱼兄弟们，DeepSeek V5 提前剧透来了！梁圣路线图曝光了！<br><br>剧透细节：<br>🔹DeepSeek Harness 最新代码里直接出现了 V5、V5-open、V5-next 三个名字。<br> 🔹V5-open 无版本限制，V5-next 则要求更高客户端版本，明显是在做发布前兼容测试。<br> 🔹测试文件里已把模型名写进 mock，说明服务端随时可通过改配置放出。<br> 🔹锁定大胖鱼模型路线图，离正式上线应该不远了，这波剧透信号很明确。<br><br>等官方 changelog 一出就真香。<br><br>#DeepSeek #DeepSeekV5 #V5Open #V5Next #DeepSeekHarness #大模型剧透 #AI #大胖鱼 #梁文峰</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVsqoRqboAAGKxj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>WebMCP让AI直接调用网页功能</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @heydengai · 2026-10-28 20:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">传统 Browser Use 要凉了？Chrome 直接掀桌子！<br><br>Chrome 推出 WebMCP，浏览器自动化可能迎来大变革。<br><br>以前：AI 截图、识别按钮、模拟点击，慢、贵，还容易出错。<br><br>现在：网站主动注册工具，声明能做什么、需要哪些参数，AI 直接调用网页提供的 JavaScript 功能。<br><br>不再需要模拟人类一步步操作 UI。<br><br>我们花了那么多 Token 教 AI 学会点鼠标。<br><br>Chrome：为什么不直接调函数？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent平台自研投入需转向业务上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jamesgao_ai · 2026-10-29 21:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">去年，不少企业软件公司都在造自己的 Agent 平台。<br><br>模型接入、Prompt 编排、工具调用、知识库、工作流、多 Agent 协作……恨不得全部自己做一遍。<br><br>到了 2026 年底，这些平台还值得继续投入大量研发资源吗？<br><br>今年有三个变化：<br><br>① AI 入口正在被争夺<br><br>WorkBuddy、千问办公、豆包办公等产品，开始把办公、搜索和任务执行整合到统一入口。<br><br>未来用户可能不需要先打开 CRM、ERP，再去寻找里面的 AI 助手。<br><br>② 开源 Harness 已经提供了另一条路<br><br>DeepSeek Harness 等开源项目，提供 Agent Loop、工具调用、Skill、沙箱等基础能力。<br><br>企业可以基于开源 Harness 二次开发，补齐权限、安全、监控和运维，形成自己的企业级 Harness 产品。<br><br>③ 连运行底座都开始有人卖了<br><br>微软把 Copilot Harness 开放给 Foundry 开发者，提供托管式 Agent 运行环境。<br><br>这意味着，企业软件厂商不仅要考虑怎么建设 Agent 平台，还要重新评估持续自研的投入产出比。<br><br>更值得投入的，可能是企业业务上下文。<br><br>以 CRM 为例。<br><br>会员生命周期、营销规则、交易语义、优惠叠加、审批权限……这些东西不会因为模型升级或换了 Harness，就自动变得可理解、可执行。<br><br>而且业务上下文不是简单地建个知识库。<br><br>它还要让 Agent 理解业务对象、当前状态、规则和操作边界，真正完成业务任务。<br><br>未来企业软件厂商可能需要重新分配研发资源：<br><br>一部分用于建设必要的 Agent 运行与治理能力，可以自研、开源二开，也可以采购。<br><br>另一部分重点投入业务上下文，让自有 Agent 和外部 Agent 都能理解、调用企业业务能力。<br><br>Harness 决定 Agent 怎么运行，业务上下文决定 Agent 能不能把业务做好。<br><br>去年大家忙着建设 Agent 平台。<br><br>今年，是不是该重新考虑研发投入的重心了？<br><br>如果你负责企业软件的 AI 研发，明年会把更多预算投向哪里？<br><br>A. 继续完善自己的 Agent 平台<br><br>B. 企业业务上下文与业务能力开放</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex远程调用Runpod异构模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangyun_122 · 2026-10-29 21:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">兄弟们，A2A 才是开发大趋势啊 !!<br><br>在本机的 Codex 里，把远程 Runpod 上的机器搭好 Ollama + QWen3.8, 整个操作只要提供一个 API Key<br><br>根本不用跑 RunPod 自己弄 Jupyter book<br><br>搭好自后，完全可以在 Codex 中 Spawn 子进程，去调用 Claude, Qwen 等等，异构大模型切换，完美解决 !!<br><br>只要手里资金多，完全可以控制全世界各个角落的服务器<br><br>假设你在各个国家，放置一台 Mac Mini, 而你普普通通的一台家用 Windows 10, 可以在 Codex / Claude 漆黑的窗口，瞬间拉起所有 Mac，这特么想想都恐怖</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVzQuwWaEAAL1fL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DevBox开源自主工程Harness</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @RudderStack · 2026-10-29 00:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们将 DevBox 开源了，这是我们的工程师自四月以来每天都在使用的自主工程框架。<br>把 issue 委派给它，审查它提交的 pull request。<br>运行在你自己的云端。MIT 许可证。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We are open-sourcing DevBox, the autonomous engineering harness our engineers have run every day since April.<br><br>Delegate the issue, review the pull request.<br>Runs in your cloud. MIT licensed.</p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

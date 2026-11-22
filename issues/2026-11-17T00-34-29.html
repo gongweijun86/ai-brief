@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 08:34">
+<title>AI技术雷达 · 11月17日 08:34 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;SQLite 开 WAL 解决读写并发</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;sniplite 截图工具仅0.4MB</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;ChatGPT 医疗版强化计算机操作</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Repovive 用AI做芯片形式化验证</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Swamp 把Agent技能固化为工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;托管模型实测192次零审查拒绝</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SQLite 开 WAL 解决读写并发</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GetAskClaw · 2026-11-17 07:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">pg18 比 sqlite 更好吗<br><br>现状<br><br>journal_mode   delete      ← 不是 WAL<br>busy_timeout   5000<br>锁             应用层 sidecar（另一个 sqlite 文件）<br>用 delete 模式时，一次写会阻塞所有读。我刚才读库能成功，只是因为抓取的事务都极短。<br><br>PG18 能解决什么、不能解决什么<br><br>                            PG18        SQLite + WAL<br>多写并发        ✓ 真并发     ✗ 单写者<br>读写并发        ✓           ✓<br>成本            装服务、驱动、 一行 pragma<br>                连接串、凭据<br>单文件分发      ✗           ✓<br><br>但你真正需要的那个场景，PG 是假解药<br><br>“让其他 agent 同时写”听起来合理，但得先问：它们写什么？<br>抓取 agent     INSERT 帖子        ← 唯一的写者，而且是追加<br>分析 agent     读 + 写标记/分类    ← 这才是冲突来源<br><br>两个抓取 agent 同时跑，不会更快——它们争的是 X 的配额（1000 次/小时），不是数据库。DB 让它们并发了，X 那边照样排队。锁当初加的就是这个目的，这个理由依然成立。<br><br>所以真需求是：抓取在写的时候，别的 agent 还能读、还能写它自己的东西。<br><br>我的主意：三件事，不换数据库<br><br>一、开 WAL（一行，立刻见效）<br><br>db.execute(&quot;PRAGMA journal_mode=WAL&quot;)<br><br>读写真并发。写不阻塞读，读不阻塞写。<br><br>二、把「抓取锁」和「数据库锁」分开<br><br>现在 archive_lock() 独占整库，其实它只需要防两个抓取同时烧配额。分析 agent 的写不该被它挡。改法：<br><br>抓取      拿 sidecar 锁（防配额双烧）<br>其他写    不拿锁，靠 SQLite 自己的 busy_timeout 排队<br><br>三、分析结果另开库<br><br>ATTACH 'data/analysis.db' AS a;<br><br>标记、分类、笔记放这里。物理隔离，零冲突，还不用跟抓取抢锁。<br><br>什么时候真该上 PG18<br><br>多个 agent 在不同机器上写同一份数据<br>需要跨进程的事务（A 的写依赖 B 的写）<br>数据量过千万行、单机内存装不下索引<br><br>现在一条都不满足。 单机、追加写、十万行——SQLite 在这个量级上还有 5 倍余量（我前面算过阈值 50 万帖才需要 FTS）。<br><br>代价对比<br><br>PG18    装服务 + psycopg 依赖 + 连接串凭据 + 备份策略 + 版本升级<br>        换来的：你暂时用不上的多写并发<br><br>WAL     一行 pragma + 拆锁逻辑（约 30 行）<br>        换来的：读写并发，正是你缺的那一样<br>如果哪天要上 PG，migrate() 已经把 schema 分离得很干净了，那时候迁移的成本不会比现在低多少。<br><br>一个副作用得说<br><br>开 WAL 会多出 x.db-wal 和 x.db-shm 两个文件。这两个已经在 .gitignore 里了（*-wal、*-shm），是好事——上次 -journal 漏网被提交，就是这个类别的第一批受害者。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">AskClaw 🦀 <span style="font-size:12px;color:#999999;font-weight:400;">@GetAskClaw</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">deepseek 写的工具真好用 😎<br><br>772/917        （还差 145 人，约 2.5 小时）<br>回帖             21,573 帖   ← 早上是 10,505<br>全库           101,924 帖  ← 破十万了<br>有回帖的   760 个账号<br>纯回帖账号      30 个<br>429 限流       还在发生（刚一次要等 701 秒）<br><br>破十万这个数字的含义<br><br>昨天早上   74,941 帖<br>现在      101,924 帖<br><br>一天涨了 27,000 帖。 其中大部分是回帖（21,573 条）——这些原本完全不在库里。<br><br>30 个纯回帖账号<br><br>比最开始那轮找到的 27 个多了 3 个。这些人不发原创，只在别人帖子下面说话。之前如果有谁会问「这 917 人里谁最活跃」，这 30 个人会被完全漏掉。<br><br>剩余 145 人<br><br>跑完我出一份完整的东西：<br><br>每人：原创数 / 回复数 / 引用率 / 活跃时段<br>     谁是纯回复型<br>     谁一条都没有（真正可以取关的）<br><br>这样你手上就是一份能用的名单，而不是一堆数字。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>sniplite 截图工具仅0.4MB</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-17 07:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">截图和贴图工具普遍体积大、启动慢、占用内存多，sniplite 用汇编重写核心路径，把安装包压到 0.4 MB、热键到可截图压到 12 ms。<br><br><a href="https://github.com/MrTangLuyao/sniplite" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/MrTangLuyao/sniplite</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXNjaiJasAAuotj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ChatGPT 医疗版强化计算机操作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @OpenAI · 2026-11-17 07:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">面向医疗健康的 ChatGPT 正在不断推进，拥有更强大的计算机使用 agent、更扎实的临床回答，以及 20 多个新的医疗健康插件。<br><br>@AbridgeHQ、@AmbienceAI、@Cigna、@CVSHealth 以及其他领先的医疗健康组织正在将我们的模型应用于事前授权、转诊、出院规划和患者外联等场景。<br><br>这些进展将医学证据与实际帮助连接到团队已经在使用的各个工具中——让他们可以花更少时间在系统之间周旋，花更多时间关怀患者。<br><br><a href="https://openai.com/index/advancing-computer-use-for-healthcare-teams/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/advancing-computer-use-for-healthcare-teams/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">ChatGPT for Healthcare is advancing with more capable computer-use agents, stronger clinical answers, and 20+ new healthcare plugins.<br><br>@AbridgeHQ, @AmbienceAI, @Cigna, @CVSHealth, and other leading healthcare organizations are putting our models to work across prior authorizations, referrals, discharge planning, and patient outreach.<br><br>Together, these advances connect medical evidence with practical help across the tools teams already use—so they can spend less time navigating systems and more time caring for patients.<br><br><a href="https://openai.com/index/advancing-computer-use-for-healthcare-teams/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/advancing-computer-use-for-healthcare-teams/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122465591847952385/img/9iPTw4fcBJ6BvW3f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Intent 移动版支持查看PR</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LukeW · 2026-11-17 06:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你能看到所有东西（你的 agent 做的）。<br>我为什么要骗你？<br><br>Intent 今日移动端更新：<br>- 在 Changes 视图中查看 PR<br>- 更清晰的重连状态药丸<br>- 在 iPad 上将工具拖入主区域<br>- 重命名终端<br>- 大型 diff 和工作区性能更快<br>- 以及发布说明中的修复与优化：<a href="https://intentapp.dev/updates" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://intentapp.dev/updates</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">you can see everything (your agents did).<br>why would I deceive you?<br><br>new in Intent mobile today:<br>- view PRs in the Changes view<br>- clearer reconnecting with a status pill<br>- drag tools into the main area on iPad<br>- rename terminals<br>- faster with large diffs &amp; workspaces<br>- plus fixes &amp; polish in release notes: <a href="https://intentapp.dev/updates" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://intentapp.dev/updates</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122461591052668928/img/0Qte9UHc5CHLhg_9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CodeRabbit 语义化Diff速审</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @coderabbitai · 2026-07-31 06:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你的 agent 一夜之间提交了 1,200 行代码。你能解释一下改了什么、为什么改吗？CodeRabbit 可以。逻辑分层、语义 diff 和通俗易懂的 PR 概述，让大型 diff 在几分钟内就可审阅。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your agent shipped 1,200 lines overnight. Can you explain what changed and why? CodeRabbit can. Logical Layers, semantic diffs, and a plain-language PR Overview make a huge diff reviewable in minutes.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Repovive 用AI做芯片形式化验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ShayanCJahan · 2026-11-17 06:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Repovive 正在为全球依赖的芯片和关键软件扩展 AI 形式化验证能力。<br><br>团队成员包括国际竞赛奖牌获得者、前前沿实验室成员、博士研究员和前 Google 工程师。<br><br>Repovive 与 AI 实验室签有合同，用于提升模型的形式化验证能力，并获得了来自 OpenAI、Anthropic、xAI、Cognition 等多家公司的投资者支持。<br><br>Repovive 拥有一个由 12,000 名 IOI 和 IMO 参与者组成的高人才密度社区。<br><br>形式化证明可以确立一个系统是否符合其规格，但寻找这些证明仍然需要专业技能和大量人工工作。团队通常依赖覆盖特定场景的测试，这会在故障未被检测到的地方留下缺口。<br><br>今天，Repovive 为 AI 实验室提供形式化数据和强化学习环境，用于模型的训练和评估。其非公开的 Lean 任务附带经过形式化验证的参考证明，为实验室提供用于训练的难题，以及评估模型能否解决这些问题的严谨方式。<br><br>长远愿景是让形式化验证足够实用，成为芯片设计、关键软件开发和数学研究中的标准步骤。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Repovive is scaling AI formal verification for the chips and critical software the world runs on.<br><br>The team includes Olympiad medalists, former frontier lab members, PhD researchers, and former Google engineers.<br><br>Repovive has contracts with AI labs to improve models’ formal verification capabilities and is backed by investors from OpenAI, Anthropic, xAI, Cognition, and many other companies.<br><br>Repovive has a talent-dense community of 12,000 IOI and IMO participants.<br><br>Formal proofs can establish that a system meets its specifications, but finding those proofs still takes specialized expertise and substantial manual work. Teams often rely on tests that cover specific scenarios, leaving gaps where failures can go undetected.<br><br>Today, Repovive provides AI labs with formalization data and reinforcement learning environments for model training and evaluation. Its non-public Lean tasks come with formally verified reference proofs, giving labs difficult problems for training and a rigorous way to evaluate whether models can solve them.&amp;#x20;<br><br>The long term vision is to make formal verification practical enough to become a standard step in chip design, critical software development, and mathematical research.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122451143343374336/img/bHMBwZWAIyzR67a7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Buzz 1.0.4 新增引用与文件预览</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wesbillman · 2026-11-17 04:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Buzz 1.0.4 🐝<br><br>将消息的部分内容引用到回复中，在可选的 File viewer 插件旁与聊天并排打开共享的 PDF、Markdown 和 CSV 文件，并查看被中断的 agent 在哪里停止了。此外 Claude 设置现在可以检测你现有的 CLI 连接。<br><br><a href="https://github.com/block/buzz-app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/block/buzz-app</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Buzz 1.0.4 🐝<br><br>Quote part of a message into your reply, open shared PDFs, Markdown and CSV files beside the chat with the optional File viewer plugin, and see where interrupted agents left off. Plus Claude setup now detects your existing CLI connection.<br><br><a href="https://github.com/block/buzz-app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/block/buzz-app</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Swamp 把Agent技能固化为工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-11-16 16:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Skills 2.0 来了！<br><br>（token 少 8 倍，速度快 2 倍）<br><br>我们经常把重复的工作流打包成 skills，但 agent 在每次运行时仍然要重新读取 skill 并逐步决策，这既费 token 又费时间。<br><br>Devs 刚刚开源了 Swamp，让你的 coding agent 将重复的 skill 转化为一个只构建一次、然后反复运行的工作流。<br><br>你只需描述一次任务，agent 就会将其拆分为连接在工作流中的可复用行为。<br><br>每个行为都有类型化的输入和输出，由普通代码决定下一步运行什么。然后 Swamp 给你提供：<br><br>- 仅在需要判断的步骤上调用模型<br>- 从 vault 中拉取密钥并在输出中脱敏<br>- 每次运行的版本化数据，供你后续查询<br>- 每次运行发生了什么的完整记录<br><br>仓库在这里：<a href="https://github.com/swamp-club/swamp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/swamp-club/swamp</a><br><br>（别忘了点星 ⭐）<br><br>Swamp 可以接入你已经在使用的 coding agent，比如：<br><br>- Claude Code<br>- Codex<br>- Cursor<br>- OpenCode<br>- 以及另外 5 种 agent 框架<br><br>在 Swamp 中，模型是工作流中的一个步骤，而不是决定接下来发生什么的那个角色。<br><br>模型步骤仍然像任何 LLM 调用一样进行推理。<br><br>但在这种情况下，循环由代码掌控，所以 agent 不会每次花费 token 重新发现相同的过程。<br><br>以下是一个官方结果，他们将一个代码审查 skill 转化为 Swamp 工作流：<br><br>- Codex 中的 Skill：约 460 万 token，23 个 agent，12.8 分钟<br>- Swamp 工作流：约 50.6 万 token，3 个 agent，6.6 分钟<br><br>这就是约 8 倍更少的 token，耗时约为一半，大部分节省来自用普通代码替代了协调 agent。<br><br>你可以在原型阶段继续使用 skills。一旦某个任务开始重复出现，让你的 agent 将其转化为 Swamp 工作流。<br><br>这有助于回答实际问题，比如：<br><br>- 哪些步骤真正需要模型？<br>- 上周那次运行到底发生了什么？<br>- 更便宜的模型能否处理那个需要判断的唯一步骤？<br><br>一旦构建完成，你可以从你的 agent、CLI、定时任务或 API 运行该工作流，每次运行都有记录。<br><br>所以你不再需要为模型在每次运行时摸索相同的工作流而付费。<br><br>相反，你只在模型的判断能带来价值的步骤上花费 token。<br><br>下面的动画展示了 Swamp 与 Skills 的区别，我与团队合作制作了这个内容。<br><br>如果你想理解 Swamp 用代码替代的协调层，我写了一篇关于 Claude Code 如何在子 agent 和 agent 团队之间分配工作的完整解析。<br><br>它涵盖了单个子 agent 何时足够、何时需要相互协调的 agent 团队，以及这种协调在上下文和 token 上的成本。<br><br>请阅读下方内容。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Skills 2.0 is here!<br><br>(8x fewer tokens and 2x faster)<br><br>We package repeated workflows as skills all the time, but the agent still re-reads the skill and decides every step on every run, which costs tokens and time.<br><br>Devs just open-sourced Swamp, where your coding agent turns a repeated skill into a workflow that it builds once and runs again and again.<br><br>You describe the task once, and the agent breaks it into reusable behaviors connected in a workflow.<br><br>Every behavior has typed inputs and outputs, and plain code decides which step runs next. Swamp then gives you:<br><br>- model calls only on steps that need judgment<br>- secrets pulled from vaults and redacted from output<br>- versioned data from every run that you can query later<br>- a full record of what happened on each run<br><br>Here's the repo: <a href="https://github.com/swamp-club/swamp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/swamp-club/swamp</a><br><br>(don't forget to star it ⭐ )<br><br>Swamp plugs into the coding agent you already use, like:<br><br>- Claude Code<br>- Codex<br>- Cursor<br>- OpenCode<br>- And 5 more agent harnesses<br><br>In Swamp, the model is a step in the workflow, not the thing deciding what happens next.<br><br>The model steps still reason like any LLM call.<br><br>However, in this case, code owns the loop, so the agent doesn't spend tokens rediscovering the same process every time.<br><br>Here's an official result, where they turned a code-review skill into a Swamp workflow:<br><br>- Skill in Codex: about 4.6M tokens, 23 agents, 12.8 minutes<br>- Swamp workflow: about 506K tokens, 3 agents, 6.6 minutes<br><br>That is ~8x fewer tokens in about half the time, and most of the savings came from replacing the coordinator agent with plain code.<br><br>You can keep using skills while you prototype. Once a task starts repeating, ask your agent to turn it into a Swamp workflow.<br><br>This helps answer practical questions such as:<br><br>- Which steps actually need a model?<br>- What exactly happened on last week's run?<br>- Can a cheaper model handle the one step that needs judgment?<br><br>Once it's built, you can run the workflow from your agent, the CLI, a schedule, or an API, with every run recorded.<br><br>So you are no longer paying a model to figure out the same workflow on every run.<br><br>Instead, you spend tokens only on the steps where the model's judgment adds something.<br><br>The animation below shows how Swamp differs from Skills, and I worked with the team to put this together.<br><br>If you want to understand the coordination layer that Swamp replaces with code, I wrote a full breakdown of how Claude Code splits work across subagents and agent teams.<br><br>It covers when a single subagent is enough, when you need a team of agents that coordinate with each other, and what that coordination costs in context and tokens.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HXOzY-taAAAc4zF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2050455864931504128" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2050455864931504128</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2050455864931504128" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2050455864931504128</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>托管模型实测192次零审查拒绝</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @toirant · 2026-11-11 02:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我去寻找托管模型中的 AI 审查，但没有找到。192 个 prompt，两个模型，零次不当拒绝。阻碍我的是配额、延迟尾部以及我无法控制的模型。这才是去中心化 AI 的真正用武之地。@hackernoon @nosana_ai<br><br><a href="https://hackernoon.com/i-went-looking-for-ai-censorship-and-couldnt-find-it-heres-what-decentralized-ai-is-actually-for" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hackernoon.com/i-went-looking-for-ai-censorship-and-couldnt-find-it-heres-what-decentralized-ai-is-actually-for</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I went looking for AI censorship in hosted models and couldn't find it. 192 prompts, two models, zero bad refusals. What got in my way was quotas, latency tails and models I don't control. That's the real case for decentralized AI. @hackernoon @nosana_ai<br><br><a href="https://hackernoon.com/i-went-looking-for-ai-censorship-and-couldnt-find-it-heres-what-decentralized-ai-is-actually-for" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hackernoon.com/i-went-looking-for-ai-censorship-and-couldnt-find-it-heres-what-decentralized-ai-is-actually-for</a></p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

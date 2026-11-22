@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月24日 20:10">
+<title>AI技术雷达 · 10月24日 20:10 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Magpie 本地网关实现协议互转</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;SimRun 一键运行任意 iOS 应用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Kimi K3.1 Pro 价格降三成</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Iris 纯 C 实现本地文生图</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;DeepSeek Bot 新增交互卡片</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Nivo 统一管理开发存储占用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @officialABjeans · 2026-10-24 16:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Xcode、Docker 和 Homebrew 随着时间的推移会占用相当多的存储空间 👀<br><br>Nivo 将开发者相关的文件和存储信息整合到了一个地方。<br><br>探索 Xcode 数据、Docker 文件、Homebrew、下载内容和大文件。<br><br>全部在一个原生 macOS 应用中完成。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Xcode, Docker, and Homebrew can use quite a bit of storage over time 👀<br><br>Nivo brings developer-related files and storage information into one place.<br><br>Explore Xcode data, Docker files, Homebrew, downloads, and large files.<br><br>All within a native macOS app.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 国内环境实测可正常续费</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaoduoya_ · 2026-10-24 10:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude第二个月，续费成功！<br><br>我尝试了所有你可能认为是「高风险」的行为：<br>中文语言 + 万人骑共享IP + 中国时区 + 手机使用 + 连接GitHub + 国行电脑<br><br>所以推特上所有让你买家宽的，所有让你改时区的，都是在圈你的钱 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXLEJobIAAWY20.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXLEc5bUAARzHq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXLEtYbgAAElRq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVXLFC0aUAAMUlm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">HeyXiaoDuo_ <span style="font-size:12px;color:#999999;font-weight:400;">@xiaoduoya_</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">不管了我头铁<br><br>全程国内环境+万人骑机场<br><br>不改时区 不改语言<br><br>我就要试试多久会封号</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 本地网关实现协议互转</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HunziDaily · 2026-10-24 13:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多朋友问：我已经用了 CC Switch，还有必要换 Magpie 吗？<br><br>虽然它们都是为了让开发者更自由地切模型，但底层的实现逻辑完全不同：<br><br>• CC Switch（配置写入型）：<br>核心原理是直接修改你本地的配置文件（比如改 `~/.claude/settings.json`）。如果目标模型本身支持 Anthropic 协议，切换很轻便；但如果遇到协议不兼容的第三方渠道，就会抓瞎。<br><br>• Magpie（本地智能网关型）：<br>它在你的本地跑一个轻量级代理网关（127.0.0.1:3425）。它最强的地方在于【实时协议翻译】——无论第三方是 OpenAI 格式、Gemini 格式还是 Anthropic 格式，它在中间层全部无缝双向互转，流式传输和 Tool Calls 毫发无损。<br><br>简单说：CC Switch 是“帮你改配置的文秘”，Magpie 是“在本地给你配了个万能翻译官兼路由器”。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SimRun 一键运行任意 iOS 应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @unixzii · 2026-10-23 13:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">未曾设想的道路，一键运行任何 iOS app，IPA 下载、离线砸壳、导入 SimRun 一气呵成。可以随时随地研究各种 app 了。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113509754656186368/img/3WgvxPWN3LuvgrHD.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kimi K3.1 Pro 价格降三成</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Daviswh · 2026-10-24 18:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想试 Kimi K3.1 Pro、又不想一上来砸配额的人：<br><br>💰多少钱<br>官方 API：输入 $2 / 输出 $10 / 缓存命中 $0.20，每百万 tokens，比上一代 K3 全线低约 33%。另有 Highspeed 档，官方称大约快 2–3 倍。<br><br>🛠能在哪用<br>网页 <a href="http://kimi.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://kimi.ai</a>、Kimi Work、Kimi Code，以及 <a href="http://platform.kimi.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://platform.kimi.ai</a> 的 API。1M 上下文，文本+图像。<br><br>👉怎么上手<br>1. 打开 <a href="http://kimi.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://kimi.ai</a> 直接聊，先拿自己的真实写码/agent 任务跑一轮<br>2. 要接进工具链：去 <a href="http://platform.kimi.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://platform.kimi.ai</a> 开 key，把模型名换成 K3.1 Pro（或 Highspeed）<br>3. 权重预计 11 月 4 日前后公开；只想自托管的，先别囤卡，等权重和量化方案<br><br>⚠️注意<br>智力指数 55、Terminal-Bench 约 67% 是评测数；账单以你一次真实任务烧掉的输出 token 为准，先记一笔再决定要不要长期接。<br><br>（数字来自 Artificial Analysis 与 Kimi 官方发布，截至 10/24）</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Iris 纯 C 实现本地文生图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-24 01:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎨 Redis 头号贡献者 antirez 开源了 Iris，在自己电脑上本地跑文生图，不用装 Python，也不用装 PyTorch。<br><br>Iris 在 GitHub 上快 2000 star，作者 Salvatore Sanfilippo 在 redis/redis 仓库里提交了七千一百多次。<br><br>以前想在本地跑个开放权重的图像模型，第一步往往是配 Python 环境、装 PyTorch、对版本，折腾半天还没见到第一张图。<br><br>Iris 整条推理管线都是纯 C 写的，除了 C 标准库没有别的依赖，想加速再挑 MPS、CUDA、ROCm 或 BLAS。FLUX.2 Klein、Z-Image-Turbo、FLUX.3 Image Klein 都能跑，文生图、图生图、多参考图也都能做。<br><br>文档给的对比是：M3 Max 上用蒸馏版 Flux 出一张 512x512 大约 7.6 秒，PyTorch（MPS）要 13 秒；权重默认走内存映射，4B 模型的峰值内存从约 16GB 压到 4-5GB。注意 9B 版本是非商业许可。<br><br>内存不大、又不想被 Python 环境折腾的，可以拿 Iris 试试。<br><br>GitHub：<a href="https://github.com/antirez/iris.c" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/antirez/iris.c</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek Bot 新增交互卡片</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Fei2411 · 2026-10-23 23:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek Bot V0.2.1 发布！并且我们有了一个官网:<a href="https://dsbot.app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dsbot.app</a> ，以及——介绍 Deep UI ！<br><br>这个版本带来了很多很有意思的更新：<br>1.桌面端版带回了侧边浏览器，并新增了 cookies 导入（不过这个功能目前还在实验中，似乎有些问题，会不断优化）。<br>2.优化了侧边栏的显示，把 dsh 的原生侧边栏和 dsbot 的侧边栏更好的融合了。<br>3.重头戏来了，介绍 Deep UI：Bot 会在对话中绘制一个可交互的 UI 卡片，Bot 可以通过这种可视化的方式清晰像你解释、汇报，甚至你还可以与之交互。我在这里放了两个展示视频，相信这个功能会让 Bot 的对话体验大幅改进 !<br>这个功能由我和 @klarkxy 合作完成！<br>4.增加了平铺布局以及气泡可选宽度。感谢 @cccch1mneyyyy 的贡献！<br>5.优化了 Bot 工作过程的展示，并增加了思考可选开关。<br>6.以及，修复了很多已知问题。<br><br>新版本已同步更新插件版和桌面端（win、macos、linux均支持），将在几分钟内上线，欢迎试用！<br><br>仓库：<a href="https://github.com/Fei2411/DeepSeek-Bot" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Fei2411/DeepSeek-Bot</a><br>官网：<a href="https://dsbot.app/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dsbot.app/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113654090966376448/img/Maeuw6tEPrl1JnWY.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2113654093097193472/img/zm0PDJu-w7k0yGcd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

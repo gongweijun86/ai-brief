@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月17日 14:05">
+<title>AI技术雷达 · 10月17日 14:05 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Anthropic七层代码审查工程实践</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Agent提示词从402行减至15行</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;GPT占48%成主力Coding模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Paperclip管理多Agent协作</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Claude官方示例项目开源GitHub</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic七层代码审查工程实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-10-17 11:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">昨天还在说 Code Review 的实践，今天Anthropic就写了一篇文章详细描述它们 Code Review 的工程实践：<br><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/solving-code-review-at-anthropic/</a><br><br>非常受用，可以好好读一下，核心观点是：代码多到人读不过来之后，人已经不 review 代码了，而是追求花最少的时间 并且回滚和事故又不增加<br><br>一个改动要过七层检查，几点也很有趣：<br><br>1 让 Agent 提 PR 之前先自证 证明做完了 测试 截图 等等<br><br>2 每个 PR 都有 AI review  diff，对照整个仓库和 PR 的意图来审 多个 agent 同时找 bug 再由另一组投票，多数认定是真问题才发出来 纯风格类的意见直接丢掉 这个和我的 review-forge 的思路非常类似<br><br>3 按风险决定要几个人批 低风险不用人批准自动合并，普通功能一人批 最高风险的路径要两个人（我怀疑这步骤真的那么有用吗？人能看过来吗）<br><br>4 merge queue / feature flag / 灰度发布 先给内部员工用， 快速发现 快速回 feature flag 不用部署就能关掉<br><br>里面还有一个非常实用的思路 正好解答昨天多 agent review 的问题：<br><br>review 要能收敛，agent 写 agent 审，有可能可以互相折腾个没完，文中说有个 PR 一夜之间来回改了五十多轮 git blame 一看，59% 被反复标记的都是第一轮时就已经存在的老代码<br><br>所以他们加了几条规则：最多三轮，超过就让作者退一步重新想方案 几轮之后只审新增的 diff 已经提过的意见不再重复。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent提示词从402行减至15行</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sleepy0x13 · 2026-10-17 11:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 在一堂 4 小时的免费工程课里，把一个 Agent 的 System Prompt 从 402 行砍到 15 行，任务通过率反而从 62% 提升到了 92%。<br><br>这套教程信息量挺大，我把最值得学的几个技巧整理了一下，建议收藏。<br><br>1. Prompt 怎么写（00:15）<br><br>别上来就写一堆指令。先建立 Eval，覆盖正常任务、边界情况和失败案例，再根据结果修改 Prompt。<br><br>业务规则、角色、数据和输出格式分开写。数学计算交给代码工具，复杂任务可以采用 Generate → Evaluate → Repair，让模型生成、检查、修复。<br><br>2. Claude 为什么越用越笨（33:21）<br><br>视频拿库存 Agent 做实验：402 行 Prompt、12 个工具、3 个子 Agent，通过率只有 62%。<br><br>优化方法：<br><br>Tool 负责执行明确动作，例如查询、计算<br>Skill 按需加载业务知识，不要全部塞进 System Prompt<br><br>Subagent 留给需要独立上下文的任务<br><br>大量数据用 Python 处理，只把结果返回模型<br>改造后通过率提升到约 92%，Token 消耗也下降了。<br><br>3. Anthropic 内部怎么用 Claude（1:33:39）<br><br>一个很实用的产品开发流程：<br><br>先让 Claude 反过来采访你，问清需求中的模糊点，生成产品规格。<br><br>然后根据规格制作多个可预览的 HTML 方案，让人直接比较和修改。<br><br>开发完成后，用 Schema、Fixture、Invariant 定义验收条件，再通过 Playwright 自动检查页面。<br><br>简单说，就是让 Claude 从需求讨论一直参与到最终验证。<br><br>4. 自动化和长期记忆（2:29:24–3:18:59）<br><br>Routines 可以按时间或事件触发任务，比如每周检查合并的 PR，自动提出文档更新。<br><br>Memory Store 负责跨会话保存信息，Dreaming 则负责定期整理历史记忆、去重和更新索引。这部分属于 Managed Agents 的能力。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2110623138010800128/img/26P0-NhY0-7JXvvA.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT占48%成主力Coding模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tualatrix · 2026-10-17 13:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在大家的积极投票下，我这个连载了三期的「主力 Coding 模型」的调研越来越有趣了。<br><br>- 2026 年 2 月，当时 Claude、GPT、Gemini 比例分别是 39%、33% 和 11%<br>- 2026 年 5 月，也就是三个月后，比例变成了 26%、64% 和 3%。GPT 追赶的非常快（另一方面 Claude 封号也非常狠）<br>- 2026 年 10 月，也就是昨天，比例又变成了 33%、48% 和 2%。Claude 追上来了（尽管封号也更狠了），GPT 还是领先，但跌了不少。Gemini 到了 2%，似乎有点回天乏术了。<br><br>排除 Claude 的封号因素，我觉得 GPT 有点危险了。风水轮流转，让这些大厂竞争得再猛烈些吧！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUztFgTaoAA3GDh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUztFgzbkAAA6kC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUztHPhaoAA3ECm.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic蒸馏费占收入5-7%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @foxshuo · 2026-10-17 11:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic内部估算，来自其他模型公司蒸馏Claude的付费，占到工资总收入的5%-7%，有点哈人啊……</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Paperclip管理多Agent协作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sitinme · 2026-10-17 10:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude Code 开了五六个终端，一个在重构，一个在补测试，一个在写文档，过半小时回来，已经分不清哪个窗口在干嘛，电脑一重启，上下文全没了。<br><br>更怕的是失控。某个 agent 陷进死循环，一晚上烧掉几百美元 token，第二天看账单才发现。<br><br>Paperclip 换了个思路，agent 既然越来越像员工，那就给它们开一家公司。<br><br>它是一个 Node.js 服务加一个 React 后台，Claude Code、Codex、Cursor、Gemini CLI、OpenClaw 都能接进来当员工。<br><br>有组织架构，有汇报线，有预算，你坐在董事会的位置上批方案、看账。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUtyGabbMAAlAH8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">sitin <span style="font-size:12px;color:#999999;font-weight:400;">@sitinme</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">如果把 Claude Code、Codex、Cursor、OpenClaw 这些 AI Agent 看成一个个“员工”，那 Paperclip 做的事情，更像是给它们装了一套公司操作系统。<br><br>它不负责让模型变聪明，而是解决 Agent 一多以后最麻烦的问题：<br><br>谁负责什么、任务做到哪了、有没有重复干活、花了多少钱、哪些操作需要人工批准、出问题以后能不能追溯。<br><br>Paperclip 里面可以真的搭一套“AI 公司”：有 CEO、有工程师、有研究员，可以设置上下级关系、任务、目标、预算、审批和工作区。<br><br>Agent 通过 heartbeat 定期醒来领取任务，执行完再把结果和日志写回去；预算到上限还能自动暂停，重要操作可以先交给人审批。<br><br>我觉得它最值得关注的，不是网上说的“零人公司”，而是它开始解决一个越来越真实的问题：<br><br>当你同时跑 5 个、10 个甚至更多 Agent 时，真正的瓶颈已经不是模型能力，而是管理和协调。<br><br>当然，这东西也不是装完就自动赚钱。Agent 越多，Token、调试、权限、验收和维护成本都会跟着上来。<br><br>比较靠谱的玩法，是先用 1 个 Company + 1 个 CEO + 1~2 个专职 Agent 跑一条很窄的流程，看看它到底有没有帮你减少协调时间。<br><br>如果只是偶尔用一个 Codex 或 Claude Code，Paperclip 可能有点重；但如果已经开始让多个 Agent 并行做开发、内容、运营或者增长，它就很值得研究了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2088816149010305024/img/VDc6mmV9aB_SNgf9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude官方示例项目开源GitHub</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-10-17 09:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🧰 太大方了，Anthropic 把自己做 Claude 应用的示范代码全摊开了——claude-quickstarts，照着抄就能跑起一个能用的 AI 应用。<br><br>正挂在 GitHub 热榜上，已经 1.8 万 star、3106 个 fork，MIT 许可证，拿去改商用都行。<br><br>从零接 Claude API，最耗时间的不是写功能，是搞清楚「这东西到底该怎么搭」：会话怎么存、工具怎么挂、agent 跑崩了怎么续。claude-quickstarts 把这些都做成了能直接跑起来的完整项目——客服机器人、金融数据分析、浏览器自动化、能自己写代码的 agent，每个都带自己的 README 和配置说明，你照着改比对着文档猜快太多。<br><br>最值得翻的是 computer use 那两个：一个是让 Claude 直接操作桌面的 demo，另一个是在原生 macOS 上的参考实现，提示缓存、服务端压缩、批量工具调用、沙盒化 shell、轨迹记录这些门道全写进代码里了。另外还有一个把 Managed Agents Sessions API 包成九个工具的 MCP server，stdio 和 Streamable HTTP 两种接法都给了。<br><br>与其对着文档猜，不如先把官方的示例跑一遍。<br><br>GitHub：<a href="https://github.com/anthropics/claude-quickstarts" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anthropics/claude-quickstarts</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Opus 5.5渠道对比与价格盘点</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @star_flow_ai · 2026-10-17 08:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">哪里能用上 OPUS 5.5？12 大正规渠道全面盘点<br><br>一、Claude 官方：Pro（$20/月）、Max 5x（$100/月）、Max 20x（$200/月）与按量 API。注意 Max 20x 的 20 倍只是 5 小时突发额度，周额度实际只有 Pro 的 10 倍，单价并没打折；国内支付难且封号严重。<br><br>二、Google Antigravity：Pro、Ultra 5x、Ultra 20x。Gemini 与 Claude 是独立额度池，买谷歌白送 Claude；注意必须是非试用的付费版 Pro 才有 Opus 5.5，且单跑 Opus 额度掉得极快。<br><br>三、Cursor：Pro、Pro Plus、Ultra。注意计费已调整为各模型分别扣费，不再共用额度池；近期 Ultra 折算下来的 Opus 额度缩水明显。<br><br>四、GitHub Copilot：Pro Plus 和 Max 两档，每月发固定 AI Credits 按 Token 扣除，约合 1.8 到 2 倍官方 API 额度；额度绑在自家插件内。<br><br>五、OpenCode Zen：模型网关，价格 1:1 完全对标官方 API 无加价无折扣；支持国内支付，能直接提 API Key 外接任意工具。<br><br>六、Kilo：网关直接按官方原价扣；开通 Kilo Pass 会员充值送 40% 到 50% Bonus，吃满后成本低于官方 API，支持国内支付与外接。<br><br>七、Kiro（AWS）：分四档套餐，Opus 5.5 按 2 倍 Credit 扣除，套餐费约等值 2 倍官方 API 用量；不支持国内支付。<br><br>八、Devin（原 Windsurf）：Pro 和 Max 共享模型额度池，全跑 Opus 的话，Max 实测月均可换回 5 倍多 API 等值用量，Pro 约 3 倍；支持国内支付。<br><br>九、OpenDesign：Pro 和 Max 分别给 120 刀和 300 刀旗舰额度，首购约折合 1.7 到 2.5 倍，算上额外送的基础模型额度综合最划算；支持国内支付与外接。<br><br>十、Poe：日额度套餐每天给 1 万积分，吃满约合 1.8 到 2 倍 API 用量；注意积分每天清零不累计，高档位则与 API 原价持平。<br><br>十一、Perplexity：主要跑 Computer 任务，首月新号送 2 到 2.25 倍额度；注意次月续费无赠额后额度直接腰斩（仅剩 0.5 倍），只建议按月买。<br><br>十二、Augment：Starter、Pro、Max 三档，限时赠送 50% 积分，约合 1.5 倍官方 API 用量；额度绑定自家插件，不支持国内支付。<br><br>大家觉得哪家是好用？</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

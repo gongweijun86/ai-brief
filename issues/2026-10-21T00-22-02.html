@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月21日 08:21">
+<title>AI技术雷达 · 10月21日 08:21 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;先建设计系统再让AI生成前端</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Eleven v4 语音延迟150ms</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;谷歌60分钟生产级Agent课程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;AI架构师五层基础设施路线图</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;决策模型概率输出替代LLM评判</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>先建设计系统再让AI生成前端</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-21 01:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我的经验，通常像 Claude 这样前沿模型，你不指定它默认就是这一套东西，已经被训练的够够的，完全不需要太刻意提示。<br><br>反而因为 AI 喜欢用 shadcn/ui，做出来都一个样，看的人审美疲劳。<br><br>所以 Claude Design 在设计的时候，它为了不做出来千篇一律，特别强调设计系统在其中的作用，引导你去先导入也好制作也好搞一套设计系统（Design System）出来，然后你做 PPT、做网页、甚至做视频，都用这一套设计系统，那么你的风格就会和设计系统保持一致，不会出现千篇一律的 AI 默认风格。<br><br>即使你不用 Claude Design，这种先引入设计系统的方式也是可以借鉴的，可以避免你做出来的网页风格大众化，而且可以很好的保证风格的一致性。<br><br>而且有很多开源开放的设计系统可以选，比如我直接用的 Adobe 的设计系统，做出来的东西至少不算难看。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVF1MKpXQAIAAlj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">卡比卡比 <span style="font-size:12px;color:#999999;font-weight:400;">@jakevin7</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">分享一个很好用的前端提示词。<br>优先复用成熟库、组件源代码可控、统一设计语言、严格限制重复依赖。<br>再配合指定好各种库，就算 oneshot 也能出很不错的前端。<br>UI 风格统一使用  譬如 shadcn/ui Nova<br>图标统一使用  譬如 Lucide<br>动画统一使用  譬如 Motion<br>布局库 譬如 react-resizable-panels<br>拖拽使用 譬如 dnd-kit<br>状态管理使用 譬如 Zustand<br>......</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Eleven v4 语音延迟150ms</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ElevenLabsDevs · 2026-10-21 01:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">为任何产品添加富有表现力的语音功能。Eleven v4 Turbo：丰富的情感表达，支持 [laughs] 和 [whispers] 等音频标签，支持 90+ 种语言，首个语音输出中位延迟约 150ms。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Add expressive speech to any product. Eleven v4 Turbo: rich emotion, audio tags like [laughs] and [whispers], 90+ languages, ~150ms median time to first speech.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>谷歌60分钟生产级Agent课程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huxlab · 2026-10-20 17:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">谷歌刚刚放出一门 60 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。  <br><br>很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。  <br><br>谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：  <br><br>1. 从 0 跑通首个 Agent：拆解模型调用、工具绑定与执行环境的基础闭环。  <br><br>2. 状态持久化（Persistent Memory）：告别单次对话即失忆，构建跨会话的记忆索引与上下文回填。  <br><br>3. 长时自主循环（Agentic Loops）：摆脱线性问答，让 Agent 具备自我反思、容错重试与多轮状态流转能力。  <br><br>4. 吃透 MCP 核心架构：彻底理清 Model Context Protocol 与传统 API 的本质区别，学会构建标准化的上下文协议。  <br><br>5. 多智能体协同系统（Multi-Agent）：把分散的专职 Agent 串联成高协作度的自动化系统。  <br><br>完全免费。比市面上价值700刀的课还要干货。<br><br>建议收藏，今晚就观看 。🔖<br> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2111662361727913984/img/MjMOijkXFhz8u8Tb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GasHot三周做燃气行业热点站</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xingxi0614 · 2026-10-20 23:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">真心感谢卡兹克老师的开源。我不会写代码，但我懂燃气行业每天该看什么。借着 AIHOT，三周时间我做出了一个燃气行业的热点站 GasHot，气价、政策、同行动态每天自动整理好。虽然还是雏形，但却是一个非常 amazing 的经历。过程都写在这里了。<a href="https://x.com/xingxi0614/status/2112569792435503459?s=20" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/xingxi0614/status/2112569792435503459?s=20</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">数字生命卡兹克 <span style="font-size:12px;color:#999999;font-weight:400;">@Khazix0918</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">在重写完之后，做了一个小小的决定。<br>这个月活百万的AI热点站 AIHOT，正式开源了。<br><br>AIHOT网址：<a href="https://aihot.news/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://aihot.news/</a><br>开源地址：<a href="https://github.com/KKKKhazix/AIHOT" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/KKKKhazix/AIHOT</a><br><br>采集流程、精选评分、聚簇机制，连生产环境里的全部Prompt，能开源的都开源给大家了。<br><br>过去，总有人问我说，能不能做个游戏行业、法律行业、HR、金融等等行业版本的AIHOT……<br>但我确实不懂那些行业，也没有那个时间和精力，但我知道，你们懂。<br><br>于是，那不如，把火种交给大家吧。<br><br>半年以前，我是一个最最基础的开发小白，只是懂一些产品和设计而已。<br>半年以后，我终于可以把一个曾经只属于我的小东西，交到更多人的手里。<br><br>我不知道它最后会被改成什么样子，会走到多远的地方。<br>但这可能就是开源最浪漫的地方把。<br><br>愿我们都能用AI，把那些曾经只有少数人才能做到的事，一点一点，变成普通人也可以拥有的能力。<br><br>也愿诸君，乾坤既大，草木尤青。<br>本心择路，笃志前行。<br><br>以上。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI架构师五层基础设施路线图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liangzhu_AI · 2026-10-20 14:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">传统后端转 AI 架构师，别再花半年去硬啃什么算法公式了。<br><br>现在的企业生产系统根本不需要你去从头算梯度，<br>高薪岗位看的是这 5 层极其工程化的基础设施落地能力：<br>1. 高并发语言基底：Go 或 Rust 稳扛万级连接；<br>2. 混合存储：PostgreSQL 配 pgvector 做向量检索，ClickHouse 做日志分析；<br>3. 事件驱动流处理：Kafka 解耦异步长耗时 Agent 链路；<br>4. 持久化状态机：用 Temporal 或 Inngest 兜底多步骤故障自愈；<br>5. AI 网关：语义级缓存去重、Token 限流熔断与多模型故障自动降级。<br><br>每一层亲自搭一个能跑的生产级原型，<br>你就是市场上最稀缺的 AI 后端架构师。<br>想转型的工程师赶紧存下这套路线图。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>决策模型概率输出替代LLM评判</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dongxi_nlp · 2026-10-21 05:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">好文！<br><br>近段时间涌现出“决策模型”，如：<br><br>TypeSafe 的 Jev<br>Perplexity 的 Decider<br>Cloudflare 的 Clef <br>OpenAI 的 Decisions API <br><br>输出概率而非长文本，常被用作 LLM-as-a-Judge 的替代方案。<br><br>如何用这些决策模型做 Evals，推荐读这篇！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Hamel Husain <span style="font-size:12px;color:#999999;font-weight:400;">@HamelHusain</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">新博客文章 🎉：如何使用决策模型进行评估<br><br>在这篇文章中，我们将向你展示如何为你的任务选择决策模型、调整其阈值（不要默认 0.5 就是合适的！），以及如何解读其评分。<br><br>这里有很多很酷的交互式图表。<a href="https://x.com/i/article/2112552453422104576" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2112552453422104576</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">New blog post 🎉: How To Use Decision Models For Evals<br><br>In this post, we show you how to choose a decision model for your task, tune its threshold (don't assume the 0.5 default is good!), and interpret its scores.<br><br>Lots of cool interactive charts here. <a href="https://x.com/i/article/2112552453422104576" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2112552453422104576</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

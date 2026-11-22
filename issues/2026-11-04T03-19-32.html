@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月4日 11:19">
+<title>AI技术雷达 · 11月4日 11:19 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude 登录自动连接 MCP 插件</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude 导演三模型动画短片</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;AI 重构分布式锁引发 Redis 死锁</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Hydrogen-1.0 开源科研模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Postman 私改本地配置注入 MCP</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 登录自动连接 MCP 插件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AndyL5cc · 2026-11-04 10:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude 又更新了一个实用功能！<br><br>现在部分 MCP 插件支持登录 Claude 后自动连接，不用每次重新授权。<br><br>开发者只需要适配新的可信认证机制。<br><br>以后打开 Claude，工具就已经准备好了。<br><br>AI Agent 离真正的开箱即用，又近了一步！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">用户现在可以在登录 Claude 时自动连接插件，只要 MCP 服务器将 Claude 接受为受信任的颁发者即可。<br><br>如果你正在为 Claude 构建插件，请添加此支持，让用户更快上手、无需重新授权即可保持连接。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Users can now auto-connect plugins when they log in to Claude, with MCP servers that accept Claude as a trusted issuer.<br><br>If you’re building plugins for Claude, add support so users get started faster and stay connected without re-authorizing. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117680108706140161/img/W7IjAqq94Q6lFVOo.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 导演三模型动画短片</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @EianLu · 2026-11-03 12:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多人问这种动画是怎么制作的，分享一下制作思路和提示词，我一共用到3个模型：Claude、Codex、seedance<br><br>Claude是导演角色，负责写故事写分镜写提示词什么的，然后负责检查每张图片和视频画面，在用音乐节拍写代码剪辑、最后出成片。Codex负责画人物设定图、样帧、每个镜头的首帧图片。Seedance负责根据提示词和图片生成视频画面。<br><br>然后也不用我们去一个一个倒腾这些模型，其它两个都由Claude自己调用，我全程只需要和Claude沟通就行。如果没有Claude换成Codex也行，出图导演它一个人全干！<br><br>如果想自己实际操作一下，可以用下面的提示词：<br><br>做一支 2D 手绘动画短片。你当导演，全程负责；Codex 只画图，Seedance 只做视频，你不自己画。我负责选故事、确认画风、批准花钱。<br><br>题材：[一句话故事]<br>规格：[48] 秒，16:9，1080p，24fps，没有台词和字幕，配一首歌。<br><br>步骤<br>1. 写 3 个故事方向，我选一个。<br>2. 拆成 15–20 个镜头，每镜写：景别、运镜、谁在哪做什么、第一帧画面、动作、音效。每段生成 4–5 秒，成片只留 2–3 秒，所以主要动作放在前 3 秒。<br>3. 写一段画风提示词（线条、上色、背景、配色、禁止项），每张图都原样带上。Codex 画每个角色的设定图和第一镜样帧，我确认后再往下。<br>4. Codex 逐镜画第一帧，参考图带上设定图和样帧。写清手放在哪、风往哪吹、每样道具几个，上下留出空间。图上不要文字。出图后看尺寸，挑位置裁成 16:9，不要切到人。<br>5. 算好总价等我同意，再用 Seedance 逐镜生成。之后每批重拍都先报价。<br>6. 每段每 0.4 秒截一帧拼成一张图，查因果、道具数量、方向、人物长相。不对就重画第一帧或重拍。新版本存新文件，不覆盖旧的。<br>7. 从 Mixkit 挑 4 首免费可商用的歌让我选。歌比片长就选一段，结尾淡出。量 BPM，切掉每段开头的停顿，让剪辑点落在拍子上。放大到 1080p（lanczos），压低音乐不盖音效，响度 -14 LUFS，峰值 -1 dBTP。不要用插帧慢放。<br><br>调用方法<br>Codex 画图（每张参考图写一个 -i）：<br>codex exec --skip-git-repo-check -s read-only -i 设定图.png -i 样帧.png - &lt; 提示词.txt<br>提示词开头写：Use your image generation tool to create exactly ONE image. Do not run shell commands. 图在 ~/.codex/generated_images/&lt;日志里的 session id&gt;/。<br><br>Seedance：<br>POST <a href="https://ark.cn-beijing.volces.com/api/v3/contents/generations/tasks" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ark.cn-beijing.volces.com/api/v3/contents/generations/tasks</a><br>Authorization: Bearer $ARK_API_KEY<br>{&quot;model&quot;:&quot;doubao-seedance-2-0-mini-260615&quot;,&quot;resolution&quot;:&quot;720p&quot;,&quot;ratio&quot;:&quot;16:9&quot;,&quot;duration&quot;:5,&quot;generate_audio&quot;:true,&quot;watermark&quot;:false,<br> &quot;content&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;视频提示词&quot;},{&quot;type&quot;:&quot;image_url&quot;,&quot;role&quot;:&quot;first_frame&quot;,&quot;image_url&quot;:{&quot;url&quot;:&quot;data:image/png;base64,...&quot;}}]}<br>每 8 秒 GET 一次 .../tasks/{id}，status 是 succeeded 后下载 <a href="http://content.video_url" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://content.video_url</a>。<br><br>视频提示词写三句：<br>动作：谁或什么造成的，手放在哪、不能碰什么。<br>声音：xx。没有音乐，没有人说话。<br>保持首帧的二维手绘动画画风、线条和颜色不变，人物长相和衣服不变，不要变成3D或写实，不要出现文字。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Eian <span style="font-size:12px;color:#999999;font-weight:400;">@EianLu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这是一支由Claude导演的片子<br>我只是简单描述了一下需要的风格，并告诉它剧情、画面、音效、剪辑都由它负责，然后它给了我这个👇 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2116432240335085568/img/0vfb7j-WfI29Cw9I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Teamily AI 实测社区维护协作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GenAI_is_real · 2026-11-04 00:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我经常在想，很多时候人和 agent 的执行效率可能是比人和人共同执行还高的。前几天我尝试用 Teamily AI 的产品来体验了下纯粹的人与 agents 协同，做一些社区维护工作。<br><br>微信群里，Scout 按轻重缓急整理新的 issue 和 PR，Reviewer 给代码做第一轮审查，Digest 来起草中英双语的项目周报并且整理周会的纪要。然后用，Loop 把它们串成 Scout → Reviewer → 我，我来审核大多数事情。<br><br>Scout 的体验很好，我一次性从微信群察觉到了 200+ 不活跃用户。但是，实际上最后要广进，还是得我自己来。然后，我用已经合并的 PR #3338 来测试 Reviewer，并和我们先前的 review 简单对比。它Reviewer 没有发现新 bug，但针对具体的代码路径给出了一些值得重构的代码细节。<br><br>当然，和大多 chatbot 最大的区别是，群里的 agent 共享同一份上下文，甚至看完了微信群一个多月的讨论。<br><br>越发模糊了人类社会和 agents 社会的边界，而 @Teamily_AI 的产品细节属实打磨的好呀。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117651865173434368/img/rN5toZyiMOZZycaB.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Aiden Chaoyang He <span style="font-size:12px;color:#999999;font-weight:400;">@AidenChaoyangHe</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个季度内增长 32 倍：从 1 万客户增长到 10 万客户，覆盖 100 多个国家，处理超过 1 亿条消息。<br><br>我们不只是在打造又一款个人 AI 产品。我们对 Teamily AI 的长期愿景是构建下一代 Agentic Internet 的核心平台，在这个平台中，AI agent 直接交付服务并执行实际工作，不再局限于通过应用商店和搜索引擎分发的传统网页、桌面或移动应用。我们近期的增长更加坚定了我对这一愿景的信念。<br><br>Agent-as-a-Service（AaaS）将像在社交网络上与朋友连接一样便捷。正如 Google 在 Web 时代让信息和服务的获取变得民主化，Teamily AI 旨在在 Agentic Internet 时代让智能和服务的获取变得民主化，让每个人都平等地获得合适的智能、人员和服务。<br><br>在这封致 Teamily AI 客户、生态合作伙伴和投资人的信中，我们分享了我们的增长情况，回顾了我们的早期远见和已构建的成果，探讨了我们对不断演进的 AI agent 格局的看法，并勾勒了我们下一步的方向。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">32× growth in one quarter: From 10K to 320K customers across 100+ countries, with over 100 million messages processed.<br><br>We are not building just another personal AI product. Our long-term vision for Teamily AI is to build the central platform of the next-generation Agentic Internet, where AI agents deliver services and perform real work directly, no longer confined to traditional web, desktop, or mobile apps distributed through app stores and search engines. Our recent growth has only strengthened my conviction in this vision.<br><br>Agent-as-a-Service (AaaS) will be as accessible as connecting with friends on a social network. Just as Google democratized access to information and services in the web era, Teamily AI aims to democratize access to intelligence and services in the Agentic Internet era, making the right intelligence, people, and services equally accessible to everyone.<br><br>In this letter to Teamily AI customers, ecosystem partners, and investors, we share our growth, reflect on our early foresight and what we've built, discuss how we see the evolving AI agent landscape, and outline where we're heading next.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117612274420723712/img/Bvam6v2CGkU62Xlb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>千问工作程序反代暴露隐藏模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mranti · 2026-11-04 10:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">千问工作程序显示的模型只有标准、高级和Qwen3.8-Max 三档，但我反代发现，它可以用包括Deepseek-4-flash和GLM的其他模型，还有一个ocr专用模型可以用。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWP7tpPXMAAIo8p.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI 重构分布式锁引发 Redis 死锁</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-03 16:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">下午处理了一起非常典型的线上事故：<br><br>一个负责核心交易模块的年轻工程师，用 Claude 极其优雅地重构了一段分布式锁的调用逻辑。<br>本地测试丝滑过关，然而刚推到预发环境进行高并发压力测试，Redis 实例瞬间死锁崩溃。<br><br>排查到最后才发现：AI 在吐出代码时，默认使用了最理想化的超时释放逻辑，完全没有考虑到真实网络抖动下的脑裂（Split-Brain）保护。<br><br>把代码安全寄托于“AI 吐出的结果大概率正确”，是当下技术团队最大的安全隐患。<br><br>你在做 Code Review 时，现在会对 AI 生成的核心逻辑进行几层防失控审计？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RoPE 近因偏见或可后期移除</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Zen_with_AI · 2026-11-03 23:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">RoPE 是不是只是一种近因偏见<br><br>Andreas Kirsch 抛出了一个很值得琢磨的直觉。<br><br>远距离的 key 被旋转之后，和 query 的匹配就退化成了噪声，所以注意力天生先偏爱附近的 token；如果想精确匹配某个动态偏移，得靠 MLP 把旋转“解开”，这看起来很难。<br><br>由此给出的一个推论更大胆：训练到后期，RoPE 也许是可以丢掉的。<br><br>做位置编码和长上下文的人，这条值得细读。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hydrogen-1.0 开源科研模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-04 11:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Deep Principle 发布了 Hydrogen-1.0，一个基于 GLM-5.3 后训练的科学研究模型，主要面向化学、材料科学和生命科学场景。<br><br>官方模型卡给出的规格是：约 7530 亿参数，支持 100 万 Token 上下文和最多 12.8 万 Token 输出。官方使用 SGLang 在 8 张 GPU 上测试了部署。<br><br>模型权重采用 MIT 许可，同时提供面向 NVIDIA 和 AMD 硬件的量化版本；不过下载 Hugging Face 仓库内容前，需要接受页面上的信息共享条件。<br><br>我觉得这个方向比单纯追求通用榜单更值得关注：用领域数据和研究过程，对已有基础模型做专项增强。<br><br>但开放权重不等于部署成本低，而且官方也提醒，量化后的效果需要针对具体任务验证。<br><br>如果团队要做专业领域 Agent，你们会优先调用通用模型 API，还是投入算力部署领域模型？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Postman 私改本地配置注入 MCP</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-04 09:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Postman 最新版本的操作彻底惹怒了全球开发者，GitHub 上的 Issue #14370 已经被愤怒的程序员直接冲上千星。<br><br>很多开发者以为这只是又一个弹窗推广 AI 的商业行为，但翻开代码和配置才发现性质极其恶劣：<br>Postman 桌面客户端在启动时，竟然在后台静默扫描用户的本地环境，直接修改了本机的 ~/.claude/settings.json 和 ~/.codex/config.toml，将 Postman 远程 Model Context Protocol（MCP）插件强行注入给开发者的 Claude Code 和 OpenAI Codex 工具链！<br><br>更夸张的是，它的安装脚本竟然直接在本地配置里写入了一条 trust 信任记录，把自己的启动 Hook 标记为已信任，强行绕过了 Claude 和 Codex 原本强制弹出的用户安全确认窗口！如果不是 Codex 在后台尝试连接 <a href="http://mcp.postman.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://mcp.postman.com</a> 时疯狂抛出鉴权失败日志，绝大多数工程师到现在还被蒙在鼓里。<br><br>作为日常必备的接口调试工具，Postman 发出的每一个请求体里，都带着真实的生产 Bearer Token、金融测试账号、未脱敏的内网微服务路由甚至云端 AccessKey。原本为了提效的辅助工具，却未经许可私自篡改本地其他软件配置并建立远程通道。<br><br>这也直接把大量金融与企业团队推向了彻底的离线化替代路线：现在很多团队在组策略里直接禁封 Postman，连夜转向数据 100% 存在本地 Git 仓库纯文本的 Bruno 和 Hoppscotch。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex 最小原型先于设计讨论</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ai_suxiaole · 2026-11-04 10:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开会讨论新功能，讲了半天方案，大家脑子里想的却不是同一个东西。<br><br>OpenAI 开发者账号分享了 Shopify 团队使用 Codex 的一个习惯。<br><br>讨论系统设计时，先让 Codex 做一个能运行的原型，直接让团队成员上手操作，哪里不合理、哪里体验不好，现场就能发现。<br><br>原型只需要跑通一条最短路径，比如准备一份假数据，让用户完成一个核心动作，同时展示成功和失败两种结果。<br><br>可以直接给 Codex 这样的任务：<br><br>我们要讨论【功能】是否值得做。<br><br>请先做一个本地可运行的最小原型，只覆盖【一个用户动作】。<br><br>使用假数据，不接正式账号和支付。<br><br>完成后告诉我启动命令、演示步骤，以及哪些地方目前只是模拟。<br><br>请实际启动项目，并完整走一遍演示流程。<br><br>登录、支付、管理后台都留到后续开发。<br><br>开会时直接让同事操作，记录具体问题，再交给 Codex 修改。<br><br>让原型参与设计讨论，需求还没进入正式开发，就能先验证交互和产品流程。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Rive 编辑器新增简体中文界面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LgyLight · 2026-11-04 11:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">喜大普奔，Rive 终于支持了简体中文啦！！！看来我的汉化插件要退出历史舞台了</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Guido Rosso <span style="font-size:12px;color:#999999;font-weight:400;">@guidorosso</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">应广大用户要求，Rive Editor 现已支持简体中文和西班牙语！<br><br>Rive 编辑器现已支持简体中文界面。<br>El Editor de Rive ya está disponible en español.<br><br>在 文件菜单 &amp;gt; 语言 下切换，如果你发现任何看起来不对的地方，请告诉我们（链接如下）。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">By popular request, the Rive Editor is now in Simplified Chinese and Spanish!<br><br>Rive 编辑器现已支持简体中文界面。<br>El Editor de Rive ya está disponible en español.<br><br>Switch under File Menu &amp;gt; Language, and tell us if you see anything that looks wrong (links below). </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWOIl4EbgAASk4x.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

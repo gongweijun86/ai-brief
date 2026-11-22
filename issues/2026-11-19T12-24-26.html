@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月19日 20:24">
+<title>AI技术雷达 · 11月19日 20:24 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent重试逻辑下沉至工具执行器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Agent竞争聚焦Runtime工程能力</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;curl原作者用数据反驳AI重写</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Manus付费ARR首月接近5000万</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;DeepSeek自建推理142tok/s</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent重试逻辑下沉至工具执行器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-19 19:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跟一个做 Agent 平台的朋友复盘，他们踩了个低级的坑。<br><br>重试逻辑写进了提示词，失败了让模型自己再试一次。平时好使，模型一不听话，整条链路直接断。<br><br>断的那天是上游接口抖了一下，模型偏偏自己选了放弃并道歉，用户看到的是一句很礼貌的失败提示。<br><br>改法是重试挪到工具执行器里，退避三次不行再抛给上层，提示词里只留一句说明。<br><br>他说“可靠性不该指望模型自觉”。工程的事放工程层，话术层只负责讲清楚。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent竞争聚焦Runtime工程能力</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-11-19 14:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在很多人做 AI Agent，实际上还停留在一个非常初级的阶段：接一个大模型，配置几个 Tool，通过 MCP 连接外部服务，再写一套 Prompt，让模型能够自主规划、调用工具、执行任务，就觉得自己做出了一个完整的 Agent 系统。<br><br>但真正往企业生产环境走，你会发现，能调用工具和能稳定交付任务，根本是两回事。<br><br>一个 Agent Demo 的核心是让模型完成任务，而一个真正的 Agent Platform，必须解决的是整个任务执行过程中的权限、状态、调度、记忆、可靠性、可观测性，以及系统出了问题以后如何恢复。<br><br>这也是为什么我觉得，未来 AI Agent 的竞争，不会只停留在谁的模型推理能力更强、谁能接入更多 MCP Server，而是逐渐转向整个 Agent Runtime 和 Harness 的工程能力。<br><br>首先是 Orchestration，也就是编排层。<br><br>一个真正的 Agent 不应该只是简单地执行一次 Prompt，然后调用几个工具就结束了。它需要在 Plan、Act、Observe 之间持续循环，根据工具返回结果重新判断下一步行动，必要时把任务拆解给不同的子 Agent，同时管理上下文、执行状态、重试和异常恢复。<br><br>但这里很容易出现一个误区：很多人认为子 Agent 越多，系统就越智能。<br><br>实际上，多个 Agent 同时工作，可能带来更多上下文传递、状态同步、执行冲突和调度成本。如果一个确定性的 Workflow 就能完成任务，完全没有必要强行引入多个 Agent。真正应该交给模型的，是那些需要动态判断和不确定性处理的部分，而不是把所有步骤都包装成自主决策。<br><br>其次是工具层。<br><br>MCP 的价值在于让 Agent 能够通过标准化接口发现和调用外部工具，但 MCP 本身并不能保证工具调用安全可靠。<br><br>一个拥有 GitHub、数据库、文件系统和企业业务系统访问能力的 Agent，如果没有权限边界，实际上是非常危险的。<br><br>所以真正的 Agent Platform 需要独立的 Permission Engine，对每一次高风险操作进行权限检查。读取数据和修改数据应该拥有不同的权限，删除文件、执行命令、发送邮件、修改生产数据库等操作，更应该根据风险设置明确的限制和人工审批。<br><br>Agent 可以拥有自主决策能力，但自主决策不等于无限授权。<br><br>然后是 Memory。<br><br>很多人提到 Agent Memory，就直接想到向量数据库，觉得给 Agent 接一个 Vector DB，就实现了长期记忆。但实际上，Session Memory、Task State、Long-term Memory 和 User Preferences 根本不是一回事。<br><br>会话记忆解决当前上下文的问题，长期记忆解决跨会话的信息保留与检索问题，而任务状态需要记录执行进度、工具调用结果、外部操作是否已经完成，以及失败之后从哪里恢复。<br><br>尤其是长时间运行的任务，不能因为模型上下文被压缩、服务重启或者某个 API 超时，就把之前完成的工作全部丢掉。<br><br>这也是为什么 Task Queue、Durable Workflow、Checkpoint 和幂等设计如此重要。<br><br>比如一个数字人 Agent，需要完成口播稿生成、数字人视频生成、字幕处理、视频包装、文件上传和最终交付。整个过程可能涉及多个外部 API，甚至持续数分钟。<br><br>如果执行到视频上传时失败，系统应该知道前面哪些步骤已经完成，而不是重新生成一次数字人、重新扣一次 API 费用，再把整个任务重复执行一遍。<br><br>真正可靠的 Agent 系统，需要明确区分哪些操作可以安全重试，哪些操作已经产生外部副作用，以及如何通过幂等键、任务状态和补偿机制避免重复执行。<br><br>再往下，是 Observability 和 Evaluation。<br><br>一个 Agent 执行失败了，你至少应该能够知道：它当时收到了什么任务，选择了哪个模型，调用了什么工具，工具返回了什么结果，为什么进行了下一步决策，以及失败到底发生在哪个环节。<br><br>如果没有完整的 Trace、日志、Token 成本记录和必要的评测机制，你甚至无法判断系统到底是模型推理错误、工具接口异常、权限不足，还是上下文管理出现问题。<br><br>而且记录执行过程只是第一步，更重要的是建立可复现的评测和回归测试机制。每次修改 Prompt、模型、工具接口或编排逻辑，都应该能够验证任务成功率、成本、延迟和失败类型是否发生变化。<br><br>否则系统越复杂，你越不知道它为什么成功，也不知道它为什么失败。<br><br>最后还有一个很容易被忽略的部分，就是 Agent Gateway 和统一治理。<br><br>当一个企业只有一个 Agent 时，很多问题可以通过简单代码解决。但当企业内部出现几十个不同的 Agent，分别服务于销售、客服、内容生成、研发和数据分析时，统一身份认证、Agent Registry、模型路由、工具注册、权限策略、版本管理与审计，就会逐渐成为实际需求。<br><br>这时候，Agent Platform 的价值才真正体现出来。<br><br>它不只是把多个 Agent 放到一起，而是提供一套统一的执行和治理体系，让不同 Agent 能够复用基础设施，并在明确的权限和资源边界内完成任务。<br><br>所以我越来越觉得，AI Agent 工程真正值得深入研究的，已经不只是 Prompt Engineering、Function Calling 或者 MCP，而是整个 Agent 系统的软件工程问题。<br><br>什么时候使用确定性 Workflow，什么时候需要 Agent 动态规划？什么时候引入子 Agent，什么时候直接调用工具？如何管理长期运行的任务？如何设计可恢复的执行状态？如何控制高风险工具调用？如何评测一个 Agent 是否真的比上一版本更可靠？<br><br>这些问题，可能远比接入一个新的模型 API 更重要。<br><br>很多 Agent 项目在 Demo 阶段表现得非常惊艳，但一旦接入真实业务，遇到任务中断、状态丢失、重复执行、权限冲突、API 限流和上下文污染，整个系统的可靠性就开始暴露问题。<br><br>真正成熟的 Agent，不是能够自主调用多少工具，而是能够在真实业务约束下，持续、可靠、可控地完成任务。<br><br>模型决定了 Agent 的能力上限，而 Orchestration、Runtime、Memory、Permission、Observability 和 Evaluation，决定了这些能力能不能真正转化成可交付的系统。<br><br>未来真正有价值的 AI 应用工程师和 FDE，不应该只是会调用模型、搭建 Workflow、配置 MCP，而是能够把这些能力组织成一套可运行、可恢复、可验证、可持续演进的完整工程体系。<br><br>从 Agent Demo 到 Agent Platform，中间隔着的不是更多 Prompt，也不是更多子 Agent，而是一整套真正的软件工程能力。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tech Fusionist | Kushal Gangil <span style="font-size:12px;color:#999999;font-weight:400;">@techyoutbe</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AI Agent 平台架构 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AI Agent Platform Architecture </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWy05zha0AADDdp.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>curl原作者用数据反驳AI重写</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @parkgo_dev · 2026-11-19 10:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人花了 8600 美元，让 AI 把整个 curl 用 Rust 重写了一遍，结果 curl 的原作者 Daniel Stenberg 看完，似乎并不买账<br><br>整个项目花了三个多星期，把 18.5 万行 C 代码变成了 34 万行 Rust<br><br>听起来确实挺厉害的<br><br>但 Daniel 给出了另一组数据：<br><br>就在 AI 重写的这三个多星期里，原版 curl 已经合并了 300 多次提交，修复了 200 多个 Bug<br><br>而这些修复，Rust 重写版本都没有跟进<br><br>他还提到，2026 年 curl 确认的 81 个安全漏洞中，只有 14 个可能因为换成 Rust 而避免<br><br>现在让 AI 从零写一个项目，或者把现有代码重写一遍，已经没那么难了<br><br>但一个成熟的开源项目，几十年积累下来的测试体系、兼容性、Bug 修复和持续迭代，哪有那么容易复制？<br><br>更何况 curl 每天还在不断更新<br><br>今天花三个星期完成了重写，明天怎么办？后天呢？<br><br>重写只是一次性的工作，维护却是持续几十年的工作</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Manus付费ARR首月接近5000万</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hocyzon · 2026-11-19 10:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是Manus创始人张涛昨天在北大的分享，我根据朋友发给我的文字稿整理了一下：<br><br>1. Manus曾经花7个月做出一款完整的AI原生浏览器，连发布网站和宣传视频都准备好了，最后仍然选择砍掉，因为用户会拿它和Chrome、Safari比较基础体验，一个30人的创业团队很难同时补齐成熟浏览器的功能并创造新的AI体验，继续投入还可能再消耗3—6个月，错过下一个产品窗口。<br><br>2. Manus最早的Agent评测集来自一次很有意思的用户调研，张涛向100多位朋友征集问题，询问如果有一个本科水平的实习生，可以交代什么任务，最终收集了400多项，剔除需要具身智能的任务后留下300多项，团队每天用这些任务测试产品，这套评测体系直接来自普通人真实的工作需求。<br><br>3. Manus在Sonnet 3.5 V2时期发现了长程规划（Long Horizon Planning）和工具调用（Tool Use）的能力突破，随后押注Agent方向；Sonnet 3.7发布时，团队的Harness一行代码都没改，只替换了模型，原本剩余20%—30%的未解决问题就大幅得到改善，因此他们坚持Less Structure, More Intelligence，采用Single Agent架构，把任务规划和下一步决策交给模型，减少固定Workflow对模型能力的限制。<br><br>4. Manus早期产品表现太惊艳，用户反而怀疑它是假的，因此他们把执行透明度做成核心功能，逐步展示Agent调用工具、访问网页、生成文件的过程，同时提供Session Replay，让其他人可以完整观看一次任务执行；此外，每个任务都有独立的云端Sandbox，用户可以在手机上交代任务后直接离开，Agent在云端继续工作。<br><br>5. Agent带来的算力消耗远超当时云厂商的准备：Manus单个DAU的Token消耗量约为Chatbot的200—1000倍，上线第三天就需要约800M TPM的供应能力，当时云厂商甚至无法立即提供500M TPM；即使使用邀请码控制流量，公司高峰期每天仍可能消耗50万美元，这也解释了早期邀请码制度背后的真实原因。<br><br>6. 张涛认为免费DAU会严重扭曲AI产品的需求判断，因为一旦免费用户达到十几万并成为内部KPI，团队就很难主动放弃这些数据转向收费，后续产品迭代也会不断受到免费用户需求的干扰；Manus上线时甚至没有付费系统，3月下旬才补上，张涛称4月第一个付费月ARR就突破4000万元、接近5000万元，真正愿意付费的用户能够提供更有价值的需求反馈。<br><br>7. Manus坚持General Agent的定位还有一个商业原因，他们付费最多、满意度最高的用户群体主要是CEO、企业主和部门负责人，因为管理者每天需要处理大量分散任务，从市场调研、数据分析到制作汇报材料，通用Agent能够覆盖这些不同场景，垂直工具很难提供同样的使用体验；产品最初占据的用户心智，也决定了后续扩展新功能的难易程度。<br><br>8. 张涛提出了一个值得关注的技术机会：当视频生成模型从输入Prompt到看到画面的延迟降到1秒以内，它可能直接演变成新一代操作系统，未来的软件形态、交互方式和应用开发都会随之改变，创业者现在就可以开始思考这种实时生成环境上应该出现什么产品。<br><br>9. Manus最大的收入来源是美国，最大的用户地区却是巴西，此外在中东、欧洲、日韩、东南亚和非洲也有大量用户，这说明AI产品的全球市场分布远比传统互联网产品复杂，拉美和Global South同样可能成为非常重要的商业市场。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepSeek自建推理142tok/s</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CuiMao · 2026-11-19 04:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">用8卡Pro6000d自建的deepseek v4.1 flash 可以跑到142tok/s，最高可以跑到192。token自由了，很好。 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">用8卡Pro6000d自建的deepseek v4.1 flash 可以跑到142tok/s，最高可以跑到192。token自由了，很好。 </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXb1DfQbEAATGV5.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

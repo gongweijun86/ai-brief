@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月10日 17:19">
+<title>AI技术雷达 · 11月10日 17:19 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;ElevenLabs 一句话转实时语音</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Agent 权限设计采用严格 ACL</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Voxt 2.0 本地语音输入提速92%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude 四模型按任务分档选型</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ElevenLabs 一句话转实时语音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ElevenLabsDevs · 2026-05-23 04:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">用一条 prompt 将你现有的聊天 agent 变成实时语音 agent。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Turn your existing chat agent into a real-time voice agent with one prompt.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Sutton 纠正苦涩教训唯算力误读</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-10 14:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在 X 上有一点好就是总能看到大神们论道，比如这一段关于“苦涩的教训”的讨论。<br><br>今天很多大语言模型信徒们经常拿着《苦涩的教训》当圣经，认为“只要无脑堆算力、堆数据就够了，不需要什么新算法”。而作者 Sutton 本人的这条推文，以及 Prashant Rai 的精辟回复，正是对这种解读的一种纠偏。<br><br>《苦涩的教训》讲的是 AI 历史上那些依赖人类专家知识的精巧设计，最终都败给了利用海量算力的通用学习方法。<br><br>但这经常被解读为“唯算力论”，认为只要加大数据量、加大模型参数和算力就能实现 AGI。<br><br>作者 Sutton 这次发推：<br>&gt; “光靠暴力计算（Brute force computation）不足以实现真正的智能。我们需要巧妙的新方法（Clever new methods）。在我看来，AI 这门科学还远未终结。”<br><br>Prashant Rai（芬兰的自动化博士，做非公路场景的自动驾驶）的转发，也可以看作是一种解读：<br>&gt;  “《苦涩的教训》常常被误解为是在反对‘算法上的精巧创新’，但它真正反对的，其实是把人类自己的小聪明‘硬编码（Hardcoding）’进系统里。”<br><br>这句话极其精准地切中了问题的要害，区分了两种截然不同的“聪明”：<br><br>一种是错误的聪明，也就是把人类的知识硬编码进去。<br><br>比如说人类觉得自己懂国际象棋，于是把棋谱口诀写进代码；人类觉得自己懂语法，于是搞出复杂的句法树规则教 AI 说话；自动驾驶里人类写满几万条 if-else 规则。<br><br>这才是《苦涩的教训》批判的对象。这种做法上限极低，一旦算力上来，端到端的神经网络直接把这些人工规则碾得粉碎。<br><br>另一种是正确的聪明，是在算法与架构层面的精巧创新。<br><br>比如说设计出能够随着算力增长而不断变强（Scale with compute）的通用学习机制。像反向传播算法（Backpropagation）、卷积神经网络（CNN）、Transformer 架构、蒙特卡洛树搜索（MCTS）、时序差分学习（TD Learning）都是属于这种。<br><br>这些正是 Sutton 所呼吁的“巧妙的新方法”。没有 Transformer 这个极其精巧的算法/架构创新，给你十万张 H100 显卡，你也训不出 ChatGPT。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWvhryQW0AA641-.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Prashant Rai <span style="font-size:12px;color:#999999;font-weight:400;">@imprashantrai1</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">《苦涩的教训》常被误认为是反对算法创新的论点，但它实际上是反对把我们自己的智慧硬编码进系统。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Bitter Lesson is often mistaken for an argument against algorithmic ingenuity, when it’s really an argument against hardcoding our own ingenuity into the system.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 权限设计采用严格 ACL</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-10 17:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天在工位上处理了一个 Agent 权限设计的架构方案，顺手和组内的实习生对了对。<br><br>他设计的 Agent 工具调用逻辑（开发Tools的时候），直接用的是系统管理员的全量数据库权限，理由是“这样 Agent 查数据方便，不容易因为报错断掉”。<br><br>我跟他说，企业级 Agent 开发里，最难的从来不是怎么给 Agent 喂权限，而是怎么做 Strict ACL（严格访问控制）。<br><br>怎么实现基于 Role-Based 的工具动态注入？怎么在 Agent 企图调用写接口时插入 Human-in-the-loop（人工二次审批）？怎么保证 Agent 帮 A 用户办事时，绝不可能调出 B 用户的敏感向量？<br><br>把权限体系和审计日志在 Agent 架构里嵌入进去，才算懂 ToB 的规则。<br><br>不搞权限隔离的 Agent，在企业安全团队眼里就是一颗随时爆炸的定时炸弹。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Voxt 2.0 本地语音输入提速92%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GenAI_is_real · 2026-11-10 10:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">大家好，我们 SGLang Omni 组本身就高强度使用本地的语音交互系统，秉持着“一个生产力工具如果让我们方便，不如 open-source 出来，让整个社区都方便”。<br><br>基于此，通过大概 3 个月的密集开发、反馈和测试，我们正式发布 Voxt 2.0，这一组本地语音工作流极大的优化了我们的工作效率，也希望带给大家同样的体验。<br><br>五年前的 M1 mac 都能自由运用 Qwen3 ASR + 远端 LLM API，让您输入的速度追上您思考的速度。<br><br>无论是语音输入法所依赖的 ASR 识别 + LLM 润色，还是基于 LLM 的 Any to Any translation，以及选中任意文本直接通过语音得到反馈的本地 AI 助手，Voxt 2.0 是让我们 SGLang Omni 团队自豪的全新交互智能入口。<br><br>得益于 Swift 到 Go 的高性能重构，语音输入法功能在超长输入后的等待时间相比 1.x 缩短 92%。而 Voxt 1.x 的词典、历史和兼容语音模型都用户习惯均可一键迁移。新增了识别失败后的历史重试功能，答案卡片的自由连续交互功能。提供充分的模型生态空间，既能使用本地由 SGLang Omni MLX Runtime 强力支持的 Qwen3-ASR 或 MOSS-Transcribe-Diarize，也能接入云端 ASR API。LLM 生态上，任何能够提供 OpenAI compatible API 的模型都可作为强力支持，无论是 SGLang MLX，Ollama，亦或是我们团队常用的 DeepSeek V4.1 和 Kimi K3.1，所有数据由您自行定义。<br><br>除此之外，我们为 Qwen3-ASR 提供可选的 DFlash 转录加速功能。也加入了 ChatGPT 登录、翻译备用模型、自定义提示词和 Markdown／JSONL 历史导出。您可以在 voxt 1.x 版本内检测更新，得到升级指南，或者直接下载最新版 dmg 覆盖安装，也支持 Homebrew 安装。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2119974645705457664/img/eHh2HaqGxzpm8KXq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 四模型按任务分档选型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xulijian1994 · 2026-11-10 08:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 发布了 Claude 四大模型的官方最佳实践，15 分钟的文章，给大家整理个省流版。<br><br>一、什么任务用什么模型？<br><br>1. Fable 5.2：架构设计、大型重构、系统迁移、深度研究、长期运行的 Agent。<br>2. Opus 5.5：日常编程、复杂调试、多文件开发、电脑操作。<br>3. Sonnet 5.5：修 Bug、按需求开发、文档/PPT/表格、聊天、重复性任务。<br>4. Haiku 5.5：文件搜索、日志分析、信息提取、分类整理、简单子 Agent。<br><br>二、实用技巧<br><br>1. 日常开发：Opus 5.5 + medium effort。<br>2. 遇到难题：先让模型运行测试自检，再提高 effort，最后升级模型。超过 high 可以直接试更强模型的低 effort。<br>3. 多 Agent：Fable/Opus 当主 Agent，负责规划、决策和关键代码修改；Sonnet 并行处理明确的子任务；Haiku 负责找文件、读日志、跑测试。<br>4. 省钱：低 effort 先执行，失败的任务再提高 effort 重试。<br>5. 成本：Fable Token 单价是 Opus 的 2 倍，但部分高难度任务的总成本反而低约 50%。<br>6. Haiku：提示词超过 100K Token，单价上涨 5 倍。<br>7. 切换模型：先 /compact 或开新会话，减少缓存重建成本，跨模型切换还可能丢失之前的思考内容。<br>8. 多 Agent：简单任务别用，协调开销可能比节省的还多。<br>9. API 开发：注意 Thinking、工具调用和历史消息的兼容性，不能只换模型名称。<br>10. 最终选型：拿真实任务对比成功率和总成本，不要只看模型跑分。<br><br><a href="https://claude.dev/blog/which-claude-model-should-you-build-with/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.dev/blog/which-claude-model-should-you-build-with/</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

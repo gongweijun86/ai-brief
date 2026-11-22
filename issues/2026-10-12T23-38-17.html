@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月13日 07:37">
+<title>AI技术雷达 · 10月13日 07:37 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;hd-lang 用规则审计驱动AI开发</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;ego lite驱动Agent端到端测试</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;gpt-oss-120b 离线10tps</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;TencentDB Agent本地记忆</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>hd-lang 用规则审计驱动AI开发</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hd_nvim · 2026-10-12 12:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">那也来说一下我是怎么做自动 24 小时自动提交的<br><a href="https://github.com/HerringtonDarkholme/hd-lang" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HerringtonDarkholme/hd-lang</a><br>1. 首先软件领域很重要，我做的是程序语言编译器，输入输出固定，规则明确，非常适合给 AI 定义目标和指标，容易做出爬坡<br>2. 人类主要负责 Spec 的大方向（Spec 本身也是 vibe 的）<br>3. Spec 用了一条一条的规则，可以用rule-id来脚本枚举审计<br>4. 每条 rule-id搭配了 Conformance test case，机械可验证<br>5. 实现上用了TS 做 pilot 实现，先做个玩具试水，把指标刷上去，看看会有什么坑<br>6. TS 实现完了 作为参考再重新设计架构，AI 分步做大框架/组件进行设计<br>7. 人类给出大体评价，然后得知道重点组件需要多来几遍AI设计/审核<br>8. 时常抽查代码，完全不看代码AI 会走捷径乱实现<br>9. 使用不同模型，Opus做主研发， ChatGPT Sol6.1审计专门找边缘情况（在语言设计的时候很有用）<br>10. 最主要的还是领域容易做，容易验证。所以在其他领域设计新系统的时候得先进行验证的设计<br><br>最后，我心态开放，可以随便质疑，甚至可以转帖骂我，我无所谓</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Herrington Darkholme <span style="font-size:12px;color:#999999;font-weight:400;">@hd_nvim</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">那就来看看开源大神的高质量 Agent代码呗<br>随便点几个集中度高的 Go 文件，适配多 provider 的就看 gateway 之类的<br><br>一把就能看到很多抽象泄露 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY877KWQAABV1I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY9FIIXoAAEmvI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUY9LP8W4AA5bBV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ego lite驱动Agent端到端测试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huangtongxueh · 2026-10-13 00:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跟大家分享一下我构建Agent端到端测试的一套方案：<br>pi + DeepSeek Flash + ego lite<br>主要用来完成日常开发的自动化测试<br><br>简单来说：<br>1. ego lite：负责实际操作浏览器，包括页面交互、状态读取和结果验证，开源，可以丝滑导入你的chrome配置<br>2. pi：作为 Agent Harness，负责整个任务的执行和工具调度，开源，你完全可以基于你的业务测试需求二开<br>3.DeepSeek v4.1 Flash：tps很高的模型，调用成本很低，提高自动化测试的效率<br><br>比较方便的是，不需要提前写一整套 Playwright 脚本，直接用自然语言描述测试流程，就可以让 Agent 自动完成页面操作、检查结果。固定的一些sop可以直接沉淀为skill<br><br>我拿实际开发过程中的三类 Web UI 任务做了一轮小规模测试，包括信息查询、多轮交互、状态修改及持久化验证对比了几套不同的 Agent + Model + Browser 组合，附了张脱敏后的测试对比图，大家可以参考一下。<br><br>ego lite这个产品的构建理念我还蛮喜欢的：<br>1. 共享登录的浏览器状态<br>2.agent友好的设计<br>3.并行多任务处理的优化<br><br>而且它给了蛮多的最佳实践，比如：<br>1. 抓取并聚合社交媒体帖子<br>2. 自动查找并申请职位<br>3. 自动投递简历<br>如果你有一些idea，完全可以把它嵌入到你的工作流<br>搭配上pi + deepseek flash，实现速度+成本上的提升<br><br>最重要的是还开源，完全可以基于自己的需求做一些定制化开发。美中不足的是只支持mac，windows系统的小伙伴可以再等等。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUcd8IDbEAEwWQg.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>gpt-oss-120b 离线10tps</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_Vinnj · 2026-10-13 04:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">OpenAI 的 gpt-oss-120b，完全离线运行在一台 16 GB 的 Mac 上，速度为 10 tok/s。免费、开源、一行命令安装。你的代码永远不会离开你的机器。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">OpenAI's gpt-oss-120b, running fully offline on a 16 GB Mac at 10 tok/s. Free, open source, one-line install. Your code never leaves your machine.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>three.js 拼出可拖动360度漫画</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @eternityspring · 2026-10-12 21:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">零成本，又做了个交互式名媛连环画<br><br>制作流程：<br>Qwen Image 2.1 画 6 格：同一张脸，6 套造型<br>MiniMax-H3 + ORB360 LoRA：一张图 → 360° 环绕视频<br>three.js 拼成一页，拖哪格转哪格<br>配乐：YuE2<br><br>在线体验地址：<br><a href="https://eternityspring.github.io/ai-explorations/the-feed-comic/index.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eternityspring.github.io/ai-explorations/the-feed-comic/index.html</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109639198408093697/img/wLXky3wC3RP7_P5M.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">烁皓 <span style="font-size:12px;color:#999999;font-weight:400;">@eternityspring</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">借助 MiniMax-H3 的 ORB360 LoRA 实现交互式全景漫画<br>在线体验地址：<br><a href="https://eternityspring.github.io/ai-explorations/lost-cat-comic/index.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://eternityspring.github.io/ai-explorations/lost-cat-comic/index.html</a><br>在线体验中有个彩蛋，看看有没有朋友能找到😁 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109295855799029762/img/MSwz-9ctaSPsyTNF.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TencentDB Agent本地记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Divyyanshishrma · 2026-10-12 20:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">中国已经终结了整个向量数据库行业。<br><br>他们开源了 TencentDB Agent Memory。它为任何 AI 代理提供 100% 本地运行的长期记忆。<br><br>不需要 Pinecone。不需要云端 API。不需要每次会话都重复你自己。<br><br>- token 消耗减少 61%<br>- PersonaMem 准确率：48% → 76%<br>- 零外部 API 依赖<br>- 运行在普通 SQLite 上<br><br>大多数记忆系统会把你的历史压缩成一堆不透明的向量。当回忆出错时，你只能靠猜。这个系统不压缩，它构建一个语义金字塔。<br><br>L0 对话 → L1 原子 → L2 场景 → L3 人格。<br><br>短期状态被编码为 Mermaid 图，存放在代理的上下文中。冗长的工具日志被卸载到磁盘。当代理需要证据时，它可以通过 node_id 回溯到确切的原始日志。<br><br>没有有损压缩。每一层都是可读的 Markdown，你可以直接打开检查。<br><br>5.1k stars。100% 开源。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">China has killed the entire vector database industry.<br><br>They open-sourced TencentDB Agent Memory. It gives any AI agent long-term memory that runs 100% locally.<br><br>No Pinecone. No cloud APIs. No repeating yourself every session.<br><br>- 61% fewer tokens<br>- PersonaMem accuracy: 48% → 76%<br>- Zero external API dependencies<br>- Runs on plain SQLite<br><br>Most memory systems compress your history into an opaque vector pile. when recall goes wrong, you're guessing. this one doesn't compress, it builds a semantic pyramid.<br><br>L0 Conversation → L1 Atom → L2 Scenario → L3 Persona.<br><br>Short-term state gets encoded as a Mermaid graph in your agent's context. verbose tool logs get offloaded to disk. when the agent needs proof, it drills back via node_id to the exact raw log.<br><br>no lossy compression. every layer is readable markdown you can just open and inspect.<br><br>5.1k stars. 100% Open Source.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbgi59bkAEQnA5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MoneyPrinter全自动批量短视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kfhshl · 2026-10-11 22:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一位中国开发者搞出了个狠东西，叫 MoneyPrinterTurbo，专攻全自动批量生产 TikTok、Reels、Shorts 短视频。<br><br>以前做一条短视频，脚本、配音、字幕、剪辑、后期，一样样磨，几个小时就没了。现在这套流程它全给你包了。<br><br>1️⃣ 丢一个主题或者 Prompt 进去，直接出成片<br>2️⃣ 脚本、配音、字幕、剪辑全自动，你压根不用动手<br>3️⃣ 导出就是适配 TikTok、Reels、Shorts 的尺寸<br>4️⃣ 完全免费开源，无订阅、无水印、无限制<br>说白了，以前肝一下午的活，现在一个 Prompt 扔进去，坐等收片就行。做批量号的，看到这个应该坐不住了。<br>🔗 <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/harry0703/MoneyPrinterTurbo</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUQspYYbAAA71B9.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen-Image-2.1按动作出续作</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FiniYang · 2026-10-12 20:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Qwen Image 2.1 根据指定动作生成续作<br>角色一致性相当稳<br>姿势随你拿捏 😎<br>NSFW 的就不发了，兄弟们自己玩<br><br>参考图编辑 · 768 × 1376 · 8 steps · seed 193005769812901<br>生图模型：Qwen Image 2.1 Turbo · 8 步 · CFG 1<br>方法 &amp;amp; 提示词 ⬇️ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbjNEobAAAp-tI.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUbjNgma0AAhF_o.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Fini.Yang <span style="font-size:12px;color:#999999;font-weight:400;">@FiniYang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">Qwen-Image-2.1-Turbo 开源权重<br>仅需 8 个去噪步骤即可创建和编辑图像<br>保持质量的同时<br>大幅提升生成速度（虽然已经很快了）<br>仍然是原生 NSFW 哦 😎<br><br>下载地址 &amp;amp; 模特提示词 ⬇️ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUPHljMaYAAuCnZ.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUPHpmlakAEhHXx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

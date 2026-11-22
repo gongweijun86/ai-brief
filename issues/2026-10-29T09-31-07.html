@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 17:30">
+<title>AI技术雷达 · 10月29日 17:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Holon搭建Agent生态研究日报</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Baseten推理工程教材免费发布</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Karpathy提出Agent系统架构方法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Pero开源科研Agentic工作区</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;AI图标优化的体积表现提示词</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Holon搭建Agent生态研究日报</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jolestar · 2026-10-29 15:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我自己跑了一个 agent-ecosystem-researcher Agent，每天早上定时给我生成一份 Agent 生态日报。<br><br>这个 Agent 持续关注 15 个 1 级别核心项目（全量挂载源码与 Commit 基线，做代码级架构比对）以及 30 多个 2 级别专题项目。跑下来已经累计生成了近 90 期日报和 20 多篇深度调研报告。<br><br>平时在手机或推特上看到有意思的 Agent 仓库或技术文章，直接转发分享给它，它就会在后台自动 clone 仓库、挂载 Workspace 并生成代码级调研报告，在移动端尤其便利。<br><br>我把这个 Agent 的搭建方式和背后的工作区机制写成了指南</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Holon <span style="font-size:12px;color:#999999;font-weight:400;">@holonrun</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">中文指南现已同步上线：<br><br>详细拆解如何基于 Holon 搭建自主生态研究 Agent——从知识库自动维护、动态挂载多项目 Workspace 交叉比对源码与 commit，到手机端随时分享链接一键发起后台异步调研。<br><br>完整实战教程：<br>👉 <a href="https://holon.run/zh-CN/guides/build-agent-ecosystem-researcher" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://holon.run/zh-CN/guides/build-agent-ecosystem-researcher</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Baseten推理工程教材免费发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @baseten · 2026-09-22 00:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推理工程目前还没有一本教科书。所以我们写了一本。264页，免费PDF和有声书。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Inference engineering doesn't have a textbook yet. So we wrote one. 264 pages, free PDF and audiobook.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Karpathy提出Agent系统架构方法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @huxlab · 2026-10-29 11:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Andrej Karpathy 在 OpenAI 和 Tesla 待了8年，把这些年真正用得上的东西浓缩进了这场免费的2小时讲座。<br><br>说实话，市面上收你 1.5 万刀的 AI 训练营，含金量加起来都没这 120 分钟扎实。<br><br>他根本懒得聊什么 prompt 技巧，而是把这些年底层演进的底牌全揭开了：<br><br>Prompts → Agents → Loops → Graphs<br><br>几个彻底颠覆认知的点：<br><br>1. 杠杆彻底变了： 绝大多数人还在抠 prompt 里的形容词，真正拉开差距的是 Harness：你给 agent 准备的环境到底行不行？能不能自动化运行、能不能拿到真实的反馈？<br><br>2. Loop不是简单重复： “产出 → 跑测试 → 报错吃进上下文 → 纠错 → 重试”，直到客观指标变绿。没有验证的重复叫死循环；有客观反馈的才叫自主修正。<br><br>3. 单兵靠 Agent，规模化靠 Graph： 单个 agent 顶多帮你修个简单函数，但想让代码过夜跑出几十个 PR，必须上 Graph：谁负责规划、谁负责写、谁交叉复核、状态怎么传递、哪一步需要人把关。<br><br>4. 模型是消耗品，系统才是护城河： 底层模型三个月洗一次牌，天天追着调 prompt 迟早被淘汰；但这套控制流和反馈拓扑架构，换什么模型都能跑。<br><br>看完最大的体感是：<br><br>我们之前用 AI 的方式实在太原始了，整天像哄小孩一样在聊天框里教它说话。<br><br>真正的顶级玩家，早就把精力全移到“搭Loop、画Graph、建环境”上了。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115469079507079169/img/dO0f_ob-Oo5MaPVn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pero开源科研Agentic工作区</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @phodal · 2026-10-29 16:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">昨天说了，接下来想多做一些有意思的事。<br><br>今天就来介绍一下新坑：Pero  🚀<br><br>一个面向 AI for Science（AI4S）的开源 Agentic Workspace。先从一个简单的场景学习起来，探索 AI Agent 如何参与科研工作流。<br><br>另外，还想尝试一种新的开源协作方式：不只是贡献代码，还可以贡献 Agent、Tokens 和算力。<br><br>比如，让你的 Agent 自动认领 GitHub Issue，在自己的机器上执行任务，再把结果贡献回来。<br><br>也算是给大家提供一种新的方式，来花掉用不完的 Tokens。😂<br><br>刚开坑，欢迎一起来折腾！<br><br>GitHub：<a href="https://github.com/phodal/pero" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/phodal/pero</a><br><br>任务广场：<a href="https://app.openpero.com/tasks" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://app.openpero.com/tasks</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Grok Bot多角色内容工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @F5Adon · 2026-10-29 16:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">绝了，搭 AI 内容团队，先把“像我说话”和“什么能发”写成规则。<br><br>这篇 Grok Bot 教程的起步很具体：给它你的领域、语气和几条代表作；再拆三个角色，Scout 找素材，Analyst 查证并附来源，Writer 按样本起草。设一个固定例程，每天交带链接的简报和候选文案。<br><br>最该照搬的规则是：队友不发帖、不关注、不私信。人打开来源、选自己认可的内容，再点发布。搜集和起稿可以交出去，最后那一下判断仍然要自己做。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Leo <span style="font-size:12px;color:#999999;font-weight:400;">@Leo100x</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2115711252336934913" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115711252336934913</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2115711252336934913" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115711252336934913</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI图标优化的体积表现提示词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Kubai087 · 2026-10-29 13:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有一个低成本的让 AI 生成的图标变得更好的办法，这是我让网页 Gemini 简单改造的结果，大有改观 ⬇️<br><br>核心法则——降低非必要的体积表现<br><br>AI 容易把简单符号或者卡通化的设计置入严谨的空间和物理结构中理解，因此，可以用以下几个原则来改造你的图标:<br><br>1. For 主体：非必要不使用过多高光、阴影笔触，尽量使用简单的线性或者径向渐变来构建主体；<br><br>2. For 主体：非必要尽量让环境光影响主体；<br><br>3. For 背景：考虑不同圆角下的裁切适配，避免添加多余的弥散光和材质；用纯粹的线性渐变，渐变色值取同色相不同亮度，或者不同色相但鲜亮的颜色；<br><br>4. For 全局：尽量不要使用内发光、内阴影来体现质感，除非我要求<br><br>5. For 全局：高光不要只加亮，那样会变灰；阴影用相近色相更深一点的颜色，不要直接掺黑。<br><br>最后，让 AI 导出分层 PNG，以及背景参数，导入 Icon Composer 一键适配液态玻璃。<br><br>感谢 @H_Stepania_ 的案例</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVxgpAHaIAA1EXq.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVxhBxUbUAAn8vN.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

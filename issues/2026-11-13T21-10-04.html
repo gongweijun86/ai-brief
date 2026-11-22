@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月14日 05:10">
+<title>AI技术雷达 · 11月14日 05:10 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Blackwell指纹仅证明权重初始化</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;剑桥分布式系统课补Agent可靠性</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;ego-lite打通登录态与后台浏览器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;小模型自动改写Agent执行结构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Pi Durable实现模型自动路由</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Blackwell指纹仅证明权重初始化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-14 03:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Depue 称中国模型用了禁运芯片：报告自己承认的限制，推文里都没了<br><br>前 OpenAI 研究员 Will Depue 11 月 12 日发推，称找到“确凿的取证证据”：DeepSeek、月之暗面、MiniMax、蚂蚁“用被禁止出口中国的 Blackwell 芯片打造了最新模型”，涉及“超过 5 亿美元”的禁运芯片，“出口禁令显然在严重失效”。<br><br>问题在于，这些结论大多不在他自己的报告里。报告承认的几条关键限制，到了推文里全不见了。X 用户 Daebak 앤디（@MyDaebakCafe）当天发长帖逐条拆解，他说：“指望没人读过标题，华盛顿的舆论就是这么制造出来的。”<br><br>【指纹只管“第 0 步”】<br><br>Depue 找到的，是模型训练开始前那一刻留下的痕迹：训练前要先往模型里填一批随机数，不同芯片填出来的排列不一样，部分排列训练后还留着。<br><br>@MyDaebakCafe 也承认这个方法本身没问题，能看出生成初始权重的那台机器是 Blackwell。但他指出，报告原文写的是，这些痕迹只说明权重“怎么创建”，“支持、但不能证明” Blackwell 参与了训练。在他看来，初始化几秒钟就能做完，完全可以在租来的一台机器上生成，再搬到老一代芯片的集群上训练。<br><br>Depue 后来回应说，Kimi K3 的初始权重由几十个进程同时生成，更像是整个训练集群在启动，单独生成再搬运说不通。这是他的推断，报告里仍然写着“不能证明”。<br><br>【“5 亿美元”不是指纹算出来的】<br><br>@MyDaebakCafe 的第二个要点是，几千张卡、5 亿美元这些数字，跟指纹没有关系，Depue 在推文里自己用的词就是“估算”，依据是发布时间和模型参数。<br><br>报告写得更清楚：估算依赖芯片效率、训练数据量、训练时长几项“权重无法证实”的假设，作者“对这些估算没有把握”，而且报告发布当天就改了一轮数字。推文里“很可能数十亿美元”，报告没有给出任何算法。<br><br>【芯片在哪、合不合法，一概不知】<br><br>报告执行摘要最后一句承认，证据“不能说明芯片在哪、怎么拿到的、是否违反出口管制”。@MyDaebakCafe 提醒，Depue 自己的验证也是在租来的云端 GB200 上做的；他说，不在美国实体清单上的公司，在新加坡、日本、中东的云上租 Blackwell，按美国商务部现行规则完全合法，留下的指纹一模一样。<br><br>Depue 在推文里也承认芯片可能是境外租的，称之为“国会还没堵上的漏洞”。走私涉嫌违法，境外租用至多是规则漏洞，性质完全不同。Depue 分不清是哪一种，却直接得出“禁令严重失效”。<br><br>【其他网友的质疑】<br><br>网友 @dodecagonism 指出，报告收了 11 月发布的 Kimi K3.1-Pro，却没把 DeepSeek 9 月发布的最新模型 V4.1-Flash 列进结果，“看起来是故意把方法不适用的模型都排除掉”。报告“局限”一节写了 V4.1-Flash 没找到任何指纹，推文只说四家的“最新模型”用了 Blackwell，对此一字没提。Depue 回应说，这说明方法不会对谁都报 Blackwell，DeepSeek 可能换了生成初始权重的方式；随后又发帖说“可能破解了，看起来像是英伟达”，目前还没公布结果。<br><br>网友 @dfranke 认为，报告所有惊人的结论都建立在“用哪种芯片初始化，就用哪种芯片训练”这个假设上，而报告自己就发现，有些模型的初始权重是在普通 CPU 上生成的，说明这个假设并不总成立。Depue 回应说，那是训练程序先在本机 CPU 上生成、再拷到本机显卡，跟跨集群搬运是两回事。<br><br>@MyDaebakCafe 在后续帖子里还提出，中国大厂用的是自己改过的训练框架，如果某段自定义代码把布局写死，用老芯片也能留下同样的痕迹。这一条 Depue 没有直接回应。<br><br>【谁来背书，为什么是这天】<br><br>推文说结果“经过 OpenAI 和 Anthropic 资深研究员独立验证”，报告里没有一个名字。当晚 Depue 又说，私下验证的人大多不愿具名。<br><br>@MyDaebakCafe 质问：为什么偏偏在 11 月 12 日、黄仁勋辞去英伟达 CEO 的当天发布？他的解读是，美国闭源模型公司眼看付费 API 的生意被免费的中国开源模型蚕食，这份报告正好递给华盛顿鹰派一个理由，去管控全球云算力、打压开源 AI。<br><br>动机属于他的推测，但有几件事是公开的：OpenAI 和 Anthropic 都指控过中国实验室“蒸馏”自家模型，Anthropic CEO Dario Amodei 专门发文支持收紧对华芯片出口；Depue 说发布前和官员通过信；发布约 40 分钟后，他又发帖为自己的新机构 Unemployment Labs 募资 500 万美元。匿名验证者来自利益相关方，发布者也有自己的诉求，这样的结论需要独立复现，目前还没有具名的第三方公布结果。<br><br>中国驻美使馆 2 月回应美国官员的同类指控时说，反对“泛化国家安全概念、滥用出口管制、把经贸科技问题政治化”。截至 11 月 13 日，四家公司和英伟达还没有回应这份报告。<br><br>Depue 原推：<a href="https://x.com/willdepue/status/2120992457630326841" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/willdepue/status/2120992457630326841</a><br>Depue 报告：<a href="https://unemploymentlabs.com/checkpoint-forensics" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://unemploymentlabs.com/checkpoint-forensics</a><br>@MyDaebakCafe 原帖：<a href="https://x.com/MyDaebakCafe/status/2121031084653637728" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/MyDaebakCafe/status/2121031084653637728</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">will depue <span style="font-size:12px;color:#999999;font-weight:400;">@willdepue</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我有一个重大结果要分享。<br><br>我发现了确凿的取证证据，表明中国排名前四的 AI 实验室——DeepSeek、Moonshot、MiniMax 和蚂蚁集团——在其最新模型中使用了 NVIDIA 最先进的 Blackwell 芯片，而这些芯片被禁止出口到中国。<br><br>这听起来很疯狂，但我发现几乎每个 AI 模型都带有训练它的 GPU 的隐藏签名。当一个模型首次建立时，其权重的初始值会按照一种取决于具体 GPU 的模式排列。GPU 和随机种子的每种组合都会产生一个独特的模式——相当于创建该模型所用硬件的一种指纹。该模式的痕迹会在训练过程中存活并延续到发布的模型中。<br><br>再次强调，这些证据不是基于任何内幕信息或泄露。而是基于对公司自身发布的模型权重的取证分析。<br><br>我搜索了超过六万亿种芯片布局和随机种子的组合，并将其与开放权重模型进行了匹配。通过这样做，我发现了确凿的证据，表明六个中国 AI 模型——包括 DeepSeek-V4-Pro、Kimi K3 和 MiniMax-M3——是在 NVIDIA Blackwell 系统上初始化的。其中四个模型与 Grace Blackwell 相匹配，即 NVIDIA 旗舰液冷机架级系统中的 GB200 和 GB300 部件。<br><br>然后我在真实硬件上验证了这些结果。使用未经修改的 PyTorch 并以我恢复的种子运行，一台 Blackwell B300 逐比特地复现了 DeepSeek-V4-Flash 未改动的起始权重，一台租用的 GB200 以 0.999995 的相关性复现了 Kimi K3 的权重。一台 Hopper H100 没有复现 DeepSeek-V4-Flash 的任何权重，而将种子改变一位就破坏了匹配。（顺便说一下，DeepSeek 的种子是 953049583。）该方法还被验证为能将 24 个已知的开放权重模型与开发者声称使用的硬件相匹配。<br><br>这些结果极不可能是巧合。在六万亿种组合中，最佳意外匹配应该只达到约 8 个 sigma（即比随机概率产生的结果高出八个标准差）。实际匹配范围为 49 到 1,385 个 sigma，即使最弱的单项测试也达到 20 个 sigma。<br><br>这些是数据中心规模的训练任务。通过对发布时间表和模型细节的一些分析，我估计最大的两个——Kimi K3 和 DeepSeek-V4-Pro——各使用了 2,000 到 3,000 块 Blackwell GPU。这种规模的集群每套购买成本约为 1.5 到 2 亿美元，仅这些实验室加起来就相当于超过五亿美元的出口管制 GPU，还不包括实验算力等其他成本。我们很有可能看到在出口管制 GPU 上花费数十亿美元。<br><br>我对这一结果非常有信心，并且已被 OpenAI 和 Anthropic 的资深研究人员独立验证。你可以在 <a href="http://unemploymentlabs.com/checkpoint-forensics" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://unemploymentlabs.com/checkpoint-forensics</a> 阅读完整报告。<br><br>通过这种检查点取证技术，我还发现了关于这些模型的更多信息，很快就会分享更多内容。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I have a major result to share.<br><br>I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China.<br><br>This sounds insane, but I discovered that almost every AI model carries a hidden signature of the GPU that trained it. When a model is first set up, the starting values of its weights are laid out in a pattern that depends on the exact GPU. Each combination of GPU and seed number produces a unique pattern—a sort of fingerprint of the hardware used to create the model. Traces of that pattern survive training into the published model.<br><br>Again, this evidence isn’t based on any insider information or leaking. It’s based on a forensic analysis of the model weights released by the companies themselves.<br><br>I searched more than six trillion combinations of chip layout and seed number and matched them to open-weights models. In doing so, I found conclusive evidence that six Chinese AI models—including DeepSeek-V4-Pro, Kimi K3, and MiniMax-M3—were initialized on NVIDIA Blackwell systems. Four of the models match Grace Blackwell, the GB200 and GB300 parts in NVIDIA’s flagship liquid-cooled rack-scale systems.<br><br>I then verified these results on real hardware. Running unmodified PyTorch with the seeds I’d recovered, a Blackwell B300 reproduced DeepSeek-V4-Flash’s untouched starting weights bit for bit, and a rented GB200 reproduced Kimi K3’s to a correlation of 0.999995. A Hopper H100 reproduced none of DeepSeek-V4-Flash’s, and changing the seed by one broke the match. (DeepSeek’s seed is 953049583 by the way.) The method also was verified to match 24 known open-weights models to the hardware that developers said they used.<br><br>It is exceedingly unlikely that these results are a coincidence. Across six trillion combinations, the best accidental match should reach only about 8 sigma (i.e., eight standard deviations above what random chance would produce). The real matches range from 49 to 1,385 sigma, and even the weakest single test hits 20.<br><br>These were data-center-scale training runs. With some analysis of release schedules and model details, I estimate that the largest, Kimi K3 and DeepSeek-V4-Pro, used 2,000 to 3,000 Blackwell GPUs each. Clusters of this size cost on the order of $150 to $200 million each to buy, and across these labs alone would add up to more than half a billion dollars of export-controlled GPUs, not counting experimental compute or otherwise. It’s quite likely that we see multi-billion dollar expenditure on export-controlled GPUs.<br><br>I am highly confident in this result, and it has been independently verified by senior researchers at OpenAI and Anthropic. You can read the full report at <a href="http://unemploymentlabs.com/checkpoint-forensics." target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://unemploymentlabs.com/checkpoint-forensics.</a><br><br>There is much more I’ve identified about these models through other forms of checkpoint forensics like this, and will have more to share soon.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW9GgJ_WcAA9m3I.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>剑桥分布式系统课补Agent可靠性</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jerry_fsy · 2026-11-13 10:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 的可靠性问题，很多其实是分布式问题。<br>比如：<br>进程重启后，运转到半截的任务全丢； 工具调用超时，不知道是否应该重试； 重试一次，同一个操作被执行了两遍； 子 Agent 并行跑完，结果对不上。<br><br>推荐一门补这块的入门课程： 剑桥《Distributed Systems》<br>讲师是 Martin Kleppmann 就是写《数据密集型应用系统设计》（DDIA）的那位大佬@martinkl <br><br>这门课比 DDIA 和 MIT 6.5840 轻得多： 8 节课，视频加起来大约 7 小时<br><br>课表，以及跟 Agent Infra 的对应：<br>1.入门：分布式系统、计算机网络、RPC 👉 调 LLM、调工具，本质都是远程调用<br><br>2.系统模型：网络故障、崩溃与拜占庭故障、同步假设 👉 超时了，分不清对方是慢了还是挂了<br><br>3.物理时钟：时钟同步、因果关系<br><br>4.逻辑时间：Lamport 时钟、向量时钟、广播协议 👉 多个子 Agent 的消息谁先谁后<br><br>5.复制：Quorum、状态机复制 👉 任务状态记成日志，重启后按日志恢复<br><br>6.共识：Raft 算法详解 👉 可以先略过，知道 etcd、k8s 靠它选主就够了<br><br>7.副本一致性：两阶段提交、线性一致性、最终一致性 👉 一个子任务失败，其他子任务的结果算不算数<br><br>8.案例：协同编辑、CRDT、Google Spanner 👉 多端同时操作一个会话，状态怎么不打架<br><br>建议先看第 1、2、5、7 讲， 其余的学到编排和 Chat 流时再回来补。<br>全部公开，CC BY-SA 协议： 录像在 YouTube，87 页讲义（带习题）和课件 PDF 都能直接下载<br><br>适合的人： 在做 Agent Infra，想把相关原理补上的人 懂一点编程和操作系统就够了，不需要太多数学<br><br>课程主页： <a href="https://www.cl.cam.ac.uk/teaching/2526/ConcDisSys/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.cl.cam.ac.uk/teaching/2526/ConcDisSys/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ego-lite打通登录态与后台浏览器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @libukai · 2026-11-13 23:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">虽然我是 ego-lite 党，但是不妨碍强烈我推荐这篇 Tabbit 的文章，每个重度使用 Browser Use 的人都应该看一看，了解一下背后的技术原理。<br><br>和作者一样，我也是在 Codex 推出自己的 Chrome 插件时被震惊到了。<br><br>记得当时我专门写了个 Skill 用 CDP 模式来发布 X 的长贴，虽然现在看起来可谓是难用至极非常不稳定，但总比人自己去贴一遍要方便的多，所以一直也凑合着在用。<br><br>突然之间 Codex 的 Browser Use 功能横空出世，整个体验实现了跨越式的提升，也让我产生了一个全新的判断：<br><br>也许人和 AI 协同的这个过程不会持续太久？毕竟办公室白领的主要工作不就是用鼠标和键盘点一点打打字嘛？<br><br>如果 AI 的 Browser Use 和 Computer Use 能力足够强了，那么是不是我们可以直接越过智能化这个阶段，一步到位进入到完全不需要人类的自动化阶段呢？<br><br>从那之后半年这两个领域的发展情况来看，这个判断实现的概率是越来越大了，所以我现在也是尽量把所有的任务全部自动化，不再继续为人机协同的方案上浪费太多精力。<br><br>铺垫了这么久，其实我是想推荐一下虽然不是插件，但也是属于 #DeepSeekHarness  的必备工具 —— 来自@Davidxch97 的 ego-lite Browser.<br><br>相对于其他的 Browser Use 方案，对我而言 ego-lite 有三大核心优势：<br><br>1. 直接可以导入 Chrome/Edge 的登录态，并把所有的登录态开放给 Agent 使用。<br><br>2. 有专门的 Space 可以给 Agent 在后台操控使用，不影响我在前台自行操作其他的页面。<br><br>3. 使用 JS 方案，和文中说的一样，速度上相对截图方案快了很多，token 消耗也更少。<br><br>目前 ego-lite 已经是我的主力浏览器应用，也是我给所有 Agent 配置的默认浏览器，所以理论上我能手动做的事情，ego-lite 也能全部做到。<br><br>如果你有 Browser Use 的需求，我强烈推荐你试用一下。<br><br>启用的方式也非常简单，把下载包安装好，它会自动把 对应的  Skill 写入到系统级的 .agents 目录下面去，然后 agent 就可以自动可以调用了。<br><br>顺便说一句，插件商店中有一个 dsh-ego-browser 的开源实现方案，我觉得产品定位有点奇怪还不如直接使用 ego-lite 原生应用方便，就不推荐大家使用了。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">潦草学者 Scholar.L <span style="font-size:12px;color:#999999;font-weight:400;">@liaocaoxuezhe</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">过去一年半，我们死磕 Browser Use：<br>把 DOM 压到极致、测了几百种架构，试图教 AI 像人一样使用浏览器。<br><br>直到某天深夜，模型的进步用一种完全反直觉的方式，击碎了我们引以为傲的设计和架构。<br><br><a href="https://www.liaocaoxuezhe.com/article/the-bitter-lesson-of-browser-use/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.liaocaoxuezhe.com/article/the-bitter-lesson-of-browser-use/</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>小模型自动改写Agent执行结构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @taqimolavi · 2026-11-14 00:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇文章真的太疯狂了！<br><br>中国研究人员发表了一篇论文，其标题应该让所有 AI 智能体开发者深思：<br><br>《Harness 工程的终结》<br><br>论文的核心观点用一句话概括：<br><br>也许手工设计和编写 AI 模型周围所有组件代码的时代正在走向终结。<br><br>让我说得更简单一些：<br><br>到目前为止，我们为构建每个智能体，都需要设计工具、指令、工作流程和执行逻辑；然后使用同一套结构数月。<br><br>但这篇文章提出了一个不同的想法：<br><br>为什么不让我们自己的系统来改进它的基础设施呢？<br><br>其工作方式很有趣：<br><br>1. 一个 40 亿参数的小模型，检查系统的失败和错误。<br>2. 为提高性能，提出 8 种不同的修改建议。<br>3. 每种修改都通过一组问题和测试进行评估。<br>4. 只有真正产生了更好结果的修改才会被保留。<br><br>重要的一点是，主模型保持不变；不断变化的是智能体的 harness 和执行结构。<br><br>这个想法不限于某个特定的模型或框架，它可以改变我们构建智能体的方式。<br><br>但故事中更重要的是：<br><br>人类的角色从编写代码和持续手动干预系统，转变为设计测试和成功标准。<br><br>也就是说，我们需要清楚地知道我们对智能体有什么期望，以及如何判断它是否真的变得更好。<br><br>也许在未来，我们的竞争优势不在于我们为智能体编写代码的能力有多强；而在于我们测量和改进它们表现的能力有多强。<br><br>总结起来，这篇论文的核心思想用一句话概括：<br><br>在写代码之前，先设计它的测试！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">این مقاله واقعاً دیوانه‌کننده‌ست!<br><br>پژوهشگرهای چینی مقاله‌ای منتشر کردن با عنوانی که باید تمام سازندگان ایجنت‌های هوش مصنوعی رو به فکر فرو ببره:<br><br>«پایان Harness Engineering»<br><br>حرف اصلی مقاله در یک جمله‌ست:<br><br>شاید دوران طراحی و کدنویسی دستی تمام اجزای اطراف مدل‌های هوش مصنوعی داره به پایان می‌رسه.<br><br>بذار ساده‌تر بگم:<br><br>تا امروز ما برای ساخت هر ایجنت، ابزارها، دستورالعمل‌ها، گردش کار و منطق اجرایی رو طراحی می‌کردیم؛ بعد هم همون ساختار رو ماه‌ها استفاده می‌کردیم.<br><br>اما این مقاله یه ایده متفاوت داره:<br><br>چرا اجازه ندیم خود سیستم، زیرساختش رو بهتر کنه؟<br><br>روش کارش جالبه:<br><br>۱. یک مدل کوچیک ۴ میلیارد پارامتری، شکست‌ها و خطاهای سیستم رو بررسی می‌کنه.<br><br>۲. برای بهتر شدن عملکرد، ۸ تغییر مختلف پیشنهاد می‌ده.<br><br>۳. هر تغییر با مجموعه‌ای از سؤالات و تست‌ها ارزیابی می‌شه.<br><br>۴. فقط تغییری باقی می‌مونه که واقعاً نتیجه بهتری گرفته باشه.<br><br>نکته مهم اینه که مدل اصلی ثابت می‌مونه؛ چیزی که مدام تغییر می‌کنه، هارنس و ساختار اجرایی ایجنته.<br><br>این ایده به یک مدل یا فریم‌ورک خاص محدود نیست و می‌تونه نگاه ما به ساخت ایجنت‌ها رو تغییر بده.<br><br>اما بخش مهم‌تر ماجرا:<br><br>نقش انسان از کدنویسی و دستکاری مداوم سیستم، به طراحی آزمون‌ها و معیارهای موفقیت منتقل می‌شه.<br><br>یعنی باید دقیق بدونیم از ایجنت چی می‌خوایم و چطور بفهمیم واقعاً بهتر شده یا نه.<br><br>شاید در آینده مزیت رقابتی ما این نباشه که چقدر خوب برای ایجنت‌ها کد می‌نویسیم؛ بلکه این باشه که چقدر خوب می‌تونیم عملکردشون رو بسنجیم و بهبود بدیم.<br><br>خلاصه ایده مقاله در یک جمله:<br><br>قبل از اینکه کد رو بنویسی، امتحانش رو طراحی کن!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121276437961265152/img/lvrkVUrjDiLJfGpx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi Durable实现模型自动路由</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @elzane26 · 2026-11-14 01:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近把业务系统的底层 Agent 框架换成 Pi  Durable 的好处又来了， 今天随便和 Gemini 4 Carbon 聊了下怎么做个类似Antigravity 上 Orchestrator 这样自动路由的模型，发现 Pi Durable 每次模型调用都是一个可配置的 GenerationTask ，这一抽象非常适合支持自动路由功能，于是花不到两小时，搞了个初版，大致先做了用 decision model 分流， 以及粗略的模型切换成本估算（随便切换会损失 Cache 命中），先用起来看看效果。😃</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fly让Node应用快启动并缩容至零</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @flydotio · 2026-10-22 15:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Fly 在硬件虚拟化的机器上运行 Node.js 应用，这些机器启动速度快到足以处理 HTTP 请求，并在空闲时缩减至零。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Fly runs Node js apps on hardware-virtualized Machines that boot fast enough to handle HTTP requests and scale to zero when idle.</p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

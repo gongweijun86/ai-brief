@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月14日 17:18">
+<title>AI技术雷达 · 11月14日 17:18 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Harness-S为GRPO补失败奖励</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;agent-skills固化编码工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;DevTools MCP直连浏览器调试</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Pi GPUI的Rust桌面客户端</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;YASAKANI单卡推理快过vLLM</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness-S为GRPO补失败奖励</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-14 11:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看到一个很巧妙的 Agent RL 训练思路：把 Harness 变成训练阶段的探索工具，帮助模型学会原本难以完成的任务。<br><br>这来自论文《Harness-S》，研究团队尝试利用不同 Harness 的互补能力，将外部执行环境带来的能力提升迁移到模型自身。<br><br>具体机制分为三个环节：<br><br>首先，从基础 Harness 的失败轨迹中分析原因，针对不同问题定向修改执行机制，构建一个各有所长的 Sibling Harness Pool。<br><br>训练时，模型先在原始 Harness 下多次尝试。如果全部失败，Adaptive Harness Router 就根据各 Harness 的历史表现和适用场景，选择最合适的几个重新探索，并将新轨迹用于 GRPO 训练。Router 还会随着模型能力变化，动态更新选择依据。<br><br>这个设计解决了一个关键问题：当 Agent 多次尝试全部失败，GRPO 很难获得有效的组内奖励信号。 不同 Harness 提供了新的成功路径，让模型有机会从失败任务中继续学习。<br><br>论文实验显示，Qwen3.5-4B 在原始 Harness 下的 SWE-Gym Pass@3，从普通 GRPO 的 24.38% 提升到 38.75%，提高了 14.37 个百分点。<br><br>所以 Harness 可以在训练阶段帮助模型突破能力边界，再通过强化学习，把这些执行经验逐渐转化为模型自身的能力。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.04277" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.04277</a><br><br>💻 GitHub: <a href="https://github.com/DeepExperience/Harness-S" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/DeepExperience/Harness-S</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXBeFSqWMAAB6oZ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>agent-skills固化编码工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xqliu · 2026-11-14 15:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">资深工程师写代码前后有一套流程：先写 spec，再拆任务，测过才算数，合并前过一道 review。现在这套流程被打包成了 Skill，可以直接装给 Claude Code 这类写代码的 agent。<br><br>仓库叫 agent-skills，作者是 Addy Osmani。这周涨了 3502 星，总数到了 11.7 万，MIT 许可。<br><br>它把开发拆成六段：定义、计划、构建、验证、评审、上线，每段都有对应的斜杠命令。/spec 先把要做什么写清楚再动代码；/plan 把活切成很小的原子任务；/build 一次只做一片；/test 拿测试当证据，跑过了才算完成。<br><br>另外几个也实用：/webperf 先测量再优化，/code-simplify 要的是写得清楚，不是写得巧。最值钱的是 /constraints，质量标准定一次，之后每一步都按它卡。<br><br>按作者的说法，这些 Skill 记的是资深工程师的工作流和质量关卡，打包起来是为了让 agent 每个阶段都稳定照做。<br><br>agent 最常见的毛病就是一上来就写代码，一口气改一大片。这套东西正好反过来，把动手前和合并前那几步补了回去。<br><br>在 Claude Code 里它们是作为插件命令装进去的。/review 和自带命令重名，用的时候要带上命名空间。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Graphify把代码库转成知识图谱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ChuckBass14291 · 2026-11-14 09:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 最缺的不是更大的上下文窗口，而是理解整个代码库的能力：当一个项目有数万文件、跨模块调用和海量文档时，为什么还要让 AI 一遍遍 Grep、Read、重新理解整个工程？<br><br>📦 项目档案<br><br>项目：Graphify-Labs/graphify GitHub Stars：⭐ 147299 技术栈：Python + Tree-sitter + NetworkX + Leiden 核心定位：将代码、文档、SQL Schema、PDF、图片及音视频转换成可查询、可追溯的知识图谱，让 AI Agent 从「搜索文件」升级为「理解工程关系」。<br><br>GitHub：<a href="https://github.com/Graphify-Labs/graphify" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Graphify-Labs/graphify</a><br><br>🛠️ 一、底层架构：不是传统 RAG，而是图结构知识引擎<br><br>Graphify 最值得研究的地方，是它没有走传统向量检索路线。<br><br>传统 RAG 通常需要经历： 文件切分 → Embedding → 向量入库 → 相似度检索 → 上下文拼接。<br><br>Graphify 直接构建 Graph。<br><br>底层采用 NetworkX 图数据结构，以 Node 和 Edge 表达工程实体及其关系。<br><br>整个处理链路可以概括为：<br><br>detect() → extract() → build() → cluster() → analyze() → report() → export()<br><br>每个阶段职责独立，通过 Python Dict 和 NetworkX Graph 传递数据。<br><br>这意味着它不只是索引代码，而是在构建整个项目的结构化关系网络。<br><br>🛠️ 二、Tree-sitter AST：让代码解析摆脱 LLM 依赖<br><br>这是最有工程价值的设计。<br><br>Graphify 使用 Tree-sitter AST 解析约40种编程语言，提取：<br><br>• Classes：类定义及结构。 • Functions：函数与方法。 • Imports：模块依赖关系。 • Call Graph：跨文件函数调用。 • SQL：表、视图、外键及 JOIN 关系。<br><br>其中33种语言使用 Tree-sitter Grammar，另外7种使用内置解析器。<br><br>关键在于：代码结构提取完全在本地完成，不需要调用 LLM，也不需要把代码上传到云端。<br><br>对于大型代码库，这种确定性解析比单纯依赖模型阅读文件更容易复现和追踪。<br><br>🛠️ 三、EXTRACTED / INFERRED：让每条知识关系都有证据<br><br>很多知识图谱最大的隐患是：模型推断出来的关系，很容易被误认为真实事实。<br><br>Graphify 给关系增加了置信度标签：<br><br>• EXTRACTED：源码中明确存在的关系，例如 import、函数调用。 • INFERRED：通过上下文、命名和调用关系推断出来的连接。 • AMBIGUOUS：存在不确定性的关系，需要人工复核。<br><br>INFERRED 关系还会附带 0.0—1.0 的 confidence_score。<br><br>这套机制非常重要。<br><br>它实际上把知识图谱从一个简单的关联网络，变成了一个能够区分事实、推断与不确定性的工程知识系统。<br><br>🛠️ 四、Leiden + SHA256 Cache：解决规模与重复计算<br><br>Graphify 使用 Leiden 社区发现算法，根据节点之间的连接密度，将复杂工程拆分成不同功能子系统。<br><br>例如，一个大型后端项目，可以自动识别认证、数据库、路由、权限等不同社区。<br><br>同时，SHA256 内容哈希缓存会记录文件指纹。<br><br>文件没有变化，就跳过重复提取；只有新增或修改的文件才重新处理。<br><br>音视频还可以通过本地 faster-whisper 转录，再进入统一知识图谱。<br><br>这让增量更新不必每次重新扫描整个工程。<br><br>五、真正解决了什么工程问题？<br><br>想象一个场景：<br><br>你接手一个陌生的微服务项目，需要搞清楚：<br><br> 用户认证最终连接了哪些数据库模块？<br><br> 修改某个核心函数会影响哪些下游组件？<br><br> 某个架构决策为什么会存在？<br><br> 两个看似无关的模块究竟有什么隐藏依赖？<br><br>传统方式：Grep、Read、跳转、反复询问 Agent，消耗大量上下文。<br><br>Graphify：直接执行 query、path、explain。<br><br>它还能生成三个核心产物：<br><br>• graph.json：完整知识图谱，可供后续查询。 • GRAPH_REPORT.md：核心节点、社区及关键关系分析。 • graph.html：可交互的可视化图谱。<br><br>甚至支持 Mermaid 调用链导出、Markdown Wiki 和 Obsidian 知识库。<br><br>最重要的设计思想是：<br><br>不要让 AI 每次都重新阅读整个世界，而是提前把世界组织成它能够理解和遍历的结构。<br><br>这才是 AI Coding 从上下文堆砌走向工程知识管理的重要一步。<br><br>对于大型 Monorepo、遗留系统维护、跨模块依赖分析，以及需要长期理解代码库的 Agent，这套架构尤其值得研究。<br><br>🔗 GitHub 开源地址：<br><br><a href="https://github.com/Graphify-Labs/graphify" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Graphify-Labs/graphify</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DevTools MCP直连浏览器调试</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kedaya · 2026-11-14 05:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Chrome DevTools 官方下场了：出了 MCP，让编码 agent 直接操控浏览器调试。以前 agent 只能靠截图猜，现在能拿到真实的 DOM、网络请求和控制台。这个仓库已经在 GitHub trending 上。<br><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ChromeDevTools/chrome-devtools-mcp</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Scale AI用REA造97个训练环境</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-11-14 12:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎉 我翻了大厂程序员在 REA 提的代码。<br><br>除了阿里、美团、微软、网易的工程师，动作最大的是 Scale AI 的工程师，他直接拿这个逆向工具做出了 97 个训练环境。<br><br>- 美团大模型团队给浏览器分析加了截图区域框选和区域比对<br>- 阿里的工程师让安装流程支持 Qwen Code<br>- 微软工程师修复了任务取消时的BUG<br>- 网易的工程师改了 JavaScript 分析性能优化、Electron、浏览器和安装流程<br><br>其他比如腾讯、亚马逊、谷歌、英伟达、小米、字节的工程师，以及逆向圈鼎鼎有名的 radare2 的作者 pancake 和 angr 第一大贡献者 Fish 也都来提过 issue 或 PR。<br><br>更离谱的是 Scale AI 的工程师，一口气提了68个issues和PR，让REA具备了造环境的功能。对于Agent开发者来说，这个造环境的功能非常关键，真系统测试成本太高，用REA给智能体搭建一套测试场就很有必要了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXDtzYqbMAAySMi.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">WquGuru <span style="font-size:12px;color:#999999;font-weight:400;">@wquguru</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">格斗场中这两台不管怎么挨打都一直往前冲的机器人，如果最高权限在别人手里，要怎么才能让它停下来？<br><br>这段现场视频看得我有点出神，观众隔着笼子看热闹也似乎很安全，但如果把视角切到网络安全，事情就严肃了。<br><br>全球网络安全联盟 GCSA 的研究团队，刚在一家头部机器人厂商的实机硬件上突破了设备的系统安全边界，拿到了操作系统的最高权限。这也意味着网络风险已经从软件和数据延伸到了物理世界。<br><br>看到视频里这种冲击力，买一台能自主移动的人形机器人放在家里，是保姆、保镖，还是刺客？<br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2077931160538329088/img/r_NBEWycIo6qWIpJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi GPUI的Rust桌面客户端</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xqliu · 2026-11-13 20:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用 Pi 这个编程 agent 的，现在有了一个不靠 Electron 的桌面客户端：Pi GPUI。用 Rust 写，界面框架就是 Zed 编辑器背后那套 GPUI，没有套网页。<br><br>它没有另造一个 agent，而是通过 RPC 调你机器上已经装好的 pi。模型、扩展、skill、会话都和终端里用的是同一套，攒下的东西不用搬。<br><br>作者在 M1 Pro 上测过：App 16 MB，窗口约 0.4 秒弹出，空闲时内存 75 MB 左右。作者对比的几个给 pi 用的 Electron 客户端，启动要 0.5 到 1.1 秒，内存 190 到 430 MB。测法和脚本都在仓库里。<br><br>README 的演示动图里，作者写明模型回复是预先写好的，为了方便重录；App 本身、改文件和跑 cargo test 都是真的。这句交代比跑分更值得信。<br><br>仓库 11 月 4 号才建，到今天 112 星，11 号刚发过一版，MIT 许可。<br><br>Mac 要 Apple 芯片、macOS 13 以上，一行装好： brew install --cask bytesbay/tap/pi-gpui<br><br>安装包有苹果的签名和公证。Linux 版还在 beta，官网给了一行安装脚本，不用 root。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>YASAKANI单卡推理快过vLLM</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @neuronxwhite · 2026-11-14 11:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">本地跑大模型的通用引擎，可能一开始就是个错误。<br><br>日本一个个人开发者开源了 YASAKANI：只认 Windows 加一张 RTX 5090、只跑一个模型 Qwen3.8-27B。作者自测里它写代码 529 tokens/s，vLLM 是 290。今天发的 0.1.1 加了工具调用，编码 agent 可以直接连。<br><br>为什么快？因为不用兼容任何人。它是为一款显卡、一个模型手写的 GPU kernel 和压缩格式，质量模型 12.37GB，下载后完全离线。这个思路本身比软件有意思：vLLM、llama.cpp 为了照顾所有卡所有模型，牺牲了多少性能，没人单独算过。<br><br>我只读了 README，没跑过；那个对比条件（单请求、单卡）也是作者自己定的。<br><br>如果你正好用 vLLM 在一张卡上跑本地推理，去他仓库翻翻那几张测速表——你那边跑什么模型、多少 tokens/s？<br><br><a href="https://github.com/yasakani-dev/yasakani" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yasakani-dev/yasakani</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

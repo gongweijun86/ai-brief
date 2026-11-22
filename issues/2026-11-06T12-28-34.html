@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月6日 20:28">
+<title>AI技术雷达 · 11月6日 20:28 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Hinoki用15万CVE漏洞训练LLM</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code经MCP调用本地</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Jev将语义判断提速至2.6秒</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;静态Markdown优于自动向量记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Claude对账技能复现全部历史错漏</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hinoki用15万CVE漏洞训练LLM</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wang_johnny · 2026-10-28 06:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们编写了150,000个CVE漏洞利用代码，并在其上训练了一个LLM。<br><br>Hinoki Offensive One在CyberGym上得分88.4%，比Daybreak高出2.8分，且零拒答。<br><br>无限制的渗透测试和漏洞利用开发。现已可用。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We wrote 150,000 CVE exploits and trained an LLM on them.<br><br>Hinoki Offensive One scores 88.4% on CyberGym, 2.8 points above Daybreak, with zero refusals.<br><br>Pentesting and exploit development with no limits. Available now.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code经MCP调用本地</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-11-06 20:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">评论区有位大佬分享了一个更彻底的 Claude Code 远程开发架构：<br><br>Claude Code 完全运行在 VPS 上，本地通过 MCP 暴露文件系统和开发环境。<br><br>核心架构：<br><br>Claude Code（VPS）→ MCP Server（本地）→ 文件操作 / 编译调试<br><br>具体实现：<br><br>· herdr（herdrdev/herdr）：在 VPS 上管理 Claude Code 会话，支持后台运行和会话恢复<br>· server-filesystem：通过 MCP 提供本地文件读写能力<br>· expose-files-mcp：通过 MCP 提供文件操作和受限命令执行能力<br><br>整个思路很清晰：<br><br>Agent 在远端负责决策和调度，本地通过 MCP 提供必要的执行能力。<br><br>有人已经用这套架构跑通完整的开发流程了吗？欢迎分享实践经验。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWcMU_yaYAA7Op9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Vince 聊开发 <span style="font-size:12px;color:#999999;font-weight:400;">@vincemask</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">通过 Tailscale 建立本地电脑与美国 VPS 之间的私有网络，无需暴露公网服务端口。Claude 账号凭证仅保存在 VPS，本地通过 Magpie 远程调用，实现凭证隔离与统一出口。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWM29WuaYAAZ0dy.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jev将语义判断提速至2.6秒</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lieflat_3 · 2026-11-06 12:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Jev 对我的整个实验起到了关键性作用。过去处理几十万条文本，一般是让 AI 写正则表达式，但根本看不懂上下文，无法做语义理解，效果是很差的。<br><br>让通用大模型来判断，跑一篇要两百多秒，而 Jev 把这个时间缩短到了 2.6 秒，简直是划时代的提升！整体效果上，虽然 Jev 和其他大模型一样不理解比喻，但其他语义判断都不错。<br><br>Jev 解决了成本、速度、输出不稳定的问题，能规模化地流水线里跑几十万次，只需要一个下午。<br><br>感谢 @CompleteSkeptic @typesafeai 的工作！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">躺在废墟里 Lieflat <span style="font-size:12px;color:#999999;font-weight:400;">@lieflat_3</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我可以自信地说，这是市面上最全的用大量数据、模型语义验证来测评 AI 写作特征的实验。我对 100多项特征做了 50 万次语义判断，最后做成 skill 方便大家使用。很多AI 产品也对写作能力做测评优化，但从未公布完整调试过程。当然，它也有很多不完善的地方，欢迎讨论。 <a href="https://x.com/i/article/2118340378260910080" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2118340378260910080</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>T3 Code无TUI丢弃自定义配置</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yucheng · 2026-11-06 16:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我主力一直是 @superdoteng，经常同时开好几个 agent 并行跑。<br><br>但它是闭源的，所以 Orca、T3 Code 这两个开源的我也都装了，断断续续用了一阵，总是用不惯。。。分享下我的体感：<br><br>1/ @superdoteng 我离不开的是它给 agent 用的 sc 命令。agent 自己能开新窗口、把活派给另一个 agent，连 Codex 也能派。我很多流程是 agent 在编排 agent，换个编辑器这些流程就跑不起来了。多 workspace 多 worktree 多 agent 的 layout 也更符合我的操作习惯。当然，他们的问题也有不少，比如手机 app 不稳定。<br><br>2/ Orca 功能最多，更新也最猛。它也有 orca CLI 给 agent 用，但主要是往终端里塞任务，多行的任务会被提前提交，好多边角得自己处理。然后 UI 实在是非常拥挤，很难受<br><br>3/ T3 Code 其实哪都好，界面最干净，手机端也最全。但它只有 chat，不支持 TUI，我自己辛苦调试的一堆 mod/hooks 全都用不了，对我来说是彻底不能用。<br><br>如果你不靠 TUI 里的各种自定义配置，T3 Code 可能最舒服<br><br>你们在用哪个？</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWbU_2KaAAAOFyk.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>静态Markdown优于自动向量记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realchendahuang · 2026-11-06 08:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">目前 AI Agent 记忆的几个主流技术路线基本可以收敛为三类：<br><br>第一类是全自动向量与图谱记忆库，典型代表是 OpenViking、Mem0、Letta 这类项目。<br><br>实现机制是在客户端挂 Hook 拦截会话，后台用大模型异步抽取实体和事实，存入向量库和图数据库；在每次输入时，通过前置意图分析模型判断是否触发检索，再经重排注入上下文。<br><br>优势在于对上层无感，跨工具、跨会话被动积累历史事实，适合多客户端共用一个全局大脑。<br><br>软肋是工程链路极长，每次交互前多出至少一次模型推理和向量检索，天然增加一到两秒的物理延迟；自动抽取的碎片缺乏人工校验，容易堆积过期失效的信息；同时向量数据库强绑定特定的 Embedding 模型，一旦换代全库都要重建。<br><br>第二类是纯静态结构化文档流，也就是目前主流 IDE 和 Agent 广泛采用的规则文件与 Skills 架构。<br><br>实现机制是由人或工程脚本显式沉淀 Markdown 文件，如 AGENTS.md、CLAUDE.md、系统提示词或针对特定任务按需激活的上下文卡片。<br><br>优势在于百分之百确定，毫无黑盒幻觉，本地直接加载零延迟，改动走 Git 记录清晰可见。<br><br>软肋在于依赖人工维护与分层设计，如果项目过于庞大且规则没有做好按需拆分，容易单次塞入过多上下文导致注意力稀释；且无法自动捕捉跨会话零散出现的个人临时习惯。<br><br>第三类是混合投影模式，以本地 Markdown 为唯一真源，把向量检索降级为轻量辅助索引。<br><br>实现机制是所有业务事实、架构决策和硬性规则依然落在纯文本文件中，只有在文档量突破百万字、关键词检索难以准确定位时，才在本地挂载轻量向量索引辅助打捞。<br><br>优势在于兼顾了纯文本的可控性与语义联想的宽容度，即便索引损坏或换模型，从 Markdown 重新扫一遍就能原地重建。<br><br>对于绝大多数独立开发者和中小型项目，个人日常编码与任务执行，第二种纯静态 Markdown 配合 Git 管理是综合体验最好的选择，成本最低且没有意外。<br><br>只有当你面对海量跨月、跨工具的松散交互记录，且完全无法靠人工分类归档时，再考虑引入第一类独立的服务型记忆底座。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude对账技能复现全部历史错漏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Magnum2041528 · 2026-11-06 20:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude 大人还是太权威了<br><br>公司里原本有两个人负责做对账的员工，一个员工负责录入，另外一个人负责审核<br><br>结果负责审核的人离职了，几千份留在那里的送货单突然没有人审了…<br><br>于是我今天下午做了个自动对账的 skills，再把公司里上个月的送货单全部喂给 Claude 审核了一遍<br><br>结果，准确率高的惊人……之前查出来的错误，全部复现，甚至还找到了一些曾经被遗漏的问题。这真的有点太夸张了<br><br>要知道，这在曾经可是一个员工一整个月的工作啊……</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 20:09">
+<title>AI技术雷达 · 11月18日 20:09 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Magpie 高频微改驱动Agent自治</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;LangChain Agent七成日程触发</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Antigravity关遥测仍传9G流量</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;华为昇腾超级工厂3000万产能存疑</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Anthropic 子Agent大多可省</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Magpie 高频微改驱动Agent自治</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zhu_lan42791 · 2026-11-18 14:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">扒了 yetone/magpie 38 天的全部发布记录（3,039 个 release，8,625 个 commit），看看号称「全流程 Agent 自治」的项目到底是怎么运转的：<br><br>1. 颗粒度极碎：中位数每次只动 7 个文件、2 个模块，61% 的版本只有 1 个 commit。<br>2. 10.23 效率拐点：前期重整结构，日均发十几个版本（单次动 27 个文件）；10.23 之后单次改动被压到 7 个文件，日均发布直接暴涨到 108 个。改得越少，发得越多。<br>3. 防幻觉秘诀：改动频次最高的是 docs（1,645 次），超过了核心代码 internal/gui。代码和文档在同一个 commit 里同步改，避免过时文档误导后续 Agent。<br>4. 强约束生效：对照仓库里的 code-standards.md（单提交单目标），实测数据基本严丝合缝。<br><br>最后个直观感受：用 AI 写代码，规矩立住了，后面写起来才能不烧心。<br>@magpie_router</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYzqvnbIAAySPr.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYzqvkbwAAw0ZS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYzqvnbgAARJMW.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYzqvoaQAA6z4s.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXYzqvjacAA2u45.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AgentEd 可视化编辑AI指令文件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CatalinG_Vasile · 2026-11-17 19:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AgentEd：一款用于 AI 指令、技能、知识文件和笔记的可视化 Markdown 编辑器。<br><br>实时 token 估算 + YAML frontmatter。免费、开源。可离线使用。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AgentEd: a visual Markdown editor for AI instructions, skills, knowledge files and notes.<br><br>Live token estimates + YAML frontmatter. Free, open source. Works offline.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LangChain Agent七成日程触发</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-18 18:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">LangChain 谈主动式 Agent：超七成运行靠日程，关键是记忆与人的注意力<br><br>@LangChain 团队 @sydneyrunkle 总结了团队构建主动式 Agent 的经验：当 Agent 开始在后台推进持续数天、数周的目标，瓶颈不再只是模型能不能完成任务，而转为人有没有时间处理它不断送来的问题和结果。<br><br>以内部的销售 Agent 和工程 Agent Robin 为例，提出两个核心：用记忆提高判断质量，用交互设计减少人的评审负担。<br><br><a href="https://www.langchain.com/blog/what-weve-learned-building-proactive-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.langchain.com/blog/what-weve-learned-building-proactive-agents</a><br><br># 主动不是不断发消息，是不必每次等指令<br><br>主动式 Agent 有三类触发来源：现实事件，例如新邮件、新 PR；开发者设定的日程，例如夜间整理记忆、每周清理陈旧 PR；以及 Agent 根据任务自行创建的日程，例如第二天跟进，或按用户要求建立每日简报。<br><br>LangChain 的 GTM Agent 负责跟进销售线索、处理回复和起草邮件；Robin 的前身是 Open SWE，负责起草和审查 PR。两者都基于 Managed Deep Agents 构建。团队介绍，超过 70% 的运行由日程触发，而不是人临时输入提示。<br><br>这个数字反映的变化是：Agent 不再只围绕一轮对话工作，而是通过事件和日程持续推进已有目标。<br><br># 记忆不只是记录历史，更要帮助判断什么值得处理<br><br>Agent 被事件或日程唤醒时，往往没有新的人工说明。连接器可以提供最新邮件和项目状态，但用户的偏好、此前的纠正和合作习惯，需要从记忆中获得。<br><br>记忆来源分成三类：已有资料，例如过去发送的邮件；当下反馈，例如草稿被修改或拒绝的原因；行动结果，例如发出的邮件是否收到回复。<br><br>难点不在写文件，而在持续维护：哪些值得记住，哪些已经过期，重复或矛盾的信息如何处理。一种常见做法是「dreaming」：安排后台任务定期回看近期执行记录，整理并更新记忆。<br><br>衡量效果也不该只看存了多少内容，而要看草稿获批是否更快、邮件回复率是否改善，以及 Agent 提出的问题有多少真正促成了行动。<br><br># 人的评审体验，是系统的一部分<br><br>LangChain 总结了三个很具体的设计方向。<br><br>首先，只呈现值得关注的信息。GTM Agent 把对话分成等待人工处理、需要起草回复和无需回复；Robin 则用 Jev 判断是否有必要加入 Slack 讨论，而不是看到消息就插话。<br><br>其次，让结果容易评审。团队发现，在 Slack 里逐条处理待发邮件效率很低，因此为邮件草稿做了专门的评审界面。人的修改不仅是完成审批，也是把难以提前写成规则的偏好反馈给 Agent。<br><br>最后，留在已有工作流里。每日简报发到 Slack，后续内容回到同一线程；Robin 先给一两句概要，再展开细节。请求 PR 审查时，附上一行摘要、改动规模和认领按钮，降低接手成本。<br><br>这些细节共同决定了：主动式 Agent 是一个可靠的协作者，还是另一个不断制造通知的工具。<br><br>## 我的看法<br><br>这篇文章最值得借鉴的，是把「主动」拆成两项能力：没有新提示时仍能继续工作，以及继续工作的同时少占用人的注意力。事件和日程解决前者，记忆和评审体验解决后者。<br><br>好的长期 Agent，不应只追求运行次数更多，而应让每次问询更准确、每次评审更轻松，并能把反馈用于下一次判断。自主程度的提高，应该建立在这种持续改善之上，而不是简单减少确认步骤。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXZk5oxbsAAWD5U.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sydney Runkle <span style="font-size:12px;color:#999999;font-weight:400;">@sydneyrunkle</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2122696441508270080" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122696441508270080</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2122696441508270080" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122696441508270080</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity关遥测仍传9G流量</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @realchendahuang · 2026-11-17 22:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Antigravity真是太恶心了卧槽！！！<br><br>我看到网上说Antigravity会偷传巨量的数据到服务器，所以要关闭遥测功能。我从第一天起就把 Antigravity 的 Enable Telemetry 关了，结果抓包一看，5 天照样在后台偷跑了 9G 上行流量，比我正常写代码调模型的 5.3G 流量还多。<br><br>最傻逼的地方在于两点：<br><br>一是那个遥测开关纯属摆设。它只控交互内容，根本不关传输管道，底层的 language_server 照样常开着往 <a href="http://play.googleapis.com/log" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://play.googleapis.com/log</a> 疯狂发包。<br><br>二是脑残的超时重试。代理稍微抖一下超时，它就每隔 5 秒死命重发，超时前发出去的字节全算代理流量。周末我两天没开软件干活，它自己在后台光靠重试空转就烧掉了 4.25G。<br><br>最终我把我的代理软件规则列表最顶上加了这个，才把它给禁掉：<br>DOMAIN,<a href="http://play.googleapis.com,REJECT" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://play.googleapis.com,REJECT</a><br><br>记住三点：<br>规则要排在 DOMAIN-SUFFIX,<a href="http://googleapis.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://googleapis.com</a> 前面，不然拦不住。<br>macOS 别加 PROCESS-NAME 限定，内核抓不到进程名会失效，直接拦域名。<br>只在电脑端加，别同步到软路由或手机，否则安卓 Play 商店更不了软件。<br><br>加完以后遥测流量直接归零，不影响正常写代码和跑模型。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVbKQmbYAAx181.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>华为昇腾超级工厂3000万产能存疑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @marcus_s_deng · 2026-11-18 10:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天国内在传华为筹建昇腾超级工厂的消息，说由任正非弟弟任树录挂帅，要把昇腾 950 和 960 的板卡年产能拉到 3000 万张，一年内投产。华为官方还没认，但筹建规划组的内部任命大概率是真的，只是 3000 万这个数目前存疑。<br><br>Epoch AI 九月刚算过，英伟达今年全球 AI 芯片出货大概在 590 万颗，华为昇腾今年预估在 150 万颗左右，其中字节上半年就砸 56 亿美元锁了 35 万片昇腾 950。要是按供应链更现实的目标，华为接下来把昇腾产能翻上 4 倍，摸到一年 600 万张的体量，就已经追平英伟达今年的全球盘子了。真要一年出 3000 万张高端大卡，相当于英伟达全球产量的五倍，光前道晶圆和显存就凑不齐。<br><br>任树录在华为一直管基建和园区建设，他带队盖的是后端板卡贴片与整机组装产线，前道 7nm 晶圆代工和 HBM 显存还得看上游扩产进度。按第三方拆解估算，今年长鑫和武汉新芯能供上的国产 HBM，满打满算只够二十多万张 96GB 版的昇腾 950DT 用，剩下的缺口全靠早期囤货或拿 LPDDR 内存替代。3000 万更像是整座组装厂把边缘小卡、通用服务器板卡全算进去的远期设计上限，传成一年内拉满高端算力卡明显走样了。<br><br>不过华为急着扩整机产线，手里的订单确实压不住了。昇腾单卡制程吃亏，走的是光互联大集群的路子，年底交付的 Atlas 950 超节点一套就得连 8192 张卡，一上量就得成千上万张板卡往里填。<br><br>徐直军上个月刚公开喊过昇腾 950 超节点产能跟不上国内缺口，加上昨天美国商务部把东南亚远程租英伟达算力的路子一堵，国内大厂接下来除了往昇腾集群上切，已经没多少退路了。<br><br>眼下国产大模型，最大的困局，还是受到算力的制约，对模型训练的容错率低，追赶吃力；后续可能还是要看昇腾的产能，跟适配是否能跟上。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 子Agent大多可省</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @don_tech1 · 2026-11-17 20:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic最新结论：大部分工作流不需要子agent了。<br><br>一个主agent + 技能按需加载，质量更高、更快、更便宜。<br><br>别把公司组织架构复制成一堆专用agent，那是在给自己加延迟和混乱。<br><br>模型现在够强，自己能规划、能检查，复杂分工反而拖后腿。<br><br>兄弟们，还在卷多agent的，该停一下了。<br><br><a href="https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>企业级Agent权限校验用确定性程序</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SeanchenZ · 2026-11-18 16:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">世界500强制造企业 FDE 落地日记｜AI Governance<br><br>今天参加企业内部 FDE 培训，我开始意识到，企业级 Agent 开发与个人 Agent 开发之间，存在一道很深的鸿沟。<br><br>个人开发者关心的是 AI 能不能解决问题，而企业首先关心的是 AI 有没有权限解决问题。<br><br>一份已经脱敏的工业故障分析报告，也不意味着可以随意输入大模型。数据归属、敏感等级、客户授权、模型部署环境，任何一个环节都可能限制 AI 的使用。<br><br>这意味着，企业级 Agent 的开发不能只停留在 Prompt Engineering、RAG 和 Tool Calling，还需要考虑：<br><br>Data Classification：数据分类分级<br>IAM：身份认证与访问管理<br>RBAC / ABAC：角色与属性权限控制<br>DLP：数据防泄漏<br>AI Gateway：模型调用治理<br>Secure RAG：知识检索权限隔离<br>Audit Logging：全链路审计<br><br>从工程架构上，我更倾向于将权限判断交给确定性程序，而不是大模型。<br><br>在数据进入模型上下文之前完成权限校验，在工具执行之前完成授权，在任务结束之后保留审计记录。<br><br>大模型负责理解与推理，确定性程序负责规则与权限，执行系统负责行动，审计系统负责追溯。<br><br>这几层必须相互解耦。<br><br>未来企业 FDE 的核心竞争力，可能不是开发出一个多么聪明的 Agent，而是能否将一个概率性的智能系统，嵌入一个要求确定性、可靠性与可追责性的真实工业环境。<br><br>Demo 证明 AI 的能力，Production 才证明工程师的能力。<br><br>#FDE #AIEngineering #AIGovernance #IndustrialAI</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

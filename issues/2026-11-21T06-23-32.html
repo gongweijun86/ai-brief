@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月21日 14:23">
+<title>AI技术雷达 · 11月21日 14:23 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Karpathy 公开大模型实操工作流</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Harness 论文提出组合泛化训练法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;月之暗面海外算力合同因新规取消</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Agent 写码只需部分理解靠测试兜底</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;斯坦福 Agent Harness 实战作业</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Karpathy 公开大模型实操工作流</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @tyay2015 · 2026-11-21 10:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，OpenAI 联合创始人 Andrej Karpathy 刚刚直接把屏幕分享出来，毫无保留地演示了自己每天是怎么跟大模型打交道的。<br><br>整整 70 分钟，没有花里胡哨的 PPT，也没有空洞的理论吹水，全是最顶级的 1% 玩家在真实工作流里和大模型死磕的实操现场。<br><br>他拆解出来的核心链路极其克制，就四步：提示词（Prompts）→ 上下文（Context）→ 工具（Tools）→ 工作流（Workflows）——这就是头部玩家每天的真实样子。<br><br>说实话，绝大多数人用 AI 之所以卡壳，根本不是模型不够强，而是自己把事情想得太复杂了。Karpathy 的做法其实特别干净利落：挑对模型、喂准上下文、剩下的交给工具去跑。<br><br>谁都能打开 ChatGPT 敲几行字聊天，但真正能像这位 OpenAI 联合创始人那样把大模型拧出生产力的，在全网都凤毛麟角。<br><br>这一套实操的含金量，恐怕比市面上那些卖两千美金的所谓“AI 进阶课”还要实在得多。<br><br>这就好比同样是一把削铁如泥的宝刀，普通人拿在手里只会比划着削铅笔，还嫌刀刃太重；真正的高手却只挑最顺手的角度、递上最对路的材料，借着刀锋的惯性一气呵成。<br><br>今天先赶紧把这条视频码住看完，再顺着下面的指南去搞明白，怎么用 Harness、Loops 和 Graphs 把这套日常打法，进一步升级成能自己跑起来的智能体系统。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123785023748722688/img/oVVerGIbUNLWVSBS.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness 论文提出组合泛化训练法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-21 11:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">模型越来越强，Harness 迟早会被吃掉，这篇论文给了个相反的看法。<br><br>以前搭 Harness，更多是在给能力不够的模型兜底。alex zhang 他们的新论文认为，现在模型强了，Harness 的作用变成了把模型已有的能力组合起来，让它能处理更长、更复杂的任务，甚至是训练里没见过的任务。<br><br>我觉得最有意思的是这个思路：把长任务拆成很多次小调用，让每一次调用都落在模型熟悉的范围里。这样训练时就不用跑完整条很长的流程，用合成任务加模拟的工具调用和子 Agent，单独训练其中一次调用就行，省数据也省时间。<br><br>自己做 Agent 产品下来，感觉也差不多。模型升级以后，Harness 里确实有不少东西可以删掉，但怎么拆任务、怎么调度子 Agent，这些设计会更重要。<br><br>目前论文、代码和数据都开源了，做 Agent 的朋友可以去翻翻。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">alex zhang <span style="font-size:12px;color:#999999;font-weight:400;">@a1zhang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Harnesses曾经是弱LLM的拐杖。从2026年及以后，随着模型变得更加强大，harness如今提供了一种机制，通过组合LLM已有的和新的能力，实现远超其训练环境的泛化。<br><br>在我们的新论文《LM Harnesses are Compositional Generalizers》中，我们探讨了各种harness抽象如何使LM系统通过组合现有LLM能力，在任务长度、任务策略、递归任务深度等方面实现泛化。这些抽象通过使轨迹保持在局部分布内（LID）——即让每一次LLM调用都处于分布内——提供了一种更数据高效的训练手段，尤其是在长任务上。<br><br>对于需要很长时间才能展开执行的任务，这意味着我们甚至可以进行代理harness训练，也就是说，我们训练单次LLM调用，而不是进行非常长的harness展开，使用纯合成任务，配合假工具调用+子agent！<br><br>一个常见的观点是LLM将吸收harness并使其过时。我们不同意这一观点，并认为我们尚未充分探索harness所能提供的东西。<br><br>完整论文、日志、代码库和数据均可获取：<a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>与 @SOURADIPCHAKR18 @lateinteraction 合作</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Harnesses used to be a crutch for weak LLMs. In 2026 and onward, with stronger models, harnesses now offer a mechanism for composing an LLM’s existing and new capabilities to generalize well beyond their training environments.<br><br>In our new paper, LM Harnesses are Compositional Generalizers, we explore how various harness abstractions enable LM systems to generalize over task length, task strategies, recursive task depth, and more through composing existing LLM capabilities. These abstractions provide a means for more data-efficient training, especially over long tasks, by keeping trajectories locally in-distribution (LID) — i.e., shaping all individual LLM calls to be in-distribution.<br><br>For tasks that take a very long time to roll out, this implies that we can even perform surrogate harness training, meaning we train an individual LLM call instead of doing the very long harness rollout, using purely synthetic tasks, with fake tool calls + sub-agents!<br><br>A common idea floating around is that LLMs will absorb harnesses and make them obsolete. We disagree, and argue that we haven’t sufficiently explored what harnesses can provide.<br><br>The full paper, logs, codebase, and data are available: <a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.alphaxiv.org/abs/2611.harness-cg</a><br><br>w/ @SOURADIPCHAKR18 @lateinteraction</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>月之暗面海外算力合同因新规取消</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @laopai1990 · 2026-11-20 23:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刚刷了下外网，感觉杨植麟杨总这回可能真碰上事儿了。<br><br>Kimi K4 训练不出来？不是。<br><br>是现在没算力去训了，租的都没。<br><br>The Information 爆料，月之暗面原本谈好一笔 1.5 亿美元的海外算力合同，<br><br>地点在印尼，用的是英伟达 B300，<br><br>甚至愿意接受 50% 的预付款，<br><br>结果美国新规一出，交易直接取消...<br><br>而 DeepSeek 那边，据传正在乌兰察布规划吉瓦级智算中心，准备部署大规模华为昇腾集群。<br><br>这俩人完全是走的两条路：<br><br>杨植麟想尽办法获取海外先进算力，<br><br>梁文锋押注国内自建算力基础设施。<br><br>兄弟们觉得，谁有先见之明？？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 写码只需部分理解靠测试兜底</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-21 08:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Sean Goedecke 在个人博客发文说，在大型软件项目里，程序员只理解自己负责的那一部分代码是正常的，而且这已经是能做到的最好状态。<br><br>确实如此，我基于原文稍微解读和引申一下。<br><br>很多人说 AI 写不好程序，因为 AI 不能完整理解代码库，但实际上在大的软件项目中，程序员只理解自己负责的一小部分代码是常态。<br><br>想象一下，新人去接手一个历史复杂项目，那么他们短时间只可能理解一部分代码，但这并不妨碍他们去维护项目。<br><br>那么以前怎么保证不理解完整代码不会改出问题呢？还得要靠自动化测试来兜底。<br><br>一个好的项目，需要配合好充分的自动化测试覆盖，这样就算新手去修改代码，也不至于把正常运行的系统搞崩溃，毕竟改出问题了自动化测试是无法通过的。<br><br>并且为了防止新人乱改，还会有 Code Review 配合，这本身也是很好的知识传承手段。<br><br>现在让 Agent 干活也是如此，让 Agent 在一个会话上下文中理解整个项目是不现实的，它永远只能部分理解项目，但这并不妨碍 Agent 去修改运行程序。<br><br>要保证 Agent 干活的质量，同样也要通过验证手段兜底，自动化测试是必须的，但也无法过度依赖，因为有些测试可能本身就是有问题的；<br><br>Code Review 现在也很难保证了，毕竟代码量太大了，人根本看不过来，只能是让 AI Review 大部分代码，人只 Review 最重要的部分。<br><br>另外一个有效手段就是让 Agent 自己提供证据，比如我最近最常用的手段就是让 Agent 截图，在开发新功能的时候让它提供新功能截图，修改 bug 的时候提供改之前和改之后的截图对比。<br><br>让 Agent 截图，最近还挖掘出来一个用法：就是让 Agent 自己去模拟 API 响应数据，动态生成各种不同场景的截图，都不需要服务端配合，虽然我还没搞明白它是怎么去模拟的。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sean Goedecke <span style="font-size:12px;color:#999999;font-weight:400;">@sjgoedecke</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在许多软件工程环境中，处于部分理解的状态并没有什么问题。事实上，在大型系统中，部分理解是你能做到的最好的状态。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">In many software engineering environments, there’s nothing wrong with being in a state of partial understanding. In fact, in large systems a partial understanding is the best you can do. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXmYfBTWcAA_Sd2.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXmYfPgWQAA1eYC.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福 Agent Harness 实战作业</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-21 08:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看了不少 Agent 教程，也跟着敲完一个能调工具的小 Demo，真要自己从头搭一个，还是不清楚循环、工具、记忆该怎么拼到一起。<br><br>斯坦福今年秋季开了一门 Engineering AI Agents 课，课号 CS329Z，第一次作业的代码放出来了，题目就是从零搭一套 Agent Harness，也就是包在模型外面负责调工具、跑循环的那层程序。<br><br>作业拿一家公司的邮件存档当素材，先写邮件优先级分类、每日摘要、关键词检索和邮件问答，再把这些接成一个能调工具、跑命令、带记忆的 Agent。<br><br>GitHub：<a href="https://github.com/cs329z/assignment1-harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cs329z/assignment1-harness</a><br><br>测试分两种，一种不调模型，专查空回复、格式错乱、工具报错这些异常处理。另一种真调模型打分，光分类那题就要调 60 次模型，跑一分钟左右。<br><br>最后还有一轮模拟测试，几个预设角色轮流来跟我们的 Agent 对话，看它能不能把事办成。<br><br>每次调用模型都会记账，还能自己设预算上限，循环跑飞了会先停下。<br><br>我觉得这份作业比看一堆教程管用，测试把要求写得很死，哪里没做对一跑就知道。想把 Agent 底层弄明白的，可以照着做一遍。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXm2jacaQAAoDrK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

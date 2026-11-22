@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月19日 08:13">
+<title>AI技术雷达 · 11月19日 08:13 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;OAR统一接入CodingAgent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;SIM解决Harness迁移退化</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;ClaudeCode日代码变更增至3万</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OAR统一接入CodingAgent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aehyok · 2026-11-18 21:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前 Kimi 大佬 @xiaoxxchan  参与的开源项目 OAR<br>已经被 DeepSeek Harness 用上了  <br><br>一句话：它让你的产品用同一套代码，统一调度各种 Coding Agent <br><br> 我再详细说一下，它解决了什么问题  <br><br>假设你想做一个自己的 AI 编程工具，让用户自己随便选：用 Claude Code、Codex，还是 DSH、甚至是 Pi 等等, 这听起来很简单，接进来不就行了？ <br><br>但是真动手的时候就会发现，每家的接口都不台一样： <br>怎么启动不一样<br>参数怎么传不一样<br>对话怎么保存不一样<br>干活过程怎么汇报也不一样 <br><br>接两三个还行，接十几个，光对接Agent的代码可能就比你自己的业务代码还多<br><br>OAR 干的事，就像一个万能转接头<br>各国插座形状都不同，但是有了转接头，你的电器只认一种插头就够了 <br><br>OAR 也一样：Claude Code、Codex、DSH、Pi 各家的差异，它在底下帮你抹平，你只写一套代码，想换哪个 Agent 改个名字就行  <br><br>它自己不做 Agent，只负责把各家 Agent 接到同一个口子上这就是所谓的「适配层」<br><br>开源项目地址：<a href="https://github.com/botiverse/oar" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/botiverse/oar</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXaRgiTbAAE_tW2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">阿蔺A-Lin <span style="font-size:12px;color:#999999;font-weight:400;">@alin_zone</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">怎么让 Muse 查东西更快更全？我给它接了一个外部的检索能力🔥<br><br>我平时很多事都是丢给 Muse 去做的，但让它去查平台里的内容一直不太顺：它得开着浏览器一页页翻，慢，有些数字翻了也拿不到。<br><br>这两天给 Muse 接上了 @Glasserai，拿一个自己真要用的问题实测了一遍，说几个真实感受：<br><br>1、接入｜一句话装好 在 Muse 里发一句官网给的 set up 指令，它自己去读说明、装好，然后给我一个登录链接和授权码，我在浏览器里点批准，它回来告诉我可用余额，就能用了。<br><br>2、接之前｜能查，但慢，字段不全 我写公众号，动笔前想知道同一个选题最近一周别人写了什么、阅读怎么样。先让 Muse 只靠自己去查最近一周公众号里关于&quot;AI Agent&quot;的 10 篇文章，它开着浏览器一篇篇翻，等了快 20 分钟，标题、公众号、日期、链接都有，阅读数一栏是&quot;无&quot;。<br><br>3、报价｜跑之前先算账 同一个问题换成用 Glasser 查。Muse 先列出要调的接口，微信搜索 $0.01 一次，文章阅读数 $0.01 一篇，按最大调用量算上限 $0.22，我确认了才开始。<br><br>4、结果｜1 分多钟出表 搜索一次返回 342 篇，取了前 10 篇，标题、公众号、发布日期、阅读数、原文链接整理成一张表，每一行都标了来源，可以点进去核对。<br><br>5、花费｜每一笔都对得上 实际花了 $0.11，1 次搜索加 10 次阅读数查询，一共 11 笔，每笔 $0.01，余额从 $12.98496 变成 $12.87496。<br><br>同一个问题，等的时间从二十分钟变成一分多钟，原来拿不到的阅读数也有了。<br><br>数据来自 TikHub，按次付费，不用订阅，每一笔扣费都有记录。<br><br>想试的可以用这个链接注册，送 1 美元额度，拿自己的问题跑一次：<a href="https://app.glasser.ai/r/LLAMRH67" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://app.glasser.ai/r/LLAMRH67</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122968347788951552/img/ONdjTw2NmsKiPdfG.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MiniMax提出AI应用中间态</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @whereisvivien · 2026-11-19 01:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这篇文章MiniMax Code team 在尝试回答三个问题：<br>- 为什么多数非 Coding 场景的 AI 使用，仍然难以深入真实的工作场景？<br>- 为什么优秀的工程师在 AI 时代越来越累，同时伴随一部分初级从业者面对工作时退化为「许愿机器」？<br>- 今天的 Agent 倾向于暴露执行过程，为什么这并不会让结果更加可控？<br><br>三个回答指向同一个设计。 <br>AI 原生的应用应当给人一个介于专业软件的白盒与聊天框的黑盒之间的中间态：<br>一个能唤醒意图的工作现场，加上少数几个编辑意图的抓手；同时给 Agent 相反的东西：一个确定性的底座，开放软件全部的原子级操作。<br><br>这是同一个设计的两面。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">HanZJ <span style="font-size:12px;color:#999999;font-weight:400;">@HanZJ_AIPM</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">欢迎大家分享你们的看法 <a href="https://x.com/i/article/2123058335067099137" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2123058335067099137</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Welcome everyone to share your opinion <a href="https://x.com/i/article/2123058335067099137" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2123058335067099137</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SIM解决Harness迁移退化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @akshay_pachaar · 2026-11-18 20:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Google 发表了一篇关于 RSI 的精彩论文。<br><br>（收藏起来）<br><br>递归自我改进（RSI）让优化器 agent 自行改进 agent harness。它读取失败轨迹，编辑提示词、工具和补全检查，并在基准测试中保留得分更高的方案。<br><br>这一直有效，直到底层模型发生变化。一个在 Claude Opus 上演化的 harness，迁移到 Gemini 后，在 Google 测试的每个领域中得分都低于 Gemini 原生的初始 harness。<br><br>当 harness 迁移到新模型时，唯一被保留的是演化后的 harness 代码，也就是说优化器添加的提示词、检查和规则。而每一部分是如何到达那里的记录则被留在了原地，包括它针对的是哪个失败，以及在测试中是否修复了该失败。<br><br>因此，在新模型上工作的优化器继承了一组没有任何原因说明的改动。它最终会重复那些已经失败的实验，或者删除它并不理解的修复方案。<br><br>Google 的解决方案是自我改进记忆（SIM），一份为优化器本身保留的日志。每一条记录是一个反复出现的问题，比如某个 agent 在命令执行完之前就宣布任务完成，而在它之下尝试的每一个修复方案都会存储：<br><br>1. 这次编辑及其背后的推理<br>2. 预测它将修复的任务，在测试之前写下<br>3. 它实际修复的任务，包括失败的情况<br>4. 它在哪个模型和基准测试上被测试<br><br>整个日志每一轮都会进入优化器的提示词中，新的尝试会在优化持续进行时被追加进去。<br><br>论文展示了一个阻止 agent 提前完成的继承检查上使用 SIM 与不使用 SIM 的差异。有了 SIM，优化器读取了该检查存在的原因并对其进行了扩展。<br><br>没有 SIM 时，它重写了同一个检查四次，其中两次是为了修复它自己造成的死锁。<br><br>在从 Opus 迁移到 Gemini 的工作区任务中，使用 SIM 的运行从相同的起始分数出发，提升了大约 3 倍。在 10 次独立的编码运行中，它还在 9 次中率先完成。<br><br>论文地址：<a href="http://arxiv.org/abs/2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://arxiv.org/abs/2611.18856</a><br><br>我还写了一篇关于相关想法的文章，介绍如何让 agent harness 诊断自身的失败。<br><br>它基于 @Cometml 的 Opik 构建，它是 100% 开源的。它超越了读取轨迹日志，去发现失败发生的原因并防止其再次发生。<br><br>那个诊断步骤产生的正是 SIM 所存储的那种根因。<br><br>文章引述如下。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Brilliant paper from Google on RSI.<br><br>(bookmark it)<br><br>Recursive self-improvement (RSI) lets an optimizer agent improve an agent harness on its own. It reads failure traces, edits the prompts, tools and completion checks, and keeps whatever scores better on a benchmark.<br><br>This works until the model underneath changes. A harness evolved on Claude Opus, moved to Gemini, scored below Gemini's plain starting harness in every domain Google tested.<br><br>When the harness moves to a new model, the only thing carried over is the evolved harness code, meaning the prompts, checks and rules the optimizer added. The record of how each piece got there stays behind, including which failure it targeted and whether it fixed that failure when tested.<br><br>So the optimizer working on the new model inherits a set of changes with no reasons attached. It ends up retrying experiments that already failed, or removing fixes it doesn’t understand.<br><br>Google's fix is Self-Improvement Memory (SIM), a log kept for the optimizer itself. Each entry is a recurring problem, like an agent declaring a task done before its commands ran, and every fix attempted under it stores:<br><br>1. The edit and the reasoning behind it<br>2. The tasks it was predicted to fix, written down before testing<br>3. The tasks it actually fixed, failures included<br>4. The model and benchmark it was tested on<br><br>The whole log goes into the optimizer's prompt every round, and new attempts get appended as optimization continues.<br><br>The paper shows the difference on one inherited check that stops the agent from finishing early. With SIM, the optimizer read why the check existed and extended it.<br><br>Without SIM, it rewrote the same check four times, twice to fix deadlocks it had created itself.<br><br>On the Opus-to-Gemini workspace tasks, the run with SIM improved about 3x more from the same starting score. It also finished ahead in 9 of 10 independent coding runs.<br><br>The paper is at <a href="http://arxiv.org/abs/2611.18856" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://arxiv.org/abs/2611.18856</a><br><br>I also wrote an article on a related idea, covering how to make an agent harness diagnose its own failures.<br><br>It's built on @Cometml's Opik, which is 100% open source. It goes beyond reading trace logs to finding why a failure happened and stopping it from recurring.<br><br>That diagnosis step produces the kind of root causes SIM stores.<br><br>The article is quoted below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXaFcMkbcAIyiz0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Akshay 🚀 <span style="font-size:12px;color:#999999;font-weight:400;">@akshay_pachaar</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2063964921495523328" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2063964921495523328</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2063964921495523328" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2063964921495523328</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ClaudeCode日代码变更增至3万</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ecommartinez · 2026-11-19 03:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Anthropic 的一位工程师刚刚承认，AI 检测危险命令的能力已经远远超过人类。<br><br>「只有 14% 的人识别出了一个明显危险的命令。自动模式拦截了 89%。」<br><br>她叫 Lydia Hallie，在 Claude Code 团队工作，她的演讲 Claude Code Best Practices 包含了惊人的数据。<br><br>→ Anthropic 的代码更改量从五月的每天 2,500 次增加到九月的超过 30,000 次。<br>→ 他们的工程师已经变成了数十个自主运行数小时的会话的管理者。<br>→ 一个主会话将任务分配给其他会话，并审查返回的结果。<br>→ 你 CLAUDE.md 里的「IMPORTANT」和「NEVER do this」现在反而会让结果变差。<br><br>程序员不再编写代码，而是指挥编写代码的 agent。<br><br>她给出的你也这样做的一些建议：<br>1. 给 Claude 一个比平常大得多的任务。<br>2. 用规则阻止所有不可逆的操作，比如你的 .env 文件。<br>3. 让你的测试脚本以退出代码 2 结束而不是 1，这样 Claude 就会回来修复故障。<br>4. 让你的 CI 在错误到达你之前就将其捕获。<br><br>「现在我们只负责发起第一个会话，然后审查返回的结果。」<br><br>完整演讲在这里 👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Una ingeniera de Anthropic acaba de admitir que la IA ya detecta los comandos peligrosos mucho mejor que los humanos.<br><br>«Solo el 14% de las personas detectó un comando claramente peligroso. El modo automático bloqueó el 89%.»<br><br>Se llama Lydia Hallie, trabaja en el equipo de Claude Code y su charla Claude Code Best Practices tiene datos brutales.<br><br>→ Anthropic pasó de 2.500 cambios de código al día en mayo a más de 30.000 en septiembre.<br>→ Sus ingenieros se han convertido en managers de decenas de sesiones que trabajan solas durante horas.<br>→ Una sesión principal reparte las tareas a otras sesiones y revisa lo que vuelve.<br>→ Los «IMPORTANTE» y «NUNCA hagas esto» de tu CLAUDE.md ahora empeoran los resultados.<br><br>El programador ya no escribe el código, dirige a los agentes que lo escriben.<br><br>Sus consejos para hacerlo tú también.<br>1. Dale a Claude una tarea mucho más grande de lo habitual.<br>2. Bloquea con reglas todo lo que no se puede deshacer, como tu archivo .env.<br>3. Haz que tus scripts de test terminen con el código de salida 2 y no 1, así Claude vuelve a arreglar el fallo.<br>4. Deja que tu CI atrape los errores antes de que te lleguen a ti.<br><br>«Ya solo estamos aquí para lanzar la primera sesión y revisar lo que sale.»<br><br>La charla completa aquí 👇</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123134747295539200/img/rquCnB9shT8Qdp6Q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>10个仓库入门Harness工程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @imryven · 2026-11-18 21:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我还是不明白为什么还没有人开始使用这个<br><br>Harness 工程是围绕 AI agent 构建工具、上下文、记忆和规则，使其每次都能正常工作。这 10 个免费仓库教你这些：<br><br>-&gt; awesome harness engineering（by ai-boost）<a href="https://github.com/ai-boost/awesome-harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ai-boost/awesome-harness-engineering</a><br>该领域的入口，一份精选的 harness 框架、工具和资源列表<br><br>-&gt; swe agent（by SWE-agent）<a href="https://github.com/SWE-agent/SWE-agent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SWE-agent/SWE-agent</a><br>一个研究用的编码 agent，你可以阅读和修改它的 harness、提示词和工具<br><br>-&gt; opencode（by anomalyco）<a href="https://github.com/anomalyco/opencode" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anomalyco/opencode</a><br>一个支持 75 多个模型提供商的编码 agent，换模型但保留 harness<br><br>-&gt; awesome agent harness（by RUCAIBox）<a href="https://github.com/RUCAIBox/awesome-agent-harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/RUCAIBox/awesome-agent-harness</a><br>一份将 agent harness 分为三层的综述<br><br>-&gt; citadel（by SethGammon）<a href="https://github.com/SethGammon/Citadel" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SethGammon/Citadel</a><br>一个用于 Claude Code 和 Codex 的 harness，具有隔离的工作树、多 agent 协作和持久记忆<br><br>-&gt; swe rex（by SWE-agent）<a href="https://github.com/SWE-agent/SWE-ReX" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SWE-agent/SWE-ReX</a><br>沙盒化的代码执行，让 agent 运行代码而不触及你的机器<br><br>-&gt; flow next（by gmickel）<a href="https://github.com/gmickel/flow-next" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/gmickel/flow-next</a><br>评估前后的对比，以及关于过去 bug、根因和预防规则的记忆<br><br>-&gt; tau bench（by sierra-research）<a href="https://github.com/sierra-research/tau-bench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/sierra-research/tau-bench</a><br>在包含真实工具和策略规则的多轮对话中测试 agent<br><br>-&gt; mcpmark（by eval-sys）<a href="https://github.com/eval-sys/mcpmark" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/eval-sys/mcpmark</a><br>在 GitHub、Postgres 等平台的真实 MCP 任务上对 agent 进行压力测试<br><br>-&gt; agentbench（by THUDM）<a href="https://github.com/THUDM/AgentBench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/THUDM/AgentBench</a><br>跨操作系统、数据库、网页浏览等对 agent 进行基准测试<br><br>模型每个月都在变化<br>一个好的 harness 永远留着</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I still don’t understand why everyone isn’t using this yet<br><br>Harness engineering is building the tools, context, memory and rules around an AI agent so it works every time. These 10 free repos teach it:<br><br>-&gt; awesome harness engineering (by ai-boost) <a href="https://github.com/ai-boost/awesome-harness-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ai-boost/awesome-harness-engineering</a><br>the front door to the field, a curated list of harness frameworks, tools and resources<br><br>-&gt; swe agent (by SWE-agent) <a href="https://github.com/SWE-agent/SWE-agent" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SWE-agent/SWE-agent</a><br>a research coding agent whose harness, prompts and tools you can read and change<br><br>-&gt; opencode (by anomalyco) <a href="https://github.com/anomalyco/opencode" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anomalyco/opencode</a><br>a coding agent that works with 75+ model providers, swap the model and keep the harness<br><br>-&gt; awesome agent harness (by RUCAIBox) <a href="https://github.com/RUCAIBox/awesome-agent-harness" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/RUCAIBox/awesome-agent-harness</a><br>a survey that sorts agent harnesses into three layers<br><br>-&gt; citadel (by SethGammon) <a href="https://github.com/SethGammon/Citadel" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SethGammon/Citadel</a><br>a harness for Claude Code and Codex with isolated worktrees, multi-agent coordination and persistent memory<br><br>-&gt; swe rex (by SWE-agent) <a href="https://github.com/SWE-agent/SWE-ReX" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/SWE-agent/SWE-ReX</a><br>sandboxed code execution, let the agent run code without touching your machine<br><br>-&gt; flow next (by gmickel) <a href="https://github.com/gmickel/flow-next" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/gmickel/flow-next</a><br>before and after eval comparisons, plus a memory of past bugs, root causes and prevention rules<br><br>-&gt; tau bench (by sierra-research) <a href="https://github.com/sierra-research/tau-bench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/sierra-research/tau-bench</a><br>tests agents in multi-turn conversations with real tool and policy rules<br><br>-&gt; mcpmark (by eval-sys) <a href="https://github.com/eval-sys/mcpmark" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/eval-sys/mcpmark</a><br>stress tests agents on real MCP tasks across GitHub, Postgres and more<br><br>-&gt; agentbench (by THUDM) <a href="https://github.com/THUDM/AgentBench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/THUDM/AgentBench</a><br>benchmarks agents across operating systems, databases, web browsing and more<br><br>models change every month<br>a good harness stays</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2123049310702960640/img/P6HjpTM-iMEgyK79.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Ryven <span style="font-size:12px;color:#999999;font-weight:400;">@imryven</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2115042274614599680" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115042274614599680</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2115042274614599680" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2115042274614599680</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

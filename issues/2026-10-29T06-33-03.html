@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月29日 14:32">
+<title>AI技术雷达 · 10月29日 14:32 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;HuggingFace Agent训练指南</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;EvoRouter 自进化路由降本51%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;智元提出Worken机器人计费指标</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;baoyu-design v2 完全开源</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;AI工程评估十五个关键实践方法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;DeepInfer磁盘KV缓存提速26倍</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>HuggingFace Agent训练指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SergioPaniego · 2026-10-28 23:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如何对一个智能体进行后训练？<br><br>我们将其梳理为一个5步课程，从SFT到基于真实框架的RL，每一步都有直播、代码和文档<br><br><a href="https://huggingface.co/blog/huggingface/train-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/huggingface/train-agents</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">how do you post-train an agent?<br><br>we laid it out as a 5-step curriculum, from SFT to RL through a real harness, with livestreams, code and docs for each step<br><br><a href="https://huggingface.co/blog/huggingface/train-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/huggingface/train-agents</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVt74MFWEAAbz5T.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>EvoRouter 自进化路由降本51%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @snwiki238337 · 2026-10-28 14:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">多 agent 系统正式落地到生产环境中的一个问题就是成本与性能的组合问题，很难进行兼容并蓄，要同时兼顾性能、成本、体验多个因素。<br>这篇论文 EvoRouter: Cost-Efficient Multi-Agent Routing via Insight-Guided On-Policy Distillation 讲的就是这个工程问题，提出了一套自进化的多智能体动态路由框架。<br>简单来说的话，过去的 Agent 路由或者编排策略训练，主要的问题是协作模式等的与技能工具的组合是离散且高度相互耦合的。<br>但是常规强化学习只拿最终任务成败和整体 Token 消耗做标量奖励，无法精细化究竟是哪一步决策错了。<br><br>为了破解这种高维决策与粗粒度反馈的错配，EvoRouter 提出了一套自进化闭环。<br>他们在训练阶段引入专门的专家 Agent，定期分析历史探索轨迹的性能-成本，自动提炼出带有明确触发条件的路由。<br>同时特权 agent 将这些不断演化的洞察规则与实际执行反馈相结合，通过在线策略蒸馏，在路由模型自身的规划轨迹上注入密集的 Token 级别细粒度监督信号。<br><br>引入对数缩放的惩罚项。更新后的路由策略生成更优质的轨迹，进一步喂给专家 agent 提取更准的洞察，形成正向自进化飞轮。<br>从实际评测来看，EvoRouter 4B 参数量级的域内平均准确率达到 68.69%，相比目前最强的多智能体路由 baseline提升了 7.23 个百分点。<br><br>在准确率反超的同时，将整体推理算力成本降低了 50.95%。在未见过的域外任务上泛化准确率达 74.67%。<br>GitHub：<a href="https://github.com/CenYangtze/EvoRouter" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CenYangtze/EvoRouter</a><br><br>arxiv：<a href="https://arxiv.org/abs/2610.35690" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2610.35690</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVshRCLaUAAfOM1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>智元提出Worken机器人计费指标</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @404latitude · 2026-10-29 12:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">机器人也开始按工时收费了？<br><br>今天智元创新日公布了一组数字：上半年收入近20亿元，自称期内收入最高的通用AI机器人公司；通用机器人累计下线超2万台，上半年出货9700台，公司口径全球份额超43%。<br><br>更值得留意的是它新提的概念Worken，有效智能工时：活跃机器人数量 × 自主工作时长 × 产出能效比。数字AI按Token算思考量，物理AI要按Worken算行动量，未来机器人服务计划按工时计费。<br><br>落地场景已经铺开：成都宽窄巷子游客服务、龙旗产线上下料、地铁安检引导、珠海长隆文娱表演、酒店服务等。彭志辉还把物理AI的演进画成五次跃迁，从有用的身体一路走到智能自举。<br><br>降温一句：份额有口径差异，IDC口径约35%，机器人是不是真能持续干满工时，还要看落地后的自主时长和产出，不只看下线数字。<br><br>如果机器人真按工时收费，你觉得第一个被按小时雇佣的岗位会是哪个？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pele替代Mermaid渲染提速20倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @timo93782 · 2026-10-28 16:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把站内的 Mermaid 换成了 pele，快了 20 倍，画出来也干净很多。<br><br><a href="https://koimsurai.com/zh-cn/blog/mermaid-to-pele-obsidian-renderer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://koimsurai.com/zh-cn/blog/mermaid-to-pele-obsidian-renderer</a><br><br>English: <a href="https://koimsurai.com/en/blog/mermaid-to-pele-obsidian-renderer" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://koimsurai.com/en/blog/mermaid-to-pele-obsidian-renderer</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVs_kuAa8AA9NS8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>baoyu-design v2 完全开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-10-29 12:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发布 baoyu-design v2，完整的把 Claude Design、Claude Slides 和 Claude Dashboard 移植过来了，和原版体验几乎一致（除了没有评论功能），可以运行在任何 Agent 任何模型，不再依赖于 Claude Artifacts。<br><br>完全开源：<a href="https://github.com/jimliu/baoyu-design" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jimliu/baoyu-design</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2115667422518693888/img/Ew2fWw83XHq4r8Fd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI工程评估十五个关键实践方法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @divaagurlxw · 2026-10-28 20:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">评估（Evals）是AI工程中最被低估的技能。<br><br>1. 从错误分析开始，而不是从指标开始<br>抽样100多条生产链路追踪。用自由文本标注每个失败（开放式编码），然后将它们聚类为失败类别（轴心编码）。统计每个类别的频率。排名前3的类别就是你的第一批指标。<br><br>2. 构建一个版本化的黄金数据集<br>将输入、期望输出或评分标准，以及元数据（意图、难度、用户群体）存储在版本化的数据集中。对其进行分层处理，使罕见但关键的案例不会被简单案例淹没。将其与你的提示词一起进行版本管理，使每次评分都可复现。<br><br>3. 沿显式维度生成合成数据<br>不要只是让LLM生成&quot;测试题&quot;。定义维度（角色×意图×复杂度×边缘情况），将组合作为元组生成，然后将每个元组转化为一个自然输入。这样你得到的是覆盖性，而不是200个近乎相同的样本。<br><br>4. 先用确定性断言<br>JSON schema验证、正则检查、必填字段、长度限制、代码执行、真正能在测试数据库上运行的SQL。这些成本低、速度快、方差为零。把基于模型的评分留给代码确实无法检查的部分。<br><br>5. 分别评估检索与生成<br>对于RAG，用recall@k、MRR或nDCG来衡量检索效果，对标已标注的相关文档块。用忠实度（faithfulness）来衡量生成效果（每个主张是否都有检索到的上下文支撑？）。如果你只给最终答案打分，你就无法判断是哪一半出了问题。<br><br>6. 智能体的轨迹评估<br>记录每一步：工具名称、参数、结果、token。对标参考路径来评估工具调用的精确率和召回率、参数正确性、步数以及错误恢复能力。一个需要14次调用才能得到正确答案、而3次就足够的智能体，就是一个成本和延迟的bug。<br><br>7. pass@k vs pass^k<br>pass@k = 在k次运行中至少成功一次。pass^k = 在k次运行中每次都成功。在每次运行80%成功率的情况下，pass^5会降到大约33%。生产可靠性取决于pass^k，所以请在你实际使用的temperature下对每个案例运行多次。<br><br>8. 用模拟用户做多轮对话评估<br>给一个LLM一个角色、一个隐藏目标和约束条件，然后让它与你的系统对话，直到目标达成或达到轮次上限。评估目标完成度、达到解决的轮次、以及策略违规。单轮评估会漏掉大多数状态和记忆相关的bug。<br><br>9. 像对齐分类器一样对齐你的LLM评审员<br>人工标注100多个样本为通过/不通过。拆分为训练/开发/测试集。用开发集迭代评审员提示词，然后在测试集上报告TPR和TNR。使用二元输出配合书面评分标准，在给出结论前要求先写一段简短的批评，并固定评审模型的版本。<br><br>10. 在两两比较中控制评审员偏差<br>LLM评审员有位置偏差，且通常更偏好更长的回答。每次A/B比较都要用交换顺序运行两遍，只统计一致的结论。如果冗长导致结果偏斜，则对长度进行归一化或设上限。<br><br>11. 尊重统计学<br>100个样本、80%准确率的情况下，你的95%置信区间大约是±8个百分点。从80%跳到83%很可能是噪声。在宣称胜利之前，先用bootstrap置信区间，或在相同样本上做配对检验。<br><br>12. 在CI中设置部署门禁<br>在每个涉及提示词、模型、工具或检索配置的PR上运行评估套件。为每个类别设置阈值，而不是一个全局总分，这样某一个领域的大幅提升不会掩盖另一个领域的回归。出现回归就让构建失败。<br><br>13. 生产环境中的在线评估<br>抽样一定比例的在线流量，异步运行评审器，并针对每个失败类别的漂移发出告警。使用影子部署（shadow deployment）在真实流量上运行新的提示词或模型，而不向用户展示输出结果。<br><br>14. 将成本和延迟作为一级指标<br>在质量旁边追踪每次请求的token数、每个成功任务的成本（而非每次调用的成本）以及p50/p95延迟。一个保持质量不变、同时将成本削减40%的变更就是真正的胜利，值得发布。<br><br>15. 闭环<br>每个生产失败都变成一个新的标注测试用例。每个新模型版本在任何人讨论切换之前，都要先跑完整套评估。随着时间推移，你的评估集会成为代码库中最有价值的资产。<br><br>提示词是用完即弃的。模型每隔几个月就会被替换。<br><br>你的评估基础设施才是会不断复利的东西。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Evals are the most underrated skill in AI engineering.<br><br>1. Start with error analysis, not metrics<br>Sample 100+ production traces. Annotate each failure in free text (open coding), then cluster them into failure categories (axial coding). Count frequency per category. Your top 3 categories are your first metrics.<br><br>2. Build a versioned golden dataset<br>Store inputs, expected outputs or rubrics, and metadata (intent, difficulty, user segment) in a versioned dataset. Stratify it so rare but critical cases aren't drowned out by easy ones. Version it alongside your prompts so every score is reproducible.<br><br>3. Generate synthetic data along explicit dimensions<br>Don't just ask an LLM for &quot;test questions.&quot; Define dimensions (persona × intent × complexity × edge case), generate combinations as tuples, then turn each tuple into a natural input. You get coverage instead of 200 near-identical examples.<br><br>4. Deterministic assertions first<br>JSON schema validation, regex checks, required fields, length limits, code execution, SQL that actually runs against a test DB. These are cheap, fast, and have zero variance. Reserve model-based grading for what code genuinely can't check.<br><br>5. Evaluate retrieval separately from generation<br>For RAG, measure retrieval with recall@k, MRR, or nDCG against labeled relevant chunks. Measure generation with faithfulness (is every claim supported by retrieved context?). If you only score the final answer, you can't tell which half is broken.<br><br>6. Trajectory evals for agents<br>Log every step: tool name, arguments, result, tokens. Score tool-call precision and recall against a reference path, argument correctness, step count, and error recovery. An agent that reaches the right answer in 14 calls when 3 would do is a cost and latency bug.<br><br>7. pass@k vs pass^k<br>pass@k = succeeded at least once in k runs. pass^k = succeeded in all k runs. At 80% per-run success, pass^5 drops to roughly 33%. Production reliability lives in pass^k, so run each case multiple times at your real temperature.<br><br>8. Simulated users for multi-turn<br>Give an LLM a persona, a hidden goal, and constraints, then let it converse with your system until the goal is met or a turn limit hits. Grade goal completion, turns-to-resolution, and policy violations. Single-turn evals miss most state and memory bugs.<br><br>9. Align your LLM judge like a classifier<br>Hand-label 100+ examples as pass/fail. Split into train/dev/test. Iterate on the judge prompt using dev, then report TPR and TNR on test. Use binary outputs with a written rubric, require a short critique before the verdict, and pin the judge model version.<br><br>10. Control judge bias in pairwise comparisons<br>LLM judges have position bias and often prefer longer answers. Run every A/B comparison twice with swapped order and only count consistent verdicts. Normalize or cap length if verbosity is skewing results.<br><br>11. Respect statistics<br>With 100 examples at 80% accuracy, your 95% confidence interval is about ±8 points. A jump from 80% to 83% is probably noise. Use bootstrapped confidence intervals, or a paired test on the same examples, before declaring a win.<br><br>12. Gate deploys in CI<br>Run the eval suite on every PR that touches prompts, models, tools, or retrieval config. Set per-category thresholds instead of one global score, so a big win in one area can't hide a regression in another. Fail the build on a regression.<br><br>13. Online evals in production<br>Sample a percentage of live traffic, run your judges asynchronously, and alert on drift per failure category. Use shadow deployments to run a new prompt or model on real traffic without showing users the output.<br><br>14. Make cost and latency first-class metrics<br>Track tokens per request, cost per successful task (not per call), and p50/p95 latency next to quality. A change that keeps quality flat while cutting cost 40% is a real win and deserves to ship.<br><br>15. Close the loop<br>Every production failure becomes a new labeled test case. Every new model release gets run against the full suite before anyone debates switching. Over time your eval set becomes the most valuable asset in the codebase.<br><br>Prompts are disposable. Models get replaced every few months.<br><br>Your eval infrastructure is what compounds.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepInfer磁盘KV缓存提速26倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-10-28 19:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">DeepSeek又做到了！<br><br>他们刚刚开源了DeepInfer，这是缓存命中时使首token生成速度提升最多达26倍的推理栈。<br><br>当一个请求重复了一个很长的前缀，比如系统提示词或之前的聊天轮次时，服务器可以直接复用已经计算过的KV缓存，而不需要重新运行prefill。<br><br>理想情况下，你会期望这个缓存放在GPU内存中，因为磁盘按理说对请求路径上的任何操作都太慢了。<br><br>但实际上，DeepSeek把它放在了SSD上。<br><br>当DeepSeek推出这个功能时，一个128K token的提示词命中缓存后，首token生成时间从13秒降到了500毫秒。<br><br>而去年某一天的生产流量中，56%的所有输入token直接从磁盘提供服务。<br><br>所以只要你存储的内容足够小、存储带宽足够宽，磁盘在这里就不是瓶颈。<br><br>让我们来理解它是如何工作的。<br><br>1) 为什么要复用KV缓存：<br><br>在生成任何内容之前，LLM会读取整个提示词，并为每一层中每个token计算一个key和一个value。这就是prefill，在长提示词上这是最慢的部分。<br><br>许多请求的开头都是一样的。<br><br>例如，聊天应用每次都会重发所有之前的轮次，或者智能体每次调用都重发相同的系统提示词和工具定义。<br><br>如果这些KV被保存下来，下一个带有相同前缀的请求就能直接加载它们，只计算新token。<br><br>2) 为什么主要使用GPU内存：<br><br>每个token在每一层都要存储KV，所以在一个标准模型上，长提示词的KV缓存会占用好几GB。<br><br>从磁盘读取这么多数据可能比在GPU上重新计算还要慢。<br><br>所以引擎把缓存放在GPU内存中。但GPU内存容量很小，所以旧的前缀很快被逐出，很多重复请求无法命中。<br><br>3) DeepSeek让KV缓存变小了：<br><br>DeepSeek-V2引入了Multi-head Latent Attention（MLA，多头潜在注意力）。<br><br>MLA不是为每个注意力头分别存储独立的KV，而是为每个token在每层存储一个小的压缩向量，然后在注意力计算过程中从这个向量重建key和value。<br><br>在V2论文中，与DeepSeek之前的67B模型相比，这将KV缓存减少了93.3%。<br><br>而MLA将KV缓存缩小到足以存储在低成本磁盘上的程度。<br><br>每个缓存token占用的字节数更少，意味着每次命中需要读取的字节数也更少，这使得从SSD加载比重新计算更快。<br><br>4) 3FS从大量SSD上并行读取：<br><br>单块SSD仍然太慢，所以缓存存储在3FS上，这是DeepSeek自研的分布式文件系统。<br><br>3FS将文件切分成块（chunk），分布到数千块SSD和多个存储节点上。一次读取会从多个磁盘并行拉取块，所以它们的带宽是叠加的。<br><br>当一个请求到达时，系统将其前缀与缓存的块进行匹配，从3FS将这些块加载到主机内存中，并在模型已经在运行的同时逐层拷贝到GPU。<br><br>而且由于每台prefill机器都能访问所有缓存的前缀，请求不必回到上次服务它的那台机器。<br><br>磁盘也很便宜，所以缓存可以保留数天。根据DeepInfer文档，针对智能体流量的缓存前缀保留3天，针对聊天的保留7天。<br><br>当KV缓存足够小、存储带宽足够宽时，磁盘缓存就是可行的。DeepSeek从注意力设计中获得了前者，从3FS中获得了后者。<br><br>从价格上也可以看出来。在今天的deepseek-flash上，一次缓存命中比未命中的成本低50倍。<br><br>如果你使用API，请把提示词中稳定的部分（系统提示词、工具、文档）放在最前面，因为只有从第一个token开始完全匹配才算命中。<br><br>下面的图展示了我们讨论的内容。<br><br>话虽如此，前缀缓存只是LLM服务中的缓存之一。我最近在一篇文章中覆盖了全部四种缓存，并附有每种的代码。<br><br>在下方阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">DeepSeek did it again!<br><br>They just open-sourced DeepInfer, the inference stack behind cache hits that return the first token up to 26x faster.<br><br>When a request repeats a long prefix, like a system prompt or earlier chat turns, the server can reuse the KV cache it already computed instead of running prefill again.<br><br>Ideally, you'd expect that cache to sit in GPU memory, since disk is supposed to be far too slow for anything on the request path.<br><br>In practice, DeepSeek keeps it on SSDs.<br><br>When DeepSeek launched this, a 128K-token prompt that hit the cache got its first token in 500ms instead of 13s.<br><br>And in one day of production traffic last year, 56% of all input tokens were served straight from disk.<br><br>So disk isn't the bottleneck here as long as what you store is small enough, and the storage is wide enough.<br><br>Let's understand how this works.<br><br>1) Why reuse the KV cache at all:<br><br>Before generating anything, an LLM reads the whole prompt and computes a key and a value for every token in every layer. This is prefill, and on long prompts it's the slow part.<br><br>Many requests start the same way.<br><br>For instance, a chat resends every earlier turn or an agent resends the same system prompt and tool definitions on every call.<br><br>If those KV are saved, the next request with the same prefix loads them and only computes the new tokens.<br><br>2) Why GPU memory is predominantly used:<br><br>Every token stores KV in every layer, so on a standard model a long prompt's KV cache runs into many GBs.<br><br>Reading that much from disk can take longer than recomputing it on the GPU.<br><br>So engines keep it in GPU memory. But GPU memory is small, so old prefixes get evicted fast and many repeats miss.<br><br>3) DeepSeek made the KV cache small:<br><br>DeepSeek-V2 introduced Multi-head Latent Attention (MLA).<br><br>Instead of storing separate KV for every attention head, MLA stores one small compressed vector per token per layer, and the keys and values are rebuilt from it during attention.<br><br>In the V2 paper, this cut the KV cache by 93.3% compared to DeepSeek's earlier 67B model.<br><br>And MLA shrank the KV cache enough to store it on low-cost disks.<br><br>Fewer bytes per cached token implied fewer bytes to read on every hit, and it made loading from SSD faster than recomputing.<br><br>4) 3FS reads it from many SSDs at once:<br><br>One SSD would still be too slow, so the cache lives on 3FS, DeepSeek's own distributed file system.<br><br>3FS splits files into chunks and spreads them across thousands of SSDs on many storage nodes. A read pulls chunks from many drives in parallel, so their bandwidth adds up.<br><br>When a request arrives, the system matches its prefix against cached blocks, fetches those blocks from 3FS into host memory, and copies them to the GPU layer by layer while the model is already running.<br><br>And since every prefill machine can reach every cached prefix, a request doesn't have to go back to the machine that served it last.<br><br>Disk is also cheap, so the cache can stay for days. As per the DeepInfer docs, cached prefixes are retained for 3 days for agent traffic and 7 days for chat.<br><br>Disk caching works when the KV cache is small, and the storage is wide. DeepSeek got the first from its attention design and the second from 3FS.<br><br>This is also evident from the price. On deepseek-flash today, a cache hit costs 50x less than a miss.<br><br>If you use the API, keep the stable parts of your prompt (system prompt, tools, documents) at the front, since only an exact match from the very first token counts as a hit.<br><br>The visual below depicts what we discussed.<br><br>That said, prefix caching is only one of the caches in LLM serving. I covered all four in an article recently, with code for each.<br><br>Read it below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/tweet_video_thumb/HVtpnOBbgAAOT6v.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2093210840468189184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2093210840468189184</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2093210840468189184" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2093210840468189184</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

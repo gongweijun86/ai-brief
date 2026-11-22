@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月18日 08:30">
+<title>AI技术雷达 · 11月18日 08:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent-as-a-Judge长程评测</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Claude Code 六层Harness</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Harness工程使任务通过率翻倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Meta RAM 自改进记忆入权重</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;OpenAI GPT-6.2 双模型发布</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent-as-a-Judge长程评测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @JudgmentLabs · 2026-11-18 04:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Agent-as-a-Judge：评估超过 1M token 的长周期 agent。<br><br>我们超过 20% 的轨迹超过 1M token，最大的超过 1B+；对 LLM 评审来说太长了。超过 1M 之后，agent 评审在成本低 62% 的情况下，F1 得分比分块 LLM 评审高 0.21。<a href="https://x.com/i/article/2122744513387220992" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122744513387220992</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing Agent-as-a-Judge: evaluating long-horizon agents beyond 1M tokens.<br><br>20%+ of our trajectories exceed 1M tokens, the largest 1B+; too long for an LLM judge. Past 1M, agent judge scored 0.21 higher F1 at 62% lower cost than chunked LLM judges. <a href="https://x.com/i/article/2122744513387220992" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122744513387220992</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code 六层Harness</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xTrackmind · 2026-11-18 03:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇 harness 论文真是金矿<br><br>Anthropic 的工程师们揭示了 Claude Code 真正好用的原因。剧透：不是模型。<br><br>秘密在于：harness。这就是全部差距所在。<br><br>prompt 工程 → 上下文工程 → harness 工程。<br><br>harness 的 6 层：<br><br>第 1 层 → 工具<br><br>更少的工具，每个只干一件事。<br>每次报错都会告诉 agent 下一步该试什么。<br><br>第 2 层 → 上下文<br><br>精简的 CLAUDE.md → 按需加载文件 → 满了就压缩。<br><br>第 3 层 → 权限<br><br>读取 + 测试 → 自动。<br>部署 + 删除 → 问人。<br>一切 → 沙箱。<br><br>第 4 层 → 钩子<br><br>工具运行前 → 拦截机密和受保护文件。<br>每次编辑后 → 格式化、lint、类型检查。没有例外。<br><br>第 5 层 → 验证<br><br>全新的评审者读 diff，不读摘要 → 跑测试 → 失败？修 → 重跑。<br><br>第 6 层 → 评估<br><br>每次 harness 变更都打分 → 成功率、token 数、轮数 → 留下胜出的。<br><br>模型是引擎。harness 是整辆车。<br><br>他们甚至把这 6 层打包成了一个 prompt。粘贴到 Claude Code 里，它就替你完成 harness 工程。<br><br>6 层。1 个 prompt。0 个无限循环。<br><br>完整解析见下方 Harness Engineering 指南 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">this harness paper is f*cking gold<br><br>Anthropic engineers revealed what actually makes Claude Code work so well. spoiler: it's not the model.<br><br>the secret: the harness. that's the whole gap.<br><br>prompt engineering → context engineering → harness engineering.<br><br>the 6 layers of the harness:<br><br>layer 1 → tools<br><br>fewer tools, one job each.<br>every error tells the agent what to try next.<br><br>layer 2 → context<br><br>short CLAUDE.md → files on demand → compaction when it fills up.<br><br>layer 3 → permissions<br><br>reads + tests → auto.<br>deploys + deletes → ask a human.<br>everything → sandbox.<br><br>layer 4 → hooks<br><br>before a tool runs → block secrets and protected files.<br>after every edit → format, lint, typecheck. no exceptions.<br><br>layer 5 → verification<br><br>fresh reviewer reads the diff, not the summary → runs the tests → fail? fix → rerun.<br><br>layer 6 → evals<br><br>every harness change scored → success, tokens, turns → keep what wins.<br><br>the model is the engine. the harness is the whole car.<br><br>they even packed all 6 layers into one prompt. paste it into Claude Code and it engineers the harness for you.<br><br>6 layers. 1 prompt. 0 infinite loops.<br><br>full breakdown in the Harness Engineering guide below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXWVgXYXQAM1UIJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Trackmind <span style="font-size:12px;color:#999999;font-weight:400;">@0xTrackmind</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2113375170392203264" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2113375170392203264</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2113375170392203264" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2113375170392203264</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>麦田开源多平台自媒体运营</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @liyue_ai · 2026-11-17 10:44</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，这套自媒体运营系统完全就是企业级别，这人居然开源了？这是要卷死同行的节奏🤯<br><br>1⃣项目把每个平台每天的内容数据都进行了可视化。<br><br>2⃣哪个平台涨粉快，哪个平台转化好，都能一眼看出来，特别适合多平台运营的用户。<br><br>3⃣还贴心的配备了发布助手插件，多个平台快速上传，你只需要去点下发布。<br><br>项目地址：<a href="https://github.com/CzzzzzzJ/mdldm-maitian" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/CzzzzzzJ/mdldm-maitian</a><br>插件助手：<a href="https://chromewebstore.google.com/detail/%E9%BA%A6%E7%94%B0%E5%8F%91%E5%B8%83%E5%8A%A9%E6%89%8B/eaaipbilkhibicihiollecmbpneikpnj" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://chromewebstore.google.com/detail/%E9%BA%A6%E7%94%B0%E5%8F%91%E5%B8%83%E5%8A%A9%E6%89%8B/eaaipbilkhibicihiollecmbpneikpnj</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSzxF1aQAAh9Yh.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">麦当mdldm <span style="font-size:12px;color:#999999;font-weight:400;">@czzzzzzJ_</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2121892496200343552" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2121892496200343552</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2121892496200343552" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2121892496200343552</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Harness工程使任务通过率翻倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AnnatarXBT · 2026-11-17 14:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">相同的模型、相同的 prompt、相同的 20 个真实任务。只有 harness 变了<br><br>Opus 5.5 配裸 prompt：20 个任务中 8 个无需修改即通过<br>Opus 5.5 加一个周末的 harness 工作：16/20<br><br>&gt; 失控重试循环：5 → 0<br>&gt; 每个通过任务的成本：约 $4.10 → $1.60<br>&gt; 每天人工看护时间：约 2 小时 → 25 分钟<br><br>他加了什么：每个任务一行&quot;完成条件&quot;、一个 40 行的地图文件、一个测试门槛、重试上限三次，以及一份规定 agent 可以触碰哪些东西的规则文件<br><br>更长的 prompt 只能修好五层中的一层。围绕 Fable 5.2 构建的其余四层，在下方指南中：</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">same model, same prompt, same 20 real tasks. only the harness changed<br><br>Opus 5.5 with a bare prompt: 8 of 20 tasks accepted without edits<br>Opus 5.5 plus one weekend of harness work: 16 of 20<br><br>&gt; runaway retry loops: 5 -&gt; 0<br>&gt; cost per accepted task: about $4.10 -&gt; $1.60<br>&gt; babysitting per day: about 2 hours -&gt; 25 minutes<br><br>what he added: a &quot;done when&quot; line per task, a 40-line map file, a test gate, a retry cap of three and a rule file for what the agent may touch<br><br>a longer prompt fixes one of the five layers. the other four, built around Fable 5.2, are in the guide below:</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121095625009758208/img/JHK_MgN1DUvvllkO.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Annatar.md <span style="font-size:12px;color:#999999;font-weight:400;">@AnnatarXBT</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Claude Fable 5.2 + jev 工程的完整 harness 指南<br><br>一个晚上学完这个，Claude 就能干一个小型开发团队的活<br><br>不需要 $550/月的课程：<a href="https://x.com/i/article/2120740198405357568" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120740198405357568</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">full harness guide for Claude Fable 5.2 + jev engineering<br><br>one evening with this and Claude does the work of a small dev team<br><br>no $550/month course needed: <a href="https://x.com/i/article/2120740198405357568" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120740198405357568</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Meta RAM 自改进记忆入权重</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jaseweston · 2026-11-17 22:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出：自我改进记忆 🧠✨📈<br><br>我们让模型自行发现记忆技能，然后将这些技能训练进权重：<br><br>- 从模型自身的运行中元优化记忆，获得大幅提升。<br>- 蒸馏这些提升同样有效。<br><br>博客文章：📝 <a href="https://facebookresearch.github.io/RAM/blogs/self_improving_memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://facebookresearch.github.io/RAM/blogs/self_improving_memory</a><br>🧵1/6 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing: Self-Improving Memory 🧠✨📈<br><br>We let the model discover its own memory skills, then train them into its weights:<br><br>- Meta-optimizes memory from the model's own runs with large gains.<br>- Distilling these gains works too.<br><br>Blog post: 📝 <a href="https://facebookresearch.github.io/RAM/blogs/self_improving_memory" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://facebookresearch.github.io/RAM/blogs/self_improving_memory</a><br>🧵1/6 </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXVN7y8WsAAp9Kd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI GPT-6.2 双模型发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-11-18 07:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">OpenAI 发布了 GPT-6.2 Astra 和 Sol。Astra 面向更难的项目，Sol 面向日常工作，官方称两者都更省输出 token，同样额度能多干一些活。<br><br>先看官方评测口径。Astra 在多步专业工作基准 Agents’ Last Exam 上比 GPT-6 Astra 高 5.2 分，单任务成本不到三分之一；在 Terminal-Bench-Science 0.1 上高 9 个百分点，成本同样不到三分之一。Sol 在 Cognition 的 FrontierCode 2.0 上，分数只比 Astra 低 0.5 分，成本大约是五分之一。这些都是指定评测里的结果，不代表所有任务。<br><br>即日起可在 ChatGPT Work 和 Codex 里用，面向 Plus、Pro、企业版和教育版，后两档需管理员开通。Pro 500 两个模型都有 Ultrafast；Pro 200 第一次能用上 Sol 的 Ultrafast。开发者也可在 API 调用 gpt-6.2-astra 和 gpt-6.2-sol，Astra 的输入和输出价格比上一代低 20%。<br><br>官方同时称，Astra 是他们迄今最强的网络安全能力版本，并为此加了更严的高风险协助限制。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2122746240823943168/img/osC4AgQC_BfZl2EH.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

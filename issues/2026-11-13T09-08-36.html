@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月13日 17:08">
+<title>AI技术雷达 · 11月13日 17:08 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Seedream 5.5 可编辑图层100层</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Agent 查询租户隔离移入网关</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Pawel Huryn 开源44个产品Skill</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Claude 托管 Agent 支持私有化部署</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Agent 超时重试需幂等键与状态核对</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Seedream 5.5 可编辑图层100层</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @BytePlusGlobal · 2026-11-12 16:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">探索 Seedream 5.5：支持最多 100 个可编辑图层，相比 Seedream 5.0 Pro 的 16 个有所提升。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Explore Seedream 5.5: up to 100 editable layers, up from 16 in Seedream 5.0 Pro.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi 用 Skill 调度多 Agent 通信</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @9hills · 2026-11-13 16:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">发现Pi因为太简单反而挺适合当Commander Agent的。我写了个简单的Skill，在herdr app中你只需要让Commander 打开这个skill，就可以控制多 Agent 而且可以方便的进行 Agent 通信和控制。<br><br><a href="https://gist.github.com/ninehills/eef70810238f779362a820786ae4a096" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://gist.github.com/ninehills/eef70810238f779362a820786ae4a096</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW_YaGEaMAAnGgT.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 查询租户隔离移入网关</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-13 16:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">听做数据平台的负责人讲，一次查询漏了租户字段。<br><br>他们给几个客户共用一个查询服务，AI 生成的取数 SQL 本地跑两百次都顺，谁都没多想。<br><br>上线第三天做月度汇总，Agent 拼条件时漏了 tenant_id，一次把三个客户的明细扫进同一张结果表，下游日报跟着串了数。<br><br>他后来给我看监控：「平时两分钟的活，那天跑了四十分钟，还是客户先发现报表里多了别家的名字。」<br><br>权限条件只写在 Prompt 里，执行层没做强制拼接，模型一偷懒就整段漏掉。后来把租户条件挪进查询网关，另加一道结果集校验。省下的半天，赔进去一晚排查加一次客户说明。<br><br>你们让 Agent 拼查询条件，租户隔离是写在提示词里，还是压在执行层？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pawel Huryn 开源44个产品Skill</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Ryrenz · 2026-11-13 16:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🧰 前 CPO Pawel Huryn 把自己做三款线上产品踩出来的经验，整理成了 44 个 Skill：product-engineering，Claude Code、Codex、Cursor 都能装。<br><br>Pawel Huryn 的 GitHub 主页写着“AI PM Coach, ex-CPO”，product-engineering 来自 The Product Compass。仓库 10 月底才建，已经七十个 fork，fork 和 star 的比例超过一成。<br><br>以前让 AI 写产品，常见的情况是：需求没想清楚就开写，写完自己审自己，上线前也没人把关，问题全留到用户那里才暴露。<br><br>product-engineering 把一个产品从“要不要做”到“上线运营”拆成六个包，大部分 Skill 会在你干到对应的活时自动启动。最有意思的一条规矩：每次推送部署前，要交给一个没参与过构建的新评审者看一遍，默认是 Grok，没有就开一个全新的 Claude Code 会话，自己写的代码不许自己审。<br><br>44 个 Skill 里有 28 个来自真实产品实践，案例就是他自己的三款产品：实时问答投票 AskOne、应用监控 Staygreen，还有用手机遥控编码 agent 的 AFK Pilot。MIT 许可，免费用。<br><br>做产品的老经验，现在直接装进 AI 里了。<br><br>GitHub：<a href="https://github.com/phuryn/product-engineering" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/phuryn/product-engineering</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude 托管 Agent 支持私有化部署</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @waylybaye · 2026-11-13 11:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">哇完全没想到 Claude 会出 self-hosted managed agents 方案。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">自托管的 Claude Managed Agents 现已进入私密测试阶段。<br><br>你可以将 agent harness、沙盒和会话历史托管在你自己的云端或本地环境中，并选择将发送到 Claude 的请求路由到何处。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Self-hosted Claude Managed Agents is now in private beta.<br><br>You can host the agent harness, sandboxes, and session history, in your own cloud or on-premises, and choose where requests to Claude are sent. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW8VZz7bgAAnGFL.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 超时重试需幂等键与状态核对</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-13 15:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给准备把 Agent 接进数据中台的团队一句实在话：先写清失败重试的边界。<br><br>我见过最险的一次，是工具调用超时之后 Agent 自己又发了一次 Schema 变更。上一轮到底成没成，它并不知道，只是按「超时就重试」继续跑。<br><br>带教的 TL 当时说了句：「模型这轮说完成了，可元数据里那张表到底建没建，谁也没查。」<br><br>问题不在模型，在写操作没幂等键，也没先查执行状态就重放。建表、改字段、发告警这类动作，重放一次就是两份真实后果，事后清元数据和修血缘的成本翻了一倍。<br><br>先把幂等键和状态核对放进去，再谈要不要换框架，这一层换了框架照样得自己写。<br><br>你们的 Agent 遇到超时但结果未知，是先重试，还是先查一次执行状态？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>欧拉讲题实时生成动画讲解</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaohu · 2026-11-13 15:13</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">学生家长的救星来了<br>刷到个网易新推出的AI教育产品：欧拉讲题<br><br>我测试了下，果然有点牛P，能实时生成讲题动画过程啊，边讲边画动画<br><br>你还能实时互动<br><br>曾经几何题我最烦的就是：过 A 点作一条辅助线<br><br>线我会画，但怎么想到往这儿画的？😂<br><br>讲到辅助线这一步，你可以打断它，问「为什么要画成平行的？」让它接着在图上讲：哪些角因此相等，又怎么用这些角找出相似三角形。<br><br>我觉得有意思的是，它会先规划怎么讲这道题，再把讲解变成板书、图形、动画和语音的指令。说到哪个角，图上就标到哪个角；你卡在哪一步，它就从那一步接着讲。<br><br>家里有孩子的，你再也不用抓耳挠腮了...</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2121139129933348864/img/t5lK228IqVewoW1b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

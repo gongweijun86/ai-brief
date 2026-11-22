@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月17日 14:22">
+<title>AI技术雷达 · 11月17日 14:22 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;ElevenLabs 一句话转实时语音</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Agent 授权提示词校验执行权限</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;EvoX Harness 适配因模型而异</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Agent 用执行 Trace 回放排障</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Code-Graph-RAG 图谱查代码</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ElevenLabs 一句话转实时语音</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ElevenLabsDevs · 2026-05-23 04:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">用一条提示词，把你现有的聊天 agent 变成一个实时语音 agent。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Turn your existing chat agent into a real-time voice agent with one prompt.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>业务 Agent 的本体论只需业务建模</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @9hills · 2026-11-17 13:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">研究了一段时间本体论，实际上在做业务智能体的时候，本体论你只需要懂一点点就行了，别的都是概念。<br><br>我理解核心就是对业务建模，从而让 Agent 能够理解业务术语和逻辑，理解后，不管是生成 SQL、RAG问答还是执行业务规则都在业务逻辑内。<br><br>学习可以从 <a href="https://microsoft.github.io/Ontology-Playground/#/learn" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://microsoft.github.io/Ontology-Playground/#/learn</a> 开始。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 授权提示词校验执行权限</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xChonsy · 2026-11-17 07:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我*了<br><br>SpaceX AI 工程师 Lauren Tan 分享了她让 agent 工作与团队决策保持一致的方法：<br><br>把下面这段粘贴到你的 agent 里，用来根据权限验证操作<br><br>提示词：<br><br>request.bind {<br>origin := [SLACK_THREAD]<br>requester := [REQUESTER]<br>repo := [REPO]<br>goal := [TASK]<br>acceptance := [OBSERVABLE_RESULT]<br>grants := [EXISTING_AUTHORIZATIONS]<br>paths := [PERMITTED_EDIT_PATHS]<br>stop_when := [LIMIT_OR_BLOCKER]<br>}<br><br>authority.resolve {<br>IDENTIFY 从授权上下文中识别 requester<br>READ 读取仓库规则和源线程决策<br>RESOLVE 解析允许的操作、目标和所需审批<br>CHECK 检查宿主工具和实际访问权限<br>KEEP 使未解决的权限保持显式<br><br>ASSERT 理解 != 授权<br>ASSERT 通过检查 != 发布审批<br>REUSE 复用现有授权而不再次请求<br>}<br><br>action.inspect {<br>verb := [PROPOSED_ACTION]<br>target := [FILE_SERVICE_OR_RESOURCE]<br>effect := [EXPECTED_STATE_CHANGE]<br>authority := [SUPPORTING_GRANT]<br>source := [REQUEST_OR_DECISION_LINK]<br>}<br><br>action.route {<br>ALLOW 当以下条件满足时：<br>请求者的权限覆盖该操作<br>目标和效果保持在范围内<br>所需的工具和访问权限可用<br>适用的审批条件已满足<br><br>CLARIFY 当以下情况时：<br>目标或验收标准模糊<br>指令相互冲突<br>缺失的上下文会改变正确的操作<br>可用的已授权来源无法解决该问题<br><br>ESCALATE 当以下情况时：<br>需要额外的权限或访问<br>敏感基础设施、数据库或部署工作缺乏审批<br>变更扩展为不相关的设计重构<br>产品或发布决策仍未解决<br>}<br><br>context.sync {<br>ASSIGN 指定一个负责的任务所有者<br>ATTACH 附加线程链接、仓库约束和验收检查<br>COORDINATE 在并行编辑前协调共享文件<br>REFRESH 当团队反馈改变任务时更新简报<br>RETAIN 保留支持每次范围变更的消息<br>REASSESS 重新评估受修订需求影响的检查<br>}<br><br>worker.cycle {<br>PIN baseline.commit<br>PIN baseline.worktree_diff<br>SAVE 保存复现输入、环境设置和预期结果<br>PRESERVE 保留不相关的变更和回滚路径<br><br>READ 阅读相关实现<br>TRACE 追踪调用和数据流<br>SEPARATE 将观察与假设分开<br>REPRODUCE 在选择修正方案前先复现<br>PATCH 打上一个逻辑上内聚的补丁<br>RUN 运行实际应用<br>REPLAY 重放受影响的场景<br>INSPECT 检查输出、错误和产生的状态<br><br>ON 不匹配 -&gt; 诊断原因 -&gt; 修正 -&gt; 重放<br>ON 缺少前置条件 -&gt; 记录阻碍因素和下一步操作<br>ON 命中停止条件 -&gt; 停止并返回收集到的证据<br><br>CLEAN 只清理本次运行创建的资源<br>KEEP 保留证据产物<br>}<br><br>proof.match {<br>build -&gt; 编译器和构建输出<br>behavior -&gt; 执行的用户路径和观察到的结果<br>performance -&gt; 等效的基线和候选配置文件<br>quality -&gt; 类型、lint、依赖检查和相关测试<br>intended_flow -&gt; 状态图与实际执行行为的对比<br>acceptance -&gt; 团队针对所请求的产品结果进行评审<br><br>CONTROL 控制配置文件构建、输入、工作负载和缓存状态<br>CAPTURE 为交互和时序变化录制记录或追踪<br>USE 使用截图记录可见状态<br><br>ASSERT 导入分析建立的是边界，而非执行时间<br>ASSERT 录制覆盖了所演示的场景<br>ASSERT 测试建立的是实际被检查的属性<br>ASSERT 技能需要可用的工具和正常工作的流程<br>}<br><br>check.record {<br>requirement := [ACCEPTANCE_ITEM]<br>commit := [TESTED_COMMIT]<br>worktree := [TESTED_DIFF]<br>environment := [BUILD_AND_REQUIRED_STATE]<br>execution := [COMMAND_OR_ACTIONS]<br>expected := [REQUIRED_OBSERVATION]<br>observed := [ACTUAL_RESULT]<br>exit_code := [VALUE_IF_APPLICABLE]<br>artifacts := [EVIDENCE_PATHS]<br>status := PASS | FAIL | NOT_RUN<br>blocker := [MISSING_PREREQUISITE_IF_ANY]<br>}<br><br>result.route {<br>PASS -&gt; 保留当前证据并准备所需的评审<br>FAIL -&gt; 修正已证实的原因并重新运行受影响的检查<br>NOT_RUN -&gt; 说明前置条件、责任人和下一步操作<br><br>ON 代码或环境变更时：<br>REASSESS 重新评估先前的证据<br>RERUN 重新运行假设或依赖项已变更的检查<br><br>ASSERT evidence.commit == returned.commit<br>ASSERT evidence.worktree == returned.worktree<br>}<br><br>repository.maintain {<br>FIND 找出重复的修正和过时的实现示例<br>ENCODE 将稳定需求编码到 API 或自动化检查中<br>MAKE 让诊断信息能识别违规行为和支持的恢复方式<br>VERIFY 验证该约束能捕获原始失败<br>VERIFY 验证允许的行为仍然成功<br>MIGRATE 迁移过时的示例<br>PRESERVE 保留有用的设计理由<br>AVOID 避免由宽泛的模型批评驱动的不相关重构<br>}<br><br>return to_thread {<br>revision := 已测试的提交和工作区状态<br>change := 内聚的 diff 或 PR<br>checks := 各项结果和执行记录<br>artifacts := 截图、录制、日志和追踪<br>limits := 未覆盖的用例、阻碍因素和不确定性<br>decisions := 未解决的产品或发布问题<br>next_action := 责任人和所需的操作<br><br>RETURN 将结果返回到原始线程<br>SEND 仅在该操作被授权时发送消息<br>FOLLOW 遵循仓库的评审和合并策略<br>}<br><br>autonomy.expand {<br>REQUIRE 在更广泛的委派前要求可重复的验证<br>DEFINE 定义权限、隔离和停止条件<br>KEEP 保留决策日志和回滚选项<br>EXPAND 仅在批准的权限范围内扩展<br>}</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">holy sh*t<br><br>SpaceXAI engineer Lauren Tan shared her method for keeping agent work tied to team decisions:<br><br>paste this into your agent to validate actions against permissions<br><br>Prompt:<br><br>request.bind {<br>origin := [SLACK_THREAD]<br>requester := [REQUESTER]<br>repo := [REPO]<br>goal := [TASK]<br>acceptance := [OBSERVABLE_RESULT]<br>grants := [EXISTING_AUTHORIZATIONS]<br>paths := [PERMITTED_EDIT_PATHS]<br>stop_when := [LIMIT_OR_BLOCKER]<br>}<br><br>authority.resolve {<br>IDENTIFY requester from authorized context<br>READ repository rules and source-thread decisions<br>RESOLVE permitted actions, targets and required approvals<br>CHECK host tools and actual access<br>KEEP unresolved authority explicit<br><br>ASSERT understanding != authorization<br>ASSERT passing_checks != release_approval<br>REUSE existing grants without asking for them again<br>}<br><br>action.inspect {<br>verb := [PROPOSED_ACTION]<br>target := [FILE_SERVICE_OR_RESOURCE]<br>effect := [EXPECTED_STATE_CHANGE]<br>authority := [SUPPORTING_GRANT]<br>source := [REQUEST_OR_DECISION_LINK]<br>}<br><br>action.route {<br>ALLOW when:<br>requester authority covers the action<br>target and effects remain within scope<br>required tools and access are available<br>applicable approval conditions are satisfied<br><br>CLARIFY when:<br>goal or acceptance is ambiguous<br>instructions conflict<br>missing context changes the correct action<br>available authorized sources cannot resolve the question<br><br>ESCALATE when:<br>additional permission or access is required<br>sensitive infrastructure, database or deployment work lacks approval<br>the change expands into an unrelated redesign<br>a product or release decision remains unresolved<br>}<br><br>context.sync {<br>ASSIGN one accountable task owner<br>ATTACH thread links, repo constraints and acceptance checks<br>COORDINATE shared files before parallel edits<br>REFRESH the brief when team feedback changes the task<br>RETAIN the message supporting each scope change<br>REASSESS checks affected by revised requirements<br>}<br><br>worker.cycle {<br>PIN baseline.commit<br>PIN baseline.worktree_diff<br>SAVE reproduction inputs, setup and expected result<br>PRESERVE unrelated changes and a rollback path<br><br>READ relevant implementation<br>TRACE calls and data flow<br>SEPARATE observations from hypotheses<br>REPRODUCE before selecting a correction<br>PATCH one logically cohesive change<br>RUN the actual application<br>REPLAY the affected scenario<br>INSPECT outputs, errors and resulting state<br><br>ON mismatch -&gt; diagnose cause -&gt; correct -&gt; replay<br>ON missing prerequisite -&gt; record blocker and next action<br>ON stop condition -&gt; halt and return collected evidence<br><br>CLEAN only resources created by this run<br>KEEP evidence artifacts<br>}<br><br>proof.match {<br>build -&gt; compiler and build output<br>behavior -&gt; executed user journey and observed result<br>performance -&gt; equivalent baseline and candidate profiles<br>quality -&gt; types, lint, dependency checks and relevant tests<br>intended_flow -&gt; statechart compared with exercised behavior<br>acceptance -&gt; team review against the requested product outcome<br><br>CONTROL profile build, input, workload and cache state<br>CAPTURE recordings or traces for interaction and timing changes<br>USE screenshots to document visible states<br><br>ASSERT import analysis establishes boundaries, not execution time<br>ASSERT a recording covers the demonstrated scenario<br>ASSERT tests establish the properties actually checked<br>ASSERT skills require available tools and working procedures<br>}<br><br>check.record {<br>requirement := [ACCEPTANCE_ITEM]<br>commit := [TESTED_COMMIT]<br>worktree := [TESTED_DIFF]<br>environment := [BUILD_AND_REQUIRED_STATE]<br>execution := [COMMAND_OR_ACTIONS]<br>expected := [REQUIRED_OBSERVATION]<br>observed := [ACTUAL_RESULT]<br>exit_code := [VALUE_IF_APPLICABLE]<br>artifacts := [EVIDENCE_PATHS]<br>status := PASS | FAIL | NOT_RUN<br>blocker := [MISSING_PREREQUISITE_IF_ANY]<br>}<br><br>result.route {<br>PASS -&gt; retain current evidence and prepare required review<br>FAIL -&gt; correct the demonstrated cause and rerun affected checks<br>NOT_RUN -&gt; name the prerequisite, responsible owner and next action<br><br>ON code or environment change:<br>REASSESS prior evidence<br>RERUN checks whose assumptions or dependencies changed<br><br>ASSERT evidence.commit == returned.commit<br>ASSERT evidence.worktree == returned.worktree<br>}<br><br>repository.maintain {<br>FIND repeated corrections and obsolete implementation examples<br>ENCODE stable requirements in APIs or automated checks<br>MAKE diagnostics identify the violation and supported recovery<br>VERIFY the constraint catches the original failure<br>VERIFY permitted behavior still succeeds<br>MIGRATE obsolete examples<br>PRESERVE useful design rationale<br>AVOID unrelated redesign driven by broad model critique<br>}<br><br>return to_thread {<br>revision := tested commit and worktree state<br>change := cohesive diff or PR<br>checks := individual results and execution records<br>artifacts := screenshots, recordings, logs and traces<br>limits := uncovered cases, blockers and uncertainty<br>decisions := unresolved product or release questions<br>next_action := responsible owner and required action<br><br>RETURN the result for the original thread<br>SEND messages only when that action is authorized<br>FOLLOW repository review and merge policy<br>}<br><br>autonomy.expand {<br>REQUIRE repeatable verification before broader delegation<br>DEFINE permissions, isolation and stop conditions<br>KEEP a decision log and rollback options<br>EXPAND only within approved authority<br>}</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXSFIXQWEAA4Rjx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Chonsy <span style="font-size:12px;color:#999999;font-weight:400;">@0xChonsy</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Grok Bot + Opus 5.5 可以为你的 GitHub 仓库创建一个 agent 团队<br><br>一个主导 bot 分配工作、委派有范围的任务，并收集附带验证结果的 PR<br><br>在这篇文章中，我展示了如何使用 Lauren Tan 的方法来构建这个设置：<a href="https://x.com/i/article/2114725694865395712" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2114725694865395712</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Grok Bot + Opus 5.5 can create an agent team for your GitHub repo<br><br>One lead bot splits the work, delegates scoped tasks and collects PRs with verification results attached<br><br>In this article, I show you how to build this setup using Lauren Tan’s method: <a href="https://x.com/i/article/2114725694865395712" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2114725694865395712</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>EvoX Harness 适配因模型而异</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Xudong07452910 · 2026-11-17 11:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">六套 Agent Harness 的整体评测，第一名和第二名只差 0.3 个百分点。可一旦按底层模型拆开，几乎每个模型的第一名都不一样<br><br>EvoMap 的新论文《EvoX》讨论的就是这件事：Harness 和模型合不合得来，可能比 Harness 的整体排名更重要。<br><br>论文提出「The Second Policy」，把 Harness 看成 Agent 的第二套策略。模型负责理解任务、规划行动，Harness 负责把决策落地，包括修正工具调用、执行中断后接着跑、核验结果是否真的完成。<br><br>团队用自建的评测框架 Contrast，在 6 个模型、6 种 Harness、5 个 Benchmark 上统一测了一遍。整体成功率 EvoX 56.2%，Pi 55.9%，几乎打平。<br><br>拆到单个模型就很分散了。Opus 5 上 Claude Code 第一，GPT-6 Astra 上 Codex 第一，Sonnet 5 上 Pi 第一，DeepSeek 上 Hermes 第一。EvoX 在 GLM-5.3 和 Kimi K3 上领先最明显，比其他五种 Harness 的平均值分别高 10.7 和 7.9 个百分点。<br><br>对于 Harness Engineering 来说，关注模型与运行时策略之间的适配是非常重要的。<br><br>单独评估模型或 Harness 的平均表现，可能都会遗漏重要信息。真正值得研究的是，不同模型究竟需要什么样的执行策略，以及能否根据模型特性动态调整 Harness。<br><br>📎 arXiv: <a href="https://arxiv.org/abs/2611.15006" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.15006</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXQWO7OXsAETmCK.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 用执行 Trace 回放排障</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-16 15:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给刚接手 Agent 项目的同学一句实在话：先记执行过程，别急着换框架。<br><br>听一个做平台化 Agent 的朋友说，他们接手第一版时，出问题只能翻聊天记录，谁在第几步改了分区口径、哪次工具结果被截断，全靠当事人回忆。<br><br>后来只加了一层最笨的东西：每次工具调用记下关键输入、返回结果和当时的口径版本，Trace 能按任务回放到那一步。就这一层，排查时间从一整晚缩到一顿饭的工夫。<br><br>“换框架解决的是它会不会跑，回放解决的是它为什么停。”<br><br>框架半年一换，执行过程这层记录却一直要留在自己的系统里。模型给的答案是概率的，账得是确定的。<br><br>你们现在能回放一次失败的任务，还是只能重跑一遍碰运气？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Code-Graph-RAG 图谱查代码</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bkdgiffug · 2026-11-16 23:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">维护大型代码库时，最头疼的往往不是写代码，而是理清代码之间的关系：函数被谁调用、模块如何关联、改一处会影响哪些地方。<br><br>GitHub 上的 Code-Graph-RAG 提供了一个新思路：把代码结构和调用关系转换成知识图谱，存入图数据库，再通过自然语言查询整个项目。<br><br>它支持 Python、TypeScript、Rust、Go、Java、C/C++ 等十多种语言，混合语言项目也能统一分析。<br><br>除了自然语言问答，还支持：<br>分析函数调用和模块依赖<br>检测死代码<br>按结构模式搜索和替换<br>提供代码优化建议<br>修改前预览变更内容<br><br>另外，它还能作为 MCP Server 使用，接入 Claude Code、Codex 等 AI 编程工具。<br><br>面对复杂项目，想让 AI 不只是看文件，还能理解代码之间的关系，这个工具值得关注。<br>🔗 <a href="https://github.com/vitali87/code-graph-rag" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vitali87/code-graph-rag</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXKvX5abQAE76uV.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

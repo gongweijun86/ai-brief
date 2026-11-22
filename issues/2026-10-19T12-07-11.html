@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月19日 20:06">
+<title>AI技术雷达 · 10月19日 20:06 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;RoPE用旋转让注意力只记相对距离</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;CLAUDE.md每半年清一次过时规则</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude Pro子Agent跨号路由</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;AI代写代码致调试能力降47%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;ELY Office 0.1.8支持公式</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>RoPE用旋转让注意力只记相对距离</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-10-19 19:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">「从零手写大模型」系列补充零件 · RoPE<br><br>RoPE 的核心公式，先说说作者<br>RoPE 的提出者是苏剑林，圈内叫他苏神 @Jianlin_S<br><br>我按自己的理解，从头推一遍<br><br>先说要算什么？<br>一个 token 在位置 m，提供 q<br>一个 token 在位置 n，提供 k<br>注意力分数就是 q 和 k 的点积<br>目标：让位置对分数的影响只取决于相对距离<br><br>RoPE 的想法很直接<br>把 q、k 看成平面上的箭头<br>第几个位置，就转几格，每格转 θ<br>q 转 mθ，k 转 nθ，两个箭头各转各的<br>但它们之间多岔开的角度，只有 (n−m)θ<br><br>下面用公式证明：<br>1. 写出旋转<br>转 α 角可以写成乘一个矩阵 R(α)<br>q 转完是 R(mθ)·q，k 转完是 R(nθ)·k<br>2. 写出分数<br>分数 = (R(mθ)·q)ᵀ · (R(nθ)·k)<br>3. 拆开转置<br>规则：(AB)ᵀ = Bᵀ Aᵀ<br>分数 = qᵀ · R(mθ)ᵀ · R(nθ) · k<br>q 在最左，k 在最右, 只需要化简中间两个矩阵<br>4. 用旋转矩阵的两个性质<br>性质一：转置等于反向转, R(mθ)ᵀ = R(−mθ)<br>性质二：连续转，角度相加, R(−mθ) · R(nθ) = R((n−m)θ)<br>5. 合起来<br>分数 = qᵀ · R((n−m)θ) · k<br><br>到此完毕：m 和 n 不再单独出现，只剩 n−m。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent开发12步路线配练手项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yupi996 · 2026-10-19 16:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想转 Agent 开发的程序员，这份海外博主整理的 12 步学习路线，每一步都配了练手项目，1 张图带你速通！🫡<br><br>比如学人工审批这一步，就做一个起草 1 万美元发票的 Agent，让它停下来等上 3 天，有人在 Slack 点了批准再接着跑。<br><br>有趣的是，博主认为最常被跳过的是评测，多数人只测 Agent 能不能跑通。这一步的练手项目，就是在 CI 里回放 100 条执行记录，Agent 调工具的顺序一偏离标准路径就拦下 PR。<br><br>建议可以照着图底下的顺序来，先用 Python 写一个能调工具的单 Agent，再碰多 Agent～</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-vE2LbAAAUXXJ.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CLAUDE.md每半年清一次过时规则</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vincemask · 2026-10-19 18:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">你精心维护的 CLAUDE.md，可能限制 Claude Code 的发挥。<br><br>Claude Code 的创建者 Boris Cherny。他在 YC Startup School 上给出了一个建议：<br><br>每隔 6 个月，删除你的 CLAUDE.md、Skills 和 Hooks。看看模型会怎么做，结果可能让你惊讶。<br><br>为什么？<br><br>因为很多规则，原本就是为了弥补旧模型的能力缺陷。<br><br>模型升级了，缺陷可能已经消失，但那些规则还在。它们不仅占用上下文，甚至可能干扰新模型的发挥。<br><br>Claude Code 团队自己就做过类似实验：删掉超过 80% 的系统提示词，重新评估模型表现。<br>Boris 建议定期做一次「减法实验」：<br>1备份并暂时移除 CLAUDE.md、Skills 和 Hooks。<br>2用真实任务测试模型表现。<br>3观察哪些问题仍然存在。<br>4只把确实必要的规则逐条加回来。<br>安全、权限和合规约束需要保留。项目中特殊的业务规则，也不能指望模型凭空理解。<br>至于目录结构、依赖清单，以及模型读代码就能理解的内容，值得优先清理。<br><br>以前，我们不断给 Agent 添加规则，让它少犯错。现在，模型越来越强，我们反而需要检查：这些规则是否已经过时。<br><br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2081773347021676544/img/0EfUFfjdJGLNqHnh.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Vince 聊开发 <span style="font-size:12px;color:#999999;font-weight:400;">@vincemask</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2052038107638476800" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2052038107638476800</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2052038107638476800" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2052038107638476800</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Pro子Agent跨号路由</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AaronYiaazw · 2026-10-19 19:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">被 Claude Pro 单账号额度撞墙折腾了很久，终于解决了，方案开源！<br><br>一句话：主对话只管统筹，干活的子 Agent 派到别的账号上跑。 主对话不烧自己的额度，就能一直跑长任务。<br><br>我现在订了 8 个 Pro，已经稳定跑了好几天，没出过问题。<br><br>它是一套子 Agent 路由规则，每个号都是自己正常订阅、正常登录。一个 Pro 一个月 140，灵活加减，不用担心 Max 的高封号风险和折腾 KYC<br><br>方案的逻辑：<br>1主对话只统筹：拆任务、派单、验收。读日志、翻代码、跑脚本这些重活都派出去。<br><br>2自动选号：按各号剩余额度挑，避开主号和正在用的号，周额度快重置的号先用，免得额度白白浪费。<br><br>3撞限额不丢活：对话记录自动搬到另一个号，接着原来的进度跑。<br><br>4多号自动一致：所有号共用同一套规则、技能和记忆，加新号不用重新配置。<br>5一行命令安装：加号就是在浏览器里登录一下。<br><br>开源地址：<a href="https://github.com/aaronyi97/claude-pro-pool" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/aaronyi97/claude-pro-pool</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI代写代码致调试能力降47%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xiaomovps · 2026-10-19 13:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">为什么把写代码全交给 agent，会让你失去指挥 agent 的能力？🔥<br><br>最近在看一篇文章，是 PI 作者推荐的：Agentic Coding is a Trap<br><br>原文地址：<a href="https://larsfaye.com/articles/agentic-coding-is-a-trap" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://larsfaye.com/articles/agentic-coding-is-a-trap</a><br><br>原文用了不同的角度和测试数据，在一遍遍地告诉我们使用 AI 但是不能完全使用，需要保留一定的摩擦和思考过程，我把整个文章提炼成了五个观点：<br><br>1、&quot;监督悖论&quot;。 用好 agent 需要你有能力审查它的代码，可过度用 agent 恰恰会让这种能力退化。他引用了 Anthropic 自己研究里的这个说法，还提到另一项 Anthropic 研究显示调试能力下降了 47%<br><br>2、这次跟以往&quot;换一层抽象&quot;不一样。 从汇编到 FORTRAN、从 C++ 到 Python，程序员没人抱怨过脑雾。现在连有近 30 年经验的 Simon Willison 都说，自己对应用越来越没有清晰的心智模型。新人更难，只审代码、不亲手写，等于只学了一半<br><br>3、AI 加速的是不重要的部分。 好开发者原本的优先级是：先理解代码，再看规范，然后代码越少越好，速度排最后。agent 把这个顺序整个倒过来了，最先追求的是快速生成大量代码<br><br>4、写代码本身就是在思考。 很多人是边写边想清楚要做什么的（OpenCode 作者 Dax 也这么说）。spec 写得再完美，概率模型也照样会幻觉，替代不了确定性的思考<br><br>5、会被厂商绑住，成本也不可控。 Claude 宕机时整个团队停摆，token 成本也一直在变。他的做法是让 AI 退居二线：让 AI 帮忙出方案，自己亲手写 20%–100% 的代码；一次只生成自己审得完的量；自己不会做的事，不交给 agent 做。原话是&quot;把它当飞船电脑，而不是 Data&quot;（Data 是《星际迷航》里那个能独立行动的人形机器人）。<br><br>如果你对这方面研究感兴趣，一定要看一下这篇文章，让我觉得非常有意思</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-KciOasAAHTKf.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HU-KeqbbIAAbHOd.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ELY Office 0.1.8支持公式</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ZacharyZhang · 2026-10-19 19:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><a href="http://office.elygpui.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://office.elygpui.com</a><br><br>ELY Office 0.1.8 更新<br><br>深色外观下，ElyDoc、ElyTable、ElyShow、ElyPDF 的文档内容照文件原色显示，白纸仍是白纸。<br><br>ElyDoc：Word 里的 EQ 域公式（分数、根式、上下标等）能正确显示；行内的图片与公式不再浮在行上（#9）。<br><br>ElyTable：工作表很多时，标签条可以横向滚动，当前工作表始终可见（#8）。<br><br>ElyMark：行内公式 $…$ 排版显示；\(…\) 读作行内公式，\[…\] 读作块公式。<br><br>下载：macOS（Apple 芯片，已公证）dmg；Windows 安装程序；Linux AppImage、deb、rpm、Arch 包。<br><br>ELY Office 0.1.8 Changes<br><br>Dark mode: ElyDoc, ElyTable, ElyShow and ElyPDF show document content in the file's own colors. White pages stay white.<br>ElyDoc: Word EQ field formulas (fractions, roots, sub- and superscripts) display. Inline pictures and formulas no longer float above the line (#9).<br>ElyTable: with many sheets, the tab strip scrolls sideways and keeps the current sheet in view (#8).<br>ElyMark: inline formulas $…$ are typeset. \(…\) reads as an inline formula and \[…\] as a block formula.<br>Downloads: macOS (Apple silicon, notarized) dmg; Windows installers; Linux AppImage, deb, rpm and Arch packages.</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

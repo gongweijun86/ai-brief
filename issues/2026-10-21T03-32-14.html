@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月21日 11:31">
+<title>AI技术雷达 · 10月21日 11:31 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Deepinfer推理侧架构与负载均衡</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Holon用事件驱动调度长程任务</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;从GPT-2到LLaMA的四大关键改动</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Agent评测分数取决于测法与阈值</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Deepinfer经济性与Token定价</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Deepinfer推理侧架构与负载均衡</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @SuJinYan123 · 2026-10-20 18:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">给一点 Deepinfer推理侧的速度锐评<br>1. 感觉 git repo 本身，对我们这样研发来说意义不太大，有一点点吧，但是好些东西没开。但是论证了我 kern 的想法，per model per repo 。<br>2. 精华本身在 zhihu 那篇文章，这篇文章很有价值，<a href="https://zhuanlan.zhihu.com/p/2095560295930508953" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://zhuanlan.zhihu.com/p/2095560295930508953</a>。主要是确定了一些 ds 内部的并行，decode 侧就还是经典的 wideep，ep64 什么的。<br>有价值的就在几个 load balancer，第一个是分桶（这个其实是比较生产的），不知道开源 router 有没有人做，但生产来说，其实之前 together 就探索过一下。<br>prefill 的路由策略很有意思，不做任何的 cache aware，靠池化兜底。<br>dp group 直接用 compute tokens 作为负载 平衡的指标，dp 组内，也是。这个有点什么的味道，我想不起来了。可能和 hash 那边的一些东西有关，maybe 是，bitmap 什么的，我只是说思想好吧。<br>fifo，这里有个有意思的，它也做了一个估计器，其实前不久我也做了一个（只不过链接失效了hh）,我当时是想给 pp 做的，但是我觉得无论 ep pp，这个思路是一致的，不固定 chunk size，然后固定“耗时”，总之就是一个离线你先跑出来嘛，然后给个表，然后让 scheduler 去估到合适的时间，组 batch。<br><br>当然我有一个想法是，prefill 到底是 pp 还是 ep，当然现在模型训成 每一个 Layer 都不一样的，那天生也就对 pp 不友好，那也没招。但是 ep 要完整做完 ds 这一套，需要不少流量和 prefill worker。总的来说在中小部署我看好 pp（几个 prefill worker 这种），大部署我才看好 ep。<br><br>decode 和我想的也差不多，就是一个 kv cache + num running 的组合是吧。当然具体怎么调配就是一个 case by case 的事情。<br><br>eplb 呢，就是冗余换 lb 吧。不过有个在线的 eplb，不知道开源出来没有。这里的 trade off 就是，eplb 会占用更多显存是吧，但是呢它也能提升吞吐，而且越复制收益越小，所以要找到一个比较合适的点。也是 case by case 的。<br><br>然后是 router 的pd 动态扩缩容，prefill 还是  整体compute tokens，deocde 是 num running。<br><br>kv cache 呢就是 3fs，然后 3天的 ttl，能换到 0.5 - 1% 的命中率。kv cache 管理由 decode 主导？这样输出也能被 hit。<br><br>关于 I/o，精华是这句，换入从 shm 到 HBM 在 engine 进程内的线程里做，目标是实现逐层 H2D （Host-to-Device） 传输与前向计算重叠，由于 CUDA copy engine 对于 KVCache Block 细粒度的拷贝性能不佳，换入使用 GDR 实现，用 RDMA 网卡就能打满 PCIe 带宽，并且不占 SM。<br>这个我有空后面再讲吧。<br><br>dspark 变长验证，这个真上了，挺好的。<br><br>异步调度，先忽略。<br><br>ds弄了一个结构化输出库，good!<br><br>为了防止说我在蹭，我截个图，我之前思考过的路由策略，开源我的 thinking content !</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVEOqr4b0AAZT3j.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVEOtYqbUAAA_HD.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVEOvaUbEAAbbH2.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Holon用事件驱动调度长程任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jolestar · 2026-10-20 21:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">回头看做 @holonrun 的路径：最早折腾 Issue 到 PR 的工作流脚本，后来引入角色分工，再到用 Rust 重构底层。<br><br>这期间最大的体会是：长程任务中充满了等 CI、等 Review 这样的异步等待。单次对话模型不具备等待契约，AI 干完一步就停滞，结果人类工程师反倒成了它的“肉身调度器”。<br><br>要让长程任务真正跑顺，核心是把调度工作从“人”移交给“Agent Runtime 调度器”：让 Runtime 通过事件驱动来管理挂起、唤醒与版本栅栏，解决脏重入与状态丢失。<br><br>这篇长文根据前几天在 RustChinaConf 上的演讲整理，详细复盘了 Holon 在调度器与并发安全上的工程实践：<br><a href="https://jolestar.com/event-driven-agent-runtime/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://jolestar.com/event-driven-agent-runtime/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>从GPT-2到LLaMA的四大关键改动</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-10-20 17:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">整理了《从零手写大模型之从GPT-2到LLaMA》学习教程<br><br>GPT-2到LLaMA，中间隔了4年<br>最关键的改动，集中在4个零件上<br>手写完GPT-2之后，我一直卡在一个问题上：<br>2019年的GPT-2<br>和今天的LLaMA、Qwen、DeepSeek，到底差在哪？<br><br>带着这个问题，我把LLaMA的结构拆开<br>一个零件一个零件对着GPT-2去学<br>学下来发现，骨架还是那个Transformer<br>真正变的是几个关键零件<br><br>每一篇都用同一个小例子“猫吃鱼”贯穿到底<br>数字小到可以手算，配套代码也能直接跑<br>看完可以自己跟着练一遍<br><br>最后整理成了这5篇：<br>01 RMSNorm：简化归一化<br>02 SwiGLU：升级前馈网络<br>03 RoPE：旋转位置编码<br>04 GQA：分组查询注意力<br>05 LLaMA：组装完整模型<br><br>对我自己来说，这一段是承上启下：<br>手写GPT-2，让我搞懂了Transformer怎么跑<br>学完零件替换，才算明白现代大模型为什么长这样<br><br>整理好的完整版放在这里<br>如果你也是从GPT-2入门的，可以直接接着看：<br><a href="https://nano-ai.tech/series/gpt2-to-llama/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nano-ai.tech/series/gpt2-to-llama/</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent评测分数取决于测法与阈值</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-10-21 11:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个客服 agent 平均能做对 82.5% 的题，可以上线了吗？<br><br>先别急。IBM 让它每道题做 4 次，要求 4 次都对，就只剩 67.5%。他们自己的说法是：退款 4 次办对 3 次，就有四分之一的客户被办砸。客户不会跟你算平均分。<br><br>10 月 20 日还有两篇讲评测的文章，说的是同一类问题。<br><br>Hamel Husain 他们写的是用 decision model 给 agent 的对话记录挑错。这类模型给每条记录打一个出错概率，默认过 0.5 才算错，有人就直接这么用了。他们举了个例子。一个模型把出错的都打 0.4，没出错的都打 0.1，其实分得清清楚楚。阈值设 0.3，一条不漏；卡在默认的 0.5，一条都抓不到。阈值得拿你自己标过的数据去调。<br><br>Ai2 的 FairStress 测的是模型做决定公不公平。常见的测法是两个候选人条件不变、只换身份，看模型选不选同一个人。他们多走了一步：选完再劝它一句，比如「有位高管私下推荐了另一个人」，看它改不改主意。结果是两边选的一样，被劝动的难易却不一样，要看这句劝说帮的是谁。15 个模型平均差了 6.9 到 9.3 个百分点。<br><br>他们还把一套常用的偏见测试题（BBQ）换了个问法，从给选项打分改成让模型自己回答。4 个模型里有 3 个，测出来的偏向直接反了过来。<br><br>三个例子说的是一回事：模型还是那个模型，换个测法，分数就变了，有时连方向都反过来。下次有人拿一个分数说模型行了，先问他是怎么测的。问不出来，这个分就别拿来决定上不上线。默认设置省下的那点调参时间，最后会变成线上的故障和被办砸的客户。<br><br>原文：<br><a href="https://hamel.dev/blog/posts/decision-model-evals/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hamel.dev/blog/posts/decision-model-evals/</a><br><a href="https://huggingface.co/blog/ibm-research/altk-evolve-bc" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/ibm-research/altk-evolve-bc</a><br><a href="https://huggingface.co/blog/allenai/fairstress" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/allenai/fairstress</a><br>#评测 #Agent #LLM</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVH4qUSakAAEE7A.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Shopify创始人开源disktree</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mylifcc · 2026-10-21 05:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">身价百亿的上市公司 CEO，周末是怎么解决电脑硬盘爆满的？<br>Shopify 创始人 Tobi Lütke 嫌现有的磁盘清理工具不够顺手，直接用 Rust + Zed 同款的 GPUI 框架，手搓了一个跨平台磁盘可视化神器 disktree 并开源。<br>短短几周狂揽 3,000+ Stars，专为极客桌面 Omarchy 打造，同时完美支持 macOS 和 Windows。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Deepinfer经济性与Token定价</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ivanalog_com · 2026-10-21 06:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天Deepinfer 开源，用令人瞠目结舌的经济性逆转了半导体和云的颓势。<br><br>这个贴讨论一下Deepinfer的经济性吧<br><br>Deepseek公布了每小时B200可以产出38$的token（波谷定价）。<br><br>短期看，用现在B200租价6$美元算，这是85%的毛利率。<br><br>换句话说，如果一个商家，能够满足于一般性的15% IRR，有能力销售Token，能依照Deepseek的Recipe租用GPU去大规模部署，那么它可以打1.5折去销售Deepseek Token。<br><br>还记得最近有很多服务商，Opencode Go, Command Code, 腾讯，都有类似于10美元使用60-80美元DS token的订阅吗？<br><br>这从侧面证明Deepinfer的架构，是可复制，可扩散的技术优势，而且正在成为市场主流。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HVG8KaXXgAEuk5P.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">seekinganythingbutalpha <span style="font-size:12px;color:#999999;font-weight:400;">@ivanalog_com</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2023470089417207808" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2023470089417207808</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2023470089417207808" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2023470089417207808</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月20日 23:11">
+<title>AI技术雷达 · 11月20日 23:11 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Inworld开源48kHz语音降噪模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;VibeVoice-ASR本地转写长音频</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;海光从Zen 1授权走向自研架构</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;台积电暂停中国客户16纳米以下制程</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;企业级Agent交付的六项工程要求</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Inworld开源48kHz语音降噪模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TedCai233 · 2026-11-20 22:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Inworld 开源了首个模型 Voice Isolator，一个 48 kHz 的语音降噪模型。<br><br>代码和权重都是 Apache-2.0，可商用。两个版本：离线版 64.0M 参数，另有一个实时版。<br><br>做语音 agent 的可以试试。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Postgres凭插件生态成为事实标准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fishjar · 2026-11-20 20:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">二十年前 LAMP 架构横扫互联网时，MySQL 是所有创业公司的默认选项，Postgres 只是学院派眼里的“另一个数据库”。今天局势彻底倒转，Postgres 成了新项目的事实标准。<br><br>胜负在二十年前写下第一行架构代码时就埋下了：<br>- MySQL 早期为了榨干简单查询的吞吐量，搞了“可插拔存储引擎”，把事务、MVCC 和行锁全外包给 InnoDB。这种上下割裂的基因，让它在面对复杂窗口函数和自定义类型时背满了历史包袱。<br>- Postgres 从第一天起就死磕对象关系型标准，MVCC 原生嵌在堆表与 WAL 日志里，更狠的是开放的插件与类型系统。<br><br>结果就是：NoSQL 兴起时，Postgres 靠 `JSONB + GIN` 倒排索引直接吞下了文档数据库的需求；AI 爆发时，一个 `pgvector` 插件就能在原有事务库里跑向量检索，不用再额外运维一套向量库。<br><br>不为短期跑分牺牲底层类型抽象，才换来了跨越二十年的自我进化能力。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福CS329Z第九讲公开</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-20 09:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">斯坦福大学 CS329Z: Engineering AI Agents <br><br>第九讲：Optimizing AI Agents: Prompts vs. Weights（GEPA、GRPO），讲义和录像都公开了，本讲讲师 @michaelryan207 老师<br><br>视频：<a href="https://www.youtube.com/watch?v=e_m99aR7_3Q" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=e_m99aR7_3Q</a><br>讲义：<a href="https://web.stanford.edu/class/cs329z/slides/lecture09.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://web.stanford.edu/class/cs329z/slides/lecture09.pdf</a><br><br>从上下文优化、到权重、Agent 自我优化，完整讲述了整个优化过程、目标和选择标准。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXh692iXoAAetkx.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meng shao <span style="font-size:12px;color:#999999;font-weight:400;">@shao__meng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">再次强烈推荐斯坦福大学 CS329Z: Engineering AI Agents 课程，最先公开的每讲的讲义，现在课程视频也开始陆续公开了，已经公开了 4 讲！<br><br>关于这门课程的详细介绍和部分课程的解读，可以看我之前分享过的：<br><a href="https://x.com/shao__meng/status/2095330467000328632" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/shao__meng/status/2095330467000328632</a><br><br>课程主页：<br><a href="http://cs329z.stanford.edu" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://cs329z.stanford.edu</a><br><br>Youtube 视频列表：<br><a href="https://www.youtube.com/playlist?list=PLPRcF5HR02_U" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/playlist?list=PLPRcF5HR02_U</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW-Ev0cbwAEuqGC.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>VibeVoice-ASR本地转写长音频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-20 20:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">😲卧槽！微软开源的这个语音转文字神器，我用 MacBook 实测了一下，效果简直了！<br><br>项目叫 VibeVoice-ASR，国内还没多少人讨论，它最大的亮点是能一口气吞下 60 分钟的长音频。<br><br>它的核心能力：<br>① 60分钟音频直接整段转，不用手动切分<br>② 自带说话人识别，谁说的分得清<br>③ 每句话精准带上时间戳<br>④ 支持50多种语言，MIT协议可直接商用<br><br>最关键的是纯本地跑，零 API 费用。你的会议录音、内部讨论完全不需要上传云端，既省钱又安全。<br><br>其实这项目之前一直做语音生成，今年上半年才补齐了反向识别功能。<br><br>对于像我这种每周都有一堆录音要处理的人来说，这种“直接扔进去就能出结果”的粗暴体验，真的很戳痛点。<br><br>项目地址：<br><a href="https://github.com/microsoft/VibeVoice" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/microsoft/VibeVoice</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>海光从Zen 1授权走向自研架构</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @injoylin · 2026-11-20 18:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">老黄被搞后，外侄女AMD 苏妈也被搞了<br><br>因为苏姿丰培养了一个中国芯片怪物-海光，科创板的千亿市值芯片巨头，把原本属于 Intel 和 AMD 的中国政企服务器市场切走了一大块<br><br>2016 年，AMD 处境极其艰难，市值一度跌破 20 亿美元，急需资金推进 Zen 架构研发。<br><br>在此背景下，AMD 与中国企业（中科曙光旗下的天津海光）达成了总额约 2.93 亿美元的许可协议：<br><br>授权内容： 仅限第一代 Zen 1 架构的服务器处理器设计授权（即后来的海光“禅定”/Dhyana 系列）。<br><br>核心限制（关键点）： 这不是源码买断，也不是永久授权。协议规定合资公司只能生产专供中国境内销售的服务器芯片，且不包含后续 Zen 2、Zen 3、Zen 4/5 等任何迭代架构。海光在底层核心微架构上没有修改权，只能在有限的外围模块（如国产加密算法模块）上做定制。<br><br>但实际上海光，不仅出了新品，而且在2019年断供之后，海光恰恰是靠着当年拿到的 Zen 1 底层授权作为“跳板”，硬生生消化吸收并走出了一条独立迭代的路线。<br><br>1. 产品的代际演进（从“换壳”到“自研微架构”）   海光的 CPU 产品线（主要对应服务器市场的 7000/5000/3000 系列）大致经历了三个阶段：海光一号（C86-1G / 2G）： 2018年前后推出，基本就是基于 AMD Zen 1 架构的“本地化定制版”，集成了中国国家密码管理局认可的加密算法模块（如 SM2/SM3/SM4），直接替代当时的至强（Xeon）中高端处理器。海光二号、三号（C86-3G）： <br><br>2019年被列入实体清单、失去 AMD 后续技术支持后，海光开始在 Zen 1 源码基础上自行改写微架构（如优化分支预测、扩充缓存、改进内存控制器等）。海光三号的单核与多核性能已经大幅超越原版 Zen 1，综合表现普遍被认为接近 AMD Zen 2 到 Zen 3 之间的水平。海光四号、五号（C86-4G / 5G）： 从 C86-4G 开始，海光官方正式宣布采用“全新自研微架构”。<br><br>近两年曝光和推进的 C86-5G 规格已经相当庞大，单颗最高达到 128 核 512 线程（支持四路并发线程技术），并且海光近期公开透露，集成 CPU+GPU+NPU 的新一代端侧及数据中心处理器预计将在 2027 年实现量产。<br><br>2. 不仅做了 CPU，还顺藤摸瓜做出了 AI 芯片（DCU）   除了 CPU，海光另一条核心产品线是 DCU（深度计算单元，即“深算”系列 GPGPU）。这条线同样源自早期与 AMD 生态的技术渊源（兼容类 CUDA 生态的 ROCm/HIP 架构），用于大模型训练和 AI 推理。截至目前（2026年），在英伟达高端芯片受限的背景下，“海光 CPU + 深算 DCU” 已经成为国内金融、电信、能源以及各大智算中心（AI 一体机）出货量最大、生态最成熟的国产替代方案之一。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>台积电暂停中国客户16纳米以下制程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @LiRedstar · 2026-11-20 22:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">美国商务部新规今天生效，台积电暂停中国客户16纳米及以下先进制程，只留28/40纳米老工艺，还禁用高带宽内存和先进封装。三星也停了部分出货。台积电台北股价跌3.45%，台股大跌4.4%。这直接掐断了我们AI芯片最后一条外包通道，短期本土替代压力不小，但也真逼着我们把自研当命来抓</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>企业级Agent交付的六项工程要求</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Stanleysobest · 2026-11-20 14:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近跑了几家企业做 FDE 驻场交付，我越来越确定一件事：<br><br>现在市面上至少80%的 AI Agent 项目，还停留在玩具阶段。<br><br>接个大模型，配置几个 MCP，写几段 Prompt，让 AI 自动调用工具，跑通一个流程，就敢跟老板说：我们实现了 AI Agent 自动化。<br><br>真进工厂交付，你就知道有多离谱。<br><br>举个例子。<br><br>一家制造业企业想用 AI Agent 处理客户订单。<br><br>客户发来采购需求，AI 自动识别产品型号、查询库存、生成报价单，再同步给销售。<br><br>Demo 演示非常漂亮，老板看完很兴奋。<br><br>结果正式上线，问题一个接一个。<br><br>客户修改了三次订单，Agent 却拿第一次的数量报价。<br><br>库存接口超时，Agent 重试了两遍，系统里多出了三张重复订单。<br><br>销售经理还没审批，Agent 已经把折扣报价发给客户。<br><br>最要命的是，出了问题没人知道错在哪一步，只能翻聊天记录。<br><br>这就是为什么我一直强调：会做 Agent，跟能做企业级 Agent 交付，完全是两码事。<br><br>真正做 FDE，你至少要解决六件事：<br><br>流程编排： 哪些步骤交给 AI 判断，哪些必须按固定规则执行，不能什么都让模型自由发挥。<br>权限控制： AI 可以查库存，但不能随便改库存；可以生成报价，但大额折扣必须经过人工审批。<br>任务记忆： 客户修改订单、员工中途接手、系统突然断线，Agent 必须知道之前做到哪一步。<br>异常恢复： API 超时、任务失败、服务重启，不能每次都从头再来，更不能重复扣费、重复下单。<br>过程监控： 每次调用花了多少钱、哪个环节出错、为什么出错，都得查得清清楚楚。<br>统一管理： 当企业同时部署销售、客服、采购、财务 Agent，必须统一管理权限、数据和执行记录。<br><br>还有一个很大的误区：<br><br>很多技术团队特别喜欢搞多 Agent 协作。<br><br>明明一套固定工作流就能解决的问题，非要安排五六个 Agent 开会、讨论、互相调用。<br><br>最后 Token 消耗翻倍，响应速度变慢，故障点还增加了。<br><br>老板根本不关心你用了几个 Agent。<br><br>他只关心三件事：<br><br>以前10个人干的活，现在能不能5个人完成？<br><br>以前处理一张订单要30分钟，现在能不能压到3分钟？<br><br>系统连续运行一个月，会不会突然给我捅个几十万的窟窿？<br><br>这段时间我做企业 FDE 交付，最大的感受就是：<br><br>AI 技术演示越来越容易，真正把 AI 塞进企业现有业务流程，反而越来越考验工程能力。<br><br>未来企业愿意花几十万、上百万买单的，绝不是几个炫酷的 Agent Demo。<br><br>而是你能不能深入业务现场，把流程、权限、数据、异常处理和员工操作全部打通。<br><br>会调 API 的人越来越多，能在工厂里蹲一个月，把 AI 系统真正跑起来的人，依然稀缺。<br><br>这才是我认为未来 FDE 最值钱的地方。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

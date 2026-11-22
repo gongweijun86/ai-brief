@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 10月13日 11:07">
+<title>AI技术雷达 · 10月13日 11:07 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;UI 控件编号加速 AI 精准修改</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude Design 逆向接入 GPT</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;X 统一 Cursor 与 Grok 订阅</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Anthropic 封禁数万蒸馏账号</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>UI 控件编号加速 AI 精准修改</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @corndogjpn2 · 2026-10-13 09:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做为一个AI编程新人，想和大家分享一个日式小经验。<br><br>开发中，到了UI、文案调整这一步时，用自然语言沟通效率低下。要让AI准确知道你想改的UI元素，通常要截图做标记，这个过程很痛苦且浪费Token.<br><br>日本的公司，即使有FAQ页面，顾客仍然喜欢自然语言电话联系。为了提升沟通效率，他们往往给自己的FAQ页面都编上号，电话时直接报这个页面的号码。<br><br>你可以让AI在软件中加个快捷键，按了之后，就显示所有控件，文案，按钮的号码，后续就很好用了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUeTDvxa0AAM80Q.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>蒸馏博主视频生成 AI 剪辑流程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Pluvio9yte · 2026-10-13 08:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我觉得每一个想用AI去做剪辑的人，都值得去学习大师的ai小灶 @dashiAIxz 的工作流程<br><br>我也遇到了同样直接丢素材或者口播稿，剪辑出来的视频没办法看的问题，但是我对审美和剪辑的功底太差了，于是我想出来了一个另辟蹊径的方法，蒸馏<br><br>我将大师的ai小灶、木子不写代码、秋芝等几个我觉得视频做的很好的博主的大量视频拉到了本地，然后让便宜的GPT-luna逐帧拆解，最后交给Opus5.5去做美学分析以及流程分析。<br><br>大概消耗了Max20 Claude的两次5小时限额，蒸馏出来了一份还有点那么说得过去的剪辑流程<br><br>核心一个就是开xhigh，另一个就是其实是需要ai去根据每一段来产出视频组件特效或者分镜切片的，这样才能够少AI剪辑味且镜头变化多且趣味性强。<br><br>最后附上大师的原本的回答。<br><a href="https://x.com/dashiAIxz/status/2108785099663867916?s=20" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/dashiAIxz/status/2108785099663867916?s=20</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">水族店刘老板 <span style="font-size:12px;color:#999999;font-weight:400;">@leo_xiaolei</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">看到满屏都在吹 AI 剪视频……<br><br>兴冲冲把素材丢给 Opus 5.5，剪出来的成品简直没眼看🙃<br><br>到底是我 Prompt 写太烂，还是大家都在硬吹？<br><br>甚至还付费买了别人的 Skill，结果依然丑到离谱……<br><br>想微调就得重新跑，点数额度秒蒸发💸<br><br>你们平时到底是怎么用 AI 剪辑的啊？求真实案例分享🥹<br><br>顺便问一句：AI 生成视频现在真值得学吗？<br><br>刚用 Seedance 2.0 随便试了几段就烧进去三四百块……<br><br>大家家里是有矿吗？怎么做到天天拿 AI 刷视频的啊？！<br><br>啊啊啊啊啊焦虑到头秃😩</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CogFree 重构概念推导 Skill</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @junjiechou1122 · 2026-10-12 12:09</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">推荐大家试试 𝗿𝗲𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁 这个 Skill！<br><br>它不是直接解释一个概念，而是带你回到这个概念还不存在的时候，从最初的问题和约束出发，一步步重新推导出它为什么会被发明出来。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Junjie Zhou <span style="font-size:12px;color:#999999;font-weight:400;">@junjiechou1122</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚀 𝗖𝗼𝗴𝗙𝗿𝗲𝗲 𝗷𝘂𝘀𝘁 𝗴𝗼𝘁 𝗮𝗻 𝘂𝗽𝗱𝗮𝘁𝗲 — 𝗻𝗼𝘄 𝘄𝗶𝘁𝗵 𝟮𝟴 𝗰𝗼𝗴𝗻𝗶𝘁𝗶𝘃𝗲 𝘀𝗸𝗶𝗹𝗹𝘀!<br><br>CogFree 是一套小型的、可组合的技能集合，旨在帮助你借助 AI 进行思考、学习和探索想法。<br><br>我最喜欢的是 𝗿𝗲𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁。<br><br>与其让 AI 解释一个概念，不如让它重建这个概念当初为何必须被发明出来。<br><br>从一个该概念尚不存在的世界开始，去发现那些使其变得必要的观察、问题和约束条件，然后自己推导出这个想法。<br><br>这是一种有趣得多的学习方式。<br><br><a href="https://github.com/Humanive/cogfree" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Humanive/cogfree</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚀 𝗖𝗼𝗴𝗙𝗿𝗲𝗲 𝗷𝘂𝘀𝘁 𝗴𝗼𝘁 𝗮𝗻 𝘂𝗽𝗱𝗮𝘁𝗲 — 𝗻𝗼𝘄 𝘄𝗶𝘁𝗵 𝟮𝟴 𝗰𝗼𝗴𝗻𝗶𝘁𝗶𝘃𝗲 𝘀𝗸𝗶𝗹𝗹𝘀!<br><br>CogFree is a collection of small, composable skills designed to help you think, learn, and explore ideas with AI.<br><br>My favorite is 𝗿𝗲𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁.<br><br>Instead of asking AI to explain a concept, ask it to reconstruct 𝘄𝗵𝘆 𝘁𝗵𝗲 𝗰𝗼𝗻𝗰𝗲𝗽𝘁 𝗵𝗮𝗱 𝘁𝗼 𝗯𝗲 𝗶𝗻𝘃𝗲𝗻𝘁𝗲𝗱.<br><br>Start from a world where it didn't exist. Discover the observations, problems, and constraints that made it necessary. Then derive the idea yourself.<br><br>It's a much more interesting way to learn.<br><br><a href="https://github.com/Humanive/cogfree" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Humanive/cogfree</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Design 逆向接入 GPT</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xlangeai · 2026-10-12 12:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">宝玉 把最新的 Claude Design 逆向了，就是 Artifacts 里那一版。<br><br>拆出 Skill 接到 GPT-6.1 Sol 上，设计能力明显提升。猜测原因是 Claude Design 默认走 Claude Design System Skill，先定设计系统再动手。<br><br>设计稿跑在 BaoCut 里。这产品本来只想做视频剪辑 Agent，后来把 Claude Slides 和 Claude Design 也塞了进去。理论上这两样能做成纯 Skill，但编辑修改和标记做不了，只好集成进产品。<br><br>开源，Skill 和前端代码都能看。Design Skill 的 commit：<a href="https://github.com/JimLiu/baocut" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JimLiu/baocut</a><br><br>想试：下载或本地跑 baocut，用本机 agent cli 比如 codex，会话时选 design skill。<br><br>截图里流程完整：先出 FRAME 的 design system 文档，字体、间距、色值对比度都写清楚，再基于它出登录页成稿。<br><br>视频仍是主场：本地模型转录，基于转录译字幕，生成切片。站点 <a href="http://baocut.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://baocut.com</a>。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">宝玉 <span style="font-size:12px;color:#999999;font-weight:400;">@dotey</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这两天逆向玩上瘾了，又逆向了最新的 Claude Design。没想到 GPT-6.1 Sol 接上 Claude Design （最新 Artifacts 里面那个版本）的 Skill 后，设计能力有很大提升，可能因为 Claude Design 会默认使用 Claude Design System Skill。<br><br>本来我做 BaoCut 只想做一个专注于视频剪辑的 Agent，结果把 Claude Slides 和 Claude Design 也给加进去了。<br><br>都说做产品经理克制很重要，但有时候好东西就忍不住加进去，知易行难，我还得继续修行。<br><br>理论上来说，可以把 Claude Design 和 Claude Slides 作为 Skill 的，但是没办法支持编辑修改和标记，所以先只是集成到 BaoCut 中。<br><br>当然 baocut 是开源的，skill 和前端代码你都看的到：<br>Design Skill 相关 commit：<a href="https://github.com/JimLiu/baocut" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/JimLiu/baocut</a><br><br>如果你只是想试试，可以下载 baocut 或者本地运行，使用你本机 agent cli（比如 codex），会话的时候选一下 design skill。<br><br>当然 baocut 最强大的还是视频相关的功能，比如你可以用本地模型去转录，基于转录结果去翻译字幕，生成切片等等。<br><br><a href="https://baocut.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://baocut.com</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZiCzxWAAAcPIb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZiJd9W0AEv39h.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZiXBkXIAAwYk1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUZi-u5XcAATMNP.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>X 统一 Cursor 与 Grok 订阅</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-10-13 10:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">马斯克把 X 订阅，Grok 订阅 和 Cursor 订阅统一成一个套餐，省得分别购买了。<br><br>但坏消息是，你原来的 Cursor 订阅的第三方模型要单独按 API 计价了。<br><br>所以，没什么新的羊毛可以薅，仅仅只是把混乱的订阅统一而已。<br><br>我现在的 X 订阅，是每个月 8 美元，现在切到 Premium 上，玩玩 Grok Bot。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">SpaceX Super Intelligence <span style="font-size:12px;color:#999999;font-weight:400;">@SpaceXSI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">共有五种方案，从 Free 到 Ultra。<br><br>The X Subscription 中的每种方案，与它所取代的同等方案相比，每美元所能获得的我们自家模型的使用量都更多。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">There are five plans, from Free to Ultra.<br><br>Each plan on The X Subscription provides more usage-per-dollar of our own models than the comparable plan it replaces. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HUd0cxLXYAAI6s_.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 封禁数万蒸馏账号</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-10-13 09:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🚀Claude封号原因终于找到！Anthropic亲自公布封号细节！<br><br>Anthropic刚刚发布的这篇文章价值巨大！尤其还提到了为什么封Claude账号！<br><br>A\提到如果持续尝试提取 Claude 的受保护推理记录，会受到更严格的限流；反复、持续尝试蒸馏，会被封禁关联账号！<br><br>Anthropic 称，已经因此封禁了数万个账号，往往在账号开始蒸馏活动后不到两小时就采取行动。<br><br>所以如果你的Claude经常被封号，那么大概率你的行为被视作蒸馏！<br><br><a href="https://www.anthropic.com/research/distillation-defenses" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/distillation-defenses</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>KV Cache 手册详解推理显存</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @techNmak · 2026-10-12 19:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">KV 缓存讲解！！ </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">KV Caching explained!! </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2109603513533947904/img/AYQMfQy3qOJZesfV.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tech with Mak <span style="font-size:12px;color:#999999;font-weight:400;">@techNmak</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">KV 缓存是 LLM 推理中最重要的概念之一，但它常常被过于草率地解释。<br><br>在自回归生成过程中，模型一次生成一个 token。如果没有缓存，每一个新的解码步骤都必须反复为模型已经处理过的 token 重新计算 key 和 value 状态。KV 缓存通过存储这些过去的 K/V 张量并在序列增长时复用它们，从而避免了这些重复工作。<br><br>这听起来很简单，但它在整个服务栈中都有影响。缓存随序列长度增长，占用大量 GPU 显存，在解码期间造成内存带宽压力，并有助于解释为什么架构从 MHA 演进到 MQA 和 GQA、为什么 MLA 采用不同的压缩方式，以及为什么像 PagedAttention 这样的系统会存在。它还解释了为什么长上下文不是免费的、为什么前缀缓存是一项独立的优化，以及为什么 KV 缓存不应与 LLM 的记忆相混淆。<br><br>我整理了一本技术手册，从第一性原理出发逐步讲解这一切 =&gt; 究竟缓存了什么、张量的形状、内存公式、具体的 MHA/GQA/MQA 计算、prefill 与 decode、MLA、PagedAttention、前缀复用、卸载、量化、逐出，以及围绕这一切的常见误解。<br><br>这些解释均基于原始论文和当前框架的官方文档。<br><br>在此分享这本手册</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">KV cache is one of the most important ideas in LLM inference, but it is often explained too casually.<br><br>During autoregressive generation, a model produces one token at a time. Without caching, each new decoding step would repeatedly recompute key and value states for tokens the model has already processed. KV caching avoids that redundant work by storing those past K/V tensors and reusing them as the sequence grows.<br><br>That sounds simple, but it has consequences across the entire serving stack. The cache grows with sequence length, consumes significant GPU memory, creates memory-bandwidth pressure during decoding, and helps explain why architectures moved from MHA to MQA and GQA, why MLA takes a different compression approach, and why systems such as PagedAttention exist in the first place. It also explains why long context is not free, why prefix caching is a separate optimization, and why KV cache should not be confused with an LLM’s memory.<br><br>I put together a technical handbook that works through this from first principles =&gt; what exactly gets cached, the tensor shapes, the memory formula, concrete MHA/GQA/MQA calculations, prefill vs. decode, MLA, PagedAttention, prefix reuse, offloading, quantization, eviction, and the common misconceptions around all of it.<br><br>The explanations are grounded in the original papers and current framework documentation.<br><br>Sharing the handbook here</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HRhKRlLaAAA17y1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

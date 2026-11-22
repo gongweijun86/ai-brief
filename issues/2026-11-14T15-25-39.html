@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月14日 23:25">
+<title>AI技术雷达 · 11月14日 23:25 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;LangGraph 恢复状态不等于幂等</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Diagram Design AI画图表</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Cursor 供应链攻击植入SSH后门</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;TurboFieldfare跑26B模型</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Claude Code数据库设计Agent</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agentic 设计模式书含代码仓库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ruyi3699 · 2026-11-14 13:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">想成体系地摸清 Agent 的常见设计模式，这本书值得拿来当起点。<br><br>Antonio Gulli 写的《Agentic Design Patterns》，从提示链、路由、并行处理，一路讲到反思、工具调用、规划、多 Agent 协作，再延伸到记忆、RAG、护栏和人工介入，适合快速搭起完整的模式认知框架。<br><br>社区仓库 evoiz 把相关 PDF 和 Jupyter Notebook 都整理好了，可以对照章节学习。提醒一句，社区提供不代表能随便转载，具体授权还是以作者和出版方为准。<br><br>📚 搜索书名：Agentic Design Patterns<br>🔗 社区仓库：<a href="https://github.com/evoiz/Agentic-Design-Patterns" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/evoiz/Agentic-Design-Patterns</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HW9vbYibAAA8leM.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>CodeX 英语跟读软件售2002份</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Missle8z · 2026-11-14 13:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">有人用 CodeX 做英语跟读软件，39.9 元卖激活码；<br>原作者做了几千单、月被动营收 5w+。<br>小红书看到 Lab 笔记的账号，4.3 万粉，店铺商品“原创英语跟读+词汇+作”售价 39.9 元、已售 2002 份。<br>获客交付流程主要是：内容投抖音+小红书获流，下单后自动发网址和授权码。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXEBfIMaoAAn77T.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXEBgHta8AAxk_u.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LangGraph 恢复状态不等于幂等</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @UPing123zzz · 2026-11-14 13:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近在研究 LangChain 和 LangGraph，发现很多人对这两个东西的理解其实有点混乱。<br><br>有人觉得 LangChain 是旧框架，LangGraph 是新框架；也有人认为 LangChain 适合简单 Agent，LangGraph 才能做复杂项目。<br><br>但其实，这两个东西根本不是简单的替代关系。<br><br>它们解决的是不同层级的问题。<br><br>先说 LangChain。你可以把它理解成一个高层 AI Agent 开发框架。<br><br>它主要帮你把大模型、Prompt、Tools、上下文以及 Agent 执行循环组织起来。<br><br>比如你想做一个招聘 Agent，让模型根据用户的问题，自动查询岗位 JD、读取相关信息、调用工具，最后生成分析结果。<br><br>如果直接使用模型 API，你可能需要自己处理模型请求、工具调用、结果回传和下一轮推理。<br><br>而 LangChain 已经封装了不少相关能力，可以让你更方便地把这些组件连接起来。<br><br>它更关注的是，怎么快速构建一个具备模型推理和工具使用能力的 Agent。<br><br>但问题来了。如果你的业务不是简单地调用工具、返回结果，而是需要多个明确的执行步骤呢？<br><br>比如招聘系统需要先解析简历，再匹配岗位，生成评分报告，然后根据业务规则进入不同处理流程，最后等待 HR 审批。<br><br>而且任务执行到一半突然中断了，你还希望它能够从之前的状态继续执行，而不是所有步骤重新跑一遍。<br><br>这时候就轮到 LangGraph 了。<br><br>LangGraph 更接近一个有状态的工作流编排框架。<br><br>它最核心的三个概念就是 State、Node、Edge。<br><br>State 负责保存执行状态，Node 负责执行具体任务，Edge 负责决定任务下一步流向哪里。<br><br>你可以明确规定哪些步骤必须执行，哪些地方允许模型自主决策，什么时候进入条件分支，什么时候暂停等待人工审批。<br><br>它还提供 Checkpoint、Interrupt 等机制，让开发者能够设计状态持久化、暂停与恢复流程。<br><br>但这里有个特别重要的区别。<br><br>LangGraph 能帮你恢复工作流状态，不代表它自动解决了业务幂等问题。<br><br>比如 Agent 调用一个付费 API，实际上已经执行成功，但程序还没保存结果就崩溃了。<br><br>如果恢复后直接重新调用，依然可能产生重复扣费。<br><br>所以真正的生产系统，还需要自己处理外部任务 ID、幂等键、业务状态和错误恢复。<br><br>说到这里，其实就很容易理解这两个框架的关系了。<br><br>LangChain 更关注模型和工具怎么组织起来，让 Agent 具备执行任务的能力。<br><br>LangGraph 更关注任务执行过程怎么被组织、控制和管理。<br><br>而且现在 LangChain 的 create_agent 本身就是建立在 LangGraph 之上的。<br><br>两者完全可以配合使用。<br><br>比如用 LangChain 创建一个能够调用招聘工具的 Agent，再把它放进 LangGraph 的某个节点，由 LangGraph 管理整个招聘业务流程。<br><br>当然，这也不代表所有 AI 项目都必须使用这两个框架。<br><br>如果你的需求只是调用一次模型，提取几个字段，返回一份 JSON，直接使用模型 SDK 可能更加简单。<br><br>如果业务流程完全固定，普通的后端代码和状态机也可能足够。<br><br>我觉得现在很多人学 AI 开发，最容易犯的错误，就是还没想清楚业务到底需要什么，就急着引入各种 Agent 框架。<br><br>最后框架装了一大堆，工作流画得特别复杂，真正出了问题反而不知道从哪里排查。<br><br>说到底，LangChain 和 LangGraph 真正值得学习的，不只是它们的 API 怎么调用。<br><br>而是它们背后的模型工具调用、任务状态、条件路由、执行恢复和工作流设计思想。<br><br>你得知道什么时候应该让模型自主选择工具，什么时候应该使用确定性流程，哪些状态必须保存，哪些操作需要人工审批，以及任务失败以后应该怎么安全恢复。<br><br>这些东西即使以后换了框架，依然是非常重要的工程能力。<br><br>所以我的理解是：<br><br>LangChain 让你更方便地构建 Agent。<br><br>LangGraph 让你更精细地控制 Agent 的执行流程。<br><br>但真正决定一个 Agent 能不能交付的，不是你选择了哪个框架，而是你有没有把业务流程、状态、权限和异常处理设计清楚。<br><br>学框架当然重要，但更重要的是搞明白框架到底帮你解决了什么问题。<br><br>不然最后 LangChain、LangGraph 都会用了，却连为什么需要一个 Checkpoint、为什么工具调用不能无脑重试都解释不清楚，那其实还是停留在工具使用层面。<br><br>这也是我觉得做 Agent、FDE、企业 AI 落地，最值得长期积累的工程能力。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent 并发需限流与指数退避</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bencongyyds · 2026-11-14 21:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做 Agent 别只顾着把并发拉满，上游限流保护与指数退避才是多任务稳定运行的护城河。几十个子任务同时打向外部接口，没有信号量控制和 jitter 重试，瞬间就会触发 429 雪崩。学会优雅降速与排队削峰，系统才能在高并发下稳稳交付。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Diagram Design AI画图表</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xGky · 2026-11-14 13:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一个相当猛的开源 Skill！往后画流程图、架构图，确实犯不着再扎进 Figma 里死磕了！<br><br>项目：Diagram Design，只要把需求丢过去，Claude Code、Codex、Cursor 这一串 AI 工具便能替你攒出专业级图表。<br><br>1、里面裹着 45 种图表类型，时序图、流程图、思维结构图、架构图、甘特图这些统统画得动。<br><br>2、网站的配色与字体能读取过来，品牌风格自动就对上了号。<br><br>3、Mermaid、<a href="http://draw.io" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://draw.io</a> 这类图表可以导入进来，排版再重新归置一遍。<br><br>4、输出独立 HTML + SVG 文件，浏览器一点便开，图片也能往外导。<br><br>拖框、拉线、调配色这些活儿全免了，跟 AI 说一声想画啥便成！<br><br>安装命令：<br>npx skills add cathrynlavery/diagram-design<br><br>🔗： ⁠<a href="https://github.com/cathrynlavery/diagram-design" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/cathrynlavery/diagram-design</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXBdFheaIAAYne1.png" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cursor 供应链攻击植入SSH后门</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Rakel076 · 2026-11-14 20:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Cursor 昨天发的攻击报告，看完有点后背发凉😱<br><br>起点是 Cursor 发给供应商 Fireworks 的密钥在对方那边泄露了，黑客顺着摸进内部系统，把 Claude Code 扩展的分发缓存换成了带毒版本。<br><br>恶意版本只挂了 11 个小时，最多约 5000 人中招，装上的是 SSH 后门，官方说光卸载扩展还不够。<br><br>用户什么都没做错，只是点了下更新，电脑就多了个后门……🤡</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">GoPlus Security 🚦 <span style="font-size:12px;color:#999999;font-weight:400;">@GoPlusSecurity</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">⚠️ Cursor 已发布了一份关于此前供应链攻击的安全事件报告。据调查，攻击者使用了 Cursor 签发给 Fireworks 的访问密钥，这些密钥随后在 Fireworks 侧被泄露，攻击者借此获得了对 Cursor 部分 SaaS 服务和内部系统的访问权限。攻击者最终篡改了 Claude Code 扩展的分发缓存，以收集用户机器上的信息并安装 SSH 后门。<br><a href="https://cursor.com/cn/blog/security-incident-update" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cursor.com/cn/blog/security-incident-update</a><br><br>被篡改的版本是 Cursor 的 VS Code 扩展市场分发缓存中的 Anthropic.claude-code 2.1.312 和 2.1.313，影响 macOS 和 Windows。暴露窗口从 10 月 29 日 17:27 到 10 月 30 日 04:35（UTC+8），受影响用户最多约 5,000 人。<br><br>安全建议：如果您在此窗口期间通过 Cursor 的市场安装或更新到了受影响的版本之一，请尽快阅读官方公告，并为您所使用的平台运行修复脚本，以检查并修复任何可能的入侵：<br><a href="https://cursor.com/cn/blog/claude-code-extension-security-notice" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cursor.com/cn/blog/claude-code-extension-security-notice</a><br><br>Fireworks 的初步公告及后续更新：<br><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fireworks.ai/security/bulletins/october-2026-security-incident</a><br><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fireworks.ai/security/bulletins/october-2026-security-incident-update</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">⚠️ Cursor has published a security incident report on the earlier supply chain attack. According to the investigation, the attacker used access keys issued by Cursor to Fireworks and subsequently exposed on Fireworks’ side to gain access to some of Cursor’s SaaS services and internal systems. The attacker ultimately tampered with the distribution cache for the Claude Code extension to collect information about users’ machines and install SSH backdoors.<br><a href="https://cursor.com/cn/blog/security-incident-update" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cursor.com/cn/blog/security-incident-update</a><br><br>The compromised versions were Anthropic.claude-code 2.1.312 and 2.1.313 in Cursor’s VS Code extension marketplace distribution cache, affecting macOS and Windows. The exposure window ran from October 29 at 17:27 to October 30 at 04:35 (UTC+8), with up to approximately 5,000 users affected.<br><br>Security recommendation: If you installed or updated to either affected version through Cursor’s marketplace during this window, read the official notice as soon as possible and run the remediation script for your platform to check for and remediate any compromise:<br><a href="https://cursor.com/cn/blog/claude-code-extension-security-notice" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://cursor.com/cn/blog/claude-code-extension-security-notice</a><br><br>Fireworks’ initial announcement and subsequent update:<br><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fireworks.ai/security/bulletins/october-2026-security-incident</a><br><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://fireworks.ai/security/bulletins/october-2026-security-incident-update</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>TurboFieldfare跑26B模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-14 13:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">手上只有一台 8 GB 内存的 MacBook Air，想跑个本地大模型，结果模型文件就有 14 GB 多，内存根本塞不下。<br><br>TurboFieldfare 能让 Gemma 4 26B-A4B 在苹果芯片 Mac 上跑起来，模型权重和缓存只占大约 2 GB 内存，还带一个原生的 Mac 聊天应用。<br><br>它只把 1.35 GB 的共享部分和缓存留在内存里，每生成一个词，再从 SSD 临时读出用得上的那几个专家。<br><br>GitHub：<a href="https://github.com/drumih/turbo-fieldfare" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/drumih/turbo-fieldfare</a><br><br>作者在 8 GB 的 M2 MacBook Air 上实测，每秒能出 5.1 到 6.3 个 token，换成 24 GB 的 M5 Pro 能到每秒 31 到 35 个。<br><br>运行时是用 Swift 和 Metal 专门为这个模型写的，没用 MLX 或 llama.cpp，作者还整理了 103 组实验记录。8 GB 的 Mac 能跑 26B，我是没想到。<br><br>聊天记录存在本地，装上图像扩展包还能看图，另外有命令行和兼容 OpenAI 接口的本地服务。第一次下载模型大约 15 GB。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXD-7rhbMAAHW66.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI工程面试100题开源题解手册</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @king1818888 · 2026-11-14 15:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">交作业了！<br><br>之前聊到那套《2026 AI 工程面试 100 题》，私信和评论区不少朋友在问完整内容。<br><br>其实如果只看题目，不仅很难抓住重点，甚至越看越焦虑。所以我花时间把整整 100 道题重新做了工业化梳理，给每一道题都补充了【核心考点剖析】与【生产级排障参考答案】，顺带把 7 道系统大题的架构方案也完整补齐了。<br><br>已经整理并开源到 GitHub，大家可以直接自取：<br>👉 <a href="https://github.com/Kimberlying/ai-engineering-interview-100" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Kimberlying/ai-engineering-interview-100</a><br><br>这份手册的核心亮点：<br>1. 真实线上事故全覆盖：覆盖 Prompt 踩坑、RAG 检索、Agent 状态机死循环、微调选型、vLLM 推理排队、生产安全与成本治理 8 大板块；<br>2. 折叠卡片式设计：每道题点击即可展开工业级题解，非常适合用来做个人自测或团队技术选型查漏补缺；<br>3. 7 道系统设计大题：包含 5 万人企业级 RAG、10 万单电商客服 Agent、共享推理网关、万圣节数据穿透应急等完整端到端架构。<br><br>不管是准备接下来的技术面试，还是正在线上做大模型落地排障，都可以存一份备用。<br><br>如果对你有帮助，欢迎去 GitHub 顺手点个 ⭐️ Star 支持一下！</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Freebie Radar监控63信源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @grgerwcwetwet · 2026-11-14 19:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！有人把全网薅羊毛的信息源，做成了一个自动监控雷达！<br><br>推荐一个开源项目 Freebie Radar（白嫖雷达），内置 63 个数据源，覆盖 Linux DO、NodeSeek、V2EX、Epic、Steam、Reddit、Telegram 等平台。<br><br>最狠的是，它还接入了 AI 自动筛选，能识别真假福利，把抽奖、试用、推广广告过滤掉，只留下真正值得领取的免费资源。<br><br>支持 Telegram 实时推送、每日精选、兑换码提取，甚至能用 Docker 部署到自己的 VPS 上，全天自动帮你蹲福利！<br><br>以后软件限免、免费游戏、AI 免费额度，再也不用一个个网站去翻了！<br><br>在线体验：⁠<a href="https://radar.zichuanlan.top" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://radar.zichuanlan.top</a><br><br>GitHub：⁠<a href="https://github.com/ZiChuanLan/freebie-radar" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/ZiChuanLan/freebie-radar</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HXFWmPbaMAAxpJM.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code数据库设计Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TiagerBao · 2026-11-14 13:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">AI 写代码最容易埋的坑之一，就是数据库表设计错了，等上线后才发现改不动。<br><br>发现一个 Claude Code 专用 Agent：Database Architect。<br><br>它不只是帮你生成 SQL，而是提前参与数据库架构设计。<br><br>主要能做这些事：<br>数据建模：表结构、主外键、索引、约束<br>技术选型：PostgreSQL、MySQL、MongoDB、向量数据库<br>多租户设计：RLS、Schema 隔离、独立数据库<br>性能规划：读写模式、分库分片、扩展方案<br>数据迁移：生成迁移脚本和回滚方案<br><br>安装命令：<br>npx claude-code-templates@latest --agent database/database-architect<br><br>我觉得最实用的是让 Agent 先分析业务访问模式，再设计表结构，而不是代码写完才补数据库。<br><br>不过生成的 DDL 和迁移脚本仍需要人工审核，尤其是生产环境的数据变更。<br>你现在用 AI 开发项目，会让它直接设计数据库，还是自己先把表结构定好？<br><br>项目：<a href="https://www.aitmpl.com/component/agents/database/database-architect" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.aitmpl.com/component/agents/database/database-architect</a><br><br>#ClaudeCode #AI #Agent #Database</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

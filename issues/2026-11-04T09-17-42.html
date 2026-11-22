@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月4日 17:17">
+<title>AI技术雷达 · 11月4日 17:17 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="/" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="/">最新</a> · <a href="/#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Cordis插件化框架重构Agent循环</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;亚马逊Rufus-Air公开后训练配方</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Hy4开源模型新增视觉能力</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;MySQL与PostgreSQL选型指南</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;20家单位发布智能体自律公约</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cordis插件化框架重构Agent循环</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-04 11:12</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">DeepSeek Harness， Github上的代码库一百多万行代码<br>官方说法叫“一切皆插件”，连 Agent 循环都是插件<br>刚听到时我不太理解<br>这两天开始学习它底层那个叫 Cordis 的框架<br>慢慢搞懂了是怎么实现这一切的<br>画了张图，按图从上往下说<br><br>左上角是没有主板的写法<br>自己从零写 Agent，基本都是这么开始的：<br>一个 <a href="http://agent.py" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://agent.py</a> 把循环写死，模型、工具直接 import 进来<br>想加个审批，只能打开循环往里塞 if<br>主流的 Claude Code、Codex也基本是这个做法<br><br>右上角是 Cordis 的思路<br>插件之间谁也不 import 谁，只认一块主板 ctx<br>模型插件把自己挂成 ctx.llm，循环要用模型就按名字去拿<br>背后是 DeepSeek 还是别家，循环根本不关心<br><br>中间那一大块是主板本身<br>左边是一张张插件卡，经过 Loader 挂到 ctx 上<br>装机清单里先写谁后写谁无所谓，插件只说“我要 llm 和 tools”<br>没到齐就等，到齐了自己启动<br>右边绿色的三块值得多看一眼：Agent 接口和 Agent 循环是分开的<br>别的插件只认接口，所以循环能整个换掉<br><br>左边中间那个洋葱，是工具调用要走的路<br>一次调用从外往里穿过审批、日志，最里面才是真正执行<br>每一层都能改参数，也能不往下传，直接拦掉<br>审批就是这么实现的，不用碰循环一行代码<br><br>右边那块讲拔卡和换卡，我觉得是整个设计最精巧的地方<br>拔掉模型时，不是模型先走，而是依赖它的循环先收尾<br>收尾时还能再调一次模型，模型最后才撤，改模型配置也一样</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWP8016bEAEtNCj.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>亚马逊Rufus-Air公开后训练配方</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Michaelzsguo · 2026-11-04 06:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是我做过最长的一个视频，33 分钟。因为这是一篇值得逐字逐句仔细研读的论文。<br><br>很多人羡慕顶级 AI 实验室的高薪岗位，却很少有人真正坐下来，把这些岗位需要的核心技术学会。与其羡慕，不如自己动手学。<br><br>亚马逊这篇 Rufus-Air 论文，把大模型后训练的完整配方公开了出来：同一个底座模型，只是换了一套训练配方，指令遵循得分就从 33.6 提升到了 76.9。<br><br>但最惊艳的不是跑分，而是作者们细致入微、手把手式的分享。数据从哪里来、奖励怎么设计、八个训练阶段为什么这样安排、基础设施踩过哪些坑，全部写了出来。这些正是顶级 AI 实验室后训练团队每天需要做的技术决策，也是平时最少公开的部分。<br><br>我把它做成了一套循序渐进的中文教程，目的只有一个：让你能跟着一步一步学。每一章都配了一个小脚本，在笔记本电脑上就能跑，屏幕上展示的每一个输出都是真实运行出来的。<br><br>只有一张卡、一台机器？完全够用。换一个小模型，从有标准答案的数学题开始，先做难度过滤，再沿着论文的八个阶段一步一步往上走。<br><br>这些技术实践不仅能让你真正掌握大模型后训练的核心技术，也能让你从容应对相关岗位的技术面试。祝你早日找到年薪 $500,000 的工作。<br><br>论文：<a href="https://arxiv.org/abs/2609.29421" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2609.29421</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/amplify_video_thumb/2117718113265311745/img/mOGr3ewz3XWqcJ9a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hy4开源模型新增视觉能力</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ShunyuYao12 · 2026-11-04 15:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">为我们在不到一年内取得的成就感到自豪！<br><br>优先考虑安全性、实用性、人类评估和泛化能力。<br><br>我最喜欢的部分是图表的最后一行 😂</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Proud of what we’ve achieved under a year! <br><br>Priortize security, usefulness, human evals, and generalization. <br><br>Favorite part of mine is the bottom line of the plot 😂</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tencent Hy <span style="font-size:12px;color:#999999;font-weight:400;">@TencentHunyuan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">👋 Hy4来了，全新的视觉能力。<br>稳居领先开源模型行列。<br>在各个领域都更高效：金融、前端、游戏、办公、研究……<br>负责任地构建，考虑了网络安全/生物安全。<br>试试看，告诉我们你的反馈！<br>🔗：<a href="https://hy.tencent.ai/research/hy4?langVersion=en" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hy.tencent.ai/research/hy4?langVersion=en</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">👋Hy4 is here, new with vision.<br>Firmly among the leading open models.<br>More productive everywhere: finance, frontend, game, officework, research…<br>Built responsibly, with cyber/biosecurity in mind.<br>Try it out and let us know!<br>🔗：<a href="https://hy.tencent.ai/research/hy4?langVersion=en" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://hy.tencent.ai/research/hy4?langVersion=en</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="https://pbs.twimg.com/media/HWQvvEraQAAjwKn.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MySQL与PostgreSQL选型指南</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @nicoster · 2026-11-04 12:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">MySQL 真的是清朝数据库吗<br>原始链接：<a href="https://x.com/realchendahuang/status/2117710533428465909" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/realchendahuang/status/2117710533428465909</a><br><br>X 上有一条帖子劝大家别再用 MySQL 这种清朝数据库，赶紧换成 PostgreSQL（下文简称 PG）。这话传得很广，我觉得只说对了一半。<br><br>先说 PG 强在哪。它的 SQL 能力更完整，DDL 可以放进事务，出错整体回滚；部分索引、表达式索引、数组和范围类型都是现成的，JSONB 也比 MySQL 的 JSON 好用。更大的优势是扩展，PostGIS 管地理数据，pgvector 管向量检索，TimescaleDB 管时序数据，一个库能顶好几个系统。复杂的多表查询，PG 的优化器也更成熟，MySQL 到 2019 年的 8.0.18 才支持 hash join。许可证方面，PG 采用宽松许可，没有单一厂商控制。<br><br>但是，MySQL 并不老。2018 年的 8.0 补上了 CTE（公用表表达式，你可以想成 SQL 里的临时变量）、窗口函数、原子 DDL 和秒级加列。8.0 今年 4 月停止维护，现在的长期支持版是 8.4 和 9.7。<br><br>MySQL 也有 PG 比不了的地方，最典型的是 VACUUM。PG 更新一行时，旧版本留在表里，要靠 VACUUM 清理，更新频繁的表容易膨胀。MySQL 把旧版本放进 undo log，没有这个负担。2016 年 Uber 从 PG 迁回 MySQL，写放大就是主要原因之一。连接模型也不同，PG 每个连接起一个进程，连接一多就得加 PgBouncer 这样的连接池；MySQL 用线程，扛连接更轻松。复制和分库分表，MySQL 的生态更成熟，Vitess、TiDB、OceanBase 都兼容 MySQL 协议，国内熟悉 MySQL 的 DBA 也多得多。<br><br>帖子后半段说，生产环境不要随手用容器跑数据库。这一点我同意，但问题不在 Docker 本身，而在存储卷、备份和高可用有没有人管。这件事和选 MySQL 还是 PG 无关，买云厂商的托管实例，或者自己搭三节点的高可用集群，两边都适用。作者推荐的 Pigsty 是一个开源的 PG 集群部署工具。<br><br>我的看法是，新项目没有历史包袱，需要复杂查询或扩展，默认选 PG 没错。已经稳定跑着 MySQL 的系统，没必要因为一句清朝数据库去迁移，更值得做的是把还停在 8.0 的实例升到 8.4。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">陈大黄 <span style="font-size:12px;color:#999999;font-weight:400;">@realchendahuang</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">首先不建议用MySQL这种清朝数据库，赶紧切换到现代PG吧。PG的体验秒杀MySQL。<br><br>其次，开发环境咋玩都行，就算装在U盘里跑，那也是本事。<br><br>生产环境，数据的安全是第一位的，用容器跑数据库不出意外，纯粹是运气好。<br><br>比较好的方案是：<br>①直接买云厂商的托管PG实例。连上就能用，省心省力。<br><br>②自己搭PG集群，自己管理维护，建议3台起步，高可用架构，这里推荐用pigsty搭建PG集群。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>20家单位发布智能体自律公约</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bytelee_trade · 2026-11-04 16:04</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">11月4日，中国信通院、华为、阿里、腾讯、小米、百度、火山引擎等20家单位在乌镇联合发布《智能体发展自律公约》。八条措施里最具体的是两条：建立分层次、可验证的智能体身份标识；共建注册解析、能力描述与发现、路由连接等互联基础设施。<br><br>同一天，天融信发布“三域一平面”智能体安全框架，把安全对象拆成对象、身份、行为、数据四个维度；蚂蚁集团则披露旗下医疗AI“阿福”的四层治理体系，从价值原则、医学伦理一直排到模型数据治理和组织保障。三件事放在一起，指向同一个变化：厂商的注意力正从“模型能干什么”转向“它干了事，责任算谁的”。<br><br>这个转向有现实原因。智能体开始代替人登录账号、下单、支付、读取病历，出错成本由用户承担，责任却容易落在链条最模糊的一环。身份标识和互操作协议本质上是责任分配的基础设施：谁签发身份、谁记录行为、谁有权熔断，决定了事故之后能不能追溯。<br><br>需要保留的判断是，自律公约没有强制力，条款多为“共建”“提升”这类方向性表述，身份标准、审计接口、跨平台互认都还没有可查的落地文本；蚂蚁的四层体系目前也只覆盖自家产品。真正的考验是接下来有没有公开的技术规范和第三方合规测试，而不是发布现场站了多少家单位。<br><br>#智能体 #AI治理 #乌镇峰会</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="/#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
