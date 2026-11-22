@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月23日 05:33">
+<title>AI技术雷达 · 11月23日 05:33 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;深入理解AI Agent发布3.0</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;JEV harness PDF快300倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Agent四层工程框架详解</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Eleven Turbo首语音150ms</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Anthropic多Agent提升90%</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity共享黑板用JSON</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chasen_liao · 2026-11-22 16:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">大道至简啊 💥 🤯<br><br>我原以为 Antigravity 的 /swarm 背后得有一套很复杂的系统。翻完源码才发现，撑起那块共享黑板的，就两个 JSON 文件和一个 JSONL 日志<br><br>如果你也好奇，一群 Agent 怎么靠一块黑板接力干活，可以看看这篇 👇 <a href="https://x.com/i/article/2122991361402228736" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122991361402228736</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>深入理解AI Agent发布3.0</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-22 23:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">两个月没有更新了，《深入理解 AI Agent》发布 3.0 版本了！<br><br>- 重写了各章节的大部分内容，消除了一些 AI 味，把综述式的文风改成了教学式的，更容易理解<br>- 新增 Jev 类决策模型在事件过滤、工具安全判断、评测 rubric、RAG 筛选、多模态信息稀疏化等方面的应用<br>- 新增 Meta Muse、Pine、dsh superagent 等 personal agent 的办事逻辑<br>- 新增 Multica、LobeHub 等办公 agent<br>- 新增 Anthropic 证明黎曼猜想、OpenAI 证明千禧年问题等科研 agent<br>- 修订语音交互部分，纳入一些最新的工作<br>- 重绘书中大量插图<br>- 新增社区翻译的蒙古语版本<br>- 合入社区的 30+ PR，解决 20+ issues</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Bojie Li <span style="font-size:12px;color:#999999;font-weight:400;">@bojie_li</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">去年 8-10 月在图灵讲的《AI Agent 实战营》课程，终于整理成书啦，在 GitHub 开源发布了。《深入理解 AI Agent：设计原理与工程实践》欢迎大家下载传播 PDF，欢迎大家提意见、提 issue！<br><a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a><br>全书围绕核心公式 Agent = LLM + 上下文 + 工具 展开，十章内容如下：<br>- 第 1 章 · Agent 基础知识：从&quot;模型即 Agent&quot;的新范式出发，建立 Agent = LLM + 上下文 + 工具 的核心公式，并引入 Harness 工程——模型之外的一切工程能力，才是真正的竞争力所在。<br>- 第 2 章 · 上下文工程：上下文决定 Agent 的能力上限。深入大模型 API 的上下文结构、KV Cache 友好设计、提示工程、动态提示词与 Agent Skills、状态栏元信息，以及上下文压缩策略。<br>- 第 3 章 · 用户记忆和知识库：让 Agent 跨会话记住用户、并接入外部知识。涵盖用户记忆系统、RAG 基础管道，以及超越扁平文本的知识组织与检索（结构化索引、知识图谱等）。<br>- 第 4 章 · 工具：工具是 Agent 的双手。讲工具分类与通用设计原则、MCP 协议与工具选择的挑战、感知/执行/协作三类工具，以及事件驱动的异步 Agent。<br>- 第 5 章 · Coding Agent 与代码生成：代码是&quot;能创造新工具的工具&quot;，是通用 Agent 的元能力。以生产级 Coding Agent 为例，展示这一最强通用工具的完整实现。<br>- 第 6 章 · Agent 的评估：把 Agent 的表现变成可比较的信号。从评估环境、数据集设计、指标体系，到统计显著性、可观测性、评估驱动选型，直至生产级内部评估与仿真环境。<br>- 第 7 章 · 模型后训练：预训练、SFT、RL 三阶段全景。何时选 SFT、何时选 RL，RLHF、算法比较、数据与环境，以及让模型学会工具调用、提升样本效率的前沿探索。<br>- 第 8 章 · Agent 的自我进化：不改权重也能成长。三种学习范式，从经验中学习、主动工具发现，到&quot;从工具使用者到工具创造者&quot;，让 Agent 从&quot;聪明&quot;走向&quot;熟练&quot;。<br>- 第 9 章 · 多模态与实时交互：把感知与行动从文本扩展到语音、GUI 与物理世界。语音三范式（级联/端到端全模态/全双工）、流式语音感知与合成、Computer Use 与机器人操作。<br>- 第 10 章 · 多 Agent 协作：群体的智能可以高于个体。多 Agent 分类框架、何时真正优于单 Agent、共享与不共享上下文的协作、失败模式，以及涌现的&quot;Agent 社会&quot;。<br>Repo: <a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/993268d10c30b576b6ca.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>JEV harness PDF快300倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @savvy_luvvvv · 2026-11-22 23:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">对每个在跑 coding agent 的人来说，这份 pdf 基本就是作弊码<br><br>jev 创始人、instructgpt 合著者 diogo almeida 放出了一份 pdf，讲清楚怎么搭一套 jev harness<br><br>它的承诺：<br>&gt; 速度最多快 300 倍<br>&gt; 成本最多低 600 倍<br><br>快和省，全都来自模型外面那层 harness<br><br>用法：<br>&gt; 把这份 pdf 和下面的文章一起丢给 claude code 或 codex<br>&gt; 让它照着重建一遍自己的配置<br><br>花 2 个小时，你的 agent 就能跑在一套很少有团队拥有的 harness 上 ↓</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/62c3aa64366ac8cb4741.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Iron Giant <span style="font-size:12px;color:#999999;font-weight:400;">@irongiantXBT</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2122340667510960129" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122340667510960129</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2122340667510960129" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122340667510960129</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent四层工程框架详解</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-11-22 18:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Prompt、context、harness 和 loop 工程，清晰讲解！<br><br>一个 agent 就是一个 while 循环，外面包裹着四层工程：<br><br>- Prompt 工程<br>- Context 工程<br>- Harness 工程<br>- Loop 工程<br><br>每一层包裹着上一层，而模型位于中间，所以它们之间并不互相竞争，而是各自向外延伸一层。<br><br>&gt; Prompt 工程：<br><br>这定义了模型在一次调用中看到的输入，通常由角色、指令、示例和输出格式组成。<br><br>这里的技巧会因为模型看到的措辞而改变模型内部的计算和推理过程：<br><br>- Chain-of-thought 让它在回答之前分步思考<br>- Few-shot 示例定义格式和边界情况<br>- JSON schema 或 XML 标签让输出能被代码解析<br>- Self-consistency 采样几条推理链并取多数<br><br>&gt; Context 工程：<br><br>这是模型在一轮对话中看到的所有内容，不仅仅是 prompt。包括查询、检索到的文档、记忆、之前的对话轮次，以及早期步骤的工具输出。<br><br>窗口是有限的，而且填得很快，所以工程工作就是对输入排序，并砍掉所有不起作用的内容。<br><br>你通过以下方式做到这一点：<br><br>- 只检索与查询相关的片段，然后重新排序<br>- 把关键事实避开中间位置，因为那里准确率会下降<br>- 总结旧轮次，驱逐过期输出，把大块内容推到文件里<br><br>&gt; Harness 工程：<br><br>这是围绕模型的代码，它定义工具、解析调用、失败时重试，并且可以将工作路由给子 agent，让一个负责检索，另一个负责代码。<br><br>然后由一个 verifier 通过运行测试、验证 schema 等方式对结果进行评分。<br><br>Prompt 和 context 涉及的是让一次调用做对。Harness 涉及的是为了让它在一个真实系统中运行，那次调用周围必须发生的所有事情。<br><br>&gt; Loop 工程：<br><br>在通常的设置中，你管理外层循环，也就是说，你写一个 prompt，读 agent 运行的轮次，写下下一个 prompt，重复如此，同时捕获失败。<br><br>这一层把这项工作交给了 agent 本身。它按计划或事件启动，运行多个轮次，中间没有任何 prompt。<br><br>循环本身不知道什么时候完成了。一个 agent 可以报告说它完成了并停止，但测试仍然失败。所以停止不能以 agent 的话为准，而必须是一个真实的信号，比如：<br><br>- 轮次和 token 上限来停止卡住的运行<br>- 无进展检测器来捕获重复调用<br>- 完成检查用另一个模型或确定性测试来验证目标<br><br>通过这一层，你操作的是整个运行，所以工程工作从编写每个 prompt 变成预先设定目标和停止条件，然后让它运行。<br><br>运行时间越长，下面几层的成本就越大。<br><br>当一个工具返回一个 5 万 token 的响应，而没有任何东西移除它时，模型会在每次后续调用中重新读取它。在一个二十步的循环中，一个响应变成了数十万 token。<br><br>我写了一篇完整拆解 agent 的 token 到底去了哪里，以及 harness 如何保持 context 平坦的文章，使用的是 TrueForge，一个开源的 harness，它能把一个 LLM 变成一个能工作的 agent。<br><br>GitHub repo: <a href="https://github.com/truefoundry/trueforge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/truefoundry/trueforge</a><br><br>（别忘了给它点星 ⭐）<br><br>它涵盖了将大型工具输出卸载到文件、用于 context 隔离的子 agent、用于多工具连接的 Code Mode，以及压缩。<br><br>它还有一个三个 harness 在同样 14 个任务上的基准测试，其中 TrueForge 用了大约 Claude Managed Agents 40% 的 token 就达到了相同的答案。<br><br>你可以在下面阅读我的完整文章。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Prompt, context, harness &amp; loop engineering, clearly explained!<br><br>An agent is a while loop with four layers of engineering wrapped around it:<br><br>- Prompt engineering<br>- Context engineering<br>- Harness engineering<br>- Loop engineering<br><br>Each one wraps the last, and the model sits in the middle, so none of them compete with the others. Instead, they just zoom one level further out.<br><br>&gt; Prompt engineering:<br><br>This defines the input the model sees on one call, often composed of a role, instructions, examples, and an output format.<br><br>The techniques here alter the internal computation and reasoning the model goes through due to the wording it sees:<br><br>- Chain-of-thought makes it work in steps before answering<br>- Few-shot examples define the format and the edge cases<br>- A JSON schema or XML tags make the output parseable by code<br>- Self-consistency samples a few chains and takes the majority<br><br>&gt; Context engineering:<br><br>It's everything the model sees on a turn, not just the prompt. That includes the query, retrieved docs, memory, prior turns, and tool outputs from earlier steps.<br><br>The window is finite and fills up fast, so the engineering work is to rank inputs and cut everything that isn't pulling weight.<br><br>You do this by:<br><br>- Retrieving only the chunks relevant to the query, then reranking them<br>- Keeping key facts out of the middle, where accuracy drops<br>- Summarizing old turns, evict stale outputs, push big blobs to files<br><br>&gt; Harness engineering:<br><br>It's the code around the model that defines the tools, parses the calls, retries on failure, and can route work to sub-agents so one handles retrieval and another handles code.<br><br>A verifier then grades the result by running tests, validating a schema, etc.<br><br>Prompt and context involve getting one call right. The harness involves everything that has to happen around that call for it to run in a real system.<br><br>&gt; Loop engineering:<br><br>In the usual setup, you manage the outer loop, i.e, you write a prompt, read the turns the agent runs, write the next prompt, and repeat, while catching failures.<br><br>This layer hands that job to the agent itself. It kicks off on a schedule or an event, and runs many turns with no prompt in between.<br><br>A loop inherently doesn't know when it's finished. An agent can report that it's done and halt while the tests still fail. So the stop can't be the agent's word, but rather it has to be a real signal, like:<br><br>- A turn and token cap to stop stuck runs<br>- A no-progress detector to catch repeated calls<br>- A completion check to verify the goal with a separate model or a deterministic test<br><br>By this layer, you're operating on the whole run, so the engineering moves from writing each prompt to setting the goal and the stop conditions up front and letting it run.<br><br>A longer run also makes the cost of the layers underneath it grow.<br><br>When a tool returns a 50K-token response and nothing removes it, the model reads it again on every later call. Over a loop of twenty steps, one response turns into hundreds of thousands of tokens.<br><br>I wrote a full breakdown of where an agent's tokens actually go and how a harness keeps context flat, using TrueForge, an open-source harness that turns an LLM into a working agent.<br><br>GitHub repo: <a href="https://github.com/truefoundry/trueforge" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/truefoundry/trueforge</a><br><br>(don't forget to star it ⭐ )<br><br>It covers offloading large tool outputs to files, subagents for context isolation, Code Mode for multi-tool joins, and compaction.<br><br>It also has a benchmark of three harnesses on the same 14 tasks, where TrueForge reached the same answers on about 40% of the tokens Claude Managed Agents used.<br><br>You can read my full article below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/51702a05a8edcfe5d051.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Avi Chawla <span style="font-size:12px;color:#999999;font-weight:400;">@_avichawla</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="http://x.com/i/article/2091778455302238208" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2091778455302238208</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="http://x.com/i/article/2091778455302238208" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://x.com/i/article/2091778455302238208</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Eleven Turbo首语音150ms</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ElevenLabsDevs · 2026-10-21 01:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Eleven v4 Turbo 上线了。约 150ms 到首次语音，REST + 流式传输 + SDK，一个 model_id 即可在 v4 和 v4 Turbo 之间切换。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Eleven v4 Turbo is live. ~150ms to first speech, REST + streaming + SDKs, one model_id to switch between v4 and v4 Turbo.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic多Agent提升90%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xWhitemon · 2026-11-22 23:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这篇 Anthropic 多 agent 论文简直离谱<br><br>Anthropic 的研究团队让一个 Opus 负责指挥一个 Sonnet 团队，比单独的 Opus agent 高出 90.2%。而用更大的模型并不是关键的升级。<br><br>关键的升级是：一个 agent 负责规划，其余并行搜索，并且没有任何单个窗口承载整个任务。<br><br>plan → brief → scale → parallel → fix → cite<br><br>研究团队的 6 个部分：<br><br>第 1 部分 → 主导 agent<br><br>Opus 在第一次搜索之前把计划写入记忆。<br>超过 200,000 token 后 context 会被截断。<br>计划得以幸存。<br><br>第 2 部分 → 任务简报<br><br>每个子 agent 都会得到一个目标、一个输出格式、工具和一条&quot;不要覆盖&quot;的说明。<br>没有这条，2 个子 agent 跑了完全相同的搜索。<br><br>第 3 部分 → 规模化投入<br><br>一个简单的事实：1 个 agent，3-10 次工具调用。<br>一个对比：2-4 个子 agent。深度研究：10+ 个。<br><br>第 4 部分 → 并行<br><br>3-5 个子 agent 同时运行，每个同时发起 3+ 个工具调用。<br>研究时间最多减少 90%。<br><br>第 5 部分 → 自我修复工具<br><br>一个测试 agent 运行了一个坏掉的工具几十次并重写了它的描述。<br>之后的每个 agent 都快了 40% 完成。<br><br>第 6 部分 → 文件 + 引用<br><br>子 agent 把发现保存到文件并返回一个路径。没有传话游戏。<br>引用检查在报告发布之前核实每一个论断。<br><br>一个 agent 在耗尽问题之前就会耗尽 context。一个团队永远不会填满一个窗口。<br><br>我把所有 6 个部分打包成了一个 prompt。把它丢进 Claude Code，它会为你设置好研究团队。<br><br>6 个部分。1 个 prompt。+90.2%。<br><br>然后阅读下面的文章 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This Anthropic multi-agent paper is f*cking insane<br><br>Anthropic's research team put one Opus in charge of a team of Sonnets and beat a solo Opus agent by 90.2%. And a bigger model wasn't the upgrade.<br><br>The upgrade: one agent plans, the rest search in parallel, and no single window holds the whole job.<br><br>plan → brief → scale → parallel → fix → cite<br><br>The 6 parts of the research team:<br><br>Part 1 → lead agent<br><br>Opus writes the plan to memory before the first search.<br>Past 200,000 tokens the context gets cut. The plan survives.<br><br>Part 2 → the brief<br><br>Every subagent gets an objective, an output format, tools and a &quot;do NOT cover&quot; line.<br>Without it, 2 subagents ran the exact same search.<br><br>Part 3 → scale effort<br><br>A simple fact: 1 agent, 3-10 tool calls.<br>A comparison: 2-4 subagents. Deep research: 10+.<br><br>Part 4 → parallel<br><br>3-5 subagents at once, each firing 3+ tools at once.<br>Research time down up to 90%.<br><br>Part 5 → self-fixing tools<br><br>A tester agent ran a broken tool dozens of times and rewrote its description.<br>Every agent after it finished 40% faster.<br><br>Part 6 → files + citations<br><br>Subagents save findings to files and hand back a path. No game of telephone.<br>A citation pass checks every claim before the report ships.<br><br>One agent runs out of context before it runs out of question. A team never fills one window.<br><br>I packed all 6 parts into one prompt. Drop it into Claude Code and it sets the research team up for you.<br><br>6 parts. 1 prompt. +90.2%.<br><br>Then read the article below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3da11016c0d32dd4def2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Whitemon <span style="font-size:12px;color:#999999;font-weight:400;">@0xWhitemon</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Harness、loop 和 graph 可能就是 AI 模型与真正能工作的 agent 之间缺失的那几层。<br><br>同样的模型，同样的 prompt，结果却完全不同。<br><br>在这篇文章中，我展示了如何构建这三层。<a href="https://x.com/i/article/2119423551300145152" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2119423551300145152</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Harness, loop and graph could be the missing layers between AI models and agents that actually work.<br><br>Same model, same prompt, completely different results.<br><br>In this article, I show you how to build all three layers. <a href="https://x.com/i/article/2119423551300145152" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2119423551300145152</a></p>
+  </section></section>
+  
+</section>
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
