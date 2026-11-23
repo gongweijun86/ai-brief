@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月23日 23:17">
+<title>AI技术雷达 · 11月23日 23:17 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Agent验证五法：让结果可验收</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;特斯拉FSD用1B模型实时生成画面</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;T3 Code官方通道统一多Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Multica 总结Agent平台十经验</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">11</span>&nbsp;&nbsp;GLM 5.4实测长程任务仍偏弱</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">12</span>&nbsp;&nbsp;OpenAI用困惑度验证压缩即智能</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent验证五法：让结果可验收</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dotey · 2026-11-23 04:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 说“验证完了”，怎么才能真的信它？<br><br>很多朋友都被 Agent 坑过：它信誓旦旦说做好了、验证完了，你信以为真，上线后发现压根没做好。被老板骂完回头找它，它认错态度很好，下次还是一样。<br><br>问题出在我们让它验证的方式上：Agent 不知道什么叫“做好了”，你也没有低成本的办法确认它真的做好了。分享五条我在用 Agent 做验证时的经验。<br><br>一、不要依赖对抗式验证<br><br>对抗式验证就是让另一个甚至多个 Agent 来检查结果，执行的 Agent 根据反馈改进，再检查、再改进，直到完成为止。<br><br>听起来很好，实际上经常无法收敛。尤其是不太聪明的模型，大部分时候是越改越糟，还浪费了很多 Token。<br><br>原因是缺少统一的验收标准。负责检查的 Agent 并不一定知道完整的上下文，也不知道准确的验收标准，于是自作主张提一堆意见，执行的 Agent 再照单全收，结果就越改越偏。<br><br>二、给出清晰的验收标准，再给一个能验收的环境<br><br>举个例子，你把设计稿交给 Agent，说：“帮我把这几个设计稿做成页面”，通常它会给你一个差不多的结果，有时候出入还很大。<br><br>换一个说法：“帮我把这几个设计稿做成页面，完成后请对网页截图，对比设计稿，要求像素一个都不要差”。这时候 Agent 做完不会轻易交差，它会截图，写工具对比截图和设计稿的像素差异，返工重做，直到像素真的一个都不差。<br><br>大部分时候我们并不需要一个像素都不差，有些偏差可以接受。重点是让它知道验收标准是什么，并且手里有办法自己去验。<br><br>三、越早验证，返工成本越低<br><br>尽早验证在传统软件工程里是常识，是大量血泪教训换来的。只是现在 Vibe Coding 让生成代码的成本大幅降低，非专业人士越来越多，大家渐渐忘了写代码之前还有三道关：<br><br>可行性分析：这个项目真的值得做吗？做出来会有人用吗？投入产出比合算吗？<br><br>原型开发：先做基本的交互，用模拟数据低成本做出一个可运行的原型，快速验证方向对不对，不对马上调整。现在 Agent 做原型已经很强了，比如 Claude Design（或者本地版的 <a href="https://github.com/jimliu/open-artifact" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/jimliu/open-artifact</a>），做出来的东西和最终结果看起来没什么差别，成本低得多，速度也快。<br><br>系统设计：技术选型、模块划分、数据结构、数据库设计、API Schema 这些。设计没做好，系统也能跑，但将来维护成本要高不少。Agent 能力虽然强，选的技术方案并不总是最好的。动手实现之前，先让它写一份技术方案文档，你大概看看：一方面帮你理解项目是怎么实现的，另一方面能及时纠正潜在问题，避免做完再返工。<br><br>四、让 Agent 提供证据，降低你的验收成本<br><br>人在 Loop 里是必不可少的，完全交给 AI，大概率只能收获 AI Slop。但人的验收能力是瓶颈，要确认的东西太多会很累。我最近用 Antigravity，跨 Workspace 每读一个文件都要我手工确认一遍，简直快崩溃了。<br><br>所以要把人确认的成本降到最低：能快速判断结果对不对，快速指出哪里有问题。<br><br>最简单的方式，是让 Agent 提供截图、录屏、可视化的 HTML 报告。Agent 在截图过程中自己也能发现一些问题，但截图最大的价值，是让人一眼就能看出问题。<br><br>想象一下，你是老板，员工来汇报工作，一页密密麻麻的 Word 文档和三页漂亮的 PPT，哪个更容易看？<br><br>我现在最常用的几个做法：<br><br>- 开发新功能，让它提供新功能的截图<br>- 修 bug，让它提供修改前和修改后的截图对比<br>- 让它自己模拟 API 响应数据，动态生成各种不同场景的截图，完全不需要服务端配合（虽然我还没搞明白它是怎么模拟的）<br><br>五、代码审查聚焦于真正的问题<br><br>Agent 生成代码的速度太快，瓶颈已经转移到了代码审查和验证上。代码审查不太可能完全靠人来做了，但人参与仍然有意义，只是方式要调整：<br><br>- PR 尽可能小。这样 Agent 审起来准确率更高，人也看得过来。<br>- 让 Agent 审，但不全信它的结论。审查结果要分级，人只盯 P0、P1 级别的问题，尤其是安全和性能问题，人工甄别一下，必要时让 Agent 解读、在本地验证。<br>- 细枝末节放过去。代码规范、最佳实践这类问题，不用太在意。<br><br>最后<br><br>这五条说的是同一件事：Agent 说的“做好了”不能直接当结论用，得让它变成你能检查的东西。<br><br>- 动手之前，告诉它什么叫做好了<br>- 动手之前，先用原型和方案文档把方向验一遍<br>- 做完之后，让它拿截图和对比来证明<br>- 你自己的精力，只花在最要紧的问题上</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8e942299acf81daf301a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>gemini-api-cli终端多模态</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-23 23:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">还在眼馋 Gemini 4 Neon 逆天的多模态能力？谷歌这回直接掀桌子了，连物理外挂都给你开源了！！😱<br><br>谷歌推出了一个终端神级工具：gemini-api-cli。<br><br>不用写一堆繁琐的 SDK 代码，直接敲命令，就能把 Gemini 的视频理解、OCR 和音视频生成能力全部白嫖光！<br><br>这玩意儿极其狂暴⬇️：<br><br>・视听生图全家桶：敲 image 瞬间出图，tts 秒出播音级配音，连视频、音乐都能直接原地生成落盘！<br>・视频与 OCR 降维打击：扔进去几百页烂 PDF、一段长录屏甚至 YouTube 链接，敲 analyze 一秒吸干所有核心信息！<br>・给 Agent 当最强挂件：Claude Code、Codex 缺素材？不用写一行废话，直接调它当免费全能军火库！<br>・纯 Go 打造零折腾：单二进制文件，不搞恶心的 Python 环境冲突，Win/Mac 一行直接跑！<br><br>还在手动搬砖搞多模态的，这波生产力直接甩开银河系。做项目和玩 Agent 的赶紧码住！<br><br>开源地址：<br><a href="https://github.com/google-gemini/gemini-api-cli" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google-gemini/gemini-api-cli</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/2bcee77cc950de1dbf56.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH Agent Loop 架构可视化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-22 15:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Deepseek Harness 完整Agent Loop 架构图可视化<br><br>用Gemini4 Neon做了一个Html方便理解<br>想要总共7期的文章内容在一个页面能直观展示出来<br>也是需要一些打磨的，中间生成了多种样式<br>这是最终版，我觉得还算满意。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e7c1d9cae28debd997c8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">纳米AI <span style="font-size:12px;color:#999999;font-weight:400;">@antiAIvo</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">目前 DeepSeek Harness 源码学习，用 7 篇源码笔记<br>沿着“用户敲下回车 → 模型返回结果”这条真实数据流<br>逐函数把 DSH 的 Agent 主循环走了一遍<br><br>7 个核心函数，每一个都在回答同一个问题：<br>在并发、异步、随时可能中断的真实环境里<br>怎么保证状态永远一致？<br><br>这其实也是目前agent-harness要解决的问题<br>直接看总结其实是比较难懂的<br>想要理清楚还是得深入代码，因为都是工程实践<br><br>一个完整的 Loop 长这样（附图是详细流程）：<br>followup → send → wakeDriver → kick<br>└→ while(turn)<br>└→ preStep (认领·装配·拦截)<br>└→ step   (推理·拼块·工具)<br>└→ 收尾   (结局·续命·闭环)<br>└→ idle / 接力重启<br><br>从 EP.01 到 EP.07，这7篇都在我发的文章里<br>每一篇都是沿着真实数据流逐函数拆解的源码笔记<br>如果你也在读 Agent 框架的源码<br>希望这条路线能帮你省点时间🙂</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/5a77f8854e3995d6daf1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Tailscale IPv6组网实测无坑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zihua0 · 2026-11-23 02:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前两周我让 codex 给我家里的 tailscale 组网分配 IPv6，以便我在外地能低延时点对点直连我家里的设备。<br><br>推文发出来后，有很多大佬评论说，IPv6 有很多坑、运营商会限速、IP 地址不稳定等等问题。<br><br>实际体验了两周下来，我可以负责任回答，只要配置得当，以上问题都没有，下图是我的完整方案，自取！ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cd567a61b16afe9b82fa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>特斯拉FSD用1B模型实时生成画面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @DashHuang · 2026-11-23 07:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">特斯拉的这个新版 FSD 显示，是 AI 视频实时生成的，不是通过传统 3D。而且是一个 1B 的袖珍模型，靠特斯拉车机的边角料算力跑。<br>想象一下，未来的 GTA 都能用这种方式玩，还要什么 3D 引擎。<br>传统的古法 3D 游戏制作流程，已经进入了历史的垃圾时间……<br></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/97fbb71dbb674f1efead.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Elon Musk <span style="font-size:12px;color:#999999;font-weight:400;">@elonmusk</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">如果有人好奇的话：<br><br>从去年开始我们就有了一个接近像素级还原的世界模型，这对于合成数据生成至关重要。<br><br>车上的那个（小得多的）版本是一个条件均值流模型，基于最近一系列 Tesla 通用视觉编码器（UVE）特征，这些特征与输入到 3B 编码器模型中生成驾驶动作的特征是相同的。<br><br>我们从这些 UVE 特征分叉出来，然后运行一个独立的约 1B 的扩散模型。它接收带噪声的上一帧真实视角生成结果，然后对其进行去噪，得到当前的可视化输出。<br><br>接着它会生成一小段视频片段（36 fps 下的 8 张图像，分辨率与 UI 屏幕相同）。这项工作由半个 TRIP 引擎在每个 18 Hz 的 UVE 帧上完成，并分布在 4 个周期中。<br><br>目前，由于算力限制，延迟有点高，但我们有办法将更新的 UVE 特征与扩散 Transformer 层交错排列，从而将延迟减少大约 35%。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">In case anyone is curious:<br><br>We’ve had a ~pixel-perfect world model since last year, which is critical for synthetic data generation. <br><br>The (much) smaller version of that in the car is a conditional mean-flow model, based on the recent sequence of Tesla Universal Vision Encoder features, which are the same ones that are plugged into the 3B encoder model that produces the driving actions. <br><br>We fork off from these UVE features, then run a separate ~1B diffusion model. This takes in the previous reality-view generation with added noise and then denoises it to the current visualization. <br><br>It then produces a small video chunk (8 images at 36 fps, at the resolution of the UI screen). This work is done by 1/2 of a TRIP engine every UVE frame at 18 hz and is spread over 4 cycles. <br><br>Currently, the latency is a bit high due to compute constraints, but we have ways to interleave newer UVE features along the diffusion transformer layers to cut roughly 35% of the latency.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>四模型生成PPT质量实测对比</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fankaishuoai · 2026-11-22 23:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Gemini 4 Neon 的设计水平相当令我惊艳啊！<br><br>我为周二在香港科技园的分享准备PPTX，同一份演讲内容，分别让他们帮我生成PPTX：<br><br>1. Gemini 4 Neon：非常美观，但少数设计有瑕疵<br>2. Claude Opus 5.5：美观，结构设计非常棒<br>3. GPT-6.2 Sol：中规中矩，不美观，但能用<br>4. DeepSeek V4.1 Flash：很多缺陷，没法用。<br><br>我最后采用了 Opus 5.5 生成的版本。仅仅因为我不想再修改PPTX了。但 Gemini 生成的版本真的最漂亮。<br><br>不过Gemini生成过程折腾死我了，通过Paseo ACP调用直接没响应，直接使用AGY CLI，弹了n次授权，我快疯掉了。<br><br>Google赶紧的吧，让其他Agent接入Gemini订阅套餐。<br><br>最后还是有点忧虑的，现在御三家（Claude，GPT，Gemini）明显把国内模型甩开了。希望 DeepSeek能跟上来吧。 <br><br>图片我截取了一页三个模型生成的Slide，可以对比看看效果：</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8d58e9c6b744bb394617.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/b4d22eac9c22c43f471a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/526a613d408627ae16b4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity核心团队分工</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Tao100086 · 2026-11-23 15:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">X上Antigravity核心团队公开面孔主要集中在少数几个人身上，问了一下X，这几位的“分工”大致如下：<br><br>核心开发者 / 产品工程负责人：<br>Varun Mohan（@_mohansolo）<br>Varun 是 co-lead（前 Windsurf CEO，2025年被 Google 招入 DeepMind），主导产品方向和工程。<br>Kevin Hou（@kevinhou22）<br>Kevin 是 head of product engineering（也来自 Windsurf），负责产品工程落地，经常做技术演讲和访谈。两人是最核心的公开开发/产品面孔。<br><br>Reset guy（配额重置宣布者）：<br>Varun Mohan（@_mohansolo）<br>几乎所有全员 quota reset 都由他在 X 上宣布。社区甚至有专门追踪他发帖的站点（如 <a href="http://antigravityreset.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://antigravityreset.com</a>、<a href="http://agyresets.com" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://agyresets.com</a>）。最近一次是 2026年11月21日左右的 Gemini 配额重置。Kevin 有时会 echo，但主宣布人是 Varun。<br><br>收集建议 / Feedback guy<br>Rody Davis（@rodydavis）<br>Staff DevRel，专门负责开发者成功和社区。会在 X 上主动问“你最想要的缺失功能是什么”，收集大量回复后总结给团队，并引导大家去官方论坛提交反馈。也做 demo、workshop 和内容。<br><br>官方宣传 / DevRel<br>Rody Davis（@rodydavis）、Nohe（@NoheDev）、Kevin Hou（@kevinhou22）、Google for Developers 账号（@googledevs）<br>Rody 和 Nohe 做 live demo、SDK 展示、技术内容。Kevin 做高层演讲和产品宣传。还有 Google Cloud 的 Developer Advocate（如 Guillaume Laforge、Mete Atamel）也有做相关分享。<br><br>还有一个Rody Davis（@rodydavis）和Varun Mohan（@_mohansolo）貌似也在关注社区违规使用事件，到处回复违反toc....<br><br>总而言之，如果大家准备重度使用Antigravity的话，这几个人的X还是需要关注一下的。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>T3 Code官方通道统一多Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @harrisonitsme · 2026-11-22 18:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天 T3 Code 突然火了，原因很简单<br><br>Gemini 4 好评如潮，订阅却被锁死在难用的 Antigravity 里。大家用反代绕过去，结果 magpie 这类项目第二天就被整批封号。<br><br>后来 Google 在官方论坛明确表态：只要运行官方原版 antigravity-acp、走它自带的登录，用于个人交互式开发，就是合规的。T3 Code 正是这么做的。<br><br>总结了下T3 的优势：<br><br>1、合法：别人走反代赌封号，它走官方通道，不用赌<br><br>2、不转卖 token：不额外收费，直接用你已有的 Claude / Codex / ChatGPT / Gemini 订阅<br><br>3、一个界面管所有 agent：Claude Code、Codex、Cursor、OpenCode、Antigravity 等全支持，对话中途还能切模型，让 Claude 把任务交接给 Codex<br><br>4、多端同步：桌面、网页、手机共享同一批 thread，手机上就能批准命令，人不在电脑前 agent 也能继续干活<br><br>5、内建 Git：每条 thread 独立 worktree，看 diff、commit、push、开 PR 一键完成<br><br>6、扩展快：基于 ACP 架构，新 agent 写个 adapter 就能接入，Gemini 4 一发布就跟上了<br><br>7、MIT 开源：约 7 万 star，代码和会话都在本地<br><br>适合：手上有多个 agent 订阅、想统一调度、需要用手机远程推进任务的人。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Multica 总结Agent平台十经验</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-23 20:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">硬核干货来了，大家都在谈论 2027 年的 Agent 平台，Multica 作者 Jiayuan (JY) Zhang，分享了他们在每天 17 万次 Agent 运行中学到的东西。<br><br>1、缺失的一层并非是运行时，而是工作记录。<br><br>- 大多数智能体操作系统蓝图都涵盖了执行者、沙箱和工作流，却忽略了工作单元。<br><br>- 没有共享的工作对象（负责人、状态、产出、审核人），100 个智能体只会变成满屏的垃圾聊天消息。<br><br>- 聊天用于表达意图，任务看板才是人类与智能体之间的协作协议。<br><br>- 验收记录应当留在工作记录上，而不是淹没在长达 500 行的会话日志中。<br><br>2、掌控协作层，而非底层执行框架。<br><br>- 运行时正在同质化，三分之一的用户已经同时混用 2 个以上的命令行工具（Claude Code + Codex）。<br><br>- 将智能体定义（指令、技能、访问权限）与运行时实例及会话解耦。<br><br>- 将工作拉取到存有凭证的用户本地机器上执行，按需补充云端沙箱。<br><br>- 平台靠跨越 30 多种 Harness 共享上下文取胜，而不是把团队锁定在单一模型上。<br><br>3、将对话与会话分离。<br><br>- 直接把智能体的原始会话和工具调用暴露给用户，做出来的是调试界面，而不是产品界面。<br><br>- 对话应当持久留存，就像 Issue 或 Slack 消息串一样，而底层会话则可以随时轮换或切换模型。<br><br>- 智能体应当通过显式的工具调用向人类发送消息，执行日志则保持折叠，仅供调试查看。<br><br>- 一旦单个任务跨越多次运行、多个模型和多名团队成员，基于单次会话的编程套壳工具就会失效。<br><br>4、收件箱成为主要的人机交互界面。<br><br>- 人类的角色正从向智能体写提示词，转向审查、批准并为它们扫清阻塞。<br><br>- 在大规模并行下，瓶颈很少在于 CPU，而在于人类的审查带宽。<br><br>- 智能体收件箱不是一串链接列表，每一项都会直接在界面内联展示代码差异、草稿或可选项。<br><br>- 每一次批准或人工改写都会同时沉淀为偏好记忆，塑造智能体下一次的行事方式。<br><br>5、记忆本质上就是带权限控制的 Markdown。<br><br>- 企业大脑不需要向量数据库黑盒，带版本控制的 Markdown 文档就已经能解决问题。<br><br>- 将记忆拆分为三个作用域：个人偏好、单智能体工作日志，以及团队共享文档。<br><br>- 人类必须能够阅读、编辑这些内容，并追溯每一行是由哪一次运行写入的。<br><br>- 在运行时分发工作区 Skills，让每个智能体共享同一套操作手册，而不是依赖本地隐藏配置文件。<br><br>6、等待条件触发，而非依赖 Cron 定时任务。<br><br>- 按小时执行的 Cron 定时任务，和自定义 Webhook 是旧时代的胶水方案，带过滤器的事件监听器才是它们的超集。<br><br>- 不要每 10 分钟唤醒一次智能体，而应在 PR 合并、CI 通过或子任务结束时唤醒它。<br><br>- 在为一次完整运行付费之前，先用规则或廉价模型过滤嘈杂的信息流（邮件、Slack、告警）。<br><br>- 定时任务在小型日常例行工作上表现出色：占我们运行总次数的 19%，却仅消耗 6% 的 Token。<br><br>7、智能体之间的每一条消息，都是一次付费 API 调用。<br><br>- 自 4 月以来，Multica 上由智能体触发的 Token 占比，已从总用量的 19% 跃升至 60%。<br><br>- 高达 29% 的 Token 消耗在协调与轮询上（18% 为 @提及，9.5% 为自主调度的唤醒）。<br><br>- 目前 24% 的委派运行距离，最初发起它们的人类或定时计划已相隔 5 跳以上。<br><br>- 为每个小队设置单一入口，基于条件等待，并禁止智能体发送谢谢之类的无意义提示消息。<br><br>8、权限必须跟随人类，而非机器。<br><br>- 访问控制应当绑定在数据和操作上，而不是绑定在运行任务的某台笔记本电脑或容器上。<br><br>- 应根据调用链顶端的人类身份，来判定智能体之间的调用权限，否则智能体就能绕过白名单。<br><br>- 私有智能体消耗的是其所有者的凭证与配额，默认拒绝访问，且不允许任何管理员越权覆盖。<br><br>- 为每次运行签发短生命周期、限定任务范围的令牌，而不是直接分发个人 API 密钥。<br><br>9、大规模运行下的头号故障原因并非模型本身。<br><br>- 在每个工作日 17 万次运行的规模下，成功率从 60% 提升到了 88%，而 36% 的失败源于机器离线。<br><br>- 只对基础设施故障（流中断、重启）进行重试，切勿自动重试智能体自身的错误（构建失败、测试不过）。<br><br>- 根据运行时存活性，而非排队时长来使队列任务过期，使用空闲看门狗，而不是绝对时间上限。<br><br>- 并行工作中 93% 的 Token 都是缓存读取，缓存命中率是控制账单成本的最大杠杆。<br><br>10、我们在每个工作日 170000 次运行中看到的现象<br><br>- 工作日运行次数从约 7700 次（4 月）增长至约 170000 次（11 月），每周总计消耗约 2.8 万亿（2.8T）Token。<br><br>- 通过修复环境隔离、存活性检测以及看板级任务交接问题，运行成功率从 60% 攀升至 88%。<br><br>- 随着团队从单人聊天转向共享看板，由智能体发起的 Token 占比增至原来的三倍（19% → 60%）。<br><br>- 2027 年的平台不会是又一个模型套壳工具，而是人类与智能体共同分担工作的地方。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jiayuan (JY) Zhang <span style="font-size:12px;color:#999999;font-weight:400;">@jiayuan_jy</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">每个人都在谈论 2027 年的 Agent 平台。<br><br>这是 @MulticaAI 每个工作日 17 万次 agent 运行教给我们的东西：</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Everyone is talking about the Agent Platform of 2027.<br><br>Here's what 170,000 agent runs a workday taught us at @MulticaAI : </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8b17ff24be80804877fb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/bd759bda00ec6ace9b0c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Docker跑微信接Hermes机器人</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @weichen_ink · 2026-11-23 18:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">终于明白为什么要用 Docker 跑微信了<br>原本我以为是脱裤子放屁<br>结果是真的有需求啊！！！！<br><br>我就一直想有个自动发提醒的机器人到群里<br>各种方案都不行，直到我看到这个项目<br>Docker 跑微信，浏览器直接打开<br>Hermes 就可以无缝操作了<br>非常丝滑哈哈哈哈哈哈<br><br>项目：<a href="https://github.com/nickrunning/wechat-selkies" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nickrunning/wechat-selkies</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4f4c4897bcfac9386d7b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GLM 5.4实测长程任务仍偏弱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @riba2534 · 2026-11-23 20:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">#GLM GLM 5.4，下午用了几小时，总结一下体感：<br>1. 国模第一梯队，质量很明显比 glm5.3/deepseek-flash-1017 强太多了，但还是离 sota 仍旧非常遥远，国模还需努力。<br>2. 依旧祖传超级雷霆大思考，很容易陷入死胡同，长程任务能力不足，需要人主动拉回来，O55 干一个小时的东西，这个干三四个小时，都不一定能找到正确的路。<br>3. 卡，服务端资源实在是太卡了，下午测试没有正常的资源足够完成任何一个任务。永远是 API Error: 529 [1305][该模型当前访问量过大，请您稍后再试]。<br><br>鹈鹕测试：<a href="https://glm54-pelican-bike-3d.riba2534.cn/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://glm54-pelican-bike-3d.riba2534.cn/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/c01c48a9fa9b619424c3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/e6ba9943e8a0fe0c8646.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Z.ai <span style="font-size:12px;color:#999999;font-weight:400;">@Zai_org</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">介绍 GLM-5.4：我们的首个循环 Transformer 实现的通用编码。<br><br>- 对 GLM-5 基础模型中已有的层进行循环，以实现更深层推理<br>- 超越传统编码，扩展到视频、游戏、3D 着色器和 CAD 建模<br>- 增加视觉能力，实现更强的视觉编码<br><br>API 访问将在安全评估后开放。模型权重将负责任地发布。<br><br>技术博客：<a href="http://z.ai/blog/glm-5.4" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://z.ai/blog/glm-5.4</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.<br><br>- Loops existing layers in the GLM-5 base model for deeper reasoning<br>- Pushes beyond traditional coding to video, games, 3D shaders, and CAD modeling<br>- Adds vision capabilities for stronger visual coding<br><br>API access will open after safety evaluation. Model weights will be released responsibly.<br><br>Tech Blog: <a href="http://z.ai/blog/glm-5.4" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://z.ai/blog/glm-5.4</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenAI用困惑度验证压缩即智能</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-23 11:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">感谢 OpenAI 发布的决定性证据，验证了我 8 年前的猜想。当时我猜想模型越强大，它压缩文本的能力也就越强。衡量一个外星文明的智能程度，可以根据它能把大量文本压缩得多短来估计。<br><br>这是学界非常知名的 “压缩即智能” 理论。OpenAI 发布的数据表明，预训练模型的智能程度与其 Perplexity（困惑度）高度相关，Perplexity 越低，它预测文本下一个 token 的准确率也就越高，压缩率也就越高。<br><br>我在 2024 年有个错误的判断，感觉 log perplexity 到 0.9 以下就很难继续降低了，剩下的部分是世界的随机性，很难预测。这也是业界很多人认为 pretraining scaling 撞墙了的时候。<br><br>没想到 T 级参数量的模型可以把 log perplexity 推得更低，并且这些模型有更多的 emergent behavior：安全专家、前端专家、解决千禧年难题。pretraining scaling 还远远没有到头。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Jakub Pachocki <span style="font-size:12px;color:#999999;font-weight:400;">@merettm</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们决定在 OpenAI 提供更多关于预训练进展的透明度，以便朝着共享安全标准迈进。在《困惑度与智能》一文中，我主张基于困惑度及其他指标设定共同的界限，超出这些界限的进展将取决于我们理解 AI 行为的能力。<br><br><a href="https://openai.com/index/perplexity-and-intelligence" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/perplexity-and-intelligence</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We decided to provide more transparency into pretraining progress at OpenAI for the sake of moving toward shared safety bars. In “Perplexity and Intelligence” I argue for common limits based on perplexity and other measurements, with progress beyond them gated on our ability to understand AI behavior.<br><br><a href="https://openai.com/index/perplexity-and-intelligence" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/perplexity-and-intelligence</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/478e0cd04f4d93089355.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
