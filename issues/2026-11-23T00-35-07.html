@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月23日 08:35">
+<title>AI技术雷达 · 11月23日 08:35 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;K2 Horizon公开LLM训练细节</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;漏洞扫描器实测AI零误报</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Claude Code五层上下文压缩机制</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;stitch-skills开源设计技能包</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>K2 Horizon公开LLM训练细节</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @alacheng · 2026-11-22 20:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">K2 Horizon （华人团队为主）发布的LLM训练技术报告，主要特色在于极致透明度和系统化的训练细节披露，远超多数开源LLM报告。它遵循LLM360标准，把“怎么做出来的”完整公开，而非只给最终权重。<br><br>-极致开放性与可复现性：发布全部训练历史（380个中间检查点、覆盖各阶段）、21.6TB预训练数据、58次训练运行日志、17个代码仓库（含生产级xLLM框架、RL360强化学习栈、Eval360评估等）。不仅给数据，还详细公开生成约10T合成token的完整管道与决策过程，这是多数开源报告最回避的部分。<br><br>-架构与推理创新：提出Mixture-of-Value Attention（MoVA，将MoE应用于注意力值投影）和softplus注意力门控，用于增强推理。<br><br>-其中有个技术比较有特色，在后训练阶段采用了论文 ISO: An RLVR-Native Optimization Stack里的方法。把同一基础模型上训练出的多个 RL 专家（specialists）在固定谱的帧坐标下合并。无需后合并数据、rollout、梯度或蒸馏，效果优于 Task Arithmetic、TIES、RAM 等常见无数据合并方法。<a href="https://iso-rlvr.github.io/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://iso-rlvr.github.io/</a><br><br><a href="https://arxiv.org/abs/2611.21003" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.21003</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>漏洞扫描器实测AI零误报</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-22 12:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，别光顾着写代码了！只要你在搞 AI Agent 或者 MCP 服务器，立刻、马上把这条命令跑一遍！<br><br>很多 AI 项目看似牛逼，底裤其实早就漏了。随便一个提示词注入，或者忘删一个 API 密钥，分分钟能把你的系统干穿。<br><br>推荐所有项目都挂上这个逆天级别的安全审计神器⬇️：<br><br>vulnerability-scanner。<br><br>它到底有多狠？<br><br>→ 专杀 AI 软肋：直接检测提示词注入、不安全的 Agent 工具、暴露的密钥和带毒的依赖库。<br>→ 扒得底朝天：连你的 MCP 服务器、技能代码、钩子，甚至 CLAUDE.md 文件都会全盘审查。<br>→ 火力全覆盖：精准识别 OWASP 漏洞和 CI/CD 流水线里的致命风险。<br>→ 直接给解法：发现漏洞不仅报坐标，还会把攻击手法、影响范围、修复方案直接甩你脸上。<br><br>最特么良心的是——纯只读模式！ 绝不会乱改你一行代码，安全无痛。<br><br>实测数据极其硬核：<br>✅ 7/7 次运行全部自动激活<br>✅ 7 个诱饵测试，0 误报<br>✅ 完美兼容 6 大主流编码代理<br><br>一行命令，直接给你的项目穿上防弹衣：<br><br>npx claude-code-templates@latest --skill security/vulnerability-scanner<br><br>传送门：<br><a href="https://www.aitmpl.com/component/skills/security/vulnerability-scanner" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.aitmpl.com/component/skills/security/vulnerability-scanner</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code五层上下文压缩机制</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-22 13:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">MBZUAI 与 UCL 团队拆解 Claude Code：从核心循环，看权限控制、五层上下文压缩与任务委派<br><br>MBZUAI VILA Lab 与伦敦大学学院（UCL）团队的技术报告「Dive into Claude Code」，分析了 Claude Code v2.1.88 的 1884 个文件、51.2 万行 TypeScript。<br><br>论文：<br><a href="https://arxiv.org/abs/2604.14228v3" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2604.14228v3</a><br>开源项目：<br><a href="https://github.com/VILA-Lab/Dive-into-Claude-Code" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/VILA-Lab/Dive-into-Claude-Code</a><br><br># 一条主循环，连接多种使用入口<br><br>核心 queryLoop() 反复完成几件事：组装上下文、调用模型、接收工具请求、检查权限、执行工具，再将结果交回模型。<br><br>交互终端、无头命令行、Agent SDK 和 IDE 等入口共用这条主路径。模型提出下一步动作，运行框架负责决定能否执行、如何执行，以及失败后怎样继续。架构图中，压缩、权限、钩子和持久化都围绕这条循环展开。<br><br># 权限控制与文字指令承担不同职责<br><br>论文梳理了七种权限模式，既包括规划、默认、自动接受编辑等模式，也包括受功能开关控制的自动审核模式，以及供子 Agent 向父进程请示的内部模式。拒绝规则优先于允许规则，部分执行前钩子也参与授权判断。<br><br>CLAUDE.md 则按托管、用户、项目和本地等层级加载，向模型提供指导。文字指导不保证模型一定遵守，需要阻止的动作仍应通过权限机制约束。这一区分，对设计企业 Agent 尤其重要。<br><br># 上下文通过五层机制逐步收缩<br><br>报告识别出预算削减、片段裁剪（snip）、微压缩（microcompact）、上下文折叠（context collapse）和自动压缩（auto-compact）五层处理。<br><br>基本思路是先用成本较低的方法减少内容，再在需要时进行语义摘要，尽量延缓信息损失。上下文管理因此是一套持续运行的流程，远比“窗口快满了再总结一次”细致。<br><br>扩展也有不同入口：MCP、插件、技能和钩子分别承担工具接入、能力包装、任务指导及生命周期干预等职责，接入方式会影响上下文占用和执行行为。<br><br># 委派任务，同时隔离工作历史<br><br>Explore、Plan 和通用子 Agent 在各自的上下文中运行，必要时借助 Git worktree 隔离工作目录，最后将结果交回父循环，避免把全部探索过程塞进主对话。<br><br>会话则以追加写入的 JSONL 记录保存。某些临时权限放行不会随记录恢复到新进程，说明“恢复工作进度”和“恢复授权状态”需要分开设计。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/32b1d0725d7b4b3f9f4a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Box Agents API接入A2A</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Box · 2026-11-18 07:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 Box Agents API。<br><br>基于开放的 A2A 协议构建，它让开发者能够在自己的应用和 AI 平台中调用 Box 的 AI agent，将 Box 的企业级内容能力带入客户已经在使用的 agent 工作流中。<br><br>了解更多：<a href="https://support.box.com/hc/en-us/articles/57485242868115-Box-Agents-API-over-A2A" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://support.box.com/hc/en-us/articles/57485242868115-Box-Agents-API-over-A2A</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing the Box Agents API.<br><br>Built on the open A2A protocol, it lets developers call Box AI agents from their own apps and AI platforms, bringing Box’s enterprise content capabilities into the agent workflows customers already use.<br><br>Learn more: <a href="https://support.box.com/hc/en-us/articles/57485242868115-Box-Agents-API-over-A2A" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://support.box.com/hc/en-us/articles/57485242868115-Box-Agents-API-over-A2A</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/fd758adc2b11f867efdb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>stitch-skills开源设计技能包</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lxfater · 2026-11-21 21:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">用 AI 写网页，最烦的是不是界面丑得没法看？<br><br>谷歌实验室开源了一套设计技能包，叫 stitch-skills<br>GitHub 已经 1.1 万星，连续 4 天挂在热榜上<br><br>Stitch 是谷歌自家的 AI 画界面工具<br>写几句大白话或者丢张参考图，就能出网页和 App 界面<br><br>但以前画完原型还得自己对着敲代码<br>这次谷歌直接把画图、控审美、转代码拆成 16 个现成 Skill<br>装给 AI 编程工具就能直接干活！<br><br>具体能帮你干嘛？<br><br>16 个 Skill 里，最实用的就这三块：<br><br>1. 专门治 AI 的廉价模板味<br>有个管审美的技能，会先帮你定好配色、字体和排版规矩<br>后面画新页面全照着走，不会一页一个样<br><br>2. 设计稿直接转代码，旧网页还能倒回去改<br>画完界面能直接转成网页和手机端组件，甚至能做成产品演示视频<br>手头有旧网页的，也能反过来抽进 Stitch 里接着改<br><br>3. 一句话就能把多页面网站搭起来<br>哪怕只丢一句做个设置页，它也能先帮你补成具体界面要求<br>再按任务清单接力，一页一页把整站做完<br><br>但先别急着装，有两件事得提前说清楚：<br><br>第一，装完不能离线直接跑<br>得先按官方说明接上 Stitch 的服务接口（MCP），才能调它画图<br><br>第二，它是按通用标准写的<br>Codex、Claude Code、Cursor、Gemini CLI 这些主流工具都能装<br>不用换个工具就重折腾一套<br><br>平时拿 AI 做网页老被丑界面折磨的，可以去仓库翻翻<br><br>项目地址放这了👇<br><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/google-labs-code/stitch-skills</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
