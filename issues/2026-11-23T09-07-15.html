@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月23日 17:07">
+<title>AI技术雷达 · 11月23日 17:07 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;深入理解AI Agent发布3.0版</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;DSH Agent Loop源码架构图</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;GLM-5.4实测提速并原生视觉</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Jev harness指南称提速300倍</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;T3 Code用ACP统一多Agent</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Zapret本地改包绕过DPI审查</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>深入理解AI Agent发布3.0版</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-22 23:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">两个月没有更新了，《深入理解 AI Agent》发布 3.0 版本了！<br><br>- 重写了各章节的大部分内容，消除了一些 AI 味，把综述式的文风改成了教学式的，更容易理解<br>- 新增 Jev 类决策模型在事件过滤、工具安全判断、评测 rubric、RAG 筛选、多模态信息稀疏化等方面的应用<br>- 新增 Meta Muse、Pine、dsh superagent 等 personal agent 的办事逻辑<br>- 新增 Multica、LobeHub 等办公 agent<br>- 新增 Anthropic 证明黎曼猜想、OpenAI 证明千禧年问题等科研 agent<br>- 修订语音交互部分，纳入一些最新的工作<br>- 重绘书中大量插图<br>- 新增社区翻译的蒙古语版本<br>- 合入社区的 30+ PR，解决 20+ issues</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Bojie Li <span style="font-size:12px;color:#999999;font-weight:400;">@bojie_li</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">去年 8-10 月在图灵讲的《AI Agent 实战营》课程，终于整理成书啦，在 GitHub 开源发布了。《深入理解 AI Agent：设计原理与工程实践》欢迎大家下载传播 PDF，欢迎大家提意见、提 issue！<br><a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a><br>全书围绕核心公式 Agent = LLM + 上下文 + 工具 展开，十章内容如下：<br>- 第 1 章 · Agent 基础知识：从&quot;模型即 Agent&quot;的新范式出发，建立 Agent = LLM + 上下文 + 工具 的核心公式，并引入 Harness 工程——模型之外的一切工程能力，才是真正的竞争力所在。<br>- 第 2 章 · 上下文工程：上下文决定 Agent 的能力上限。深入大模型 API 的上下文结构、KV Cache 友好设计、提示工程、动态提示词与 Agent Skills、状态栏元信息，以及上下文压缩策略。<br>- 第 3 章 · 用户记忆和知识库：让 Agent 跨会话记住用户、并接入外部知识。涵盖用户记忆系统、RAG 基础管道，以及超越扁平文本的知识组织与检索（结构化索引、知识图谱等）。<br>- 第 4 章 · 工具：工具是 Agent 的双手。讲工具分类与通用设计原则、MCP 协议与工具选择的挑战、感知/执行/协作三类工具，以及事件驱动的异步 Agent。<br>- 第 5 章 · Coding Agent 与代码生成：代码是&quot;能创造新工具的工具&quot;，是通用 Agent 的元能力。以生产级 Coding Agent 为例，展示这一最强通用工具的完整实现。<br>- 第 6 章 · Agent 的评估：把 Agent 的表现变成可比较的信号。从评估环境、数据集设计、指标体系，到统计显著性、可观测性、评估驱动选型，直至生产级内部评估与仿真环境。<br>- 第 7 章 · 模型后训练：预训练、SFT、RL 三阶段全景。何时选 SFT、何时选 RL，RLHF、算法比较、数据与环境，以及让模型学会工具调用、提升样本效率的前沿探索。<br>- 第 8 章 · Agent 的自我进化：不改权重也能成长。三种学习范式，从经验中学习、主动工具发现，到&quot;从工具使用者到工具创造者&quot;，让 Agent 从&quot;聪明&quot;走向&quot;熟练&quot;。<br>- 第 9 章 · 多模态与实时交互：把感知与行动从文本扩展到语音、GUI 与物理世界。语音三范式（级联/端到端全模态/全双工）、流式语音感知与合成、Computer Use 与机器人操作。<br>- 第 10 章 · 多 Agent 协作：群体的智能可以高于个体。多 Agent 分类框架、何时真正优于单 Agent、共享与不共享上下文的协作、失败模式，以及涌现的&quot;Agent 社会&quot;。<br>Repo: <a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/993268d10c30b576b6ca.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude黎曼猜想Lean证明遭质疑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @servasyy_ai · 2026-11-23 09:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！真被这条给神预言了！  <br>Claude 刷屏全网的黎曼猜想证明，刚刚遭遇重大翻车！<br><br>物理学家 Jenny Lorraine Nielsen 刚才公开提出实名质疑：Claude 辅助搞出来的整整 1700 万行 Lean 代码里，竟然存在一个被直接定义为“永远成立”的几何空条件！<br>  <br>最离谱的是，这个空条件一路顺风顺水，直接混进了最终证明……<br>  <br>也就是说，Lean 形式化编译器只管逻辑自洽，一路给废话打勾，整整 1700 万行全在空转！<br>  <br>难怪数学家连看都不看，合着这 25 万页全是在同义反复。<br>  <br>刚登上数学神坛，底裤这就直接被扒光了？？？😂</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/c332316f5d76628d6226.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">myles bsi <span style="font-size:12px;color:#999999;font-weight:400;">@mylesBaiM</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">🚨 卧槽！Claude 的黎曼猜想证明刚刚遭遇重大质疑！！<br><br>物理学家、哲学家 Jenny Lorraine Nielsen 公开提出质疑<br><br>指出 Claude 辅助完成的 1700 万行 Lean 代码中，竟然存在一个被直接定义为永远成立的几何条件！<br><br>她声称，这个空条件一路进入了最终证明<br><br>Claude 这是刚登上数学神坛，就要跌落下来了？😱</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3d6a8800731d5a31765a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/baaa07f08bea6daf6b99.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DSH Agent Loop源码架构图</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-22 15:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Deepseek Harness 完整Agent Loop 架构图可视化<br><br>用Gemini4 Neon做了一个Html方便理解<br>想要总共7期的文章内容在一个页面能直观展示出来<br>也是需要一些打磨的，中间生成了多种样式<br>这是最终版，我觉得还算满意。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e7c1d9cae28debd997c8.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">纳米AI <span style="font-size:12px;color:#999999;font-weight:400;">@antiAIvo</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">目前 DeepSeek Harness 源码学习，用 7 篇源码笔记<br>沿着“用户敲下回车 → 模型返回结果”这条真实数据流<br>逐函数把 DSH 的 Agent 主循环走了一遍<br><br>7 个核心函数，每一个都在回答同一个问题：<br>在并发、异步、随时可能中断的真实环境里<br>怎么保证状态永远一致？<br><br>这其实也是目前agent-harness要解决的问题<br>直接看总结其实是比较难懂的<br>想要理清楚还是得深入代码，因为都是工程实践<br><br>一个完整的 Loop 长这样（附图是详细流程）：<br>followup → send → wakeDriver → kick<br>└→ while(turn)<br>└→ preStep (认领·装配·拦截)<br>└→ step   (推理·拼块·工具)<br>└→ 收尾   (结局·续命·闭环)<br>└→ idle / 接力重启<br><br>从 EP.01 到 EP.07，这7篇都在我发的文章里<br>每一篇都是沿着真实数据流逐函数拆解的源码笔记<br>如果你也在读 Agent 框架的源码<br>希望这条路线能帮你省点时间🙂</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/5a77f8854e3995d6daf1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GLM-5.4实测提速并原生视觉</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @RainG999 · 2026-11-23 14:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刷了一圈 GLM-5.4 的首波实测，帮兄弟省流总结下：<br><br>👍 真香的地方：<br>• 速度快得离谱，实测干到 170 tokens/s<br>• 原生视觉终于来了，看截图和 UI 改代码不再像 5.3 那样绕道卡死<br>• Agent 更勤快了，调 Subagent 和管 TODO 明显更主动<br>• 周额度直接加 50%，量大管饱<br><br>🤔 冷静泼盆水：<br>• 能力更像 5.3 的丝滑加强版，还没到 Opus 5.5 那种一击命中的体感<br>• 纯英文项目里偶尔还是会蹦出经典 AI 味<br>• 目前没放跑分也没开源权重<br><br>总结就是：性价比拉满的口粮模型，但别指望它跨代秒杀海外顶流。用上的兄弟体感对得上吗？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jev harness指南称提速300倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @savvy_luvvvv · 2026-11-22 23:11</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">对每个在跑 coding agent 的人来说，这份 pdf 基本就是作弊码<br><br>jev 创始人、instructgpt 合著者 diogo almeida 放出了一份 pdf，讲清楚怎么搭一套 jev harness<br><br>它的承诺：<br>&gt; 速度最多快 300 倍<br>&gt; 成本最多低 600 倍<br><br>快和省，全都来自模型外面那层 harness<br><br>用法：<br>&gt; 把这份 pdf 和下面的文章一起丢给 claude code 或 codex<br>&gt; 让它照着重建一遍自己的配置<br><br>花 2 个小时，你的 agent 就能跑在一套很少有团队拥有的 harness 上 ↓</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/62c3aa64366ac8cb4741.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Iron Giant <span style="font-size:12px;color:#999999;font-weight:400;">@irongiantXBT</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2122340667510960129" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122340667510960129</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2122340667510960129" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122340667510960129</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>/swarm共享黑板仅两个JSON</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @chasen_liao · 2026-11-22 16:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">大道至简啊 💥 🤯<br><br>我原以为 Antigravity 的 /swarm 背后得有一套很复杂的系统。翻完源码才发现，撑起那块共享黑板的，就两个 JSON 文件和一个 JSONL 日志<br><br>如果你也好奇，一群 Agent 怎么靠一块黑板接力干活，可以看看这篇 👇 <a href="https://x.com/i/article/2122991361402228736" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2122991361402228736</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>T3 Code用ACP统一多Agent</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @harrisonitsme · 2026-11-22 18:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天 T3 Code 突然火了，原因很简单<br><br>Gemini 4 好评如潮，订阅却被锁死在难用的 Antigravity 里。大家用反代绕过去，结果 magpie 这类项目第二天就被整批封号。<br><br>后来 Google 在官方论坛明确表态：只要运行官方原版 antigravity-acp、走它自带的登录，用于个人交互式开发，就是合规的。T3 Code 正是这么做的。<br><br>总结了下T3 的优势：<br><br>1、合法：别人走反代赌封号，它走官方通道，不用赌<br><br>2、不转卖 token：不额外收费，直接用你已有的 Claude / Codex / ChatGPT / Gemini 订阅<br><br>3、一个界面管所有 agent：Claude Code、Codex、Cursor、OpenCode、Antigravity 等全支持，对话中途还能切模型，让 Claude 把任务交接给 Codex<br><br>4、多端同步：桌面、网页、手机共享同一批 thread，手机上就能批准命令，人不在电脑前 agent 也能继续干活<br><br>5、内建 Git：每条 thread 独立 worktree，看 diff、commit、push、开 PR 一键完成<br><br>6、扩展快：基于 ACP 架构，新 agent 写个 adapter 就能接入，Gemini 4 一发布就跟上了<br><br>7、MIT 开源：约 7 万 star，代码和会话都在本地<br><br>适合：手上有多个 agent 订阅、想统一调度、需要用手机远程推进任务的人。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Tailscale用IPv6组网两周实测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zihua0 · 2026-11-23 02:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前两周我让 codex 给我家里的 tailscale 组网分配 IPv6，以便我在外地能低延时点对点直连我家里的设备。<br><br>推文发出来后，有很多大佬评论说，IPv6 有很多坑、运营商会限速、IP 地址不稳定等等问题。<br><br>实际体验了两周下来，我可以负责任回答，只要配置得当，以上问题都没有，下图是我的完整方案，自取！ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cd567a61b16afe9b82fa.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Zapret本地改包绕过DPI审查</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @0xbawan · 2026-11-21 23:06</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天才知道一个颠覆认知的硬核事实：<br><br>俄罗斯人翻墙，竟然压根不用 VPN！！🤯<br><br>在俄罗斯技术圈，大家最推崇的根本不是传统代理，而是一款名叫「Zapret」的纯本地开源翻墙工具。<br><br>它的路子野到什么程度？<br>既不需要花钱买海外 VPS<br>也不用折腾任何机场订阅<br>更不依赖境外代理服务器<br>直接装在 Windows、Linux 或者 OpenWrt 软路由上就能本地开跑<br><br>核心原理说白了就是「本地硬刚」：<br>在网卡发包的那一瞬间，直接切分并修改网络数据包特征，精准干扰运营商的 DPI（深度包检测）设备，让审查系统看花眼，从而直接绕过部分网络封锁和限速。<br><br>对比一下两边的画风简直太真实了：<br><br>中国人翻墙，天天钻研 Reality、HY2 协议怎么伪装得滴水不漏，到处抢 VPS、测机场线路<br><br>俄罗斯人翻墙，连中转服务器都懒得搭，直接研究怎么在本地把审查设备给绕晕！<br><br>战斗民族果然是能正面解决问题，绝不跟你玩躲猫猫！！！🤣🔥<br><a href="https://github.com/bol-van/zapret" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bol-van/zapret</a></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
