@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月24日 20:13">
+<title>AI技术雷达 · 11月24日 20:13 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Uber沉淀5000+Skill工程实践</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Anthropic调研58家企业AI落地</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;UXC接入MCP Events双向通道</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;《深入理解AI Agent》发布3.0版</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent记忆系统论文与工程清单</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Tao100086 · 2026-11-24 11:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Agent 记忆系统已经从早期的“长上下文拼接 + 简单向量检索（RAG）”演进到了动态巩固、时序图谱、操作系统级分页与经验自进化阶段。下面按奠基经典 → 前沿架构论文 → 权威综述与评测 → 必读工程博客四个维度精选最值得读的清单：<br><br>一、 奠基必读经典（建立认知框架）<br><br>这几篇定义了今天所有 Agent 记忆系统的基本范式和术语：<br><br>- Generative Agents: Interactive Simulacra of Human Behavior (Park et al., Stanford, UIST 2023)<br><br>推荐理由：斯坦福“AI 小镇”论文，Agent 记忆系统的开山之作。首次完整跑通了 Memory Stream（记忆流）+ Reflection（定期反思抽象）+ Retrieval（按近因性 Recency、重要性 Importance、相关性 Relevance 加权检索） 的闭环。<br>论文链接：<a href="https://arxiv.org/abs/2304.03442" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2304.03442</a><br><br>- MemGPT: Towards LLMs as Operating Systems (Packer et al., UC Berkeley, 2023 — 现 Letta 前身)<br><br>推荐理由：借鉴操作系统虚拟内存设计，将上下文窗口视为 RAM（主存），外部存储视为 Disk（外存），让 LLM 通过 Tool Call 自主管理上下文换入换出（Paging）与自我编辑记忆块。<br>论文链接：<a href="https://arxiv.org/abs/2310.08560" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2310.08560</a><br>开源仓库：<a href="https://github.com/letta-ai/letta" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/letta-ai/letta</a><br><br>- CoALA: Cognitive Architectures for Language Agents (Sumers et al., Princeton, TMLR 2024)<br><br>推荐理由：最清晰的理论分类框架。借鉴认知科学，把 Agent 记忆严格拆分为 Working Memory（工作记忆）、Episodic Memory（情景记忆/历史轨迹）、Semantic Memory（语义记忆/世界知识） 和 Procedural Memory（程序记忆/技能与代码）。<br>论文链接：<a href="https://arxiv.org/abs/2309.02427" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2309.02427</a><br><br>- Reflexion (Shinn et al., NeurIPS 2023) &amp; Voyager (Wang et al., 2023)<br><br>推荐理由：分别代表了情景反思记忆（把失败教训写成自然语言存入记忆指导下次尝试）和程序/技能记忆（在 Minecraft 中将成功的代码封装进 Skill Library 持续复用）。<br>Reflexion 论文链接：<a href="https://arxiv.org/abs/2303.11366" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2303.11366</a><br>Voyager 论文链接：<a href="https://arxiv.org/abs/2305.16291" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2305.16291</a><br><br>二、 前沿核心架构论文（2024–2026 工业界与学术界主流）<br>解决传统向量检索“无法处理事实变更（如搬家/改偏好）、多跳推理弱、缺乏结构化联系”的核心痛点：<br><br>- HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models (Gutiérrez et al., NeurIPS 2024 — 及其后续 HippoRAG 2)<br><br>核心看点：受人类海马体记忆索引理论启发，结合知识图谱 + Personalized PageRank 实现单步完成跨文档多跳关联记忆检索，比传统向量 RAG 更擅长串联碎片信息。<br>HippoRAG 论文链接：<a href="https://arxiv.org/abs/2405.14831" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2405.14831</a><br>HippoRAG 2 论文链接：<a href="https://arxiv.org/abs/2502.14802" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2502.14802</a><br><br>- Zep: A Temporal Knowledge Graph Architecture for Agent Memory (Rasmussen et al., 2025 — 底层引擎 Graphiti)<br><br>核心看点：聚焦双时态知识图谱（Bi-temporal Knowledge Graph）。给每条记忆加上“事件发生时间”与“入库有效区间”，当状态改变时使旧事实优雅失效而非粗暴覆盖，解决企业级 Agent 对动态实体演化的追踪问题。<br>论文链接：<a href="https://arxiv.org/abs/2501.13956" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2501.13956</a><br>Graphiti 开源仓库：<a href="https://github.com/getzep/graphiti" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/getzep/graphiti</a><br><br>- Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory (Chhikara et al., 2025)<br><br>核心看点：工业界应用极广的提取-更新（Extract-and-Update）记忆层论文，拆解了如何低延迟、低 Token 成本地从多轮对话中动态抽取事实、消解冲突，并结合向量与图结构（Mem0g\text{Mem0}_gMem0g​）服务生产环境。<br>论文链接：<a href="https://arxiv.org/abs/2504.19413" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2504.19413</a><br>开源仓库：<a href="https://github.com/mem0ai/mem0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mem0ai/mem0</a><br><br>- A-MEM: Agentic Memory for LLM Agents (Xu et al., 2025)核心看点：借鉴 Zettelkasten（卢曼卡片盒笔记法），每次写入新记忆时动态生成结构化笔记卡片并自动与历史记忆建立双向链接、更新旧卡片上下文，实现自组织的记忆网络。<br>论文链接：<a href="https://arxiv.org/abs/2502.12110" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2502.12110</a><br><br>三、 系统综述与评测基准（快速把握全景）<br><br>如果你想在最短时间内俯瞰整个领域的脉络与短板：<br><br>综述首选：<br>- Memory in the Age of AI Agents: A Survey (Late 2025)：<br><br>目前社区引用最广的全景综述之一，从 Forms（载体形式：Token 级 / 参数级 / 隐状态）、Functions（功能）、Dynamics（形成、演化与检索） 三个维度系统梳理了整个领域。<br>论文链接：<a href="https://arxiv.org/abs/2512.13564" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2512.13564</a><br>配套论文列表仓库：<a href="https://github.com/Shichun-Liu/Agent-Memory-Paper-List" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Shichun-Liu/Agent-Memory-Paper-List</a><br><br>- From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms (Luo et al., ACL Findings 2026)：<br>把记忆演进总结为 Storage（存轨迹）→ Reflection（做反思）→ Experience（抽技能实现自进化） 三阶段，非常适合用来理解 Coding Agent / Computer-Use Agent 的经验复用。<br>论文链接：<a href="https://arxiv.org/abs/2605.06716" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2605.06716</a><br><br>评测基准论文（看懂记忆系统怎么评测）：<br><br>- LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory (Wu et al., ICLR 2025) 与 LoCoMo (Maharana et al., ACL 2024)：<br>读这两篇能立刻明白生产级记忆系统的五大硬骨头——信息抽取、跨会话推理、知识更新（冲突覆盖）、时间推理与防幻觉拒答。<br>LongMemEval 论文链接：<a href="https://arxiv.org/abs/2410.10813" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2410.10813</a><br>LoCoMo 论文链接：<a href="https://arxiv.org/abs/2402.17753" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2402.17753</a><br><br>四、 必读工程技术博客（强烈推荐，贴近实战）<br><br>很多最佳工程实践并没有发成论文，而是沉淀在一线团队的博客里：<br><br>- Lilian Weng — LLM Powered Autonomous Agents (Lil'Log)入门圣经。其中关于 Memory 的章节把感觉记忆、短期上下文学习与长期外部检索的映射讲得极其透彻。<br>文章链接：<a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lilianweng.github.io/posts/2023-06-23-agent/</a><br><br>- LangChain Blog — Memory for Agents &amp; LangMem 文档非常务实地把 CoALA 理论落地为工程代码模式，清晰对比了 “Hot Path（对话同步更新记忆，延迟高但实时）” 与 “Background / Subconscious（后台异步整理记忆）” 两种架构取舍。<br>博客链接：<a href="https://www.langchain.com/blog/memory-for-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.langchain.com/blog/memory-for-agents</a><br>LangMem 文档：<a href="https://langchain-ai.github.io/langmem/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://langchain-ai.github.io/langmem/</a><br><br>- Letta Blog — Agent Memory 系列 &amp; Sleep-Time Compute提出 Sleep-Time Compute（睡眠期计算） <br>概念：与其只在用户提问时做推理（Test-time compute），不如利用 Agent 空闲时间在后台异步重组、去重、反思并重写核心记忆块。<br>Agent Memory 综述博客：<a href="https://www.letta.com/blog/agent-memory-how-to-build-agents-that-learn-and-remember" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.letta.com/blog/agent-memory-how-to-build-agents-that-learn-and-remember</a><br>Sleep-Time Compute 博客：<a href="https://www.letta.com/blog/sleep-time-compute" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.letta.com/blog/sleep-time-compute</a><br><br>- Anthropic — Effective Context Engineering for AI Agents（及 Claude Code CLAUDE.md / 文件系统记忆实践）代表了近年极其实用的另一派工程趋势：<br>基于文件系统与 Markdown 的扁平透明记忆（如 MEMORY.md、渐进式披露笔记、由 Agent 自己 grep/edit 维护知识库），在 Coding Agent 场景往往比黑盒向量库更可控、更易调试。<br>文章链接：<a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</a><br><br>建议阅读路径<br><br>想做工程落地选型：先看 LangChain《Memory for Agents》 + Anthropic 上下文工程博客，再对比阅读 Mem0（应用层 API 托管记忆）、Zep/Graphiti（时序图谱记忆）和 Letta（Agent 自主管理状态）的设计差异。<br><br>想做学术研究或深度自研：按 Generative Agents → CoALA → HippoRAG → Memory in the Age of AI Agents (Survey) → LongMemEval 的顺序精读。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Uber沉淀5000+Skill工程实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @seekjourney · 2026-11-24 10:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Uber 这篇关于 Skill 工程化的文章值得一看。<br><br>都是实打实的经验之谈啊，他们一年内积累了 5000+ Skills，单月调用超过 100 万次。<br><br>目前做了 Skill 自动评测、消融实验、Token 成本优化，Skill 持续进化。<br><br>做 Agent Harness 的朋友，建议认真读一下。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Uber Engineering <span style="font-size:12px;color:#999999;font-weight:400;">@UberEng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2120222611070500864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120222611070500864</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2120222611070500864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120222611070500864</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic调研58家企业AI落地</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-24 19:47</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 经济研究团队，刚发布了一份一线调研《Working with AI》，深度访谈了 58 家美国企业，拆解了近 300 个真实用例。<br><br>没有空谈技术趋势，全程实打实地回答了大家最关心的几个问题，公司上 AI 到底赚到钱没？招人真的变少了吗？为什么很多团队用着用着就推不动了？<br><br>我把里面最有价值的 10 个发现和案例，整理了出来：<br><br>1、极少裁员，都在缩减招聘，砍掉外包。<br><br>58 家美国企业里，真正因为自动化直接裁撤本土正式岗位的只有 2 家，但 2/3 的公司缩减了招聘计划。某医疗公司高管直言：“我们在靠买 Token 扩充产能，而不是招人”。更有 AI 原生初创公司，把 90% 的运营预算花在买 Token 上，只留 10% 给人力成本。真正的重灾区是标准化外包，某金融公司，一口气砍掉了上百名海外数据处理与软件开发外包人员，另一家软件公司，找外部律所审合同的费用，也全都省掉了。<br><br>2、高回报靠增加产出，更靠重构流程。<br><br>随手用 AI 做几页 PPT，写写周报，在企业眼里的商业价值其实垫底。真正帮公司赚大钱的用法，都在创造业务增量，而且必须配合工作职责的重构，比如商业地产经理，直接用 AI 把空置商铺，渲染成潜在租客的品牌门店效果图，大幅提高签约率。市场部负责人也不再逐篇修改宣传物料，而是转向维护一份写满品牌规范的 skill.md 文件，供全员调用。<br><br>3、AI 省下的时间，员工悄悄拿去遛狗。<br><br>调研中约 10% 的 AI 提效红利，被员工个人悄悄截留了。有高管吐槽员工故意隐瞒 AI 提效的成果，把每周省出来的 10 个小时拿去遛狗，甚至有人被投资人怀疑每天只上半天班。背后的博弈很真实，某公司用 AI 让审批效率翻倍，并一口气砍掉 90% 的招聘名额，结果业务专家集体消极怠工。工作量翻倍却不涨工资，最后逼得公司只能发礼品卡，哄着大家多审单子。<br><br>4、强推自动化的结果，员工抵触，系统很快过时。<br><br>管理层自上而下强推自动化极易翻车，一方面，让业务专家帮 AI 调优工作流，等于让人亲手给自己钉棺材，加上部分公司用 AI 搞严密绩效监控，员工不得不费尽心思让自己的工作成果，讨好老板的考核 Agent。另一方面，花重金找外部供应商定制的固化系统，根本追不上底层模型的迭代速度，系统上线三个月就过时，沦为无人问津的僵尸应用。<br><br>5、外行零基础写软件，难在后期维护。<br><br>编程 Agent 最惊艳的爆发点，其实在非技术岗位，化工厂的质检主管，零基础写出了过滤率监控程序，会计把原本耗时 80 小时的养老金跨系统核对，做成了自动化工具。但热闹背后全是隐性维护成本，某大型律所算完账后，果断放弃自研招聘数据看板，为了省下每月几十美元的成熟 SaaS 订阅费，反而要搭进去专人长期维护代码，实在得不偿失。<br><br>6、局部提速太快，反而引发跨部门内耗。<br><br>单点环节效率狂飙，下游部门却接不住，只会引爆组织摩擦。某设备制造厂的工程师，用 AI 瞬间就把产品界面翻译成 10 国语言，结果，因为客服团队根本接不了外语电话，新功能还没上线就被迫关停。狂热用户们，动不动就向其他部门狂发长达 7 页的 AI 生成方案，逼得同事直接回怼，“别发了，我不看你的 AI 邮件！”更有高管犀利吐槽，“一个平庸的工程师配上 AI，简直是社会公害。”<br><br>7、合并岗位职能，彻底打破部门墙。<br><br>当内容和代码的生产速度暴涨，跨部门交接带来的上下文损耗，和开会扯皮就成了最大阻力。走在前面的企业，正在激进合并细分职能，有公司把产品经理、设计师、研发工程师、测试乃至基础架构合并进同一个全栈岗位。也有企业将线索挖掘、销售转化、客户成功三个岗位合三为一。正如一位技术负责人所说，“两个人加 Claude 就是最强形态，只要两个人达成共识，直接上线。”<br><br>8、离钱越近的工作，AI 模型越难胜任。<br><br>报告里有一句高管的金句，离钱越近的工作，模型越难做好。聪明的公司都在把员工往战略决策，产品审美与人际沟通这些瓶颈环节转移，某 CTO 直言 Claude 是个糟糕的产品经理，果断让产品经理把精力集中到打磨产品品味，和寻找市场契合度上。建筑公司的项目经理，让 AI Agent 每天早上自动催工地进度，汇总客户日报，自己腾出整个上午的时间，去跟客户深度沟通核心需求与服务体验。<br><br>9、AI 负责写初稿，新人跟着前辈练审稿。<br><br>很多行业的初级岗位，本质是新人的练级房，一家律所敏锐地发现，AI 接管法律文书初稿后，如果直接取消初级律师写文书的环节，未来就没人能分辨什么才是好文书。他们的解法非常值得借鉴，强制要求初级律师拿着 AI 生成的初稿，与资深律师结对协作，逐行批注修改。把人才培养模式，从低效的苦熬写初稿，直接升级为高密度的审稿判断力训练。<br><br>10、打通全员数据权限，守住安全底线。<br><br>想让 Agent 真正落地干活，前提是提供好业务上下文，并建好安全沙箱，毕竟数据安全高管警告，现在每个员工都是开发者，每天都在制造新的安全攻击面。一家卡车运输公司搭建好 Agent 可调用的数据仓库后，业务经理们像上瘾一样自己跑 SQL 查数据，彻底告别过去提个报表需求，动辄排队一两年的历史。AI 原生团队，则推行公开工作，把所有客户通话与会议录音实时转录到公共频道，沉淀成全员共享的数据活水池。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/35c943139c727fcc111a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/119b737a197ae241115a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/0f028610693191caf713.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/395098271ca8794061fc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/d97172976f6a8226a7e7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/a3fd1a90f8103b3a17d5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>UXC接入MCP Events双向通道</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jolestar · 2026-11-24 14:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">UXC 支持了一下 MCP Events，顺手写了篇文章，《从单向调用到双向通道：聊聊 MCP Events》<br><br>这两年关于 MCP 的讨论基本只有一个方向：Agent 怎么调外部工具（Agent -&gt; App）。但真想做交互应用——让 Agent 陪你下盘棋、在画布上一起改图——卡住的都是反方向：应用侧怎么把状态变化推给 Agent（App -&gt; Agent）。<br><br>协议里其实早就有 Notification，但用不起来：没有订阅参数和结构化 Payload；强依赖长连接，断线就丢，没有游标续传；大部分 MCP Host 也没做自动订阅和分发。<br><br>MCP Events（SEP-3415）把事件抬到和 Tool 对等的位置：events/list 自描述契约，Stream / Poll / Webhook 多种投递方式，再用不透明游标解决断线续传。<br><br>通道打通只是第一步。真正的难题会转移到 Agent Runtime：怎么缓冲归并，防止事件冲爆上下文；怎么路由和排优先级；以及怎么守住安全边界——Event Payload 和 Tool Result 一样属于不可信数据，但 Event 跟容易让 LLM 混淆。<br><br>协议负责铺路，剩下的脏活累活在 Runtime。<br><br>全文见：<a href="https://jolestar.com/mcp-events/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://jolestar.com/mcp-events/</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Holon <span style="font-size:12px;color:#999999;font-weight:400;">@holonrun</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">UXC 0.23.1 已发布。它新增了 MCP Events（SEP-3415，现已进入 Beta 阶段）。<br><br>有什么变化：当没有人主动提问时需要采取行动的 agent——比如收到新邮件、仓库推送、P1——现在收到的是事件而非轮询。<br><br>轮询路径也随本次版本一起发布。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">UXC 0.23.1 is out. It adds MCP Events (SEP-3415, now in Beta).<br><br>What changes: an agent that has to act when nobody asks — a new email, a repo<br>push, a P1 — gets events instead of polling.<br><br>The polling path ships in this release.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>《深入理解AI Agent》发布3.0版</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-22 23:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">两个月没有更新了，《深入理解 AI Agent》发布 3.0 版本了！<br><br>- 重写了各章节的大部分内容，消除了一些 AI 味，把综述式的文风改成了教学式的，更容易理解<br>- 新增 Jev 类决策模型在事件过滤、工具安全判断、评测 rubric、RAG 筛选、多模态信息稀疏化等方面的应用<br>- 新增 Meta Muse、Pine、dsh superagent 等 personal agent 的办事逻辑<br>- 新增 Multica、LobeHub 等办公 agent<br>- 新增 Anthropic 证明黎曼猜想、OpenAI 证明千禧年问题等科研 agent<br>- 修订语音交互部分，纳入一些最新的工作<br>- 重绘书中大量插图<br>- 新增社区翻译的蒙古语版本<br>- 合入社区的 30+ PR，解决 20+ issues</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Bojie Li <span style="font-size:12px;color:#999999;font-weight:400;">@bojie_li</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">去年 8-10 月在图灵讲的《AI Agent 实战营》课程，终于整理成书啦，在 GitHub 开源发布了。《深入理解 AI Agent：设计原理与工程实践》欢迎大家下载传播 PDF，欢迎大家提意见、提 issue！<br><a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a><br>全书围绕核心公式 Agent = LLM + 上下文 + 工具 展开，十章内容如下：<br>- 第 1 章 · Agent 基础知识：从&quot;模型即 Agent&quot;的新范式出发，建立 Agent = LLM + 上下文 + 工具 的核心公式，并引入 Harness 工程——模型之外的一切工程能力，才是真正的竞争力所在。<br>- 第 2 章 · 上下文工程：上下文决定 Agent 的能力上限。深入大模型 API 的上下文结构、KV Cache 友好设计、提示工程、动态提示词与 Agent Skills、状态栏元信息，以及上下文压缩策略。<br>- 第 3 章 · 用户记忆和知识库：让 Agent 跨会话记住用户、并接入外部知识。涵盖用户记忆系统、RAG 基础管道，以及超越扁平文本的知识组织与检索（结构化索引、知识图谱等）。<br>- 第 4 章 · 工具：工具是 Agent 的双手。讲工具分类与通用设计原则、MCP 协议与工具选择的挑战、感知/执行/协作三类工具，以及事件驱动的异步 Agent。<br>- 第 5 章 · Coding Agent 与代码生成：代码是&quot;能创造新工具的工具&quot;，是通用 Agent 的元能力。以生产级 Coding Agent 为例，展示这一最强通用工具的完整实现。<br>- 第 6 章 · Agent 的评估：把 Agent 的表现变成可比较的信号。从评估环境、数据集设计、指标体系，到统计显著性、可观测性、评估驱动选型，直至生产级内部评估与仿真环境。<br>- 第 7 章 · 模型后训练：预训练、SFT、RL 三阶段全景。何时选 SFT、何时选 RL，RLHF、算法比较、数据与环境，以及让模型学会工具调用、提升样本效率的前沿探索。<br>- 第 8 章 · Agent 的自我进化：不改权重也能成长。三种学习范式，从经验中学习、主动工具发现，到&quot;从工具使用者到工具创造者&quot;，让 Agent 从&quot;聪明&quot;走向&quot;熟练&quot;。<br>- 第 9 章 · 多模态与实时交互：把感知与行动从文本扩展到语音、GUI 与物理世界。语音三范式（级联/端到端全模态/全双工）、流式语音感知与合成、Computer Use 与机器人操作。<br>- 第 10 章 · 多 Agent 协作：群体的智能可以高于个体。多 Agent 分类框架、何时真正优于单 Agent、共享与不共享上下文的协作、失败模式，以及涌现的&quot;Agent 社会&quot;。<br>Repo: <a href="https://github.com/bojieli/ai-agent-book" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/bojieli/ai-agent-book</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/993268d10c30b576b6ca.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>猜盐上线一年获160万用户</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @niandwo · 2026-11-23 20:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">最近看到一个很反常识的独立开发案例：<br><br>坐标成都，前阿里员工张月单枪匹马做了一款 AI 猜谜游戏“猜盐”。<br><br>没有融资，一分钱广告没投，上线一年干出 160 万用户，单月营收峰值 11.8 万。<br>整个团队就他一个全职，代码大部分用 Claude 写，外加从玩家群里招的 2 个大学生兼职。 玩法也极度克制，就是用大模型把知识包装成猜病、猜国、猜词等几十种互动游戏。<br><br>这个事给独立开发者的 3 个暴击：<br>1、AI 时代，“超级个体”的上限被拉高了。 以前需要策划、题库编辑、前后端的活，现在1个人 + Claude + LLM API 就能闭环。<br>2、不要迷信高大上的 B 端工具。 满足人类的好奇心、无聊感和胜负欲，永远是最高频、最容易自传播的刚需。<br>3、寻找“大厂盲区”。 寻找那些天花板只有几百万、大厂不屑于下场，但足够让 1-3 个人活得非常体面的细分利基市场。<br><br>普通人做 AI 创业，与其去卷大模型底座，不如想想怎么用 AI 把某个老掉牙的小游戏换个思路重做一遍。你们觉得呢？</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
