@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月25日 05:11">
+<title>AI技术雷达 · 11月25日 05:11 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Inkling 2 Mini居SWE榜首</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Switch AI打通Agent间上下文</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Mirage虚拟终端分离数据与算力</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;GitHub预览Issue状态与看板</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Claude支持MCP发布Skills</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">13</span>&nbsp;&nbsp;Tenet训练配方让美开源模型追平</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Inkling 2 Mini居SWE榜首</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @victormustar · 2026-11-24 22:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Inkling 2 Mini 的评测结果正在 HF 上发布，结果非常出色。非常感谢 @thinkymachines，他们正在把本地 AI 变得更好。<br><br>- #1 &lt;32B DeepSWE (48.2%)<br>- #1 &lt;128B SWE-bench Verified (79.2%)<br>- #2 &lt;32B Terminal-Bench 2.1 (71.6%, Pi)<br>- #2 overall SWE-bench Pro Hard (77.9%)</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Inkling 2 Mini evaluation results are dropping on HF and they are extremely good. A HUGE thanks to @thinkymachines they are changing local AI for the best.<br><br>- #1 &lt;32B DeepSWE (48.2%)<br>- #1 &lt;128B SWE-bench Verified (79.2%)<br>- #2 &lt;32B Terminal-Bench 2.1 (71.6%, Pi)<br>- #2 overall SWE-bench Pro Hard (77.9%)</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/006fa7bd12d677122136.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Switch AI打通Agent间上下文</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @_avichawla · 2026-11-24 15:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">开发者们对这个开源项目疯狂了！<br><br>Claude Code 和 Codex 各自在独立的终端会话中运行，没有共享上下文，所以开发者必须手动在两者之间复制 bug 报告、diff 和审查评论。<br><br>开发者们刚刚开源了 Switch AI，一种自托管的方式，将这两个 agent 引入你团队已经在用的聊天工具，如 Slack、Teams 或 Discord，这样就没人需要在它们之间搬运上下文了。<br><br>GitHub 仓库：<a href="https://devtoolsacademy.link/AC" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://devtoolsacademy.link/AC</a><br><br>（别忘了给它点星 🌟）<br><br>在实际使用中，你可以让 Claude 在 bug 被报告的地方直接修复，然后让 Codex 在同一个会话中审查分支。每个 agent 都能读取报告和另一个的回复，团队可以跟进每一步操作。<br><br>下面的视频展示了这个完整的演示，其中订单 1015 同时出现在了第 1 页和第 2 页上。<br><br>claude-fixer 复现了问题，添加了回归测试，修复了差一错误（off-by-one error）。然后它在同一个会话中让 codex-reviewer 审查分支，订单页面显示出了修正后的结果。<br><br>两个 agent 都在我的本地机器上运行，我从未在它们之间传递过任何上下文。<br><br>Switch AI 是开源的，agent 运行在你自己的机器上，使用你现有的登录凭证。<br><br>我分享了上面的 GitHub 仓库。<br><br>感谢 Switch 在这篇帖子上与我合作。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Devs are going crazy over this open-source project!<br><br>Claude Code and Codex each run in a separate terminal session with no shared context, so a developer has to copy the bug report, the diff, and the review comments between them by hand.<br><br>Devs just open-sourced Switch AI, a self-hosted way to bring both agents into the chat tools your team already uses, like Slack, Teams, or Discord, so no one has to carry context between them.<br><br>GitHub repo: <a href="https://devtoolsacademy.link/AC" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://devtoolsacademy.link/AC</a><br><br>(don't forget to star it 🌟)<br><br>In practice, one can ask Claude to fix the bug right where it was reported, then ask Codex to review the branch in the same thread. Each agent reads the report and the other's replies, and the team can follow every step.<br><br>The video below shows this exact demo where order 1015 appeared on both page 1 and page 2.<br><br>claude-fixer reproduced it, added regression tests, and fixed the off-by-one error. It then asked codex-reviewer to review the branch in the same thread, and the orders page showed the corrected result.<br><br>Both agents were running on my local machine, and I never passed any context between them.<br><br>Switch AI is open source, and the agents run on your own machine with your existing logins.<br><br>I shared the GitHub repo above.<br><br>Thanks to Switch for working with me on this post.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0e3de80392b71e876211.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Mirage虚拟终端分离数据与算力</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @siddontang · 2026-11-25 04:56</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">非常喜欢这个方向。Agent 需要终端、持久化状态和按需计算——不一定要专用沙箱。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Love this direction. Agents need a terminal, durable state, and compute on demand - not necessarily a dedicated sandbox.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Zecheng Zhang <span style="font-size:12px;color:#999999;font-weight:400;">@zechengzh</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">沙箱已经成为&quot;AI agent 应该在哪里运行&quot;这个问题的默认答案，但 agent 从来不需要沙箱，只需要它们后训练时所使用的终端界面。<br><br>今天我们发布 Mirage 0.1.0，一个将终端与其背后的数据和计算分离的虚拟终端。<br><br>- Mirage shell。一个 bash 兼容的 shell，Unix 类工具用 Rust 重写，保留 agent 训练时所学的语义。<br>- 统一虚拟文件系统。S3、Google Drive、Slack、Gmail 以及大约 60 多个数据存储，全部在相同的 Unix 类命令后面。<br>- 虚拟 CLI。每个工具（包括 MCP 服务器）都变成了一个 agent 已经知道如何使用或可以渐进式发现的 CLI。<br>- 可脚本化策略。每个命令和文件访问都可以由一个能查看完整终端上下文的脚本来检查。<br>- 机器路由。命令仅在需要真实计算时才被发送到本地或远程机器（如沙箱）。<br>由于终端与其背后的数据和计算分离，Mirage 轻到可以住在 agent 所在的任何地方——在一个应用中、一个浏览器标签页中、一个 FastAPI 或 Express 服务器中，每增加一行命令行仅占用 KB 级别的内存。<br>同时以 Python 和 TypeScript 完全开源。<br><a href="https://github.com/strukto-ai/mirage" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/strukto-ai/mirage</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Sandboxes have become the default answer to where AI agents should live, but agents never needed the sandbox, only the terminal interface they were post-trained on.<br><br>Today we're releasing Mirage 0.1.0, a virtual terminal that separates the terminal from the data and the compute behind it.<br><br>- Mirage shell. A bash-compatible shell with Unix-like tools rewritten in Rust, keeping the semantics agents were trained on<br>- Unified virtual filesystem. S3, Google Drive, Slack, Gmail and about 60 more data stores, all behind the same Unix-like commands<br>- Virtual CLIs. Every tool, MCP servers included, becomes a CLI the agent already knows how to use or can discover progressively<br>- Scriptable policy. Every command and file access can be checked by a script that sees the full terminal context<br>- Machine routing. Commands go to local or remote machines, such as sandboxes, only when they need the real compute<br>Because the terminal is separated from the data and the compute behind it, Mirage is light enough to live wherever the agent does, in an app, a browser tab, a FastAPI or Express server, with each command line adding only KBs of memory.<br>Also fully open sourced in Python and TypeScript.<br><a href="https://github.com/strukto-ai/mirage" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/strukto-ai/mirage</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/998b082e9b737f497a26.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Praxis-1世界动作模型开放使用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @iotguide · 2026-11-25 04:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Runway 的 Praxis-1 机器人世界动作模型现已可用<br><a href="https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/</a> #Robotics #Praxis1 #RobotDevelopment</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Runway’s Praxis-1 world action model for robotics is now available <br><a href="https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/</a> #Robotics #Praxis1 #RobotDevelopment</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MAGI-2每秒0.08美元生成视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Saccc_c · 2026-11-25 04:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我找到了做短剧成本最低的工作流了！这就是 Blender 白模 + MAGI-2 视频模型<br><br>MAGI-2 是最近推出的视频模型！其具体有多便宜呢？下面这个 30s 1080p 的 3D 动画视频仅仅只花费了 2.4 美元，其质感和审美完全是顶级的视频模型<br><br>这绝对是短剧赛道的最大红利，极大的压缩了成本，配合上 Blender 白模，绝对是最佳的视频工作流搭配：Blender 负责控制空间、人物位置、动作和镜头；MAGI-2 负责把白模场景转化为具有电影质感的画面，并生成声音<br><br>最最重要的是，未来 MAGI-2 将开源权重，总参数高达 400B，这具体是什么概念呢？现在最被大家熟知的开源视频模型 Minimax H3 也才 33B，这即将成为视频模型的里程碑时刻<br><br>现在， MAGI-2 已在 Higgsfield 独家上线，并支持通过 Higgsfield API 调用，尽早享受这波视频模型的红利吧！！</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a9cb5032e14763579c95.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Higgsfield AI 🧩 <span style="font-size:12px;color:#999999;font-weight:400;">@higgsfield</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">推出 MAGI-2，独占在 Higgsfield 上。<br><br>长达 30 秒的前沿 1080p 质量，生成费用每秒 0.08 美元。<br><br>拥有 400B 参数的开源权重视频模型即将推出。<br><br>现已在 Higgsfield 独占提供，并可通过 Higgsfield API 访问。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing MAGI-2, exclusively on Higgsfield.<br><br>Up to 30 seconds of frontier 1080p quality, with 0.08$ per second of generation.<br><br>Open weights video model with 400B parameters coming soon.<br><br>Now available exclusively on Higgsfield and via Higgsfield API. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f92a6d2f4a5c2e92f26b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ZBOSS 5.0升级Zigbee协议栈</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TheRealDSRCorp · 2026-11-25 00:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">ZBOSS 的下一步是什么？有很多。ZBOSS 5.0 带来了新功能、持续验证以及对下一代 Zigbee 产品和互联生态系统的扩展支持。<br><br>滑动查看有什么新内容：而这只是我们 ZBOSS 5.0 系列的开始。在接下来的几周里，我们将更深入地探讨此次发布背后的能力。<br><br>- 网络优化、增强的安全性以及改进的可靠性<br>- Zigbee Direct BLE 配网与控制<br>- 跨 Smart Energy、Zigbee 3.0 和 Zigbee 4.0 的统配网<br>- Suzi（sub-GHz）支持，具有扩展范围，适用于住宅、商业和工业领域的新应用<br>- 完全向后兼容<br>- 在不断演进的 Zigbee 环境中进行持续验证<br>- 在高密度部署场景下使用 300+ 设备进行测试<br>- 单个无线电上并发 Zigbee 网络操作<br>- 互联能源生态系统的互操作性支持<br><br>准备好用 ZBOSS 5.0 构建了吗？与我们的无线专家交流。<br><br>了解更多关于 ZBOSS Zigbee Stack 的信息：<a href="https://dsr-iot.com/solutions/zboss/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dsr-iot.com/solutions/zboss/</a><br><br>#ZBOSS #Zigbee #IoT #EmbeddedSystems #Wireless</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">What's next in ZBOSS? Quite a bit. ZBOSS 5.0 brings new capabilities, ongoing validation, and expanded support for the next generation of Zigbee products and connected ecosystems.<br><br>Swipe through to see what’s new: And this is just the start of our ZBOSS 5.0 series. Over the next few weeks, we’ll take a closer look at the capabilities behind the release.<br><br>•Network optimizations, enhanced security, and improved reliability<br>•Zigbee Direct BLE onboarding and control<br>•Unified commissioning across Smart Energy, Zigbee 3.0, and Zigbee 4.0<br>•Suzi (sub-GHz) support with extended range for new applications in residential, commercial and industrial space <br>•Full backward compatibility<br>•Continuous validation across evolving Zigbee environments<br>•Testing with 300+ devices in high-density deployment scenarios<br>•Concurrent Zigbee network operation on a single radio<br>•Interoperable support for connected energy ecosystems<br><br>Ready to build with ZBOSS 5.0? Talk to our wireless experts.<br>Learn more about ZBOSS Zigbee Stack: <a href="https://dsr-iot.com/solutions/zboss/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://dsr-iot.com/solutions/zboss/</a>  <br><br>#ZBOSS #Zigbee #IoT #EmbeddedSystems #Wireless</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/77d285f3807e682fc465.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GitHub预览Issue状态与看板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cassidoo · 2026-11-25 00:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">这真的是一个非常令人兴奋的消息！<br><br>我们与许多开源开发者合作，将这一目标变为现实：<br><br>- Issue 状态提供了共享上下文<br>- 可在 issue 标题中设置状态，或通过 GraphQL、REST 和 MCP 设置<br>- 仓库视图现在支持看板布局<br><br><a href="https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">This is a really exciting one!<br><br>We worked with a bunch of open sourcers to make this a reality:<br><br>• Issue statuses give shared context<br>• Set statuses in issue headers or with GraphQL, REST, &amp;amp; MCP<br>• Repo views now support a board layout<br><br><a href="https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude支持MCP发布Skills</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @katelyn_lesse · 2026-11-25 03:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 MCP 的第二个生日之际，我们将 Skills over MCP 带到了 Claude！<br><br>非常高兴这成为了规范的一部分，并且现在在 Claude 中拥有一等支持。为 @dsp_ 和团队感到自豪！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">for mcp's 2nd birthday, we brought skills over mcp to claude!<br><br>so happy this became part of the spec and now has first class support with claude. proud of @dsp_ and the team!</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">通过 Skills over MCP（beta），服务器可以在其工具旁边发布技能。<br><br>技能为 Claude 提供了一套超越工具名称和描述的多步骤工作手册。技能仅在需要时加载，随服务器更新，并且可以为每个用户的账户或组织量身定制。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">With Skills over MCP (beta), servers can publish skills alongside their tools.<br><br>Skills give Claude a playbook for multi-step work, beyond tool names and descriptions. Skills load only when needed, update with the server, and can be tailored to each user's account or organization. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3cabf0ed3d242f373b3b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Voice Arena新增实体转写评测</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-25 03:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">语音模型比以往任何时候都更需要独立的评测。<br><br>@Voicearena_ai 对语音转文本、文本转语音、说话人分离、听写和语音 agent 进行基准测试。新的实体基准测试以相同方式对七种英语口音的 90 个模型进行评分。<br><br>完整的评测框架已在 GitHub 上开源，你可以自行查看数据。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Voice models need independent evals more than ever.<br><br>@Voicearena_ai benchmarks speech-to-text, text-to-speech, diarization, dictation, and voice agents. The new entity benchmark scores 90 models the same way across seven English accents.<br><br>The full harness is open on GitHub, so you can check the numbers yourself.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Shobhit Banga <span style="font-size:12px;color:#999999;font-weight:400;">@shobhitbanga</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">第 6/15 篇<br><br>今天我们将一个实体数据集添加到 Voice Arena ASR 排行榜中 🧵<br><br>7 种英语口音。90 个模型。718 位说话人。4,739 段音频剪辑。超过 170 万次实体评估。<br>我们测试 ASR 模型转录关键信息的准确性：姓名、邮箱、地址、医疗术语、代码等。<br><br>除 WER 之外，我们还报告两个关键指标：<br>- 任务成功率（TSR）：每个实体都被正确转录的音频剪辑百分比。<br>- 实体准确率：被正确转录的实体百分比。<br><br>@Zoom Scribe v2.1 Pro 以 31.9% 的 TSR 和 76.2% 的实体准确率位居 #1。<br><br>即使是最好的模型，在 68% 的剪辑中也至少有一个实体是错误的。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Drop 6/15<br><br>Today we are adding an Entity dataset to the Voice Arena ASR Leaderboard 🧵<br><br>7 English accents. 90 models. 718 speakers. 4,739 audio clips. 1.7M+ entity evaluations.<br>We test how accurately ASR models transcribe critical information: names, emails, addresses, medical terms, codes and more.<br><br>Beyond WER we report two key metrics:<br>- Task Success Rate (TSR): % of clips where every entity is correctly transcribed.<br>- Entity Accuracy: % of entities correctly transcribed.<br><br>@Zoom Scribe v2.1 Pro takes #1 with 31.9% TSR and 76.2% Entity Accuracy<br><br>Even the best model gets at least one entity wrong in 68% of clips.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/eae713368445142da670.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Bland通过FedRAMP C类认证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @usebland · 2026-11-25 02:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天，Bland 获得了 FedRAMP Class C 认证 🇺🇸<br><br>过去几周的新闻头条充斥着始于供应商的供应商的供应商的数据泄露事件。<br><br>Bland 是唯一完全自托管的语音 AI 平台，意味着没有第三方接触你的通话，你的客户数据保持安全。<br><br>正是这种对安全的承诺为我们赢得了自动化政府通话的机会。<br><br>了解更多：<a href="https://www.bland.ai/fedramp?utm_source=x&amp;utm_medium=social&amp;utm_campaign=fedramp_class_c&amp;utm_content=company" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.bland.ai/fedramp?utm_source=x&amp;utm_medium=social&amp;utm_campaign=fedramp_class_c&amp;utm_content=company</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today, Bland is FedRAMP class C certified 🇺🇸<br><br>Headlines have been packed these past few weeks with data breaches that started at a vendor’s vendor’s vendor.<br><br>Bland is the only voice AI platform that’s entirely self-hosted, meaning no third parties touch your calls and your customer data stays secure.<br><br>That commitment to security is what earned us the chance to automate government calls.<br><br>Learn more: <a href="https://www.bland.ai/fedramp?utm_source=x&amp;utm_medium=social&amp;utm_campaign=fedramp_class_c&amp;utm_content=company" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.bland.ai/fedramp?utm_source=x&amp;utm_medium=social&amp;utm_campaign=fedramp_class_c&amp;utm_content=company</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ae9f1ac2df3a01700ed7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity日用量6周增82%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sundarpichai · 2026-11-25 03:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Neon 在我们的付费 API 上创下了 Day-1 使用量新纪录，@Antigravity 的 token/天用量自 Argon 仅发布 6 周以来已 ⬆️ 82%。<br><br>很高兴看到大家的反响，也感谢所有模型反馈，包括需要改进的领域——特别感谢 @GoogleDeepMind、研究、基础设施和服务团队的团队们，安全团队确保我们负责任地推进前沿，以及产品团队，还有更多进展即将到来！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Neon set a new Day-1 usage record on our paid APIs and @Antigravity tokens/day are ⬆️ 82% since Argon launched (only) 6 weeks ago.<br><br>It's been great to see the reception and thanks for all the model feedback including areas to improve - huge thanks to the teams across @GoogleDeepMind, Research, Infrastructure and serving teams, security efforts to make sure we are responsibly advancing the frontier and the product teams, more progress to come!</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenCode Go年化收入$50M</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jayair · 2026-11-25 02:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">OpenCode Go 的年化运行率达到了 5000 万美元</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">OpenCode Go is at a $50M annual run rate</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Tenet训练配方让美开源模型追平</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-25 03:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">喜欢看到这个新的后训练时代。开源权重模型正在同时快速加速。这篇文章分享了很好的后训练技巧和方法。<br><br>推荐阅读。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Love to see this new post-training era. Open-weight models are accelerating rapidly all at once. The article shares good post-training tips and recipes. <br><br>Recommended read.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Harvey <span style="font-size:12px;color:#999999;font-weight:400;">@harvey</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">美国的开源权重模型已经追上来了。<br><br>我们用在 Kimi K3 上使用的 Harvey Tenet 配方，对来自 @meta、@nvidia、@reflection_ai 和 @thinkymachines 的四个美国模型进行了后训练。<br><br>它们现在已与非美国模型具有竞争力，而 Muse Spark Open 是第一个在 Legal Agent Bench 上通过 30% all-pass 的模型。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">US open-weight models have caught up.<br><br>We post-trained four US models from @meta, @nvidia, @reflection_ai and @thinkymachines with the Harvey Tenet recipe we used on Kimi K3.<br><br>They are now competitive with non-US models, and Muse Spark Open is the first model to pass 30% all-pass on Legal Agent Bench.</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Starcloud太空散热器轻10倍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @PhilipJohnston · 2026-11-25 00:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在 @Starcloud_，我们正在太空中建造数据中心，我最常被问到的问题是：<br>&quot;在真空中你怎么散热？真空瓶之所以用来保温是有原因的！&quot;<br><br>这是个好问题，因为在太空中我们没有对流冷却。所以答案是：红外辐射。<br><br>它比听起来简单。任何比周围环境更热的东西都会在红外线中&quot;发光&quot;。如果你脸上现在有一台红外相机，你会看到它在发光。物体发射的能量与物体和周围环境之间的温度差的四次方成正比。这是一个很了不起的事情，因为太空是零下 270 摄氏度。这意味着如果你将散热器保持在 50 摄氏度（芯片的最低温度），你可以每平方米至少发射 800 瓦！太阳能电池板每平方米大约产生 200 瓦，所以这意味着你最多只需要太阳能表面积的四分之一作为散热器。所以如果你有 100 平方米的太阳能板，你最多只需要额外 25 平方米的散热器。<br><br>关键在于，这些都不是新东西。<br><br>国际空间站（ISS）在过去 28 年里一直有一个散热器散散热 70 kW，其运行完全符合预期。<br><br>那么它在轨道数据中心上是如何工作的呢？和国际空间站完全一样，我们将冷却液流过芯片，然后流向更大的表面积（散热器）。陆地数据中心使用水作为冷却液，但由于水在结冰时会膨胀，我们为自身需求配制了自定义冷却液。<br><br>但不是很贵吗？国际空间站的散热器目前既昂贵又笨重。但这就是 Starcloud 的价值所在。经过 2 年的研发，我们设计并制造了一个散热器，几个月后发射，其每瓦散热量的质量比国际空间站散热器少 10 倍，每瓦散热量的成本低 500 倍。💪🚀</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">At @Starcloud_, we are building data centers in space, and the most common question I get is: <br>“How do you get rid of the heat from the chips in a vacuum? Vacuum flasks are used to contain heat for a reason!”<br><br>It’s a good question since in space, we don’t have convective cooling. So here’s the answer: Infrared radiation.<br><br>It’s simpler than it sounds. Everything that is warmer than its surroundings ‘glows’ in infrared. If you had an infrared camera on your face right now, you would see it glowing. The amount of energy that something emits is proportional to the 4th power of the temperature differential between the object and its surrounding. Which is a biiig deal given that space is -270 degrees C. This means that if you keep your radiator at 50 degrees C (the minimum temperature of the chips), you can emit at least 800 Watts per square meter! The solar panels generate around 200 watts per square meter, so that means that you need at most, a quarter again the surface area of the solar in radiator. So if you have 100 square meters of solar, you need at most an additional 25 square meters of radiator.<br><br>And here’s the thing, none of this is new.<br><br>The international space station (ISS) has had a radiator that dissipates 70 kW for the last 28 years and it has operated exactly as expected. <br><br>So how does it work for orbital data centers? Exactly the same way as the ISS, we flow coolant past the chips, and out to a larger surface area (the radiators). Terrestrial data centers use water as their coolant but since water expands when it freezes, we have formulated our own custom coolant for our needs.<br><br>But isn’t it expensive? The ISS radiator is currently both expensive and heavy. But that is where Starcloud comes in. After 2 years of R&amp;D, we have designed and fabricated a radiator, launching in a few months, that is 10x less mass per watt of dissipation and 500x less cost per watt of dissipation than the ISS radiator. 💪🚀</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex与Astra搜索系外行星信号</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gdb · 2026-11-25 03:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Codex 和 Astra 用于搜索系外行星：</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Codex and Astra for searching for exoplanets:</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenAI <span style="font-size:12px;color:#999999;font-weight:400;">@OpenAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">两位业余天文学家 Kevin Bond（@canvrno）和 Ethan Byrd（@itsjustemail）独立发现了可能指向遥远恒星周围行星的信号。他们知道进行这种搜索并不需要自己的望远镜。<br><br>Kevin 使用 Codex，Ethan 使用 Astra，在公开望远镜数据中搜索环绕行星可能引起的微小、周期性的星光下降。两人都发现了值得进一步审视的信号。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Two amateur astronomers, Kevin Bond (@canvrno) and Ethan Byrd (@itsjustemail), independently found signals that could point to planets around distant stars. They knew you didn't need your own telescope for this kind of hunt.<br><br>Kevin used Codex and Ethan used Astra to search public telescope data for tiny, recurring dips in starlight that an orbiting planet can cause. Both found signals worth a second look.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6388cecf7dc0816f8dd1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
