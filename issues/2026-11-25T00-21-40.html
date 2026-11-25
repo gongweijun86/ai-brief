@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月25日 08:21">
+<title>AI技术雷达 · 11月25日 08:21 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Claude Artifacts 装应用</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;SWE-2.1 各项基准大幅超前代</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">10</span>&nbsp;&nbsp;Uber Skills 像软件一样管理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">14</span>&nbsp;&nbsp;DeepMind 基准暴露模型稳定短板</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">17</span>&nbsp;&nbsp;GPT-6 蛋白设计通过湿实验验证</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ahrefs MCP 支持聊天写入数据</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ahrefs · 2026-11-16 17:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🤖 针对你的 AI 工作流的两项更新：<br><br>→ MCP 现在可以写入了：直接从你的聊天中创建项目、关键词和 Brand Radar 提示词<br>→ APIv3 Link Intersect（Enterprise）：更多 Brand Radar 端点，查找链接到多达 20 个竞争对手但没有链接到你的网站 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🤖 Two updates for your AI workflows: <br><br>→ MCP can now write: create projects, keywords and Brand Radar prompts directly from your chat<br>→ APIv3 Link Intersect (Enterprise): more Brand Radar endpoints, find sites linking to up to 20 competitors but not you </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/424391654edf41f2cef9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Avrea CI 秒级启动自调度任务</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HannuValtonen · 2026-11-24 22:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Avrea CI 今天正式上线。<br><br>它在我们自研的引擎和市场上最快的 runner 上运行 GitHub Actions 工作流，并通过 2-3 秒的启动时间使其更快。它自行调度任务，因此当 GitHub Actions 宕机时，你的 CI 仍在运行。<br><br><a href="https://avrea.com/blog/introducing-avrea-ci" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://avrea.com/blog/introducing-avrea-ci</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Avrea CI is live today.<br><br>It runs GitHub Actions workflows on our own engine and the fastest runners on the market, and makes them even faster with 2-3 second start times. It schedules jobs itself, so when GitHub Actions is down, your CI keeps running.<br><br> <a href="https://avrea.com/blog/introducing-avrea-ci" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://avrea.com/blog/introducing-avrea-ci</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LocalGateKeys 本地凭据加密</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-25 07:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在无账号、无中心服务器的前提下，为多平台桌面与移动端设备提供本地优先的密码、通行密钥及开发者凭据加密管理方案。<br><br><a href="https://github.com/LocalGateKeys/LocalGateKeys" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/LocalGateKeys/LocalGateKeys</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/88be222aab2a48e239a6.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/d68dd0921be2346fe894.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Artifacts 装应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-25 06:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽！Anthropic 又放大招了！！😱<br><br>现在 Claude 生成的 Artifacts 可以直接安装成 Mac 和 Windows 上的桌面应用了！<br><br>操作非常简单⬇️：<br><br>告诉 Claude 你想做什么应用 → 生成 Artifacts，点击「Install as app」 → 像普通桌面软件一样打开使用<br><br>拥有独立的应用图标和运行窗口，还能调用你的 Connectors（连接器），获得授权后甚至可以发送系统通知、添加菜单栏和系统托盘功能。<br><br>不需要手动打包，不需要代码签名，也不需要配置 API Key。<br><br>开发应用和应用调用 Claude 所产生的消耗，直接计入现有账户的使用额度。<br><br>目前该功能已面向 Claude Desktop 所有套餐陆续开放 Beta 测试，包括免费用户（企业版需要管理员开启）。<br><br>以前是缺什么软件就去网上找，现在是缺什么软件，直接让 Claude 给你做一个！ </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a53ca020743b806a378e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MAGI-2 生成 30 秒有声视频</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kaifulee · 2026-11-25 06:54</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">祝贺 <a href="https://Sand.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://Sand.ai</a> 发布 MAGI-2，其新一代视频生成模型。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Congratulations to <a href="https://Sand.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://Sand.ai</a> on the launch of MAGI-2, its next-generation video generation model.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">MAGI <span style="font-size:12px;color:#999999;font-weight:400;">@magiai_hq</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">介绍由 <a href="http://Sand.ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Sand.ai</a> 推出的 MAGI-2，独家登陆 @higgsfield<br><br>将文本、图像、视频和音频转化为长达 30 秒的 1080p 有声视频。<br><br>每秒生成视频 $0.08。<br><br>400B 参数的开放权重即将推出。<br><br>• 精确的镜头控制<br>• 高参考保真度<br>• 灵活的编辑<br>• 为真实创意工作流而构建<br><br>现已在全球范围内在我们的首发合作伙伴 Higgsfield 的平台上以及通过 Higgsfield API 提供。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing MAGI-2 by <a href="http://Sand.ai," target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://Sand.ai,</a> exclusively on @higgsfield<br><br>Turn text, images, video and audio into up to 30 seconds of 1080p video with sound.<br><br>$0.08 per second of generated video.<br><br>400B-parameter open weights coming soon.<br><br>• Precise shot control<br>• High reference fidelity<br>• Flexible editing<br>• Built for real creative workflows<br><br>Now available worldwide on our launch partner Higgsfield’s platform and via the Higgsfield API.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/fdf3fd81eb12d3dc7b1a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GNOME 语言绑定急需新维护者</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-24 16:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">GNOME 语言绑定背后的核心组件之一正在寻找新的维护者。<br><br>GNOME 开发者 Emmanuele Bassi 正在征集志愿者接手 gobject-introspection，它让 Python、JavaScript、Rust 等语言可以调用 GTK 和 GNOME 库，以及 JSON-GLib、gi-docgen 和 libgweather。<br><br>&quot;我很乐意指导新贡献者并发布版本，但我不打算继续在这些项目上工作。&quot;<br><br>GTK 网站、GNOME 开发者文档和帮助网站同样需要维护者。接手一个项目需要一个 GNOME 账户。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">One of the core pieces behind GNOME's language bindings is looking for a new maintainer.<br><br>GNOME developer Emmanuele Bassi is asking for volunteers to take over gobject-introspection, which lets Python, JavaScript, Rust and other languages call GTK and GNOME libraries, along with JSON-GLib, gi-docgen and libgweather.<br><br>&quot;I am happy to mentor new contributors and to cut releases, but I don't plan to work on these projects.&quot;<br><br>The GTK website, the GNOME developer docs and the Help site need maintainers too. Taking on a project needs a GNOME account.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8080e76f7994223007fb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Frontier3DBench 交互基准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @jiqizhixin · 2026-11-25 06:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">创建一个可信的 3D 场景对参考保真度和协调的交互行为提出了更高的要求。<br><br>Einsia AI、Navers Lab 和清华大学的研究人员在一份官方技术报告中推出了 Frontier3DBench。<br><br>1. 该基准包含九个类别共 145 个任务，涵盖物体、场景和交互式开放世界。它评估生成产物的外观、结构和行为。这将视觉创作与&quot;一个世界是否真正支持其所需交互和持久状态&quot;的问题联系起来。<br><br>2. 在 11 种模型与框架配置中，最高综合得分为 100 分中的 66.02。生成的世界在局部机制上平均得分 83.08，但在运动净空上仅为 20.82，有状态工作流上仅为 30.26。<br><br>3. 局部机制和工作流的得分衡量的是同一被评估世界的不同属性。它们之间的差距揭示了一个特定的集成挑战，这个挑战可能被一个视觉上成功的演示所掩盖。<br><br>Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds<br><br>论文: <a href="https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf</a>  <br>项目: <a href="https://lab.einsia.ai/frontier3dbench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lab.einsia.ai/frontier3dbench</a>  <br>我们的报告: <a href="https://www.jiqizhixin.com/articles/2026-11-06-16?source=rss" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-11-06-16?source=rss</a><br><br>📬 #PapersAccepted by 机器之心</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Creating a plausible 3D scene leaves harder requirements for reference fidelity and coordinated interactive behavior.<br><br>Einsia AI, Navers Lab and Tsinghua University researchers introduce Frontier3DBench in an official technical report.<br><br>1. The benchmark contains 145 tasks across nine categories, spanning objects, scenes and interactive open worlds. It evaluates appearance, structure and behavior in the resulting artifacts. This connects visual creation with the question of whether a world actually supports its required interactions and persistent state.<br><br>2. Across 11 model-and-harness configurations, the best overall score is 66.02 out of 100. Generated worlds average 83.08 on local mechanisms, but 20.82 on motion clearance and 30.26 on stateful workflows.<br><br>3. The local-mechanism and workflow scores measure different properties of the same evaluated worlds. Their gap identifies a specific integration challenge that can remain hidden by a visually successful demonstration.<br><br>Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds<br><br>Paper: <a href="https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf</a>  <br>Project: <a href="https://lab.einsia.ai/frontier3dbench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://lab.einsia.ai/frontier3dbench</a>  <br>Our Report: <a href="https://www.jiqizhixin.com/articles/2026-11-06-16?source=rss" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.jiqizhixin.com/articles/2026-11-06-16?source=rss</a><br><br>📬 #PapersAccepted by Jiqizhixin</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/54eb50b8fa23da78cab3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SWE-2.1 各项基准大幅超前代</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @cognition · 2026-11-25 03:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">介绍 SWE-2.1，我们最新的编码模型。<br><br>与前代一样，SWE-2.1 使用纯强化学习在 Kimi K3 上进行训练。它在广泛的基准测试上比 SWE-2 取得了大幅提升。<br><br>SWE-2.1 在接下来的两周内对所有 Devin Pro、Max 和 Teams 用户免费。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing SWE-2.1, our latest coding model.<br><br>Like its predecessor, SWE-2.1 is trained with pure reinforcement learning on Kimi K3. It delivers large gains over SWE-2 across a wide range of benchmarks.<br><br>SWE-2.1 is free for all Devin Pro, Max, and Teams for the next two weeks.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1a8045560ed75fef5329.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pop!_OS 26.04 LTS 发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-25 06:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Pop!_OS 26.04 LTS 发布。新的长期支持版本新增了 Constellation 主题、支持倾斜灵敏度的数位绘图板、自动更新以及重新设计的 COSMIC Store。<br><br>Constellation 一键即可应用壁纸、强调色、图标和字体，并且可以编辑、导出或搭配毛玻璃效果使用。该版本还新增了支持触摸和手柄的屏幕键盘、远程桌面，以及包括抖动查找光标、可缩放光标和改进的屏幕缩放在内的辅助功能。发行说明列出发布时的 COSMIC Epoch 1.12、Linux 内核 7.2.15 和 Mesa 26.2.3。<br><br>由于 COSMIC 采用滚动更新节奏，已经在使用 Pop!_OS 24.04 LTS 的用户在功能发布时已经收到了其中许多功能。System76 表示全新安装是获得完整 26.04 体验的方式，并且从 24.04 的升级将在十二月启用。该公司表示：&quot;在将近一年的深思熟虑的功能开发之后，Pop!_OS 26.04 LTS 终于来了。&quot;</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Pop!_OS 26.04 LTS is out. The new long-term support release adds Constellation themes, drawing tablet support with tilt sensitivity, automatic updates and a redesigned COSMIC Store.<br><br>Constellations apply a wallpaper, accent colors, icons and fonts in a single click, and can be edited, exported or used with a Frosted Glass effect. The release also adds an on-screen keyboard that works with touch and a gamepad, remote desktop, and accessibility options including shake to find the cursor, scalable cursors and improved screen magnification. Official notes list COSMIC Epoch 1.12, Linux kernel 7.2.15 and Mesa 26.2.3 at release.<br><br>Because COSMIC ships on a rolling cadence, users already on Pop!_OS 24.04 LTS have received many of these features as they were released. System76 says a fresh install is the way to get the full 26.04 experience, and that upgrades from 24.04 will be enabled in December. The company: &quot;Pop!_OS 26.04 LTS is here after nearly a year of thoughtful feature development.&quot;</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f41d475f3370b45b7873.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/b5e09f1d398a73885e61.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/042c3863a71b1acc39c7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/55bba1783b6431778c85.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Uber Skills 像软件一样管理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @davidd_ai · 2026-11-24 09:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Uber 刚公开了他们内部 AI Agent 的一组数据，很值得做 Agent 的团队看看。<br><br>2025 年 10 月，Uber 内部只有 1 个 Skill。一年后，超过 5,000 个。单月调用超过 100 万次，数千名员工参与编写。<br><br>但这篇文章最有价值的不是规模，而是 Uber 已经开始像管理软件一样管理 Skills。<br><br>几个很有意思的细节：<br><br>1. 一个 Skill 就是一个标准化工作流。<br><br>可以是创建 PR、查询数据库、事故根因分析，也可以是销售团队的日常任务。<br><br>所有 Skills 存放在 Git 仓库里，有版本、Owner、Code Review 和测试。<br><br>分为三个等级：Domain、Core、Always-on。<br><br>其中大约 100 个通用 Skills 默认向所有员工开放。<br><br>2. 一套 Skills，同时支持多个 Agent。<br><br>Uber 做了一个叫 aifx 的 CLI。<br><br>Claude Code、Codex、OpenCode 以及内部 Agent，都可以使用同一套 Skills。<br><br>员工换 Agent，不需要重新配置工作流。<br><br>3. 他们真的在测试 Skill 有没有用。<br><br>Uber 会拿真实任务进行 A/B 式对照：同一个任务，分别让 Agent 使用和不使用 Skill，再盲测比较。<br><br>一个数据库查询 Skill 的实验发现：<br><br>不使用 Skill，工具调用增加 13%，工具错误达到 6 倍，执行时间增加 31%。<br><br>使用 Skill 的答案在 87% 的比较中获胜。<br><br>4. Skill 不是写得越长越好。<br><br>Uber 甚至会测试删除 Skill 的部分指令，观察效果有没有变好。<br><br>随着模型能力提升，一些原本有用的指令反而可能降低性能。<br><br>因此他们开始做 Skill Ablation：删掉一段指令，重新运行真实任务，看成功率、成本和延迟怎么变化。<br><br>5. 能用代码解决的，就不要浪费 LLM Token。<br><br>他们发现，100 多个 MCP Tools 的定义可能在任务开始前就占用 50,000–70,000 Tokens。<br><br>于是把确定性的工具调用封装成脚本，通过 Code Mode 执行，只把必要结果交回模型。<br><br>部分 Skill 优化后，单次执行成本降低了 32%–46%。<br><br>6. 最有意思的是，Agent 会自己报告 Bug。<br><br>当 Agent 遇到错误参数、过时文档、无限重试或者流程异常时，会自动提交一份叫 Papercut 的报告。<br><br>过去三个月，Agent 自己提交了数千份问题报告，数百个问题已经修复。<br><br>这些问题又被转化成新的测试用例。<br><br>整个系统形成一个循环：<br><br>执行任务 → 发现问题 → 提交报告 → 修复 Skill → 自动评估 → 发布新版本。<br><br>Uber 下一步还要做 Skill A/B Testing、按模型自动编译 Skill，以及自动将任务路由到合适的 Agent 和 Skills。<br><br>这篇文章透露出一个很重要的变化：<br><br>企业 AI Agent 的竞争，正在从谁的模型更聪明，转向谁能把企业知识、工具和工作流沉淀成一套可复用、可衡量、能持续进化的执行系统。<br><br>未来企业真正需要管理的，可能不是几千个 Prompt，而是几千条由 Agent 执行的业务工作流。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Uber Engineering <span style="font-size:12px;color:#999999;font-weight:400;">@UberEng</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2120222611070500864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120222611070500864</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2120222611070500864" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2120222611070500864</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Ubuntu 桌面 AI 默认不装模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-25 06:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Canonical 揭示了其在 Ubuntu 桌面上实现可选择加入的 AI 的计划。<br><br>这就是 &quot;warty-prototype&quot; 启动器的真正用途：一个你可以在键盘或语音下使用的统一入口点，它能找到文件、启动应用，并且只在你主动询问时才提供 AI 帮助。<br><br>Canonical 列出了四项&quot;不可妥协的原则&quot;：严格可选择加入、在你自己的硬件上本地优先推理、隐私优先和沙盒化。&quot;我们不会在默认安装中打包数 GB 的模型。&quot;<br><br>首个可安装版本和架构深度解析将于一月发布。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Canonical has revealed its plan for opt-in AI in the Ubuntu desktop.<br><br>It's what the &quot;warty-prototype&quot; launcher was really about: one entry point you can use with your keyboard or your voice, which finds files, launches apps, and offers AI help only when you ask.<br><br>Canonical lists four &quot;non-negotiable principles&quot;: strictly opt-in, local-first inference on your own hardware, privacy-first and sandboxed. &quot;We aren't shipping gigabytes of models in the default install.&quot;<br><br>A first installable version and an architecture deep dive are due in January.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7187abddd4bc5ad0fef4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>LingSante-3.1 开源医疗模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AntLingAGI · 2026-11-22 23:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">今天，我们发布了 LingSante-3.1-flash，一个总参数量为 560B、每个 token 激活参数量为 25B 的开放权重 MoE 模型。它统一了多样化的医疗能力，同时保留了通用能力，包括复杂的医学推理、长程工作流执行和专业行为对齐。<br>LingSante-3.1-flash 超越了医疗问答，迈向现实世界的医疗健康问题。该模型在 HealthBench Professional（65.72）、HLE（纯文本，带工具：72.22）和 BrowseComp（带上下文：94.10）上领先，在所有三项上均优于 GPT-6 Astra、Claude Opus 5.5 和 Gemini 4 Argon。LingSante-3.1-flash 在专业长程医疗工作流上也表现出色，例如 PhysicianBench（57）和 EHR-Complex（74.40）。<br>综合来看，这些结果确立了 LingSante-3.1-flash 作为医疗健康领域领先的开放权重模型。<br>权重已经开放。探索 LingSante 并基于它进行构建。<br>更多内容见下方 ↓</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Today, we release LingSante-3.1-flash, an open-weight MoE model with 560B total parameters and 25B activations per token. It unifies diverse medical capabilities while retaining general capabilities, including complex medical reasoning, long-horizon workflow execution, and professional behavior alignment.<br>LingSante-3.1-flash moves beyond medical QA toward real-world healthcare problem. The model leads on HealthBench Professional (65.72), HLE (text-only, with tools: 72.22) and BrowseComp (with context: 94.10), outperforming GPT-6 Astra, Claude Opus 5.5 and Gemini 4 Argon on all three. LingSante-3.1-flash also performs well on professional long-horizon medical workflows, such as PhysicianBench (57) and EHR-Complex (74.40).<br>Together, these results establish LingSante-3.1-flash as the leading open-weight models for healthcare.<br>The weights are available. Explore LingSante and build with it.<br>More below ↓</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cd16e1aa1939dae738c9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Atlassian AI团队一个月后回退</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lennysan · 2026-11-25 06:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Atlassian 尝试了没有 PM 也没有设计师的团队。每个人都是&quot;AI 构建者&quot;。<br><br>几周后：&quot;我们以前所未有的速度前进。&quot;<br><br>一个月后：&quot;所有人都回去做他们原来的工作了。&quot; </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Atlassian tried teams with no PM and no designer. Everyone was an &quot;AI builder.&quot;<br><br>A few weeks in: &quot;We’re moving faster than ever.&quot;<br><br>A month in: &quot;Everyone’s gone back to doing their old jobs.&quot; </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f108679ffdcb91666aa1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Lenny Rachitsky <span style="font-size:12px;color:#999999;font-weight:400;">@lennysan</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">.@Atlassian 尝试创建每个人都是&quot;AI 构建者&quot;的团队。没有 PM 或设计师角色，只有构建者。<br><br>头几周，效果惊人。&quot;我们以前所未有的速度前进。&quot;<br><br>一个月后，所有人都回去做原来的工作了。<br><br>其中一位 PM 解释了原因：&quot;吞吐量不是我们的问题，方向才是我们的问题。&quot;<br><br>在我与 Atlassian AI + 产品工艺负责人 Sherif Mansour（@sherifmansour）的对话中，我们讨论了：<br>🔸 为什么产品角色没有在合并——每个角色反而变得更大<br>🔸 为什么 Atlassian 招聘的初级员工比以往任何时候都多<br>🔸 三种 PM 原型：艺术家、科学家和总经理<br>🔸 五个最常见的 PM 迷思，逐一拆解<br>🔸 为什么设计比以往任何时候都更重要<br><br>立即收听 👇<br><a href="https://www.youtube.com/watch?v=hRtmV1mCBSE" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=hRtmV1mCBSE</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">.@Atlassian tried creating teams where everyone was an “AI builder.” No PM or designer roles, just builders.<br><br>For the first few weeks, it was amazing. “We’ve moved faster than ever before.”<br><br>A month in, everyone had gone back to their old jobs.<br><br>One of the PMs explained why: “Throughput’s not our problem. Direction’s our problem.”<br><br>In my conversation with Sherif Mansour (@sherifmansour), Head of AI + Product Craft at Atlassian, we discuss:<br>🔸 Why product roles aren’t merging—each one is getting bigger<br>🔸 Why Atlassian is hiring more juniors than ever<br>🔸 The three PM archetypes: artist, scientist, and general manager<br>🔸 The 5 most common PM myths, debunked<br>🔸 Why design matters more than ever right now<br><br>Listen now 👇<br><a href="https://www.youtube.com/watch?v=hRtmV1mCBSE" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.youtube.com/watch?v=hRtmV1mCBSE</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>DeepMind 基准暴露模型稳定短板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kaggle · 2026-11-25 03:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">为什么前沿 AI 模型可以编写复杂代码，但在被要求按顺序识别五个简单物体的颜色或验证图片中不存在什么时，仍然偶尔会犯错？<br><br>这种脱节被称为&quot;锯齿状智能&quot;，科学地测量它对于提升 AI 可靠性至关重要。<br><br>今天，@GoogleDeepMind 在 Kaggle 上推出了 Humanity's First Exam，这是一个旨在衡量&quot;地板可靠性&quot;的基准——模型是否每次都做对简单任务，而不仅仅是一次。它涵盖 20 个基础子类别中的 544 个文本和多模态提示，分为 136 个四提示族。<br><br>一些早期发现，基于 18 个前沿模型：<br>• 高单次准确率掩盖了不一致性：前五名模型达到 96%–98% 的 pass@1 和 100% 的族 pass@4，但在族 pass^4 上平均仅为 85.6%（80.5%–92.4%），全部 18 个模型的族可靠性差距为 7.6–80.1 个百分点。<br>• 视觉感知导致 74% 的错误答案：额外思考时间在视觉任务上的帮助远小于文本任务。<br>• 单步失误很常见：在 39% 的失败提示-模型对中，答案偏差为一或仅含一个错误元素；在 298 个计数错误中有 167 个符合这一模式。<br><br>当前排行榜：<br>🥇 GPT- 6.2 Astra (xhigh) - 90.7%<br>🥈 GPT- 6.2 Sol (xhigh) - 87.5%<br>🥉 Gemini 4 Neon (high) - 85.6%<br><br>帮助我们对这些模型进行压力测试。加入 Humanity's First Exam 竞赛：提交任何人在一两分钟内几乎都能做对，但前沿 AI 模型仍然做错的日常任务。<br><br>💰 奖品：价值 $50,000 的 Kaggle 周边<br>⏰ 截止日期：2026 年 12 月 15 日<br><br>在此参赛并探索 Humanity's First Exam：<a href="https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Why can frontier AI models write complex code, yet still occasionally stumble when asked to identify the colors of five simple objects in order or verify what's not in an image?<br><br>That disconnect is called jagged intelligence and measuring it scientifically is critical to advancing AI reliability.<br><br>Today, @GoogleDeepMind is launching Humanity's First Exam on Kaggle, a benchmark designed to measure &quot;floor reliability&quot;: whether models get simple tasks right every time, not just once. It spans 544 text and multimodal prompts across 20 foundational subcategories, in 136 four-prompt families.<br><br>Some early findings, across 18 frontier models:<br>• High single-shot accuracy masks inconsistency: Top five models reach 96%–98% pass@1 and 100% family pass@4, yet average only 85.6% on family pass^4 (80.5%–92.4%), with a 7.6–80.1 percentage-point Family Reliability Gap across all 18 models.<br>• Visual perception drives 74% of wrong answers: Extra thinking time helps far less on visual tasks than on text.<br>• Single-step slips are common: In 39% of failed prompt–model pairs, the answer is off by one or has a single wrong element; this holds for 167 of the 298 counting errors.<br><br>Current leaderboard:<br>🥇 GPT- 6.2 Astra (xhigh) - 90.7%<br>🥈 GPT- 6.2 Sol (xhigh) - 87.5%<br>🥉 Gemini 4 Neon (high) - 85.6%<br><br>Help us stress-test these models. Join the Humanity's First Exam competition: submit everyday tasks that almost anyone gets right in a minute or two, but frontier AI models still get wrong.<br><br>💰 Prize: $50,000 in Kaggle swag<br>⏰ Deadline: December 15, 2026<br><br>Compete and explore Humanity's First Exam here: <a href="https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/60ce63603b6bfe2ee501.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MCP 服务器 Skills 开箱即用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bcherny · 2026-11-25 02:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">对这个真的很兴奋。MCP 服务器现在可以自带技能发布，Claude Code 开箱即用就知道如何使用它们。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">MCP 满两岁了！最初作为一个连接 AI 应用与工具和数据的协议，它正在进化为标准化智能体通信和编排工作的方式。<br><br>我们正在通过 MCP 上的 Skills 和 Tasks 将更多这种智能体能力带到 Claude。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">MCP turns two! What started as a protocol for connecting AI apps to tools and data is evolving to standardize how agents communicate and orchestrate work.<br><br>We’re bringing more of these agentic capabilities to Claude with Skills over MCP and Tasks. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/411573cad93e255756bc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">16</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Baseten 短令牌拉取 HF 权重</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @baseten · 2026-11-25 05:28</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们与 @huggingface 团队合作，为 Trusted Publishers 添加了只读访问权限。<br><br>Baseten 现在是第一个通过 OIDC 在部署时签发短期只读令牌来拉取私有 Hugging Face 权重的推理提供商。这消除了可能泄露的长期令牌，以及对仓库不必要的写入权限。<br><br>这与我们现有的 S3 和 GCS OIDC 支持相辅相成。我们的安全系列还有更多文章即将推出。<br><br>完整详情见博客：<a href="https://www.baseten.co/blog/deploy-private-hugging-face-models-without-sharing-your-access-token/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.baseten.co/blog/deploy-private-hugging-face-models-without-sharing-your-access-token/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We worked with the @huggingface team to add read-only access to Trusted Publishers.<br><br>Baseten is now the first inference provider to pull private Hugging Face weights with short-lived, read-only tokens issued at deploy time over OIDC. This eliminates long-lived tokens that could leak, as well as unnecessary write access to your repo.<br><br>This joins our existing OIDC support for S3 and GCS. More posts in our security series to come. <br><br>Full details in the blog: <a href="https://www.baseten.co/blog/deploy-private-hugging-face-models-without-sharing-your-access-token/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.baseten.co/blog/deploy-private-hugging-face-models-without-sharing-your-access-token/</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">17</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GPT-6 蛋白设计通过湿实验验证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gdb · 2026-11-25 05:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">GPT-6 用于设计新的蛋白质形状和序列——无需专门的生物模型。<br><br>这是推理和代码以通用方式解决问题的&quot;不合理的有效性&quot;的又一个例证。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">GPT-6 for designing new protein shapes and sequences — no bio-specific model required.<br><br>Another example of the unreasonable effectiveness of reasoning and code to solve problems universally.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenAI <span style="font-size:12px;color:#999999;font-weight:400;">@OpenAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们正在分享一份新的预印本，展示 GPT-6 系列模型的蛋白质内在设计能力的湿实验室验证。<br><br>我们的模型可以使用推理和代码设计新的蛋白质形状和序列，无需调用专门的生物学模型来生成它们。<br><br><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models. <br><br>Our models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to generate them.<br><br><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d5ab52a27e38cc08980b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
