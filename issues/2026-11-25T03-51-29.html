@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月25日 11:51">
+<title>AI技术雷达 · 11月25日 11:51 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude证明代数复杂度VP≠VNP</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;ARIS流水线自动改论文至8.5分</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;ShellBench智能体四成任务失败</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;MAGI-2视频生成每秒仅0.08美元</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;AI发现矩阵乘法指数精确为9/4</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Claude通过MCP分发Skills</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude证明代数复杂度VP≠VNP</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Fenng · 2026-11-24 12:14</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 在官方 GitHub 放出 70 页论文，宣布 Claude 证明任意域上 VP≠VNP，即代数版 P≠NP，论文作者仅为 Claude。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ARIS流水线自动改论文至8.5分</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @fngly343149 · 2026-11-24 18:10</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">19,681 星，睡一觉论文自己改到 8.5 分，13 条流水线全开源。<br>wanshuiyin/Auto-claude-code-research-in-sleep（ARIS）2026-03-10 建仓，纯 Markdown 技能，不写代码也能配。<br>· 流程：W1 到 W6 加 Wiki、WM 共 13 条命名流水线，论文、实验、综述各有入口<br>· 成绩：一篇真实 ICLR 2026 理论稿，自动改进从 4/10 提到 8.5/10，两轮修完<br>· 成绩：自动评审循环过夜跑 4 轮，5/10 到 7.5/10，中途跑了 20 多个 GPU 实验<br>· 产出：从一份 NARRATIVE_REPORT.md 生成 9 页论文、7 节、29 条引用、4 张图、2 张对比表，编译零错误零未定义引用<br>怎么用：git clone 之后把 skills 目录链进 Claude Code 的技能路径，再跑 /paper-writing 或 /rebuttal。<br>对我们：省的是改稿和补实验的几十个小时；亏在它不懂你的领域直觉，方向错了它会把错的做得很完整。<br>判断：赶投稿期的人最值，省的是几十小时改稿；纯工程岗别装，这套是给写论文的人做的。<br>#论文 #ClaudeCode<br><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/adf1541383407aafc217.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>ShellBench智能体四成任务失败</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-25 11:31</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个全新的优秀基准测试，用于在日常工作中测试 agent。<br><br>我喜欢你可以用它来测试一个 agent 在多次尝试中的可靠性。<br><br>在 12 个模型上进行了测试。开源 harness 展现出竞争力，很酷。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Great new benchmark to test agents on everyday work. <br><br>I like that you can use it to test an agent's reliability across multiple attempts. <br><br>Tested on 12 models. Cool to see open-source harnesses show competitiveness. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/fa9797db18b9aa738b9a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">OpenClaw🦞 <span style="font-size:12px;color:#999999;font-weight:400;">@openclaw</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">最好的 AI agent 在大约每 10 个日常任务中仍有 4 个失败。<br><br>ShellBench，今天发布：100 个真实世界任务，12 个模型，5 个 harness，53,100 次评分运行。<br><br>最高分：62.5%。三次尝试全部通过：48.8%。<br><br>开源 harness 表现不俗。<br><br><a href="https://openclaw.ai/blog/shellbench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openclaw.ai/blog/shellbench</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The best AI agents still fail about 4 in 10 everyday tasks.<br><br>ShellBench, out today: 100 real-world tasks, 12 models, 5 harnesses, 53,100 graded runs.<br><br>Top score: 62.5%. Passing all three attempts: 48.8%.<br><br>Open-source harnesses held their own.<br><br><a href="https://openclaw.ai/blog/shellbench" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://openclaw.ai/blog/shellbench</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大模型交付需约定准确率验收标准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zcswl7961 · 2026-11-25 11:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">跟一个做政企私有化部署的朋友聊起今年的回款难，他说现在客户卡尾款有了一个新理由：“你们这个智能助手回答得不够完美，偶尔还会遗漏细节。”<br><br>传统软件验收有明确的功能清单，点开按钮能跑通就能签字；可大模型天生是概率输出，只要客户想挑刺，随便换十种刁钻问法总能测出一条瑕疵。<br><br>如果签合同时不把“大模型准确率边界”和“人工兜底验收标准”写死在白纸黑字里，交付团队就会陷入无休止的免费调优泥潭。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MAGI-2视频生成每秒仅0.08美元</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @mattshumer_ · 2026-11-25 06:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你现在只需花 19.20 美元就能制作一部电影预告片。<br><br>这个预告片在 Higgsfield 的 MAGI-2 上经过 12 次生成，每次 20 秒。每秒仅 8 美分。<br><br>而且开放权重很快就会推出（400B 参数……这东西太巨大了）。<br><br>太他妈不可思议了。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">You can now make a movie trailer for $19.20.<br><br>This one took 12 generations on MAGI-2 on Higgsfield, 20 seconds each. Eight CENTS a second.<br><br>And open weights are coming soon (400B parameters... this thing is huge).<br><br>Fucking incredible. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3b2fea9b6984a2ca4dfd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Higgsfield AI 🧩 <span style="font-size:12px;color:#999999;font-weight:400;">@higgsfield</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">隆重推出 MAGI-2，独家登陆 Higgsfield。<br><br>最高 30 秒的前沿 1080p 质量，每秒生成仅需 0.08 美元。<br><br>400B 参数的开放权重视频模型即将推出。<br><br>现在可在 Higgsfield 独家使用，也可通过 Higgsfield API 调用。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Introducing MAGI-2, exclusively on Higgsfield.<br><br>Up to 30 seconds of frontier 1080p quality, with 0.08$ per second of generation.<br><br>Open weights video model with 400B parameters coming soon.<br><br>Now available exclusively on Higgsfield and via Higgsfield API. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/f92a6d2f4a5c2e92f26b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI发现矩阵乘法指数精确为9/4</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @gdb · 2026-11-25 11:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">AI 正在帮助我们发现更好的计算方式，并理解计算的根本极限。<br><br>AI for science 是为了创造关于世界的新知识。很兴奋能将这种发现能力更广泛地提供给大家。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">AI is helping us discover better ways to compute, and understand the fundamental limits of computation.<br><br>AI for science is about creating new knowledge about the world. Excited to make this kind of discovery capability available more broadly.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Greg Brockman <span style="font-size:12px;color:#999999;font-weight:400;">@gdb</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">矩阵乘法指数恰好是 9/4：&quot;这真的是那种我从未想过有生之年会看到的结果&quot;</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">matrix multiplication exponent is exactly 9/4: &quot;This is really the kind of result that I never thought I would see in my lifetime&quot;</p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude通过MCP分发Skills</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shao__meng · 2026-11-25 10:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Claude 官方升级 MCP：按需分发 Skills、后台执行 Tasks，让工具连接变成完整任务委派<br><br>连接上工具，不代表 Agent 就知道怎样把工作做好。Claude 官方更新的重点，是让 MCP 服务器同时提供操作能力、使用经验和更完整的执行流程。<br><a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/skills-over-mcp-tasks-and-more</a><br><br># Skills over MCP：通过 MCP 分发 Skills<br><br>这里的 over 是“通过”，不是“胜过”。服务器除了提供工具和资源，还能发布包含 SKILL.md 与辅助文件的 Skills，告诉 Claude 如何组合工具、遵循业务规则、完成多步骤任务。<br><br>Skills 按需加载，并随服务器更新，用户不必再单独安装一份操作指南；内容还可以按账户或组织定制。<br><br>例如，Shopify 提供整套网店设计与更新流程，HubSpot 引导客户完成配置，Atlassian 结合组织上下文分析工作。Carta 根据文档协助起草和发行股权的能力则仍待推出。<br><br>但 Skills 内容不等于用户授权。客户端仍需将服务器提供的内容视为不可信输入，不能因为操作指南要求某个动作，就自动授予执行权限。<br><br># Tasks：把长任务交给服务器<br><br>这里的 Tasks 是 MCP 的异步执行扩展，不是待办清单或定时提醒。<br><br>服务器先返回任务 ID，再在后台执行耗时操作，甚至完整的 Agent 循环。Claude 可以继续处理其他工作，随后查询状态、获取结果；断线重连后，也能凭 ID 继续查询。ZoomInfo 用它完成更深入的企业与联系人研究，将原先需要多轮提示的流程一次委派。<br><br>这不保证任务无限期运行。客户端与服务器都要支持扩展，保留期限由服务器决定；取消也是协作请求，不保证服务器立即停工。<br><br># 执行中可以提问，也能传文件<br><br>Elicitation 允许服务器通过表单或链接向用户补充提问、请求确认，再继续执行。例如，Supabase 在创建付费项目或执行破坏性 SQL 前确认，GitHub 要求用户输入仓库名后才允许删除。<br><br>密码、API 密钥等敏感信息不能通过普通表单收集，应走外部链接流程。<br><br>File Uploads 让 PDF、表格、图片直接传给服务器，传输过程不必经过模型上下文窗口。但这不代表模型阅读文件也不消耗上下文。关联开发文档仍将其标为测试功能与实验扩展，并有连接器和存储域名等要求。<br><br># 哪些已经可用？<br><br>按公告内容，Claude 和 Claude Code 中：<br>· Skills over MCP 为公开测试，Pro、Max、Ultra 默认开启；Team 需管理员启用，Enterprise 尚待推出。<br>· Tasks 与 Elicitation 已正式可用，覆盖上述个人付费套餐，正向 Team、Enterprise 推送。<br>· File Uploads 即将逐步推出，具体取决于套餐、服务器支持与组织设置。<br><br>此外，官方称工具搜索可在多服务器配置中，将工具定义占用的上下文减少超过 85%。这里减少的是工具定义的开销，不能理解为总 token 成本降低 85%。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bac62a7f4bbb8b31f7f1.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">ClaudeDevs <span style="font-size:12px;color:#999999;font-weight:400;">@ClaudeDevs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">MCP 两岁了！最初作为一个连接 AI 应用与工具和数据的协议，正在演变为标准化 agent 之间通信和编排工作的方式。<br><br>我们正在通过 Skills over MCP 和 Tasks 将更多这些 agentic 能力带给 Claude。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">MCP turns two! What started as a protocol for connecting AI apps to tools and data is evolving to standardize how agents communicate and orchestrate work.<br><br>We’re bringing more of these agentic capabilities to Claude with Skills over MCP and Tasks. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/411573cad93e255756bc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jeveration单次前传出图免去噪</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @RisingSayak · 2026-11-24 22:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Jeveration 非常有趣！我甚至没想到决策模型可以被用于图像生成。但是那些 codebook！<br><br>没有去噪循环。它使用一个冻结的 Qwen3.5-4B 加上 LoRA，将一整张 512×512 图像作为一个联合决策返回：所有 128 个 code 并行选择，在单次前向传播中完成。<br><br>同一个 checkpoint 还能进行图像到图像生成和密集预测。<br><br><a href="https://huggingface.co/linlinlinlinsdada/Jeveration" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/linlinlinlinsdada/Jeveration</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Jeveration is very interesting! I couldn't even think of how decision models could be leveraged for image generation. But them codebooks!<br><br>No denoising loop. It uses a frozen Qwen3.5-4B plus LoRA to return a whole 512×512 image as one joint decision: all 128 codes chosen in parallel, in a single forward pass.<br><br>The same checkpoint also does image-to-image and dense prediction.<br><br><a href="https://huggingface.co/linlinlinlinsdada/Jeveration" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/linlinlinlinsdada/Jeveration</a></p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
