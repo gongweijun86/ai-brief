@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 05:17">
+<title>AI技术雷达 · 11月27日 05:17 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Anthropic 用 Claude 将 Messages API 迁移至 Rust</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;斯坦福 RCI 让多 Agent 团队递归自我改进</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;MIT MeMo 用小模型替代 RAG 检索</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Jev 决策模型在 Agent Harness 的六类应用</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 用 Claude 将 Messages API 迁移至 Rust</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-11-26 10:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 用 Claude 把核心 API 从 Python 迁移到 Rust，结果有点惊人。🚀<br><br>CPU 消耗降低约 70%，内存消耗降低超过 80%，首 Token 延迟缩短约 20%。<br><br>整个过程没有中断线上服务，也没有停止新功能开发。<br><br>更有意思的是，Claude 只用约一周就写出了第一版核心请求代码，但真正困难的工作才刚开始。<br><br>Anthropic 公开了完整的工程经验。👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/0c3e5eeb0f83fd8f7bc0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Anthropic <span style="font-size:12px;color:#999999;font-weight:400;">@AnthropicAI</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们最近将我们的 Messages API 从 Python 迁移到了 Rust。<br><br>在我们的工程博客上，我们分享了如何利用现有服务来验证新服务，并让多组 Claude 智能体追踪并修复两个版本之间的差异。<br><br><a href="https://www.anthropic.com/research/migrating-api-to-rust" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/migrating-api-to-rust</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We recently migrated our Messages API from Python to Rust.<br><br>On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.<br><br><a href="https://www.anthropic.com/research/migrating-api-to-rust" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.anthropic.com/research/migrating-api-to-rust</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>斯坦福 RCI 让多 Agent 团队递归自我改进</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @aigclink · 2026-11-26 17:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">斯坦福团队最新研究：递归集体智能RCI，让多Agent团队自己训练下一代自己，实现群体的递归自我改进<br><br>斯坦福联合UC Berkeley、NVIDIA和西北大学的研究，作者阵容齐聚了 李飞飞、马毅、Yejin Choi崔艺珍、Leonidas Guibas、Gordon Wetzstein等多位顶流学者，一作是Lixuan He<br><br>规划任务准确率从61.3%提升到了95%；在隐藏信息决策任务中，准确率从50.9%提升至88.6%，等效独立Agent的生成Token预算下降约43%<br><br>无需外部教师和人工标注。对搞自进化Agent、AI数字员工团队、多Agent Harness的等非常有参考价值<br><br>现在很多人都在搞多Agent系统，甚至组建AI员工团队，那多个Agent一起干活儿到底有没有必要？<br><br>假如，你组建了一个4人Agent团队，让它们相互讨论、分析、决策，最终效果比单Agent好，但消耗了更多Token<br><br>那么问题来了，如果把同样多的Token用于独立推理、多次采样，效果会不会更好？如果会，那你组团的意义是啥？<br><br>为此，研究团队提出了等预算评价阶梯，要求多Agent团队逐级超越单Agent、等预算多数投票、等预算pass@n，以判断协作本身是否产生了超越独立采样的收益<br><br>他们给的结论是：多个Agent掌握相同的信息，反复讨论，往往没有明显的协作优势，还可能产生额外的沟通成本<br><br>多个Agent分别掌握不同的关键信息，通过交换事实、汇总信息，才更容易产生明显的集体智能增益<br><br>那么好，如何让AI团队越干越聪明？现在的多Agent系统要由人设计角色、分工、Prompt、通信规则和工作流程，团队工作效率不高，还需要人不断调整<br><br>所以提出RCI，让AI团队自己探索更有效的组织方式，并利用自身经过验证的协作记录，训练下一代Agent，实现群体层面的递归自我改进<br><br>不需要外部教师，也不需要人工标注训练数据，但需要自动验证机制，候选模型只有在新任务上表现优于上一代并通过发布门控，才会成为新一代<br><br>性能数据：<br>PlanBench：经过四代递归训练，Blocksworld任务准确率从61.3%提升到了95.0%<br><br>HiddenBench：八轮递归训练中成功发布五代，准确率从50.9%提升至88.6%，等效独立Agent的生成Token预算从13.9降至7.9（下降约43%）<br><br>Hanabi：经过六代递归训练，得分从0提升至4.5，超过非递归训练对照组的约2.9分<br><br>如果可以，那多Agent系统即从人工设计的静态协作系统，走向能学习协作、自我优化、递归训练的动态智能组织<br><br>#MultiAgent #Agent群体进化  #SelfImprovingAI #RCI</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1e6ed20be3588ddc6462.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>24KB 汇编 AI 操作系统直跑 Qwen3</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-26 10:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🤯炸裂！有人直接绕过了 Linux，手搓了一个仅有 24KB 的 AI 操作系统！！<br><br>纯 x86-64 汇编编写，直接运行 Qwen3-0.6B，CPU 推理速度比 Linux 环境下的 llama.cpp 最高快 54%！<br><br>这个操作系统有多离谱？<br><br>・整个内核二进制文件仅 24,252 字节 ・不依赖 Linux、Windows、C、Rust 或 libc <br>・内核启动仅需 74～94 毫秒<br>・通过 APIC 唤醒全部 CPU 核心 <br>・将 614 MiB 的 Q8_0 量化模型权重直接映射到物理内存 <br>・支持 VGA 显示、PS/2 键盘、串口及带 KV 缓存的实时多轮对话<br><br>在同一台 AMD EPYC 7642 上，与 llama.cpp 进行 CPU 推理性能对比：<br><br>&gt; 1 线程：23.67 vs 16.63 tok/s（+42%）<br><br>&gt; 4 线程：78.89 vs 51.08 tok/s（+54%）<br><br>&gt; 8 线程：118.08 vs 80.79 tok/s（+46%）<br><br>&gt; 16 线程：134.94 vs 103.03 tok/s（+31%，峰值 136.6）<br><br>更离谱的是，这玩意儿甚至能在一台没有硬盘、仅有 2 GiB 内存、搭载 2014 年 Intel Xeon E5-2670 v3 的 Proxmox 虚拟机上运行。<br><br>实测解码速度达到 55.4 tok/s，还提供了兼容 BIOS 和 UEFI 的 ISO 镜像构建工具。<br><br>性能提升的同时，精度也没有明显拉胯。<br><br>不同线程数下的输出保持逐位一致，测试中的 64 个贪心解码 Token 全部与 PyTorch FP32 匹配，余弦相似度达到 0.99965。<br><br>除此之外，还有一个仅 14.7KB 的 Linux ELF 版本，在 1～40 线程下比 llama.cpp 快 18%～36%。<br><br>通过裸机环境下的 2 MiB 大页内存映射，还能进一步榨出约 10% 的性能。<br><br>别人还在研究如何优化 AI 推理框架，这老哥直接为 AI 手搓了一个操作系统。<br><br>这才叫真正的极限性能优化！<br><br>仓库链接放评论区了👇 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bc585d55119fe8c0f2e3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MIT MeMo 用小模型替代 RAG 检索</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @CrazyShyyt · 2026-11-26 15:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">RAG 正式宣告死亡 🤯<br><br>MIT 打造了一个不需要 RAG 的 AI。<br><br>它叫 MeMo，不是把知识存进数据库，而是在你的文档上训练一个小型、专用的 Memory 模型。<br><br>在推理时，你的主前沿 LLM 保持 100% 冻结。没有向量数据库。没有分块。没有权重访问。<br><br>它只需在 3 个快速轮次中询问 Memory 模型，就像侦探询问证人一样，来提取确切事实并综合出答案。<br><br>结果非常残酷：<br><br>• NarrativeQA（长文档）：53.6% 对 RAG 的 23.2%（好两倍以上）。<br>• 噪声测试：用虚假干扰项将语料库翻倍。RAG 大跌 -6.2%。MeMo 毫不动摇（+0.55%）。<br><br>而那个隐藏优势呢？它完全即插即用。<br><br>训练一次 Memory 模型。当他们将主 LLM 从 Qwen2.5-32B 升级到 Gemini 3.0 Flash 且零重训时，准确率一夜之间跃升 +26.7%。<br><br>我们花了 3 年时间试图通过构建更好的搜索引擎来修复 AI 记忆。<br><br>事实证明，答案是给模型第二个大脑。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">RAG is officially dead 🤯<br><br>MIT built an AI that doesn't need RAG.<br><br>It’s called MeMo, instead of storing knowledge in a database, you train a small, dedicated Memory model on your documents.<br><br>At inference time, your main frontier LLM stays 100% frozen. No vector DB. No chunking. No weight access.<br><br>It simply interrogates the Memory model in 3 quick turns, like a detective questioning a witness, to pull exact facts and synthesize the answer.<br><br>The results are brutal:<br><br>• NarrativeQA (long documents): 53.6% vs. RAG’s 23.2% (more than 2x better).<br>• Noise test: Doubled the corpus with fake distractors. RAG tanked -6.2%. MeMo didn't flinch (+0.55%).<br><br>And the sleeper advantage? It’s completely plug-and-play.<br><br>Train the Memory model once. When they upgraded the main LLM from Qwen2.5-32B to Gemini 3.0 Flash with zero retraining, accuracy jumped +26.7% overnight.<br><br>We spent 3 years trying to fix AI memory by building better search engines.<br><br>It turns out, the answer was giving the model a second brain.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/87aa769ab3b03c46323e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>reverse-skill 为代码 AI 提供逆向分析路径</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hgg1668 · 2026-11-27 04:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这是给代码 AI 配的一副逆向工程导航。碰上 APK、二进制、网页加密、CTF 这些活儿，先让它给你指清走哪条分析路子，别一上来就胡乱点工具。<br><br>安装包往那一丢，Agent 往往逮着 jadx、Frida、Burp 一通乱试。这个仓库先逼它弄明白手上是什么东西，再摸一遍你机器里装了些什么。动手之前，权限有没有、范围到哪儿，都得白纸黑字写下来；中间过程留好，末了交一份拿得出手的记录。<br><br>它可不是破解放手神器。能碰的只有你本身有权限的程序、比赛题目，以及拿到书面授权的测试。没授权的别人家东西，动一下就是违法。<br><br>传送门：<br><a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/zhaoxuya520/reverse-skill</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/c67eb1b4d15c766e8169.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>智能体自评日报需独立核查</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @kun70706 · 2026-11-27 04:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">小赵每天让智能体发一份日报，写它今天干了什么。<br>连续两周，日报上全是“已完成”。<br>上周五她顺手抽查了一条，发现那条根本没发出去。<br>智能体自己给自己打分，满分是它自己定的。<br>她现在加了一个独立核查的助手，只认系统里的记录，不认口头汇报。<br>核查助手上岗第一天，就揪出三条“已完成”其实没做。<br>你敢不敢让干活的智能体自己汇报成绩？</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Jev 决策模型在 Agent Harness 的六类应用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @meow2149 · 2026-11-26 17:49</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Jev 这类决策模型，在 Coding Agent 中到底有什么用？<br><br>Claude Code 完成一次函数重命名后，改了两个文件，也同步更新了测试代码，正准备结束任务时被一个插件拦了下来。等它真正跑了一遍测试，才发现还有一个和 Windows 换行符有关的 bug。<br><br>这是 Claude Code 社区插件 jev-belay 作者记录的一次真实运行。整个过程中，Jev 没有参与任何代码编写，只负责判断 Claude Code 当前到底应不应该结束任务。<br><br>这也是我最近研究 Agent Harness 时，觉得决策模型挺有意思的地方。一个 Harness 在管理上下文、工具调用和任务流转时，会遇到大量边界相对明确的决策问题：<br><br>下一步该用哪个模型？<br>当前任务需要加载哪个 Skill？<br>这条命令要不要让用户审批？<br>上下文里哪些信息值得保留？<br>多 Agent 协作时，任务该交给谁？<br><br>TypeSafe 的 Jev、Google 的 Gemini Decision 1，以及 OpenAI 通过 Decisions API 提供的 GPT-6 Luna，都可以用来处理这类问题。Harness 提供当前状态和候选项，决策模型返回选择、概率或评分，再由程序根据结果推进下一步。<br><br>我翻了几个开源项目的源码，整理了六个比较有代表性的应用场景。<br><br>1. 模型路由：什么时候需要切强模型<br><br>Google 已经在 Gemini Notebook 中用了这种方案，通过 Gemini Decision 1 选择合适的模型档位和思考强度。研究项目 JevAgentHarness 则更进一步，把模型路由细化到了 Agent 的每一步执行中。<br><br>它可以作为代理，接在 Pi、Codex CLI 和模型服务之间：<br>- 任务开始时默认使用强模型<br>- 后续根据任务描述、近期操作和工具执行结果，由 Jev 判断下一步该用哪个模型<br>- 常规操作交给快模型，复杂操作切回强模型<br>- 如果快模型准备结束任务，再由强模型用相同的输入执行一次<br><br>项目作者用 Pi 在 Terminal-Bench 2.0 的 74 道题上做了测试，每种配置各跑一次。相比全程使用 Gemini 4 Argon，按需切换到 Gemini 3.5 Flash-Lite 后，平均每道题的模型调用成本从 $0.62 降到了 $0.42，其中已经包含 Jev 自身的调用费用。<br><br>2. Skill 路由：当前任务到底需要哪些 Skill<br><br>OpenCode 的社区插件 jev-for-all 会把已安装 Skill 的名称、描述和用户请求交给 Jev，由它决定加载哪些 Skill。<br><br>这里有个挺实用的设计，即使存在排名第一的 Skill，插件也可以一个都不加载。比如用户只是想改一下项目版本号，哪怕装了几十个 Skill，也没必要为这种简单任务引入额外的上下文。<br><br>当候选项较多，或者初次判断的置信度不够时，插件还会进一步读取部分候选 Skill 的正文，再做一次筛选。对装了大量 Skill 的 Agent 来说，这能明显减少无关指令进入上下文。<br><br>3. 权限审批：这条命令需要用户确认吗<br><br>Hermes Agent 的社区插件 hermes-jev-approvals 把 Jev 接进了原有的智能审批流程，用来审查被 Hermes 标记出来的命令。它会从几个维度做判断：<br>- 是否符合用户设定的规则<br>- 是否涉及读取敏感凭据<br>- 是否可能向外部发送本地数据<br><br>插件再根据这些结果，通过代码决定放行、拒绝或请求用户确认。<br><br>源码里还有个很稳妥的细节。如果命令过长，导致送给 Jev 审查的内容被截断，即使 Jev 建议放行，插件依然会要求用户确认。模型没看到完整命令，就不能据此授权执行。<br><br>4. 上下文管理：哪些历史信息值得保留<br><br>Claude Code 的社区插件 fast-jev-compaction 把工具调用记录的压缩拆成了两个独立判断：<br>- 是否需要保留这次工具调用本身<br>- 是否需要保留这次工具调用的完整输出<br><br>比如 Agent 之前搜索过某个文件，返回了几百行结果。后续步骤可能还需要知道它搜过什么，但已经不需要完整的搜索结果了。插件可以根据 Jev 的判断，选择完整保留、保留调用参数并缩短输出，或者移除整条记录。相比简单按时间顺序裁剪历史，这种方式更能结合当前任务来判断信息的保留价值。<br><br>5. 任务验证：Agent 真的完成工作了吗<br><br>回到开头提到的 jev-belay。它会在 Claude Code 准备结束任务时检查执行记录，看最后一次文件修改之后，有没有成功运行测试、构建或 lint 的记录。如果已经有符合要求的验证记录，直接放行，不需要调用 Jev。<br><br>只有当 Agent 改了文件、却没有通过后续检查时，插件才会让 Jev 判断，当前的回复只是在汇报进度，还是已经宣称任务完成。如果任务需要验证而 Agent 准备直接结束，插件就会要求它继续执行检查。<br><br>这里的职责划分很清楚。测试有没有运行、结果是否通过，由程序查执行记录；自然语言回复是否意味着任务已经完成，交给决策模型判断。<br><br>6. 多 Agent 编排：任务该交给谁，什么时候推进<br><br>这部分我主要看了 T3 Code、Orca 和 OpenBot。虽然都和多 Agent 有关，但各自处理的决策问题不太一样。<br><br>T3 Code（基于语义的事件通知）<br>假设在 T3 Code 里同时开了三个 Agent 处理登录相关任务，我希望等其中一个提交 PR，并明确跑完登录回归测试后，再通知负责协调的主线程。社区工具 t3threads 可以监看指定线程，把近期活动和预设条件交给 Jev 判断。当条件成立的概率达到阈值（默认 0.9）时才会通知主线程，如果主线程正忙，就等它空闲后再投递。这样就能按实际进展触发后续工作，而不只是看线程有没有停下来。<br><br>Orca（执行配置与任务路由）<br>Orca 的社区插件 Fairway 支持提前定义多套执行配置，每套包含 Agent、模型、思考强度和适用场景。简单的回归测试用一套，复杂的并发问题用另一套。开启 Jev 路由后，Fairway 把任务描述和候选配置交给 Jev，由它返回合适的配置 ID，实际参数仍由程序从本地配置读取。目前 Fairway 默认关闭付费 Jev 路由，选中配置也不会直接启动任务，需要显式启用执行再派发。<br><br>OpenBot（多 Agent 消息路由）<br>OpenBot 的频道里可以同时有前端、后端和测试多个 Agent。当用户没有明确指定收件人、现有路由规则也定不下来时，OpenBot 会通过频道负责人配置的模型，结合成员职责、近期消息和未完成任务，选出应该回应的 Agent。<br><br>比如这两句：<br>“前端和测试分别检查一下登录功能。”<br>“让前端汇总一下测试人员的意见。”<br><br>两句话都提到了前端和测试，但前者需要两个 Agent 分别回应，后者只需要前端来协调汇总。OpenBot 目前在这里用的是频道负责人配置的模型，并不是 Jev 的现成集成，但本身很适合接入专用决策模型。<br><br>当然，决策模型并不是所有环节都适合直接接入。<br><br>JevAgentHarness 论文里记录了一个很典型的失败案例。在一项模拟客服退款任务中，用户还没提供退款方式，Jev 就以 0.98 的置信度选择了退款工具，随后主模型自己填了一个用户从未提供过的退款方式。原本应该向用户询问的信息，被一次高置信度的错误决策跳过了。<br><br>在这组客服实验里，把每一次工具选择都交给 Jev，任务成功率反而下降了 19 个百分点。后来通过历史执行记录校准决策阈值，只把部分工具和参数选择交给 Jev，以 Gemini 3.5 Flash 为主模型的实验组，在 500 个任务成败结果完全不变的情况下，把成本降低了 14.2%。<br><br>如果以后给自己的 Agent Harness 接入这类模型，我会优先从模型路由、Skill 选择、上下文管理和事件通知这些边界明确的环节开始。先在真实任务里积累一批决策数据，再逐步放开权限，重点观察它对任务成功率、执行步数和整体成本的影响。<br><br>毕竟单次模型调用便宜，不代表整个 Agent 跑完任务的成本就一定会降低，最终还是要看完整执行下来的实际开销和效果。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/25dcd46aefa485e32694.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
