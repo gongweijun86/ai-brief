@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 01:13">
+<title>AI技术雷达 · 11月27日 01:13 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;MCP 2027 五大演进补齐 Agent 工程短板</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;千 Agent 协作一周实战报告开源工具</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;智谱 GLM-5.5 确认 12 月发布</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Antigravity 用 kqueue 遥控 Codex 会话</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MCP 2027 五大演进补齐 Agent 工程短板</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @hungryturbo · 2026-11-26 23:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">前阵子技术圈还在热议“MCP 已死，CLI + Skills 才是未来”，结果年底的一组真实生产数据，直接把风向扭转了。<br><br>Notion 的 MCP 流量暴涨 60 倍，Linear 上近一半工单（每周 240 万个）已由 Agent 创建。Atlassian 每个工作日跑超 500 万次 MCP 调用，最关键的是，其中 44% 的用户根本不是程序员，压根用不了命令行 CLI，连苹果都在自家的 Pages、Keynote 里悄悄内置了本地 MCP 服务。<br><br>刚读完一篇硬核前瞻《Why I'm Bullish on MCP for 2027》，作者是DeepMind 开发者体验负责人 Philipp Schmid。<br><br>把 MCP 过去半年的底层进化扒得非常透，下面总结 5 条核心内容：<br><br>1、Code Mode 普及，彻底治好吃光上下文的顽疾。<br><br>以前调 MCP 最蠢的地方，是把几十个工具说明全塞进提示词，查 10 条数据要来回对话 10 轮，中间废话全堆在上下文里烧 Token。<br><br>现在 Claude Code、OpenCode 2.0、Codex 默认切到了代码模式 Code Mode，服务端提前声明好输入输出的数据结构，直接给 Agent 一个安全沙盒写一段脚本，一次性并发拉数据，在内存里过滤拼接，最后再把几行真正的干货塞回大模型。<br><br>加上沙盒外原生的 OAuth 2.1 授权，不用像 CLI 那样在本地裸奔存 API Key，和原生多模态返回，工程短板被彻底补齐了。<br><br>2、Skills 被装进 MCP，路线之争正式终结。<br><br>用 Skills 还是用 MCP 已经是个伪命题，官方新增的 Skills 扩展直接把渐进式加载融了进来，平时只需往系统提示词里塞两句轻量的简介，用到时再按需加载完整手册，更绝的是引入了 SHA-256 校验，SaaS 厂商或团队在云端改了工作流手册，所有客户端自动同步最新版，再也不用手动到处传文件对齐版本了。<br><br>3、MCP Events 上线，Agent 从戳一下动一下变成 24 小时待命。<br><br>以前的 MCP 只能被动拉取，现在的 Events 扩展补齐了 Webhook、流式推送和轮询。配合异步 Tasks，你可以定好规则去睡觉，凌晨两点系统爆出最高级告警，外部事件直接通过 Webhook 唤醒后台休眠的 Agent，自动拉取日志、比对上下文，等你早上睁眼时，排查摘要已经躺在群里了。<br><br>4、MCP Apps，直接在对话框里长出交互界面。<br><br>看性能延迟曲线、筛实时数据看板，光吐一堆 JSON 文本太反人类了。通过最新的 UI 扩展，MCP 服务可以直接返回沙盒化的交互式网页视图。目前 Claude、Slack 和 Google Antigravity 都已支持，不用跳出对话框，切 4 个浏览器标签页，当场就能点选交互，这才是 Agent-Native 软件该有的样子。<br><br>5、2027 终局架构，Harness 本身也会变成 MCP Server。<br><br>当代码沙盒、技能、异步事件、嵌入式 UI 全部跑在同一套协议里，多智能体根本不需要再造新轮子，2027 年最强的 Agent 框架，自己就会是一个 MCP Server，主从 Agent 之间直接用现成的 Tasks 领任务，用 Events 同步进度。<br><br>最后，分享文中最有感触的一个观点，好的服务是把工具暴露给 Agent，而不是把自家产品封装成一个黑盒 Agent，再当成工具被调用。<br><br>很多厂商喜欢只留一个总入口，结果反而切断了用户主 Agent 手里的全局上下文。把干净，强类型的原子能力交出来，这事儿在 2027 年会拉开巨大的产品体验代差。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/50a6faf85597154c8074.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/3984647a48c39ffff185.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/486817002495548a4ddd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/184189326a2cb5209ca4.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>千 Agent 协作一周实战报告开源工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @FinanceYF5 · 2026-11-26 10:37</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">1000 个 DeepSeek Agent，连续协作超过一周，究竟会遇到什么问题？🤯<br><br>Hugging Face 的 Leandro von Werra 发布了一份大型 Agent Swarm 实战报告。<br><br>他们在构建 pybot 的过程中，让 1000 个 Agent 协同工作，记录了从任务分配、通信、监控，到 Git 冲突和 Agent 异常行为等真实问题。<br><br>还开源了两个内部工具 Legion 和 Msgboard。<br><br>比起展示 Agent 数量，这份报告更值得看的是大规模协作到底怎么跑起来。👇</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3d4c750eca629b05ec79.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>智谱 GLM-5.5 确认 12 月发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TigerTide1024 · 2026-11-26 23:53</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">下午路透社刚发独家说智谱 3T 旗舰 GLM-5.5 因防蒸馏和算力管制推迟到 2027Q1，晚上剧情直接反转——智谱 IR 负责人杨昊翊（Howie，前国泰海通计算机分析师）飞机一落地就在朋友圈贴脸开大：“趁我在飞机上发这种新闻让我辟不了谣是吧？今天下午的所谓爆料都是假消息！”<br><br>紧接着卖方分析师同步放出辟谣纪要（呼应此前大摩路演口径），把底牌亮了三张：<br>1. 预计仍在 12 月发布，参数量 2–3T，性能“真实达到 Claude Fable 级别”；<br>2. 具身智能表现突出，正与国内主流机器人厂商深化合作；<br>3. 公司高端芯片算力储备丰富，万卡华为昇腾 950DT 集群用于预训练的前期准备顺利，预计明年跑通。<br><br>不过看热闹之余，用买方视角把这几句话拆开对账，有两个非常关键的预期差别读混了：<br><br>第一，别把时间轴拧串了——12 月交卷靠的是“存量家底”，950DT 赌的是明年。<br>卖方措辞其实切得很清楚：保住下个月 GLM-5.5 准时上线的，是前半句“高端芯片算力储备丰富”（即境内既有高端算力库存，今天傍晚我们也刚核过智谱训练全在境内，东南亚租卡新规根本打不到它）；而后半句的万卡昇腾 950DT 还在前期准备、明年跑通，解决的是存量 N 卡消耗完之后，2027 年下一代超大基座的国产算力接棒问题。<br><br>第二，品一品“真实 Fable 级”与“万卡预训练”的含金量。<br>三天前智谱刚用 750B 基座套上 Loop Transformer 发了 GLM-5.4，虽然刷高了推理分，但循环架构补不了底层世界知识容量，还带来了延迟痛点；12 月端出 2–3T 满血基座并押注物理 AI（机器人大脑），才是真正跟硅谷第一梯队硬碰硬的正餐。<br><br>更值得海外忌惮的是最后那句：连海外半导体圈今晚都在惊叹，继 DeepSeek 之后，智谱也在万卡规模上把昇腾 950DT（144GB 显存 + 超节点互联）往最难的“预训练全链路”上推。一旦明年万卡国产集群预训练真正跑通，华盛顿靠卡东南亚租赁机房拖慢中国模型迭代的算盘，保质期也就剩最后大半年了。<br><br>不看口水仗，35 天内看 12 月底 GLM-5.5 能不能准时交卷，是最直接的试金石。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity 用 kqueue 遥控 Codex 会话</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Vincent_AINotes · 2026-11-26 14:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让 Antigravity 的 Gemini 直接指挥 Codex 干活，不需要额外安装软件！<br><br>具体步骤：<br><br>1. 让 Codex 报告当前会话的 Thread ID，复制给 Antigravity 的 Gemini。<br>2. 让 Gemini 使用 codex queue 指挥指定的 Codex 会话（注意使用支持 queue 的 CLI 版本）。<br>3. 让 Gemini 编写 Python 通信脚本，通过 macOS 原生 kqueue 监听 Codex 的 rollout JSONL 文件。<br>4. 利用 Antigravity 的异步任务机制，把 Codex 的执行结果自动回传给 Gemini。<br><br>实测双向通信成功跑通，不需要轮询、不用 sleep、不读写 SQLite，还能保留原来的 Codex 会话。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6d17ff311b37957f3d1c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Node.js 27 将 SQLite 标记为稳定</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @nodejs · 2026-11-26 22:41</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚀 Node.js 27.0.0-alpha.0.2.0 发布了！<br><br>最新的 alpha 版本带来了 HTTP/2、SQLite、TLS、进程处理等方面的更新。<br><br>亮点包括：<br>- SQLite 标记为稳定<br>- `--process-timeout` 选项毕业<br>- 新的操作系统 API：`guessFileDescriptorType`<br>- HTTP/2 兼容性改进<br><br>查看完整更新日志并测试最新 alpha：<a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚀 Node.js 27.0.0-alpha.0.2.0 is out!<br><br>The latest alpha release brings updates across HTTP/2, SQLite, TLS, process handling, and more.<br><br>Highlights include:<br>- SQLite marked stable<br>- Graduated `--process-timeout` option<br>- New OS API: `guessFileDescriptorType`<br>- HTTP/2 compatibility improvements<br><br>Explore the full changelog and test the latest alpha: <a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Qwen 0.6B 四体蜂群成功率升至 82%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ben_burtenshaw · 2026-11-26 23:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们都想要智能体集群。但智能体是协作，还是只是消耗更多算力？<br><br>我训练了 4 个 Qwen 0.6B 模型的副本，让它们共享一个简单的代码。基本上，是从第一性原理出发的纳米集群。<br><br>- 成功率从 6.6% 提升到 82.3%<br>- 每次尝试的 token 数下降 37%<br>- 复现成本约为 20 美元<br>- 超级有趣的假期项目<br><br>另外，这是新系列的第 1 部分：<a href="https://huggingface.co/blog/training-swarms" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/training-swarms</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We all want agent swarms. But do the agents cooperate, or do they just chug more compute?<br><br>I trained 4 copies of a Qwen 0.6B model to share a simple code. Basically, a nano swarm from first principles.<br><br>- success went 6.6% to 82.3%<br>- tokens per attempt down 37%<br>- cost to reproduce is about $20<br>- super fun holiday project<br><br>Also, part 1 of a new series: <a href="https://huggingface.co/blog/training-swarms" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/blog/training-swarms</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/05b835f2a615826fe0b9.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>deslop-please 揪出大型代码库架构坏味道</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-26 21:23</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让你的代码回归理性，专门揪出大型代码库里模块互相缠绕、字段乱露和接口太碎的架构坏味道，逼着人和 AI 按深模块、窄接口重构。<br><br><a href="https://github.com/deterministic-machines/deslop-please" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/deterministic-machines/deslop-please</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/897c3e80052ec3978e59.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Palo Alto 防火墙遭内核漏洞提权攻击</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-26 21:22</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Palo Alto 防火墙正通过一个 Linux 内核漏洞被黑客攻击，该漏洞已于 5 月在上游修复。<br><br>Palo Alto 将其自己的公告标记为“信息性”，但同一通知称，该漏洞已被用于攻击管理页面暴露在互联网上的防火墙。<br><br>攻击者首先利用一个名为 PHP2Shell 的 PHP 漏洞入侵，然后利用内核漏洞 Fragnesia 获取设备上的 root 权限。<br><br>Palo Alto 的建议是：“立即升级并限制访问为受信任的内部 IP 地址。”<br><br>已修复的 PAN-OS 热修复版本列在 PAN-SA-2026-0015（CVE-2026-46300、CVE-2026-109618）中。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Palo Alto firewalls are being hacked through a Linux kernel bug that was fixed upstream back in May.<br><br>Palo Alto labelled its own bulletin &quot;Informational&quot;, but the same notice says the bug has been exploited against firewalls with their management page exposed to the internet.<br><br>Attackers first break in with a PHP flaw called PHP2Shell, then use the kernel bug, Fragnesia, to get root on the device.<br><br>Palo Alto's advice: &quot;upgrade immediately and restrict access to trusted internal IP addresses.&quot;<br><br>Fixed PAN-OS hotfix builds are listed in PAN-SA-2026-0015 (CVE-2026-46300, CVE-2026-109618).</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d747c1f93487c94cabb0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MeshCentral 发布 1.3.2 远程管理版本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KitPloit · 2026-11-26 21:21</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">MeshCentral v1.3.2 — 一个完整的基于 Web 的远程监控和管理网站。设置完成后，你可以安装代理并对本地网络或互联网上的设备执行远程桌面会话。<a href="https://ktp.sh/gg8l2oTfx8" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/gg8l2oTfx8</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">MeshCentral v1.3.2 — A complete web-based remote monitoring and management web site. Once setup you can install agents and perform remote desktop session to devices on the local network or over the Internet. <a href="https://ktp.sh/gg8l2oTfx8" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/gg8l2oTfx8</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8e87cf4e745705e1344e.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

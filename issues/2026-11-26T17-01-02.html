@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 01:01">
+<title>AI技术雷达 · 11月27日 01:01 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;大模型蒸馏转向On-policy RLAIF四步法</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Speculative Encoding复用多模型上下文缓存</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;AI代理写99%代码的工程实践</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大模型蒸馏转向On-policy RLAIF四步法</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @TigerTide1024 · 2026-11-26 16:43</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">《The Information》曝出中国大厂在无法直接蒸馏后，普遍转向一套四步新打法：先让美国前沿模型答一遍，再让自家模型答一遍，接着让美国模型对照批改提建议，循环迭代直到逼近。<br><br>很多人把这理解成“换个姿势洗数据”，其实漏掉了最核心的工程本质——这是从 Off-policy SFT（抄学霸草稿纸）切向了 On-policy RLAIF（拿学霸当阅卷机，再把阅卷机克隆下来）：<br><br>1. 为什么变阵？<br>OpenAI 刚把 GPT-6.2 Astra/Sol 的思考链黑盒提取率从 54% 压到 0.2%，Anthropic 上线蒸馏分类器，叠加 CISA 建议对可疑蒸馏账号“不封号但暗中切弱模型投毒”。拿不到原始 CoT，硬抄最终答案只会训废模型。<br><br>2. 这四步真正妙在哪？<br>第一步让美国模型先答，是为了造一把 Reference 标尺（无参考答案时 LLM 当裁判极易漏判）；第二到四步始终由自家模型生成完整原生 CoT，美国模型只给自然语言梯度。<br>最关键的是第五步（报道没写但工业界必做）：攒够几百万条“错题+批改意见”后，直接训出本土的 Reward Model / PRM。一旦自家阅卷机训成，就能断奶在本地跑大规模 RL。<br><br>3. 为什么美国很难封死？<br>一是流量长成“长输入、短点评”，和跨国企业日常跑自动化回归评测（Eval）、Code Review 完全重叠，收紧阈值就会大规模误杀真实付费客户；二是模型厂想封杀保溢价，云巨头（比如正向 ByteDance 推进 5 亿美元 Azure OpenAI 大单的 Microsoft）却想赚高毛利转售费。<br><br>算笔账：按旗舰 API 均价，这套打法单条收敛样本成本约 $0.093，大概是直接蒸馏的 3 倍，但刷 500 万条核心后训练语料也就百万美元级，ROI 依然极高。<br><br>它的边界也很清楚：主战场是写不出客观验证器的复杂办公、商业分析与 Agent 场景（数学代码本地跑编译器就行）；但它只能把底座已有的 Pass@64 潜力压进 Pass@1，救不了预训练代差，上限永远锁死在裁判的眼界之内。这是一套极高性价比的防御性追赶，但不是翻盘筹码。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fable 5.2将照片转为Unity植被资产</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Stefan_3D_AI · 2026-11-21 22:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Fable 5.2 构建了一套工作流，将照片转化为 Unity 的 AAA 级植被。完整指南与成本<br><br>思路：输入一张照片，输出任意艺术风格的游戏就绪植物，用画笔绘制到 Unity 地形上。<br>技术栈：通过 Hermes Agent 使用 Fable 5.2、Nano Banana Pro、Meshy AI（Smart Low Poly，2.5T）、Blender、Unity 6 URP<br><br>亮点：<br>• 18 个植物模型。一片草叶仅 18 个三角形，且能在风中弯曲<br>• 三级 LOD：一朵郁金香分别为 500、250 和 100 个三角形<br>• 法线贴图和透射贴图、风力遮罩、共享图集<br>• 一张普通的水仙花照片在第一次尝试中就变成了可用的 3D 植物<br><br>成本：1K 分辨率图像花费 4 美元，Fable 5.2 在 Extra High 模式下运行约 8 小时（Claude Max）<br><br>完整指南：<a href="https://www.reddit.com/r/TopologyAI/comments/1y1xp6n/i_built_a_workflow_that_turns_photos_into/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.reddit.com/r/TopologyAI/comments/1y1xp6n/i_built_a_workflow_that_turns_photos_into/</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Fable 5.2 Built a Workflow That Turns Photos Into AAA-Quality Foliage for Unity. Full Guide and Costs<br><br>The idea: one photo in, game-ready plants in any art style out, painted onto Unity terrain with a brush.<br>Stack: Fable 5.2 via Hermes Agent, Nano Banana Pro, Meshy AI (Smart Low Poly, 2.5T), Blender, Unity 6 URP<br><br>Highlights:<br>• 18 plant models. A grass blade is 18 triangles and bends in the wind<br>• Three LODs: a tulip is 500, 250 and 100 triangles<br>• Normal and transmission maps, wind masks, a shared atlas<br>• An ordinary daffodil photo became a usable 3D plant on the first pass<br><br>Cost: $4 of images at 1K, ~8 hours of Fable 5.2 on Extra High (Claude Max)<br><br>Full guide: <a href="https://www.reddit.com/r/TopologyAI/comments/1y1xp6n/i_built_a_workflow_that_turns_photos_into/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.reddit.com/r/TopologyAI/comments/1y1xp6n/i_built_a_workflow_that_turns_photos_into/</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3e1f9a90dbf6cdd4d75c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Speculative Encoding复用多模型上下文缓存</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-27 00:51</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">强烈推荐阅读。<br><br>这是一个非常巧妙的思路，可以帮助扩展多智能体集群。<br><br>所提出的技术名为推测性编码（speculative encoding），让支持的模型复用已经花在处理相同上下文上的计算。<br><br>当多个智能体需要该上下文，或任务在模型之间迁移时，这可以减少延迟。<br><br>例如，想象多个智能体在审查一份非常长的合同。一个模型先处理它；推测性编码将其内部表示转换为一个近似缓存，另一个模型可以用它来回答关于终止条款的问题。<br><br>这也可以补充模型路由，即不同任务被分配给更强或更便宜的模型。切换模型通常意味着要重新处理共享上下文，因为它们的内部缓存不能直接互换。对于长文档和频繁交接，这种重复的预填充可能成为瓶颈。<br><br>这里还有很多需要弄清楚的地方。在整个智能体工作流中这能节省多少速度？在反复交接中，翻译对答案质量有何影响？以及翻译成本何时会超过节省的成本？<br><br>我认为这是一个非常有前景的研究方向。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Highly recommended read.<br><br>It's a really neat idea that could help scale multi-agent swarms.<br><br>The proposed technique, called speculative encoding, lets supported models reuse computation already spent processing the same context.<br><br>This could reduce delay when several agents need that context or when a task moves between models.<br><br>For example, imagine several agents reviewing a very long contract. One model processes it first; speculative encoding translates its internal representations into an approximate cache another model can use to answer questions about termination clauses.<br><br>This could also complement model routing, where different tasks go to stronger or cheaper models. Switching models usually means processing the shared context, because their internal caches aren't directly interchangeable. With long documents and frequent handoffs, that repeated prefill can become a bottleneck.<br><br>There's a lot more to figure out here. How much speed does this save across a complete agent workflow? How does translation affect answer quality over repeated handoffs? And when does the translation cost outweigh the savings?<br><br>I think it's a very promising research direction.</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Ramp Labs <span style="font-size:12px;color:#999999;font-weight:400;">@RampLabs</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">多智能体集群不应该需要多次读取上下文。隆重推出推测性编码，一个 2.35B 的 MoE，可直接在任何模型的隐藏状态之间进行转换。在 7 个模型上，它保持了 96.9% 的基础准确率，并在长文档上将预填充延迟降低最多 7.5 倍。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Multi-agent swarms shouldn't have to read context more than once. Introducing speculative encoding, one 2.35B MoE that directly translates between any model's hidden states. Across 7 models, it keeps 96.9% of base accuracy and cuts prefill latency by up to 7.5× on long documents. </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/c84c40fa9d6528168778.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cloudflare仪表盘与API故障</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-27 00:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚨 Cloudflare 的控制面板和 API 宕机了，客户目前无法管理他们的网站。<br><br>Cloudflare 表示自 16:03 UTC 起正在“调查 Cloudflare Dashboard 及相关 API 的问题”。<br><br>请求可能会失败或显示错误。<br><br>网站本身仍在正常加载：Cloudflare 表示缓存文件和边缘安全功能不受影响。<br><br>目前尚未给出原因。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚨 Cloudflare's dashboard and API are down, and customers can't manage their sites right now.<br><br>Cloudflare says it's &quot;investigating issues with Cloudflare Dashboard and related APIs&quot; since 16:03 UTC.<br><br>Requests may fail or show errors.<br><br>Websites themselves are still loading: Cloudflare says cached files and edge security features are not affected.<br><br>No cause has been given yet.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4ca68055260e89876fe0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/4769bfe5e366dc24e8ec.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Zero在Minecraft中六分钟建灯塔</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Agent0ai · 2026-11-26 22:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">你的 AI 智能体，进入任何游戏。<br><br>Agent Zero 连接到一个 Minecraft 世界，通过聊天界面在六分钟内建造了一座灯塔（在游戏内也可用），这得益于一个用户生成的插件。<br><br>它通过 A0 Launcher 在你自己的电脑上运行。立即安装。免费且开源 👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Your AI agents, inside any game.<br><br>Agent Zero, connected to a Minecraft world, built a lighthouse in six minutes from the chat UI (works in-game too), thanks to a user-generated plugin.<br><br>It runs on your own computer through the A0 Launcher. Install now. Free and open source 👇</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>jj checkpoint记录代码演进过程</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @neural_avb · 2026-11-27 00:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我在制作新教程时最喜欢做的事情之一<br><br>我保留每一次提交，这样在录制教程时可以轻松切换到任何 jj 检查点。这样我就能展示代码库如何从零开始一步步演变！<br><br>附注：这是“always-on”智能体 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">One of my fav things while I working on a new tutorial<br><br>I keep each commit so I can easily switch to any jj checkpoint during recording the tutorial. This way I can show how the codebase evolved step-by-step from scratch!<br><br>PS: this is &quot;always-on&quot; agents </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b96e7122e34fd0b1aca5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>vouch-proxy为Nginx提供OIDC单点登录</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KitPloit · 2026-11-27 00:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">vouch-proxy——一个使用 auth_request 模块为 Nginx 提供 SSO 和 OAuth / OIDC 登录解决方案 <a href="https://ktp.sh/T7CH1e3m2O" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/T7CH1e3m2O</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">vouch-proxy — an SSO and OAuth / OIDC login solution for Nginx using the auth_request module <a href="https://ktp.sh/T7CH1e3m2O" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://ktp.sh/T7CH1e3m2O</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/2bf5f4ce29fbbd46b9a7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI代理写99%代码的工程实践</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @milan_milanovic · 2026-11-27 00:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">智能体编写了我 99% 的代码，但我保留了主要部分<br><br>我刚刚发布了一期新的简报，我们将讨论我如何用 AI 工具编写代码，以及过去几年发生了什么变化。<br><br>当你开发软件时，通常有三个部分：<br><br>1. 弄清楚需要构建什么<br>2. 构建它<br>3. 检查结果是否足够好<br><br>几年前，这些步骤都是我自己做的。最近，第 2 步由 AI 智能体完成。而𝗌𝗍𝖾𝗉𝗌 𝟣 𝖺𝗇𝖽 𝟥 𝗍𝖺𝗄𝖾 𝗆𝗈𝗋𝖾 𝗈𝖿 𝗆𝗒 𝗍𝗂𝗆𝖾 than in the past. 我想确保我提出的是正确的需求，并且最终结果足够好。<br><br>2025 年 11 月，当 Opus 4.5 发布时，对我来说有些事情发生了变化。在那之后的几个月里，我仍然会逐行审查 AI 智能体在 PR 中做出的所有代码更改。如今我𝗈𝗇𝗅𝗒 𝗋𝖾𝗏𝗂𝖾𝗐 𝗍𝗁𝖾 𝗆𝗈𝗌𝗍 𝗂𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍 𝖼𝗈𝖽𝖾 𝖼𝗁𝖺𝗇𝗀𝖾𝗌（那些无法轻易逆转的更改）。而对于我的一些项目，我已经不再审查任何代码更改了。<br><br>与其逐行审查代码更改，我确保在开始编码之前有一个计划。然后我让另一个模型来审查这个计划，并在新的会话中进行代码审查。<br><br>具体来说，我的文章讨论了：<br><br>- 我如何与 AI 智能体合作（我的流程、提示词、AGENTS .md、MCP 服务器、技能、工具等）<br>- 我那 63 行的 AGENTS .md 文件（现在也在 GitHub 上免费提供）<br>- 我最喜欢的 AI 智能体提示词，你可以复制使用<br>- 一个从头到尾的真实案例：为我的一个应用添加功能<br>- 我如何将 AI 智能体与 Azure 结合使用（Azure CLI）<br>- 我如何将 AI 智能体与数据库结合使用（只读访问）<br>- 我的网店项目：用 AI 智能体开发了 2 个月，没有审查过一行 PHP 代码<br><br>查看：<a href="https://newsletter.techworld-with-milan.com/p/agents-write-99-of-my-code-here-is" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://newsletter.techworld-with-milan.com/p/agents-write-99-of-my-code-here-is</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Agents write 99% of my code, but I kept the main parts<br><br>I just released a new issue of my newsletter where we are going to talk about how I code with AI tools, and what changed in the last few years.<br><br>When you develop software, you usually have three parts:<br><br>1. Figuring out what needs to be built<br>2. Building it<br>3. Checking if the result is good enough<br><br>A few years ago I was doing all of those steps myself. Lately step 2 is done by AI agents. And 𝘀𝘁𝗲𝗽𝘀 𝟭 𝗮𝗻𝗱 𝟯 𝘁𝗮𝗸𝗲 𝗺𝗼𝗿𝗲 𝗼𝗳 𝗺𝘆 𝘁𝗶𝗺𝗲 than in the past. I want to make sure that I’m asking for the right thing and that the end result is good enough.<br><br>In November 2025 something changed for me when Opus 4.5 came out. For several months after that I was still reviewing all code changes made by AI agents for each line in a PR. These days I 𝗼𝗻𝗹𝘆 𝗿𝗲𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁 𝗰𝗼𝗱𝗲 𝗰𝗵𝗮𝗻𝗴𝗲𝘀 (that cannot be reversed easily). And for some of my projects I’m not reviewing any code changes anymore.<br><br>Instead of reviewing code changes line by line I made sure that there’s a plan before I start with coding. Then I ask another model to review the plan, and there’s a code review in a new session.<br><br>In particular, my article talks about:<br><br>- How I work with AI agents (my process, prompts, AGENTS .md, MCP servers, skills, tools, etc.)<br>- My 63 line AGENTS .md file (now also on GitHub for free)<br>- My favorite prompts for AI agents that you can copy &amp; use<br>- A real life example from start to finish: adding features to one of my apps<br>- How I use AI agents with Azure (Azure CLI)<br>- How I use AI agents with databases (read-only access)<br>- My webshop project: 2 months of development with AI agents &amp; not a single line of PHP code reviewed<br><br>Check it out: <a href="https://newsletter.techworld-with-milan.com/p/agents-write-99-of-my-code-here-is" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://newsletter.techworld-with-milan.com/p/agents-write-99-of-my-code-here-is</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a96dbe67d7e251a24177.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>

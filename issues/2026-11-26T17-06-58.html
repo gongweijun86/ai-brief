@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 01:06">
+<title>AI技术雷达 · 11月27日 01:06 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Claude与Codex多模型协调技能</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Flatpak 1.18.6 修复沙箱逃逸漏洞</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;NVIDIA让模型自管上下文提效</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">14</span>&nbsp;&nbsp;OpenSRE 自动修复 CI/CD 故障</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">17</span>&nbsp;&nbsp;Firecrawl Local 本地单文件运行</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude与Codex多模型协调技能</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Voxyz_ai · 2026-11-26 05:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在试过 Herdr、Orca、T3 Code 和 Paseo 之后，这就是我完整的 coordinator skill。<br><br>毫无保留，以下就是我如何让 Claude、GPT 和 Gemini 完美协同工作。这一切都运行在这个 coordinator skill 上，我白天用它，晚上睡觉时也用它。前端交给 Opus 5.5，后端和发布交给 Codex Sol，涉及金钱或登录的 PR 先由 Codex Astra 审查，Gemini 4 Argon/Neon 负责查看设计和文案，以决定是否需要第二意见。<br><br>它现在支持全部四个。一次安装即可覆盖全部。我已经切换到 Paseo 作为我的主力，四个中最好的：当一个子任务完成时，它会自动唤醒协调器，不用坐在那里盯着它。<br><br>完整的 skill 在 Copybook 上免费：<a href="http://copybook.page/t/coordinator-skill-for-claude-code-and-codex" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://copybook.page/t/coordinator-skill-for-claude-code-and-codex</a><br><br>安装好后，只需把这段发给 Claude Code、Codex 或 Claude 桌面应用：<br>“本次运行使用 coordinator skill。目标：&lt;你的目标&gt;。定义什么叫完成，以及证明它完成的检查。你可以合并通过审查和检查的 PR。在部署、迁移、付款或删除数据之前先问我。”</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">After trying Herdr, Orca, T3 Code and Paseo, this is my full coordinator skill.<br><br>Holding nothing back, here's how I get Claude, GPT and Gemini to 𝘄𝗼𝗿𝗸 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆. It all runs on this coordinator skill, which I use all day, and all night while I sleep. Front end goes to Opus 5.5, back end and shipping to Codex Sol, PRs that touch money or login get reviewed by Codex Astra first, and Gemini 4 Argon/Neon takes a look at design and copy to decide whether a second opinion is needed.<br><br>It now supports all four. One install covers them all. I've switched to Paseo as my main one, 𝘁𝗵𝗲 𝗯𝗲𝘀𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗳𝗼𝘂𝗿: when a subtask finishes, it wakes the coordinator on its own, no sitting there watching it.<br><br>The full skill is free on Copybook: <a href="http://copybook.page/t/coordinator-skill-for-claude-code-and-codex" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://copybook.page/t/coordinator-skill-for-claude-code-and-codex</a><br><br>Once it's installed, just send this to Claude Code, Codex or the Claude desktop app:<br>&quot;Use the coordinator skill for this run. Goal: &lt;your goal&gt;. Define what done means and the check that proves it. You can merge PRs that pass review and checks. Ask me before deploys, migrations, payments or deleting data.&quot;</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/3d4bd4820775656fee4b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SET成机器人真实任务新基准</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @agupta · 2026-11-27 00:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">很可能是机器人领域的新标准基准</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Likely the new standard benchmark for robotics</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Robocurve PBC <span style="font-size:12px;color:#999999;font-weight:400;">@robocurve</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们提出 Six Easy Tasks（SET），一个真实世界的机器人基准，人类得分 100%，而前沿 AI 模型得分 0%。<br><br>下面我们解释这些智能体是如何表现的 🧵 </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We present Six Easy Tasks (SET), a real-world robotics benchmark that humans score 100% on, while frontier AI models score 0%.<br><br>We explain how the agents do below 🧵 </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8cf153ea461d1802d84a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Fable 5.2 生成山海经卡牌游戏</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @miles_mazy · 2026-11-26 22:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">一天烧了 3 亿 tokens，用 Fable 5.2 做了一个《山海经》卡牌游戏<br><br>五位传人各有打法，兽、技能都对着《山海经》原文做，画面和音效全是代码生成的，打开就能玩：<br><br><a href="https://shanhai-chuanjia.pages.dev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://shanhai-chuanjia.pages.dev</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Google Workspace CLI 支持9产品</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Fenng · 2026-11-26 22:45</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google 官方最近发布的 Google Workspace CLI 很不错，按官方文档，已经支持 9 个产品。但我最期待的 Google Search Console 和 Analytics 都不在里面。<br><br>不知道什么时候这两个产品能有 CLI。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AI批量修复Cloudflare安全见解</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @williamlong · 2026-11-26 22:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">操作完了，“安全见解”从最初的 95 条降到 27 条，且剩下的没有高危项（18 条中等、9 条低危）。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1de71bb74fec57861b36.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">William Long <span style="font-size:12px;color:#999999;font-weight:400;">@williamlong</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">我把Cloudflare的API令牌发给AI，让AI批量管理我所有域名的配置，解决“安全见解”里指出的问题，希望AI别把我的域名全给搞没了。</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Flatpak 1.18.6 修复沙箱逃逸漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-26 14:26</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🚨 一个恶意的 Flatpak 应用可能逃出沙箱，并在你的系统上植入归 root 所有的文件。<br><br>Flatpak 1.18.6 修复了两个漏洞。其中一个让恶意应用通过负责在沙箱内外传递文件的 portal 突破出去。<br><br>另一个让恶意应用、运行时或扩展仅仅通过被安装就能在宿主机上创建 setuid root 文件。<br><br>维护者 Simon McVittie：“所有更早的版本都应被视为存在漏洞。”<br><br>更新到 Flatpak 1.18.6（CVE-2026-133842、CVE-2026-133845）。Debian 13 和其他 LTS 发行版正在获得向后移植的修复。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🚨 A malicious Flatpak app could escape its sandbox and plant root-owned files on your system.<br><br>Flatpak 1.18.6 fixes two holes. One let a rogue app break out through the portal that passes files in and out of the sandbox.<br><br>The other let a bad app, runtime or extension create setuid root files on the host just by being installed.<br><br>Maintainer Simon McVittie: &quot;All older releases should be assumed to be vulnerable.&quot;<br><br>Update to Flatpak 1.18.6 (CVE-2026-133842, CVE-2026-133845). Debian 13 and other LTS distros are getting backported fixes.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b2acb2355d5a2134877b.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NVIDIA让模型自管上下文提效</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @omarsar0 · 2026-11-26 22:36</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">NVIDIA 关于智能体上下文管理的重磅论文。<br><br>（收藏它）<br><br>他们建议一种协同设计：训练模型管理自己的上下文，并构建推理引擎以大规模高效地服务它。<br><br>上下文管理是长时间运行的智能体的一项重要基础能力。如今，通常由 harness 决定何时压缩，即在窗口填满后对历史进行摘要。<br><br>NVIDIA 团队在他们的开源智能体 harness NOOA 中给模型提供了一个上下文 API，让模型决定何时压缩以及压缩什么。他们在文档研究和 ML 工程任务上，以 8K 到 512K token 的预算比较了两种方法。<br><br>在 32K 预算下，GPT 6.1 在 OfficeQA Pro v2 上从 21% 提升到 56%，当它管理自己的上下文时。Kimi 在输入 token 最多减少 41% 的情况下提高了准确率。<br><br>模型在调用 API 的频率和压缩的早晚方面差异很大，而提示词的微小改动就会改变这个时机。<br><br>推理引擎也可以让这些编辑更便宜。在编辑后复用未变更后缀的 KV 缓存，使每个请求的 prefill 计算最多减少 15%，且准确率没有可测量的变化。<br><br><a href="https://arxiv.org/abs/2611.34147" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.34147</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/letting-models-manage-their-own-context-where-we-stand-2611.34147" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/letting-models-manage-their-own-context-where-we-stand-2611.34147</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Banger paper from NVIDIA on context management for agents.<br><br>(bookmark it)<br><br>They suggest a co-design where models are trained to manage their own context, and inference engines are built to serve it efficiently at scale.<br><br>Context management is an important primitive for long-running agents. Today, the harness usually decides when to compact, by summarizing the history once the window fills.<br><br>The NVIDIA team gave models a context API inside NOOA, their open-source agent harness, so the model decides when and what to compact. They compared both approaches on document research and ML engineering tasks at budgets from 8K to 512K tokens.<br><br>At a 32K budget, GPT 6.1 went from 21% to 56% on OfficeQA Pro v2 when it managed its own context. Kimi improved accuracy with up to 41% fewer input tokens.<br><br>Models differ a lot in how often they call the API and how early they compact, and small prompt changes shift that timing.<br><br>Inference engines can make these edits cheaper too. Reusing the KV cache of the unchanged suffix after an edit cut prefill compute by up to 15% per request with no measurable accuracy change.<br><br><a href="https://arxiv.org/abs/2611.34147" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.34147</a><br><br>Chat with Paper: <a href="https://academy.dair.ai/papers/letting-models-manage-their-own-context-where-we-stand-2611.34147" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://academy.dair.ai/papers/letting-models-manage-their-own-context-where-we-stand-2611.34147</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/e89be17f72092e0a84d7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Kotlin Benchmark 2.0 测AI代理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @intellijidea · 2026-11-26 22:35</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在为 Kotlin 中的工作选择 AI 智能体？Kotlin Benchmark 2.0 在真实任务上测试智能体-模型配置，帮助你探索准确性、速度和成本之间的权衡 👇</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Choosing an AI agent for work in Kotlin? Kotlin Benchmark 2.0 tests agent-model configurations on real tasks to help you explore the trade-offs between accuracy, speed, and cost 👇</p>
+  </section></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Kotlin by JetBrains <span style="font-size:12px;color:#999999;font-weight:400;">@kotlin</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">🎉  Kotlin Benchmark 2.0 发布了！<br>我们限制了 AI 智能体的网络访问，使它们无法通过查找现有解决方案来作弊。<br>看看开源和专有模型在开源和私有代码库中的真实后端、Android 和 KMP 任务上表现如何。<br>👉 <a href="https://kotl.in/benchmark-2-0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://kotl.in/benchmark-2-0</a> </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">🎉  Kotlin Benchmark 2.0 is out!<br>We restricted AI agents' web access so they can't cheat by looking up existing solutions.<br>See how open and proprietary models compare on real backend, Android, and KMP tasks across open-source and private codebases.<br>👉 <a href="https://kotl.in/benchmark-2-0" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://kotl.in/benchmark-2-0</a> </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/c3257c5edafd0647ef73.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>笺格22天手写全栈协作套件</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yangleiocx3 · 2026-11-26 22:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">终于看到一篇把 AI 复杂工程开发讲透的实战复盘了：<br><br>22 天，不依赖 Yjs/Tiptap，从零手写全栈协作套件并开源！</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">xkayshen <span style="font-size:12px;color:#999999;font-weight:400;">@kayshen_xu</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">11 月 3 日，我在 X 上给自己定了个 28 天挑战。不用现成编辑器组件，从零做一个协作文档。第 22 天，笺格（Jiange）发版了。<br><br>这篇复盘了协同协议怎么测、4 个 Agent 怎么分工。文末附上我把这套流程整理成的 Agent Skill，可以直接安装。 <a href="https://x.com/i/article/2125839923463049216" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2125839923463049216</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">10</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Linux NFS 曝 9.8 分漏洞</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-11-26 22:27</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Linux NFS 曝出 9.8 分漏洞 NFS2ROOT，开了 NFS 共享的 NAS 用户注意 <a href="https://www.appinn.com/linux-nfs2root/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.appinn.com/linux-nfs2root/</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d1eb4b93e9f15bc9f5d2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">11</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AFFiNE 融合文档白板与表格</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-26 22:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写文档开 Notion，画架构图切 Miro，两个软件来回贴链接早就烦透了<br><br>AFFiNE 直接把文档、无界白板和多维表格揉进了一块画布，本地优先还支持私有化部署<br><br>▸ 文档白板无缝切换：富文本、便签、数据库和幻灯片全是通用块，写完文字直接切白板模式拖拽连线<br><br>▸ 本地优先不绑云端：底层用 Rust 写了 y-octo 引擎跑 CRDT，数据默认存本地硬盘，断网照常写，联网实时同步<br><br>▸ 一键自托管：社区版 MIT 协议开源，Docker 直接拉起来就能用，也自带 Render 部署模板<br><br>平时既要沉淀技术文档、又要画流程图和脑图的开发者，这个比 Notion 加 Miro 顺手得多<br><br>🔗 <a href="https://github.com/toeverything/AFFiNE" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/toeverything/AFFiNE</a><br><br>#开源 #效率工具</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">12</span><span style="color:#b5bbc2;font-weight:400;">｜</span>开源95GB网络安全数据集</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-26 22:25</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">开源95GB网络安全数据集<br><br>数据集包含507个文件，全面覆盖红蓝对抗、Web安全、漏洞挖掘、数字取证及AI安全等30多个细分领域。<br>内容整合了HackTheBox实战靶场、PortSwigger全部安全课题及MITRE攻击框架等权威资源，涵盖攻防步骤、检测规则与应急响应方案。<br><br>数据集：<a href="https://huggingface.co/datasets/Vyber07/cyber-security" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/datasets/Vyber07/cyber-security</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1a1a247f452f822aa584.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">13</span><span style="color:#b5bbc2;font-weight:400;">｜</span>KuroCat 原生桌面宠物轻量开源</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-26 22:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很多桌面宠物靠 Electron 跑，吃内存不说，切到中文输入法或打全屏游戏时按键监听还会失灵，这个 KuroCat 原生桌宠采用原生技术栈开发的轻量级开源桌面宠物，分别使用 Swift（macOS）与 C++17（Windows、Linux 及统信 UOS/银河麒麟）实现。<br><br><a href="https://github.com/chanke17/KuroCat" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/chanke17/KuroCat</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/7db60105d9c620b85c53.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">14</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenSRE 自动修复 CI/CD 故障</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-26 22:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">CI 飘红了，很多人的第一反应不是排查，而是默默点一下 Re-run<br><br>AI 写代码越来越快，但修构建的脏活还是得人扛<br><br>开源项目 OpenSRE 是一个专治 CI/CD 故障的 CLI Agent，能把“查日志到提修复”直接跑通：<br><br>▸ 自动分析失败日志和提交记录，分清是代码问题还是环境抽风<br>▸ 定位根因后直接把修复推到 PR 分支，你只管 Review<br>▸ 终端里敲一句 opensre ask 就能无头排查线上慢接口<br>▸ 兼容 K8s、Grafana、Datadog 等 60+ 工具，支持自托管和本地 Ollama<br><br>如果你受够了被脆弱的流水线打断心流，可以拿它当个 24 小时值班的 SRE 助手<br><br>🔗 <a href="https://github.com/Tracer-Cloud/opensre" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tracer-Cloud/opensre</a><br><br>#OpenSRE #DevOps #CICD #AIAgent</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">15</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Nango 统一代理千余API认证</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @javarevisited · 2026-11-25 19:03</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我一直在测试让智能体访问真实 API 的方法，而不用每次都自己接 OAuth 和 token 刷新。<br><br>Nango 是一个开源选项，为 1,000 多个 API 处理认证和代理。<br>如果你愿意，可以自托管它。<br><br>如果你在构建需要与外部工具对话的智能体，值得一看：<br>在这里查看 - <a href="https://github.com/NangoHQ/nango" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NangoHQ/nango</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Been testing ways to give agents access to real APIs without wiring up OAuth and token refresh myself every time.<br><br>Nango is an open-source option that handles the auth and proxying for 1,000+ APIs.<br>You can self-host it if you want.<br><br>Worth a look if you’re building agents that need to talk to external tools:<br>check it out here - <a href="https://github.com/NangoHQ/nango" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/NangoHQ/nango</a></p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">16</span><span style="color:#b5bbc2;font-weight:400;">｜</span>T3 Code 被谷歌要求撤额度显示</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @VeknQAQ · 2026-11-26 15:01</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">T3 Code 被谷歌要求撤掉 Antigravity 的额度显示, 结果负责人 Varun 跑来评论区问怎么回事, 作者回了句: 我们有 Slack 啊 🤣<br><br>GitHub 上的两个 PR 比推文还精彩:<br><br>1 #43026 已合并, 删掉了读取本地登录凭证、伪装客户端调内部接口查额度的代码. 据作者说, 谷歌警告这么干可能导致账号被标记<br>2 #43087 还没合并, 作者自己交代 T3 Code 在 agy 1.5.0 上会冒充 Zed, 拿到只对白名单客户端开放的 Claude 和 GPT<br><br>T3 Code 的瓜, 还真得追着 PR 吃 🤓</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/be15699d9e1c7e6d16dc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/dc41cf1d9f30e312748a.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">17</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Firecrawl Local 本地单文件运行</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AISuperDomain · 2026-11-26 22:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🔥 GitHub 21万+ Star 的 AI 知识基础设施 Firecrawl，现在支持本地单文件运行（Firecrawl Local）了！<br><br>专为 AI Agent 打造，一键把网页转成干净的 Markdown，大幅省 Token：<br><br>▸ 本地零依赖：不用装容器和数据库，直接抓整站、渲染 JS，还能本地解析 PDF 和 Office 文档<br>▸ 一键接入 MCP：跑一句 firecrawl-local init，自动配好 Claude Code、Cursor、Gemini CLI 等工具<br>▸ 云端强扩展：支持全网搜索、网页交互（Interact）、自主 Agent，以及 550+ 数据源（Alexandria）<br><br>给 Agent 喂数据的绝佳工具，本地和云端两不误<br><br>🔗 <a href="https://github.com/firecrawl/firecrawl" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/firecrawl/firecrawl</a><br><br>#AI #AIAgent #MCP #开源</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
