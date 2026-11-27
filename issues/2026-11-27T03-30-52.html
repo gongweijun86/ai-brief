@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 11:30">
+<title>AI技术雷达 · 11月27日 11:30 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;前端界面设计规范：具体数值与禁令</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;AgenticPPL 用命令 token 衡量 Agent 能力</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;Orca 多 Agent 编排工具获近 140K Star</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Hyper-Extract 用 LLM 提炼结构化知识图谱</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">09</span>&nbsp;&nbsp;Cocoon 用 WebGPU 神经渲染实时跑丝绸</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>前端界面设计规范：具体数值与禁令</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @double_burger_2 · 2026-11-27 00:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">design.md<br><br># 前端界面设计规范<br><br>## 1. 布局与信息<br>- 禁止大框套小框，禁止嵌套卡片与多余分割线。<br>- 禁止标语、副标题、次级标签和解释性描述文字。<br>- 用排版对齐和间距区分内容层级，不靠文字解释界面。<br><br>## 2. 视觉、色彩与留白<br>- 整体参考苹果官网极简风格。<br>- 色彩比例：90% 面积使用黑、白、灰中性色；10% 面积使用单一强调色标出核心操作或关键数据。<br>- 禁止渐变色、高饱和色、霓虹色和复杂阴影卡片。<br>- 字重与明度对比：标题加粗加深，正文变细变浅。<br>- 放大留白：组件内边距与外边距设为常规页面的 1.5 倍，宁可留空也不塞满。<br><br>## 3. 字体、栅格与图标<br>- 字体：全局使用 Geist 字体。<br>- 字号与字重：标题 18px 并加粗（字重 600 或 700）；正文使用 16px 或 14px，字重取常规（400）或中等（500）。<br>- 文字颜色：主文字用 #181818，次要文字用 #6A6A6A。<br>- 间距栅格：所有间距取 4px 的整数倍，不留例外。<br>- 圆角：按组件尺寸与层级，在 8px 到 40px 之间取值（小按钮用小圆角，大弹窗用大圆角）。<br>- 图标：使用 Reicon 图标库（<a href="https://reicon.dev/docs" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://reicon.dev/docs</a>）。图标本体 18px，线条粗细 1.5px，放在 24px × 24px 的透明外框内。<br><br>## 4. 交互与桌面端菜单<br>- 按意图显示控件：平时隐藏次要操作按钮；当用户鼠标悬停、光标聚焦、滚动靠近或开始操作该区域时再显示。<br>- 桌面端多级菜单：同时实现开启延时、关闭延时、安全三角区。当鼠标从父菜单 A 移向子菜单 B 时，以当前鼠标坐标和子菜单 B 的上下边缘端点连成三角形区域；鼠标处于该三角形内时，保持子菜单 B 打开，暂缓切换到途经的其他菜单项。<br><br>## 5. 渲染验收<br>- 以浏览器真实视觉渲染结果为准，不以代码计算属性值为准。写完代码必须检查真实画面中的对齐、换行、留白与遮挡。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Leo <span style="font-size:12px;color:#999999;font-weight:400;">@double_burger_2</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">让 AI 写干净界面，光说「做简洁一点」没用，得把模糊审美换成具体数字和禁令。 </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/895c11216a75adf16ec5.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/01c9b1b09efcb6052089.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/112e4a2373a481e325b2.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>大厂蒸馏新策略：前沿模型审阅迭代</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @xingzengji · 2026-11-26 09:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">无法直接蒸馏后，一种在中国大厂里被普遍使用的蒸馏新策略：<br><br>1、用美国前沿模型针对某个提示词生成答案；<br>2、再用自己的模型对同一个提示词生成答案；<br>3、让美国前沿模型审阅自己模型的答案，找出问题并提出修正建议；<br>4、不断重复前三步，直至自己模型回答的质量接近美国模型。<br><br>《The Information》报道。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>AgenticPPL 用命令 token 衡量 Agent 能力</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dongxi_nlp · 2026-11-26 15:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">认真地推荐，好 blog，from @wenhaocha1 !</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Wenhao Chai <span style="font-size:12px;color:#999999;font-weight:400;">@wenhaocha1</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">感恩节博客：困惑度（关于什么的？）就是智能 🌟<br><br>正如OpenAI所说，困惑度就是智能，那么智能体轨迹上的困惑度能衡量智能体能力吗？<br><br>我们发现它不能。整条轨迹的困惑度在Terminal-Bench 2.1上对模型的排名是反的。<br><br>但在0.3%的字节上，困惑度能得到正确的排名，而这些正是智能体在读取终端后紧接着写下的命令token。<br><br>我们称之为AgenticPPL，灵感来自LongPPL。感恩节快乐！<br><br>博客：<a href="http://wenhaochai.com/blogs/agentic-ppl.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://wenhaochai.com/blogs/agentic-ppl.html</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Thanksgiving Blog: Perplexity (on what?) is intelligence 🌟<br><br>perplexity is intelligence as OpenAI said, so does perplexity on agent trajectories measure agentic ability? <br><br>we found it does not. whole traj perplexity ranks models backwards on Terminal-Bench 2.1.<br><br>but on 0.3% of the bytes, perplexity gets the ranking right, and they're the command tokens an agent writes right after reading the terminal.<br><br>we call it AgenticPPL, inspired by LongPPL. happy thanksgiving!<br><br>Blog: <a href="http://wenhaochai.com/blogs/agentic-ppl.html" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">http://wenhaochai.com/blogs/agentic-ppl.html</a></p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b5580c6b981fd97f5b0f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic 推出 FDE 部署工程师路线课</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ryanhn717 · 2026-11-27 07:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Anthropic 上了一套前线部署工程师（FDE）路线课，11 门课，约 9.5 小时。<br><br>不只是讲 API、Claude Code、MCP 和 Agent Skills，后面专门拆了怎么把客户需求做成可验收的试点：开工前先定基线和成功标准、切第一批交付范围、带首批用户跑起来。<br><br>注意这套完整路线目前面向 Claude Partner Network 成员开放；里面部分基础课在 Claude Academy 能直接看。<br><br>路线页：<a href="https://anthropic-partners.skilljar.com/path/claude-fde" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://anthropic-partners.skilljar.com/path/claude-fde</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Orca 多 Agent 编排工具获近 140K Star</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @zujingpgg · 2026-11-26 14:39</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">现在 GitHub 上爆火的 Orca，很多人以为是个横空出世的 AI 编程新贵。其实，它背后的两位创始人是一对夫妻，最早做的创业项目居然是婚礼直播。<br><br>有些技术积累，短期内看不出什么商业价值，换个赛道可能就成了竞争优势。<br><br>梁津晶（Jinjing Liang）曾是 Google Chrome 高级工程师，负责测试与发布基础设施；Neil Parker 曾是 Uber 的技术负责人。<br><br>因为自己的婚礼有不少亲友无法到场，两人在 2019 年创办了婚礼直播平台 Lovecast，并于 2022 年入选硅谷知名创业孵化器 Y Combinator（YC）的冬季创业营。<br><br>后来转型做 Stably AI，专攻软件开发里没人爱干的脏活累活：自动化测试，用自然语言生成和维护 Playwright 端到端测试脚本。<br><br>今年 3 月 17 日，Orca 的 GitHub 仓库创建。这个采用 MIT 协议开源的多 Agent 编排工具，短短 8 个多月就拿下了接近 140K Star。<br><br>现在 Orca 的 Design Mode，直接在内置浏览器里点选页面元素，就能把 DOM、CSS 和截图交给 Claude Code、Codex 等 Agent。<br><br>回头看，从 Google Chrome 的测试基础设施，到 Stably AI 的浏览器自动化，再到今天的 Orca，几段看似不同的经历，居然串到了一起。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4323011aef7805e76b59.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/2ca11e401b5297b24d11.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Hyper-Extract 用 LLM 提炼结构化知识图谱</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Huahuazo · 2026-11-27 05:05</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">没结构的文档堆成山，想变成能查、能追溯的知识库，这难题怎么破？<br><br>Hyper-Extract 用的是 LLM 自动提炼，把文本转成结构化知识。<br><br>普通图谱、超图、时空图谱等结构，它大约支持 8 种；80 多个领域模板内置其中，金融、法律、医疗、中医全在覆盖范围内。增量演进不在话下，一键导出到 Obsidian 同样办得到。<br><br>文档丢进去，关联信息自己就抽出来了，大批文档的场景用它正对路。<br>🔗<a href="https://github.com/yifanfeng97/hyper-extract" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yifanfeng97/hyper-extract</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/49f2006c3bb239c7da58.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Editroom 开源 23MB 支持 4K 实时剪辑</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @wquguru · 2026-11-26 23:40</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">专业剪辑软件的天塌了，这个免费开源软件仅23MB👇<br><br>对比之下 Premiere ~7GB、DaVinci Resolve ~6GB、iMovie ~4GB<br><br>editroom 由设计师 Robbie Tilton（曾参与 Apple Vision Pro 和 Google Glass 界面设计）开发：<br><br>1. 支持 4K 实时编辑，无需代理、无卡顿、无缓冲<br>2. 手动 + AI 双模式深度融合<br>3. 内置了强大的 AI 能力，支持用自然语言描述剪辑<br>4. 内置 MCP Server，Claude、ChatGPT/Codex 等智能体可以直接连接并操作当前打开的项目<br>5. 也支持完全本地 Apple 端侧模型<br><br>官网：<a href="https://robbietilton.com/editroom" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://robbietilton.com/editroom</a><br>开源地址：<a href="https://github.com/robbietilton/Editroom" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/robbietilton/Editroom</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/eedc64cfec266e1bd29c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>antigravity-codex-theme 新增额度常驻与分屏统计</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shehxuhxjx66088 · 2026-11-26 14:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">把 antigravity-codex-theme 更新到了 v1.4.0，补上了最近高频写代码+大家最想要的三个功能：<br><br>1.5h / 7d 模型额度常驻：不用再切页面猜还剩多少额度，侧栏和统计面板底部直接看百分比和具体重置时间，做了分段格、双环、仪表、20 点阵等 6×6 种克制墨色组合。<br>2.本机字体三区独立：纯本地扫描系统字体，UI 界面、AI 回复正文、代码块/代码审查可以各用各的字体，下拉直接预览字形，不会把图标刷成方块。<br>3.左右分屏独立统计：同时开两个会话跑 Gemini 和 Claude 时，速率、上下文占比和额度池各自独立，不再串台。<br><br>连同 Codex 纯白/炭灰昼夜主题、1,900+ 词条汉化、四态状态灯和 Ghost Text 下一句预测，全程不改安装包原文件，旧版用户在「设置 → Codex 主题」里点一下就能热重载升级。<br><br>仓库：<a href="https://github.com/nkjDSLcvanv/antigravity-codex-theme" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nkjDSLcvanv/antigravity-codex-theme</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ee16f54df0562bc119e0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">09</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Cocoon 用 WebGPU 神经渲染实时跑丝绸</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sundyme · 2026-11-27 10:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">很难相信这居然是在浏览器里实时跑出来的……🤯<br><br>扒了一下作者 @akella 的技术揭秘，它甚至不只是传统 Three.js（Three.js 只管相机控制），真正让它逼真到像离线电影渲染的，是一套极客到离谱的 WebGPU + 神经渲染（Neural PRT） 方案：<br><br>🧵 真正的“丝级”几何体 每颗蚕茧都有 87,260 根真实 3D 样条曲线（138 万个控制点），分缠绕丝、蓬松环、短绒毛、长游丝 4 层——视频后半段我把 parts 一层层关掉剥到裸壳再装回去，全是实打实的几何。<br><br>🧠 把 Blender 路径追踪压进 72 KB 神经网络 丝绸最难算的是光线在数万根细丝里的多重散射。作者先在 RTX 5080 上用 Blender Cycles 离线跑了 1,400 张路径追踪图，再训练出一个 3 层、仅 72 KB 的小神经网络学会光影传输。<br><br>⚡ 两个离谱的 WebGPU 加速技巧 • 把 72 KB 权重直接写成 WGSL Shader 里的硬编码字面量，不走显存 Buffer 读取，推理直接快 40 倍 • 每帧把所有光源预先乘进网络最后一层——3 盏灯和 100 盏灯开销完全一样 • Compute Shader 只在控制点算光（解耦着色），不逐像素算，加上错帧重算，M1 Max 上一帧只要 12.3 ms<br><br>整套资产压缩完只下载 5.9 MB，甚至悬丝断裂都是用 Web Worker 实时跑物理模型算出来的。<br><br>这大概就是下一代 Web 实时图形学的样子。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a2d007585008ec7f7a90.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">akella <span style="font-size:12px;color:#999999;font-weight:400;">@akella</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Codevember 2026 / 20 / Cocoon<br><br><a href="https://akella.github.io/codevember-2026/20/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://akella.github.io/codevember-2026/20/</a><br><br>使用神经预计算辐射传输，灵感来自@onirenaud的实验。我可能用了太多几何体😅，向你的GPU道歉！<br>#threejs </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Codevember 2026 / 20 / Cocoon  <br><br><a href="https://akella.github.io/codevember-2026/20/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://akella.github.io/codevember-2026/20/</a><br><br>Using neural precomputed radiance transfer, inspired by @onirenaud experiments. I might've used too much geometry 😅, apologies to your gpu!<br>#threejs </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/1cf1beb20e6be9bab590.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
