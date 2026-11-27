@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 20:21">
+<title>AI技术雷达 · 11月27日 20:21 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;英伟达让模型自管上下文，准确率提升</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;Agent Infra 存储选型全景梳理</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;原始对话分块检索优于记忆框架</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Rust 1.100 稳定 never type</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>英伟达让模型自管上下文，准确率提升</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @leo114119 · 2026-11-26 21:50</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天 HF 热门榜上英伟达发了一篇非常值得做 Agent 的人细读的论文《Letting Models Manage Their Own Context》，直接挑战了现在所有 Coding Agent 的默认做法。<br>目前几乎所有 Harness（Claude Code、Cursor、Antigravity）管的都是「框架驱动压缩」——等窗口快满了，外部脚本一刀切把早期历史总结成摘要。毛病很明显：框架根本不知道哪段旧报错或文件结构后面还要用，经常一刀把关键线索切废，或者切完导致整段前缀 KV Cache 全部失效。<br><br>英伟达在开源框架 nooa 里试了「模型自管上下文」，直接给 LLM 暴露一个 Context API，让模型自己决定什么时候删、删哪段。结果在 32K 紧张预算下，GPT-6.1 在 OfficeQA Pro v2 上的准确率直接从 21% 飙到 56%，Kimi 用少 41% 的输入 token 反而考更高；更关键的是推理引擎层面可以复用编辑点之后未变动后缀的 KV Cache，把动态编辑上下文的 prefill 惩罚压下来。接下来 Agent Harness 的演进，大概率要从「外部硬截断」转向「把内存管理权下放给模型自己」。<br><br>论文链接：<a href="https://arxiv.org/abs/2611.34147" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://arxiv.org/abs/2611.34147</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Agent Infra 存储选型全景梳理</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Jerry_fsy · 2026-11-27 18:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">在Agent和Agent Infra中，会涉及到很多种存储方式，包括对象存储，向量数据库，关系型数据库，还有ClickHouse这种。我们往往需要结合特定的场景选择合适的存储方式。<br><br>因此，我在这里汇总了一下，Agent运行中常常涉及到的存储方式，以及各种存储方式适用于什么样的场景：<br><br>一、 核心状态与业务层（Agent 的“账本”与“存档点”）<br>1关系型数据库（RDBMS / 分布式 SQL） ◦ 代表：<br>PostgreSQL、MySQL、TiDB ◦ 存什么：<br>用户/租户权限、Agent 配置、会话元数据、计费账单，以及 Durable Execution（持久化执行）的状态机 Checkpoint。 ◦ 为什么不可替代：<br>Agent 执行一个复杂任务可能耗时几分钟甚至几天，中途崩溃需要断点续传，且涉及工具调用（如扣费、发邮件）时必须有严格的 ACID 事务保证。<br><br>2内存型 KV 存储（In-Memory KV / Cache） ◦ 代表：<br>Redis ◦ 存什么：<br>活跃会话的短期记忆（Short-Term Memory）、流式输出（SSE）的临时状态、分布式锁、限流计数，以及 语义缓存（Semantic Cache）（相似问题直接命中缓存，省去调 LLM 的开销）。 ◦ 核心特征：<br>亚毫秒级延迟，适合高频读写、允许过期（TTL）的瞬态数据。<br> 二、 知识与记忆层（Agent 的“大脑”与“图书馆”）<br>3向量数据库（Vector DB） ◦ 代表：<br>Qdrant、Milvus、Pinecone、Weaviate、pgvector ◦ 存什么：<br>文档切片和长期记忆的 Embedding 向量。 ◦ 解决什么问题：<br>支撑 RAG 和语义记忆（Semantic Memory），通过近似最近邻（ANN）算法实现“按意思搜”而非“按字面搜”。<br><br>4全文检索引擎（Full-Text Search） ◦ 代表：<br>Elasticsearch、OpenSearch、Meilisearch ◦ 存什么：<br>倒排索引（BM25）。 ◦ 为什么需要它：<br>纯向量检索对精确专有名词、错误码、SKU 编号、代码符号表现比较差。生产级 RAG 几乎都采用 向量 + 全文的混合检索（Hybrid Search）。<br><br>5图数据库（Graph DB） ◦ 代表：<br>Neo4j ◦ 存什么：<br>实体（人、项目、概念）及其关联关系。 ◦ 解决什么问题：<br>支撑 GraphRAG 和 情景/关系记忆（Episodic Memory）。当 Agent 需要跨多份文档做跳转推理，或追踪“用户偏好随时间的变化”时，图结构比扁平的向量切片更有效。<br> 三、 文件、产物与执行环境层（Agent 的“工作台”与“仓库”）<br>6对象存储（Object Storage） ◦ 代表：<br>AWS S3、MinIO、SeaweedFS ◦ 存什么：<br>大体积非结构化数据——用户上传的 PDF/音视频、Agent 生成的报告/图表/代码包、网页抓取的 HTML 快照，以及可观测性日志中的超大 Prompt/Response Payload。 ◦ 核心特征：<br>成本极低、容易扩展、无 Schema 约束，但没有查询能力，通常需要配合关系型数据库存元数据索引。<br><br>7沙箱文件系统与块存储（Sandbox FS / Block Storage） ◦ 代表：<br>OverlayFS、Copy-on-Write (CoW) 快照、FUSE、EBS/NFS（如 E2B、Modal 等沙箱底层） ◦ 存什么：<br>Coding Agent 或 Computer Use Agent 在隔离容器/微虚拟机里运行代码时的工作目录、依赖包和临时文件。 ◦ 核心特征：<br>需要标准的 POSIX 文件系统语义，以及毫秒级克隆、快照与回滚能力，方便 Agent 试错后重置环境。<br> 四、 可观测性、评估与异步调度层（Agent Infra 的“黑匣子”与“传送带”）<br>8分析型数据库（OLAP） ◦ 代表：<br>ClickHouse ◦ 存什么：<br>海量的 Trace、Span、LLM 调用耗时、Token 消耗、成本统计以及 Eval（离线/在线评估）打分结果（例如 Langfuse 的核心存储层）。 ◦ 为什么用它：<br>Agent 一次请求可能触发几十次工具调用和模型推理，日志呈指数级增长。OLAP 擅长超高吞吐追加写入，以及秒级的多维聚合分析。<br><br>9消息队列与事件日志（Message Queue / Event Log） ◦ 代表：<br>Kafka、NATS、Redis Streams ◦ 存什么：<br>异步任务指令、Agent 运行事件流、待落盘的 Trace 数据。 ◦ 解决什么问题：<br>虽然常被归为中间件，但在 Agent Infra 中它承担了持久化事件日志的角色——既用于异步 Run API 的任务解耦和削峰填谷，也用于把高频产生的可观测性数据平稳写入 ClickHouse 和对象存储。<br><br>10时序数据库（TSDB） ◦ 代表：<br>Prometheus、VictoriaMetrics ◦ 存什么：<br>偏底层 Infra 的监控指标（GPU 利用率、推理引擎队列长度、沙箱 CPU/内存水位、API P99 延迟）。<br> 五、 推理加速层（最容易被忽略的“隐形存储”）<br>11KV Cache 外部存储 / 分级缓存 ◦ 代表：<br>LMCache、Mooncake（基于 DRAM / NVMe SSD / RDMA 构建的分布式缓存池） ◦ 存什么：<br>LLM 推理过程中计算好的 Attention KV Cache。 ◦ 为什么重要：<br>Agent 的特点是 System Prompt 极长、多轮对话前缀高度重复、Multi-Agent 共享上下文。把 KV Cache 卸载到外部存储并跨推理节点复用，能把首字延迟（TTFT）降低一个数量级，同时大幅节省 GPU 算力。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>原始对话分块检索优于记忆框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @dohewater · 2026-11-27 16:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做 Agent 记忆的人看完这篇论文估计要失眠。<br><br>不建图谱、不做摘要、不抽原子事实，直接拿原始聊天记录切块 + rerank：<br>7 组评测赢了 6 组，写入比复杂记忆框架快最高 83 倍。<br><br>更离谱的是，把 Mem0 的更新和删除全关掉，准确率反而涨了；一抽原子事实，分数直接从 48.3 跌到 28.7。<br><br>你以为在帮模型提纯记忆，其实是在替它删关键证据。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4ee998d9cbac312387cd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Codex 内置 Computer Use 的 MCP 复用</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @vikingmute · 2026-11-27 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">看了一位推友的评论，今天花了半个小时又学到了：<br><br>1 Codex/ChatGPT 内部 Computer Use 本质上就是通过 MCP 实现的，内置了一个插件 unified-computer-use，它会注册一个名为 cua_repl 的 MCP server，没有暴露出来。你可以让 Antigravity 直接去复用这个服务，让 AI 调查了一下 ，原版的 mcp 的配置在这个路径下~/.codex/plugins/cache/openai-bundled/unified-computer-use/&lt;最新版本&gt;/.mcp.json<br><br>2 还可以用 Kimi-CU，装了 Kimi Code 然后装插件Kimi Computer Use就行，它是完全暴露出来的 MCP 服务，然后让 Antigravity 注册使用就行。<br><br>这两种方法目前比较简单的解决了我的需求，而且这两个工具我都是有的，用起来也很方便。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Viking <span style="font-size:12px;color:#999999;font-weight:400;">@vikingmute</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">请问一下大家，现在 Antigravity 没有 computer use 大家的解决方案是什么？在网上查了半天都没有特别好的实践，想问一下大家都是怎么做的？</section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>OpenGame 打通 Agent 游戏生成与发布</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @qingturnaround · 2026-11-27 19:32</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">卧槽，有人花 2 美元做了个完整小游戏<br><br>用的 OpenGame，29 种 Coding Agent 都能接<br>生成、试玩、发布一条龙，还是开源的<br><br>独立开发的门槛这回真碎了，有点东西<br><a href="https://x.com/tuturetom/status/2126250271538094218" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/tuturetom/status/2126250271538094218</a></section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Tom Huang <span style="font-size:12px;color:#999999;font-weight:400;">@tuturetom</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">这个小游戏成本才 2 美元！<br><br>很多人还在卷更贵的闭源模型，其实真正拉开差距的是给 Agent 配一套好用的“游戏引擎”。<br><br>OpenGame 支持 29 种主流 Coding Agent，从生成、试玩到发布全链路都打通了。彻底把独立游戏开发的门槛干碎了，开源地址在这，强烈建议亲自试一把：<br><a href="https://github.com/nexu-io/opengame" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nexu-io/opengame</a></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Rust 1.100 稳定 never type</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @InfoQ · 2026-11-27 19:42</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">经过十年的工作，Rust 终于稳定了 never 类型（!）。<br><br>Rust 1.100 还带来了分配器 API 改进、DropGuard，以及新的 Cargo 依赖冷却设置。<br><br>🔗 详情：<a href="https://bit.ly/4A96NML" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4A96NML</a><br><br>#WebDevelopment #RustLang #Security #SoftwareDevelopment #InfoQ </p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">After a decade of work, Rust finally stabilises the never type (!). <br><br>Rust 1.100 also brings allocator API improvements, DropGuard, and a new Cargo dependency cooldown setting.<br><br>🔗 Details: <a href="https://bit.ly/4A96NML" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4A96NML</a><br><br>#WebDevelopment #RustLang #Security #SoftwareDevelopment #InfoQ </p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4cb2386a74150bfd7010.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Utopia 用时态知识图谱给 Agent 记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Sumanth_077 · 2026-11-27 18:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">在时间感知的知识图谱上构建 AI 智能体！<br><br>Utopia 是一个开源知识系统，它将文档、数据库和连接的来源转化为一个时间图谱，你的智能体可以在其上推理。<br><br>有用的部分是，事实不被视为静态记录。<br><br>如果合同发生变化、项目负责人被替换，或政策被更新，先前的版本不会消失。<br><br>Utopia 将该历史存储在双时间知识图谱中。<br><br>每个事实都可以追踪它在现实世界中何时有效，以及系统何时得知它。<br><br>因此智能体可以检索当前状态、检查曾经为真的事实，并准确看到某事物何时发生了变化。<br><br>该图谱也是本体感知的。<br><br>Utopia 不是仅将所有内容表示为块和嵌入，而是显式地建模实体、关系、事实和规则。<br><br>当智能体需要解析实体、跨来源追踪关系、检测冲突信息或从现有事实推导新事实时，这为它们提供了更多结构。<br><br>例如，如果两个来源对谁拥有某个项目存在分歧，系统不需要悄悄用一个覆盖另一个。<br><br>它可以保留两个事实、附加来源信息、追踪它们随时间的有效性，并让智能体推理哪一个适用。<br><br>关键能力：<br><br>• 对变化事实的双时间追踪<br>• 来源追溯，将事实回溯到其来源<br>• 跨矛盾信息的冲突检测<br>• 基于本体的实体和关系推理<br>• 跨文本、向量和图遍历的混合检索<br>• MCP 和智能体 RAG 支持，将图谱直接暴露给智能体<br><br>我喜欢这种方法，因为它为智能体提供了一个知识层，可以保留历史，而不是不断将所有内容折叠为事实的最新版本。<br><br>100% 开源。<br><br>我已在评论中分享了 GitHub 仓库！</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Build AI agents on a time-aware knowledge graph!<br><br>Utopia is an open-source knowledge system that turns documents, databases, and connected sources into a temporal graph your agents can reason over.<br><br>The useful part is that facts are not treated as static records.<br><br>If a contract changes, a project owner gets replaced, or a policy is updated, the previous version does not disappear.<br><br>Utopia stores that history inside a bitemporal knowledge graph.<br><br>Each fact can track when it was valid in the real world and when the system learned about it.<br><br>So an agent can retrieve the current state, inspect what used to be true, and see exactly when something changed.<br><br>The graph is also ontology-aware.<br><br>Instead of representing everything only as chunks and embeddings, Utopia models entities, relationships, facts, and rules explicitly.<br><br>That gives agents more structure when they need to resolve entities, follow relationships across sources, detect conflicting information, or derive facts from existing ones.<br><br>For example, if two sources disagree about who owns a project, the system does not need to silently overwrite one with the other.<br><br>It can preserve both facts, attach provenance, track their validity over time, and let the agent reason over which one applies.<br><br>Key capabilities:<br><br>• Bitemporal tracking for changing facts<br>• Provenance for tracing facts back to their source<br>• Conflict detection across contradictory information<br>• Ontology-based reasoning over entities and relationships<br>• Hybrid retrieval across text, vectors, and graph traversal<br>• MCP and agentic RAG support for exposing the graph directly to agents<br><br>I like this approach because it gives agents a knowledge layer that can preserve history instead of constantly collapsing everything into the latest version of a fact.<br><br>100% open source.<br><br>I've shared the GitHub repo in the comments!</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/8e00200a3b1de6a62305.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Sumanth <span style="font-size:12px;color:#999999;font-weight:400;">@Sumanth_077</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;"><a href="https://x.com/i/article/2125157451234447360" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2125157451234447360</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;"><a href="https://x.com/i/article/2125157451234447360" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://x.com/i/article/2125157451234447360</a></p>
+  </section></section>
+  
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>GigaChat4 开源 708B 总参数模型</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Gorden_Sun · 2026-11-27 19:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">GigaChat4：俄罗斯开源的LLM模型<br><br>ai-sage团队开源，团队隶属于俄罗斯最大的国有银行兼科技巨头Sber。<br><br>GigaChat 4总参数708B，激活参数41B，能力很强，评分仅略低于DeepSeek 1017，100万上下文，支持模型内按需切换直接回答和推理回答。<br><br>俄罗斯数学强，LLM领域也会追上来。目前有比较大参数模型的国家：美国、中国、法国、俄罗斯、韩国。<br><br>模型：<a href="https://huggingface.co/ai-sage/GigaChat4-708B-A41B-base" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://huggingface.co/ai-sage/GigaChat4-708B-A41B-base</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/2a22e087fbea0b86b5ed.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
