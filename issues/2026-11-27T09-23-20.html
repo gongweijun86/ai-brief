@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月27日 17:23">
+<title>AI技术雷达 · 11月27日 17:23 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;rea-games 用回放磁带逐帧校验游戏行为</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;Brush 0.5 兼容 Bash 测试超 96%</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">07</span>&nbsp;&nbsp;Obsidian 中文界面启动慢 3 秒</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">08</span>&nbsp;&nbsp;Linux 内核将内置 AI 编码代理指令</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>SwarmRSI 用共享研究图继承实验结果</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yibie · 2026-11-27 16:30</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">📋 三个列表的每日更新<br><br>▍awesome-autoresearch（715 → 717）<br>1. SwarmRSI（arXiv 2610.20431）：agent 提出假设、跑真实实验，把包括失败在内的每个结果写进一张后续 agent 会继承的共享研究图 —— 三个基准都有数字，而结果表里保留了自己输掉的那一行（金牌率 45.5%，基线 77.3）。<br>2. K-Dense BYOK（1,478⭐）：桌面应用 —— 研究助手跑在你自己的机器上、用你自己选的账号与 API key。这是本列表里唯一一种「反向」安排：其余 co-scientist 都是托管的。<br><br>▍awesome-jev（741 → 743）<br>1. CVE triage in Kafka Streams（PR #410）：一个拓扑问 Jev 一个 Choice 问题（新 CVE 的严重度），置信度低于 0.6 的进人工复核。文中给的是真实调用：同一个 CVE 问 11 次回来 0.61–0.65，十个描述含糊的 CVE 里八个低于阈值。<br>2. DecisionPivot（arXiv 2610.28522）：诊断型基准 —— 用只有步骤顺序不同的对照对，放在「系统必须做决定」的控制点上；结论是公开分数相近的模型，在它上面差异极大。<br><br>▍awesome-rea（102 → 103）<br>1. Breath of the Wild（2,510⭐，7,901 文件）：这条是补漏 —— 一个月前查 zeldaret 时就测到 8 处 trailer，与后来收录的 Mario Kart 64 同等，但当时没写下。<br><br>📂 <a href="https://github.com/yibie/awesome-rea" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yibie/awesome-rea</a> · <a href="https://github.com/yibie/awesome-jev" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yibie/awesome-jev</a> · <a href="https://github.com/yibie/awesome-autoresearch" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/yibie/awesome-autoresearch</a><br>📊 103 / 743 / 717</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Designed to Scale 动画演示系统设计概念</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @shenxiankk · 2026-11-27 11:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">正在备战程序员面试的人，这个网站强烈建议立刻存起来！<br><br>我发现了一个免费的系统设计交互式学习平台，把那些原本抽象的技术概念，统统转化成了能亲手摆弄的动画演示！<br><br>从数据库索引、分片、一致性哈希，到负载均衡、缓存、消息队列、分布式架构，都可以一边观看动画一边领会。<br><br>准备后端开发、架构师、系统设计面试的朋友，确实值得完整过一遍！<br><br>在线学习：<a href="https://designed-to-scale.vercel.app" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://designed-to-scale.vercel.app</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/131497399589ce35f698.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>udp2cal 麦克风串流内存占用仅 5MB</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-11-27 17:18</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">🎺 #发现频道<br><br>udp2cal：电脑内存占用只有 5mb 的麦克风串流软件<br><a href="https://meta.appinn.net/t/topic/97073" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://meta.appinn.net/t/topic/97073</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>NodeWarden 借 Cloudflare 自建密码库</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @appinn · 2026-11-27 17:17</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">NodeWarden – 不用服务器，在 Cloudflare 上免费自建密码管理器【续】 <a href="https://www.appinn.com/nodewarden-update-1/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://www.appinn.com/nodewarden-update-1/</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ffb7272ed2fd06309a8f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>rea-games 用回放磁带逐帧校验游戏行为</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-27 17:15</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">将原版游戏的时钟与随机数录制为回放磁带，在 Web、Rust 或 Godot 中重建并逐帧校验行为一致性。<br><br>:  <a href="https://github.com/erkamyaman/rea-games" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/erkamyaman/rea-games</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/b0391e8ac70cc33bd88d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Brush 0.5 兼容 Bash 测试超 96%</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-27 17:02</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">用 Rust 重写的 Bash，现在通过了超过 96% 的上游 bash-completion 测试套件。<br><br>Brush 0.5 已发布。其开发者表示，它可以在不做修改的情况下运行更多 Bash 脚本，并且已针对 fzf、atuin、mise 和 nvm 等真实环境进行了测试。<br><br>该版本总结了六个月的工作和超过 360 个已合并的拉取请求，并首次提供了 Windows 构建版本。<br><br>其兼容性测试套件从约 2,100 个用例增长到超过 3,600 个。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Bash, rewritten in Rust, now passes over 96% of the upstream bash-completion test suite.<br><br>Brush 0.5 is out. Its developers say it runs more Bash scripts unchanged, and it's tested against real setups like fzf, atuin, mise and nvm.<br><br>The release wraps up six months and more than 360 merged pull requests, and ships the first Windows builds.<br><br>Its compatibility test suite grew from about 2,100 cases to over 3,600.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d2310124d8a22c242915.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/58062e3d29db93a0a590.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Obsidian 中文界面启动慢 3 秒</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Carlos_Gong · 2026-11-27 16:57</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">工地给换了一台新电脑，IT 老哥发机器的时候给设置了中文界面系统。<br><br>注意到 Obsidian 在中文界面下启动得特别慢，看了一下 break down，有 3294ms 用在了 DOM Parse 上。<br><br>换回英文界面以后，DOM Parse 降到了 200ms 以下。<br><br>看起来 Obsidian 的中文用户生活在水深火热之中，只是我一直没被影响到。</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">08</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Linux 内核将内置 AI 编码代理指令</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-27 16:33</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Linux 内核即将为 AI 编码代理发布自己的操作手册。<br><br>Sasha Levin 昨天请求将他的“agents”分支加入 linux-next。该分支包含“我打算发给 Linus 的”系列补丁。<br><br>转折在于：其中一项技能来自 Ted Ts'o，这位维护者本周因其 AI 修复 EXT4 的拉取请求让 Torvalds 对他说“告诉你的 AI 伙伴把状态调整好”。<br><br>这些技能告诉代理如何查找 Fixes 和 stable 标签、搜寻已修复 bug 的其他副本、编写提交信息以及编写 KUnit 测试。<br><br>如果 Torvalds 接受，预计它将在 12 月底的 Linux 7.5 合并窗口中出现。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">The Linux kernel is about to ship its own instruction manual for AI coding agents.<br><br>Sasha Levin asked yesterday for his &quot;agents&quot; branch to join linux-next. It holds the series &quot;which I intend to send to Linus.&quot;<br><br>The twist: one of the skills comes from Ted Ts'o, the maintainer whose AI-fix EXT4 pull got Torvalds telling him to &quot;tell your AI companion to get its act together&quot; this week.<br><br>The skills tell agents how to find Fixes and stable tags, hunt for other copies of a fixed bug, write commit messages and write KUnit tests.<br><br>It's expected in the Linux 7.5 merge window in late December, if Torvalds takes it.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6fce19627e465dbeac37.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/4e1ff345a969e6e5faf7.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
