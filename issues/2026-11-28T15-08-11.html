@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月28日 23:08">
+<title>AI技术雷达 · 11月28日 23:08 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;裸机24KB程序跑0.6B模型超llama.cpp</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Anthropic用Markdown文件构建Agent记忆</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;attrs因AI生成低质PR关闭外部提交</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">06</span>&nbsp;&nbsp;74KB裸机Hypervisor用LLM修复内核崩溃</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Claude Code排查隐式状态机提示词</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @AIExplorerTim · 2026-11-28 12:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">写代码的朋友，求你打开你最乱的那个项目，把这段话粘进 Claude Code 或者 Codex：<br><br>“找出我应用里所有隐式的状态机。做一个最好的决定，同时提升三件事：用户体验（UX）、开发者体验（DX）、智能体体验（AX），而且不能弄坏任何东西。”</section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>裸机24KB程序跑0.6B模型超llama.cpp</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @bojie_li · 2026-11-28 20:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">非常 exciting 的工作，丢掉 Linux 内核和所有推理框架，裸机上 24KB 的程序跑 0.6B 模型，比 llama.cpp 快 54%。我为此付费订阅了 @superalesha <br><br>在《深入理解 AI Infra》中，我提出，传统操作系统和编程语言要支持多种应用，可编程性和性能之间往往要做权衡取舍。而今天最重要的 workload 就是 LLM，AI infra 可以打破操作系统和编程语言的抽象边界，全栈优化，取得极致性能。<br><br>btw 我的程序员新铁人三项理论：Agent + LLM + AI infra，取代旧铁人三项：PL/compiler + OS + arch。学不会的，可能就要做快递外卖滴滴这个铁人三项了。<br><br>具体这个 24KB 程序怎么做的，我让 Grok Bot 帮我总结了一段：只覆盖生成（decode），读 prompt（prefill）反而更慢。<br><br>为什么 decode 能比 llama.cpp 快？第一是算子为这一个模型写死了：默认的 FAST_Q8 路径用 AVX2 的 vpmaddubsw/vpmaddwd 做 INT8×INT8，块缩放是 FP16 再靠 F16C 转成 FP32，再加上按行预取、连续的 head-major KV cache，以及并行 GQA。llama.cpp 要覆盖很多架构和量化格式，这条专用路径在自回归生成上可以少走通用分发。作者在同一台 EPYC 7642、Q8_0、纯 CPU 上的对比里，Linux 版已经比 llama.cpp 快 18%–36%。<br><br>第二是裸机再吃大约 10%：整份权重用 2 MiB 大页映射，少了 4 KiB 页表遍历，也没有 Linux 的 mmap、系统调用和调度器。4 线程时裸机 78.89 tok/s、llama.cpp 51.08 tok/s。<br><br>那个 24,252 字节的 asm-llm-os.elf 是纯 x86-64 NASM 写的 Multiboot 内核，没有 C、Rust 或 libc。启动路径是 Multiboot → 用 2 MiB 大页把 0–4 GiB 做恒等映射 → 进入 64 位 Long Mode，再用 ACPI/APIC 把所有核拉起来。大约 614 MiB 的 Q8_0 权重做成自定义 .asmbin，当作 initrd 加载后在物理内存里零拷贝映射。</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Alexey Fateev <span style="font-size:12px;color:#999999;font-weight:400;">@superalesha</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我彻底删除了 Linux，把 Qwen3-0.6B 烘焙进一个 24 KB 的纯 x86-64 汇编操作系统，运行速度比原生 Linux 上的 llama.cpp 最高快 54%。<br><br>整个 Multiboot 操作系统二进制文件（asm-llm-os.elf）为 24,252 字节，从零编写，不使用 Linux、Windows、C、Rust 或 libc。它在 74 到 94 毫秒内启动，直接进入 64 位长模式，通过 APIC 唤醒每个 CPU 核心，从物理 RAM 直接映射 614 MiB 的 Q8_0 权重，并让你通过 VGA、PS/2 键盘和串口进入一个实时多轮 KV 缓存聊天界面。<br><br>我在同一块 AMD EPYC 7642 上对 llama.cpp（Q8_0，-ngl 0）进行了 CPU 正面对比基准测试：<br><br>- 1 线程达到 23.67 tok/s，对比 16.63（+42%）<br>- 4 线程达到 78.89 tok/s，对比 51.08（+54%）<br>- 8 线程达到 118.08 tok/s，对比 80.79（+46%）<br>- 16 线程达到 134.94 tok/s，对比 103.03（+31%，峰值 136.6）<br><br>在一台无磁盘 0 GB Proxmox 虚拟机（2014 年 12 核 Intel Xeon E5-2670 v3，2 GiB RAM）上，它能在 5 秒内直接启动到提示符（内核启动 95 毫秒），并从 RAM 实时运行，解码 78 tok/s，预填充最高 111.5 tok/s，还包含一个混合 BIOS+UEFI ISO 构建器。输出在不同线程数下保持逐位精确，并且全部 64 个贪婪 token 与 PyTorch FP32 匹配（余弦相似度 0.99965）。<br><br>14.7 KB 的 Linux ELF 构建（FAST_Q8=1 INT8xINT8 AVX2+F16C）在 1 到 40 线程范围内也比 llama.cpp 快 18% 到 36%，而在裸机上使用 2 MiB 大页启动还能再挤出额外 10%。<br><br>仓库、ISO 构建器和 Proxmox 设置指南在下面的回复中。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I deleted Linux completely, baked Qwen3-0.6B into a 24 KB pure x86-64 assembly OS, and it runs up to 54% faster than native Linux llama.cpp.<br><br>The entire Multiboot OS binary (asm-llm-os.elf) is 24,252 bytes, written from scratch without Linux, Windows, C, Rust, or libc. It boots in 74 to 94 ms straight into 64-bit Long Mode, wakes every CPU core over APIC, maps the 614 MiB Q8_0 weights directly from physical RAM, and drops you into a live multi-turn KV-cache chat over VGA, PS/2 keyboard, and serial.<br><br>I ran head-to-head CPU benchmarks against llama.cpp (Q8_0, -ngl 0) on the same AMD EPYC 7642:<br><br>- 1 thread hits 23.67 tok/s vs 16.63 (+42%)<br>- 4 threads hit 78.89 tok/s vs 51.08 (+54%)<br>- 8 threads hit 118.08 tok/s vs 80.79 (+46%)<br>- 16 threads hit 134.94 tok/s vs 103.03 (+31%, 136.6 peak)<br><br>On a diskless 0 GB Proxmox VM (2014 12-core Intel Xeon E5-2670 v3, 2 GiB RAM), it boots straight to the prompt in under 5 seconds (95 ms kernel boot) and runs live out of RAM at 78 tok/s decode and up to 111.5 tok/s prefill, with a hybrid BIOS+UEFI ISO builder included too. Output stays bit-exact across thread counts and matches all 64 greedy tokens against PyTorch FP32 (0.99965 cosine).<br><br>The 14.7 KB Linux ELF build (FAST_Q8=1 INT8xINT8 AVX2+F16C) also beats llama.cpp by 18% to 36% from 1 to 40 threads, and booting bare metal with 2 MiB huge pages squeezes out another 10% on top.<br><br>Repo, ISO builder, and Proxmox setup guide are in the reply below.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bc585d55119fe8c0f2e3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Anthropic用Markdown文件构建Agent记忆</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @rchen1386 · 2026-11-28 14:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这 tm 也太疯狂了！Anthropic 资深工程师用 30 分钟，直接公开了怎么让 AI 趁你睡觉时自己进化！<br><br>以前 AI 总是反复踩同一个坑，你得天天手动改 Prompt 给它擦屁股。现在 Anthropic 的思路彻底变了：让 AI 自己复盘、自己改记忆，越用越聪明！<br><br>全程大白话干货，直接拿走：<br><br>1. 别折腾花哨的记忆插件，文件夹 + Markdown 就是最优解：把记忆当成书架，让 Agent 用基础搜索工具“用到哪本翻哪本”，又快又稳。<br>2. 别指望 AI 边干活边总结：干活时分心记笔记效果很差，而且单个 Agent 看不到其他 Agent 踩过的坑，记忆很快就会过时。<br>3. 终极杀招“做梦机制”：趁你睡觉，后台自动派一批 Agent 把白天的对话和报错全扫一遍，揪出反复翻车的规律，整理好“记忆更新清单”等你第二天一键审批。<br>4. 上生产就加三道保险：改坏能随时回滚、多个 Agent 同时写不打架、全局规则只读不准乱改。<br><br>看似半夜多烧了一点 Token，实测总成本反而更低，因为第二天 AI 干活直接一遍过，再也不瞎试错！<br><br>这 30 分钟要是卖 400 美金，绝对会被吹成今年最神的 Agent 课。现在完全免费，赶紧码住刷完 ↓</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/317012049d1530022781.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Seedance 2.5视频生成API价格对比</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sangngqang · 2026-11-28 19:20</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Seedance API 价格，同一模型，并排对比。<br><br>Seedance 2.5 720p，每秒：Runway API $0.30 · Replicate $0.231 · MartLLM $0.183<br>Seedance 2.0 Mini 480p：Runway API $0.16 · Replicate $0.04 · MartLLM $0.016<br><br>按秒付费。失败的视频不计费。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Seedance API prices, same model, side by side.<br><br>Seedance 2.5 720p, per second: Runway API $0.30 · Replicate $0.231 · MartLLM $0.183<br>Seedance 2.0 Mini 480p: Runway API $0.16 · Replicate $0.04 · MartLLM $0.016<br><br>Pay per second. Failed videos aren't billed.</p>
+  </section></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>attrs因AI生成低质PR关闭外部提交</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @sysxplore · 2026-11-28 22:16</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">一个被约 150 万个 GitHub 仓库使用的 Python 库刚刚对外部拉取请求关上了大门，原因正是 AI 垃圾。<br><br>attrs 维护者 Hynek Schlawack：<br><br>“目前我们有 42 个打开的拉取请求，其中 99% 完全是垃圾；100% 是 AI 垃圾。这种持续涌入的无用废物极其令人沮丧，而我唯一的选择就是彻底停止维护它。”<br><br>拉取请求现在仅限协作者提交，“直到 GitHub 给我们更好的工具来处理它们。”<br><br>“在做了十多年的 FOSS 维护之后，对我来说这是极其悲伤的一天。”<br><br>attrs 不会消失。人类仍然可以加入团队，但必须先证明自己。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">A Python library used by about 1.5 million GitHub repos just shut its doors to outside pull requests, because of AI slop.<br><br>attrs maintainer Hynek Schlawack:<br><br>&quot;Currently we have 42 open pull requests, 99% of them are utter trash; 100% of them are AI slop. It's extremely demoralizing to have this constant influx of unhelpful crap and the only other alternative for me is to stop maintaining it wholesale.&quot;<br><br>Pull requests are now limited to collaborators &quot;until GitHub gives us better tools to deal with them.&quot;<br><br>&quot;After more than a decade of FOSS maintenance, this is a profoundly sad day to me.&quot;<br><br>attrs isn't going away. Humans can still join the team, but they have to earn it first.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4319b4c1569e3c3c2c7f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/6a4d8882442cefdc93dd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>74KB裸机Hypervisor用LLM修复内核崩溃</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @superalesha · 2026-11-28 04:58</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我构建了一个 74 KB 的裸机 hypervisor，把一个 2B LLM 放在 Linux 之下的 Ring -1 中，在内核 panic 崩溃中途捕获致命错误，在 RAM 中实时修补损坏的机器码，并让 Linux 继续运行而无需重启。<br><br>左侧窗口是标准 Linux 因 Ring 0 空指针写入（*(u32 *)0 = 0xDEADBEEF）而瞬间死亡。右侧窗口在我的自定义 Type-1 AMD SVM hypervisor（x86-64 NASM 汇编 + 零 libc C，0 宿主操作系统）下运行完全相同的崩溃命令。<br><br>Ring -1 没有崩溃，而是在 Linux 来得及 panic 之前将其冻结，在 24 个 AVX2 核心上运行一个经过 GRPO 训练的 MiniCPM5-2B（Q4_K_M），耗时 11.1 秒，通过 NPT 用 11 个 NOP（0x90）覆盖 guest .text 物理 RAM 中那 11 个出错字节，然后调用 `VMRUN`。<br><br>Linux 打印出 SURVIVED NULL-DEREF！并且 uptime 从未重置。<br><br>我们使用一个很小的 /proc/surgeon_crash 测试模块来并排触发干净的 Ring 0 崩溃。在 122 个未见过的故障场景中（包括它必须拒绝修补的不安全自旋锁崩溃），这个 GRPO 检查点达到 97.54% pass@1，且 0 个危险修补（基线为 16.39%）。<br><br>完整的 NASM + C 源代码（75,424 字节二进制文件）已在我的 llm.asm 仓库中上线（MIT，链接见下）。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">I built a 74 KB bare-metal hypervisor that puts a 2B LLM BELOW Linux in Ring -1, catches a fatal Kernel panic mid-crash, patches the broken machine code live in RAM, and keeps Linux running without a reboot.<br><br>Left window is standard Linux dying instantly from a Ring 0 NULL-pointer write (*(u32 *)0 = 0xDEADBEEF). Right window runs the exact same crash command under my custom Type-1 AMD SVM hypervisor (x86-64 NASM assembly + zero-libc C, 0 host OS).<br><br>Instead of crashing, Ring -1 freezes Linux before it can panic, runs a GRPO-trained MiniCPM5-2B (Q4_K_M) across 24 AVX2 cores in 11.1 seconds, overwrites those 11 faulting bytes in guest .text physical RAM with 11x NOP (0x90) via NPT, and calls `VMRUN`.<br><br>Linux prints SURVIVED NULL-DEREF! and uptime never resets.<br><br>We used a tiny /proc/surgeon_crash test module to trigger clean Ring 0 crashes side by side. On 122 unseen fault scenarios (including unsafe spinlock crashes it must refuse to patch), this GRPO checkpoint hits 97.54% pass@1 with 0 dangerous patches (vs 16.39% on base).<br><br>Full NASM + C source code (75,424 bytes binary) is live in my llm.asm repo (MIT, link below).</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/a9a8f0baaff74bdac1bb.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Alexey Fateev <span style="font-size:12px;color:#999999;font-weight:400;">@superalesha</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">I deleted Linux completely, baked Qwen3-0.6B into a 24 KB pure x86-64 assembly OS, and it runs up to 54% faster than native Linux llama.cpp.<br><br>The entire Multiboot OS binary (asm-llm-os.elf) is 24,252 bytes, written from scratch without Linux, Windows, C, Rust, or libc. It boots in 74 to 94 ms straight into 64-bit Long Mode, wakes every CPU core over APIC, maps the 614 MiB Q8_0 weights directly from physical RAM, and drops you into a live multi-turn KV-cache chat over VGA, PS/2 keyboard, and serial.<br><br>I ran head-to-head CPU benchmarks against llama.cpp (Q8_0, -ngl 0) on the same AMD EPYC 7642:<br><br>- 1 thread hits 23.67 tok/s vs 16.63 (+42%)<br>- 4 threads hit 78.89 tok/s vs 51.08 (+54%)<br>- 8 threads hit 118.08 tok/s vs 80.79 (+46%)<br>- 16 threads hit 134.94 tok/s vs 103.03 (+31%, 136.6 peak)<br><br>On a diskless 0 GB Proxmox VM (2014 12-core Intel Xeon E5-2670 v3, 2 GiB RAM), it boots straight to the prompt in under 5 seconds (95 ms kernel boot) and runs live out of RAM at 78 tok/s decode and up to 111.5 tok/s prefill, with a hybrid BIOS+UEFI ISO builder included too. Output stays bit-exact across thread counts and matches all 64 greedy tokens against PyTorch FP32 (0.99965 cosine).<br><br>The 14.7 KB Linux ELF build (FAST_Q8=1 INT8xINT8 AVX2+F16C) also beats llama.cpp by 18% to 36% from 1 to 40 threads, and booting bare metal with 2 MiB huge pages squeezes out another 10% on top.<br><br>Repo, ISO builder, and Proxmox setup guide are in the reply below.</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bc585d55119fe8c0f2e3.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Docker Hub不可变标签暴露签名缺失</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Docker · 2026-11-28 22:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">Release 2.2 曾在 Docker Hub 上以全部三个版本标签发布。它发布时未签名。<br><br>Docker Captain Vladimir Mikhalev 展示了 Docker Hub 不可变标签如何暴露了这一缺口，以及为什么应先对摘要签名、最后再移动标签。<br><br>阅读更多：<a href="https://bit.ly/4tmfaSo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4tmfaSo</a></p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">Release 2.2 was on Docker Hub under all three version tags. It shipped unsigned.<br><br>Docker Captain Vladimir Mikhalev shows how Docker Hub immutable tags exposed the gap, and why to sign the digest first and move the tags last.<br><br>Read more: <a href="https://bit.ly/4tmfaSo" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://bit.ly/4tmfaSo</a></p>
+  </section></section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
