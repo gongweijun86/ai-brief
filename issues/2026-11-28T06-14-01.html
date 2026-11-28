@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月28日 14:14">
+<title>AI技术雷达 · 11月28日 14:14 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;多 Agent 协作的核心是信息流转成本</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">02</span>&nbsp;&nbsp;MCP 新增 Skills、异步任务与确认交互</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;16 行 Markdown 技能取代千行编排框架</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>多 Agent 协作的核心是信息流转成本</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @meow2149 · 2026-11-28 01:46</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">多 Agent 协作并没有消除上下文问题，而是改变了它的存在形式。<br><br>单 Agent、Subagent 和多 Agent Team，本质上都面临信息损耗的问题。<br><br>单 Agent 长时间执行任务时，随着上下文不断增长，难免会触发压缩，部分历史细节和决策依据也可能随之丢失。<br><br>Subagent 通过独立上下文执行子任务，缓解了主 Agent 的上下文压力，但任务委派和结果回传的过程，同样可能丢失关键信息。<br><br>多 Agent Team 进一步引入了独立会话、专业分工和持续通信。虽然可以通过主动沟通、共享文档等方式补充信息，但也增加了任务交接、状态同步和协调的成本。<br><br>仔细想想，三者面对的问题其实是相通的：<br><br>单 Agent，是信息在时间维度上的延续。<br><br>Subagent，是信息在父子 Agent 之间的传递。<br><br>多 Agent Team，是信息在多个独立 Agent 之间的传递与同步。<br><br>从单 Agent 到多 Agent，我们实际上是将一部分上下文管理压力，转化成了通信与协调压力。<br><br>只有当任务分工、专业化和并行执行带来的收益，超过信息损耗与协作成本时，多 Agent 协作才真正具备效率优势。<br><br>所以我认为，Agent 编排框架真正值得关注的，不是它能调度多少个 Agent，而是能否让信息在不同会话、不同 Agent 和不同任务阶段之间，准确、完整、低成本地流转。<br><br>Agent 数量决定了潜在的并行规模，而信息管理与协作机制，决定了这些并行能力最终能转化为多少实际生产力。<br><br>把多个 Agent 组织在一起只是起点，让它们真正高效协作，才是 Agent 编排工程的核心难题。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/d66b5c2ad408707d8437.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">meow <span style="font-size:12px;color:#999999;font-weight:400;">@meow2149</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;">多 Agent 协作，真的比一个全栈 Agent 更高效吗？<br><br>最近在深度使用 OpenBot 的过程中，我一直在思考这个问题。<br><br>以前完成一个开发需求，我基本上只需要用 Codex。从梳理产品需求、编写 PRD，到代码开发、通过 Computer Use 调整页面、调用接口测试、Code Review，甚至是涉及多个系统、需要与其他研发同事反复联调的复杂需求，都可以顺畅地交给它来完成。<br><br>如果当前会话的上下文积累得太多，或者进入了一个相对独立的任务阶段，也不必硬塞在同一个窗口里，顶多再开一个全新的 Chat，用干净的上下文继续解决新问题。遇到复杂子任务，Codex 自己也会按需派发 Subagent 去并行处理，整体节奏非常连贯。<br><br>而换到 OpenBot 之后，我可以将这些工作拆开，分别交给产品 Agent、前端 Agent、后端 Agent 和测试 Agent，让它们组成一个相对完整的研发团队。<br><br>分工确实更明确了，但与此同时，也引入了非常直观的协作成本。<br><br>每个 Agent 都有相对独立的会话和上下文，虽然可以通过 Channel 进行沟通，但并不意味着它们共享完整的上下文。需求传递、信息同步、任务交接都需要额外的通信，一些隐含的业务细节和踩过的坑，很容易在转述和摘要过程中丢失；为了对齐同一件事，反复补充背景也会带来更多的 Token 消耗。<br><br>这让我想到一个很有意思的现象。<br><br>过去，软件研发被划分为前端、后端、测试等不同岗位。后来随着技术的发展，全栈开发逐渐流行起来，我们希望一个人能够独立完成更多工作，从而消灭跨岗位的沟通与协作内耗。<br><br>可到了 AI 时代，大模型本来已经具备了相当不错的全栈开发能力，我们却又开始把一个全栈 Agent 拆分成产品 Agent、前端 Agent、后端 Agent、测试 Agent，重新构建起一套类似人类的研发组织架构。<br><br>乍一看挺矛盾的，甚至有点像开倒车，但仔细想想，其实并不矛盾。<br><br>无论是人类走向全栈，还是 AI 走向分工，底层都在绕开当前执行单元的最大瓶颈。<br><br>人类卷全栈，是因为人脑之间的通信带宽太低、跨人沟通和排期协同的成本极高，而单个工程师一旦吃透业务，大脑里自带连贯的长期记忆；全栈是用便宜的内部记忆，换掉了昂贵的外部沟通。<br><br>AI 刚好相反。模型之间同步文本的成本相对可控，但单个上下文窗口的有效注意力非常脆弱，无关信息越堆越多，推理质量就会明显下滑。<br><br>换句话说，全栈解决的是能力边界的问题，而多 Agent 协作解决的是执行规模、注意力和资源分配的问题。人类的岗位分工，很大程度上受限于个人的知识、精力与时间；而 Agent 的角色分工，并不一定是因为它缺乏其他岗位的能力，更多是为了合理分配上下文、计算资源和任务职责。<br><br>具备完成所有工作的能力，和同时高效地完成所有工作，本身就是两件不同的事情。<br><br>抛开模拟人类公司架构的表象，多 Agent 协作真正有价值的地方，我认为主要有四个。<br><br>第一，并行执行。<br>当接口协议和任务边界足够明确时，前端开发、后端开发和测试用例编写可以同时进行，从线性串行真正走向并行，用更多的计算资源换取更短的交付时间。<br><br>第二，上下文隔离。<br>这是最直接的工程降噪。测试 Agent 不需要看前端调了二十轮样式的报错日志，不同 Agent 可以专注于各自的任务，避免大量无关代码、工具调用和测试日志污染上下文。这对于大型项目和长周期任务尤其重要。<br><br>第三，独立验证。<br>在同一个会话里让 Agent 写完代码再自己做 Review 和测试，很容易陷入既当运动员又当裁判的思维惯性，顺着刚才的解题思路默认逻辑没错，从而放过隐藏 Bug。让一个没有参与代码编写、上下文干净的 Agent 负责审查和测试，才能以相对独立的视角发现开发过程中忽略的问题。<br><br>第四，长期专业化。<br>不同 Agent 可以拥有各自的长期记忆、专属 Skills、最小权限的工具配置，甚至搭配不同的模型。更窄的工具面和更精简的指令，也能显著降低指令冲突和工具调用幻觉。对于长期运行的项目，各自沉淀下来的领域知识和项目经验，也是临时创建的 Subagent 不一定具备的优势。<br><br>但多 Agent 协作并不天然意味着更高的效率。<br><br>如果一个需求本身并不复杂，或者任务之间存在很强的依赖关系，需要频繁同步信息、反复修改接口，硬上一套固定分工的 Agent 团队，通信成本和额外 Token 很快就会把收益吃掉。这种场景下，一个掌握完整需求背景的全栈 Agent，往往更快、更稳、也更省 Token。<br><br>而且，上面提到的并行执行、上下文隔离和独立验证，其实通过 Codex 灵活开启全新会话、按需派发 Subagent 也能覆盖大半，并不一定非要提前组建一个固定的 Agent 团队。<br><br>所以相比死板的固定角色分工，我目前更倾向于动态的任务编排：<br><br>▪︎ 普通需求，由一个全栈 Agent 独立完成，上下文重了或进入新阶段，就灵活开启全新会话继续推进。<br><br>▪︎ 复杂需求，根据任务的依赖关系，按需派发用完即焚的 Subagent 并行处理、隔离噪音。<br><br>▪︎ 长期项目，再考虑组建拥有独立记忆、专业知识和明确职责的常驻 Agent 团队。<br><br>这几种方式并不冲突，甚至可以相互结合。常驻的 Agent 本身也可以具备全栈能力，并根据实际需求灵活调整自己的职责。<br><br>衡量多 Agent 协作是否高效，最终还是要看交付质量、完成时间和资源消耗，而不是团队里有多少个 Agent、拆出了多少种角色。<br><br>我也希望未来的 Agent 编排系统，能够充分利用 AI 本身的能力特点，而不是简单照搬人类的组织架构。<br><br>毕竟我们好不容易让 AI 具备了全栈能力，总不能最后又让它们把大量时间和 Token，花在开会、同步进度和跨部门沟通上吧。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/4274a33814f00f302cfc.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>MCP 新增 Skills、异步任务与确认交互</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @lanshu · 2026-11-27 18:08</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">刚看完 Anthropic 发的 MCP 两周年更新，基本把以前用 MCP 干正事时最头疼的几个坑都填上了。<br><br>我在大会上也推荐大家重视MCP，可以看到Anthropic 依然在优化这里！<br><br>以前 MCP 说白了就是给模型接 API——发个请求、干等返回、只能传文字，稍微复杂点的活都跑不顺。这次放出来的 4 个核心能力，最值得关注：<br><br>1）Skills over MCP（公测） 以前给工具写 description 很尴尬：写短了模型不会组合多步操作，写长了全塞进上下文直接爆掉；单独发 Skill 文件，用户又得装两套，接口一改就脱节。现在 MCP Server 可以把工具和对应的玩法/SOP 打包一起下发，用到才按需加载，服务端改了客户端自动同步，用户零配置。<br><br>2）Tasks（正式可用） 打破了原来 tool call 必须同步干等的限制。耗时长的活可以直接交给 Server 在后台异步跑，甚至允许 Server 内部自己跑一整套 Agent 循环，Claude 先继续干别的，跑完再回来取结果。比如 ZoomInfo 现在能直接在后台做深度客户调研，不用像以前那样靠人连发好几轮 prompt 接力。<br><br>3）Elicitation（正式可用） 这个对生产环境很关键。以前怕模型误删库、误花钱，只能靠写 prompt 祈祷，或者每次调用弹个冷冰冰的“允许/拒绝”。现在 Server 跑到高危步骤可以主动暂停，自己弹表单或链接让用户确认——比如 Supabase 建付费项目前让你核对费用、GitHub 删仓库前让你手敲一遍仓库名，确认完直接从断点接着跑。<br><br>4）File Uploads（即将上线） 以后可以直接给 MCP Server 传 PDF、表格、图片，而且文件不经过模型上下文窗口，走旁路直传。大文件终于不用先转成文本把 token 烧穿了。<br><br>简单说，MCP 已经不只是“模型调接口的标准”了，更像是在让 Claude 和外部服务按两个 Agent 的方式协作：能学方法、能派长活、中途能拉人确认、还能直接传文件。<br><br>而且这几个能力都进了开放的 MCP 规范，不是 Claude 独占。目前 Claude apps 和 Claude Code（v2.1.331+，Pro/Max/Ultra）已经可以直接测前三项了。<br><br>原文：<a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://claude.com/resources/articles/skills-over-mcp-tasks-and-more</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Orca 终端编排上手体验与取舍</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @MoeDejavu · 2026-11-28 12:24</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">从 T3 Code 切换到了 @orca_build <br><br>Orca的UI/UX 我感觉不是很好，特别是刚上手的时候，元素太多了<br>需要一段时间来熟悉，终端和智能体编排很好，会话和Worktree使用很顺手<br><br>Agent Hook 默认是关闭的了，这很好 @JinjingLiang <br>但是 Orca 设置菜单和层级太乱，前期需要一段时间适应，我最喜欢 Orca 的两个功能：<br><br>1. 将常用命令写成脚本，直接点击切换（不用每次指挥AI启动，因为2小时自动停止）<br>2. 这个Bot 很有趣<br><br>缺点：自带的 Orca Computer Use 不如 @trycua CUA Driver 做的好，所以我继续使用 CUA<br>浏览器方面继续使用 @ego_agent Ego Lite 的速度和性能非常出色<br><br>以及，我禁用了 CUA 的遥测（不清楚是否默认开启的）<br><br>Orca 的UI/UX 真的很需要优化，按钮、菜单层级、交互整体做的比较乱<br><br>其他，都很好！是时候离开 T3 Code了🥰</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ac8db87390bf3b4483f0.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>XQuant 开源书用 AI 辅助学量化</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @yiyirats · 2026-11-28 12:38</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">早先有个哥们儿想学量化，书没翻过几页，就被公式和代码撵了回来，见着我直嚷嚷这坎儿太高。<br><br>后来我塞给他一本白拿的开源书——《XQuant：人人都是量化交易员》，走的是 Vibe Coding 那套：Python 大可以先撂着，把投资的路子讲透，余下的甩给 AI 编程工具去敲代码、去跑回测。<br><br>它不兜售什么玄乎的招法，教的是能反复上手的研究套路：<br>1️⃣ 从 3 只 ETF 起步，跑通第一个策略<br>2️⃣ 做基准对比，评估收益和风险<br>3️⃣ 识别过拟合、数据泄露这些坑<br><br>每章都带着动手做，边学边把结果跑出来。想入量化的门、又不知从哪儿迈腿的，先啃它。<br>在线阅读：<a href="https://xingwudao.github.io/xquant-beginner/" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://xingwudao.github.io/xquant-beginner/</a></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/cb7c28b38c1ab41ba548.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>16 行 Markdown 技能取代千行编排框架</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @KobinFlow · 2026-11-28 08:07</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">我去！！！太魔幻了，去年 6 月 Philipp 自己还在用 LangGraph + React 吭哧吭哧写全栈 Deep Research。<br><br>结果才一年多，他直接把整套东西删到只剩 16 行纯文本，塞进 Coding Agent 里盲测胜率干到 90%+。<br><br>现在还在手搓几千行编排框架、或者拿“AI 深度研究”当护城河的团队，看到这 16 行 Markdown 真的不会原地破防吗？</section>
+  
+  <section style="margin:18px 0 0;padding:14px 15px;background-color:#f7f7f7;border-left:3px solid #b7bec6;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:#999999;">引用内容</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;font-weight:600;color:#444444;">Philipp Schmid <span style="font-size:12px;color:#999999;font-weight:400;">@_philschmid</span></p>
+  <section style="margin:9px 0 0;font-size:15px;line-height:1.8;color:#555555;word-break:break-word;"><section style="margin:0 0 16px;padding:12px 14px;background-color:#f6f8fa;border-left:3px solid #4f7d9f;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;font-weight:600;color:#4f7d9f;">中文译文</p>
+  <p style="margin:0;font-size:16px;line-height:1.8;color:#333333;word-break:break-word;">我们为 Gemini 4 Neon 构建了一个实验性的深度研究技能，将编码代理转变为研究人员 🚀<br><br>该技能的重点：<br>1. 范围：简单直接，宽泛的拆分为 3-5 个角度<br>2. 子代理：并行搜索或浏览器，上限 8-12 步<br>3. 来源：原始文件和 PDF，不使用搜索摘要<br>4. 速度：取消停滞的工作者，最多 1 次跟进<br>5. 报告：2 句话总结，内联链接，注明冲突<br><br>它只有 16 行，在数百次盲测中，相比不使用技能，有超过 90% 的情况下更受青睐。</p>
+  </section>
+  <section style="margin:0;">
+  <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#999999;">原文</p>
+  <p style="margin:0;font-size:14px;line-height:1.75;color:#666666;word-break:break-word;">We built an experimental deep research skill for Gemini 4 Neon, turning coding agents into researchers 🚀<br><br>What the skill focuses on:<br>1. Scope: simple direct, broad ones in 3-5 angles<br>2. Subagents: parallel search or browser, 8-12 step cap<br>3. Sources: primary filings and PDFs, no search snippets<br>4. Speed: cancel stalled workers, max 1 follow-up<br>5. Report: 2-sentence summary, inline links, conflicts noted<br><br>It's 16 lines, preferred over 90% of the time vs no skill in hundreds of blind evals.</p>
+  </section></section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/ab52e385d95d60fcd7ab.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+</section>
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">06</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Antigravity 更新暴露产品维护长尾</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @antiAIvo · 2026-11-28 09:19</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">今天扒了一下 Google Antigravity客户端的最新更新日志，挺感慨的<br><br>外界总觉得 DeepMind 这种团队里的工程师<br>每天都在搞什么极其前沿、高不可攀的东西<br>但你仔细翻一下它的更新记录<br>13 项改进、26 个修复，全是各种缝缝补补的小问题：<br>什么浏览器输入 localhost 默认跳 HTTPS 了、<br>复制代码丢空行了、侧边栏关闭偶尔白屏了、不同盘符找不到插件了……<br>而且里面一大半功能普通人根本用不到<br><br>这也就是为什么这些互联网大厂动辄都有几十万员工的原因了<br>普通用户每天高频用到的可能就那两三个核心功能<br>但一个庞大产品背后，其实有几百个细碎的小角落<br>每天都在运转、都在出各种奇奇怪怪的边界 bug<br>你不用不代表没人用，只要有人在用<br>就得有一堆工程师天天在那儿修、在那儿维护</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/729a5274dc00e4f7b02d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">07</span><span style="color:#b5bbc2;font-weight:400;">｜</span>八个代码生成视频的 GitHub 项目</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @HeLi8866 · 2026-11-28 13:48</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">分享 8 个值得收藏的 GitHub 宝藏项目，做 AI 视频的兄弟千万别错过！⬇️<br><br>1、CineCode（3.1K Star🌟）<br><br>只需要描述你的创意，AI 就能帮你编写剧本、搭建场景、设计镜头运动、制作音效，最终渲染成 MP4 视频。<br><br>还支持通过 Three.js 构建 3D 场景，适合制作创意短片、广告和科普动画。<br><br><a href="https://github.com/sarpstar/cinecode" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/sarpstar/cinecode</a><br><br>2、Every Frame is Code（32 Star🌟）<br><br>这个项目的思路非常有意思：视频里的每一帧都由代码生成。<br><br>利用 Canvas、WebGL、Three.js 和 GLSL，将 3D 场景、粒子特效、电影级转场和动态视觉效果逐帧渲染为 MP4。<br><br>支持 Claude Code、Codex 等 AI 编程工具。<br><br><a href="https://github.com/kiselas/every-frame-is-code" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/kiselas/every-frame-is-code</a><br><br>3、Video Shotcraft（23K Star🌟）<br><br>专门为 Claude Code 和 Codex 打造的产品宣传片制作 Skill。<br><br>内置 124 套镜头设计方案、150 个动态效果预览，支持 2.5D 运镜、音乐卡点、电影级音效，还能导出剪映工程。<br><br>做产品演示、商业广告、APP 宣传片，优先研究这个。<br><br><a href="https://github.com/Vincentwei1021/video-shotcraft" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Vincentwei1021/video-shotcraft</a><br><br>4、Marketing Videos（14 Star🌟）<br><br>一套专门用于制作电影感产品发布视频的工作流。<br><br>将 Claude Code、Remotion 与 AI 视频生成工具结合，实现素材生成、动态设计、镜头编排和广告片制作。<br><br><a href="https://github.com/sub-level/marketing-videos" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/sub-level/marketing-videos</a><br><br>5、Cinematic Video Skill（1 Star🌟）<br><br>别看 Star 少，这个项目的玩法很有意思。<br><br>只需提供一个主题，就能借助 Remotion 制作具有电影叙事感的动态视频，支持原创音乐合成、画面布局检查和自动渲染。<br><br>适合企业发展史、品牌故事、纪录片式动画和知识科普视频。<br><br><a href="https://github.com/mylxsw/cinematic-video-skill" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/mylxsw/cinematic-video-skill</a><br><br>6、Video Motion Craft（5 Star🌟）<br><br>基于 Claude Code、Remotion 和 FFmpeg 的视频创作与剪辑工作流。<br><br>整合了多个现有视频制作 Skill，涵盖场景转场、动态设计、音乐卡点、字幕生成、素材剪辑和成片导出。<br><br><a href="https://github.com/vibegameengine/video-motion-craft" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/vibegameengine/video-motion-craft</a><br><br>7、Motion Lab（2 Star🌟）<br><br>一个纯代码视频创作实验室，整合了 Remotion、Three.js、GSAP 和 Motion Canvas。<br><br>适合研究 3D 镜头运动、解说动画、品牌宣传视频和各种动态视觉特效。<br><br><a href="https://github.com/berlinify/motion-lab" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/berlinify/motion-lab</a><br><br>8、ESCAPEMENT（193 Star🌟）<br><br>特意把这个放在最后，因为它的成片效果确实很惊艳。<br><br>开发者利用 Claude Code（Opus 5.5）和 Blender，制作了一部时长 36 秒的电影级超跑短片。<br><br>・3D 模型 ・材质纹理 ・场景灯光 ・镜头运动 ・渲染剪辑<br><br>全部通过代码实现，甚至没有下载任何现成的 3D 模型和图片纹理。<br><br>它并不是一个通用的视频生成工具，而是一部完整短片的工程源码，可以直接参考它的代码和制作流程。<br><br><a href="https://github.com/Leonxlnx/escapement" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Leonxlnx/escapement</a><br><br>这 8 个项目走的是两条不同的技术路线：<br><br>一种是通过代码直接生成每一帧画面，另一种是利用代码对 AI 生成的素材进行编排和剪辑。<br><br>尤其是动画、产品宣传片、科普视频和风格化短片这些领域，代码生成视频有望大幅降低制作成本，而且还能反复修改，不用每次都重新抽卡。</section>
+  
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
