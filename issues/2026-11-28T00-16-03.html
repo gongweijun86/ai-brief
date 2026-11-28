@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI技术雷达 · 11月28日 08:16">
+<title>AI技术雷达 · 11月28日 08:16 | AI小道消息</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f6f7; color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 14px 60px; }
+  header { background: #1a1a2e; color: #fff; padding: 22px 14px; }
+  header .inner { max-width: 720px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 13px; color: #9aa0b5; }
+  header a { color: #9aa0b5; text-decoration: none; }
+  article { background: #fff; margin-top: 18px; padding: 20px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+  article img { max-width: 100%; height: auto; }
+  article a { color: #4f7d9f; }
+  .archive { background: #fff; margin-top: 18px; padding: 18px 16px; border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .archive h2 { margin: 0 0 12px; font-size: 17px; }
+  .archive ul { list-style: none; margin: 0; padding: 0; }
+  .archive li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: baseline; }
+  .archive li:last-child { border-bottom: none; }
+  .archive time { flex: 0 0 118px; color: #999; font-size: 13px; }
+  .archive a { color: #333; text-decoration: none; font-size: 15px; }
+  .archive a:hover { color: #4f7d9f; }
+  .archive .count { color: #bbb; font-size: 12px; margin-left: auto; flex: 0 0 auto; }
+  .back { display: inline-block; margin: 16px 0 0; color: #4f7d9f; font-size: 14px; text-decoration: none; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1><a href="../index.html" style="color:#fff;text-decoration:none">AI小道消息</a></h1>
+  <p>每日 AI 资讯聚合 · <a href="../index.html">最新</a> · <a href="../index.html#archive">往期</a></p>
+</div></header>
+<div class="wrap">
+<article><section style="margin:0;padding:0 1px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;">
+  <section style="margin:0 0 32px;padding:16px 15px 6px;background-color:#f7f8fa;">
+  <p style="margin:0 0 14px;font-size:16px;line-height:1.6;font-weight:600;color:#333333;">本期速览</p>
+  <section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">01</span>&nbsp;&nbsp;Pi 获 Google OAuth 官方订阅登录</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">03</span>&nbsp;&nbsp;Search 用 WebKit 打造 14MB 极简浏览器</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">04</span>&nbsp;&nbsp;Rune 用 Rust 跨五端 GPU 界面</p>
+  </section><section style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #eeeeee;">
+    <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;"><span style="color:#4f7d9f;font-weight:600;">05</span>&nbsp;&nbsp;wanman 将 App 交付压缩至 30 分钟</p>
+  </section>
+</section>
+  <section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">01</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Pi 获 Google OAuth 官方订阅登录</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @ohayou792 · 2026-11-27 22:29</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Google确实给 Pi 批准了OAuth权限。<br><br>刚翻完 Pi 仓库今天新挂出来的 12614 号 Draft PR，代码还没合进 main 分支，但 Google AI Ultra 订阅登录已经实现了。<br><br>为什么 Pi 能直接接上 Google 官方 OAuth 订阅登录？<br>原因很简单，Pi单独向 Google 提交了官方 OAuth接入申请并且通过了。<br><br>Google 这个申请要求每个工具自己去建独立的桌面端 OAuth 应用，一家一家单独提交审批。<br>通过之后，登录时会把刷新令牌绑定在本机生成的密钥上，每次续期都要带本机签名校验，请求直接走 Google 新开的个人配额接口，目前只针对 AI Ultra 订阅开放，Pro 用户暂时未开放。<br><br>Pi 团队甚至专门在 README 里加了一段说明，写得很清楚：<br>这个登录客户端是 Google 单独批给 Pi 的，任何人 fork 仓库或者基于 pi-ai 自己做工具，都必须重新向 Google 申请，不准复用 Pi 的凭据。<br><br>想看代码细节的可以直接去 GitHub 搜 earendil-works/pi，点进 PR 12614 或者切到 google-ai-plan 分支，里面的 README 改动和 google-ai-plan.ts 写得清清楚楚。<br><br>顺着这套个人配额接口的特征，我把 GitHub 全网翻了一遍，看看还有谁拿到了审批。<br><br>除了 Pi，目前公开仓库里能查到走通这套官方通道的开源项目，只有 Nous Research 家的 Hermes Agent。<br><br>仓库里叫 Solstice 插件，前几天刚切到和 Pi 一模一样的无状态接口，不过看前两天的 issue 反馈，目前还卡在测试白名单阶段，普通账号直接登还是会被拦下来报 403。<br><br>OpenCode 的第三方分支 Shuvcode 虽然代码里也接上了 Solstice，实际是绕道借用了 Nous Portal 的登录通道，并没有拿到 Google 的单独批准。<br><br>至于其他开源Agent：OpenClaw、Cline、Roo Code、Zed、Goose 这些目前在公开仓库里全都没有这套官方接入的痕迹。<br><br>这么一来，以后第三方工具想接 Google 订阅，只能一家一家排队过审、单独领凭据，出了问题 Google 随时能按单个应用停权。<br>之前那些靠逆向抓包和共享凭据撑起来的野路子插件，后面基本走不通了。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/68b20bd25bf1ba8dce28.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/588899e8d8e4d03785cd.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">02</span><span style="color:#b5bbc2;font-weight:400;">｜</span>13 个企业知识库 RAG 框架与工具</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @Suercha007 · 2026-11-27 21:52</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">做AI落地的看过来了，企业知识库作为企业业务AI化的第一步，至关重要！分享13个常用的知识库构建和问答的框架和工具。<br><br>很多朋友问我知识库怎么做，其实知识库和业务场景是强绑定的，不同场景，不同类型的文档，对应的解析、持久化、构建方法甚至召回的逻辑都不一样，不能一概而论！<br><br>不过市面上通用的RAG框架和工具，对自研知识库体系是有所帮助的，我们可以借鉴其中的分析和召回理论，针对性的去优化。<br><br>1、WeKnora（腾讯，3.8 万星）：RAG 查询、Agent 干活、Wiki 整理三种模式共用一套知识库，飞书、企微、Confluence 直接同步。<br><a href="https://github.com/Tencent/WeKnora" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Tencent/WeKnora</a><br><br>2、RAGFlow（9.5 万星）：1.0 版能把文档编译成 Wiki、图谱、时间线、Skill 七种产物，还有四档思考深度的 Agentic RAG。 <a href="https://github.com/infiniflow/ragflow" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/infiniflow/ragflow</a><br><br>3、语析 Yuxi（7.8 千星）：多租户企业智能体基座，Milvus 混合检索加可选 Neo4j 图谱，带沙盒执行和命令审批。<br><a href="https://github.com/xerrors/Yuxi" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/xerrors/Yuxi</a><br><br>4、MaxKB（2.3 万星）：界面最像传统企业软件，上手最快，注意它是 GPL 协议。<br><a href="https://github.com/1Panel-dev/MaxKB" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/1Panel-dev/MaxKB</a><br><br>5、PipesHub（4.2 千星）：权限感知的企业搜索，连 50 多个系统，同一份上下文既能给人答也能通过 MCP 喂给自己的 Agent。<br><a href="https://github.com/pipeshub-ai/pipeshub-ai" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/pipeshub-ai/pipeshub-ai</a><br><br>6、PageIndex（4.1 万星）：不建向量索引，给文档建一棵可推理的目录树让模型顺着找。<br><a href="https://github.com/VectifyAI/PageIndex" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/VectifyAI/PageIndex</a><br><br>7、LightRAG（4.1 万星）：轻量图谱增强，速度是卖点，换了 embedding 模型会直接拒绝启动。<br><a href="https://github.com/HKUDS/LightRAG" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/LightRAG</a><br><br>8、GraphRAG（微软，3.7 万星）：社区检测加多层摘要，全局性问题答得好，代价是慢和贵。<br><a href="https://github.com/microsoft/graphrag" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/microsoft/graphrag</a><br><br>9、RAG-Anything（2.5 万星）：图片、表格、公式都当一等公民处理的多模态 RAG。<br><a href="https://github.com/HKUDS/RAG-Anything" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/HKUDS/RAG-Anything</a><br><br>10、PixelRAG（1.1 万星）：直接把页面渲染成图再理解，绕开 PDF 和 HTML 解析这一整层。<br><a href="https://github.com/StarTrail-org/PixelRAG" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/StarTrail-org/PixelRAG</a><br><br>11、Graphiti（3.3 万星）：实时知识图谱，边聊边更新。<br><a href="https://github.com/getzep/graphiti" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/getzep/graphiti</a><br><br>12、graphify（15.4 万星）：Claude Code 里敲一下，整个文件夹变成知识图谱，官方说比直接读原文件省 71.5 倍 token。<br><a href="https://github.com/Graphify-Labs/graphify" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/Graphify-Labs/graphify</a><br><br>13、llm_wiki（2.2 万星）：把一堆文档变成互相链接的 Wiki，而不是一堆向量。<br><a href="https://github.com/nashsu/llm_wiki" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/nashsu/llm_wiki</a></section>
+  
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">03</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Search 用 WebKit 打造 14MB 极简浏览器</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @GitHub_Daily · 2026-11-28 08:00</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">Search 是一个 Mac 上的开源浏览器，装好只有 14 MB 左右，出自一家整天泡在浏览器里干活的设计工作室。<br><br>它直接用 Mac 系统自带的 WebKit 内核，也就是 Safari 用的那套，不用再额外装一份 Chromium，所以打开很快。<br><br>界面只剩一排标签页和网页本身，没有工具栏、起始页和推荐栏。地址栏输网址就跳转，输文字就直接搜索。<br><br>GitHub：<a href="https://github.com/driceroland/Search" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/driceroland/Search</a><br><br>广告拦截默认开着，追踪器在网络请求阶段就被挡掉，网页还没开始渲染。<br><br>碰到 Cookie 弹窗、订阅浮层这类碍眼的东西，按个快捷键点一下就隐藏了，下次再打开这个网站还是隐藏的。<br><br>Chrome 商店里的扩展也能装，粘贴链接就行。阅读模式、视频小窗、两个网页并排这些都是内置的。<br><br>历史记录和密码只存在本机和系统钥匙串里，不上传任何使用数据。整个项目大约 4.2 万行 Swift 代码，对一个浏览器来说，这个体量我觉得挺克制的。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/87aeb58832c0ede9e813.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">04</span><span style="color:#b5bbc2;font-weight:400;">｜</span>Rune 用 Rust 跨五端 GPU 界面</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @QingQ77 · 2026-11-28 07:34</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">让开发者用一套 Rust 代码写出跨五端的 GPU 原生界面，并能让 AI Agent 在无头模式下截图、读元素树和模拟输入来自己验收 UI。<br><br><a href="https://github.com/anomalyco/rune" target="_blank" style="color:#1769aa;text-decoration:underline;text-decoration-color:#a9c9df;text-underline-offset:3px;word-break:break-all;overflow-wrap:anywhere;">https://github.com/anomalyco/rune</a> </section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/6040481c2b6646f7503d.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/eff18a11d15f0004c69f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+<section style="margin:0 0 32px;padding:0;">
+  <section style="margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0;font-size:17px;line-height:1.6;font-weight:600;color:#333333;"><span style="color:#4f7d9f;">05</span><span style="color:#b5bbc2;font-weight:400;">｜</span>wanman 将 App 交付压缩至 30 分钟</p>
+    <p style="margin:5px 0 0;font-size:12px;line-height:1.6;color:#999999;">来源（X） · @turingou · 2026-11-28 00:55</p>
+  </section>
+  <section style="margin:0;font-size:16px;line-height:1.85;color:#333333;word-break:break-word;">这两天，我已经把我公司改造成了一个基于 wanman 的强化学习反馈循环的组织，简单来讲，他会去发动探索者，寻找现实当中存在的各种需求，然后建立关系和销售渠道，在灵感库当中寻找点子，并且实际做出产品。我要做的唯一事情，就是在 agent 当中批准，Agent 会给我发一封邮件，然后我打开公司的网站，用 Passkey 登录批准。<br><br>批准完之后，从网站的服务端密钥、iOS/Android 应用创建、构建、测试与生产环境部署、CI/CD，直到自动化提交内部外部 TestFlight 和正式商店审核，全部流程都是自动化的。<br><br>一个全新的 App，从年初需要一到两周不断在聊天中研发，到一个月份前的一天研发，到现在 30 分钟之内就可以完成所有工作！图中就是我新做的一个 App，用来通过一个垂直的个人助理，管理我云端 Agent 环境中所有的浏览器，确保他们可以同步所有的登录状态，使用我的出口 IP，并且能够在我的观察下自动化操作。<br><br>借助于这套全自动工作体系，我相信在明年我应该可以成功发布远不止 300 个应用和网站。</section>
+  <section style="margin:18px 0 0;"><p style="margin:0px 0 0;line-height:0;"><img src="../assets/img/bdfe5baee69cc67f8c2c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/ff55f8550d98c134c55c.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p><p style="margin:12px 0 0;line-height:0;"><img src="../assets/img/e7091937e9c61b17a65f.jpg" style="display:block;width:100%;height:auto;margin:0 auto;" referrerpolicy="no-referrer"></p></section>
+  
+</section>
+</section></article>
+<a class="back" href="../index.html#archive">← 返回首页 / 往期列表</a></div>
+<footer>AI小道消息 · 自动生成发布</footer>
+</body>
+</html>
